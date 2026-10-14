@@ -56,7 +56,4 @@ FORMULAS.md                resumen de fórmulas
 Unidad NN - Tema/          teoria.md, practica.md e img/ (gráficos)
 Parciales/                 parciales y repasos resueltos
 aula-virtual/              PDFs originales, ordenados por unidad
-scripts/                   generador de gráficos SVG y control de formato
 ```
-
-Los gráficos de las regiones y curvas se generan con los scripts de [scripts/](scripts) (`python3 scripts/graficos_uNN.py`), y `python3 scripts/check.py` revisa el formato de todos los `.md` (botones de solución bien cerrados, links rotos y líneas en blanco alrededor de las fórmulas).
