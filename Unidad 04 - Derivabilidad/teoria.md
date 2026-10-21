@@ -1,6 +1,6 @@
 # Unidad 4 — Derivabilidad: derivadas parciales y direccionales
 
-Resumen del material teórico de la unidad ([U04-Teoria-Derivadas-Parciales-Direccionales.pdf](../aula-virtual/04-Derivabilidad/U04-Teoria-Derivadas-Parciales-Direccionales.pdf)), de los apuntes [Derivadas de campos vectoriales](../aula-virtual/04-Derivabilidad/Derivadas-Campos-Vectoriales.pdf) e [Interpretación geométrica de las derivadas direccionales](../aula-virtual/04-Derivabilidad/Interpretacion-Geometrica-Derivadas-Direccionales.pdf), y del [pizarrón de clase](../aula-virtual/04-Derivabilidad/Pizarron-2025-05-06-Derivadas-Direccionales.pdf).
+Resumen del material teórico de la unidad ([U04-Teoria-Derivadas-Parciales-Direccionales.pdf](../aula-virtual/04-Derivabilidad/U04-Teoria-Derivadas-Parciales-Direccionales.pdf)), de los apuntes [Derivadas de campos vectoriales](../aula-virtual/04-Derivabilidad/Derivadas-Campos-Vectoriales.pdf) e [Interpretación geométrica de las derivadas direccionales](../aula-virtual/04-Derivabilidad/Interpretacion-Geometrica-Derivadas-Direccionales.pdf), y del [pizarrón de clase](../aula-virtual/04-Derivabilidad/Pizarron-2025-05-06-Derivadas-Direccionales.pdf), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -131,7 +131,130 @@ $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
 ---
 
-## 6. Estrategia para los ejercicios
+## 6. Complementos: derivada de una función vectorial y curvas
+
+**Repaso (una variable):** $f'(x_0) = \lim\limits_{x\to x_0}\dfrac{f(x) - f(x_0)}{x - x_0}$. Puede ser un número, infinito o no existir; $f$ es **derivable** si el límite existe y es **finito**. Geométricamente, el cociente incremental es la pendiente de una recta secante, y su límite es la pendiente de la **recta tangente**.
+
+**Vector derivado** de $\vec f: A \subseteq \mathbb{R} \to \mathbb{R}^n$ en $t_0$ (interior):
+
+$$\vec f\,'(t_0) = \lim_{\Delta t\to0}\frac{\vec f(t_0 + \Delta t) - \vec f(t_0)}{\Delta t}$$
+
+**Teorema:** $\vec f$ es derivable en $t_0$ si y sólo si **cada componente** $f_i$ lo es, y $\vec f\,'(t_0) = (f_1'(t_0), \dots, f_n'(t_0))$. Se demuestra igual que para límites: el límite de un vector existe si y sólo si existen los de sus componentes.
+
+**Por qué $\vec f\,'(t_0)$ es tangente:** $\vec f(t_0 + \Delta t) - \vec f(t_0)$ es la **cuerda** entre dos puntos de la curva; al dividir por $\Delta t$ y hacer $\Delta t \to 0$, la cuerda tiende a la dirección **tangente**.
+
+**Ecuaciones simétricas de la recta tangente** (si todas las $f_i'(t_0) \ne 0$):
+
+$$\frac{x - f_1(t_0)}{f_1'(t_0)} = \frac{y - f_2(t_0)}{f_2'(t_0)} = \frac{z - f_3(t_0)}{f_3'(t_0)}$$
+
+**Plano normal (cartesiana):** $f_1'(t_0)(x - f_1(t_0)) + f_2'(t_0)(y - f_2(t_0)) + f_3'(t_0)(z - f_3(t_0)) = 0$.
+
+**Puntos regulares y singulares:**
+
+- $P_0 \in C$ es **regular** si existe la recta tangente: hay una parametrización continua $\vec f$ de $C$ con $\vec f\,'(t_0)$ existente y **no nulo**, $P_0 = \vec f(t_0)$.
+- Los demás son **singulares**. Una curva admite muchas parametrizaciones: puede que en una el vector derivado sea nulo y en otra no.
+- Si $\vec f$ es **inyectiva** en $[a,b]$, la curva es **simple**.
+- Si $\vec f\,'$ es **continua y no nula** en todo $[a,b]$, la curva es **lisa** (suave).
+
+**Derivadas sucesivas de funciones vectoriales:** también componente a componente, $\vec f^{(n)}(t) = (f_1^{(n)}(t), \dots, f_m^{(n)}(t))$.
+
+---
+
+## 7. Complementos: incrementos, teorema del valor medio y gradiente
+
+**Incrementos** de $z = F(x,y)$ en $P_0 = (a, b)$:
+
+- **Parciales:** $\Delta_xF = F(a + h, b) - F(a, b)$ (sólo varía $x$) y $\Delta_yF = F(a, b + k) - F(a, b)$.
+- **Total:** $\Delta F = F(a + h, b + k) - F(a, b)$. Es la variación de $z$ sobre la curva que se obtiene cortando la superficie con el plano vertical que contiene a $P_0$ y $(a + h, b + k)$.
+
+Las derivadas parciales son $F'_x = \lim\limits_{h\to0}\dfrac{\Delta_xF}{h}$ y $F'_y = \lim\limits_{k\to0}\dfrac{\Delta_yF}{k}$.
+
+### Teorema del valor medio para campos escalares
+
+**Repaso (Lagrange):** si $f$ es continua en $[a,b]$ y derivable en $(a,b)$, existe $c \in (a,b)$ con $f(b) - f(a) = f'(c)(b - a)$: hay una tangente paralela a la cuerda.
+
+**Teorema:** si existe $F'(\vec x; \breve v)$ en un conjunto que contiene a $\vec x_0$, a $\vec x_0 + t\breve v$ y al segmento que los une, entonces
+
+$$\exists\,c \in (0, t) : \quad F(\vec x_0 + t\breve v) - F(\vec x_0) = t\cdot F'(\vec x_0 + c\breve v;\ \breve v)$$
+
+**Demostración.** Sea $\varphi(s) = F(\vec x_0 + s\breve v)$, $s \in [0, t]$. Como existe la derivada direccional sobre el segmento, $\varphi$ es derivable (y por lo tanto continua). Por Lagrange, $\varphi(t) - \varphi(0) = t\,\varphi'(c)$. Y por definición:
+
+$$\varphi'(c) = \lim_{\lambda\to0}\frac{F(\vec x_0 + c\breve v + \lambda\breve v) - F(\vec x_0 + c\breve v)}{\lambda} = F'(\vec x_0 + c\breve v;\ \breve v) \quad\blacksquare$$
+
+### Aditividad de las derivadas direccionales
+
+Si $F$ tiene derivadas direccionales **continuas** en $\vec x_0$ respecto de $\breve u$ y $\breve v$, y $\vec w = \breve u + \breve v$:
+
+$$F'(\vec x_0; \vec w) = F'(\vec x_0; \breve u) + F'(\vec x_0; \breve v)$$
+
+**Demostración.** Se suma y resta $F(\vec x_0 + t\breve u)$ en el numerador:
+
+$$\frac{F(\vec x_0 + t\breve u + t\breve v) - F(\vec x_0)}{t} = \frac{F(\vec x_0 + t\breve u) - F(\vec x_0)}{t} + \frac{F(\vec x_0 + t\breve u + t\breve v) - F(\vec x_0 + t\breve u)}{t}$$
+
+El primer término tiende a $F'(\vec x_0; \breve u)$. Al segundo se le aplica el TVM: es $F'(\vec x_0 + t\breve u + \alpha\breve v;\ \breve v)$ con $\alpha$ entre 0 y $t$, que por la **continuidad** tiende a $F'(\vec x_0; \breve v)$. $\blacksquare$
+
+### Derivada direccional en función de las parciales
+
+Un versor se escribe con sus **cosenos directores**: $\breve v = \sum\cos\alpha_i\,\breve e_i$. Si las parciales son continuas en $\vec x_0$, por homogeneidad y aditividad:
+
+$$F'(\vec x_0; \breve v) = \sum_i\cos\alpha_i\,\frac{\partial F}{\partial x_i}(\vec x_0) = \nabla F(\vec x_0)\cdot\breve v$$
+
+En tres variables: $F'(\vec x_0; \breve v) = F'_x\cos\alpha_1 + F'_y\cos\alpha_2 + F'_z\cos\alpha_3$.
+
+**Gradiente:** si $F$ tiene todas las parciales en $B$, el gradiente es el campo vectorial $\nabla F = \left(\dfrac{\partial F}{\partial x_1}, \dots, \dfrac{\partial F}{\partial x_n}\right)$. La derivada direccional es la **proyección** de $\nabla F(\vec x_0)$ sobre $\breve v$. (La dirección de máximo crecimiento y sus consecuencias están en la Unidad 5.)
+
+**Ejemplo:** $F = x^2 - 2xy$, $P_0 = (1,1)$, $\breve v = \left(-\frac{\sqrt2}{2}, \frac{\sqrt2}{2}\right)$.
+
+- Por definición: $\dfrac{F(1 - t\frac{\sqrt2}{2},\ 1 + t\frac{\sqrt2}{2}) - F(1,1)}{t} = \dfrac{-\sqrt2\,t + \frac32t^2}{t} \to -\sqrt2$.
+- Con el gradiente: $\nabla F(1,1) = (2x - 2y,\ -2x) = (0, -2)$, y $(0,-2)\cdot\breve v = -\sqrt2$ ✓.
+
+**Cuidado:** si las parciales no son continuas, la fórmula del gradiente puede fallar. Por ejemplo, $F = \dfrac{xy^2}{x^2 + y^2}$ ($F(0,0) = 0$) tiene $F'(\vec 0; (h,k)) = hk^2 = h - h^3$, que es máxima en **dos** direcciones $\left(\frac{1}{\sqrt3}, \pm\sqrt{\frac23}\right)$; con un gradiente habría una sola.
+
+---
+
+## 8. Complementos: derivadas de campos vectoriales y matriz jacobiana
+
+Para $\vec F: A \subseteq \mathbb{R}^n \to \mathbb{R}^m$:
+
+- **Derivada direccional:** $\vec F'(\vec X_0; \breve v) = \lim\limits_{t\to0}\dfrac{\vec F(\vec X_0 + t\breve v) - \vec F(\vec X_0)}{t} = (F_1'(\vec X_0;\breve v), \dots, F_m'(\vec X_0;\breve v))$, componente a componente. Respecto de un vector cualquiera $\vec v$ se define igual.
+- Si las derivadas de las componentes son continuas, valen la **homogeneidad** y la **aditividad**.
+- **Derivadas parciales:** son las direccionales según los versores canónicos: $\dfrac{\partial\vec F}{\partial x_j} = \left(\dfrac{\partial F_1}{\partial x_j}, \dots, \dfrac{\partial F_m}{\partial x_j}\right)$.
+
+**Matriz jacobiana** (matriz derivada) $D\vec F(\vec X)$, de $m \times n$:
+
+$$D\vec F = \begin{pmatrix} \frac{\partial F_1}{\partial x_1} & \cdots & \frac{\partial F_1}{\partial x_n} \\ \vdots & & \vdots \\ \frac{\partial F_m}{\partial x_1} & \cdots & \frac{\partial F_m}{\partial x_n} \end{pmatrix}$$
+
+- Las **filas** son los gradientes de cada componente.
+- Las **columnas** son los vectores derivados respecto de cada variable.
+
+**Ejemplo:** $\vec F(x,y,z) = (2x^2y + z,\ 2z^2x + 3y)$ ⇒ $D\vec F = \begin{pmatrix} 4xy & 2x^2 & 1 \\ 2z^2 & 3 & 4zx \end{pmatrix}$.
+
+**Derivada direccional con la jacobiana:** si $\vec F$ tiene derivadas parciales continuas en $\vec X_0$,
+
+$$\vec F'(\vec X_0; \breve v) = D\vec F(\vec X_0)\cdot\breve v$$
+
+(cada fila da $\nabla F_i\cdot\breve v$).
+
+---
+
+## 9. Complementos: cantidad de derivadas sucesivas
+
+- Un campo escalar de $n$ variables tiene $n$ derivadas primeras, $n^2$ segundas, …, $n^k$ derivadas de orden $k$.
+- Si se cumplen las hipótesis de Schwarz, de las $n^2$ derivadas segundas sólo $\dfrac{n(n+1)}{2}$ son distintas.
+- En general, el número de derivadas de orden $k$ distintas es el de **combinaciones con repetición**: $\dbinom{n + k - 1}{k}$. Por ejemplo, un campo de 3 variables tiene $\binom{6}{4} = 15$ derivadas de 4.º orden distintas.
+
+**Teorema de Schwarz (versión con hipótesis más débiles):** si existen $F'_x$, $F'_y$ y $F''_{xy}$ en un entorno de $(x_0,y_0)$ y $F''_{xy}$ es **continua** en $(x_0,y_0)$, entonces existe $F''_{yx}(x_0,y_0)$ y es igual a $F''_{xy}(x_0,y_0)$. Vale para cualquier cantidad de variables, porque al derivar respecto de dos de ellas las demás quedan constantes.
+
+**Ejemplo de derivadas cruzadas distintas:** $F = \dfrac{3x^3y - 2xy^3}{x^2 + y^2}$ con $F(0,0) = 0$.
+
+- Por definición, $F'_x(0,0) = F'_y(0,0) = 0$, y con la regla del cociente $F'_x(0,k) = -2k$ y $F'_y(h,0) = 3h$.
+- $F''_{xy}(0,0) = \lim\limits_{k\to0}\dfrac{F'_x(0,k) - 0}{k} = -2$ y $F''_{yx}(0,0) = \lim\limits_{h\to0}\dfrac{F'_y(h,0) - 0}{h} = 3$.
+
+Son distintas porque las derivadas segundas no son continuas en el origen (no se cumple Schwarz).
+
+---
+
+## 10. Estrategia para los ejercicios
 
 1. **Recta tangente / plano normal:** parametrizar la curva, hallar $t_0$ tal que $\vec g(t_0) = \vec A$, derivar y usar las fórmulas de la sección 1.
 2. **Parciales con regla práctica:** derivar respecto de una variable tratando las demás como constantes. Indicar **dónde** quedan definidas.
@@ -144,7 +267,7 @@ $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
 ---
 
-## 7. Resumen de fórmulas
+## 11. Resumen de fórmulas
 
 | Concepto | Fórmula |
 |---|---|

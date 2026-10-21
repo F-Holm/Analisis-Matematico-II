@@ -1,6 +1,6 @@
 # Unidad 8 — Curvas, integrales de línea y función potencial
 
-Resumen del material teórico de la unidad ([U08-Teoria-Curvas-Integrales-Linea.pdf](../aula-virtual/08-Curvas-Integrales-Linea/U08-Teoria-Curvas-Integrales-Linea.pdf)) y de los apuntes [Repaso de curvas](../aula-virtual/08-Curvas-Integrales-Linea/Repaso-Curvas.pdf), [Propiedades de la derivada de una función vectorial](../aula-virtual/08-Curvas-Integrales-Linea/Derivada-Funcion-Vectorial-Propiedades.pdf), [Resumen de integrales de línea](../aula-virtual/08-Curvas-Integrales-Linea/Resumen-Integrales-Linea.pdf), [Aplicaciones](../aula-virtual/08-Curvas-Integrales-Linea/Aplicaciones-Integrales-Linea.pdf) y [Condiciones de existencia de la función potencial](../aula-virtual/08-Curvas-Integrales-Linea/Funcion-Potencial-Condiciones.pdf).
+Resumen del material teórico de la unidad ([U08-Teoria-Curvas-Integrales-Linea.pdf](../aula-virtual/08-Curvas-Integrales-Linea/U08-Teoria-Curvas-Integrales-Linea.pdf)) y de los apuntes [Repaso de curvas](../aula-virtual/08-Curvas-Integrales-Linea/Repaso-Curvas.pdf), [Propiedades de la derivada de una función vectorial](../aula-virtual/08-Curvas-Integrales-Linea/Derivada-Funcion-Vectorial-Propiedades.pdf), [Resumen de integrales de línea](../aula-virtual/08-Curvas-Integrales-Linea/Resumen-Integrales-Linea.pdf), [Aplicaciones](../aula-virtual/08-Curvas-Integrales-Linea/Aplicaciones-Integrales-Linea.pdf) y [Condiciones de existencia de la función potencial](../aula-virtual/08-Curvas-Integrales-Linea/Funcion-Potencial-Condiciones.pdf), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -160,7 +160,79 @@ Si $\vec f = \nabla\phi$ con $\phi \in C^2$, por Schwarz $D\vec f$ (el Hessiano 
 
 ---
 
-## 6. Estrategia para los ejercicios
+## 6. Complementos: curvas rectificables y reparametrización
+
+**Curva rectificable.** Sea $\vec f: [a,b] \to \mathbb{R}^m$ continua e inyectiva. Una partición $a = t_0 < t_1 < \dots < t_n = b$ determina una **poligonal inscripta** en la curva, de longitud $S_P = \sum\lvert P_{i-1}P_i\rvert$. La curva es **rectificable** si el conjunto de los $S_P$ está acotado superiormente, y su **longitud** es el supremo de ese conjunto.
+
+**De la poligonal a la integral.** Si $\vec f = (x(t), y(t), z(t))$ tiene derivadas continuas, por el TVM en cada componente:
+
+$$\lvert P_{i-1}P_i\rvert = \sqrt{\Delta x^2 + \Delta y^2 + \Delta z^2} = \sqrt{x'^2(\alpha_i) + y'^2(\beta_i) + z'^2(\gamma_i)}\ \Delta t$$
+
+y en el límite:
+
+$$s = \int_a^b\sqrt{x'^2 + y'^2 + z'^2}\,dt, \qquad s'(t) = \lVert\vec f\,'(t)\rVert, \qquad ds = \lVert\vec f\,'(t)\rVert\,dt$$
+
+**Reparametrización.** Si $h: [a,b] \to [a_1, b_1]$ es biyectiva y $C^1$, $\vec g = \vec f\circ h$ es una **reparametrización** de $\vec f$. Lleva extremos en extremos:
+
+- si $h(a) = a_1$ y $h(b) = b_1$, **preserva** la orientación;
+- si $h(a) = b_1$ y $h(b) = a_1$, la **invierte**.
+
+**La longitud no depende de la parametrización.** Con $\vec g(u) = \vec f(h(u))$, $\lVert\vec g\,'(u)\rVert = \lVert\vec f\,'(h(u))\rVert\,\lvert h'(u)\rvert$. Con el cambio $t = h(u)$:
+
+- si $h$ es creciente, $\lvert h'\rvert = h'$ y la integral es la misma;
+- si es decreciente, $\lvert h'\rvert = -h'$, pero también se invierten los límites, y los dos signos se compensan. $\blacksquare$
+
+---
+
+## 7. Complementos: propiedades e interpretaciones de las integrales de línea
+
+**Integral de un campo escalar** como límite de sumas de Riemann:
+
+$$\int_C F\,ds = \lim_{n\to\infty}\sum F(\vec r(\alpha_i))\,\lVert\vec r\,'(\alpha_i)\rVert\,\Delta t_i = \int_a^b F(\vec r(t))\,\lVert\vec r\,'(t)\rVert\,dt$$
+
+con $C$ de clase $C^1$ a trozos (derivada continua salvo en finitos puntos).
+
+**Propiedades:**
+
+1. Con $F = 1$ da la longitud.
+2. **Linealidad:** $\int_C(F + G)\,ds = \int_C F\,ds + \int_C G\,ds$.
+3. **Aditividad respecto de los arcos:** $\int_{C_1\cup C_2} = \int_{C_1} + \int_{C_2}$.
+
+**Interpretación geométrica:** si $F \ge 0$ y $C$ es una curva plana, $\int_C F\,ds$ es el **área lateral de la "pared"** que tiene a $C$ como base y altura $F(x,y)$.
+
+**Campo vectorial: por qué es el trabajo.** En un intervalo chico, la partícula pasa de $\vec r(t)$ a $\vec r(t + \Delta t)$, y por el TVM $\Delta\vec r \approx \vec r\,'(t)\Delta t$. El trabajo de ese tramo es aproximadamente $\vec F(\vec r(t))\cdot\vec r\,'(t)\,\Delta t$ (fuerza · desplazamiento), y sumando y tomando límite:
+
+$$W = \int_a^b\vec F(\vec r(t))\cdot\vec r\,'(t)\,dt = \int_a^b(F_1x' + F_2y' + F_3z')\,dt$$
+
+Si $\vec g$ es una reparametrización de $\vec r$: $\int\vec F\cdot d\vec g = \pm\int\vec F\cdot d\vec r$, según conserve o invierta la orientación.
+
+**Curvas simples y cerradas.** Una curva **simple** es la imagen de $\vec f: [a,b] \to \mathbb{R}^3$ inyectiva; con su sentido de recorrido es una curva simple **orientada**. Si además $\vec f(a) = \vec f(b)$, es **simple cerrada** (si es inyectiva salvo en los extremos) o sólo **cerrada** (si se corta a sí misma).
+
+---
+
+## 8. Complementos: demostraciones y condiciones para la función potencial
+
+**Teorema (independencia del camino).** Si $F \in C^1$ con $\nabla F$ continuo y $C$ es $C^1$ a trozos, de $\vec r(a)$ a $\vec r(b)$:
+
+$$\int_C\nabla F\cdot d\vec r = F(\vec r(b)) - F(\vec r(a))$$
+
+*Demostración.* Sea $G = F\circ\vec r$. Por la regla de la cadena, $G'(t) = \nabla F(\vec r(t))\cdot\vec r\,'(t)$. Entonces $\int_a^b\nabla F\cdot\vec r\,'\,dt = \int_a^b G'(t)\,dt = G(b) - G(a)$. $\blacksquare$
+
+Si la curva es cerrada, la integral es 0. Un campo es **conservativo** si su integral sobre toda curva cerrada es 0.
+
+**Condición necesaria (demostración).** Si $\vec F = (P, Q) = \nabla U$, con $P, Q, P'_y, Q'_x$ continuas en un abierto conexo, entonces $U''_{xy} = P'_y$ y $U''_{yx} = Q'_x$; por Schwarz son iguales: $P'_y = Q'_x$. **No es suficiente**: $\left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ la cumple y tiene circulación $2\pi$ sobre la circunferencia unitaria. No es conservativo en $\mathbb{R}^2 - \{\vec 0\}$, pero sí en cualquier subconjunto simplemente conexo que no contenga al origen.
+
+**Condición necesaria y suficiente (dominios convexos).** Si $P, Q, P'_y, Q'_x$ son continuas en un abierto **convexo**, $\vec F$ es conservativo si y sólo si $P'_y = Q'_x$ en todo el conjunto. Para $n$ variables, en un abierto convexo: conservativo $\iff \frac{\partial F_i}{\partial x_j} = \frac{\partial F_j}{\partial x_i}$ para todo $i, j$. En $\mathbb{R}^3$ eso equivale a $\nabla\wedge\vec F = \vec 0$: un campo de $\mathbb{R}^3$ en $\mathbb{R}^3$ es conservativo si y sólo si es **irrotacional**.
+
+**Fórmula general de la función potencial** (en $\mathbb{R}^2$):
+
+$$U(x,y) = \int P(x,y)\,dx + \int\left[Q(x,y) - \frac{\partial}{\partial y}\int P(x,y)\,dx\right]dy + C$$
+
+En $\mathbb{R}^3$ se integra tres veces: en la primera la "constante" es una función de dos variables, en la segunda de una variable y en la tercera es un número.
+
+---
+
+## 9. Estrategia para los ejercicios
 
 1. **Longitud o integral de un campo escalar:** parametrizar, calcular $\lVert\vec g'\rVert$, armar $\int f(\vec g(t))\lVert\vec g'\rVert\,dt$ e integrar.
 2. **Trabajo o circulación:**
@@ -171,7 +243,7 @@ Si $\vec f = \nabla\phi$ con $\phi \in C^2$, por Schwarz $D\vec f$ (el Hessiano 
 
 ---
 
-## 7. Resumen de fórmulas
+## 10. Resumen de fórmulas
 
 | Concepto | Fórmula |
 |---|---|

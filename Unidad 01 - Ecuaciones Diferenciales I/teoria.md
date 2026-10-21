@@ -1,6 +1,6 @@
 # Unidad 1 — Ecuaciones diferenciales ordinarias (1.ª parte)
 
-Resumen del material teórico de la unidad ([U01-Teoria-Ecuaciones-Diferenciales-1.pdf](../aula-virtual/01-Ecuaciones-Diferenciales-1/U01-Teoria-Ecuaciones-Diferenciales-1.pdf)) y de los pizarrones de clase sobre ecuaciones diferenciales de primer orden (variables separables, lineales y homogéneas).
+Resumen del material teórico de la unidad ([U01-Teoria-Ecuaciones-Diferenciales-1.pdf](../aula-virtual/01-Ecuaciones-Diferenciales-1/U01-Teoria-Ecuaciones-Diferenciales-1.pdf)) y de los pizarrones de clase sobre ecuaciones diferenciales de primer orden (variables separables, lineales y homogéneas), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -224,7 +224,109 @@ Al conjunto de una familia y su ortogonal se lo llama **red ortogonal** (por eje
 
 ---
 
-## 10. Estrategia para resolver los ejercicios
+## 10. Complementos: solución general, solución singular y ecuaciones en derivadas parciales
+
+**Ecuación en derivadas parciales (EDP):** si la función buscada depende de más de una variable, las derivadas son parciales. Ejemplo de 2.º orden: $\dfrac{\partial^2 z}{\partial x^2} + \dfrac{\partial^2 z}{\partial y^2} = 0$ (ecuación de Laplace). En esta materia sólo se resuelven ecuaciones **ordinarias**.
+
+**Grado (otro ejemplo):** $(y''')^5 - (y'')^4\,x = e^x$ es de orden 3 y grado 5; en cambio $2y'' + \sqrt{y'''} = 0$ no tiene grado, porque no es polinómica en las derivadas.
+
+**Condiciones que definen la S.G. de una EDO de 1.er orden.** Una familia $y = f(x, C)$ es la S.G. si:
+
+1. para todo $C$, $f(x, C)$ satisface la ecuación;
+2. dada una condición inicial $y(x_0) = y_0$ (en la región donde vale el teorema de existencia), se puede hallar $C_0$ tal que $y = f(x, C_0)$ la cumple.
+
+Esa $y = f(x, C_0)$ es una **S.P.** Para orden $n$ hacen falta $n$ constantes **independientes** (que no se puedan reducir a menos).
+
+### Ejemplo de solución singular: ecuación de Clairaut
+
+$y = x\,y' - (y')^2$. Se sustituye $y' = u$:
+
+$$y = x\,u - u^2 \quad (*) \ \Rightarrow\ y' = u + x\,u' - 2u\,u'$$
+
+Igualando con $y' = u$: $u'\,(x - 2u) = 0$.
+
+- $u' = 0 \Rightarrow u = C$, y en $(*)$: $y = Cx - C^2$ (**S.G.**, una familia de rectas).
+- $x = 2u \Rightarrow u = \dfrac x2$, y en $(*)$: $y = \dfrac{x^2}{2} - \dfrac{x^2}{4} = \dfrac{x^2}{4}$ (**S.S.**, la envolvente de las rectas).
+
+---
+
+## 11. Sustitución de Lagrange para la ecuación lineal
+
+Otra forma de resolver $y' + P(x)\,y = Q(x)$ (equivalente a variación de parámetros):
+
+1. Se busca $u(x)$, solución de la homogénea $u' + P\,u = 0$: $\ u = e^{-\int P\,dx}$.
+2. Se propone $y = u\cdot v$, con $y' = u'v + uv'$. Reemplazando:
+
+$$u\,v' + v\,\underbrace{(u' + P\,u)}_{=\,0} = Q \ \Rightarrow\ v' = \frac{Q}{u} = Q\,e^{\int P\,dx}$$
+
+3. Integrando: $v = \int Q\,e^{\int P\,dx}\,dx + C$, y entonces:
+
+$$y = e^{-\int P\,dx}\left[\int Q(x)\,e^{\int P\,dx}\,dx + C\right]$$
+
+**Ejemplo:** $y' + 2y = 4x$. Con $u = e^{-2x}$: $v' = 4x\,e^{2x} \Rightarrow v = (2x - 1)e^{2x} + C$, así que $y = C\,e^{-2x} + 2x - 1$.
+
+### Ecuación homogénea: fórmula cerrada
+
+Con $y = zx$, la ecuación $y' = G(y/x)$ queda $x\,z' = G(z) - z$, y entonces:
+
+$$\ln|x| = \int\frac{dz}{G(z) - z} + C$$
+
+> Los valores de $z$ con $G(z) - z = 0$ pueden dar **soluciones singulares** (rectas $y = z_0x$).
+
+**Ejemplo:** $x\,y\,y' = x^2 + y^2$, es decir $y' = \dfrac xy + \dfrac yx$. Con $y = zx$: $z + x\,z' = \dfrac1z + z$, o sea $x\,z' = \dfrac1z$. Separando, $z\,dz = \dfrac{dx}{x}$, de donde $\dfrac{z^2}{2} = \ln|Cx|$ y, volviendo a $y = zx$:
+
+$$y^2 = 2x^2\ln|Cx|$$
+
+---
+
+## 12. Interpretación geométrica: campo de direcciones e isoclinas
+
+La ecuación $y' = f(x, y)$ asigna a cada punto del plano una **pendiente**. El campo vectorial
+
+$$\vec t(x,y) = (1,\ f(x,y))$$
+
+es el **campo de direcciones**: en cada punto es tangente a la curva de la S.G. que pasa por ese punto.
+
+**Isoclinas** ("igual inclinación"): son las curvas $f(x, y) = k$. Unen los puntos donde las soluciones tienen **tangentes paralelas** (pendiente $k$).
+
+**Ejemplos:**
+
+- $y' = 2x$: S.G. $y = x^2 + C$; isoclinas $x = k/2$ (rectas verticales: todas las parábolas tienen la misma pendiente sobre una misma vertical).
+- $x^2y' + y^2 = 0$: $y' = -\dfrac{y^2}{x^2}$, S.G. $y = \dfrac{x}{1 + Cx}$; isoclinas $-\dfrac{y^2}{x^2} = k$, es decir $y^2 = -k\,x^2$ (pares de rectas por el origen).
+
+---
+
+## 13. Trayectorias ortogonales: definiciones y coordenadas polares
+
+**Definiciones:**
+
+1. Una curva es **ortogonal** a otra si la corta y, en el punto de intersección, sus rectas tangentes son perpendiculares.
+2. Una curva es **trayectoria ortogonal** a una familia si es ortogonal a **todas** las curvas de la familia.
+3. Dos familias son **trayectorias ortogonales** una de la otra si cada curva de una es ortogonal a cada curva de la otra (ejemplo: las circunferencias de centro $O$ y las rectas por $O$).
+
+### En coordenadas polares
+
+Si la familia viene dada como $\rho = \rho(\varphi)$, cada curva es la imagen de $\vec x(\varphi) = (\rho\cos\varphi,\ \rho\operatorname{sen}\varphi)$, con vector tangente
+
+$$\vec x\,'(\varphi) = (\rho'\cos\varphi - \rho\operatorname{sen}\varphi,\ \rho'\operatorname{sen}\varphi + \rho\cos\varphi)$$
+
+Para una curva $\rho_1(\varphi)$ ortogonal, en el punto de corte ($\rho_1 = \rho$) el producto escalar de los tangentes es 0. Desarrollando:
+
+$$\rho'\,\rho_1' + \rho^2 = 0 \ \Rightarrow\ \boxed{\rho_1' = -\frac{\rho^2}{\rho'}}$$
+
+Es decir: en la EDO de la familia (en polares) se reemplaza $\dfrac{d\rho}{d\varphi}$ por $-\dfrac{\rho^2}{d\rho/d\varphi}$.
+
+Para aplicarlo, primero se escribe $\dfrac{\rho'}{\rho}$ de la familia **sin el parámetro**; la familia ortogonal cumple $\dfrac{\rho_1'}{\rho_1} = -\dfrac{\rho}{\rho'}$.
+
+**Ejemplo:** cardioides $\rho = a(1 + \cos\varphi)$. Derivando, $\dfrac{\rho'}{\rho} = \dfrac{-\operatorname{sen}\varphi}{1 + \cos\varphi}$ (ya sin $a$). La ortogonal cumple:
+
+$$\frac{\rho_1'}{\rho_1} = \frac{1 + \cos\varphi}{\operatorname{sen}\varphi} = \cot\frac{\varphi}{2} \ \Rightarrow\ \ln\rho_1 = 2\ln\left|\operatorname{sen}\frac{\varphi}{2}\right| + c \ \Rightarrow\ \rho_1 = b\,(1 - \cos\varphi)$$
+
+La familia ortogonal son las cardioides "opuestas".
+
+---
+
+## 14. Estrategia para resolver los ejercicios
 
 1. **Identificar el tipo de EDO**, en este orden:
    - ¿Es de variables separables? Es la más fácil.
@@ -239,7 +341,7 @@ Al conjunto de una familia y su ortogonal se lo llama **red ortogonal** (por eje
 
 ---
 
-## 11. Resumen de fórmulas
+## 15. Resumen de fórmulas
 
 | Tema | Fórmula |
 |---|---|

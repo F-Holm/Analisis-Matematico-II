@@ -21,7 +21,7 @@ Resúmenes de teoría y ejercicios resueltos de la materia, armados a partir del
 | 11 | Teoremas integrales (Green, Gauss, Stokes) | [Resumen](Unidad%2011%20-%20Teoremas%20Integrales/teoria.md) | [TP 11](Unidad%2011%20-%20Teoremas%20Integrales/practica.md) | [Aula virtual](aula-virtual/11-Teoremas-Integrales) |
 | 12 | Ecuaciones diferenciales (2.ª parte) | [Resumen](Unidad%2012%20-%20Ecuaciones%20Diferenciales%20II/teoria.md) | [TP 12](Unidad%2012%20-%20Ecuaciones%20Diferenciales%20II/practica.md) | [Aula virtual](aula-virtual/12-Ecuaciones-Diferenciales-2) |
 
-Material general: [respuestas oficiales de la guía](aula-virtual/00-Guia-TP/Guia-TP-2016-Respuestas.pdf), [fe de erratas 2018](aula-virtual/00-Guia-TP/Guia-TP-2016-Fe-de-Erratas-2018-07-31.pdf) y [tabla de derivadas e integrales](aula-virtual/Referencia/Tabla-Derivadas-Integrales.pdf).
+Material general: [resumen de UTNianos](UTNianos/Resumen%20AM2.pdf), [respuestas oficiales de la guía](aula-virtual/00-Guia-TP/Guia-TP-2016-Respuestas.pdf), [fe de erratas 2018](aula-virtual/00-Guia-TP/Guia-TP-2016-Fe-de-Erratas-2018-07-31.pdf) y [tabla de derivadas e integrales](aula-virtual/Referencia/Tabla-Derivadas-Integrales.pdf).
 
 ## Parciales
 

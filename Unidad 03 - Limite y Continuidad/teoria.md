@@ -1,6 +1,6 @@
 # Unidad 3 — Límite y continuidad
 
-Resumen del material teórico de la unidad ([U03-Teoria-Limite-Continuidad.pdf](../aula-virtual/03-Limite-Continuidad/U03-Teoria-Limite-Continuidad.pdf)) y de la clase de repaso ([Clase-Limite.pdf](../aula-virtual/03-Limite-Continuidad/Clase-Limite.pdf)).
+Resumen del material teórico de la unidad ([U03-Teoria-Limite-Continuidad.pdf](../aula-virtual/03-Limite-Continuidad/U03-Teoria-Limite-Continuidad.pdf)) y de la clase de repaso ([Clase-Limite.pdf](../aula-virtual/03-Limite-Continuidad/Clase-Limite.pdf)), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -214,7 +214,52 @@ Si $f$ es continua en $\vec x_0$ y $f(\vec x_0) \ne 0$, entonces $f$ tiene el mi
 
 ---
 
-## 11. Estrategia para analizar $\lim_{(x,y)\to(x_0,y_0)} f(x,y)$
+## 11. Complementos: definición general, propiedades y demostraciones
+
+**Repaso (una variable):** $\lim\limits_{x\to x_0} f(x) = l \iff \forall\varepsilon > 0\ \exists\delta(\varepsilon) : x \in A \wedge x \in E'(x_0, \delta) \Rightarrow |f(x) - l| < \varepsilon$. En $\mathbb{R}$ sólo hay dos "caminos" (laterales): si los límites laterales existen y son distintos, no hay límite; si son iguales, el límite existe.
+
+**Definición general** ($\vec F: A \subseteq \mathbb{R}^m \to \mathbb{R}^n$, $\vec X_0$ de acumulación de $A$):
+
+$$\lim_{\vec X\to\vec X_0}\vec F(\vec X) = \vec L \iff \forall\varepsilon>0\ \exists\delta(\varepsilon)>0 : \vec X \in A \wedge \vec X \in E'(\vec X_0;\delta) \Rightarrow \lVert\vec F(\vec X) - \vec L\rVert < \varepsilon$$
+
+**Interpretación geométrica del límite doble:** los puntos de la superficie $z = F(x,y)$ que corresponden a un entorno reducido de $(x_0, y_0)$ de radio $\delta$ quedan **entre los planos** $z = l - \varepsilon$ y $z = l + \varepsilon$.
+
+**Límite a lo largo de un camino $C$** (con $(x_0,y_0)$ de acumulación de $C$): en la definición se pide además $(x,y) \in C$. Si $C$ es $y = f(x)$, se reduce a un límite de una variable.
+
+### Propiedades de los límites de campos escalares
+
+1. Si $\lim_{\vec X\to\vec X_0} F = l$ (finito), $F$ está **acotada** en algún entorno reducido de $\vec X_0$.
+2. Si el límite es finito y **distinto de cero**, existe un entorno reducido donde $F$ tiene el **mismo signo** que el límite.
+3. Límite de suma, resta y producto = suma, resta y producto de los límites; el del cociente también, si el límite del denominador es $\ne 0$.
+4. Si el límite es $l$ (finito), $F(\vec X) = l + \alpha(\vec X)$ con $\alpha \to 0$: **$F$ es su límite más un infinitésimo**.
+
+### Demostración: límite vectorial ⇔ límite de las componentes
+
+Sea $\vec f(t) = (f_1(t), \dots, f_n(t))$ y $\vec l = (l_1, \dots, l_n)$.
+
+**(⇒)** Para cada $i$ vale $|f_i(t) - l_i| \le \sqrt{\sum_j(f_j(t) - l_j)^2} = \lVert\vec f(t) - \vec l\rVert$. Si la norma es $< \varepsilon$ en $E'(t_0,\delta)$, cada componente también cumple $|f_i(t) - l_i| < \varepsilon$: $\lim f_i = l_i$.
+
+**(⇐)** Para cada $i$ existe $\delta_i$ con $|f_i(t) - l_i| < \varepsilon$. Tomando $\delta = \min\{\delta_i\}$:
+
+$$\lVert\vec f(t) - \vec l\rVert = \sqrt{\sum(f_i - l_i)^2} < \sqrt{n\,\varepsilon^2} = \sqrt n\,\varepsilon$$
+
+Como $\sqrt n\,\varepsilon$ es tan chico como se quiera, $\lim\vec f = \vec l$. $\blacksquare$
+
+### Ejemplo: función definida por partes
+
+$$F(x,y) = \begin{cases} \dfrac{\operatorname{sen}(x^2 - y^2)}{x^2 - y^2} & \lvert x\rvert \ne \lvert y\rvert \\[2mm] \tfrac12(x + y) & x = y \ \vee\ (x,y) = (-1,1) \\[1mm] 1 & x = -y,\ (x,y) \notin \{(0,0), (-1,1)\} \end{cases}$$
+
+Hay que estudiar el límite por cada "pedazo" del dominio que llega al punto:
+
+- **En $(0,0)$:** por $\lvert x\rvert \ne \lvert y\rvert$ el límite es 1 (límite notable), y por $x = y$ es $\lim\frac12(2x) = 0$. Son distintos ⇒ **no existe** el límite: discontinuidad **esencial**.
+- **En $(1,1)$:** sólo llegan las ramas $\lvert x\rvert \ne \lvert y\rvert$ (da 1) y $x = y$ (da $\frac12(1 + 1) = 1$). Entre las dos cubren todos los puntos cercanos ⇒ el límite es $1 = F(1,1)$: **continua**.
+- **En $(-1,1)$:** llegan $\lvert x\rvert \ne \lvert y\rvert$ (da 1) y $x = -y$ (vale 1) ⇒ el límite existe y es 1, pero $F(-1,1) = \frac12(-1 + 1) = 0$: discontinuidad **evitable**.
+
+Esto ilustra el teorema de la **unión finita** de la sección 3: si una cantidad finita de subconjuntos cubre el dominio cerca del punto y todos dan el mismo límite, el límite existe.
+
+---
+
+## 12. Estrategia para analizar $\lim_{(x,y)\to(x_0,y_0)} f(x,y)$
 
 1. **¿Se puede sustituir directamente?** Si $f$ es continua en el punto, el límite es $f(x_0,y_0)$.
 2. **¿Se puede simplificar o reducir a un límite conocido?** Factorizar, usar $\frac{\operatorname{sen} u}{u}$, etc.
@@ -230,7 +275,7 @@ Si $f$ es continua en $\vec x_0$ y $f(\vec x_0) \ne 0$, entonces $f$ tiene el mi
 
 ---
 
-## 12. Resumen de herramientas
+## 13. Resumen de herramientas
 
 | Herramienta | Sirve para probar... |
 |---|---|

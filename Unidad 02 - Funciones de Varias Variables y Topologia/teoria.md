@@ -1,6 +1,6 @@
 # Unidad 2 — Funciones de varias variables y nociones de topología
 
-Resumen del material teórico de la unidad ([U02-Teoria-Funciones-Varias-Variables.pdf](../aula-virtual/02-Topologia-Funciones/U02-Teoria-Funciones-Varias-Variables.pdf)).
+Resumen del material teórico de la unidad ([U02-Teoria-Funciones-Varias-Variables.pdf](../aula-virtual/02-Topologia-Funciones/U02-Teoria-Funciones-Varias-Variables.pdf)), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -212,7 +212,94 @@ Cumple tres propiedades:
 
 ---
 
-## 8. Estrategia para los ejercicios
+## 8. Complementos: distancia, espacio métrico y entornos
+
+**Definición de distancia.** Dado un conjunto no vacío $E$, una **distancia** es una función $d: E\times E \to \mathbb{R}$ que cumple, para todo $A, B, C \in E$:
+
+1. **No negatividad:** $d(A,B) \ge 0$.
+2. **Separación:** $d(A,B) = 0 \iff A = B$.
+3. **Simetría:** $d(A,B) = d(B,A)$.
+4. **Desigualdad triangular:** $d(A,B) + d(B,C) \ge d(A,C)$.
+
+Un conjunto no vacío en el que se definió una distancia es un **espacio métrico**.
+
+**Distancia euclídea en los espacios usuales:**
+
+| Espacio | $d(A,B)$ |
+|---|---|
+| $\mathbb{R}$ | $\lvert b - a\rvert$ |
+| $\mathbb{R}^2$ | $\sqrt{(b_1 - a_1)^2 + (b_2 - a_2)^2}$ |
+| $\mathbb{R}^3$ | $\sqrt{(b_1 - a_1)^2 + (b_2 - a_2)^2 + (b_3 - a_3)^2}$ |
+| $\mathbb{R}^n$ | $\sqrt{\sum_{i=1}^n(a_i - b_i)^2}$ |
+
+**Entorno (simétrico) de $A$ de radio $\delta$:** $E(A;\delta) = \{X \in M : d(X, A) < \delta\}$.
+
+- En $\mathbb{R}$: el intervalo $(a - \delta,\ a + \delta)$.
+- En $\mathbb{R}^2$: el círculo abierto $(x - a_1)^2 + (y - a_2)^2 < \delta^2$.
+- En $\mathbb{R}^3$: la esfera abierta $(x - a_1)^2 + (y - a_2)^2 + (z - a_3)^2 < \delta^2$.
+
+**Entorno reducido** (sin el centro): $E'(A;\delta) = \{X : 0 < d(X,A) < \delta\}$.
+
+**Otras caracterizaciones útiles:**
+
+- $A$ es **punto frontera** de $C$ si y sólo si no es ni interior ni exterior.
+- $C$ es **cerrado** $\iff C' \subseteq C$ (contiene a todos sus puntos de acumulación).
+- $C$ es **acotado** $\iff$ existe $k > 0$ con $\lVert X\rVert < k$ para todo $X \in C$: se puede encerrar en un entorno del origen.
+- En $\mathbb{R}^3$, una esfera (maciza) es convexa, pero una superficie esférica no lo es.
+
+**Conexo por poligonal (p-conexo):** $C$ es p-conexo si dos puntos cualesquiera de $C$ se pueden unir con una poligonal (una cantidad finita de segmentos) totalmente incluida en $C$. Los conjuntos p-conexos son conexos, aunque pueden no ser convexos (por ejemplo, una "L").
+
+---
+
+## 9. Complementos: definición de función y tipos de funciones
+
+**Función.** Dados $A$ y $B$, una función $f: A \to B$ es un subconjunto de $A\times B$ (pares ordenados) tal que:
+
+1. **Existencia:** todo $x \in A$ tiene imagen: $\forall x \in A\ \exists y \in B : (x, y) \in f$.
+2. **Unicidad:** la imagen es única: $(x, y_1) \in f \wedge (x, y_2) \in f \Rightarrow y_1 = y_2$.
+
+$A$ es el dominio, $B$ el conjunto de llegada, y el conjunto de los elementos de $B$ que son imagen de alguno de $A$ es el **conjunto imagen**.
+
+**Clasificación completa** según los conjuntos de partida y llegada:
+
+| Tipo | $f: A \to B$ | Ejemplo |
+|---|---|---|
+| Función escalar | $A \subseteq \mathbb{R}$, $B \subseteq \mathbb{R}$ | $f(x) = x^2$ |
+| Campo escalar | $A \subseteq \mathbb{R}^n$ ($n \ge 2$), $B \subseteq \mathbb{R}$ | $G(x,y) = x^2 + y^2$ (paraboloide) |
+| Función vectorial | $A \subseteq \mathbb{R}$, $B \subseteq \mathbb{R}^m$ ($m \ge 2$) | $\vec g(t) = (\cos t, \operatorname{sen}t, t)$ (hélice) |
+| Campo vectorial | $A \subseteq \mathbb{R}^n$, $B \subseteq \mathbb{R}^m$ ($n, m \ge 2$) | $\vec F(u,v) = (\cos u\operatorname{sen}v,\ \operatorname{sen}u\operatorname{sen}v,\ \cos v)$ (esfera) |
+
+Un campo escalar de 3 variables, como $U(x,y,z) = x + y + z$, no tiene representación cartesiana (haría falta $\mathbb{R}^4$): sólo se pueden dibujar sus superficies de nivel.
+
+**Más ejemplos de dominios:**
+
+- $F = \sqrt{1 - x^2 - y^2}$: $x^2 + y^2 \le 1$ (disco cerrado).
+- $G = \dfrac{1}{\ln\lvert x^2 - y^2\rvert}$: el argumento del logaritmo debe ser $> 0$ ($\lvert x\rvert \ne \lvert y\rvert$) y el logaritmo no se puede anular ($\lvert x^2 - y^2\rvert \ne 1$).
+- $H = \ln(x + y)$: el semiplano $y > -x$.
+
+**Más ejemplos de conjuntos de nivel:**
+
+- $G = \sqrt{y - x^2}$ (dominio $y \ge x^2$): las curvas de nivel son las parábolas $y = x^2 + k^2$; la gráfica es un semiparaboloide de eje $y$.
+- $H = \ln(x^2 + y^2 + z^2)$: superficies de nivel $x^2 + y^2 + z^2 = e^k$, esferas de radio $e^{k/2}$.
+
+---
+
+## 10. Curvas y superficies asociadas a funciones
+
+- **Curva asociada** a una función vectorial $\vec f: A \subseteq \mathbb{R} \to \mathbb{R}^n$ con componentes continuas: es el conjunto imagen $\vec f(A)$. Ejemplo: $\vec f(t) = (t, t, t^2)$.
+- **Superficie asociada** a un campo vectorial $\vec G: A \subseteq \mathbb{R}^2 \to \mathbb{R}^3$ con componentes continuas: es el conjunto imagen. Ejemplo: $\vec G(u,v) = (2\cos u,\ 2\operatorname{sen}u,\ v)$ es una superficie cilíndrica.
+- Si $\vec G$ es **inyectiva** en un conjunto conexo, la superficie es **simple**.
+- **Curva sobre una superficie:** si $\vec f: [a,b] \to D \subseteq \mathbb{R}^2$ es continua y $\vec G: A \to \mathbb{R}^3$ (con $D \subseteq A$) representa la superficie $\Sigma$, la composición $\vec G\circ\vec f$ describe una curva **contenida en** $\Sigma$.
+
+**Ejemplo:** $\vec G(u,v) = (3 + u\cos v,\ 3 + u\operatorname{sen}v,\ u)$ (superficie cónica) y $\vec f(t) = (3, t)$. Componiendo ($u = 3$, $v = t$):
+
+$$(\vec G\circ\vec f)(t) = (3 + 3\cos t,\ 3 + 3\operatorname{sen}t,\ 3)$$
+
+Es la circunferencia de centro $(3,3,3)$ y radio 3 en el plano $z = 3$, contenida en el cono.
+
+---
+
+## 11. Estrategia para los ejercicios
 
 **Dominio natural:** listar todas las restricciones (raíces, logaritmos, denominadores, arcsen), escribirlas como desigualdades, resolverlas (separando en casos de signo si hace falta) y dibujar. Las curvas de borde van con trazo lleno si están incluidas y punteado si no.
 
@@ -229,7 +316,7 @@ Cumple tres propiedades:
 
 ---
 
-## 9. Resumen de fórmulas
+## 12. Resumen de fórmulas
 
 | Concepto | Fórmula |
 |---|---|

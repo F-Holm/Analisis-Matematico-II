@@ -1,6 +1,6 @@
 # Unidad 5 — Diferenciabilidad, plano tangente y recta normal
 
-Resumen del material teórico de la unidad ([U05-Teoria-Diferenciabilidad.pdf](../aula-virtual/05-Diferenciabilidad/U05-Teoria-Diferenciabilidad.pdf)), del apunte [Diferenciabilidad de un campo vectorial](../aula-virtual/05-Diferenciabilidad/Diferenciabilidad-Campo-Vectorial.pdf) y del [pizarrón de clase](../aula-virtual/05-Diferenciabilidad/Pizarron-2025-06-03-Diferencial-Compuestas.pdf).
+Resumen del material teórico de la unidad ([U05-Teoria-Diferenciabilidad.pdf](../aula-virtual/05-Diferenciabilidad/U05-Teoria-Diferenciabilidad.pdf)), del apunte [Diferenciabilidad de un campo vectorial](../aula-virtual/05-Diferenciabilidad/Diferenciabilidad-Campo-Vectorial.pdf) y del [pizarrón de clase](../aula-virtual/05-Diferenciabilidad/Pizarron-2025-06-03-Diferencial-Compuestas.pdf), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -166,7 +166,70 @@ $$w = x^a y^b \ \Rightarrow\ \varepsilon_{\text{rel}\,w} = |a|\,\varepsilon_{\te
 
 ---
 
-## 9. Estrategia para los ejercicios
+## 9. Complementos: transformaciones lineales y diferencial en una variable
+
+**Transformación lineal (T.L.).** $T: U \to V$ es lineal si $T(\vec x + \vec y) = T(\vec x) + T(\vec y)$ y $T(\lambda\vec x) = \lambda T(\vec x)$.
+
+- De $\mathbb{R}$ en $\mathbb{R}$ son $T(x) = kx$: rectas por el origen.
+- De $\mathbb{R}^2$ en $\mathbb{R}$ son $T(x,y) = ax + by$: planos por el origen.
+- De $\mathbb{R}^n$ en $\mathbb{R}$ son $T(\vec x) = \sum a_ix_i$, con $a_i = T(\breve e_i)$. Son polinomios, así que son **continuas**.
+- Una T.L. queda definida por las imágenes de una base. Su **matriz asociada** (de $m\times n$) tiene por columnas las imágenes de los versores canónicos. Ejemplo: $T(x,y) = (2x,\ 3y,\ x - y)$ tiene $T(1,0) = (2,0,1)$, $T(0,1) = (0,3,-1)$ y matriz $\begin{pmatrix} 2 & 0 \\ 0 & 3 \\ 1 & -1 \end{pmatrix}$.
+
+**Diferencial en una variable.** Si $f$ es derivable en $x_0$, el cociente incremental es su límite más un infinitésimo:
+
+$$f(x) - f(x_0) = f'(x_0)(x - x_0) + \varphi(x)(x - x_0), \qquad \varphi(x) \xrightarrow[x\to x_0]{} 0$$
+
+El término $df(x_0; \Delta x) = f'(x_0)\,\Delta x$ es el **diferencial**: es la variación de la ordenada de la **recta tangente** al pasar de $x_0$ a $x_0 + \Delta x$, una aproximación lineal de $\Delta f$. Como $f'(x_0)$ es constante, $df$ es una T.L. de $\mathbb{R}$ en $\mathbb{R}$. Esta forma ("existe una T.L. $T$ con $f(x) - f(x_0) = T(x - x_0) + $ resto") es la que se generaliza a varias variables.
+
+**Ejemplo de por qué hace falta algo más que las parciales:** $F(x,y) = x^{1/3}y^{1/3}$ tiene $F'_x(0,0) = F'_y(0,0) = 0$, así que el "candidato" a plano tangente sería $z = 0$; pero la superficie no tiene plano tangente en el origen.
+
+---
+
+## 10. Complementos: demostraciones de las propiedades
+
+Sea $F$ diferenciable en $\vec x_0$: $F(\vec x) - F(\vec x_0) = T(\vec x - \vec x_0) + \varphi(\vec x - \vec x_0)\,\lVert\vec x - \vec x_0\rVert$, con $\varphi \to 0$.
+
+**Diferenciable ⇒ continua.** Tomando límite: $T$ es continua y $T(\vec 0) = 0$, y el segundo término es infinitésimo por acotado. Entonces $\lim[F(\vec x) - F(\vec x_0)] = 0$. $\blacksquare$
+
+**Diferenciable ⇒ existen las parciales, y la matriz de $T$ es la jacobiana.** Sea $M = (a_{11} \dots a_{1n})$ la matriz de $T$. Con $\vec x = \vec x_0 + h\breve e_k$ (así $\lVert\vec x - \vec x_0\rVert = |h|$):
+
+$$\frac{F(\vec x_0 + h\breve e_k) - F(\vec x_0)}{h} = \frac{h\,T(\breve e_k)}{h} + \underbrace{\varphi(h\breve e_k)\frac{|h|}{h}}_{\to\,0} \ \Rightarrow\ \frac{\partial F}{\partial x_k}(\vec x_0) = T(\breve e_k) = a_{1k} \quad\blacksquare$$
+
+**Diferenciable ⇒ existen todas las direccionales, con $F'(\vec x_0;\breve v) = \nabla F(\vec x_0)\cdot\breve v$.** Igual que antes con $\vec x = \vec x_0 + t\breve v$: el cociente es $T(\breve v) + \varphi(t\breve v)\frac{|t|}{t} \to T(\breve v) = \nabla F\cdot\breve v$. $\blacksquare$
+
+**Condición suficiente: parciales continuas en un entorno ⇒ diferenciable.** Por el TVM (Unidad 4), $F(\vec x_0 + t\breve v) - F(\vec x_0) = t\,F'(\vec x_0 + c\breve v; \breve v)$, y como las parciales son continuas, esa derivada vale $\sum\frac{\partial F}{\partial x_k}(\vec x_0 + c\breve v)\cos\alpha_k$. Por la continuidad, cada $\frac{\partial F}{\partial x_k}(\vec x_0 + c\breve v) = \frac{\partial F}{\partial x_k}(\vec x_0) + \varepsilon_k$ con $\varepsilon_k \to 0$. Queda:
+
+$$F(\vec x_0 + t\breve v) - F(\vec x_0) = \nabla F(\vec x_0)\cdot t\breve v + |t|\,\underbrace{\tfrac{t}{|t|}\sum\varepsilon_k\cos\alpha_k}_{\to\,0}$$
+
+que es la definición de diferenciable. $\blacksquare$
+
+**Campos vectoriales.** $\vec F: \mathbb{R}^n \to \mathbb{R}^m$ es diferenciable en $\vec x_0$ si existe una T.L. $T: \mathbb{R}^n \to \mathbb{R}^m$ con $\vec F(\vec x) - \vec F(\vec x_0) = T(\vec x - \vec x_0) + \lVert\vec x - \vec x_0\rVert\,\vec\varphi$, $\vec\varphi \to \vec 0$. Valen las mismas propiedades: diferenciable ⇒ continua, con parciales y con todas las direccionales; y parciales continuas en un entorno ⇒ diferenciable.
+
+---
+
+## 11. Complementos: diferencial total y plano tangente
+
+**Diferencial total** de $F$ en $\vec x_0$: es la T.L. de la definición, aplicada al incremento:
+
+$$dF_{\vec x_0} = T(\vec x - \vec x_0) = \sum_{i=1}^n F'_{x_i}(\vec x_0)\,(x_i - x_{i0}) = \sum_{i=1}^n F'_{x_i}(\vec x_0)\,dx_i$$
+
+**Plano tangente como lugar geométrico.** El plano tangente a $z = F(x,y)$ en $P_0$ es el lugar de las rectas tangentes a **todas** las curvas de la superficie que pasan por $P_0$.
+
+1. Cortando con $x = a$ se obtiene una curva con tangente de dirección $\vec v_1 = (0,\ 1,\ F'_y)$; cortando con $y = b$, otra con $\vec v_2 = (1,\ 0,\ F'_x)$. El plano por $P_0$ paralelo a $\vec v_1$ y $\vec v_2$ es:
+
+$$F'_x(x_0,y_0)(x - x_0) + F'_y(x_0,y_0)(y - y_0) - (z - z_0) = 0$$
+
+2. Cortando con un plano vertical en la dirección $\alpha$, la tangente tiene $\vec v_3 = (\cos\alpha,\ \operatorname{sen}\alpha,\ F'_{\breve u})$. Si $F$ es diferenciable, $F'_{\breve u} = F'_x\cos\alpha + F'_y\operatorname{sen}\alpha$, y entonces el producto mixto $[\vec v_1, \vec v_2, \vec v_3] = 0$: las tres tangentes son **coplanares**. Por eso el plano existe sólo si $F$ es diferenciable.
+
+**Recta normal (forma simétrica):**
+
+$$\frac{x - x_0}{F'_x(x_0,y_0)} = \frac{y - y_0}{F'_y(x_0,y_0)} = \frac{z - F(x_0,y_0)}{-1}$$
+
+El segundo miembro de la ecuación del plano tangente es justamente $dF(x_0,y_0)$: **el diferencial es la variación de la $z$ del plano tangente** al pasar de $(x_0,y_0)$ a $(x,y)$.
+
+---
+
+## 12. Estrategia para los ejercicios
 
 **¿Es diferenciable en $\vec A$?**
 
@@ -185,7 +248,7 @@ $$w = x^a y^b \ \Rightarrow\ \varepsilon_{\text{rel}\,w} = |a|\,\varepsilon_{\te
 
 ---
 
-## 10. Resumen de fórmulas
+## 13. Resumen de fórmulas
 
 | Concepto | Fórmula |
 |---|---|

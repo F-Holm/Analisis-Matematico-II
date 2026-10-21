@@ -1,6 +1,6 @@
 # Unidad 9 — Integrales múltiples
 
-Resumen del material teórico de la unidad ([U09-Teoria-Integrales-Multiples.pdf](../aula-virtual/09-Integrales-Multiples/U09-Teoria-Integrales-Multiples.pdf)) y de los apuntes [Cambio de variables en integrales múltiples](../aula-virtual/09-Integrales-Multiples/Cambio-Variables-Integrales-Multiples.pdf) y [Aplicaciones de las integrales múltiples](../aula-virtual/09-Integrales-Multiples/Aplicaciones-Integrales-Multiples.pdf).
+Resumen del material teórico de la unidad ([U09-Teoria-Integrales-Multiples.pdf](../aula-virtual/09-Integrales-Multiples/U09-Teoria-Integrales-Multiples.pdf)) y de los apuntes [Cambio de variables en integrales múltiples](../aula-virtual/09-Integrales-Multiples/Cambio-Variables-Integrales-Multiples.pdf) y [Aplicaciones de las integrales múltiples](../aula-virtual/09-Integrales-Multiples/Aplicaciones-Integrales-Multiples.pdf), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -153,7 +153,122 @@ En cartesianas, la integral doble se separa en el producto de dos integrales igu
 
 ---
 
-## 6. Estrategia para los ejercicios
+## 6. Complementos: definición de la integral doble
+
+**Sumas inferiores y superiores.** Sea $F$ continua y $\ge 0$ en el rectángulo $A = [a,b]\times[c,d]$. Se quiere el volumen del sólido entre $z = 0$ y $z = F$. Por Weierstrass, $F$ alcanza un mínimo $m$ y un máximo $M$, y $(b-a)(d-c)\,m \le V \le (b-a)(d-c)\,M$.
+
+Se hace una partición $P$ de $[a,b]$ y de $[c,d]$ en subrectángulos $R_{ij}$ de área $\Delta x_i\Delta y_j$, y en cada uno $F$ tiene mínimo $m_{ij}$ y máximo $M_{ij}$:
+
+$$\underline S_P = \sum_i\sum_j m_{ij}\,\Delta x_i\Delta y_j \le V \le \overline S_P = \sum_i\sum_j M_{ij}\,\Delta x_i\Delta y_j$$
+
+- $\underline S_P$ es el volumen de los prismas **inscriptos** (aproximación por defecto) y $\overline S_P$ el de los **circunscriptos** (por exceso).
+- Al refinar la partición, las inferiores crecen y las superiores decrecen, y la diferencia se achica. Ambas sucesiones tienen un **límite común**: la **integral doble**.
+
+**Sumas de Riemann.** Eligiendo un punto arbitrario $P_{ij}$ en cada subrectángulo, $\underline S_P \le \sum F(P_{ij})\Delta x_i\Delta y_j \le \overline S_P$, y en el límite:
+
+$$\iint_A F\,dx\,dy = \lim_{n,m\to\infty}\sum_i\sum_j F(P_{ij})\,\Delta x_i\,\Delta y_j$$
+
+**Condiciones de integrabilidad** ($F$ definida y acotada en $A$):
+
+1. $F$ es integrable $\iff$ para todo $\varepsilon > 0$ existe una partición con $\overline S_P - \underline S_P < \varepsilon$.
+2. Si $F$ es continua en $A$, es integrable.
+3. También es integrable si sus discontinuidades forman un conjunto de **medida nula**.
+
+**Medida nula:** $A \subseteq \mathbb{R}^2$ tiene medida nula si para todo $\varepsilon > 0$ se puede cubrir con finitos rectángulos de área total menor que $\varepsilon$. Ejemplos: un segmento, una circunferencia, un arco de parábola.
+
+**Propiedades:**
+
+- Si $A_1$ y $A_2$ se cortan en un conjunto de medida nula y $A_1\cup A_2 = A$: $\iint_A = \iint_{A_1} + \iint_{A_2}$.
+- $\iint(F + G) = \iint F + \iint G$.
+
+---
+
+## 7. Complementos: por qué la integral doble se calcula con integrales iteradas
+
+**Recinto rectangular (secciones).** Cortando el sólido con el plano $x = x_0$, el área de la sección es $A(x_0) = \int_c^dF(x_0, y)\,dy$. El volumen es la "suma" de esas secciones:
+
+$$V = \lim\sum A(c_i)\,\Delta x_i = \int_a^bA(x)\,dx = \int_a^b dx\int_c^d F(x,y)\,dy$$
+
+Cortando con $y = $ cte se obtiene el otro orden, y ambos dan lo mismo.
+
+**Recintos no rectangulares.** Un recinto **simple de tipo I** es $a \le x \le b$, $y_1(x) \le y \le y_2(x)$; uno de **tipo II** es $c \le y \le d$, $x_1(y) \le x \le x_2(y)$. Los demás se descomponen en uniones de recintos simples.
+
+Para integrar sobre $D$ (tipo I), se lo encierra en un rectángulo $A$ y se define
+
+$$F^*(x,y) = \begin{cases} F(x,y) & (x,y) \in D \\ 0 & (x,y) \in A - D \end{cases}$$
+
+$F^*$ es integrable (sus discontinuidades están en el borde de $D$, de medida nula), y en cada vertical sólo aporta el tramo entre $y_1(x)$ e $y_2(x)$:
+
+$$\iint_D F = \iint_A F^* = \int_a^b dx\int_{y_1(x)}^{y_2(x)}F(x,y)\,dy$$
+
+### De dónde sale el $\rho$ de las polares
+
+Una partición en $\rho$ y $\varphi$ divide el recinto en **trapecios circulares** (entre dos circunferencias y dos semirrectas). Su área es
+
+$$A_{ij} = \tfrac12(\rho_2^2 - \rho_1^2)\Delta\varphi = \tfrac{\rho_1 + \rho_2}{2}(\rho_2 - \rho_1)\Delta\varphi = \rho_m\,\Delta\rho\,\Delta\varphi$$
+
+y por eso $dA = \rho\,d\rho\,d\varphi$. El mismo factor sale como el **jacobiano** de la transformación:
+
+$$\frac{\partial(x,y)}{\partial(\rho,\varphi)} = \begin{vmatrix} \cos\varphi & -\rho\operatorname{sen}\varphi \\ \operatorname{sen}\varphi & \rho\cos\varphi \end{vmatrix} = \rho(\cos^2\varphi + \operatorname{sen}^2\varphi) = \rho$$
+
+Como el factor representa un área, se toma siempre su **módulo** (cambiar el orden de filas o columnas cambia el signo del determinante).
+
+**Teorema de cambio de variables (hipótesis).** Sean $D$ y $D^*$ regiones simples y $T: D^* \to D$, $T(u,v) = (x(u,v), y(u,v))$, de clase $C^1$, **inyectiva** y con $T(D^*) = D$. Si $F$ es integrable en $D$:
+
+$$\iint_D F(x,y)\,dx\,dy = \iint_{D^*}F(x(u,v), y(u,v))\left\lvert\frac{\partial(x,y)}{\partial(u,v)}\right\rvert du\,dv$$
+
+Pedir que $T$ sea inyectiva y "sobre" $D$ va de la mano con pedir $\frac{\partial(x,y)}{\partial(u,v)} \ne 0$ en $D^*$.
+
+---
+
+## 8. Complementos: integrales triples
+
+**Definición.** En un prisma $A = [a,b]\times[c,d]\times[e,f]$, con particiones regulares y un punto arbitrario en cada prisma elemental de volumen $\Delta x_i\Delta y_j\Delta z_k$:
+
+$$\iiint_A F\,dx\,dy\,dz = \lim\sum_i\sum_j\sum_k F(\alpha_i, \beta_j, \gamma_k)\,\Delta x_i\Delta y_j\Delta z_k$$
+
+Si $F$ es continua (o sus discontinuidades tienen medida nula) es integrable, y se calcula con **tres integrales iteradas**. Hay **6 órdenes** posibles, todos iguales. Para un recinto $V$ cualquiera se usa el mismo truco de extender por 0 en un prisma que lo contenga.
+
+**Tipos de recintos:**
+
+| Tipo | Descripción |
+|---|---|
+| I | $(x,y)$ en una región plana; $z_1(x,y) \le z \le z_2(x,y)$ |
+| II | $(x,z)$ en una región plana; $y_1(x,z) \le y \le y_2(x,z)$ |
+| III | $(y,z)$ en una región plana; $x_1(y,z) \le x \le x_2(y,z)$ |
+
+**Cilíndricas:** con $\rho$ constante se obtienen cilindros de eje $z$; con $\varphi$ constante, semiplanos de borde $z$; con $z$ constante, planos horizontales. El elemento de volumen es (área del trapecio circular)·$\Delta z$ = $\rho\,\Delta\rho\,\Delta\varphi\,\Delta z$, que coincide con el jacobiano $\rho$.
+
+**Esféricas:** con $r$ la distancia al origen, $\lambda$ (o $\theta$) el ángulo con el semieje $z^+$ ($\lambda \in [0,\pi]$) y $\varphi$ el ángulo de la proyección con el semieje $x^+$:
+
+$$x = r\operatorname{sen}\lambda\cos\varphi, \quad y = r\operatorname{sen}\lambda\operatorname{sen}\varphi, \quad z = r\cos\lambda, \qquad x^2 + y^2 + z^2 = r^2$$
+
+El jacobiano vale $r^2\operatorname{sen}\lambda$. Geométricamente, el elemento de volumen es un "ladrillo" de aristas $\Delta r$, $r\Delta\lambda$ (arco de meridiano) y $r\operatorname{sen}\lambda\,\Delta\varphi$ (arco de paralelo):
+
+$$\Delta V = \Delta r\cdot r\,\Delta\lambda\cdot r\operatorname{sen}\lambda\,\Delta\varphi = r^2\operatorname{sen}\lambda\,\Delta r\,\Delta\lambda\,\Delta\varphi$$
+
+---
+
+## 9. Complementos: momentos estáticos y de inercia
+
+**Momento estático de primer orden** de una masa puntual respecto de un eje (o plano): masa · distancia. Para una lámina $D$ con densidad $\delta(x,y)$:
+
+$$M_x = \iint_D y\,\delta\,dx\,dy, \qquad M_y = \iint_D x\,\delta\,dx\,dy$$
+
+Para un sólido $V$: $M_{xy} = \iiint z\,\delta$, $M_{yz} = \iiint x\,\delta$, $M_{xz} = \iiint y\,\delta$.
+
+**Centro de masa:** es el punto donde habría que concentrar toda la masa para conservar los momentos estáticos: $x_G = \dfrac{M_y}{M}$, $y_G = \dfrac{M_x}{M}$ (lámina), y $x_G = \dfrac{M_{yz}}{M}$, $y_G = \dfrac{M_{xz}}{M}$, $z_G = \dfrac{M_{xy}}{M}$ (sólido).
+
+**Momentos de inercia** ($I = m\,d^2$ para una masa puntual):
+
+| | Respecto del eje $x$ | Respecto del eje $y$ | Respecto del eje $z$ |
+|---|---|---|---|
+| Lámina | $\iint y^2\delta$ | $\iint x^2\delta$ | $\iint(x^2 + y^2)\delta$ |
+| Sólido | $\iiint(y^2 + z^2)\delta$ | $\iiint(x^2 + z^2)\delta$ | $\iiint(x^2 + y^2)\delta$ |
+
+---
+
+## 10. Estrategia para los ejercicios
 
 1. **Dibujar la región o el cuerpo** y hallar las intersecciones.
 2. **Elegir las coordenadas:**
@@ -167,7 +282,7 @@ En cartesianas, la integral doble se separa en el producto de dos integrales igu
 
 ---
 
-## 7. Resumen de fórmulas
+## 11. Resumen de fórmulas
 
 | Concepto | Fórmula |
 |---|---|

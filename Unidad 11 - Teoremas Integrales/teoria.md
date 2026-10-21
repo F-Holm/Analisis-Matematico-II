@@ -1,6 +1,6 @@
 # Unidad 11 — Teoremas integrales: Green, Gauss (divergencia) y Stokes (rotor)
 
-Resumen del material teórico de la unidad ([U11-Teoria-Teoremas-Integrales.pdf](../aula-virtual/11-Teoremas-Integrales/U11-Teoria-Teoremas-Integrales.pdf)), complementado con el resumen [Condiciones de existencia de la función potencial](../aula-virtual/08-Curvas-Integrales-Linea/Funcion-Potencial-Condiciones.pdf) y los [repasos del segundo parcial](../aula-virtual/Parciales/Segundo-Parcial/Repaso-Segundo-Parcial-Resuelto.pdf).
+Resumen del material teórico de la unidad ([U11-Teoria-Teoremas-Integrales.pdf](../aula-virtual/11-Teoremas-Integrales/U11-Teoria-Teoremas-Integrales.pdf)), complementado con el resumen [Condiciones de existencia de la función potencial](../aula-virtual/08-Curvas-Integrales-Linea/Funcion-Potencial-Condiciones.pdf) y los [repasos del segundo parcial](../aula-virtual/Parciales/Segundo-Parcial/Repaso-Segundo-Parcial-Resuelto.pdf) y el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -144,7 +144,62 @@ $$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec
 
 ---
 
-## 6. Estrategia para los ejercicios
+## 6. Complementos: el operador nabla e interpretaciones físicas
+
+**Operador nabla:** $\nabla = \dfrac{\partial}{\partial x}\breve\imath + \dfrac{\partial}{\partial y}\breve\jmath + \dfrac{\partial}{\partial z}\breve k$. Se comporta como un vector, así que puede:
+
+- multiplicar a un campo escalar: **gradiente** $\nabla\phi$ (da un campo vectorial);
+- multiplicarse **escalarmente** por un campo vectorial: **divergencia** $\nabla\cdot\vec F$ (da un campo escalar);
+- multiplicarse **vectorialmente** por un campo vectorial: **rotor** $\nabla\times\vec F$ (da un campo vectorial).
+
+### Interpretación física de la divergencia
+
+Sea $\vec F = \delta\,\vec v$ ($\delta$ densidad de un fluido, $\vec v$ su velocidad): $\vec F$ mide la masa por unidad de área y de tiempo. En un prisma chico de aristas $\Delta x, \Delta y, \Delta z$ con vértice en $P_0$, en la dirección $\breve\jmath$ la masa que sale por una cara menos la que entra por la opuesta es
+
+$$[F_2(x_0, y_0 + \Delta y, z_0) - F_2(x_0, y_0, z_0)]\,\Delta x\,\Delta z$$
+
+Dividiendo por el volumen y tomando límite se obtiene $\dfrac{\partial F_2}{\partial y}$. Sumando las tres direcciones:
+
+$$\operatorname{div}\vec F(P_0) = \frac{\partial F_1}{\partial x} + \frac{\partial F_2}{\partial y} + \frac{\partial F_3}{\partial z}$$
+
+es la variación total de masa por unidad de tiempo y de volumen en $P_0$.
+
+- $\operatorname{div}\vec F > 0$: en $P_0$ hay una **fuente** (manantial): se genera fluido.
+- $\operatorname{div}\vec F < 0$: hay un **sumidero** (pozo): se pierde fluido.
+
+**Interpretación del teorema de la divergencia:** el flujo neto que sale por la frontera de $V$ (lo que sale menos lo que entra) es igual a la masa que se genera adentro por unidad de tiempo.
+
+### Interpretación física del rotor
+
+En un cuerpo rígido que gira alrededor de un eje con velocidad angular $\vec w$, la velocidad tangencial de cada punto es $\vec v = \vec w\times\vec r$. Si gira alrededor del eje $z$, $\vec w = w\breve k$ y $\vec v = (-wy,\ wx,\ 0)$:
+
+$$\nabla\times\vec v = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ \partial_x & \partial_y & \partial_z \\ -wy & wx & 0 \end{vmatrix} = (0,\ 0,\ 2w) = 2\vec w$$
+
+**El rotor del campo de velocidades es el doble de la velocidad angular.** Un campo con rotor nulo no produce rotaciones: es **irrotacional** (como los campos de gradientes).
+
+---
+
+## 7. Complementos: demostración de Green y consecuencias
+
+**Demostración de Green** (para un recinto $R$ tal que toda paralela a los ejes corta a su borde en a lo sumo dos puntos). Se demuestran por separado $\iint_R Q'_x = \oint Q\,dy$ y $-\iint_R P'_y = \oint P\,dx$.
+
+- Mirando $R$ como tipo I, $y_1(x) \le y \le y_2(x)$:
+
+$$-\iint_R\frac{\partial P}{\partial y}\,dx\,dy = -\int_a^b\big[P(x, y_2(x)) - P(x, y_1(x))\big]dx = \int_{\text{abajo}}P\,dx + \int_{\text{arriba}}P\,dx = \oint_C P\,dx$$
+
+  (el arco de abajo se recorre de izquierda a derecha y el de arriba al revés, por eso aparecen los signos).
+
+- Mirando $R$ como tipo II, $x_1(y) \le x \le x_2(y)$, del mismo modo $\iint_R\frac{\partial Q}{\partial x} = \oint_C Q\,dy$.
+
+Sumando se obtiene el teorema. Si el recinto no cumple la condición, se lo divide en finitos recintos que sí la cumplen: las integrales sobre los cortes interiores se recorren dos veces en sentidos opuestos y se cancelan. $\blacksquare$
+
+**Consecuencia del teorema del rotor:** si dos superficies abiertas, orientables y regulares tienen **el mismo borde** $C$, el flujo del rotor a través de ambas es el mismo (las dos valen la circulación sobre $C$). Así se puede elegir la superficie más cómoda.
+
+**Hipótesis de Gauss (como en el resumen):** $\vec F$ con derivadas parciales continuas en un sólido simple $V$, proyectable sobre los tres planos coordenados, limitado por una superficie cerrada orientable con versor normal (exterior) que varía con continuidad.
+
+---
+
+## 8. Estrategia para los ejercicios
 
 1. **Circulación en el plano sobre una curva cerrada:** usar Green. Si hay un punto singular adentro, usar Green entre dos curvas. Si la curva es abierta, cerrarla.
 2. **Circulación en el espacio sobre una curva cerrada:** usar Stokes, eligiendo una superficie simple y la normal compatible con el sentido de recorrido.
@@ -157,7 +212,7 @@ $$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec
 
 ---
 
-## 7. Resumen de fórmulas
+## 9. Resumen de fórmulas
 
 | Teorema | Fórmula |
 |---|---|

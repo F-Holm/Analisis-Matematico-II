@@ -1,6 +1,6 @@
 # Unidad 12 — Ecuaciones diferenciales (2.ª parte)
 
-Resumen del material teórico de la unidad ([U12-Teoria-Ecuaciones-Diferenciales-2.pdf](../aula-virtual/12-Ecuaciones-Diferenciales-2/U12-Teoria-Ecuaciones-Diferenciales-2.pdf)), de las [notas de clase sobre líneas de campo](../aula-virtual/12-Ecuaciones-Diferenciales-2/Notas-2021-10-26-Lineas-de-Campo.pdf), del [método de variación de parámetros anotado](../aula-virtual/12-Ecuaciones-Diferenciales-2/Metodo-Variacion-Parametros-Anotado.pdf) y de los pizarrones sobre ecuaciones homogéneas y exactas ([2024](../aula-virtual/01-Ecuaciones-Diferenciales-1/Pizarron-2024-10-22-EDO-Homogeneas-Exactas.pdf), [2021](../aula-virtual/01-Ecuaciones-Diferenciales-1/Notas-2021-10-26-EDO-Homogeneas-Exactas.pdf)).
+Resumen del material teórico de la unidad ([U12-Teoria-Ecuaciones-Diferenciales-2.pdf](../aula-virtual/12-Ecuaciones-Diferenciales-2/U12-Teoria-Ecuaciones-Diferenciales-2.pdf)), de las [notas de clase sobre líneas de campo](../aula-virtual/12-Ecuaciones-Diferenciales-2/Notas-2021-10-26-Lineas-de-Campo.pdf), del [método de variación de parámetros anotado](../aula-virtual/12-Ecuaciones-Diferenciales-2/Metodo-Variacion-Parametros-Anotado.pdf) y de los pizarrones sobre ecuaciones homogéneas y exactas ([2024](../aula-virtual/01-Ecuaciones-Diferenciales-1/Pizarron-2024-10-22-EDO-Homogeneas-Exactas.pdf), [2021](../aula-virtual/01-Ecuaciones-Diferenciales-1/Notas-2021-10-26-EDO-Homogeneas-Exactas.pdf)), complementado con el [resumen de UTNianos](../UTNianos/Resumen%20AM2.pdf).
 
 **Objetivos de la unidad:**
 
@@ -147,7 +147,96 @@ El equilibrio (régimen permanente) es $x \to F/k$, es decir $v \to E$.
 
 ---
 
-## 7. Estrategia para los ejercicios
+## 7. Complementos: ecuaciones homogéneas y exactas
+
+**Función homogénea de grado $n$:** $F(tx, ty) = t^nF(x,y)$ para todo $t$. Ejemplos:
+
+- $x^3 + x^2y$ es homogénea de grado 3;
+- $e^{x/y}$ es homogénea de grado 0.
+
+**Propiedad:** toda función homogénea de grado 0 se puede escribir en función de $y/x$. Tomando $t = \frac1x$: $F(x,y) = F\left(1, \frac yx\right) = G\left(\frac yx\right)$. Por eso $y' = F(x,y)$, con $F$ homogénea de grado 0, se resuelve con $z = y/x$:
+
+$$\ln|x| = \int\frac{dz}{G(z) - z} + C$$
+
+(los valores con $G(z) = z$ pueden dar soluciones singulares).
+
+**Exactas: un error a evitar.** La función potencial $U(x,y)$ es un campo escalar de **dos** variables, y lo que se busca es una familia de funciones de **una** variable: las **curvas de nivel** $U(x,y) = C$. Es un error grave dar $U(x,y)$ como solución general.
+
+**Ejemplo:** $(\cos y + y\cos x)\,dx + (\operatorname{sen}x - x\operatorname{sen}y)\,dy = 0$. Es exacta: $M'_y = -\operatorname{sen}y + \cos x = N'_x$. Integrando: $U = x\cos y + y\operatorname{sen}x + \varphi(y)$, y derivando respecto de $y$, $\varphi' = 0$. **S.G.:** $x\cos y + y\operatorname{sen}x = C$.
+
+**Deducción del factor integrante.** Se busca $\mu$ tal que $\mu M\,dx + \mu N\,dy = 0$ sea exacta: $(\mu M)'_y = (\mu N)'_x$. En general es una ecuación en derivadas parciales para $\mu$; sólo se puede resolver si $\mu$ depende de una sola variable.
+
+- Si $\mu = \mu(x)$: $\mu M'_y = \mu'N + \mu N'_x$, así que $\dfrac{\mu'}{\mu} = \dfrac{M'_y - N'_x}{N}$. Hace falta que el segundo miembro dependa **sólo de $x$**.
+- Si $\mu = \mu(y)$: $\mu'M + \mu M'_y = \mu N'_x$, así que $\dfrac{\mu'}{\mu} = \dfrac{N'_x - M'_y}{M}$. Hace falta que dependa **sólo de $y$**.
+
+**Líneas de campo y equipotenciales.** Si $\vec F = \nabla U$, las **equipotenciales** son las curvas de nivel de $U$. Como el gradiente es perpendicular a ellas y tangente a las líneas de campo, **las líneas de campo son las trayectorias ortogonales de las equipotenciales**.
+
+---
+
+## 8. Complementos: teoría de las EDO lineales de 2.º orden
+
+**Funciones linealmente independientes.** $\{y_1, \dots, y_n\}$ es **L.I.** en $(a,b)$ si la única combinación lineal que da la función nula (para todo $x$ del intervalo) es la de coeficientes todos nulos.
+
+**Wronskiano** de $n$ funciones derivables hasta el orden $n - 1$:
+
+$$W(y_1, \dots, y_n) = \begin{vmatrix} y_1 & y_2 & \cdots & y_n \\ y_1' & y_2' & \cdots & y_n' \\ \vdots & & & \vdots \\ y_1^{(n-1)} & y_2^{(n-1)} & \cdots & y_n^{(n-1)} \end{vmatrix}$$
+
+**Teorema:** si $W \ne 0$ en $(a,b)$, las funciones son L.I. *Demostración:* si $C_1y_1 + \dots + C_ny_n = 0$, derivando $n - 1$ veces se obtiene un sistema lineal homogéneo en los $C_i$ cuyo determinante es $W \ne 0$; la única solución es la trivial. $\blacksquare$
+
+**Ecuación lineal de 2.º orden:** $a_0(x)y'' + a_1(x)y' + a_2(x)y = Q(x)$. Si los $a_i$ son constantes, es a **coeficientes constantes**; si $Q = 0$, es **homogénea** (reducida).
+
+**Propiedades de la homogénea:**
+
+1. Si $y_1$ e $y_2$ son soluciones, toda combinación lineal $C_1y_1 + C_2y_2$ también lo es (reemplazando, cada paréntesis se anula).
+2. Si $y_1$, $y_2$ son soluciones **L.I.**, toda solución $y$ (con $y(x_0) = y_0$, $y'(x_0) = y_0'$) es combinación de ellas: el sistema $C_1y_1(x_0) + C_2y_2(x_0) = y_0$, $C_1y_1'(x_0) + C_2y_2'(x_0) = y_0'$ tiene solución única porque su determinante es el wronskiano. Entonces la **S.G. es $C_1y_1 + C_2y_2$**.
+
+**Ecuación característica.** Proponiendo $y = e^{rx}$: $e^{rx}(a_0r^2 + a_1r + a_2) = 0$, y como $e^{rx} \ne 0$, $a_0r^2 + a_1r + a_2 = 0$.
+
+- **Raíces reales distintas:** $y_1 = e^{r_1x}$, $y_2 = e^{r_2x}$, con $W = e^{(r_1+r_2)x}(r_2 - r_1) \ne 0$ ⇒ L.I.
+- **Raíces complejas $a \pm bi$:** con la fórmula de Euler $e^{i\varphi} = \cos\varphi + i\operatorname{sen}\varphi$,
+
+$$c_1e^{(a+bi)x} + c_2e^{(a-bi)x} = e^{ax}\big[(c_1 + c_2)\cos bx + i(c_1 - c_2)\operatorname{sen}bx\big] = e^{ax}(A_1\cos bx + A_2\operatorname{sen}bx)$$
+
+- **Raíz doble $r_1$:** además de $e^{r_1x}$, también $y_2 = x\,e^{r_1x}$ es solución. Al reemplazar queda $e^{r_1x}[x(a_0r_1^2 + a_1r_1 + a_2) + (2a_0r_1 + a_1)]$; el primer paréntesis es 0 porque $r_1$ es raíz, y el segundo también, porque una raíz doble es raíz del polinomio derivado. Su wronskiano es $e^{2r_1x} \ne 0$.
+
+**Ecuación no homogénea:**
+
+- **Teorema 1:** la diferencia de dos soluciones de la completa es solución de la homogénea (se restan las ecuaciones).
+- **Teorema 2:** toda solución de la completa es $y_P + C_1u_1 + C_2u_2$. Si $\varphi$ es solución, $\varphi - y_P$ resuelve la homogénea, así que es combinación de $u_1$ y $u_2$. Por lo tanto **$y = y_H + y_P$**.
+
+### Deducción de variación de parámetros
+
+Se propone $y_P = C_1(x)u_1 + C_2(x)u_2$. Hay dos incógnitas y una sola ecuación, así que se impone una condición extra que simplifique: $C_1'u_1 + C_2'u_2 = 0$. Entonces $y_P' = C_1u_1' + C_2u_2'$, y al reemplazar en $a_0y'' + a_1y' + a_2y = Q$ los términos con $C_1$ y $C_2$ se anulan (porque $u_1$, $u_2$ resuelven la homogénea). Queda el sistema:
+
+$$\begin{cases} C_1'u_1 + C_2'u_2 = 0 \\ C_1'u_1' + C_2'u_2' = \dfrac{Q(x)}{a_0} \end{cases}$$
+
+Por Cramer, con $W = u_1u_2' - u_2u_1' \ne 0$: $C_1' = -\dfrac{u_2\,Q/a_0}{W}$ y $C_2' = \dfrac{u_1\,Q/a_0}{W}$. Se integra y se reemplaza.
+
+> Si el coeficiente principal $a_0$ no es 1, en el segundo miembro va $Q/a_0$.
+
+### Coeficientes indeterminados: tabla completa
+
+| $Q(x)$ | Condición en la ecuación característica | Se propone $y_P$ |
+|---|---|---|
+| Polinomio de grado $n$ | 0 no es raíz ($a_2 \ne 0$) | polinomio **completo** de grado $n$ |
+| | 0 es raíz simple ($a_2 = 0$) | $x\cdot$ polinomio completo de grado $n$ |
+| | 0 es raíz doble ($a_1 = a_2 = 0$) | $x^2\cdot$ polinomio completo de grado $n$ |
+| $B\,e^{\alpha x}$ | $\alpha$ no es raíz | $A\,e^{\alpha x}$ |
+| | $\alpha$ raíz simple | $A\,x\,e^{\alpha x}$ |
+| | $\alpha$ raíz doble | $A\,x^2e^{\alpha x}$ |
+| $M\cos\beta x + N\operatorname{sen}\beta x$ | $\pm\beta i$ no son raíces | $A_1\cos\beta x + A_2\operatorname{sen}\beta x$ |
+| | $\pm\beta i$ son raíces | $x(A_1\cos\beta x + A_2\operatorname{sen}\beta x)$ |
+| Combinación lineal de los anteriores | | combinación de las propuestas |
+
+Aunque $M$ o $N$ sean 0, se propone **seno y coseno**; y aunque al polinomio le falten términos, se propone el polinomio **completo**.
+
+**Ejemplo:** $y'' - 2y' = x^2 + 3e^{2x} + \cos x$. La característica $\lambda^2 - 2\lambda = 0$ tiene raíces $0$ y $2$, así que:
+
+$$y_P = x(A_2x^2 + A_1x + A_0) + A_3\,x\,e^{2x} + A_4\cos x + A_5\operatorname{sen}x$$
+
+---
+
+## 9. Estrategia para los ejercicios
 
 1. **Primer orden:** ¿es separable? ¿lineal? ¿homogénea? ¿exacta? Si no, ¿se puede hacer exacta con $\mu(x)$ o $\mu(y)$?
 2. **Lineal de orden $n$:**
@@ -159,7 +248,7 @@ El equilibrio (régimen permanente) es $x \to F/k$, es decir $v \to E$.
 
 ---
 
-## 8. Resumen de fórmulas
+## 10. Resumen de fórmulas
 
 | Tema | Fórmula |
 |---|---|
