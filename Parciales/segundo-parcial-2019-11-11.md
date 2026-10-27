@@ -33,12 +33,12 @@ Determine si el campo $\vec f(x,y) = (2xy + \cos(x),\ x^2 + 3y^2)$ es conservati
 
 **Paso 2 — Potencial.**
 
-- $\varphi = \int(2xy + \cos x)\,dx = x^2y + \operatorname{sen}x + D(y)$.
+- $\varphi = \int(2xy + \cos x)\thinspace dx = x^2y + \mathop{\mathrm{sen}}x + D(y)$.
 - $\varphi'_y = x^2 + D'(y) = x^2 + 3y^2 \Rightarrow D' = 3y^2 \Rightarrow D = y^3 + k$.
 
 </details>
 
-**Respuesta:** Es conservativo; $\varphi(x,y) = x^2y + \operatorname{sen}(x) + y^3 + k$.
+**Respuesta:** Es conservativo; $\varphi(x,y) = x^2y + \mathop{\mathrm{sen}}(x) + y^3 + k$.
 
 </details>
 
@@ -56,13 +56,13 @@ Enuncie el teorema de Green y utilícelo, con un campo vectorial conveniente, pa
 
 **Enunciado:** si $D$ es una región acotada cuya frontera $C$ es una curva cerrada, simple, suave a trozos y orientada positivamente, y $\vec f = (P,Q) \in C^1$ en un abierto que contiene a $D$, entonces:
 
-$$\oint_C P\,dx + Q\,dy = \iint_D(Q'_x - P'_y)\,dx\,dy$$
+$$\oint_C P\thinspace dx + Q\thinspace dy = \iint_D(Q'_x - P'_y)\thinspace dx\thinspace dy$$
 
 **Paso 1 — Campo conveniente.** $\vec f = (0, x)$ ⇒ $Q'_x - P'_y = 1$ ⇒ $\oint_C\vec f\cdot d\vec s = \text{Área}(D)$.
 
 **Paso 2 — Integral de línea.** $\vec\alpha'(t) = (3t^2 - 4,\ -4t^3)$:
 
-$$\oint\vec f\cdot d\vec s = \int_{-2}^2(0,\ t^3 - 4t)\cdot(3t^2 - 4,\ -4t^3)\,dt = \int_{-2}^2(-4t^6 + 16t^4)\,dt$$
+$$\oint\vec f\cdot d\vec s = \int_{-2}^2(0,\ t^3 - 4t)\cdot(3t^2 - 4,\ -4t^3)\thinspace dt = \int_{-2}^2(-4t^6 + 16t^4)\thinspace dt$$
 
 **Paso 3 — Calcular** (el integrando es par):
 
@@ -94,11 +94,11 @@ Calcule la masa de una chapa con forma de la **superficie** definida por $S: z =
 
 **Paso 2 — Integrando.** La raíz de la densidad se cancela con la del elemento de área:
 
-$$M = \iint_D\frac{u^2 + v^2}{\sqrt{1 + 4u^2 + 4v^2}}\sqrt{1 + 4u^2 + 4v^2}\,du\,dv = \iint_D(u^2 + v^2)\,du\,dv$$
+$$M = \iint_D\frac{u^2 + v^2}{\sqrt{1 + 4u^2 + 4v^2}}\sqrt{1 + 4u^2 + 4v^2}\thinspace du\thinspace dv = \iint_D(u^2 + v^2)\thinspace du\thinspace dv$$
 
 **Paso 3 — Polares.**
 
-$$M = \int_0^{2\pi}\!\!\int_1^2 r^2\cdot r\,dr\,d\theta = 2\pi\,\frac{16 - 1}{4} = \frac{15\pi}{2}$$
+$$M = \int_0^{2\pi}\negthinspace\negthinspace\int_1^2 r^2\cdot r\thinspace dr\thinspace d\theta = 2\pi\thinspace\frac{16 - 1}{4} = \frac{15\pi}{2}$$
 
 </details>
 
@@ -124,7 +124,7 @@ a lo largo de la curva borde de la superficie $S: z = 4 - x^2$, $y \le 5$, $x \g
 
 **Paso 1 — Rotor.**
 
-$$\operatorname{rot}\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y) = (0,\ -1,\ -2y)$$
+$$\mathop{\mathrm{rot}}\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y) = (0,\ -1,\ -2y)$$
 
 Las funciones $g(x)$ y $g(y)$ no aportan.
 
@@ -134,7 +134,7 @@ Las funciones $g(x)$ y $g(y)$ no aportan.
 
 **Paso 4 — Stokes.**
 
-$$\oint_{\partial S}\vec f\cdot d\vec s = \iint_D(0, -1, -2v)\cdot(2u, 0, 1)\,du\,dv = \iint_D -2v\,du\,dv = -2\cdot2\cdot\frac{25}{2} = -50$$
+$$\oint_{\partial S}\vec f\cdot d\vec s = \iint_D(0, -1, -2v)\cdot(2u, 0, 1)\thinspace du\thinspace dv = \iint_D -2v\thinspace du\thinspace dv = -2\cdot2\cdot\frac{25}{2} = -50$$
 
 </details>
 
@@ -148,7 +148,7 @@ $$\oint_{\partial S}\vec f\cdot d\vec s = \iint_D(0, -1, -2v)\cdot(2u, 0, 1)\,du
 
 Sea $g: \mathbb{R} \to \mathbb{R}$ una función $C^2$ y $\vec f(x,y,z) = (g'(x),\ 4yg(x),\ 8xz + 3)$.
 
-- a) Halle $g$ tal que $\operatorname{div}\vec f(x,y,z) = 4$ y $\vec f(0,1,1) = (4,\ 4,\ 3)$.
+- a) Halle $g$ tal que $\mathop{\mathrm{div}}\vec f(x,y,z) = 4$ y $\vec f(0,1,1) = (4,\ 4,\ 3)$.
 - b) Con la función $g$ hallada en a), calcule el flujo de $\vec f$ a través de la superficie $S: z = 4 - x^2 - y^2$, $z \ge 0$ orientada con vectores normales con tercera componente positiva.
 
 <details>
@@ -159,11 +159,11 @@ Sea $g: \mathbb{R} \to \mathbb{R}$ una función $C^2$ y $\vec f(x,y,z) = (g'(x),
 
 **a)**
 
-*Ecuación:* $\operatorname{div}\vec f = g'' + 4g + 8x = 4$ ⇒ $g'' + 4g = 4 - 8x$.
+*Ecuación:* $\mathop{\mathrm{div}}\vec f = g'' + 4g + 8x = 4$ ⇒ $g'' + 4g = 4 - 8x$.
 
 *Condiciones:* $\vec f(0,1,1) = (g'(0),\ 4g(0),\ 3) = (4,4,3)$ ⇒ $g'(0) = 4$ y $g(0) = 1$.
 
-*Homogénea:* $\lambda^2 + 4 = 0 \Rightarrow \lambda = \pm2i$ ⇒ $g_H = C_1\cos2x + C_2\operatorname{sen}2x$.
+*Homogénea:* $\lambda^2 + 4 = 0 \Rightarrow \lambda = \pm2i$ ⇒ $g_H = C_1\cos2x + C_2\mathop{\mathrm{sen}}2x$.
 
 *Particular:* $g_P = Ax + B$ ⇒ $4Ax + 4B = 4 - 8x$ ⇒ $A = -2$, $B = 1$.
 
@@ -174,7 +174,7 @@ Sea $g: \mathbb{R} \to \mathbb{R}$ una función $C^2$ y $\vec f(x,y,z) = (g'(x),
 
 **b)** *Cerrar con la tapa* $T$: $z = 0$, $x^2+y^2 \le 4$. Divergencia:
 
-$$\iiint_V 4\,dV = 4\int_0^{2\pi}\!\!\int_0^2(4 - r^2)\,r\,dr\,d\theta = 4\cdot2\pi\cdot4 = 32\pi$$
+$$\iiint_V 4\thinspace dV = 4\int_0^{2\pi}\negthinspace\negthinspace\int_0^2(4 - r^2)\thinspace r\thinspace dr\thinspace d\theta = 4\cdot2\pi\cdot4 = 32\pi$$
 
 *Tapa* (normal saliente $(0,0,-1)$): $\vec f\cdot\breve n = -(8xz + 3) = -3$ en $z = 0$ ⇒ $\Phi_T = -3\cdot4\pi = -12\pi$.
 
@@ -184,7 +184,7 @@ $$\iiint_V 4\,dV = 4\int_0^{2\pi}\!\!\int_0^2(4 - r^2)\,r\,dr\,d\theta = 4\cdot2
 
 **Respuesta:**
 
-- a) $g(x) = 3\operatorname{sen}(2x) - 2x + 1$.
+- a) $g(x) = 3\mathop{\mathrm{sen}}(2x) - 2x + 1$.
 - b) $44\pi$.
 
 </details>
@@ -201,15 +201,15 @@ Calcule la circulación de $\vec f(x,y,z) = (-y,\ x,\ z)$ a lo largo de la curva
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Parametrización.** $x = 3\cos t$, $z = 3\operatorname{sen}t$ e $y = 3 - 3\cos t$, con $t\in[0, \pi/2]$. Recorre la curva desde $(3,0,0)$ hasta $(0,3,3)$.
+**Paso 1 — Parametrización.** $x = 3\cos t$, $z = 3\mathop{\mathrm{sen}}t$ e $y = 3 - 3\cos t$, con $t\in[0, \pi/2]$. Recorre la curva desde $(3,0,0)$ hasta $(0,3,3)$.
 
-**Paso 2 — Integrando.** $\vec\alpha' = (-3\operatorname{sen}t,\ 3\operatorname{sen}t,\ 3\cos t)$ y $\vec f(\vec\alpha) = (-3 + 3\cos t,\ 3\cos t,\ 3\operatorname{sen}t)$:
+**Paso 2 — Integrando.** $\vec\alpha' = (-3\mathop{\mathrm{sen}}t,\ 3\mathop{\mathrm{sen}}t,\ 3\cos t)$ y $\vec f(\vec\alpha) = (-3 + 3\cos t,\ 3\cos t,\ 3\mathop{\mathrm{sen}}t)$:
 
-$$\vec f\cdot\vec\alpha' = 9\operatorname{sen}t - 9\operatorname{sen}t\cos t + 9\operatorname{sen}t\cos t + 9\operatorname{sen}t\cos t = 9\operatorname{sen}t + 9\operatorname{sen}t\cos t$$
+$$\vec f\cdot\vec\alpha' = 9\mathop{\mathrm{sen}}t - 9\mathop{\mathrm{sen}}t\cos t + 9\mathop{\mathrm{sen}}t\cos t + 9\mathop{\mathrm{sen}}t\cos t = 9\mathop{\mathrm{sen}}t + 9\mathop{\mathrm{sen}}t\cos t$$
 
 **Paso 3 — Integral.**
 
-$$\int_0^{\pi/2}(9\operatorname{sen}t + 9\operatorname{sen}t\cos t)\,dt = 9 + \frac92 = \frac{27}{2}$$
+$$\int_0^{\pi/2}(9\mathop{\mathrm{sen}}t + 9\mathop{\mathrm{sen}}t\cos t)\thinspace dt = 9 + \frac92 = \frac{27}{2}$$
 
 </details>
 

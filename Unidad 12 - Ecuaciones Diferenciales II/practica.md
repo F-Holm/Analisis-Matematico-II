@@ -16,7 +16,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 Resuelva las siguiente ecuaciones diferenciales homogéneas de 1° orden.
 
 - a) $y' = \dfrac yx + \dfrac{y^2}{x^2}$ con $y(1) = 1$.
-- b) $(x^2 + y^2)\,dx - 2xy\,dy = 0$.
+- b) $(x^2 + y^2)\thinspace dx - 2xy\thinspace dy = 0$.
 - c) $\dfrac{dy}{dx} = \dfrac{y + x\cos^2(y/x)}{x}$ con $y(1) = \dfrac\pi4$.
 - d) $y' = y/(x - y)$.
 
@@ -38,19 +38,19 @@ $$y\ln|x| - y + x = 0$$
 
 **b)** $y' = \dfrac{x^2 + y^2}{2xy} = \dfrac{1 + z^2}{2z}$ ⇒ $xz' = \dfrac{1 + z^2}{2z} - z = \dfrac{1 - z^2}{2z}$.
 
-$$\frac{2z\,dz}{1 - z^2} = \frac{dx}{x} \Rightarrow -\ln|1 - z^2| = \ln|x| + c \Rightarrow 1 - \frac{y^2}{x^2} = \frac Kx$$
+$$\frac{2z\thinspace dz}{1 - z^2} = \frac{dx}{x} \Rightarrow -\ln|1 - z^2| = \ln|x| + c \Rightarrow 1 - \frac{y^2}{x^2} = \frac Kx$$
 
 Multiplicando por $x^2$: $x^2 - y^2 = Kx$, es decir $y^2 = x^2 + Cx$.
 
 **c)** $y' = z + \cos^2z$ ⇒ $xz' = \cos^2z$.
 
-$$\sec^2z\,dz = \frac{dx}{x} \Rightarrow \tan z = \ln|x| + C$$
+$$\sec^2z\thinspace dz = \frac{dx}{x} \Rightarrow \tan z = \ln|x| + C$$
 
-Con $y(1) = \frac\pi4$: $\tan\frac\pi4 = 1 = C$. Resultado: $\operatorname{tg}(y/x) = 1 + \ln|x|$.
+Con $y(1) = \frac\pi4$: $\tan\frac\pi4 = 1 = C$. Resultado: $\mathop{\mathrm{tg}}(y/x) = 1 + \ln|x|$.
 
 **d)** $y' = \dfrac{z}{1 - z}$ ⇒ $xz' = \dfrac{z}{1-z} - z = \dfrac{z^2}{1 - z}$.
 
-$$\frac{(1 - z)\,dz}{z^2} = \frac{dx}{x} \Rightarrow -\frac1z - \ln|z| = \ln|x| + c$$
+$$\frac{(1 - z)\thinspace dz}{z^2} = \frac{dx}{x} \Rightarrow -\frac1z - \ln|z| = \ln|x| + c$$
 
 Volviendo a $y$: $-\dfrac xy - \ln|y| + \ln|x| = \ln|x| + c$, así que $-\dfrac xy - \ln|y| = c$. Multiplicando por $-y$:
 
@@ -62,7 +62,7 @@ $$y\ln|y| + Cy + x = 0$$
 
 - a) $y\ln|x| - y + x = 0$.
 - b) $y^2 = x^2 + Cx$.
-- c) $\operatorname{tg}(y/x) = 1 + \ln|x|$.
+- c) $\mathop{\mathrm{tg}}(y/x) = 1 + \ln|x|$.
 - d) $y\ln|y| + Cy + x = 0$.
 
 </details>
@@ -91,7 +91,7 @@ Es homogénea.
 
 **Paso 3 — Resolver** con $y = zx$:
 
-$$xz' = \frac{2z}{1 - z^2} - z = \frac{z(1 + z^2)}{1 - z^2} \ \Rightarrow\ \frac{1 - z^2}{z(1 + z^2)}\,dz = \frac{dx}{x}$$
+$$xz' = \frac{2z}{1 - z^2} - z = \frac{z(1 + z^2)}{1 - z^2} \ \Rightarrow\ \frac{1 - z^2}{z(1 + z^2)}\thinspace dz = \frac{dx}{x}$$
 
 Fracciones simples: $\dfrac{1 - z^2}{z(1+z^2)} = \dfrac1z - \dfrac{2z}{1 + z^2}$. Integrando:
 
@@ -131,9 +131,9 @@ Queda $\dfrac{dv}{du} = \dfrac{u - v}{u + v}$, homogénea. El punto $(-1,-2)$ es
 
 **Paso 2 — Resolver** con $v = zu$:
 
-$$z + uz' = \frac{1 - z}{1 + z} \Rightarrow uz' = \frac{1 - 2z - z^2}{1 + z} \Rightarrow \frac{(1 + z)\,dz}{1 - 2z - z^2} = \frac{du}{u}$$
+$$z + uz' = \frac{1 - z}{1 + z} \Rightarrow uz' = \frac{1 - 2z - z^2}{1 + z} \Rightarrow \frac{(1 + z)\thinspace dz}{1 - 2z - z^2} = \frac{du}{u}$$
 
-$$-\frac12\ln|1 - 2z - z^2| = \ln|u| + c \Rightarrow (1 - 2z - z^2)\,u^2 = K \Rightarrow u^2 - 2uv - v^2 = K$$
+$$-\frac12\ln|1 - 2z - z^2| = \ln|u| + c \Rightarrow (1 - 2z - z^2)\thinspace u^2 = K \Rightarrow u^2 - 2uv - v^2 = K$$
 
 **Paso 3 — Volver a $x$, $y$** con $u = x + 1$ y $v = y + 2$:
 
@@ -153,12 +153,12 @@ Reordenando: $y^2 - x^2 + 2xy + 2x + 6y = C$, válido donde $x + y + 3 \ne 0$.
 
 Resuelva las siguiente ecuaciones diferenciales totales exactas o convertibles a este tipo.
 
-- a) $2xy\,dx + (x^2 + \cos y)\,dy = 0$.
+- a) $2xy\thinspace dx + (x^2 + \cos y)\thinspace dy = 0$.
 - b) $y' = \dfrac{xy^2 - 1}{1 - x^2y}$ con $y(-1) = 1$.
-- c) $(6xy - y^3)\,dx + (4y + 3x^2 - 3xy^2)\,dy = 0$.
-- d) $(y^2 - y)\,dx + x\,dy = 0$.<sup>(\*)</sup>
-- e) $(x + y^2)\,dx - 2yx\,dy = 0$.
-- f) $y^2\cos x\,dx + (4 + 5y\operatorname{sen}x)\,dy = 0$.
+- c) $(6xy - y^3)\thinspace dx + (4y + 3x^2 - 3xy^2)\thinspace dy = 0$.
+- d) $(y^2 - y)\thinspace dx + x\thinspace dy = 0$.<sup>(\*)</sup>
+- e) $(x + y^2)\thinspace dx - 2yx\thinspace dy = 0$.
+- f) $y^2\cos x\thinspace dx + (4 + 5y\mathop{\mathrm{sen}}x)\thinspace dy = 0$.
 
 <sup>(\*)</sup> También es de variables separables, verifique que el método de resolución no cambia el tipo de solución obtenida.
 
@@ -168,7 +168,7 @@ Resuelva las siguiente ecuaciones diferenciales totales exactas o convertibles a
 <details>
 <summary>Solución paso a paso</summary>
 
-**Método:** con $M\,dx + N\,dy = 0$:
+**Método:** con $M\thinspace dx + N\thinspace dy = 0$:
 
 1. Verificar $M'_y = N'_x$.
 2. Hallar $U$ con $U'_x = M$ y $U'_y = N$.
@@ -179,11 +179,11 @@ Si no es exacta, se busca un factor integrante $\mu(x)$ o $\mu(y)$.
 **a)** $M'_y = 2x = N'_x$ ✓.
 
 - $U = x^2y + g(y)$.
-- $U'_y = x^2 + g' = x^2 + \cos y \Rightarrow g = \operatorname{sen}y$.
+- $U'_y = x^2 + g' = x^2 + \cos y \Rightarrow g = \mathop{\mathrm{sen}}y$.
 
-Resultado: $x^2y + \operatorname{sen}y = C$.
+Resultado: $x^2y + \mathop{\mathrm{sen}}y = C$.
 
-**b)** Pasando a forma diferencial: $(xy^2 - 1)\,dx + (x^2y - 1)\,dy = 0$, con $M'_y = 2xy = N'_x$ ✓.
+**b)** Pasando a forma diferencial: $(xy^2 - 1)\thinspace dx + (x^2y - 1)\thinspace dy = 0$, con $M'_y = 2xy = N'_x$ ✓.
 
 - $U = \dfrac{x^2y^2}{2} - x - y$.
 - Con $y(-1) = 1$: $\frac12 + 1 - 1 = \frac12 = C$.
@@ -198,7 +198,7 @@ Resultado: $3x^2y - xy^3 + 2y^2 = C$.
 
 **d)** $M'_y = 2y - 1$ y $N'_x = 1$: no es exacta.
 
-- $\dfrac{N'_x - M'_y}{M} = \dfrac{2 - 2y}{y(y-1)} = -\dfrac2y$ depende sólo de $y$ ⇒ $\mu(y) = e^{\int -2/y\,dy} = y^{-2}$.
+- $\dfrac{N'_x - M'_y}{M} = \dfrac{2 - 2y}{y(y-1)} = -\dfrac2y$ depende sólo de $y$ ⇒ $\mu(y) = e^{\int -2/y\thinspace dy} = y^{-2}$.
 - Queda $\left(1 - \frac1y\right)dx + \frac{x}{y^2}dy = 0$, que ahora es exacta: $M'_y = \frac{1}{y^2} = N'_x$.
 - $U = x - \dfrac xy = C$ ⇒ $\dfrac xy = x - C$ ⇒ $y = \dfrac{x}{x - C}$. Renombrando la constante, $y = \dfrac{x}{x + C}$.
 
@@ -213,21 +213,21 @@ Resultado: $3x^2y - xy^3 + 2y^2 = C$.
 **f)** $M'_y = 2y\cos x$ y $N'_x = 5y\cos x$: no es exacta.
 
 - $\dfrac{N'_x - M'_y}{M} = \dfrac{3y\cos x}{y^2\cos x} = \dfrac3y$ ⇒ $\mu(y) = y^3$.
-- Queda $y^5\cos x\,dx + (4y^3 + 5y^4\operatorname{sen}x)\,dy = 0$, exacta: $M'_y = 5y^4\cos x = N'_x$.
-- $U = y^5\operatorname{sen}x + g(y)$ con $g' = 4y^3$, así que $g = y^4$.
+- Queda $y^5\cos x\thinspace dx + (4y^3 + 5y^4\mathop{\mathrm{sen}}x)\thinspace dy = 0$, exacta: $M'_y = 5y^4\cos x = N'_x$.
+- $U = y^5\mathop{\mathrm{sen}}x + g(y)$ con $g' = 4y^3$, así que $g = y^4$.
 
-Resultado: $y^4 + y^5\operatorname{sen}x = C$.
+Resultado: $y^4 + y^5\mathop{\mathrm{sen}}x = C$.
 
 </details>
 
 **Respuesta:**
 
-- a) $x^2y + \operatorname{sen}(y) = C$.
+- a) $x^2y + \mathop{\mathrm{sen}}(y) = C$.
 - b) $2x + 2y - x^2y^2 + 1 = 0$.
 - c) $3x^2y - xy^3 + 2y^2 = C$.
 - d) $y = \dfrac{x}{x + C}$.
 - e) $\ln|x| = C + \dfrac{y^2}{x}$.
-- f) $y^4 + y^5\operatorname{sen}(x) = C$.
+- f) $y^4 + y^5\mathop{\mathrm{sen}}(x) = C$.
 
 </details>
 
@@ -235,7 +235,7 @@ Resultado: $y^4 + y^5\operatorname{sen}x = C$.
 
 ### 05) Cambio $y = x^2q(x)$
 
-Resuelva la ecuación $x^2y' = y + x\,e^{-1/x}$ mediante el reemplazo $y = x^2q(x)$.
+Resuelva la ecuación $x^2y' = y + x\thinspace e^{-1/x}$ mediante el reemplazo $y = x^2q(x)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -245,23 +245,23 @@ Resuelva la ecuación $x^2y' = y + x\,e^{-1/x}$ mediante el reemplazo $y = x^2q(
 
 **Paso 1 — Reemplazo.** $y = x^2q$ ⇒ $y' = 2xq + x^2q'$:
 
-$$x^2(2xq + x^2q') = x^2q + xe^{-1/x} \ \Rightarrow\ q' + \frac{2x - 1}{x^2}\,q = \frac{e^{-1/x}}{x^3}$$
+$$x^2(2xq + x^2q') = x^2q + xe^{-1/x} \ \Rightarrow\ q' + \frac{2x - 1}{x^2}\thinspace q = \frac{e^{-1/x}}{x^3}$$
 
 Queda una EDO **lineal** en $q$.
 
 **Paso 2 — Factor integrante.** $e^{\int(2/x - 1/x^2)dx} = e^{2\ln x + 1/x} = x^2e^{1/x}$. Multiplicando:
 
-$$\left(q\,x^2e^{1/x}\right)' = x^2e^{1/x}\cdot\frac{e^{-1/x}}{x^3} = \frac1x$$
+$$\left(q\thinspace x^2e^{1/x}\right)' = x^2e^{1/x}\cdot\frac{e^{-1/x}}{x^3} = \frac1x$$
 
-**Paso 3 — Integrar.** $q\,x^2e^{1/x} = \ln x + C$.
+**Paso 3 — Integrar.** $q\thinspace x^2e^{1/x} = \ln x + C$.
 
-**Paso 4 — Volver a $y$.** $y = x^2q = (C + \ln x)\,e^{-1/x}$.
+**Paso 4 — Volver a $y$.** $y = x^2q = (C + \ln x)\thinspace e^{-1/x}$.
 
 *Control:* como lineal directa, $y' - \frac{y}{x^2} = \frac{e^{-1/x}}{x}$, con $y_H = Ce^{-1/x}$ y $K' = 1/x$, se llega a lo mismo.
 
 </details>
 
-**Respuesta:** $y = (C + \ln(x))\,e^{-1/x}$.
+**Respuesta:** $y = (C + \ln(x))\thinspace e^{-1/x}$.
 
 </details>
 
@@ -276,7 +276,7 @@ Halle la S.G. de las siguientes ecuaciones diferenciales.
 - c) $y'' - 3y' + 2y = xe^x + 2x$.
 - d) $y'' + y = \sec(x)$.
 - e) $y'' - 2y' + y = x^{-1}e^x$.
-- f) $y'' + y' = 2\operatorname{sen}(x)$.
+- f) $y'' + y' = 2\mathop{\mathrm{sen}}(x)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -288,7 +288,7 @@ Halle la S.G. de las siguientes ecuaciones diferenciales.
 
 **a)** $r^2 + 8r + 25 = 0 \Rightarrow r = \dfrac{-8 \pm \sqrt{64 - 100}}{2} = -4 \pm 3i$.
 
-$$y = e^{-4x}(A\cos3x + B\operatorname{sen}3x)$$
+$$y = e^{-4x}(A\cos3x + B\mathop{\mathrm{sen}}3x)$$
 
 **b)** $r^3 - 5r^2 + 8r - 4 = (r - 1)(r - 2)^2$, porque $r = 1$ es raíz. Entonces $y_H = C_1e^x + (C_2 + C_3x)e^{2x}$.
 
@@ -297,16 +297,16 @@ $y_P = A$ (constante): $-4A = 2 \Rightarrow A = -\frac12$.
 **c)** $r^2 - 3r + 2 = 0 \Rightarrow r = 1, 2$.
 
 - Para $2x$: $y_P = Ax + B$ ⇒ $-3A + 2Ax + 2B = 2x$ ⇒ $A = 1$, $B = \frac32$.
-- Para $xe^x$: $r = 1$ es raíz simple ⇒ **resonancia**, se propone $y_P = (Cx^2 + Dx)e^x = p\,e^x$. Al reemplazar queda $(p'' - p')e^x = xe^x$ ⇒ $2C - 2Cx - D = x$ ⇒ $C = -\frac12$, $D = -1$.
+- Para $xe^x$: $r = 1$ es raíz simple ⇒ **resonancia**, se propone $y_P = (Cx^2 + Dx)e^x = p\thinspace e^x$. Al reemplazar queda $(p'' - p')e^x = xe^x$ ⇒ $2C - 2Cx - D = x$ ⇒ $C = -\frac12$, $D = -1$.
 
 $$y = C_1e^x + C_2e^{2x} - \frac{x^2}{2}e^x - xe^x + x + \frac32$$
 
-**d)** $y_1 = \cos x$, $y_2 = \operatorname{sen}x$ y $W = 1$. Con $f = \sec x$, que no admite coeficientes indeterminados, usamos **variación de parámetros**:
+**d)** $y_1 = \cos x$, $y_2 = \mathop{\mathrm{sen}}x$ y $W = 1$. Con $f = \sec x$, que no admite coeficientes indeterminados, usamos **variación de parámetros**:
 
-- $C_1' = -\operatorname{sen}x\sec x = -\tan x \Rightarrow C_1 = \ln|\cos x|$.
+- $C_1' = -\mathop{\mathrm{sen}}x\sec x = -\tan x \Rightarrow C_1 = \ln|\cos x|$.
 - $C_2' = \cos x\sec x = 1 \Rightarrow C_2 = x$.
 
-$$y = C_1\operatorname{sen}x + C_2\cos x + x\operatorname{sen}x + \cos x\ln|\cos x|$$
+$$y = C_1\mathop{\mathrm{sen}}x + C_2\cos x + x\mathop{\mathrm{sen}}x + \cos x\ln|\cos x|$$
 
 **e)** $(r - 1)^2 = 0$ ⇒ $y_1 = e^x$, $y_2 = xe^x$ y $W = e^{2x}$. Con $f = \dfrac{e^x}{x}$:
 
@@ -317,25 +317,25 @@ $y_P = -xe^x + xe^x\ln|x|$, y el término $-xe^x$ se absorbe en $y_H$:
 
 $$y = C_1e^x + C_2xe^x + xe^x\ln|x|$$
 
-**f)** $r^2 + r = 0 \Rightarrow r = 0, -1$. Proponemos $y_P = A\cos x + B\operatorname{sen}x$:
+**f)** $r^2 + r = 0 \Rightarrow r = 0, -1$. Proponemos $y_P = A\cos x + B\mathop{\mathrm{sen}}x$:
 
 - coeficiente de $\cos x$: $B - A = 0$;
-- coeficiente de $\operatorname{sen}x$: $-A - B = 2$.
+- coeficiente de $\mathop{\mathrm{sen}}x$: $-A - B = 2$.
 
 Entonces $A = B = -1$.
 
-$$y = C_1e^{-x} + C_2 - \operatorname{sen}x - \cos x$$
+$$y = C_1e^{-x} + C_2 - \mathop{\mathrm{sen}}x - \cos x$$
 
 </details>
 
 **Respuesta:**
 
-- a) $y = Ae^{-4x}\cos(3x) + Be^{-4x}\operatorname{sen}(3x)$.
+- a) $y = Ae^{-4x}\cos(3x) + Be^{-4x}\mathop{\mathrm{sen}}(3x)$.
 - b) $y = C_1e^x + C_2e^{2x} + C_3xe^{2x} - 2^{-1}$.
 - c) $y = C_1e^x + C_2e^{2x} - \dfrac{x^2}{2}e^x - xe^x + x + \dfrac32$.
-- d) $y = C_1\operatorname{sen}(x) + C_2\cos(x) + x\operatorname{sen}(x) + \cos(x)\ln(|\cos(x)|)$.
+- d) $y = C_1\mathop{\mathrm{sen}}(x) + C_2\cos(x) + x\mathop{\mathrm{sen}}(x) + \cos(x)\ln(|\cos(x)|)$.
 - e) $y = C_1e^x + C_2xe^x + xe^x\ln(|x|)$.
-- f) $y = C_1e^{-x} + C_2 - \operatorname{sen}(x) - \cos(x)$.
+- f) $y = C_1e^{-x} + C_2 - \mathop{\mathrm{sen}}(x) - \cos(x)$.
 
 </details>
 
@@ -343,7 +343,7 @@ $$y = C_1e^{-x} + C_2 - \operatorname{sen}x - \cos x$$
 
 ### 07) Función $g$ para que haya potencial
 
-Halle $g$ de manera que $\bar f(x,y) = (y\,g'(x),\ x^2 - g'(x))$ admita función potencial.
+Halle $g$ de manera que $\bar f(x,y) = (y\thinspace g'(x),\ x^2 - g'(x))$ admita función potencial.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -373,7 +373,7 @@ Halle la solución particular (S.P.).
 
 - a) S.P. de $y'' - y' - 2y = 4x^2$ tal que $y(0) = 1$, $y'(0) = 4$.
 - b) S.P. de $y'' - y' - 2y = e^{3x}$ con recta tangente de ecuación $y = 2x + 1$ en $(0,y_0)$.
-- c) S.P. de $y'' + 2y' + 2y = \operatorname{sen}(2x) + \cos(2x)$ tal que $y(0) = 0$, $y'(0) = 1$.
+- c) S.P. de $y'' + 2y' + 2y = \mathop{\mathrm{sen}}(2x) + \cos(2x)$ tal que $y(0) = 0$, $y'(0) = 1$.
 - d) S.P. de $y''' - 3y'' + 2y' = x^2 - x$ tal que $y(0) = 0$, $y'(0) = 2$, $y''(0) = 2$.
 - e) S.P. de $y'' - y = 2x - 1$ con recta normal de ecuación $x + 3y = 6$ en $(0,y_0)$.
 
@@ -403,12 +403,12 @@ Entonces $c_1 = c_2 = 2$.
 - $y_P = Ae^{3x}$: $(9 - 3 - 2)A = 1 \Rightarrow A = \frac14$.
 - $c_1 + c_2 + \frac14 = 1$ y $2c_1 - c_2 + \frac34 = 2$ ⇒ $c_1 = \frac23$, $c_2 = \frac{1}{12}$.
 
-**c)** *Homogénea:* $r = -1 \pm i$ ⇒ $y_H = e^{-x}(c_1\cos x + c_2\operatorname{sen}x)$.
+**c)** *Homogénea:* $r = -1 \pm i$ ⇒ $y_H = e^{-x}(c_1\cos x + c_2\mathop{\mathrm{sen}}x)$.
 
-*Particular:* $y_P = A\cos2x + B\operatorname{sen}2x$:
+*Particular:* $y_P = A\cos2x + B\mathop{\mathrm{sen}}2x$:
 
 - $\cos2x$: $-2A + 4B = 1$;
-- $\operatorname{sen}2x$: $-4A - 2B = 1$.
+- $\mathop{\mathrm{sen}}2x$: $-4A - 2B = 1$.
 
 Entonces $A = -\frac{3}{10}$ y $B = \frac{1}{10}$.
 
@@ -442,7 +442,7 @@ Entonces $c_2 = 0$, $c_1 = 1$, $c_0 = -1$.
 
 - a) $y = 2e^{-x} + 2e^{2x} + 2x - 2x^2 - 3$.
 - b) $y = \frac{1}{12}e^{-x} + \frac23e^{2x} + \frac14e^{3x}$.
-- c) $y = \dfrac{e^{-x}}{10}(3\cos(x) + 11\operatorname{sen}(x)) + \dfrac{1}{10}\operatorname{sen}(2x) - \dfrac{3}{10}\cos(2x)$.
+- c) $y = \dfrac{e^{-x}}{10}(3\cos(x) + 11\mathop{\mathrm{sen}}(x)) + \dfrac{1}{10}\mathop{\mathrm{sen}}(2x) - \dfrac{3}{10}\cos(2x)$.
 - d) $y = x - 1 + e^x + \dfrac{x^2}{2} + \dfrac{x^3}{6}$.
 - e) $y = 1 - 2x - 2e^{-x} + 3e^x$.
 
@@ -457,9 +457,9 @@ Dada $y'' + y = f(x)$, halle su S.G. sabiendo que $y = 2x^2$ es una S.P.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $y = y_H + y_P$, con $y_H = C_1\cos x + C_2\operatorname{sen}x$ (raíces $\pm i$) e $y_P = 2x^2$. No hace falta conocer $f$:
+**Respuesta:** $y = y_H + y_P$, con $y_H = C_1\cos x + C_2\mathop{\mathrm{sen}}x$ (raíces $\pm i$) e $y_P = 2x^2$. No hace falta conocer $f$:
 
-$$y = C_1\cos(x) + C_2\operatorname{sen}(x) + 2x^2$$
+$$y = C_1\cos(x) + C_2\mathop{\mathrm{sen}}(x) + 2x^2$$
 
 </details>
 
@@ -489,16 +489,16 @@ Siendo: $\underbrace{F - \underbrace{kx}_{\text{resorte}} - \underbrace{dx'}_{\t
 
 **a₁) $d = 12$:** $3r^2 + 12r + 87 = 0 \Rightarrow r^2 + 4r + 29 = 0 \Rightarrow r = -2 \pm 5i$, raíces complejas ⇒ **oscila**.
 
-$$x = 0{,}05 + e^{-2t}(A\cos5t + B\operatorname{sen}5t)$$
+$$x = 0{,}05 + e^{-2t}(A\cos5t + B\mathop{\mathrm{sen}}5t)$$
 
 - $x(0) = 0 \Rightarrow A = -0{,}05$.
 - $x'(0) = -2A + 5B = 0 \Rightarrow B = -0{,}02$.
 
-$$x(t) = \frac{1}{100}\left[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\operatorname{sen}(5t)\right]$$
+$$x(t) = \frac{1}{100}\left[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\mathop{\mathrm{sen}}(5t)\right]$$
 
-Como $5\cos5t + 2\operatorname{sen}5t = \sqrt{29}\operatorname{sen}(5t + \operatorname{arctg}(5/2))$, también se puede escribir:
+Como $5\cos5t + 2\mathop{\mathrm{sen}}5t = \sqrt{29}\mathop{\mathrm{sen}}(5t + \mathop{\mathrm{arctg}}(5/2))$, también se puede escribir:
 
-$$x(t) = \frac{1}{100}\left[5 - \sqrt{29}\,e^{-2t}\operatorname{sen}(5t + \operatorname{arctg}(5/2))\right]$$
+$$x(t) = \frac{1}{100}\left[5 - \sqrt{29}\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t + \mathop{\mathrm{arctg}}(5/2))\right]$$
 
 ![x(t) para d = 12: oscilación amortiguada alrededor de 50 mm](img/tp12-ej10a1.svg)
 
@@ -532,7 +532,7 @@ En ambos casos, $x(t) \to 0{,}05$ m $= 50$ mm.
 
 **Respuesta:**
 
-- a₁) En metros: $x(t) = \frac{1}{100}[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\operatorname{sen}(5t)] = \frac{1}{100}[5 - \sqrt{29}\,e^{-2t}\operatorname{sen}(5t + \operatorname{arctg}(5/2))]$; $x(t) \to 0.05$ m $= 50$ mm, oscilación amortiguada.
+- a₁) En metros: $x(t) = \frac{1}{100}[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\mathop{\mathrm{sen}}(5t)] = \frac{1}{100}[5 - \sqrt{29}\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t + \mathop{\mathrm{arctg}}(5/2))]$; $x(t) \to 0.05$ m $= 50$ mm, oscilación amortiguada.
 - a₂) En metros: $x(t) = \frac{1}{100}(5 + \frac94e^{-29t/3} - \frac{29}{4}e^{-3t})$; $x(t) \to 0.05$ m $= 50$ mm, sin oscilaciones.
 - b) $[x'] = $ m/s, $[x''] = $ m/s², $[M] = $ kg, $[k] = $ N/m, $[d] = $ N s / m.
 
@@ -548,9 +548,9 @@ En el circuito se observa una llave $LL$, una fuente de tensión $E$ constante, 
 
 Con $LL$ cerrada se cumple que: $E = v_R + v_L + v \quad (1)$
 
-Siendo<sup>(#)</sup> $i = C\,v'$, resultan: $\begin{cases} v_R = R\,i = RC\,v' \\ v_L = L\,i' = LC\,v'' \end{cases}$
+Siendo<sup>(#)</sup> $i = C\thinspace v'$, resultan: $\begin{cases} v_R = R\thinspace i = RC\thinspace v' \cr v_L = L\thinspace i' = LC\thinspace v'' \end{cases}$
 
-Reemplazando en (1) se obtiene: $\boxed{LC\,v'' + RC\,v' + v = E}$
+Reemplazando en (1) se obtiene: $\boxed{LC\thinspace v'' + RC\thinspace v' + v = E}$
 
 En tiempo $t = 0$, con capacitor descargado ($v(0) = 0$) se cierra $LL$ y comienza a circular corriente ($i(0) = 0 \Rightarrow v'(0) = 0$). Halle y grafique $v(t)$ e $i(t)$ cuando el tiempo se mide en segundos (s), $E = 0.05$ Volt, $R/L = 4$ s⁻¹, $(LC)^{-1} = 29$ s⁻².
 
@@ -566,27 +566,27 @@ Nota: Observe que $v(t)$ permite simular $x(t)$ del ítem anterior para el caso 
 
 **Paso 1 — Normalizar.** Dividiendo por $LC$:
 
-$$v'' + \frac RL\,v' + \frac{1}{LC}\,v = \frac{E}{LC} \ \Rightarrow\ v'' + 4v' + 29v = 29\cdot0{,}05$$
+$$v'' + \frac RL\thinspace v' + \frac{1}{LC}\thinspace v = \frac{E}{LC} \ \Rightarrow\ v'' + 4v' + 29v = 29\cdot0{,}05$$
 
 Es **la misma ecuación** que 10 a₁ dividida por $M = 3$: $x'' + 4x' + 29x = 1{,}45$.
 
 **Paso 2 — Solución.** Con las mismas condiciones iniciales:
 
-$$v(t) = \frac{1}{100}\left[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\operatorname{sen}(5t)\right]\ \text{V}$$
+$$v(t) = \frac{1}{100}\left[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\mathop{\mathrm{sen}}(5t)\right]\ \text{V}$$
 
 Tiende a $0{,}05$ V $= 50$ mV, con oscilación amortiguada. El gráfico es el mismo que el de 10 a₁, en mV.
 
 **Paso 3 — Corriente.** Derivando $v$:
 
-$$v' = e^{-2t}\left[2(0{,}05\cos5t + 0{,}02\operatorname{sen}5t) - (-0{,}25\operatorname{sen}5t + 0{,}1\cos5t)\right] = 0{,}29\,e^{-2t}\operatorname{sen}(5t)$$
+$$v' = e^{-2t}\left[2(0{,}05\cos5t + 0{,}02\mathop{\mathrm{sen}}5t) - (-0{,}25\mathop{\mathrm{sen}}5t + 0{,}1\cos5t)\right] = 0{,}29\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t)$$
 
-$$i(t) = C\,v' = 0{,}29\,C\,e^{-2t}\operatorname{sen}(5t)\ \text{A}$$
+$$i(t) = C\thinspace v' = 0{,}29\thinspace C\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t)\ \text{A}$$
 
 Con los datos dados sólo se conocen $R/L$ y $LC$, así que $C$ queda como parámetro. La corriente arranca en 0, oscila amortiguadamente y tiende a 0 (en régimen el capacitor está cargado y no circula corriente).
 
 </details>
 
-**Respuesta:** En volts: $v(t) = \frac{1}{100}[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\operatorname{sen}(5t)] = \frac{1}{100}[5 - \sqrt{29}\,e^{-2t}\operatorname{sen}(5t + \operatorname{arctg}(5/2))]$; $v(t) \to 0.05$ V $= 50$ mV, con oscilación amortiguada. Además $i(t) = 0.29\,C\,e^{-2t}\operatorname{sen}(5t)$.
+**Respuesta:** En volts: $v(t) = \frac{1}{100}[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\mathop{\mathrm{sen}}(5t)] = \frac{1}{100}[5 - \sqrt{29}\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t + \mathop{\mathrm{arctg}}(5/2))]$; $v(t) \to 0.05$ V $= 50$ mV, con oscilación amortiguada. Además $i(t) = 0.29\thinspace C\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t)$.
 
 </details>
 
@@ -594,7 +594,7 @@ Con los datos dados sólo se conocen $R/L$ y $LC$, así que $C$ queda como pará
 
 ### 12) Oscilaciones amortiguadas
 
-Sea $v'' + k\,v' + 9\,v = 0$ con $v(0) = 0$, $v'(0) = 1$; ¿para qué valores de $k$ la solución $v(t)$ presenta oscilaciones amortiguadas?.
+Sea $v'' + k\thinspace v' + 9\thinspace v = 0$ con $v(0) = 0$, $v'(0) = 1$; ¿para qué valores de $k$ la solución $v(t)$ presenta oscilaciones amortiguadas?.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -641,7 +641,7 @@ Halle y grafique la familia de líneas de campo en los siguientes casos, al graf
 - cartesiano: $\dfrac{dy}{dx} = \dfrac QP$;
 - paramétrico: $\bar X' = \bar f(\bar X)$, que para campos lineales se resuelve con autovalores.
 
-**a)** *Paramétrico:* $x' = 2y - x$, $y' = x$, con matriz $\begin{pmatrix} -1 & 2 \\ 1 & 0 \end{pmatrix}$.
+**a)** *Paramétrico:* $x' = 2y - x$, $y' = x$, con matriz $\begin{pmatrix} -1 & 2 \cr 1 & 0 \end{pmatrix}$.
 
 - Autovalores: $\lambda^2 + \lambda - 2 = 0 \Rightarrow \lambda = 1, -2$.
 - Autovectores: $(1,1)$ y $(2,-1)$.
@@ -660,17 +660,17 @@ $$\bar X = (C_1e^t + 2C_2e^{-2t},\ C_1e^t - C_2e^{-2t})$$
 
 ![Líneas de campo de (x/2, y)](img/tp12-ej13c.svg)
 
-**d)** $\dfrac{dy}{dx} = \dfrac{x^2y}{kxy^2} = \dfrac{x}{ky} \Rightarrow ky\,dy = x\,dx \Rightarrow ky^2 - x^2 = K$.
+**d)** $\dfrac{dy}{dx} = \dfrac{x^2y}{kxy^2} = \dfrac{x}{ky} \Rightarrow ky\thinspace dy = x\thinspace dx \Rightarrow ky^2 - x^2 = K$.
 
 *Comentario:* para $k = 1$, las respuestas de b) y d) coinciden aunque los campos son distintos. La forma cartesiana de las líneas no permite deducir de qué campo provienen.
 
-**e)** $\bar E = kq\,\bar r/r^3$ es **radial**: las líneas son **semirrectas** que parten del origen (si $kq > 0$) o llegan a él (si $kq < 0$), excluido el origen.
+**e)** $\bar E = kq\thinspace\bar r/r^3$ es **radial**: las líneas son **semirrectas** que parten del origen (si $kq > 0$) o llegan a él (si $kq < 0$), excluido el origen.
 
 **f)** Lo mismo en el espacio $xyz$.
 
 **g)** $x' = y$, $y' = z$, $z' = x$ ⇒ $x''' = x$. Las raíces de $\lambda^3 = 1$ son $\lambda = 1$ y $\lambda = -\frac12 \pm \frac{\sqrt3}{2}i$:
 
-$$x = C_1e^t + e^{-t/2}\left(C_2\cos\tfrac{\sqrt3}{2}t + C_3\operatorname{sen}\tfrac{\sqrt3}{2}t\right), \qquad y = x', \qquad z = x''$$
+$$x = C_1e^t + e^{-t/2}\left(C_2\cos\tfrac{\sqrt3}{2}t + C_3\mathop{\mathrm{sen}}\tfrac{\sqrt3}{2}t\right), \qquad y = x', \qquad z = x''$$
 
 **h)** El campo es constante ⇒ las líneas son **rectas** paralelas a $(2,1,3)$: $\bar X = (C_1 + 2t,\ C_2 + t,\ C_3 + 3t)$. En forma cartesiana, $\dfrac{x - A}{2} = y = \dfrac{z - B}{3}$.
 
@@ -684,7 +684,7 @@ $$x = C_1e^t + e^{-t/2}\left(C_2\cos\tfrac{\sqrt3}{2}t + C_3\operatorname{sen}\t
 - d) $ky^2 - x^2 = K$.
 - e) Excluido el origen, familia de semirrectas que parten (si $kq > 0$) del origen o llegan (si $kq < 0$) al origen en el plano $xy$.
 - f) Ídem "e" en el espacio $xyz$.
-- g) Conviene el planteo paramétrico: $x = C_1e^t + e^{-t/2}(C_2\cos(\frac{\sqrt3}{2}t) + C_3\operatorname{sen}(\frac{\sqrt3}{2}t))$, $y = x'$, $z = x''$.
+- g) Conviene el planteo paramétrico: $x = C_1e^t + e^{-t/2}(C_2\cos(\frac{\sqrt3}{2}t) + C_3\mathop{\mathrm{sen}}(\frac{\sqrt3}{2}t))$, $y = x'$, $z = x''$.
 - h) $\dfrac{x - A}{2} = y = \dfrac{z - B}{3}$; todas las rectas de $\Re^3$ dirigidas y orientadas por $(2,1,3)$.
 
 En forma paramétrica:
@@ -714,7 +714,7 @@ Demuestre que si $\bar f : D \subset \Re^2 \to \Re^2$ es un campo de gradientes,
 
 **Paso 1 — Planteo.** $\bar f = \nabla\phi$ (suponemos $\phi \in C^1$ y $\nabla\phi \ne \bar 0$). Las equipotenciales son las curvas de nivel $\phi = c$.
 
-**Paso 2 — Tangente a una equipotencial.** Si $\bar r(t)$ recorre una equipotencial, $\phi(\bar r(t)) = c$. Derivando: $\nabla\phi\cdot\bar r\,' = 0$, así que **$\nabla\phi$ es normal** a la equipotencial.
+**Paso 2 — Tangente a una equipotencial.** Si $\bar r(t)$ recorre una equipotencial, $\phi(\bar r(t)) = c$. Derivando: $\nabla\phi\cdot\bar r\thinspace' = 0$, así que **$\nabla\phi$ es normal** a la equipotencial.
 
 **Paso 3 — Tangente a una línea de campo.** Por definición, la línea de campo tiene en cada punto la dirección de $\bar f = \nabla\phi$.
 
@@ -734,11 +734,11 @@ Demuestre que si $\bar f : D \subset \Re^2 \to \Re^2$ es un campo de gradientes,
 
 Resuelva los siguientes sistemas de ecuaciones diferenciales lineales de 1° orden.
 
-- a) $\begin{cases} x' + y' = e^{-t} + y \\ 2x' + y' = \operatorname{sen}(t) - 2y \end{cases}$ con $x(0) = -2$, $y(0) = 1$.
-- b) $m\,(x'', y'', z'') = (0, 0, -mg)$ tiro libre de masa puntual $m$ desde $(0,0,0)$ en el instante $t = 0$ con velocidad inicial $\bar v(0) = (v_x, 0, v_z)$; $g$ constante (ac. de la gravedad).
-- c) $\begin{cases} 4x' - y' + 3x = \operatorname{sen}(t) \\ x' + y = \cos(t) \end{cases}$ equivalente a $\begin{pmatrix} 4 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} -3 & 0 \\ 0 & -1 \end{pmatrix}\begin{pmatrix} x \\ y \end{pmatrix} + \begin{pmatrix} \operatorname{sen}(t) \\ \cos(t) \end{pmatrix}$.
+- a) $\begin{cases} x' + y' = e^{-t} + y \cr 2x' + y' = \mathop{\mathrm{sen}}(t) - 2y \end{cases}$ con $x(0) = -2$, $y(0) = 1$.
+- b) $m\thinspace(x'', y'', z'') = (0, 0, -mg)$ tiro libre de masa puntual $m$ desde $(0,0,0)$ en el instante $t = 0$ con velocidad inicial $\bar v(0) = (v_x, 0, v_z)$; $g$ constante (ac. de la gravedad).
+- c) $\begin{cases} 4x' - y' + 3x = \mathop{\mathrm{sen}}(t) \cr x' + y = \cos(t) \end{cases}$ equivalente a $\begin{pmatrix} 4 & -1 \cr 1 & 0 \end{pmatrix}\begin{pmatrix} x' \cr y' \end{pmatrix} = \begin{pmatrix} -3 & 0 \cr 0 & -1 \end{pmatrix}\begin{pmatrix} x \cr y \end{pmatrix} + \begin{pmatrix} \mathop{\mathrm{sen}}(t) \cr \cos(t) \end{pmatrix}$.
 - d) $(x',\ y',\ z') = (y + z,\ 3x + z,\ 3x + y)$.
-- e) $\begin{pmatrix} 1 & 2 & 0 \\ 1 & 1 & 0 \\ 0 & -2 & 1 \end{pmatrix}\begin{pmatrix} y_1' \\ y_2' \\ y_3' \end{pmatrix} = \begin{pmatrix} -1 & -1 & -1 \\ -1 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix}$ con $y_1(0) = y_2(0) = 1$, $y_3(0) = -2$.
+- e) $\begin{pmatrix} 1 & 2 & 0 \cr 1 & 1 & 0 \cr 0 & -2 & 1 \end{pmatrix}\begin{pmatrix} y_1' \cr y_2' \cr y_3' \end{pmatrix} = \begin{pmatrix} -1 & -1 & -1 \cr -1 & 0 & -1 \cr 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} y_1 \cr y_2 \cr y_3 \end{pmatrix}$ con $y_1(0) = y_2(0) = 1$, $y_3(0) = -2$.
 - f) $(x',\ y') = (3x - y/2 - 3t^2 - t/2 + 3/2,\ 2y - 2t - 1)$ con $x(0) = 2$, $y(0) = 3$.
 
 <details>
@@ -747,9 +747,9 @@ Resuelva los siguientes sistemas de ecuaciones diferenciales lineales de 1° ord
 <details>
 <summary>Solución paso a paso</summary>
 
-**a)** *Restar las ecuaciones:* $x' = \operatorname{sen}t - e^{-t} - 3y$. Reemplazando en la primera:
+**a)** *Restar las ecuaciones:* $x' = \mathop{\mathrm{sen}}t - e^{-t} - 3y$. Reemplazando en la primera:
 
-$$y' = e^{-t} + y - x' = 4y + 2e^{-t} - \operatorname{sen}t$$
+$$y' = e^{-t} + y - x' = 4y + 2e^{-t} - \mathop{\mathrm{sen}}t$$
 
 La ecuación de $y$ queda **desacoplada**.
 
@@ -757,16 +757,16 @@ La ecuación de $y$ queda **desacoplada**.
 
 - $y_H = Ce^{4t}$.
 - Para $2e^{-t}$: $Ae^{-t}$ con $-5A = 2 \Rightarrow A = -\frac25$.
-- Para $-\operatorname{sen}t$: $B\cos t + D\operatorname{sen}t$ con $D - 4B = 0$ y $-B - 4D = -1$ ⇒ $B = \frac{1}{17}$, $D = \frac{4}{17}$.
+- Para $-\mathop{\mathrm{sen}}t$: $B\cos t + D\mathop{\mathrm{sen}}t$ con $D - 4B = 0$ y $-B - 4D = -1$ ⇒ $B = \frac{1}{17}$, $D = \frac{4}{17}$.
 - $y(0) = C - \frac25 + \frac{1}{17} = 1 \Rightarrow C = \frac{114}{85}$.
 
-$$y = \frac{114}{85}e^{4t} - \frac25e^{-t} + \frac{1}{17}\cos t + \frac{4}{17}\operatorname{sen}t$$
+$$y = \frac{114}{85}e^{4t} - \frac25e^{-t} + \frac{1}{17}\cos t + \frac{4}{17}\mathop{\mathrm{sen}}t$$
 
-*Resolver $x$:* integrando $x' = \operatorname{sen}t - e^{-t} - 3y$:
+*Resolver $x$:* integrando $x' = \mathop{\mathrm{sen}}t - e^{-t} - 3y$:
 
-$$x = -\cos t + e^{-t} - 3\left(\frac{114}{340}e^{4t} + \frac25e^{-t} + \frac{1}{17}\operatorname{sen}t - \frac{4}{17}\cos t\right) + K$$
+$$x = -\cos t + e^{-t} - 3\left(\frac{114}{340}e^{4t} + \frac25e^{-t} + \frac{1}{17}\mathop{\mathrm{sen}}t - \frac{4}{17}\cos t\right) + K$$
 
-$$= -\frac{171}{170}e^{4t} - \frac15e^{-t} - \frac{5}{17}\cos t - \frac{3}{17}\operatorname{sen}t + K$$
+$$= -\frac{171}{170}e^{4t} - \frac15e^{-t} - \frac{5}{17}\cos t - \frac{3}{17}\mathop{\mathrm{sen}}t + K$$
 
 Con $x(0) = -2$: $-\frac{171}{170} - \frac{34}{170} - \frac{50}{170} + K = -\frac{255}{170} + K = -2 \Rightarrow K = -\frac12$.
 
@@ -776,13 +776,13 @@ Con $x(0) = -2$: $-\frac{171}{170} - \frac{34}{170} - \frac{50}{170} + K = -\fra
 - $y'' = 0$ con $y(0) = y'(0) = 0 \Rightarrow y = 0$;
 - $z'' = -g \Rightarrow z = v_zt - \frac12gt^2$.
 
-**c)** De la segunda, $y = \cos t - x'$ ⇒ $y' = -\operatorname{sen}t - x''$. En la primera:
+**c)** De la segunda, $y = \cos t - x'$ ⇒ $y' = -\mathop{\mathrm{sen}}t - x''$. En la primera:
 
-$$4x' + \operatorname{sen}t + x'' + 3x = \operatorname{sen}t \Rightarrow x'' + 4x' + 3x = 0 \Rightarrow x = C_1e^{-3t} + C_2e^{-t}$$
+$$4x' + \mathop{\mathrm{sen}}t + x'' + 3x = \mathop{\mathrm{sen}}t \Rightarrow x'' + 4x' + 3x = 0 \Rightarrow x = C_1e^{-3t} + C_2e^{-t}$$
 
 $$y = \cos t - x' = 3C_1e^{-3t} + C_2e^{-t} + \cos t$$
 
-**d)** Matriz $A = \begin{pmatrix} 0 & 1 & 1 \\ 3 & 0 & 1 \\ 3 & 1 & 0 \end{pmatrix}$, con polinomio característico $-(\lambda^3 - 7\lambda - 6) = -(\lambda + 1)(\lambda + 2)(\lambda - 3)$:
+**d)** Matriz $A = \begin{pmatrix} 0 & 1 & 1 \cr 3 & 0 & 1 \cr 3 & 1 & 0 \end{pmatrix}$, con polinomio característico $-(\lambda^3 - 7\lambda - 6) = -(\lambda + 1)(\lambda + 2)(\lambda - 3)$:
 
 | $\lambda$ | autovector |
 |---|---|
@@ -818,12 +818,12 @@ $$x' - 3x = -e^{2t} - 3t^2 - t + 1$$
 
 **Respuesta:**
 
-- a) $\begin{cases} x = -\frac15e^{-t} - \frac{171}{170}e^{4t} - \frac{5}{17}\cos(t) - \frac{3}{17}\operatorname{sen}(t) - \frac12 \\ y = -\frac25e^{-t} + \frac{114}{85}e^{4t} + \frac{1}{17}\cos(t) + \frac{4}{17}\operatorname{sen}(t) \end{cases}$
+- a) $\begin{cases} x = -\frac15e^{-t} - \frac{171}{170}e^{4t} - \frac{5}{17}\cos(t) - \frac{3}{17}\mathop{\mathrm{sen}}(t) - \frac12 \cr y = -\frac25e^{-t} + \frac{114}{85}e^{4t} + \frac{1}{17}\cos(t) + \frac{4}{17}\mathop{\mathrm{sen}}(t) \end{cases}$
 - b) $(x,y,z) = (v_xt,\ 0,\ v_zt - \frac12gt^2)$.
-- c) $\begin{cases} x = C_1e^{-3t} + C_2e^{-t} \\ y = 3C_1e^{-3t} + C_2e^{-t} + \cos(t) \end{cases}$
-- d) $\begin{cases} x = C_1e^{-2t} + (2/3)C_2e^{3t} \\ y = -C_1e^{-2t} + C_2e^{3t} + C_3e^{-t} \\ z = -C_1e^{-2t} + C_2e^{3t} - C_3e^{-t} \end{cases}$
-- e) $\begin{cases} y_1 = 3 - 2e^{-t} \\ y_2 = e^{-t} \\ y_3 = e^{-t} - 3 \end{cases}$
-- f) $\begin{cases} x = e^{2t} + e^{3t} + t + t^2 \\ y = 2e^{2t} + t + 1 \end{cases}$
+- c) $\begin{cases} x = C_1e^{-3t} + C_2e^{-t} \cr y = 3C_1e^{-3t} + C_2e^{-t} + \cos(t) \end{cases}$
+- d) $\begin{cases} x = C_1e^{-2t} + (2/3)C_2e^{3t} \cr y = -C_1e^{-2t} + C_2e^{3t} + C_3e^{-t} \cr z = -C_1e^{-2t} + C_2e^{3t} - C_3e^{-t} \end{cases}$
+- e) $\begin{cases} y_1 = 3 - 2e^{-t} \cr y_2 = e^{-t} \cr y_3 = e^{-t} - 3 \end{cases}$
+- f) $\begin{cases} x = e^{2t} + e^{3t} + t + t^2 \cr y = 2e^{2t} + t + 1 \end{cases}$
 
 </details>
 
@@ -895,12 +895,12 @@ $$a(y_{p_1} + y_{p_2})'' + b(y_{p_1} + y_{p_2})' + c(y_{p_1} + y_{p_2}) = (ay_{p
 
 ### Cuestionario e)
 
-Halle una transformación que convierta la ecuación $y' = y\,x^{-1} + 1$ a una ecuación del tipo variables separables.
+Halle una transformación que convierta la ecuación $y' = y\thinspace x^{-1} + 1$ a una ecuación del tipo variables separables.
 
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** la ecuación es homogénea, porque $y/x + 1$ depende sólo de $y/x$. Con la transformación $y = z\,x$ (es decir $z = y/x$):
+**Respuesta:** la ecuación es homogénea, porque $y/x + 1$ depende sólo de $y/x$. Con la transformación $y = z\thinspace x$ (es decir $z = y/x$):
 
 $$z + xz' = z + 1 \Rightarrow z' = \frac1x$$
 

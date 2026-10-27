@@ -19,7 +19,7 @@ $$(\vec f\circ\vec g)(\vec x) = \vec f(\vec g(\vec x))$$
 **Condiciones para que quede definida:**
 
 1. **Dimensiones compatibles:** la cantidad de componentes de $\vec g$ ($m$) tiene que ser igual a la cantidad de variables de $\vec f$.
-2. **Dominio natural:** $D_{f\circ g} = \{\vec x \in D_g : \vec g(\vec x) \in D_f\}$. Si es vacío, la composición no queda definida.
+2. **Dominio natural:** $D_{f\circ g} = \lbrace\vec x \in D_g : \vec g(\vec x) \in D_f\rbrace$. Si es vacío, la composición no queda definida.
 
 **Truco para "descomponer" una función** (por ejemplo $h = x\ln(1 - xy)$): se busca una función "de afuera" simple y se ponen en $\vec g$ las expresiones de adentro: $f(u,v) = u\ln v$ con $\vec g(x,y) = (x,\ 1 - xy)$.
 
@@ -47,7 +47,7 @@ $$\frac{dT}{dt} = \nabla f(\vec X(t))\cdot\vec X'(t)$$
 
 ### Funciones homogéneas de grado 0
 
-Si $z = f\!\left(\dfrac{x^2 - y^2}{x^2 + y^2}\right)$, o en general $z = f(t)$ con $t$ homogénea de grado 0, entonces $x z'_x + y z'_y = 0$. Es un caso particular de la **identidad de Euler** ($x f'_x + y f'_y = k f$ para homogéneas de grado $k$).
+Si $z = f\negthinspace\left(\dfrac{x^2 - y^2}{x^2 + y^2}\right)$, o en general $z = f(t)$ con $t$ homogénea de grado 0, entonces $x z'_x + y z'_y = 0$. Es un caso particular de la **identidad de Euler** ($x f'_x + y f'_y = k f$ para homogéneas de grado $k$).
 
 ---
 
@@ -75,7 +75,7 @@ $$\boxed{f'(x) = -\frac{F'_x(x, f(x))}{F'_y(x, f(x))}}$$
 
 Si en cambio $F'_x \ne 0$, se puede despejar $x = \varphi(y)$, con $\varphi' = -F'_y/F'_x$.
 
-**De dónde sale la fórmula:** se deriva $F(x, f(x)) = 0$ con la regla de la cadena: $F'_x + F'_y\,f'(x) = 0$, y se despeja $f'$.
+**De dónde sale la fórmula:** se deriva $F(x, f(x)) = 0$ con la regla de la cadena: $F'_x + F'_y\thinspace f'(x) = 0$, y se despeja $f'$.
 
 **Interpretación geométrica:** $\nabla F$ es normal a la curva $F = 0$.
 
@@ -128,11 +128,11 @@ No siempre se pueden componer dos funciones: la cantidad de componentes de la de
 
 **Campo escalar compuesto con una función vectorial** ($z = F(x,y)$ diferenciable en $(x_0,y_0)$, $\vec g(t) = (x(t), y(t))$ derivable en $t_0$, $\vec g(t_0) = (x_0,y_0)$):
 
-$$\frac{d(F\circ\vec g)}{dt}(t_0) = F'_x\,x'(t_0) + F'_y\,y'(t_0) = \nabla F(x_0,y_0)\cdot\vec g\,'(t_0)$$
+$$\frac{d(F\circ\vec g)}{dt}(t_0) = F'_x\thinspace x'(t_0) + F'_y\thinspace y'(t_0) = \nabla F(x_0,y_0)\cdot\vec g\thinspace'(t_0)$$
 
 *Demostración.* Por ser $F$ diferenciable: $\Delta z = F'_x\Delta x + F'_y\Delta y + \varphi\sqrt{\Delta x^2 + \Delta y^2}$, con $\varphi \to 0$. Se divide por $\Delta t$ y se toma límite. $\frac{\Delta x}{\Delta t} \to x'(t_0)$ y $\frac{\Delta y}{\Delta t} \to y'(t_0)$. Como $x(t)$, $y(t)$ son continuas, $\Delta x, \Delta y \to 0$ y entonces $\varphi \to 0$; el último término tiende a $0\cdot\sqrt{x'^2 + y'^2} = 0$. $\blacksquare$
 
-Con $n$ variables vale igual: $(F\circ\vec g)'(t_0) = \nabla F(\vec X_0)\cdot\vec g\,'(t_0)$.
+Con $n$ variables vale igual: $(F\circ\vec g)'(t_0) = \nabla F(\vec X_0)\cdot\vec g\thinspace'(t_0)$.
 
 **Campo escalar compuesto con un campo vectorial** ($F: \mathbb{R}^n\to\mathbb{R}$ diferenciable en $P_0 = \vec G(\vec X_0)$, $\vec G: \mathbb{R}^m\to\mathbb{R}^n$ diferenciable en $\vec X_0$):
 
@@ -144,11 +144,11 @@ $$\frac{\partial(F\circ\vec G)}{\partial x_k}(\vec X_0) = \nabla F(P_0)\cdot\fra
 
 La red muestra de qué depende cada variable, y la regla es: **se suman los productos de las derivadas a lo largo de todos los caminos**.
 
-**Ejemplo:** $\vec F(u,v) = (u\operatorname{sen}v,\ u\cos v,\ u)$ y $\vec G(x,y) = (x^2 - y^2,\ y\operatorname{sen}x)$, con $u = x^2 - y^2$, $v = y\operatorname{sen}x$. Para cada componente $H_i$ de $\vec H = \vec F\circ\vec G$:
+**Ejemplo:** $\vec F(u,v) = (u\mathop{\mathrm{sen}}v,\ u\cos v,\ u)$ y $\vec G(x,y) = (x^2 - y^2,\ y\mathop{\mathrm{sen}}x)$, con $u = x^2 - y^2$, $v = y\mathop{\mathrm{sen}}x$. Para cada componente $H_i$ de $\vec H = \vec F\circ\vec G$:
 
 $$\frac{\partial H_i}{\partial x} = \frac{\partial F_i}{\partial u}\frac{\partial u}{\partial x} + \frac{\partial F_i}{\partial v}\frac{\partial v}{\partial x}, \qquad \frac{\partial H_i}{\partial y} = \frac{\partial F_i}{\partial u}\frac{\partial u}{\partial y} + \frac{\partial F_i}{\partial v}\frac{\partial v}{\partial y}$$
 
-$$D\vec H = \begin{pmatrix} 2x\operatorname{sen}v + u\,y\cos v\cos x & -2y\operatorname{sen}v + u\cos v\operatorname{sen}x \\ 2x\cos v - u\,y\operatorname{sen}v\cos x & -2y\cos v - u\operatorname{sen}v\operatorname{sen}x \\ 2x & -2y \end{pmatrix}$$
+$$D\vec H = \begin{pmatrix} 2x\mathop{\mathrm{sen}}v + u\thinspace y\cos v\cos x & -2y\mathop{\mathrm{sen}}v + u\cos v\mathop{\mathrm{sen}}x \cr 2x\cos v - u\thinspace y\mathop{\mathrm{sen}}v\cos x & -2y\cos v - u\mathop{\mathrm{sen}}v\mathop{\mathrm{sen}}x \cr 2x & -2y \end{pmatrix}$$
 
 ---
 
@@ -171,11 +171,11 @@ $$\frac{\partial\varphi}{\partial x_i}(\vec X_0') = -\frac{F'_{x_i}(\vec X_0)}{F
 
 *Idea de la demostración de la derivada.* $F$ es diferenciable (parciales continuas) y $F(\vec X) - F(\vec X_0) = 0$:
 
-$$F'_{x_1}\Delta x_1 + \dots + F'_{x_n}\Delta x_n + \varepsilon\,\lVert\Delta\vec X\rVert = 0$$
+$$F'_{x_1}\Delta x_1 + \dots + F'_{x_n}\Delta x_n + \varepsilon\thinspace\lVert\Delta\vec X\rVert = 0$$
 
 Como $F'_{x_n} \ne 0$, se despeja $\Delta x_n$: es una T.L. de $(\Delta x_1, \dots, \Delta x_{n-1})$ más un término que tiende a 0. Entonces $x_n$ es diferenciable, y sus parciales son los coeficientes $-F'_{x_i}/F'_{x_n}$. $\blacksquare$
 
-**Plano tangente a una superficie de nivel.** Si $F(x,y,z) = k$ cumple las hipótesis, toda curva $\vec g(t)$ sobre la superficie que pasa por $P_0$ cumple $F(\vec g(t)) = k$. Derivando: $\nabla F(P_0)\cdot\vec g\,'(t_0) = 0$. El gradiente es perpendicular a **todas** las curvas de la superficie por $P_0$, así que es normal a la superficie:
+**Plano tangente a una superficie de nivel.** Si $F(x,y,z) = k$ cumple las hipótesis, toda curva $\vec g(t)$ sobre la superficie que pasa por $P_0$ cumple $F(\vec g(t)) = k$. Derivando: $\nabla F(P_0)\cdot\vec g\thinspace'(t_0) = 0$. El gradiente es perpendicular a **todas** las curvas de la superficie por $P_0$, así que es normal a la superficie:
 
 $$F'_x(P_0)(x - x_0) + F'_y(P_0)(y - y_0) + F'_z(P_0)(z - z_0) = 0, \qquad \frac{x - x_0}{F'_x} = \frac{y - y_0}{F'_y} = \frac{z - z_0}{F'_z}$$
 
@@ -185,7 +185,7 @@ Se llega a lo mismo reemplazando $z'_x = -G'_x/G'_z$ y $z'_y = -G'_y/G'_z$ en el
 
 > **Importante:** al derivar por segunda vez una función compuesta o implícita, hay que recordar que las variables intermedias (y la variable despejada) **siguen dependiendo** de las independientes.
 
-**Compuesta:** si $z = F(x,y)$ con $x = x(u,v)$, $y = y(u,v)$, entonces $z'_u = F'_x\,x'_u + F'_y\,y'_u$ depende de $x, y, u, v$, y
+**Compuesta:** si $z = F(x,y)$ con $x = x(u,v)$, $y = y(u,v)$, entonces $z'_u = F'_x\thinspace x'_u + F'_y\thinspace y'_u$ depende de $x, y, u, v$, y
 
 $$z''_{uv} = \frac{\partial z'_u}{\partial x}x'_v + \frac{\partial z'_u}{\partial y}y'_v + \frac{\partial z'_u}{\partial v}$$
 
@@ -214,7 +214,7 @@ $$z''_{xy} = \frac{\partial z'_x}{\partial y} + \frac{\partial z'_x}{\partial z}
 
 | Situación | Fórmula |
 |---|---|
-| Regla de la cadena (matricial) | $D(\vec f\circ\vec g)(\vec A) = D\vec f(\vec g(\vec A))\,D\vec g(\vec A)$ |
+| Regla de la cadena (matricial) | $D(\vec f\circ\vec g)(\vec A) = D\vec f(\vec g(\vec A))\thinspace D\vec g(\vec A)$ |
 | $z = f(u,v)$, $u,v$ de $(x,y)$ | $z'_x = f'_u u'_x + f'_v v'_x$ |
 | Sobre una curva | $\frac{d}{dt}f(\vec X(t)) = \nabla f\cdot\vec X'(t)$ |
 | Implícita $F(x,y) = 0$ | $y' = -F'_x/F'_y$ |

@@ -19,13 +19,13 @@ Sea $C$ una curva parametrizada por $\vec g(t) = (x(t), y(t), z(t))$, con $\vec 
 
 **Recta tangente en $\vec A$:**
 
-$$\vec X = \vec A + u\,\vec g'(t_0), \quad u \in \mathbb{R}$$
+$$\vec X = \vec A + u\thinspace\vec g'(t_0), \quad u \in \mathbb{R}$$
 
 **Plano normal en $\vec A$** (el plano perpendicular a la tangente):
 
 $$\vec g'(t_0)\cdot(\vec X - \vec A) = 0$$
 
-**Curva definida como intersección de dos superficies.** Si $C = S_1 \cap S_2$, primero hay que **parametrizarla**. Lo habitual es despejar dos variables en función de la tercera, o usar $\cos$ y $\operatorname{sen}$ si aparece una circunferencia. Recién después se deriva.
+**Curva definida como intersección de dos superficies.** Si $C = S_1 \cap S_2$, primero hay que **parametrizarla**. Lo habitual es despejar dos variables en función de la tercera, o usar $\cos$ y $\mathop{\mathrm{sen}}$ si aparece una circunferencia. Recién después se deriva.
 
 **Curva plana / alabeada:**
 
@@ -60,7 +60,7 @@ En esos casos, que la fórmula de la derivada no esté definida **no prueba** qu
 
 **Derivadas de integrales** (teorema fundamental del cálculo, combinado con la regla de la cadena):
 
-$$\frac{\partial}{\partial x}\int_{a(x,y)}^{b(x,y)} g(t)\,dt = g(b)\,b'_x - g(a)\,a'_x$$
+$$\frac{\partial}{\partial x}\int_{a(x,y)}^{b(x,y)} g(t)\thinspace dt = g(b)\thinspace b'_x - g(a)\thinspace a'_x$$
 
 ---
 
@@ -68,10 +68,10 @@ $$\frac{\partial}{\partial x}\int_{a(x,y)}^{b(x,y)} g(t)\,dt = g(b)\,b'_x - g(a)
 
 **Definición:** para $\vec r \ne \vec 0$,
 
-$$f'(\vec A, \vec r) = \frac{\partial f}{\partial \vec r}(\vec A) = \lim_{h\to0}\frac{f(\vec A + h\,\vec r) - f(\vec A)}{h}$$
+$$f'(\vec A, \vec r) = \frac{\partial f}{\partial \vec r}(\vec A) = \lim_{h\to0}\frac{f(\vec A + h\thinspace\vec r) - f(\vec A)}{h}$$
 
-- Si $\vec r$ es **unitario** (un versor, $\|\vec r\| = 1$), se llama **derivada direccional**. Mide la razón de cambio de $f$ por unidad de longitud en esa dirección.
-- Si $\vec r$ no es unitario se llama **derivada respecto del vector** $\vec r$. El versor de la dirección es $\breve r = \vec r/\|\vec r\|$, y sus componentes son los cosenos directores.
+- Si $\vec r$ es **unitario** (un versor, $\Vert\vec r\Vert = 1$), se llama **derivada direccional**. Mide la razón de cambio de $f$ por unidad de longitud en esa dirección.
+- Si $\vec r$ no es unitario se llama **derivada respecto del vector** $\vec r$. El versor de la dirección es $\breve r = \vec r/\Vert\vec r\Vert$, y sus componentes son los cosenos directores.
 - Las **derivadas parciales** son las direccionales según los versores canónicos: $f'(\vec A, \breve e_k) = f'_{x_k}(\vec A)$.
 
 **Cálculo práctico (siempre válido):** se define la función de una variable $g(t) = f(\vec A + t\vec r)$ (la restricción de $f$ a la recta) y entonces $f'(\vec A, \vec r) = g'(0)$.
@@ -85,7 +85,7 @@ $$f'(\vec A, \vec r) = \frac{\partial f}{\partial \vec r}(\vec A) = \lim_{h\to0}
 
 **Propiedades:**
 
-- **Homogeneidad:** $f'(\vec A, \lambda\vec r) = \lambda\,f'(\vec A, \vec r)$ para $\lambda \ne 0$. En particular, $f'(\vec A, -\vec r) = -f'(\vec A, \vec r)$.
+- **Homogeneidad:** $f'(\vec A, \lambda\vec r) = \lambda\thinspace f'(\vec A, \vec r)$ para $\lambda \ne 0$. En particular, $f'(\vec A, -\vec r) = -f'(\vec A, \vec r)$.
 - Si $L$ es una **transformación lineal**: $L'(\vec A, \vec r) = L(\vec r)$.
 - **Campos vectoriales:** la derivada direccional se calcula componente a componente.
 
@@ -110,7 +110,7 @@ Las derivadas parciales y direccionales son una noción **débil** (derivada de 
 
 ## 5. Derivadas de orden superior y teorema de Schwarz
 
-$$f''_{xy} = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right) = \frac{\partial^2 f}{\partial y\,\partial x}$$
+$$f''_{xy} = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right) = \frac{\partial^2 f}{\partial y\thinspace\partial x}$$
 
 Con la notación de subíndices **se deriva en el orden en que se leen** ($f''_{xy}$: primero respecto de $x$, después de $y$).
 
@@ -126,7 +126,7 @@ $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
 ### Ecuaciones en derivadas parciales clásicas
 
-- **Ecuación de onda:** $y''_{tt} = a^2\,y''_{xx}$.
+- **Ecuación de onda:** $y''_{tt} = a^2\thinspace y''_{xx}$.
 - **Ecuación de Laplace** (funciones **armónicas**): $\Delta f = f''_{xx} + f''_{yy}\ (+ f''_{zz}) = 0$.
 
 ---
@@ -137,11 +137,11 @@ $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
 **Vector derivado** de $\vec f: A \subseteq \mathbb{R} \to \mathbb{R}^n$ en $t_0$ (interior):
 
-$$\vec f\,'(t_0) = \lim_{\Delta t\to0}\frac{\vec f(t_0 + \Delta t) - \vec f(t_0)}{\Delta t}$$
+$$\vec f\thinspace'(t_0) = \lim_{\Delta t\to0}\frac{\vec f(t_0 + \Delta t) - \vec f(t_0)}{\Delta t}$$
 
-**Teorema:** $\vec f$ es derivable en $t_0$ si y sólo si **cada componente** $f_i$ lo es, y $\vec f\,'(t_0) = (f_1'(t_0), \dots, f_n'(t_0))$. Se demuestra igual que para límites: el límite de un vector existe si y sólo si existen los de sus componentes.
+**Teorema:** $\vec f$ es derivable en $t_0$ si y sólo si **cada componente** $f_i$ lo es, y $\vec f\thinspace'(t_0) = (f_1'(t_0), \dots, f_n'(t_0))$. Se demuestra igual que para límites: el límite de un vector existe si y sólo si existen los de sus componentes.
 
-**Por qué $\vec f\,'(t_0)$ es tangente:** $\vec f(t_0 + \Delta t) - \vec f(t_0)$ es la **cuerda** entre dos puntos de la curva; al dividir por $\Delta t$ y hacer $\Delta t \to 0$, la cuerda tiende a la dirección **tangente**.
+**Por qué $\vec f\thinspace'(t_0)$ es tangente:** $\vec f(t_0 + \Delta t) - \vec f(t_0)$ es la **cuerda** entre dos puntos de la curva; al dividir por $\Delta t$ y hacer $\Delta t \to 0$, la cuerda tiende a la dirección **tangente**.
 
 **Ecuaciones simétricas de la recta tangente** (si todas las $f_i'(t_0) \ne 0$):
 
@@ -151,10 +151,10 @@ $$\frac{x - f_1(t_0)}{f_1'(t_0)} = \frac{y - f_2(t_0)}{f_2'(t_0)} = \frac{z - f_
 
 **Puntos regulares y singulares:**
 
-- $P_0 \in C$ es **regular** si existe la recta tangente: hay una parametrización continua $\vec f$ de $C$ con $\vec f\,'(t_0)$ existente y **no nulo**, $P_0 = \vec f(t_0)$.
+- $P_0 \in C$ es **regular** si existe la recta tangente: hay una parametrización continua $\vec f$ de $C$ con $\vec f\thinspace'(t_0)$ existente y **no nulo**, $P_0 = \vec f(t_0)$.
 - Los demás son **singulares**. Una curva admite muchas parametrizaciones: puede que en una el vector derivado sea nulo y en otra no.
 - Si $\vec f$ es **inyectiva** en $[a,b]$, la curva es **simple**.
-- Si $\vec f\,'$ es **continua y no nula** en todo $[a,b]$, la curva es **lisa** (suave).
+- Si $\vec f\thinspace'$ es **continua y no nula** en todo $[a,b]$, la curva es **lisa** (suave).
 
 **Derivadas sucesivas de funciones vectoriales:** también componente a componente, $\vec f^{(n)}(t) = (f_1^{(n)}(t), \dots, f_m^{(n)}(t))$.
 
@@ -175,9 +175,9 @@ Las derivadas parciales son $F'_x = \lim\limits_{h\to0}\dfrac{\Delta_xF}{h}$ y $
 
 **Teorema:** si existe $F'(\vec x; \breve v)$ en un conjunto que contiene a $\vec x_0$, a $\vec x_0 + t\breve v$ y al segmento que los une, entonces
 
-$$\exists\,c \in (0, t) : \quad F(\vec x_0 + t\breve v) - F(\vec x_0) = t\cdot F'(\vec x_0 + c\breve v;\ \breve v)$$
+$$\exists\thinspace c \in (0, t) : \quad F(\vec x_0 + t\breve v) - F(\vec x_0) = t\cdot F'(\vec x_0 + c\breve v;\ \breve v)$$
 
-**Demostración.** Sea $\varphi(s) = F(\vec x_0 + s\breve v)$, $s \in [0, t]$. Como existe la derivada direccional sobre el segmento, $\varphi$ es derivable (y por lo tanto continua). Por Lagrange, $\varphi(t) - \varphi(0) = t\,\varphi'(c)$. Y por definición:
+**Demostración.** Sea $\varphi(s) = F(\vec x_0 + s\breve v)$, $s \in [0, t]$. Como existe la derivada direccional sobre el segmento, $\varphi$ es derivable (y por lo tanto continua). Por Lagrange, $\varphi(t) - \varphi(0) = t\thinspace\varphi'(c)$. Y por definición:
 
 $$\varphi'(c) = \lim_{\lambda\to0}\frac{F(\vec x_0 + c\breve v + \lambda\breve v) - F(\vec x_0 + c\breve v)}{\lambda} = F'(\vec x_0 + c\breve v;\ \breve v) \quad\blacksquare$$
 
@@ -195,9 +195,9 @@ El primer término tiende a $F'(\vec x_0; \breve u)$. Al segundo se le aplica el
 
 ### Derivada direccional en función de las parciales
 
-Un versor se escribe con sus **cosenos directores**: $\breve v = \sum\cos\alpha_i\,\breve e_i$. Si las parciales son continuas en $\vec x_0$, por homogeneidad y aditividad:
+Un versor se escribe con sus **cosenos directores**: $\breve v = \sum\cos\alpha_i\thinspace\breve e_i$. Si las parciales son continuas en $\vec x_0$, por homogeneidad y aditividad:
 
-$$F'(\vec x_0; \breve v) = \sum_i\cos\alpha_i\,\frac{\partial F}{\partial x_i}(\vec x_0) = \nabla F(\vec x_0)\cdot\breve v$$
+$$F'(\vec x_0; \breve v) = \sum_i\cos\alpha_i\thinspace\frac{\partial F}{\partial x_i}(\vec x_0) = \nabla F(\vec x_0)\cdot\breve v$$
 
 En tres variables: $F'(\vec x_0; \breve v) = F'_x\cos\alpha_1 + F'_y\cos\alpha_2 + F'_z\cos\alpha_3$.
 
@@ -205,7 +205,7 @@ En tres variables: $F'(\vec x_0; \breve v) = F'_x\cos\alpha_1 + F'_y\cos\alpha_2
 
 **Ejemplo:** $F = x^2 - 2xy$, $P_0 = (1,1)$, $\breve v = \left(-\frac{\sqrt2}{2}, \frac{\sqrt2}{2}\right)$.
 
-- Por definición: $\dfrac{F(1 - t\frac{\sqrt2}{2},\ 1 + t\frac{\sqrt2}{2}) - F(1,1)}{t} = \dfrac{-\sqrt2\,t + \frac32t^2}{t} \to -\sqrt2$.
+- Por definición: $\dfrac{F(1 - t\frac{\sqrt2}{2},\ 1 + t\frac{\sqrt2}{2}) - F(1,1)}{t} = \dfrac{-\sqrt2\thinspace t + \frac32t^2}{t} \to -\sqrt2$.
 - Con el gradiente: $\nabla F(1,1) = (2x - 2y,\ -2x) = (0, -2)$, y $(0,-2)\cdot\breve v = -\sqrt2$ ✓.
 
 **Cuidado:** si las parciales no son continuas, la fórmula del gradiente puede fallar. Por ejemplo, $F = \dfrac{xy^2}{x^2 + y^2}$ ($F(0,0) = 0$) tiene $F'(\vec 0; (h,k)) = hk^2 = h - h^3$, que es máxima en **dos** direcciones $\left(\frac{1}{\sqrt3}, \pm\sqrt{\frac23}\right)$; con un gradiente habría una sola.
@@ -222,12 +222,12 @@ Para $\vec F: A \subseteq \mathbb{R}^n \to \mathbb{R}^m$:
 
 **Matriz jacobiana** (matriz derivada) $D\vec F(\vec X)$, de $m \times n$:
 
-$$D\vec F = \begin{pmatrix} \frac{\partial F_1}{\partial x_1} & \cdots & \frac{\partial F_1}{\partial x_n} \\ \vdots & & \vdots \\ \frac{\partial F_m}{\partial x_1} & \cdots & \frac{\partial F_m}{\partial x_n} \end{pmatrix}$$
+$$D\vec F = \begin{pmatrix} \frac{\partial F_1}{\partial x_1} & \cdots & \frac{\partial F_1}{\partial x_n} \cr \vdots & & \vdots \cr \frac{\partial F_m}{\partial x_1} & \cdots & \frac{\partial F_m}{\partial x_n} \end{pmatrix}$$
 
 - Las **filas** son los gradientes de cada componente.
 - Las **columnas** son los vectores derivados respecto de cada variable.
 
-**Ejemplo:** $\vec F(x,y,z) = (2x^2y + z,\ 2z^2x + 3y)$ ⇒ $D\vec F = \begin{pmatrix} 4xy & 2x^2 & 1 \\ 2z^2 & 3 & 4zx \end{pmatrix}$.
+**Ejemplo:** $\vec F(x,y,z) = (2x^2y + z,\ 2z^2x + 3y)$ ⇒ $D\vec F = \begin{pmatrix} 4xy & 2x^2 & 1 \cr 2z^2 & 3 & 4zx \end{pmatrix}$.
 
 **Derivada direccional con la jacobiana:** si $\vec F$ tiene derivadas parciales continuas en $\vec X_0$,
 
@@ -275,7 +275,7 @@ Son distintas porque las derivadas segundas no son continuas en el origen (no se
 | Respecto de $\vec r$ | $f'(\vec A, \vec r) = \lim\limits_{h\to0}\dfrac{f(\vec A + h\vec r) - f(\vec A)}{h} = g'(0)$, con $g(t) = f(\vec A + t\vec r)$ |
 | Versor | $\breve r = \vec r/\lVert\vec r\rVert$ |
 | Homogeneidad | $f'(\vec A, \lambda\vec r) = \lambda f'(\vec A, \vec r)$ |
-| Recta tangente | $\vec X = \vec g(t_0) + u\,\vec g'(t_0)$ |
+| Recta tangente | $\vec X = \vec g(t_0) + u\thinspace\vec g'(t_0)$ |
 | Plano normal | $\vec g'(t_0)\cdot(\vec X - \vec g(t_0)) = 0$ |
 | Schwarz | $f''_{xy} = f''_{yx}$ si son continuas |
 | Laplaciano | $\Delta f = \sum f''_{x_ix_i}$ |

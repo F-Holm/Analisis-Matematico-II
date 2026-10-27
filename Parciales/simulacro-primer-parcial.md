@@ -10,7 +10,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 ### P1) Continuidad y direcciones de derivada nula
 
-Sea $f: \mathbb{R}^2 \to \mathbb{R}$ definida por $f(x,y) = \begin{cases} \dfrac{yx^2}{x^2 + 2y^2} & (x,y) \ne (0,0) \\ 0 & (x,y) = (0,0) \end{cases}$
+Sea $f: \mathbb{R}^2 \to \mathbb{R}$ definida por $f(x,y) = \begin{cases} \dfrac{yx^2}{x^2 + 2y^2} & (x,y) \ne (0,0) \cr 0 & (x,y) = (0,0) \end{cases}$
 
 - a) Estudiar continuidad de $f$ en $(0,0)$.
 - b) Halle las direcciones de derivada nula de $f$ en $(0,0)$.
@@ -29,7 +29,7 @@ $$f = \underbrace{y}_{\to0}\cdot\underbrace{\frac{x^2}{x^2 + 2y^2}}_{\in[0,1]} \
 
 **b)** Con $\breve r = (a, b)$, $a^2 + b^2 = 1$:
 
-$$f'(\vec 0, \breve r) = \lim_{h\to0}\frac{1}{h}\cdot\frac{h^3\,ba^2}{h^2(a^2 + 2b^2)} = \frac{ba^2}{a^2 + 2b^2} = \frac{ba^2}{1 + b^2}$$
+$$f'(\vec 0, \breve r) = \lim_{h\to0}\frac{1}{h}\cdot\frac{h^3\thinspace ba^2}{h^2(a^2 + 2b^2)} = \frac{ba^2}{a^2 + 2b^2} = \frac{ba^2}{1 + b^2}$$
 
 En el último paso se usó $a^2 + 2b^2 = (a^2 + b^2) + b^2 = 1 + b^2$.
 
@@ -65,7 +65,7 @@ Sea $C$ la curva definida por la intersección de las superficies $S_1$: $3xy + 
 
 **Paso 3 — Dirección tangente.**
 
-$$\vec v_t = \nabla f_1\wedge\nabla f_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ 7 & 6 & 0 \\ 5 & 1 & -1 \end{vmatrix} = (-6,\ 7,\ -23)$$
+$$\vec v_t = \nabla f_1\wedge\nabla f_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 7 & 6 & 0 \cr 5 & 1 & -1 \end{vmatrix} = (-6,\ 7,\ -23)$$
 
 **Paso 4 — Recta tangente.** $\vec X = (1, 2, 3) + \alpha(-6, 7, -23)$.
 
@@ -105,11 +105,11 @@ Dado el campo $z = f(x,y)$ tal que la ecuación del plano tangente al gráfico d
 
 **Paso 3 — Jacobiana de $\vec g = (u^2v,\ u + v)$:**
 
-$$D\vec g = \begin{pmatrix} 2uv & u^2 \\ 1 & 1 \end{pmatrix} \ \Rightarrow\ D\vec g(-1,1) = \begin{pmatrix} -2 & 1 \\ 1 & 1 \end{pmatrix}$$
+$$D\vec g = \begin{pmatrix} 2uv & u^2 \cr 1 & 1 \end{pmatrix} \ \Rightarrow\ D\vec g(-1,1) = \begin{pmatrix} -2 & 1 \cr 1 & 1 \end{pmatrix}$$
 
 **Paso 4 — Regla de la cadena.**
 
-$$\nabla h(-1,1) = \left(3,\ -\tfrac32\right)\begin{pmatrix} -2 & 1 \\ 1 & 1 \end{pmatrix} = \left(-6 - \tfrac32,\ 3 - \tfrac32\right) = \left(-\tfrac{15}{2},\ \tfrac32\right)$$
+$$\nabla h(-1,1) = \left(3,\ -\tfrac32\right)\begin{pmatrix} -2 & 1 \cr 1 & 1 \end{pmatrix} = \left(-6 - \tfrac32,\ 3 - \tfrac32\right) = \left(-\tfrac{15}{2},\ \tfrac32\right)$$
 
 **Paso 5 — Aproximación** con incremento $(0{,}02;\ 0{,}02)$:
 
@@ -142,7 +142,7 @@ $$f'_x = 2xy = 0, \qquad f'_y = x^2 + 4y^2 - 4 = 0$$
 
 Los puntos son $(0,1)$, $(0,-1)$, $(2,0)$ y $(-2,0)$.
 
-**Paso 2 — Hessiano.** $Hf = \begin{pmatrix} 2y & 2x \\ 2x & 8y \end{pmatrix}$.
+**Paso 2 — Hessiano.** $Hf = \begin{pmatrix} 2y & 2x \cr 2x & 8y \end{pmatrix}$.
 
 | Punto | $\det H$ | $f''_{xx}$ | Clasificación | $f$ |
 |---|---|---|---|---|

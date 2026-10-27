@@ -8,7 +8,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 >
 > - Trabajando con funciones de varias variables:
 >   - $f'(\bar A, \bar r) \equiv \dfrac{\partial f}{\partial \bar r}(\bar A)$ simbolizan la derivada de $f$ respecto de $\bar r$ en el punto $\bar A$.
->   - Siendo $\bar r \ne \bar 0$, su dirección viene dada por $\breve r = \bar r/\|\bar r\|$; las componentes de $\breve r$ son los cosenos directores de la dirección. La derivada de $f$ respecto $\breve r$ (vector unitario o versor) también se denomina "derivada direccional" o "derivada en la dirección de $\bar r$".
+>   - Siendo $\bar r \ne \bar 0$, su dirección viene dada por $\breve r = \bar r/\Vert\bar r\Vert$; las componentes de $\breve r$ son los cosenos directores de la dirección. La derivada de $f$ respecto $\breve r$ (vector unitario o versor) también se denomina "derivada direccional" o "derivada en la dirección de $\bar r$".
 >   - Las derivadas parciales son derivadas direccionales en la dirección de los versores canónicos; es decir, $f'(\bar A, \breve e_k) \equiv f'_{x_k}(\bar A) \equiv \dfrac{\partial f}{\partial x_k}(\bar A)$ donde $\breve e_k = (0, \cdots, 0, 1, 0, \cdots, 0)$ (con el 1 en la posición $k$) es el $k$-ésimo versor canónico.
 > - Una derivada queda definida cuando el límite correspondiente existe y tiene norma finita, entendiéndose que:
 >   - para funciones de una variable la derivada $f'(a)$ se estudia suponiendo que $a$ es interior al dominio de $f$.<sup>(\*)</sup>
@@ -38,7 +38,7 @@ Definida la curva $C$ como intersección de dos superficies $S_1$ y $S_2$ ($C = 
 
 **Fórmulas que vamos a usar:** si $C$ está parametrizada por $\vec g(t)$ y $\vec g(t_0) = \bar A$:
 
-- Recta tangente: $\vec X = \bar A + u\,\vec g'(t_0)$.
+- Recta tangente: $\vec X = \bar A + u\thinspace\vec g'(t_0)$.
 - Plano normal: $\vec g'(t_0)\cdot(\vec X - \bar A) = 0$.
 
 **a)**
@@ -51,7 +51,7 @@ $$\vec g(x) = (x,\ x^2,\ 5 - x^2), \quad x \in \Re$$
 
 *Vector tangente:* $\vec g'(x) = (1,\ 2x,\ -2x)$, así que $\vec g'(2) = (1, 4, -4)$.
 
-*Recta tangente:* $\vec X = (2,4,1) + u\,(1,4,-4) = (2 + u,\ 4 + 4u,\ 1 - 4u)$.
+*Recta tangente:* $\vec X = (2,4,1) + u\thinspace(1,4,-4) = (2 + u,\ 4 + 4u,\ 1 - 4u)$.
 
 *Plano normal:* $(1,4,-4)\cdot(x - 2,\ y - 4,\ z - 1) = 0$, es decir:
 
@@ -87,13 +87,13 @@ $$z^2 + z^2 = 8 \ \Rightarrow\ z = 2, \qquad x^2 + y^2 = 4$$
 
 Es la circunferencia de radio 2 a altura $z = 2$:
 
-$$\vec g(t) = (2\cos t,\ 2\operatorname{sen}t,\ 2), \quad t \in [0, 2\pi]$$
+$$\vec g(t) = (2\cos t,\ 2\mathop{\mathrm{sen}}t,\ 2), \quad t \in [0, 2\pi]$$
 
 *Punto:* $\bar A = (0, 2, 2)$ corresponde a $t = \pi/2$.
 
-*Vector tangente:* $\vec g'(t) = (-2\operatorname{sen}t,\ 2\cos t,\ 0)$, así que $\vec g'(\pi/2) = (-2, 0, 0)$. Es paralelo a $(1, 0, 0)$.
+*Vector tangente:* $\vec g'(t) = (-2\mathop{\mathrm{sen}}t,\ 2\cos t,\ 0)$, así que $\vec g'(\pi/2) = (-2, 0, 0)$. Es paralelo a $(1, 0, 0)$.
 
-*Recta tangente:* $\vec X = (0,2,2) + u\,(1,0,0) = (u,\ 2,\ 2)$.
+*Recta tangente:* $\vec X = (0,2,2) + u\thinspace(1,0,0) = (u,\ 2,\ 2)$.
 
 *Plano normal:* $-2(x - 0) = 0 \Rightarrow x = 0$. Ecuación vectorial: $\vec X = (0, y, z)$.
 
@@ -105,7 +105,7 @@ $$\vec g(t) = (2\cos t,\ 2\operatorname{sen}t,\ 2), \quad t \in [0, 2\pi]$$
 
 - a) Ecuación $C$: $\bar X = (x, x^2, 5 - x^2) \wedge x \in \Re$; recta tg.: $\bar X = (2 + u, 4 + 4u, 1 - 4u) \wedge u \in \Re$. Plano normal: $x + 4y - 4z = 14$, $\bar X = (14 - 4y + 4z, y, z) \wedge (y,z) \in \Re^2$.
 - b) Ecuación $C$: $\bar X = (x, x - 1, 2x - 1) \wedge x \in \Re$; recta tg.: $\bar X = (2 + u, 1 + u, 3 + 2u) \wedge u \in \Re$. Plano normal: $x + y + 2z = 9$, $\bar X = (x, y, (9 - x - y)/2) \wedge (x,y) \in \Re^2$.
-- c) Ecuación $C$: $\bar X = (2\cos(t), 2\operatorname{sen}(t), 2) \wedge t \in [0, 2\pi]$; recta tg.: $\bar X = (u, 2, 2) \wedge u \in \Re$. Plano normal: $x = 0$, $\bar X = (0, y, z) \wedge (y,z) \in \Re^2$.
+- c) Ecuación $C$: $\bar X = (2\cos(t), 2\mathop{\mathrm{sen}}(t), 2) \wedge t \in [0, 2\pi]$; recta tg.: $\bar X = (u, 2, 2) \wedge u \in \Re$. Plano normal: $x = 0$, $\bar X = (0, y, z) \wedge (y,z) \in \Re^2$.
 
 Las tres son curvas planas, pertenecen a los planos de ecuación: a) $y + z = 5$; b) $z = x + y$; c) $z = 2$.
 
@@ -172,7 +172,7 @@ $$9 + 6t = v, \qquad 1 + t = 2v, \qquad 6 + t = \frac{32}{v}$$
 
 ### 03) Curva alabeada
 
-Halle la ecuación de un plano que contenga tres puntos no alineados de la curva $C$ de ecuación $\bar X = (2\cos(t),\ 2\operatorname{sen}(t),\ t)$ con $t \in [0, 2\pi]$. Demuestre que $C$ es alabeada (no es plana).
+Halle la ecuación de un plano que contenga tres puntos no alineados de la curva $C$ de ecuación $\bar X = (2\cos(t),\ 2\mathop{\mathrm{sen}}(t),\ t)$ con $t \in [0, 2\pi]$. Demuestre que $C$ es alabeada (no es plana).
 
 <details>
 <summary><b>Solución</b></summary>
@@ -180,7 +180,7 @@ Halle la ecuación de un plano que contenga tres puntos no alineados de la curva
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Tres puntos.** Elegimos valores de $t$ que den $\operatorname{sen}t = 0$, para que los puntos queden en un plano fácil:
+**Paso 1 — Tres puntos.** Elegimos valores de $t$ que den $\mathop{\mathrm{sen}}t = 0$, para que los puntos queden en un plano fácil:
 
 - $t = 0$: $P_1 = (2, 0, 0)$.
 - $t = \pi$: $P_2 = (-2, 0, \pi)$.
@@ -205,11 +205,11 @@ No están alineados: $P_2 - P_1 = (-4, 0, \pi)$ y $P_3 - P_1 = (0, 0, 2\pi)$ no 
 Halle las funciones derivadas parciales de 1º orden de las siguientes funciones.
 
 - a) $f(x,y) = x^4 + 2xy + xy^3 - 1$.
-- b) $f(x,y,z) = y\,e^{2x} + z\,e^{3y}$.
-- c) $f(x,y) = x\,e^{x^2 + y^2}$.
-- d) $f(x,y) = \operatorname{arctg}(y/x)$, $x \ne 0$.
-- e) $f(x,y) = \displaystyle\int_x^y e^{\operatorname{sen}(t)}\,dt$.
-- f) $f(x,y) = \displaystyle\int_x^{x^2 + y^2} e^{t^2}\,dt$.
+- b) $f(x,y,z) = y\thinspace e^{2x} + z\thinspace e^{3y}$.
+- c) $f(x,y) = x\thinspace e^{x^2 + y^2}$.
+- d) $f(x,y) = \mathop{\mathrm{arctg}}(y/x)$, $x \ne 0$.
+- e) $f(x,y) = \displaystyle\int_x^y e^{\mathop{\mathrm{sen}}(t)}\thinspace dt$.
+- f) $f(x,y) = \displaystyle\int_x^{x^2 + y^2} e^{t^2}\thinspace dt$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -228,20 +228,20 @@ Ambas son polinomios ⇒ definidas en $\Re^2$.
 
 **b)**
 
-- $f'_x = 2y\,e^{2x}$.
-- $f'_y = e^{2x} + 3z\,e^{3y}$.
+- $f'_x = 2y\thinspace e^{2x}$.
+- $f'_y = e^{2x} + 3z\thinspace e^{3y}$.
 - $f'_z = e^{3y}$.
 
 Definidas en $\Re^3$.
 
 **c)** Regla del producto en $x$ y de la cadena en el exponente:
 
-- $f'_x = e^{x^2+y^2} + x\cdot 2x\,e^{x^2+y^2} = (1 + 2x^2)\,e^{x^2+y^2}$.
-- $f'_y = x\cdot 2y\,e^{x^2+y^2} = 2xy\,e^{x^2+y^2}$.
+- $f'_x = e^{x^2+y^2} + x\cdot 2x\thinspace e^{x^2+y^2} = (1 + 2x^2)\thinspace e^{x^2+y^2}$.
+- $f'_y = x\cdot 2y\thinspace e^{x^2+y^2} = 2xy\thinspace e^{x^2+y^2}$.
 
 Definidas en $\Re^2$.
 
-**d)** Usamos $(\operatorname{arctg}u)' = \dfrac{u'}{1 + u^2}$ con $u = y/x$:
+**d)** Usamos $(\mathop{\mathrm{arctg}}u)' = \dfrac{u'}{1 + u^2}$ con $u = y/x$:
 
 - $f'_x = \dfrac{-y/x^2}{1 + y^2/x^2} = \dfrac{-y}{x^2 + y^2}$.
 - $f'_y = \dfrac{1/x}{1 + y^2/x^2} = \dfrac{x}{x^2 + y^2}$.
@@ -250,12 +250,12 @@ Definidas donde está definida $f$: $x \ne 0$.
 
 **e)** Por el teorema fundamental del cálculo, $\dfrac{d}{db}\displaystyle\int_a^b g = g(b)$ y $\dfrac{d}{da}\displaystyle\int_a^b g = -g(a)$:
 
-- $f'_x = -e^{\operatorname{sen}(x)}$.
-- $f'_y = e^{\operatorname{sen}(y)}$.
+- $f'_x = -e^{\mathop{\mathrm{sen}}(x)}$.
+- $f'_y = e^{\mathop{\mathrm{sen}}(y)}$.
 
 **f)** El límite superior es $b = x^2 + y^2$ y el inferior $a = x$. Con la regla de la cadena:
 
-- $f'_x = e^{b^2}\,b'_x - e^{a^2}\,a'_x = e^{(x^2+y^2)^2}\cdot 2x - e^{x^2}$.
+- $f'_x = e^{b^2}\thinspace b'_x - e^{a^2}\thinspace a'_x = e^{(x^2+y^2)^2}\cdot 2x - e^{x^2}$.
 - $f'_y = e^{(x^2+y^2)^2}\cdot 2y$.
 
 </details>
@@ -263,11 +263,11 @@ Definidas donde está definida $f$: $x \ne 0$.
 **Respuesta:**
 
 - a) $f'_x(x,y) = 4x^3 + 2y + y^3$, $\ f'_y(x,y) = 2x + 3xy^2$, ambas definidas en $\Re^2$.
-- b) $f'_x(x,y,z) = 2y\,e^{2x}$, $\ f'_y(x,y,z) = e^{2x} + 3z\,e^{3y}$, $\ f'_z(x,y,z) = e^{3y}$, las tres def. en $\Re^3$.
-- c) $f'_x(x,y) = (1 + 2x^2)\,e^{x^2+y^2}$, $\ f'_y(x,y) = 2xy\,e^{x^2+y^2}$, ambas definidas en $\Re^2$.
-- d) $f'_x(x,y) = \dfrac{-y}{x^2+y^2}$, $\ f'_y(x,y) = \dfrac{x}{x^2+y^2}$, ambas definidas en $\{(x,y) \in \Re^2 / x \ne 0\}$.
-- e) $f'_x(x,y) = -e^{\operatorname{sen}(x)}$, $\ f'_y(x,y) = e^{\operatorname{sen}(y)}$, ambas definidas en $\Re^2$.
-- f) $f'_x(x,y) = 2x\,e^{(x^2+y^2)^2} - e^{x^2}$, $\ f'_y(x,y) = 2y\,e^{(x^2+y^2)^2}$, ambas definidas en $\Re^2$.
+- b) $f'_x(x,y,z) = 2y\thinspace e^{2x}$, $\ f'_y(x,y,z) = e^{2x} + 3z\thinspace e^{3y}$, $\ f'_z(x,y,z) = e^{3y}$, las tres def. en $\Re^3$.
+- c) $f'_x(x,y) = (1 + 2x^2)\thinspace e^{x^2+y^2}$, $\ f'_y(x,y) = 2xy\thinspace e^{x^2+y^2}$, ambas definidas en $\Re^2$.
+- d) $f'_x(x,y) = \dfrac{-y}{x^2+y^2}$, $\ f'_y(x,y) = \dfrac{x}{x^2+y^2}$, ambas definidas en $\lbrace(x,y) \in \Re^2 / x \ne 0\rbrace$.
+- e) $f'_x(x,y) = -e^{\mathop{\mathrm{sen}}(x)}$, $\ f'_y(x,y) = e^{\mathop{\mathrm{sen}}(y)}$, ambas definidas en $\Re^2$.
+- f) $f'_x(x,y) = 2x\thinspace e^{(x^2+y^2)^2} - e^{x^2}$, $\ f'_y(x,y) = 2y\thinspace e^{(x^2+y^2)^2}$, ambas definidas en $\Re^2$.
 
 </details>
 
@@ -278,7 +278,7 @@ Definidas donde está definida $f$: $x \ne 0$.
 Analice por definición la existencia de las derivadas parciales de $f$ en el punto $\bar A$; cuando sea posible verifique aplicando la regla práctica de derivación.
 
 - a) $f(x,y) = 3x^2 + 2xy$, $\bar A = (1,2)$.
-- b) $f(x,y) = \begin{cases} x^2 + 2y & \text{si } x \ge 1 \\ 2x - y & \text{si } x < 1 \end{cases}$, $\bar A = (1,1)$.
+- b) $f(x,y) = \begin{cases} x^2 + 2y & \text{si } x \ge 1 \cr 2x - y & \text{si } x < 1 \end{cases}$, $\bar A = (1,1)$.
 - c) $f(x,y) = \sqrt{x^4 + 2y^2}$, $\bar A = (0,0)$.
 - d) $f(x,y) = |x| + |y|$, $\bar A = (0,0)$.
 
@@ -313,7 +313,7 @@ $$f'_x(a,b) = \lim_{h\to0}\frac{f(a+h, b) - f(a,b)}{h}, \qquad f'_y(a,b) = \lim_
 **c)** $f(0,0) = 0$.
 
 - $f'_x$: $\dfrac{\sqrt{h^4}}{h} = \dfrac{h^2}{h} = h \to 0$ ⇒ $f'_x(0,0) = 0$.
-- $f'_y$: $\dfrac{\sqrt{2k^2}}{k} = \sqrt2\,\dfrac{|k|}{k}$, que vale $\sqrt2$ por derecha y $-\sqrt2$ por izquierda ⇒ $\nexists f'_y(0,0)$.
+- $f'_y$: $\dfrac{\sqrt{2k^2}}{k} = \sqrt2\thinspace\dfrac{|k|}{k}$, que vale $\sqrt2$ por derecha y $-\sqrt2$ por izquierda ⇒ $\nexists f'_y(0,0)$.
 
 *Regla práctica:* $f'_x = \dfrac{2x^3}{\sqrt{x^4+2y^2}}$ no está definida en el origen; ahí sólo sirve la definición.
 
@@ -337,7 +337,7 @@ $$f'_x(a,b) = \lim_{h\to0}\frac{f(a+h, b) - f(a,b)}{h}, \qquad f'_y(a,b) = \lim_
 
 ### 06) Discontinua y con pocas direccionales
 
-Dada $f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \text{si } (x,y) \ne (0,0) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$
+Dada $f(x,y) = \begin{cases} \dfrac{xy}{x^2 + y^2} & \text{si } (x,y) \ne (0,0) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$
 
 - a) Pruebe que $f$ no es continua en $(0,0)$.
 - b) Pruebe que $f'(\bar 0, \breve r)$ sólo queda definida para $\breve r$: $(1,0)$, $(-1,0)$, $(0,1)$ y $(0,-1)$.
@@ -376,7 +376,7 @@ Con $a^2 + b^2 = 1$, los casos con $ab = 0$ son exactamente $(\pm1, 0)$ y $(0, \
 
 ### 07) Derivable en toda dirección pero discontinua
 
-Dada $g(x,y) = \begin{cases} \dfrac{x^3y}{x^6 + y^2} & \text{si } (x,y) \ne (0,0) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$, demuestre que para todo $\breve r \in \Re^2$ la función es derivable en el origen, aun cuando $g$ es discontinua en $(0,0)$.
+Dada $g(x,y) = \begin{cases} \dfrac{x^3y}{x^6 + y^2} & \text{si } (x,y) \ne (0,0) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$, demuestre que para todo $\breve r \in \Re^2$ la función es derivable en el origen, aun cuando $g$ es discontinua en $(0,0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -386,7 +386,7 @@ Dada $g(x,y) = \begin{cases} \dfrac{x^3y}{x^6 + y^2} & \text{si } (x,y) \ne (0,0
 
 **Paso 1 — Derivada direccional.** Sea $\breve r = (a, b)$ con $a^2 + b^2 = 1$:
 
-$$g'(\bar 0, \breve r) = \lim_{h\to0}\frac{g(ha, hb)}{h} = \lim_{h\to0}\frac{1}{h}\cdot\frac{h^4a^3b}{h^6a^6 + h^2b^2} = \lim_{h\to0}\frac{h\,a^3b}{h^4a^6 + b^2}$$
+$$g'(\bar 0, \breve r) = \lim_{h\to0}\frac{g(ha, hb)}{h} = \lim_{h\to0}\frac{1}{h}\cdot\frac{h^4a^3b}{h^6a^6 + h^2b^2} = \lim_{h\to0}\frac{h\thinspace a^3b}{h^4a^6 + b^2}$$
 
 - Si $b \ne 0$: el denominador tiende a $b^2 \ne 0$ y el numerador a 0 ⇒ el límite es $0$.
 - Si $b = 0$: $g(ha, 0) = 0$ ⇒ el límite es $0$.
@@ -435,7 +435,7 @@ $x^{1/3} = \sqrt[3]{x}$ está definida para todo $x$ real, también los negativo
 
 *Direccionales:* sea $\breve r = (a, b)$ unitario.
 
-$$h'(\bar 0, \breve r) = \lim_{t\to0}\frac{\sqrt[3]{ta}\,\sqrt[3]{tb}}{t} = \lim_{t\to0}\frac{t^{2/3}\sqrt[3]{ab}}{t} = \lim_{t\to0}\frac{\sqrt[3]{ab}}{t^{1/3}}$$
+$$h'(\bar 0, \breve r) = \lim_{t\to0}\frac{\sqrt[3]{ta}\thinspace\sqrt[3]{tb}}{t} = \lim_{t\to0}\frac{t^{2/3}\sqrt[3]{ab}}{t} = \lim_{t\to0}\frac{\sqrt[3]{ab}}{t^{1/3}}$$
 
 - Si $ab \ne 0$: el cociente tiende a $\pm\infty$ ⇒ no existe.
 - Si $ab = 0$: vale 0.
@@ -496,11 +496,11 @@ Dada $f(x,y) = 1 - x^2 + 2y^2$, calcule usando la definición la derivada direcc
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Versor.** $\|\bar v\| = \sqrt{9 + 16} = 5$, así que $\breve r = \left(\frac35, \frac45\right)$.
+**Paso 1 — Versor.** $\Vert\bar v\Vert = \sqrt{9 + 16} = 5$, así que $\breve r = \left(\frac35, \frac45\right)$.
 
 **Paso 2 — Restricción a la recta.**
 
-$$g(t) = f\!\left(1 + \tfrac35t,\ -1 + \tfrac45t\right)$$
+$$g(t) = f\negthinspace\left(1 + \tfrac35t,\ -1 + \tfrac45t\right)$$
 
 Desarrollando:
 
@@ -524,8 +524,8 @@ $$f'(\bar A, \breve r) = \lim_{t\to0}\frac{g(t) - g(0)}{t} = \lim_{t\to0}\left(-
 
 Estudie la derivabilidad en distintas direcciones en el punto $\bar A$ que se indica en cada caso.
 
-- a) $f(x,y) = \begin{cases} \dfrac{xy - x}{x^2 + (y - 1)^2} & \text{si } (x,y) \ne (0,1) \\ 0 & \text{si } (x,y) = (0,1) \end{cases}$, $\quad \bar A = (0,1)$.
-- b) $f(x,y) = \begin{cases} \dfrac{y^2}{x} & \text{si } (x,y) \ne (0,y) \\ 0 & \text{si } (x,y) = (0,y) \end{cases}$, $\quad \bar A = (0,0)$.
+- a) $f(x,y) = \begin{cases} \dfrac{xy - x}{x^2 + (y - 1)^2} & \text{si } (x,y) \ne (0,1) \cr 0 & \text{si } (x,y) = (0,1) \end{cases}$, $\quad \bar A = (0,1)$.
+- b) $f(x,y) = \begin{cases} \dfrac{y^2}{x} & \text{si } (x,y) \ne (0,y) \cr 0 & \text{si } (x,y) = (0,y) \end{cases}$, $\quad \bar A = (0,0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -558,7 +558,7 @@ La función es derivable en **todas** las direcciones.
 **Respuesta:**
 
 - a) Sólo es derivable, con resultado 0, según $(0,1)$, $(0,-1)$, $(1,0)$ y $(-1,0)$.
-- b) $f'(\bar 0, (u,v)) = \begin{cases} v^2/u & \text{si } u \ne 0 \\ 0 & \text{si } u = 0 \end{cases}$ con $u^2 + v^2 = 1$.
+- b) $f'(\bar 0, (u,v)) = \begin{cases} v^2/u & \text{si } u \ne 0 \cr 0 & \text{si } u = 0 \end{cases}$ con $u^2 + v^2 = 1$.
 
 </details>
 
@@ -579,20 +579,20 @@ Determine los dominios en los que quedan definidas las derivadas parciales de 1�
 <details>
 <summary>Solución paso a paso</summary>
 
-**a)** $f'_x = \dfrac{2x}{x^2+y^2}$ y $f'_y = \dfrac{2y}{x^2+y^2}$. Las derivadas segundas también son racionales con denominador $(x^2+y^2)^2$. Todas están definidas donde $f$ lo está: $\Re^2 - \{\bar 0\}$.
+**a)** $f'_x = \dfrac{2x}{x^2+y^2}$ y $f'_y = \dfrac{2y}{x^2+y^2}$. Las derivadas segundas también son racionales con denominador $(x^2+y^2)^2$. Todas están definidas donde $f$ lo está: $\Re^2 - \lbrace\bar 0\rbrace$.
 
 **b)** El dominio de $\vec f$ es $y > 0$, $x \ne 0$. Derivadas:
 
 - $\vec f'_x = (\ln y,\ -y/x^2)$ y $\vec f'_y = (x/y,\ 1/x)$.
 - Las segundas tienen $\ln$, $1/y$ y potencias de $1/x$.
 
-Todas están definidas en $\{x \ne 0,\ y > 0\}$.
+Todas están definidas en $\lbrace x \ne 0,\ y > 0\rbrace$.
 
 **c)** **Fuera del origen** la regla práctica da:
 
 $$f'_x = \frac{2xy^2}{(x^2+y^2)^2}, \qquad f'_y = \frac{-2x^2y}{(x^2+y^2)^2}$$
 
-Las segundas también son racionales y están definidas en $\Re^2 - \{\bar 0\}$.
+Las segundas también son racionales y están definidas en $\Re^2 - \lbrace\bar 0\rbrace$.
 
 **En el origen** hay que usar la definición:
 
@@ -607,10 +607,10 @@ Las segundas también son racionales y están definidas en $\Re^2 - \{\bar 0\}$.
 
 **Respuesta:**
 
-- a) 1° y 2° en $\Re^2 - \{\bar 0\}$.
-- b) 1° y 2° en $\{(x,y) \in \Re^2 / x \ne 0 \wedge y > 0\}$.
-- c) $f'_x$, $f''_{xx}$, $f''_{xy}$ en $\Re^2 - \{\bar 0\}$; $f'_y$, $f''_{yx}$, $f''_{yy}$ en $\Re^2$.
-- d) 1° y 2° en $\{(x,y,z) \in \Re^3 / yz > 0\}$.
+- a) 1° y 2° en $\Re^2 - \lbrace\bar 0\rbrace$.
+- b) 1° y 2° en $\lbrace(x,y) \in \Re^2 / x \ne 0 \wedge y > 0\rbrace$.
+- c) $f'_x$, $f''_{xx}$, $f''_{xy}$ en $\Re^2 - \lbrace\bar 0\rbrace$; $f'_y$, $f''_{yx}$, $f''_{yy}$ en $\Re^2$.
+- d) 1° y 2° en $\lbrace(x,y,z) \in \Re^3 / yz > 0\rbrace$.
 
 </details>
 
@@ -618,7 +618,7 @@ Las segundas también son racionales y están definidas en $\Re^2 - \{\bar 0\}$.
 
 ### 13) Partícula que atraviesa una superficie
 
-Sea $P$ una partícula que se desplaza en el espacio $xyz$ según la trayectoria definida por $\bar X = 3t^2\,\breve\imath + (2 - t)\,\breve\jmath + 2t^2\,\breve k$ con $t \ge 0$, $t$: tiempo en segundos. Si $x = y^2 + z$ es la ecuación de una superficie $S$:
+Sea $P$ una partícula que se desplaza en el espacio $xyz$ según la trayectoria definida por $\bar X = 3t^2\thinspace\breve\imath + (2 - t)\thinspace\breve\jmath + 2t^2\thinspace\breve k$ con $t \ge 0$, $t$: tiempo en segundos. Si $x = y^2 + z$ es la ecuación de una superficie $S$:
 
 - a) calcule el ángulo entre los vectores velocidad y aceleración de $P$ en el instante que la partícula atraviesa a $S$.
 - b) calcule el tiempo que tardará $P$ en llegar desde $S$ al plano de ecuación $x - z + 2y = 7$.
@@ -635,14 +635,14 @@ $$3t^2 = (2 - t)^2 + 2t^2 = 4 - 4t + 3t^2 \ \Rightarrow\ 4t = 4 \ \Rightarrow\ t
 
 **a) Ángulo.**
 
-*Fórmula:* $\cos\alpha = \dfrac{\vec v\cdot\vec a}{\|\vec v\|\,\|\vec a\|}$, con $\vec v = \bar X'(t) = (6t, -1, 4t)$ y $\vec a = \bar X''(t) = (6, 0, 4)$.
+*Fórmula:* $\cos\alpha = \dfrac{\vec v\cdot\vec a}{\Vert\vec v\Vert\thinspace\Vert\vec a\Vert}$, con $\vec v = \bar X'(t) = (6t, -1, 4t)$ y $\vec a = \bar X''(t) = (6, 0, 4)$.
 
 *Cálculo en $t = 1$:* $\vec v = (6, -1, 4)$, $\vec a = (6, 0, 4)$.
 
 - $\vec v\cdot\vec a = 36 + 0 + 16 = 52$.
-- $\|\vec v\| = \sqrt{53}$ y $\|\vec a\| = \sqrt{52}$.
+- $\Vert\vec v\Vert = \sqrt{53}$ y $\Vert\vec a\Vert = \sqrt{52}$.
 
-$$\cos\alpha = \frac{52}{\sqrt{53}\sqrt{52}} = \sqrt{\frac{52}{53}} = 2\sqrt{\frac{13}{53}} \ \Rightarrow\ \alpha = \arccos\!\left(2\sqrt{13/53}\right) \approx 7{,}9^\circ$$
+$$\cos\alpha = \frac{52}{\sqrt{53}\sqrt{52}} = \sqrt{\frac{52}{53}} = 2\sqrt{\frac{13}{53}} \ \Rightarrow\ \alpha = \arccos\negthinspace\left(2\sqrt{13/53}\right) \approx 7{,}9^\circ$$
 
 **b)** Instante en que llega al plano: reemplazamos en $x - z + 2y = 7$:
 
@@ -671,9 +671,9 @@ Sea $L : \Re^n \to \Re$ ($n > 1$) una transformación lineal, aplicando la defin
 <details>
 <summary>Solución paso a paso</summary>
 
-Por definición, y usando la linealidad, $L(\bar A + h\bar r) = L(\bar A) + h\,L(\bar r)$:
+Por definición, y usando la linealidad, $L(\bar A + h\bar r) = L(\bar A) + h\thinspace L(\bar r)$:
 
-$$L'(\bar A, \bar r) = \lim_{h\to0}\frac{L(\bar A + h\bar r) - L(\bar A)}{h} = \lim_{h\to0}\frac{L(\bar A) + h\,L(\bar r) - L(\bar A)}{h} = \lim_{h\to0}L(\bar r) = L(\bar r) \quad\blacksquare$$
+$$L'(\bar A, \bar r) = \lim_{h\to0}\frac{L(\bar A + h\bar r) - L(\bar A)}{h} = \lim_{h\to0}\frac{L(\bar A) + h\thinspace L(\bar r) - L(\bar A)}{h} = \lim_{h\to0}L(\bar r) = L(\bar r) \quad\blacksquare$$
 
 </details>
 
@@ -697,7 +697,7 @@ Sea $f(\bar X) = \bar k\cdot\bar X$ con $\bar k$ constante; utilice la propiedad
 
 **Paso 2 — Sistema.** Con $\bar k = (k_1, k_2)$:
 
-$$\begin{cases} 3k_1 + 4k_2 = 2 \\ -k_1 + k_2 = 4 \end{cases}$$
+$$\begin{cases} 3k_1 + 4k_2 = 2 \cr -k_1 + k_2 = 4 \end{cases}$$
 
 **Paso 3 — Resolver.**
 
@@ -714,7 +714,7 @@ $$\begin{cases} 3k_1 + 4k_2 = 2 \\ -k_1 + k_2 = 4 \end{cases}$$
 
 ### 16) Derivadas parciales perpendiculares
 
-Dado $\bar v(x,y) = (y + x\,g(x),\ y^2)$, halle $g(x)$ para que $\bar v'_x \perp \bar v'_y$ con $\bar v(1,1) = (3,1)$.
+Dado $\bar v(x,y) = (y + x\thinspace g(x),\ y^2)$, halle $g(x)$ para que $\bar v'_x \perp \bar v'_y$ con $\bar v(1,1) = (3,1)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -724,13 +724,13 @@ Dado $\bar v(x,y) = (y + x\,g(x),\ y^2)$, halle $g(x)$ para que $\bar v'_x \perp
 
 **Paso 1 — Derivadas parciales** (suponiendo $g$ derivable):
 
-$$\bar v'_x = (g(x) + x\,g'(x),\ 0), \qquad \bar v'_y = (1,\ 2y)$$
+$$\bar v'_x = (g(x) + x\thinspace g'(x),\ 0), \qquad \bar v'_y = (1,\ 2y)$$
 
 **Paso 2 — Perpendicularidad** (producto escalar nulo):
 
-$$\bar v'_x\cdot\bar v'_y = g(x) + x\,g'(x) = 0$$
+$$\bar v'_x\cdot\bar v'_y = g(x) + x\thinspace g'(x) = 0$$
 
-**Paso 3 — Resolver la EDO.** Observamos que $g + xg' = (x\,g)'$. Entonces $(x\,g)' = 0 \Rightarrow x\,g(x) = C \Rightarrow g(x) = \dfrac{C}{x}$.
+**Paso 3 — Resolver la EDO.** Observamos que $g + xg' = (x\thinspace g)'$. Entonces $(x\thinspace g)' = 0 \Rightarrow x\thinspace g(x) = C \Rightarrow g(x) = \dfrac{C}{x}$.
 
 **Paso 4 — Condición.** $\bar v(1,1) = (1 + g(1),\ 1) = (3, 1) \Rightarrow g(1) = 2 \Rightarrow C = 2$.
 
@@ -785,21 +785,21 @@ Para tiempo $t \ge 0$ dos puntos siguen trayectorias definidas por $\bar X = (t 
 
 $$\bar X_1' = (1,\ g'(t),\ 2t), \qquad \bar X_2' = (2,\ g''(t),\ 4t)$$
 
-**Paso 2 — Paralelismo.** $\bar X_2' = \lambda\,\bar X_1'$. De la primera componente, $\lambda = 2$, y la tercera lo confirma: $4t = 2\cdot 2t$ ✓. La segunda da:
+**Paso 2 — Paralelismo.** $\bar X_2' = \lambda\thinspace\bar X_1'$. De la primera componente, $\lambda = 2$, y la tercera lo confirma: $4t = 2\cdot 2t$ ✓. La segunda da:
 
-$$g''(t) = 2\,g'(t)$$
+$$g''(t) = 2\thinspace g'(t)$$
 
-**Paso 3 — Resolver.** Es una EDO de variables separables en $w = g'$: $w' = 2w \Rightarrow g'(t) = C\,e^{2t}$.
+**Paso 3 — Resolver.** Es una EDO de variables separables en $w = g'$: $w' = 2w \Rightarrow g'(t) = C\thinspace e^{2t}$.
 
 **Paso 4 — Condiciones en $t = 1$.**
 
-- $\bar X_2(1) = (2,\ g'(1),\ 2) = (2,2,2) \Rightarrow g'(1) = 2 \Rightarrow C\,e^2 = 2 \Rightarrow g'(t) = 2e^{2(t-1)}$.
+- $\bar X_2(1) = (2,\ g'(1),\ 2) = (2,2,2) \Rightarrow g'(1) = 2 \Rightarrow C\thinspace e^2 = 2 \Rightarrow g'(t) = 2e^{2(t-1)}$.
 - Integrando: $g(t) = e^{2(t-1)} + D$.
 - $\bar X_1(1) = (2,\ g(1),\ 2) = (2,2,2) \Rightarrow g(1) = 1 + D = 2 \Rightarrow D = 1$.
 
 </details>
 
-**Respuesta:** Suponiendo $g''$ existente, $g(t) = 1 + \operatorname{Exp}[2(t - 1)]$.
+**Respuesta:** Suponiendo $g''$ existente, $g(t) = 1 + \mathop{\mathrm{Exp}}[2(t - 1)]$.
 
 </details>
 
@@ -809,7 +809,7 @@ $$g''(t) = 2\,g'(t)$$
 
 Verifique que $y = (x - at)^2 + (x + at)^2$ con $a$ constante satisface la ecuación:
 
-$$\frac{\partial^2 y}{\partial t^2} = a^2\,\frac{\partial^2 y}{\partial x^2}$$
+$$\frac{\partial^2 y}{\partial t^2} = a^2\thinspace\frac{\partial^2 y}{\partial x^2}$$
 
 denominada "ecuación de onda" o "ecuación de la cuerda vibrante", debida a D'Alembert.
 
@@ -827,7 +827,7 @@ $$y'_t = 2(x - at)(-a) + 2(x + at)(a), \qquad y''_{tt} = 2a^2 + 2a^2 = 4a^2$$
 
 $$y'_x = 2(x - at) + 2(x + at), \qquad y''_{xx} = 2 + 2 = 4$$
 
-**Verificación:** $a^2\,y''_{xx} = 4a^2 = y''_{tt}$ ✓.
+**Verificación:** $a^2\thinspace y''_{xx} = 4a^2 = y''_{tt}$ ✓.
 
 </details>
 
@@ -839,7 +839,7 @@ $$y'_x = 2(x - at) + 2(x + at), \qquad y''_{xx} = 2 + 2 = 4$$
 
 ### 20) Ecuación de Laplace
 
-Demuestre que $z = \operatorname{sen}(x)\operatorname{senh}(y)$ satisface la ecuación bidimensional de Laplace:
+Demuestre que $z = \mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$ satisface la ecuación bidimensional de Laplace:
 
 $$\frac{\partial^2 z}{\partial x^2} + \frac{\partial^2 z}{\partial y^2} = 0$$
 
@@ -849,12 +849,12 @@ $$\frac{\partial^2 z}{\partial x^2} + \frac{\partial^2 z}{\partial y^2} = 0$$
 <details>
 <summary>Solución paso a paso</summary>
 
-Recordamos que $(\operatorname{senh} y)' = \cosh y$ y que $(\cosh y)' = \operatorname{senh}y$.
+Recordamos que $(\mathop{\mathrm{senh}} y)' = \cosh y$ y que $(\cosh y)' = \mathop{\mathrm{senh}}y$.
 
-- $z''_{xx}$: derivando dos veces $\operatorname{sen}x$ se obtiene $-\operatorname{sen}x$ ⇒ $z''_{xx} = -\operatorname{sen}(x)\operatorname{senh}(y)$.
-- $z''_{yy}$: derivando dos veces $\operatorname{senh}y$ se obtiene $\operatorname{senh}y$ ⇒ $z''_{yy} = \operatorname{sen}(x)\operatorname{senh}(y)$.
+- $z''_{xx}$: derivando dos veces $\mathop{\mathrm{sen}}x$ se obtiene $-\mathop{\mathrm{sen}}x$ ⇒ $z''_{xx} = -\mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
+- $z''_{yy}$: derivando dos veces $\mathop{\mathrm{senh}}y$ se obtiene $\mathop{\mathrm{senh}}y$ ⇒ $z''_{yy} = \mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
 
-Suma: $-\operatorname{sen}x\operatorname{senh}y + \operatorname{sen}x\operatorname{senh}y = 0$ ✓.
+Suma: $-\mathop{\mathrm{sen}}x\mathop{\mathrm{senh}}y + \mathop{\mathrm{sen}}x\mathop{\mathrm{senh}}y = 0$ ✓.
 
 </details>
 
@@ -868,7 +868,7 @@ Suma: $-\operatorname{sen}x\operatorname{senh}y + \operatorname{sen}x\operatorna
 
 Sea $U = f(x,y,z)$ con $f$ campo escalar que en cada punto $(x,y,z)$ tiene un valor inversamente proporcional a la distancia desde el punto al origen de coordenadas; verifique que:
 
-$$U''_{xx} + U''_{yy} + U''_{zz} = 0 \ \text{ en } \ \Re^3 - \{\bar 0\}.$$
+$$U''_{xx} + U''_{yy} + U''_{zz} = 0 \ \text{ en } \ \Re^3 - \lbrace\bar 0\rbrace.$$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -880,19 +880,19 @@ $$U''_{xx} + U''_{yy} + U''_{zz} = 0 \ \text{ en } \ \Re^3 - \{\bar 0\}.$$
 
 **Paso 2 — Derivada de $r$.** $r'_x = \dfrac{x}{r}$ (y análogamente para $y$ y $z$).
 
-**Paso 3 — Primera derivada.** $U'_x = -\dfrac{k}{r^2}\,r'_x = -\dfrac{k\,x}{r^3}$.
+**Paso 3 — Primera derivada.** $U'_x = -\dfrac{k}{r^2}\thinspace r'_x = -\dfrac{k\thinspace x}{r^3}$.
 
 **Paso 4 — Segunda derivada** (regla del cociente):
 
-$$U''_{xx} = -k\,\frac{r^3 - x\cdot 3r^2\,\frac{x}{r}}{r^6} = -k\,\frac{r^2 - 3x^2}{r^5}$$
+$$U''_{xx} = -k\thinspace\frac{r^3 - x\cdot 3r^2\thinspace\frac{x}{r}}{r^6} = -k\thinspace\frac{r^2 - 3x^2}{r^5}$$
 
 Por simetría: $U''_{yy} = -k\dfrac{r^2 - 3y^2}{r^5}$ y $U''_{zz} = -k\dfrac{r^2 - 3z^2}{r^5}$.
 
 **Paso 5 — Suma.**
 
-$$U''_{xx} + U''_{yy} + U''_{zz} = -k\,\frac{3r^2 - 3(x^2+y^2+z^2)}{r^5} = -k\,\frac{3r^2 - 3r^2}{r^5} = 0 \ ✓$$
+$$U''_{xx} + U''_{yy} + U''_{zz} = -k\thinspace\frac{3r^2 - 3(x^2+y^2+z^2)}{r^5} = -k\thinspace\frac{3r^2 - 3r^2}{r^5} = 0 \ ✓$$
 
-Vale para $r \ne 0$, es decir en $\Re^3 - \{\bar 0\}$.
+Vale para $r \ne 0$, es decir en $\Re^3 - \lbrace\bar 0\rbrace$.
 
 </details>
 
@@ -904,9 +904,9 @@ Vale para $r \ne 0$, es decir en $\Re^3 - \{\bar 0\}$.
 
 ### 22) Divergencia nula
 
-Sea $\vec f = (P, Q, R) \ /\ \vec f(x,y,z) = \dfrac{k\,\vec r}{r^3}$ con $k$ constante, $\vec r = (x,y,z)$, $r = \|\vec r\|$. Verifique que:
+Sea $\vec f = (P, Q, R) \ /\ \vec f(x,y,z) = \dfrac{k\thinspace\vec r}{r^3}$ con $k$ constante, $\vec r = (x,y,z)$, $r = \Vert\vec r\Vert$. Verifique que:
 
-$$P'_x + Q'_y + R'_z = 0 \ \text{ en } \ \Re^3 - \{\bar 0\}.$$
+$$P'_x + Q'_y + R'_z = 0 \ \text{ en } \ \Re^3 - \lbrace\bar 0\rbrace.$$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -916,23 +916,23 @@ $$P'_x + Q'_y + R'_z = 0 \ \text{ en } \ \Re^3 - \{\bar 0\}.$$
 
 **Paso 1 — Componentes.**
 
-$$P = \frac{k\,x}{r^3}, \quad Q = \frac{k\,y}{r^3}, \quad R = \frac{k\,z}{r^3}, \quad \text{con } r^3 = (x^2+y^2+z^2)^{3/2}$$
+$$P = \frac{k\thinspace x}{r^3}, \quad Q = \frac{k\thinspace y}{r^3}, \quad R = \frac{k\thinspace z}{r^3}, \quad \text{con } r^3 = (x^2+y^2+z^2)^{3/2}$$
 
 **Paso 2 — Derivada de $P$ respecto de $x$** (cociente, con $(r^3)'_x = 3r^2\cdot\frac{x}{r} = 3rx$):
 
-$$P'_x = k\,\frac{r^3 - x\cdot 3rx}{r^6} = k\,\frac{r^2 - 3x^2}{r^5}$$
+$$P'_x = k\thinspace\frac{r^3 - x\cdot 3rx}{r^6} = k\thinspace\frac{r^2 - 3x^2}{r^5}$$
 
 **Paso 3 — Análogas.** $Q'_y = k\dfrac{r^2 - 3y^2}{r^5}$ y $R'_z = k\dfrac{r^2 - 3z^2}{r^5}$.
 
 **Paso 4 — Suma.**
 
-$$P'_x + Q'_y + R'_z = k\,\frac{3r^2 - 3r^2}{r^5} = 0 \ ✓$$
+$$P'_x + Q'_y + R'_z = k\thinspace\frac{3r^2 - 3r^2}{r^5} = 0 \ ✓$$
 
-Observación: $\vec f = -\nabla\!\left(\dfrac{k}{r}\right)$, así que este ejercicio es el 21 escrito de otra forma.
+Observación: $\vec f = -\nabla\negthinspace\left(\dfrac{k}{r}\right)$, así que este ejercicio es el 21 escrito de otra forma.
 
 </details>
 
-**Respuesta:** Observe que, por ejemplo, $P(x,y,z) = \dfrac{k\,x}{(x^2+y^2+z^2)^{3/2}}$; derivando y sumando se obtiene 0.
+**Respuesta:** Observe que, por ejemplo, $P(x,y,z) = \dfrac{k\thinspace x}{(x^2+y^2+z^2)^{3/2}}$; derivando y sumando se obtiene 0.
 
 </details>
 
@@ -1045,17 +1045,17 @@ Demuestre la propiedad de homogeneidad.
 <details>
 <summary>Solución paso a paso</summary>
 
-**Enunciado:** si existe $f'(\bar A, \bar r)$, entonces para todo $\lambda \ne 0$ existe $f'(\bar A, \lambda\bar r) = \lambda\,f'(\bar A, \bar r)$.
+**Enunciado:** si existe $f'(\bar A, \bar r)$, entonces para todo $\lambda \ne 0$ existe $f'(\bar A, \lambda\bar r) = \lambda\thinspace f'(\bar A, \bar r)$.
 
 **Demostración.** Usamos el cambio de variable $s = \lambda h$; cuando $h \to 0$ también $s \to 0$:
 
-$$f'(\bar A, \lambda\bar r) = \lim_{h\to0}\frac{f(\bar A + h\lambda\bar r) - f(\bar A)}{h} = \lim_{s\to0}\lambda\,\frac{f(\bar A + s\bar r) - f(\bar A)}{s} = \lambda\,f'(\bar A, \bar r)$$
+$$f'(\bar A, \lambda\bar r) = \lim_{h\to0}\frac{f(\bar A + h\lambda\bar r) - f(\bar A)}{h} = \lim_{s\to0}\lambda\thinspace\frac{f(\bar A + s\bar r) - f(\bar A)}{s} = \lambda\thinspace f'(\bar A, \bar r)$$
 
 Si $\lambda = 0$, la derivada respecto de $\bar 0$ es trivialmente 0. $\blacksquare$
 
 </details>
 
-**Respuesta:** $f'(\bar A, \lambda\bar r) = \lambda\,f'(\bar A, \bar r)$; se demuestra con el cambio de variable $s = \lambda h$ en el límite.
+**Respuesta:** $f'(\bar A, \lambda\bar r) = \lambda\thinspace f'(\bar A, \bar r)$; se demuestra con el cambio de variable $s = \lambda h$ en el límite.
 
 </details>
 

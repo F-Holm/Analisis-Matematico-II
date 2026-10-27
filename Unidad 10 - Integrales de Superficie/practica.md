@@ -8,13 +8,13 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 >
 > - Una superficie $S$ de ecuación $\bar X = \bar F(u,v)$ con $(u,v) \in D$ es ***suave*** según esta representación, si $\bar F \in C^1(D)$ y el producto vectorial $\bar F'_u \wedge \bar F'_v \ne \bar 0\ \ \forall(u,v) \in D$.
 >
->   En este caso queda definido el versor normal $\breve n \doteq \dfrac{\bar F'_u \wedge \bar F'_v}{\|\bar F'_u \wedge \bar F'_v\|}$ que varía con continuidad sobre $S$; a su vez, si la superficie es orientable queda orientada mediante este versor.
+>   En este caso queda definido el versor normal $\breve n \doteq \dfrac{\bar F'_u \wedge \bar F'_v}{\Vert\bar F'_u \wedge \bar F'_v\Vert}$ que varía con continuidad sobre $S$; a su vez, si la superficie es orientable queda orientada mediante este versor.
 >
 >   La superficie es ***suave a trozos*** cuando $D$ puede ser dividido en cantidad finita de partes en cada una de las cuales (o en abierto que las contenga) $\bar F \in C^1$ y $\bar F'_u \wedge \bar F'_v \ne \bar 0$.
-> - $\iint_S f\,d\sigma$ simboliza la integral de superficie del campo escalar $f$ sobre $S$, donde $d\sigma = \|\bar F'_u \wedge \bar F'_v\|\,du\,dv$ es el ***diferencial de área de superficie***.
-> - $\iint_S\bar f\cdot d\bar\sigma \equiv \iint_S\bar f\cdot\breve n\,d\sigma$ simboliza el ***flujo*** o integral de superficie del campo vectorial $\bar f$ a través de $S$, donde $d\bar\sigma \doteq \breve n\,d\sigma$.
+> - $\iint_S f\thinspace d\sigma$ simboliza la integral de superficie del campo escalar $f$ sobre $S$, donde $d\sigma = \Vert\bar F'_u \wedge \bar F'_v\Vert\thinspace du\thinspace dv$ es el ***diferencial de área de superficie***.
+> - $\iint_S\bar f\cdot d\bar\sigma \equiv \iint_S\bar f\cdot\breve n\thinspace d\sigma$ simboliza el ***flujo*** o integral de superficie del campo vectorial $\bar f$ a través de $S$, donde $d\bar\sigma \doteq \breve n\thinspace d\sigma$.
 >
-> **Observación**: Si $S$ es suave y simple según dos representaciones $\bar F_1$ y $\bar F_2$, la $\iint_S f\,d\sigma$ tiene el mismo resultado usando cualquiera de ellas; mientras que se observará un cambio de signo en el resultado de $\iint_S\bar f\cdot\breve n\,d\sigma$ cuando $\bar F_1$ y $\bar F_2$ orienten a $S$ en sentidos opuestos.
+> **Observación**: Si $S$ es suave y simple según dos representaciones $\bar F_1$ y $\bar F_2$, la $\iint_S f\thinspace d\sigma$ tiene el mismo resultado usando cualquiera de ellas; mientras que se observará un cambio de signo en el resultado de $\iint_S\bar f\cdot\breve n\thinspace d\sigma$ cuando $\bar F_1$ y $\bar F_2$ orienten a $S$ en sentidos opuestos.
 
 ---
 
@@ -33,13 +33,13 @@ Una ***superficie cilíndrica*** es aquella generada por rectas paralelas que pa
 <details>
 <summary>Solución paso a paso</summary>
 
-**Fórmula:** $\bar X(u,v) = \bar c(u) + v\,\vec w$, con $\bar c$ la directriz y $\vec w$ la dirección de las generatrices. Para la cartesiana se **eliminan** $u$ y $v$.
+**Fórmula:** $\bar X(u,v) = \bar c(u) + v\thinspace\vec w$, con $\bar c$ la directriz y $\vec w$ la dirección de las generatrices. Para la cartesiana se **eliminan** $u$ y $v$.
 
 **a)** $\bar c(u) = (u, u^2, 0)$ y $\vec w = (0,0,1)$ ⇒ $\bar X = (u, u^2, v)$. Como $x = u$ e $y = u^2$: $y = x^2$ (sin restricción sobre $z$).
 
 **b)** $\bar X = (u, u^2, 0) + v(1,1,1) = (u + v,\ u^2 + v,\ v)$. Eliminando: $v = z$ y $u = x - z$ ⇒ $y - z = (x - z)^2$.
 
-**c)** $\bar X = (2\cos u,\ 2\operatorname{sen}u,\ v)$ ⇒ $x^2 + y^2 = 4$.
+**c)** $\bar X = (2\cos u,\ 2\mathop{\mathrm{sen}}u,\ v)$ ⇒ $x^2 + y^2 = 4$.
 
 **d)** $\bar X = (u, 2u, u^2) + v(2,1,0) = (u + 2v,\ 2u + v,\ u^2)$. Eliminando:
 
@@ -52,7 +52,7 @@ Una ***superficie cilíndrica*** es aquella generada por rectas paralelas que pa
 
 - a) param.: $\bar X = (u, u^2, v) \wedge (u,v) \in \Re^2$; cart.: $y = x^2$.
 - b) param.: $\bar X = (u + v,\ u^2 + v,\ v) \wedge (u,v) \in \Re^2$; cart.: $y - z = (x - z)^2$.
-- c) param.: $\bar X = (2\cos(u),\ 2\operatorname{sen}(u),\ v)$ con $u \in [0, 2\pi]$, $v \in \Re$; cart.: $x^2 + y^2 = 4$.
+- c) param.: $\bar X = (2\cos(u),\ 2\mathop{\mathrm{sen}}(u),\ v)$ con $u \in [0, 2\pi]$, $v \in \Re$; cart.: $x^2 + y^2 = 4$.
 - d) param.: $\bar X = (u + 2v,\ 2u + v,\ u^2) \wedge (u,v) \in \Re^2$; cart.: $(2y - x)^2 = 9z$.
 
 </details>
@@ -74,16 +74,16 @@ Una ***superficie cónica*** es aquella generada por rectas determinadas por los
 <details>
 <summary>Solución paso a paso</summary>
 
-**Fórmula:** $\bar X(u,v) = \bar V + v\,(\bar c(u) - \bar V)$.
+**Fórmula:** $\bar X(u,v) = \bar V + v\thinspace(\bar c(u) - \bar V)$.
 
 **a)** $\bar X = (0,0,1) + v(u, u^2, -1) = (uv,\ u^2v,\ 1 - v)$. Eliminando:
 
 - $v = 1 - z$ y $u = \dfrac{x}{v}$.
-- $y = u^2v = \dfrac{x^2}{v}$ ⇒ $x^2 = y\,v = y(1 - z)$.
+- $y = u^2v = \dfrac{x^2}{v}$ ⇒ $x^2 = y\thinspace v = y(1 - z)$.
 
 **b)** El vértice $(1,4,0)$ está en el plano $z = 0$ de la directriz (aunque no sobre la parábola). Todas las rectas quedan en ese plano: la "superficie cónica" es el **plano** $z = 0$, que se parametriza como $(u, v, 0)$.
 
-**c)** $\bar X = (0,0,2) + v(2\cos u,\ 2\operatorname{sen}u,\ -2) = (2v\cos u,\ 2v\operatorname{sen}u,\ 2 - 2v)$. Eliminando:
+**c)** $\bar X = (0,0,2) + v(2\cos u,\ 2\mathop{\mathrm{sen}}u,\ -2) = (2v\cos u,\ 2v\mathop{\mathrm{sen}}u,\ 2 - 2v)$. Eliminando:
 
 - $x^2 + y^2 = 4v^2$ y $v = \dfrac{2 - z}{2}$.
 - $x^2 + y^2 = (z - 2)^2$.
@@ -96,7 +96,7 @@ Una ***superficie cónica*** es aquella generada por rectas determinadas por los
 
 - a) param.: $\bar X = (uv,\ u^2v,\ 1 - v) \wedge (u,v) \in \Re^2$; cart.: $x^2 = y(1 - z)$.
 - b) param.: $\bar X = (u, v, 0) \wedge (u,v) \in \Re^2$; cart.: $z = 0$.
-- c) param.: $\bar X = (2v\cos(u),\ 2v\operatorname{sen}(u),\ 2 - 2v)$ con $u \in [0, 2\pi]$, $v \in \Re$; cart.: $x^2 + y^2 = (z - 2)^2$.
+- c) param.: $\bar X = (2v\cos(u),\ 2v\mathop{\mathrm{sen}}(u),\ 2 - 2v)$ con $u \in [0, 2\pi]$, $v \in \Re$; cart.: $x^2 + y^2 = (z - 2)^2$.
 - d) param.: $\bar X = (v,\ 2v,\ w) \wedge (v,w) \in \Re^2$; cart.: $y = 2x$.
 
 </details>
@@ -120,19 +120,19 @@ Parametrice las siguientes superficies:
 
 **a)** Es una esfera de radio 2 ⇒ coordenadas esféricas con $r = 2$.
 
-**b)** Es un cilindro elíptico ($\frac{x^2}{4} + y^2 = 1$, sin $z$) ⇒ $x = 2\cos u$, $y = \operatorname{sen}u$, $z = v$.
+**b)** Es un cilindro elíptico ($\frac{x^2}{4} + y^2 = 1$, sin $z$) ⇒ $x = 2\cos u$, $y = \mathop{\mathrm{sen}}u$, $z = v$.
 
 **c)** Dividiendo por 36: $\frac{x^2}{36} + \frac{y^2}{9} + \frac{z^2}{4} = 1$, un elipsoide de semiejes 6, 3 y 2 ⇒ esféricas "estiradas".
 
-**d)** Es un gráfico ⇒ $(u, v, u^2 + v^2)$. También se puede usar $(\rho\cos\varphi, \rho\operatorname{sen}\varphi, \rho^2)$.
+**d)** Es un gráfico ⇒ $(u, v, u^2 + v^2)$. También se puede usar $(\rho\cos\varphi, \rho\mathop{\mathrm{sen}}\varphi, \rho^2)$.
 
 </details>
 
 **Respuesta:**
 
-- a) $\bar X = (2\operatorname{sen}(\theta)\cos(\varphi),\ 2\operatorname{sen}(\theta)\operatorname{sen}(\varphi),\ 2\cos(\theta))$ con $\theta \in [0,\pi]$, $\varphi \in [0,2\pi]$.
-- b) $\bar X = (2\cos(u),\ \operatorname{sen}(u),\ v)$ con $u \in [0,2\pi]$, $v \in \Re$.
-- c) $\bar X = (6\operatorname{sen}(\theta)\cos(\varphi),\ 3\operatorname{sen}(\theta)\operatorname{sen}(\varphi),\ 2\cos(\theta))$ con $\theta \in [0,\pi]$, $\varphi \in [0,2\pi]$.
+- a) $\bar X = (2\mathop{\mathrm{sen}}(\theta)\cos(\varphi),\ 2\mathop{\mathrm{sen}}(\theta)\mathop{\mathrm{sen}}(\varphi),\ 2\cos(\theta))$ con $\theta \in [0,\pi]$, $\varphi \in [0,2\pi]$.
+- b) $\bar X = (2\cos(u),\ \mathop{\mathrm{sen}}(u),\ v)$ con $u \in [0,2\pi]$, $v \in \Re$.
+- c) $\bar X = (6\mathop{\mathrm{sen}}(\theta)\cos(\varphi),\ 3\mathop{\mathrm{sen}}(\theta)\mathop{\mathrm{sen}}(\varphi),\ 2\cos(\theta))$ con $\theta \in [0,\pi]$, $\varphi \in [0,2\pi]$.
 - d) $\bar X = (u,\ v,\ u^2 + v^2) \wedge (u,v) \in \Re^2$.
 
 </details>
@@ -143,8 +143,8 @@ Parametrice las siguientes superficies:
 
 Sea $S$ una superficie uniforme respecto del plano $xy$, definida implícitamente mediante la ecuación $G(x,y,z) = 0$. Imponga hipótesis para $G$ de manera que $S$ sea suave; en ese caso, si la ecuación en forma explícita fuera $z = g(x,y)$ con $(x,y) \in D_{xy}$, demuestre que:
 
-- Para campo escalar: $\displaystyle\iint_S f\,d\sigma = \iint_{D_{xy}}\left[f\,\frac{\|\nabla G\|}{|G'_z|}\right]_{z = g(x,y)}dx\,dy$.
-- Para campo vectorial: $\displaystyle\iint_S\bar f\cdot d\bar\sigma = \iint_{D_{xy}}\left[\frac{\bar f\cdot\nabla G}{|G'_z|}\right]_{z = g(x,y)}dx\,dy$.
+- Para campo escalar: $\displaystyle\iint_S f\thinspace d\sigma = \iint_{D_{xy}}\left[f\thinspace\frac{\Vert\nabla G\Vert}{|G'_z|}\right]_{z = g(x,y)}dx\thinspace dy$.
+- Para campo vectorial: $\displaystyle\iint_S\bar f\cdot d\bar\sigma = \iint_{D_{xy}}\left[\frac{\bar f\cdot\nabla G}{|G'_z|}\right]_{z = g(x,y)}dx\thinspace dy$.
 
 Donde, en ambos casos, $D_{xy}$ se obtiene proyectando $S$ sobre el plano $xy$.
 
@@ -164,9 +164,9 @@ $$\bar F'_x\wedge\bar F'_y = (-g'_x,\ -g'_y,\ 1)$$
 
 $$\bar F'_x\wedge\bar F'_y = \left(\frac{G'_x}{G'_z},\ \frac{G'_y}{G'_z},\ 1\right) = \frac{\nabla G}{G'_z}$$
 
-**Paso 3 — Escalar.** $d\sigma = \left\lVert\dfrac{\nabla G}{G'_z}\right\rVert dx\,dy = \dfrac{\lVert\nabla G\rVert}{|G'_z|}dx\,dy$, y queda la primera fórmula.
+**Paso 3 — Escalar.** $d\sigma = \left\lVert\dfrac{\nabla G}{G'_z}\right\rVert dx\thinspace dy = \dfrac{\lVert\nabla G\rVert}{|G'_z|}dx\thinspace dy$, y queda la primera fórmula.
 
-**Paso 4 — Vectorial.** $\bar f\cdot\breve n\,d\sigma = \pm\,\bar f\cdot\dfrac{\nabla G}{G'_z}\,dx\,dy$. Orientando $S$ según $\nabla G$ (el signo se elige para que el factor sea $|G'_z|$), queda $\dfrac{\bar f\cdot\nabla G}{|G'_z|}\,dx\,dy$. $\blacksquare$
+**Paso 4 — Vectorial.** $\bar f\cdot\breve n\thinspace d\sigma = \pm\thinspace\bar f\cdot\dfrac{\nabla G}{G'_z}\thinspace dx\thinspace dy$. Orientando $S$ según $\nabla G$ (el signo se elige para que el factor sea $|G'_z|$), queda $\dfrac{\bar f\cdot\nabla G}{|G'_z|}\thinspace dx\thinspace dy$. $\blacksquare$
 
 </details>
 
@@ -195,41 +195,41 @@ Calcule el área de las siguientes superficies:
 <details>
 <summary>Solución paso a paso</summary>
 
-**Fórmula:** $A = \displaystyle\iint_D\lVert\vec N\rVert\,du\,dv$. Para un gráfico $z = f(x,y)$: $\lVert\vec N\rVert = \sqrt{1 + f_x'^2 + f_y'^2}$.
+**Fórmula:** $A = \displaystyle\iint_D\lVert\vec N\rVert\thinspace du\thinspace dv$. Para un gráfico $z = f(x,y)$: $\lVert\vec N\rVert = \sqrt{1 + f_x'^2 + f_y'^2}$.
 
 **a)** Gráfico $z = 2x^2$ ⇒ $\lVert\vec N\rVert = \sqrt{1 + 16x^2}$.
 
 - Región: $0 \le y \le x$ y $2x^2 \le 6 \Rightarrow x \le \sqrt3$.
 
-$$A = \int_0^{\sqrt3}dx\int_0^x\sqrt{1 + 16x^2}\,dy = \int_0^{\sqrt3}x\sqrt{1 + 16x^2}\,dx = \left[\frac{(1 + 16x^2)^{3/2}}{48}\right]_0^{\sqrt3} = \frac{343 - 1}{48} = \frac{57}{8}$$
+$$A = \int_0^{\sqrt3}dx\int_0^x\sqrt{1 + 16x^2}\thinspace dy = \int_0^{\sqrt3}x\sqrt{1 + 16x^2}\thinspace dx = \left[\frac{(1 + 16x^2)^{3/2}}{48}\right]_0^{\sqrt3} = \frac{343 - 1}{48} = \frac{57}{8}$$
 
-**b)** Cono $z = \sqrt2\,\rho$ ⇒ $\lVert\vec N\rVert = \sqrt{1 + 2} = \sqrt3$ (por unidad de área proyectada).
+**b)** Cono $z = \sqrt2\thinspace\rho$ ⇒ $\lVert\vec N\rVert = \sqrt{1 + 2} = \sqrt3$ (por unidad de área proyectada).
 
 - Dentro de la esfera: $\rho^2 + z^2 = 3\rho^2 \le 144 \Rightarrow \rho \le 4\sqrt3$.
 
-$$A = \sqrt3\cdot\pi\,(4\sqrt3)^2 = 48\sqrt3\,\pi$$
+$$A = \sqrt3\cdot\pi\thinspace(4\sqrt3)^2 = 48\sqrt3\thinspace\pi$$
 
-**c)** Parametrización: $(2\cos\theta,\ y,\ 2\operatorname{sen}\theta)$ ⇒ $\lVert\vec N\rVert = 2$.
+**c)** Parametrización: $(2\cos\theta,\ y,\ 2\mathop{\mathrm{sen}}\theta)$ ⇒ $\lVert\vec N\rVert = 2$.
 
 - $z \ge 0 \Rightarrow \theta\in[0, \pi]$.
 - $-x \le y \le x$ exige $x \ge 0 \Rightarrow \theta\in[0, \pi/2]$, e $y\in[-2\cos\theta,\ 2\cos\theta]$.
 
-$$A = \int_0^{\pi/2}\!\!\int_{-2\cos\theta}^{2\cos\theta}2\,dy\,d\theta = \int_0^{\pi/2}8\cos\theta\,d\theta = 8$$
+$$A = \int_0^{\pi/2}\negthinspace\negthinspace\int_{-2\cos\theta}^{2\cos\theta}2\thinspace dy\thinspace d\theta = \int_0^{\pi/2}8\cos\theta\thinspace d\theta = 8$$
 
-**d)** $\lVert\vec N\rVert = R^2\operatorname{sen}\theta$ ⇒ $A = \displaystyle\int_0^{2\pi}\!\!\int_0^\pi R^2\operatorname{sen}\theta\,d\theta\,d\varphi = 4\pi R^2$.
+**d)** $\lVert\vec N\rVert = R^2\mathop{\mathrm{sen}}\theta$ ⇒ $A = \displaystyle\int_0^{2\pi}\negthinspace\negthinspace\int_0^\pi R^2\mathop{\mathrm{sen}}\theta\thinspace d\theta\thinspace d\varphi = 4\pi R^2$.
 
-**e)** Cilindro de centro $(1,0)$ y radio 1: $(1 + \cos t,\ \operatorname{sen}t,\ z)$ ⇒ $\lVert\vec N\rVert = 1$.
+**e)** Cilindro de centro $(1,0)$ y radio 1: $(1 + \cos t,\ \mathop{\mathrm{sen}}t,\ z)$ ⇒ $\lVert\vec N\rVert = 1$.
 
 - 1.er octante: $y \ge 0 \Rightarrow t\in[0,\pi]$, y $z \ge 0$.
-- Esfera: $z \le \sqrt{4 - (x^2 + y^2)} = \sqrt{4 - 2x} = \sqrt{2 - 2\cos t} = 2\operatorname{sen}(t/2)$.
+- Esfera: $z \le \sqrt{4 - (x^2 + y^2)} = \sqrt{4 - 2x} = \sqrt{2 - 2\cos t} = 2\mathop{\mathrm{sen}}(t/2)$.
 
-$$A = \int_0^\pi2\operatorname{sen}\frac t2\,dt = \left[-4\cos\frac t2\right]_0^\pi = 4$$
+$$A = \int_0^\pi2\mathop{\mathrm{sen}}\frac t2\thinspace dt = \left[-4\cos\frac t2\right]_0^\pi = 4$$
 
 **f)** La frontera tiene tres caras:
 
 - piso $z = 0$, $\rho \le 1$: área $\pi$;
 - pared $\rho = 1$, $0 \le z \le 1$: área $2\pi\cdot1 = 2\pi$;
-- techo cónico $z = \rho$, $\rho \le 1$: $\lVert\vec N\rVert = \sqrt2$, área $\sqrt2\,\pi$.
+- techo cónico $z = \rho$, $\rho \le 1$: $\lVert\vec N\rVert = \sqrt2$, área $\sqrt2\thinspace\pi$.
 
 $A = \pi(3 + \sqrt2)$.
 
@@ -237,7 +237,7 @@ $A = \pi(3 + \sqrt2)$.
 
 - Región: $0 < x < 1$, $-x < y < x$ (ancho $2x$).
 
-$$A = \int_0^1 2x\sqrt{2 + 4x^2}\,dx = \left[\frac{(2 + 4x^2)^{3/2}}{6}\right]_0^1 = \frac{6\sqrt6 - 2\sqrt2}{6} = \sqrt6 - \frac{\sqrt2}{3}$$
+$$A = \int_0^1 2x\sqrt{2 + 4x^2}\thinspace dx = \left[\frac{(2 + 4x^2)^{3/2}}{6}\right]_0^1 = \frac{6\sqrt6 - 2\sqrt2}{6} = \sqrt6 - \frac{\sqrt2}{3}$$
 
 **h)**
 
@@ -245,7 +245,7 @@ $$A = \int_0^1 2x\sqrt{2 + 4x^2}\,dx = \left[\frac{(2 + 4x^2)^{3/2}}{6}\right]_0
 - Derivadas: $z'_x = 1 + \frac1x \to 2$ y $z'_y = \frac1y \to 1$. Plano tangente: $z = 1 + 2(x - 1) + (y - 1)$.
 - Es un plano con $\lVert\vec N\rVert = \sqrt{1 + 4 + 1} = \sqrt6$, sobre el disco de área $9\pi$.
 
-$A = 9\sqrt6\,\pi$.
+$A = 9\sqrt6\thinspace\pi$.
 
 </details>
 
@@ -274,16 +274,16 @@ Calcule el momento de inercia respecto del eje $z$ de una chapa con forma de par
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Integrando.** $I_z = \iint_S(x^2 + y^2)\,\delta\,d\sigma = \iint_S k\,d\sigma = k\cdot A(S)$: la distancia al cuadrado se cancela con la densidad.
+**Paso 1 — Integrando.** $I_z = \iint_S(x^2 + y^2)\thinspace\delta\thinspace d\sigma = \iint_S k\thinspace d\sigma = k\cdot A(S)$: la distancia al cuadrado se cancela con la densidad.
 
-**Paso 2 — Área.** Parametrizamos $(\rho\cos\varphi,\ \rho\operatorname{sen}\varphi,\ \rho^2)$, con $\lVert\vec N\rVert = \rho\sqrt{1 + 4\rho^2}$.
+**Paso 2 — Área.** Parametrizamos $(\rho\cos\varphi,\ \rho\mathop{\mathrm{sen}}\varphi,\ \rho^2)$, con $\lVert\vec N\rVert = \rho\sqrt{1 + 4\rho^2}$.
 
 - $1 \le z \le 4 \Rightarrow 1 \le \rho \le 2$.
 - $x \ge 0 \Rightarrow \varphi\in[-\pi/2, \pi/2]$.
 
-$$A = \int_{-\pi/2}^{\pi/2}\!\!\int_1^2\rho\sqrt{1 + 4\rho^2}\,d\rho\,d\varphi = \pi\left[\frac{(1 + 4\rho^2)^{3/2}}{12}\right]_1^2 = \frac{\pi}{12}\left(17^{3/2} - 5^{3/2}\right)$$
+$$A = \int_{-\pi/2}^{\pi/2}\negthinspace\negthinspace\int_1^2\rho\sqrt{1 + 4\rho^2}\thinspace d\rho\thinspace d\varphi = \pi\left[\frac{(1 + 4\rho^2)^{3/2}}{12}\right]_1^2 = \frac{\pi}{12}\left(17^{3/2} - 5^{3/2}\right)$$
 
-**Paso 3 — Resultado.** $I_z = \dfrac{k\pi}{12}\left(17^{3/2} - 5^{3/2}\right) \approx 13{,}47\,k$.
+**Paso 3 — Resultado.** $I_z = \dfrac{k\pi}{12}\left(17^{3/2} - 5^{3/2}\right) \approx 13{,}47\thinspace k$.
 
 </details>
 
@@ -295,16 +295,16 @@ $$A = \int_{-\pi/2}^{\pi/2}\!\!\int_1^2\rho\sqrt{1 + 4\rho^2}\,d\rho\,d\varphi =
 
 ### 07) Flujo de un campo normal de módulo constante
 
-Sea $\bar F = k\,\breve n$ con $k > 0$ constante, demuestre que $\displaystyle\iint_S\bar F\cdot\breve n\,d\sigma = F\ \text{área}(S)$ con $F = \|\bar F\|$.<sup>(\*)</sup>
+Sea $\bar F = k\thinspace\breve n$ con $k > 0$ constante, demuestre que $\displaystyle\iint_S\bar F\cdot\breve n\thinspace d\sigma = F\ \text{área}(S)$ con $F = \Vert\bar F\Vert$.<sup>(\*)</sup>
 
 <sup>(\*)</sup> Flujo de campo con módulo constante, con igual orientación que la superficie en cada punto.
 
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $\bar F\cdot\breve n = k\,\breve n\cdot\breve n = k$, y además $F = \lVert k\breve n\rVert = k$. Entonces:
+**Respuesta:** $\bar F\cdot\breve n = k\thinspace\breve n\cdot\breve n = k$, y además $F = \lVert k\breve n\rVert = k$. Entonces:
 
-$$\iint_S\bar F\cdot\breve n\,d\sigma = k\iint_S d\sigma = F\cdot\text{área}(S) \quad\blacksquare$$
+$$\iint_S\bar F\cdot\breve n\thinspace d\sigma = k\iint_S d\sigma = F\cdot\text{área}(S) \quad\blacksquare$$
 
 Observe que en este caso $\bar F\cdot\breve n$ resulta constante.
 
@@ -321,7 +321,7 @@ Demuestre que el flujo de $\bar F$ constante a través de $S$ plana con normal $
 
 **Respuesta:** como $S$ es plana, $\breve n$ es constante; como $\bar F$ también lo es, el producto $\bar F\cdot\breve n$ es una constante que sale de la integral:
 
-$$\iint_S\bar F\cdot\breve n\,d\sigma = (\bar F\cdot\breve n)\iint_S d\sigma = \bar F\cdot\breve n\ \text{área}(S) \quad\blacksquare$$
+$$\iint_S\bar F\cdot\breve n\thinspace d\sigma = (\bar F\cdot\breve n)\iint_S d\sigma = \bar F\cdot\breve n\ \text{área}(S) \quad\blacksquare$$
 
 </details>
 
@@ -343,7 +343,7 @@ $$\breve n = \frac{\nabla\phi}{\lVert\nabla\phi\rVert} \ \Rightarrow\ \bar f\cdo
 
 El flujo es la integral de una función positiva sobre $S$, que tiene área positiva:
 
-$$\Phi = \iint_S\lVert\nabla\phi\rVert\,d\sigma > 0 \quad\blacksquare$$
+$$\Phi = \iint_S\lVert\nabla\phi\rVert\thinspace d\sigma > 0 \quad\blacksquare$$
 
 </details>
 
@@ -371,7 +371,7 @@ Calcule el flujo de $\bar f$ a través de $S$, indicando gráficamente la orient
 <details>
 <summary>Solución paso a paso</summary>
 
-**Recordatorio:** flujo $= \iint_D\bar f\cdot\vec N\,du\,dv$, con $\vec N$ en el sentido pedido. Para gráficos $z = g$, $\vec N_{\uparrow} = (-g'_x, -g'_y, 1)$.
+**Recordatorio:** flujo $= \iint_D\bar f\cdot\vec N\thinspace du\thinspace dv$, con $\vec N$ en el sentido pedido. Para gráficos $z = g$, $\vec N_{\uparrow} = (-g'_x, -g'_y, 1)$.
 
 **a)** El cuerpo está entre el disco $z = 1$ (piso) y el paraboloide $z = 5 - \rho^2$ (techo). Se cortan en $\rho = 2$. Normales salientes:
 
@@ -381,15 +381,15 @@ $$\bar f\cdot\vec N = 2x(x^2 + yz) + 2y\cdot xz + 2z^2 - 2xz = 2x^3 + 4xyz - 2xz
 
 Sobre el disco $\rho \le 2$, los términos impares en $x$ se anulan por simetría. Queda:
 
-$$\iint 2(5 - \rho^2)^2\,dA = 2\cdot2\pi\int_0^2(5 - \rho^2)^2\rho\,d\rho = 2\pi\int_0^4(5 - w)^2dw = 2\pi\,\frac{125 - 1}{3} = \frac{248\pi}{3}$$
+$$\iint 2(5 - \rho^2)^2\thinspace dA = 2\cdot2\pi\int_0^2(5 - \rho^2)^2\rho\thinspace d\rho = 2\pi\int_0^4(5 - w)^2dw = 2\pi\thinspace\frac{125 - 1}{3} = \frac{248\pi}{3}$$
 
-*Piso* ($z = 1$, normal $(0,0,-1)$): $\bar f\cdot\breve n = -(2 - 2x)$ ⇒ $\displaystyle\iint_{\rho\le2}(-2 + 2x)\,dA = -2\cdot4\pi + 0 = -8\pi$.
+*Piso* ($z = 1$, normal $(0,0,-1)$): $\bar f\cdot\breve n = -(2 - 2x)$ ⇒ $\displaystyle\iint_{\rho\le2}(-2 + 2x)\thinspace dA = -2\cdot4\pi + 0 = -8\pi$.
 
 *Total:*
 
 $$\frac{248\pi}{3} - 8\pi = \frac{224\pi}{3}$$
 
-Control con divergencia: $\operatorname{div}\bar f = 4z$ y $\iiint 4z\,dV = \frac{224\pi}{3}$ ✓.
+Control con divergencia: $\mathop{\mathrm{div}}\bar f = 4z$ y $\iiint 4z\thinspace dV = \frac{224\pi}{3}$ ✓.
 
 **b)** Sobre la esfera de radio 2, la normal saliente es $\breve n = \frac{(x,y,z)}{2}$:
 
@@ -405,7 +405,7 @@ Es constante ⇒ $\Phi = 2\cdot A = 2\cdot4\pi\cdot4 = 32\pi$.
 
 *Integrando:* $\bar f\cdot\vec N = xy\cdot3x^2 - zx = 3x^6 - xz$.
 
-$$\Phi = \int_0^2dx\int_0^{x+x^3}(3x^6 - xz)\,dz = \int_0^2\left[3x^6(x + x^3) - \frac{x(x + x^3)^2}{2}\right]dx = \int_0^2\left(\frac52x^7 + 3x^9 - \frac12x^3 - x^5\right)dx$$
+$$\Phi = \int_0^2dx\int_0^{x+x^3}(3x^6 - xz)\thinspace dz = \int_0^2\left[3x^6(x + x^3) - \frac{x(x + x^3)^2}{2}\right]dx = \int_0^2\left(\frac52x^7 + 3x^9 - \frac12x^3 - x^5\right)dx$$
 
 $$= 80 + \frac{1536}{5} - 2 - \frac{32}{3} = \frac{5618}{15} \approx 374{,}53$$
 
@@ -433,21 +433,21 @@ $$\Phi = 17\cdot2\cdot4 - 15\cdot2\cdot4 + 2\cdot2\cdot\frac{26}{3} - \frac83\cd
 
 | Cara | Normal | $\bar f\cdot\breve n$ | Flujo |
 |---|---|---|---|
-| $z = 0$ (cuarto de disco) | $(0,0,-1)$ | $-y$ | $-\iint y\,dA = -\frac83$ |
+| $z = 0$ (cuarto de disco) | $(0,0,-1)$ | $-y$ | $-\iint y\thinspace dA = -\frac83$ |
 | $x = 0$ | $(-1,0,0)$ | $-xy = 0$ | $0$ |
 | $y = 0$ ($0 \le x \le 2$, $0 \le z \le 18 - x$) | $(0,-1,0)$ | $-z$ | $-\int_0^2\frac{(18-x)^2}{2}dx = -\frac{868}{3}$ |
 | Techo $z = 18 - x - y$ | $(1,1,1)$ | $xy + 18 - x$ | $2 + 18\pi - \frac83$ |
-| Pared $\rho = 2$ | $(\cos\varphi, \operatorname{sen}\varphi, 0)$ | $4\operatorname{sen}\varphi\cos^2\varphi + z\operatorname{sen}\varphi$ | $\frac{1016}{3} - 19\pi$ |
+| Pared $\rho = 2$ | $(\cos\varphi, \mathop{\mathrm{sen}}\varphi, 0)$ | $4\mathop{\mathrm{sen}}\varphi\cos^2\varphi + z\mathop{\mathrm{sen}}\varphi$ | $\frac{1016}{3} - 19\pi$ |
 
-Para la pared: $d\sigma = 2\,d\varphi\,dz$ con $z\in[0,\ 18 - 2\cos\varphi - 2\operatorname{sen}\varphi]$ y $\varphi\in[0,\pi/2]$. Su integral es $(44 - \pi) + \left(292 + \frac83 - 18\pi\right)$.
+Para la pared: $d\sigma = 2\thinspace d\varphi\thinspace dz$ con $z\in[0,\ 18 - 2\cos\varphi - 2\mathop{\mathrm{sen}}\varphi]$ y $\varphi\in[0,\pi/2]$. Su integral es $(44 - \pi) + \left(292 + \frac83 - 18\pi\right)$.
 
 *Suma:*
 
 $$-\frac83 - \frac{868}{3} + 2 + 18\pi - \frac83 + \frac{1016}{3} - 19\pi = 46 - \pi$$
 
-*Con el teorema de la divergencia* (mucho más corto): $\operatorname{div}\bar f = y$, y
+*Con el teorema de la divergencia* (mucho más corto): $\mathop{\mathrm{div}}\bar f = y$, y
 
-$$\iiint y\,dV = \iint_{\text{cuarto de disco}}y(18 - x - y)\,dA = 48 - 2 - \pi = 46 - \pi \ ✓$$
+$$\iiint y\thinspace dV = \iint_{\text{cuarto de disco}}y(18 - x - y)\thinspace dA = 48 - 2 - \pi = 46 - \pi \ ✓$$
 
 </details>
 
@@ -487,7 +487,7 @@ $$\bar f\cdot\vec N = (x - y) - 2y(x - z) = y^2 - y - 2y^3 + 2yz$$
 
 **Paso 4 — Integral.**
 
-$$\int_0^4dz\int_0^1(y^2 - y - 2y^3 + 2yz)\,dy = \int_0^4\left(\frac13 - \frac12 - \frac12 + z\right)dz = 4\left(-\frac23\right) + 8 = \frac{16}{3}$$
+$$\int_0^4dz\int_0^1(y^2 - y - 2y^3 + 2yz)\thinspace dy = \int_0^4\left(\frac13 - \frac12 - \frac12 + z\right)dz = 4\left(-\frac23\right) + 8 = \frac{16}{3}$$
 
 </details>
 
@@ -499,7 +499,7 @@ $$\int_0^4dz\int_0^1(y^2 - y - 2y^3 + 2yz)\,dy = \int_0^4\left(\frac13 - \frac12
 
 ### 12) Flujo de un gradiente a través de un plano
 
-Calcule el flujo del gradiente de $f(x,y,z) = x + y + z\,g(x - y)$ a través de $x + y = 4$ en el 1° octante, con $0 \le z \le 8$. Suponga $g \in C^1$.
+Calcule el flujo del gradiente de $f(x,y,z) = x + y + z\thinspace g(x - y)$ a través de $x + y = 4$ en el 1° octante, con $0 \le z \le 8$. Suponga $g \in C^1$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -509,7 +509,7 @@ Calcule el flujo del gradiente de $f(x,y,z) = x + y + z\,g(x - y)$ a través de 
 
 **Paso 1 — Gradiente.**
 
-$$\nabla f = \big(1 + z\,g'(x - y),\ 1 - z\,g'(x - y),\ g(x - y)\big)$$
+$$\nabla f = \big(1 + z\thinspace g'(x - y),\ 1 - z\thinspace g'(x - y),\ g(x - y)\big)$$
 
 **Paso 2 — Normal del plano** con $\breve n\cdot\breve\imath > 0$: $\breve n = \dfrac{(1,1,0)}{\sqrt2}$.
 
@@ -539,17 +539,17 @@ Sea $S$ un trozo de superficie de ecuación $z = y^2 - x^2$ cuya proyección sob
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Gradiente.** $\nabla g = \big(y\,h'(xy),\ x\,h'(xy),\ 1\big)$.
+**Paso 1 — Gradiente.** $\nabla g = \big(y\thinspace h'(xy),\ x\thinspace h'(xy),\ 1\big)$.
 
 **Paso 2 — Normal** (hacia arriba) de $z = y^2 - x^2$: $\vec N = (-z'_x, -z'_y, 1) = (2x,\ -2y,\ 1)$.
 
 **Paso 3 — Producto.**
 
-$$\nabla g\cdot\vec N = 2xy\,h' - 2xy\,h' + 1 = 1$$
+$$\nabla g\cdot\vec N = 2xy\thinspace h' - 2xy\thinspace h' + 1 = 1$$
 
 **Paso 4 — Flujo.**
 
-$$\Phi = \iint_D 1\,dx\,dy = \text{área}(D)$$
+$$\Phi = \iint_D 1\thinspace dx\thinspace dy = \text{área}(D)$$
 
 Con la orientación opuesta da $-\text{área}(D)$. En ambos casos es proporcional al área de $D$. $\blacksquare$
 
@@ -577,7 +577,7 @@ Calcule el flujo de $\bar X = (x,y,z)$ a través de la frontera del cubo $[-1,1]
 
 **Total:** $6\cdot4 = 24$.
 
-*Control con divergencia:* $\operatorname{div}\bar X = 3$ y el volumen es 8 ⇒ $24$ ✓.
+*Control con divergencia:* $\mathop{\mathrm{div}}\bar X = 3$ y el volumen es 8 ⇒ $24$ ✓.
 
 </details>
 
@@ -607,7 +607,7 @@ $$\bar f\cdot\vec N = \frac x2 + y + z = \frac x2 + y + \frac{2 - x - y}{2} = 1 
 
 **Paso 4 — Región:** el triángulo $x, y \ge 0$, $x + y \le 2$, de área 2.
 
-$$\Phi = \iint\left(1 + \frac y2\right)dA = 2 + \frac12\int_0^2y\,(2 - y)\,dy = 2 + \frac12\cdot\frac43 = \frac83$$
+$$\Phi = \iint\left(1 + \frac y2\right)dA = 2 + \frac12\int_0^2y\thinspace(2 - y)\thinspace dy = 2 + \frac12\cdot\frac43 = \frac83$$
 
 </details>
 
@@ -633,7 +633,7 @@ Dado $\bar f(x,y,z) = (x^2z,\ z^3,\ x^2z)$, calcule el flujo de $\bar f$ a trav�
 
 **Paso 3 — Integral** en polares:
 
-$$\Phi = \iint_{\rho\le1}2x^2\,dA = 2\int_0^{2\pi}\cos^2\varphi\,d\varphi\int_0^1\rho^3\,d\rho = 2\cdot\pi\cdot\frac14 = \frac\pi2$$
+$$\Phi = \iint_{\rho\le1}2x^2\thinspace dA = 2\int_0^{2\pi}\cos^2\varphi\thinspace d\varphi\int_0^1\rho^3\thinspace d\rho = 2\cdot\pi\cdot\frac14 = \frac\pi2$$
 
 </details>
 
@@ -645,7 +645,7 @@ $$\Phi = \iint_{\rho\le1}2x^2\,dA = 2\int_0^{2\pi}\cos^2\varphi\,d\varphi\int_0^
 
 ### 17) Flujo a partir del flujo total
 
-Sea $\partial D$ la superficie frontera del cuerpo $D$ definido por: $1 \le z \le 5 - x^2 - y^2$. Sabiendo que $\displaystyle\oint\!\!\!\oint_{\partial D}\bar f\cdot\breve n\,d\sigma = 0$ y que $\bar f(x,y,z) = (\operatorname{sen}(y\cos(z)) - 2x,\ \operatorname{sen}(x\cos(z)) - y,\ 3z)$, calcule el flujo de $\bar f$ a través del trozo de frontera de ecuación $z = 5 - x^2 - y^2$ orientado hacia $z^+$.
+Sea $\partial D$ la superficie frontera del cuerpo $D$ definido por: $1 \le z \le 5 - x^2 - y^2$. Sabiendo que $\displaystyle\oint\negthinspace\negthinspace\negthinspace\oint_{\partial D}\bar f\cdot\breve n\thinspace d\sigma = 0$ y que $\bar f(x,y,z) = (\mathop{\mathrm{sen}}(y\cos(z)) - 2x,\ \mathop{\mathrm{sen}}(x\cos(z)) - y,\ 3z)$, calcule el flujo de $\bar f$ a través del trozo de frontera de ecuación $z = 5 - x^2 - y^2$ orientado hacia $z^+$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -679,7 +679,7 @@ Calcule el flujo de $\bar F$ a través de $S$, indicando gráficamente la orient
 
 ### Adicional 1)
 
-$\bar F(x,y,z) = x\,i + y\,j + z\,k$ a través del plano $x + y + z = 1$ ubicado en el primer octante.
+$\bar F(x,y,z) = x\thinspace i + y\thinspace j + z\thinspace k$ a través del plano $x + y + z = 1$ ubicado en el primer octante.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -691,7 +691,7 @@ $\bar F(x,y,z) = x\,i + y\,j + z\,k$ a través del plano $x + y + z = 1$ ubicado
 - $\bar F\cdot\vec N = x + y + z = 1$ sobre el plano.
 - La proyección es el triángulo $x, y \ge 0$, $x + y \le 1$, de área $\frac12$.
 
-$$\Phi = \iint 1\,dA = \frac12$$
+$$\Phi = \iint 1\thinspace dA = \frac12$$
 
 </details>
 
@@ -703,7 +703,7 @@ $$\Phi = \iint 1\,dA = \frac12$$
 
 ### Adicional 2)
 
-$\bar F(x,y,z) = z\,i + x\,j + y\,k$, a través de la porción de superficie $x^2 + y^2 = 1$ entre $z = 0$ y $z = 2$.
+$\bar F(x,y,z) = z\thinspace i + x\thinspace j + y\thinspace k$, a través de la porción de superficie $x^2 + y^2 = 1$ entre $z = 0$ y $z = 2$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -711,12 +711,12 @@ $\bar F(x,y,z) = z\,i + x\,j + y\,k$, a través de la porción de superficie $x^
 <details>
 <summary>Solución paso a paso</summary>
 
-- Parametrización: $(\cos t, \operatorname{sen}t, z)$, con normal saliente $\breve n = (\cos t, \operatorname{sen}t, 0)$ y $d\sigma = dt\,dz$.
-- $\bar F\cdot\breve n = z\cos t + \cos t\operatorname{sen}t$.
+- Parametrización: $(\cos t, \mathop{\mathrm{sen}}t, z)$, con normal saliente $\breve n = (\cos t, \mathop{\mathrm{sen}}t, 0)$ y $d\sigma = dt\thinspace dz$.
+- $\bar F\cdot\breve n = z\cos t + \cos t\mathop{\mathrm{sen}}t$.
 
-$$\Phi = \int_0^2\!\!\int_0^{2\pi}(z\cos t + \cos t\operatorname{sen}t)\,dt\,dz = 0$$
+$$\Phi = \int_0^2\negthinspace\negthinspace\int_0^{2\pi}(z\cos t + \cos t\mathop{\mathrm{sen}}t)\thinspace dt\thinspace dz = 0$$
 
-Las integrales de $\cos t$ y de $\cos t\operatorname{sen}t$ en un período son 0.
+Las integrales de $\cos t$ y de $\cos t\mathop{\mathrm{sen}}t$ en un período son 0.
 
 </details>
 
@@ -728,7 +728,7 @@ Las integrales de $\cos t$ y de $\cos t\operatorname{sen}t$ en un período son 0
 
 ### Adicional 3)
 
-$F(x,y,z) = x\,i + y\,j + z\,k$, a través de la porción de superficie $z = 4 - x^2 - y^2$ con $z \ge 0$.
+$F(x,y,z) = x\thinspace i + y\thinspace j + z\thinspace k$, a través de la porción de superficie $z = 4 - x^2 - y^2$ con $z \ge 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -740,7 +740,7 @@ $F(x,y,z) = x\,i + y\,j + z\,k$, a través de la porción de superficie $z = 4 -
 - $\bar F\cdot\vec N = 2x^2 + 2y^2 + z = 2\rho^2 + 4 - \rho^2 = \rho^2 + 4$.
 - $z \ge 0 \Rightarrow \rho \le 2$.
 
-$$\Phi = \int_0^{2\pi}\!\!\int_0^2(\rho^2 + 4)\rho\,d\rho\,d\varphi = 2\pi(4 + 8) = 24\pi$$
+$$\Phi = \int_0^{2\pi}\negthinspace\negthinspace\int_0^2(\rho^2 + 4)\rho\thinspace d\rho\thinspace d\varphi = 2\pi(4 + 8) = 24\pi$$
 
 </details>
 
@@ -752,7 +752,7 @@ $$\Phi = \int_0^{2\pi}\!\!\int_0^2(\rho^2 + 4)\rho\,d\rho\,d\varphi = 2\pi(4 + 8
 
 ### Adicional 4)
 
-$\bar F(x,y,z) = x\,i + y\,j - z\,k$, a través de la porción de superficie $z = \sqrt{x^2 + y^2}$ entre $z = 0$ y $z = 2$.
+$\bar F(x,y,z) = x\thinspace i + y\thinspace j - z\thinspace k$, a través de la porción de superficie $z = \sqrt{x^2 + y^2}$ entre $z = 0$ y $z = 2$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -763,7 +763,7 @@ $\bar F(x,y,z) = x\,i + y\,j - z\,k$, a través de la porción de superficie $z 
 - Cono $z = \rho$, con normal hacia $z^-$: $\vec N = (z'_x, z'_y, -1) = \left(\frac x\rho, \frac y\rho, -1\right)$.
 - $\bar F\cdot\vec N = \dfrac{x^2 + y^2}{\rho} + z = \rho + \rho = 2\rho$.
 
-$$\Phi = \int_0^{2\pi}\!\!\int_0^2 2\rho\cdot\rho\,d\rho\,d\varphi = 2\pi\cdot\frac{16}{3} = \frac{32\pi}{3}$$
+$$\Phi = \int_0^{2\pi}\negthinspace\negthinspace\int_0^2 2\rho\cdot\rho\thinspace d\rho\thinspace d\varphi = 2\pi\cdot\frac{16}{3} = \frac{32\pi}{3}$$
 
 </details>
 
@@ -775,7 +775,7 @@ $$\Phi = \int_0^{2\pi}\!\!\int_0^2 2\rho\cdot\rho\,d\rho\,d\varphi = 2\pi\cdot\f
 
 ### Adicional 5)
 
-$\bar F(x,y,z) = y\,i + x\,j + 2z\,k$, a través de la porción de superficie $y = x^2$ ubicada en el primer octante con $x + y + z \le 2$.
+$\bar F(x,y,z) = y\thinspace i + x\thinspace j + 2z\thinspace k$, a través de la porción de superficie $y = x^2$ ubicada en el primer octante con $x + y + z \le 2$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -785,13 +785,13 @@ $\bar F(x,y,z) = y\,i + x\,j + 2z\,k$, a través de la porción de superficie $y
 
 **Paso 1 — Normal.** Con la parametrización $(x, x^2, z)$: $\bar X'_x\wedge\bar X'_z = (2x, -1, 0)$. Su componente $y$ es negativa, así que para la orientación pedida usamos $\vec N = (-2x,\ 1,\ 0)$.
 
-**Paso 2 — Integrando.** $\bar F\cdot\vec N = -2x\,y + x = x - 2x^3$.
+**Paso 2 — Integrando.** $\bar F\cdot\vec N = -2x\thinspace y + x = x - 2x^3$.
 
 **Paso 3 — Región.** $z$ va de $0$ a $2 - x - x^2$, que exige $x^2 + x \le 2 \Rightarrow x\in[0,1]$.
 
 **Paso 4 — Integral.**
 
-$$\Phi = \int_0^1(x - 2x^3)(2 - x - x^2)\,dx = \int_0^1(2x - x^2 - 5x^3 + 2x^4 + 2x^5)\,dx = 1 - \frac13 - \frac54 + \frac25 + \frac13 = \frac{3}{20}$$
+$$\Phi = \int_0^1(x - 2x^3)(2 - x - x^2)\thinspace dx = \int_0^1(2x - x^2 - 5x^3 + 2x^4 + 2x^5)\thinspace dx = 1 - \frac13 - \frac54 + \frac25 + \frac13 = \frac{3}{20}$$
 
 </details>
 

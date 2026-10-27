@@ -25,12 +25,12 @@ Una **trayectoria** es una función continua $\vec g: [a,b] \to \mathbb{R}^n$. S
 | Curva | Parametrización |
 |---|---|
 | Gráfico $y = f(x)$, $x\in[a,b]$ | $(t,\ f(t))$ |
-| Segmento de $A$ a $B$ | $A + t\,(B - A)$, $\ t\in[0,1]$ |
-| Circunferencia de centro $(x_0,y_0)$ y radio $R$ (antihoraria) | $(x_0 + R\cos t,\ y_0 + R\operatorname{sen}t)$, $\ t\in[0,2\pi]$ |
-| Elipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ | $(a\cos t,\ b\operatorname{sen}t)$ |
-| Hélice | $(R\cos t,\ R\operatorname{sen}t,\ ct)$ |
+| Segmento de $A$ a $B$ | $A + t\thinspace(B - A)$, $\ t\in[0,1]$ |
+| Circunferencia de centro $(x_0,y_0)$ y radio $R$ (antihoraria) | $(x_0 + R\cos t,\ y_0 + R\mathop{\mathrm{sen}}t)$, $\ t\in[0,2\pi]$ |
+| Elipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ | $(a\cos t,\ b\mathop{\mathrm{sen}}t)$ |
+| Hélice | $(R\cos t,\ R\mathop{\mathrm{sen}}t,\ ct)$ |
 
-**Invertir el sentido:** si $\vec g$ va de $A$ a $B$ con $t\in[a,b]$, entonces $\vec g(a + b - u)$, con $u\in[a,b]$, recorre la misma curva de $B$ a $A$. Otra forma es intercambiar $\cos$ y $\operatorname{sen}$ en una circunferencia.
+**Invertir el sentido:** si $\vec g$ va de $A$ a $B$ con $t\in[a,b]$, entonces $\vec g(a + b - u)$, con $u\in[a,b]$, recorre la misma curva de $B$ a $A$. Otra forma es intercambiar $\cos$ y $\mathop{\mathrm{sen}}$ en una circunferencia.
 
 **Curva intersección de dos superficies:** se despejan variables o se usa la ecuación más simple para parametrizar (ver Unidad 4).
 
@@ -52,7 +52,7 @@ Se deriva **componente a componente**. Valen las propiedades:
 
 ## 2. Longitud de arco
 
-$$L(C) = \int_a^b \lVert\vec g\,'(t)\rVert\,dt, \qquad ds = \lVert\vec g\,'(t)\rVert\,dt$$
+$$L(C) = \int_a^b \lVert\vec g\thinspace'(t)\rVert\thinspace dt, \qquad ds = \lVert\vec g\thinspace'(t)\rVert\thinspace dt$$
 
 La longitud **no depende de la parametrización** ni de la orientación.
 
@@ -60,11 +60,11 @@ Para una curva suave a trozos, se suman las longitudes de cada tramo.
 
 **Integrales útiles:**
 
-$$\int\sqrt{1 + u^2}\,du = \frac{u\sqrt{1+u^2}}{2} + \frac{\operatorname{argsenh}(u)}{2} + C, \qquad \int u\sqrt{a + bu^2}\,du = \frac{(a + bu^2)^{3/2}}{3b} + C$$
+$$\int\sqrt{1 + u^2}\thinspace du = \frac{u\sqrt{1+u^2}}{2} + \frac{\mathop{\mathrm{argsenh}}(u)}{2} + C, \qquad \int u\sqrt{a + bu^2}\thinspace du = \frac{(a + bu^2)^{3/2}}{3b} + C$$
 
 ### Abscisa curvilínea, triedro de Frenet y curvaturas
 
-- **Abscisa curvilínea:** $s = \lambda(t) = \int_{t_0}^t \lVert\vec g'(u)\rVert\,du$. Despejando $t = \lambda^{-1}(s)$ se obtiene la **ecuación normal** $\vec X = \vec G(s)$, que recorre la curva con velocidad 1.
+- **Abscisa curvilínea:** $s = \lambda(t) = \int_{t_0}^t \lVert\vec g'(u)\rVert\thinspace du$. Despejando $t = \lambda^{-1}(s)$ se obtiene la **ecuación normal** $\vec X = \vec G(s)$, que recorre la curva con velocidad 1.
 - **Versor tangente:** $T = \dfrac{\vec g'}{\lVert\vec g'\rVert}$.
 - **Versor binormal:** $B = \dfrac{\vec g'\times\vec g''}{\lVert\vec g'\times\vec g''\rVert}$.
 - **Versor normal principal:** $N = B\times T$.
@@ -76,15 +76,15 @@ $$\int\sqrt{1 + u^2}\,du = \frac{u\sqrt{1+u^2}}{2} + \frac{\operatorname{argsenh
 
 $$cf = \frac{\lVert\vec g'\times\vec g''\rVert}{\lVert\vec g'\rVert^3}, \qquad ct = -\frac{(\vec g'\times\vec g'')\cdot\vec g'''}{\lVert\vec g'\times\vec g''\rVert^2}$$
 
-- **Radio de curvatura:** $\rho = 1/cf$. El **centro de curvatura** es $\vec X_0 + \rho\,N$.
+- **Radio de curvatura:** $\rho = 1/cf$. El **centro de curvatura** es $\vec X_0 + \rho\thinspace N$.
 - **Casos particulares:** una recta tiene $cf = 0$; una circunferencia de radio $R$ tiene $cf = 1/R$; una curva plana tiene torsión 0.
-- **Aceleración:** $\vec a = s''\,T + (s')^2\,cf\,N$. Siempre está en el plano osculador.
+- **Aceleración:** $\vec a = s''\thinspace T + (s')^2\thinspace cf\thinspace N$. Siempre está en el plano osculador.
 
 ---
 
 ## 3. Integral de línea de un campo escalar
 
-$$\int_C f\,ds = \int_a^b f(\vec g(t))\,\lVert\vec g\,'(t)\rVert\,dt$$
+$$\int_C f\thinspace ds = \int_a^b f(\vec g(t))\thinspace\lVert\vec g\thinspace'(t)\rVert\thinspace dt$$
 
 - **No depende** de la parametrización ni de la orientación.
 - Con $f = 1$ da la longitud.
@@ -93,10 +93,10 @@ $$\int_C f\,ds = \int_a^b f(\vec g(t))\,\lVert\vec g\,'(t)\rVert\,dt$$
 
 | Magnitud | Fórmula |
 |---|---|
-| Masa | $M = \int_C \delta\,ds$ |
-| Centro de masa | $x_{CM} = \dfrac{1}{M}\int_C x\,\delta\,ds$ (ídem $y$, $z$) |
-| Momento de inercia respecto de un eje | $I = \int_C d^2\,\delta\,ds$ ($d$ = distancia al eje) |
-| Resistencia de un hilo (resistividad lineal $\rho$) | $R = \int_C \rho\,ds$ |
+| Masa | $M = \int_C \delta\thinspace ds$ |
+| Centro de masa | $x_{CM} = \dfrac{1}{M}\int_C x\thinspace\delta\thinspace ds$ (ídem $y$, $z$) |
+| Momento de inercia respecto de un eje | $I = \int_C d^2\thinspace\delta\thinspace ds$ ($d$ = distancia al eje) |
+| Resistencia de un hilo (resistividad lineal $\rho$) | $R = \int_C \rho\thinspace ds$ |
 
 "Proporcional a la distancia a ..." significa $\delta = k\cdot\text{distancia}$, con $k$ constante.
 
@@ -104,9 +104,9 @@ $$\int_C f\,ds = \int_a^b f(\vec g(t))\,\lVert\vec g\,'(t)\rVert\,dt$$
 
 ## 4. Integral de línea de un campo vectorial (trabajo, circulación)
 
-$$\int_C \vec f\cdot d\vec s = \int_a^b \vec f(\vec g(t))\cdot\vec g\,'(t)\,dt = \int_C P\,dx + Q\,dy\ (+\,R\,dz)$$
+$$\int_C \vec f\cdot d\vec s = \int_a^b \vec f(\vec g(t))\cdot\vec g\thinspace'(t)\thinspace dt = \int_C P\thinspace dx + Q\thinspace dy\ (+\thinspace R\thinspace dz)$$
 
-- Sólo cuenta la **componente tangencial** del campo: $\vec f\cdot d\vec s = (\vec f\cdot T)\,ds$.
+- Sólo cuenta la **componente tangencial** del campo: $\vec f\cdot d\vec s = (\vec f\cdot T)\thinspace ds$.
 - **Cambia de signo** si se invierte la orientación.
 - Si la curva es cerrada se llama **circulación** y se escribe $\oint_C$.
 
@@ -146,14 +146,14 @@ Si $\vec f = \nabla\phi$ con $\phi \in C^2$, por Schwarz $D\vec f$ (el Hessiano 
 ### ¿Cuándo la simetría alcanza?
 
 - Si el dominio es **simplemente conexo** (por ejemplo todo $\mathbb{R}^2$, $\mathbb{R}^3$, un disco, un semiplano), la jacobiana simétrica y continua **garantiza** que existe la potencial.
-- Si el dominio **tiene "agujeros"** (por ejemplo $\mathbb{R}^2 - \{\vec 0\}$), la simetría no alcanza: hay que verificar que la circulación alrededor de cada agujero sea 0.
+- Si el dominio **tiene "agujeros"** (por ejemplo $\mathbb{R}^2 - \lbrace\vec 0\rbrace$), la simetría no alcanza: hay que verificar que la circulación alrededor de cada agujero sea 0.
 
-**Ejemplo clásico:** $\vec f = \left(\dfrac{y}{x^2+y^2}, \dfrac{-x}{x^2+y^2}\right)$ tiene jacobiana simétrica, pero su circulación sobre una circunferencia centrada en el origen es $-2\pi \ne 0$ ⇒ **no** es conservativo en $\mathbb{R}^2 - \{\vec 0\}$.
+**Ejemplo clásico:** $\vec f = \left(\dfrac{y}{x^2+y^2}, \dfrac{-x}{x^2+y^2}\right)$ tiene jacobiana simétrica, pero su circulación sobre una circunferencia centrada en el origen es $-2\pi \ne 0$ ⇒ **no** es conservativo en $\mathbb{R}^2 - \lbrace\vec 0\rbrace$.
 
 ### Cómo hallar la función potencial
 
 1. Verificar la simetría de $D\vec f$.
-2. Integrar la primera componente respecto de $x$: $\phi = \int P\,dx + g(y,z)$.
+2. Integrar la primera componente respecto de $x$: $\phi = \int P\thinspace dx + g(y,z)$.
 3. Derivar respecto de $y$ e igualar a $Q$ ⇒ despejar $g'_y$ ⇒ integrar ⇒ $g = \dots + h(z)$.
 4. Derivar respecto de $z$ e igualar a $R$ ⇒ despejar $h'$ ⇒ integrar.
 5. $\phi$ queda determinada salvo una constante $C$.
@@ -170,14 +170,14 @@ $$\lvert P_{i-1}P_i\rvert = \sqrt{\Delta x^2 + \Delta y^2 + \Delta z^2} = \sqrt{
 
 y en el límite:
 
-$$s = \int_a^b\sqrt{x'^2 + y'^2 + z'^2}\,dt, \qquad s'(t) = \lVert\vec f\,'(t)\rVert, \qquad ds = \lVert\vec f\,'(t)\rVert\,dt$$
+$$s = \int_a^b\sqrt{x'^2 + y'^2 + z'^2}\thinspace dt, \qquad s'(t) = \lVert\vec f\thinspace'(t)\rVert, \qquad ds = \lVert\vec f\thinspace'(t)\rVert\thinspace dt$$
 
 **Reparametrización.** Si $h: [a,b] \to [a_1, b_1]$ es biyectiva y $C^1$, $\vec g = \vec f\circ h$ es una **reparametrización** de $\vec f$. Lleva extremos en extremos:
 
 - si $h(a) = a_1$ y $h(b) = b_1$, **preserva** la orientación;
 - si $h(a) = b_1$ y $h(b) = a_1$, la **invierte**.
 
-**La longitud no depende de la parametrización.** Con $\vec g(u) = \vec f(h(u))$, $\lVert\vec g\,'(u)\rVert = \lVert\vec f\,'(h(u))\rVert\,\lvert h'(u)\rvert$. Con el cambio $t = h(u)$:
+**La longitud no depende de la parametrización.** Con $\vec g(u) = \vec f(h(u))$, $\lVert\vec g\thinspace'(u)\rVert = \lVert\vec f\thinspace'(h(u))\rVert\thinspace\lvert h'(u)\rvert$. Con el cambio $t = h(u)$:
 
 - si $h$ es creciente, $\lvert h'\rvert = h'$ y la integral es la misma;
 - si es decreciente, $\lvert h'\rvert = -h'$, pero también se invierten los límites, y los dos signos se compensan. $\blacksquare$
@@ -188,21 +188,21 @@ $$s = \int_a^b\sqrt{x'^2 + y'^2 + z'^2}\,dt, \qquad s'(t) = \lVert\vec f\,'(t)\r
 
 **Integral de un campo escalar** como límite de sumas de Riemann:
 
-$$\int_C F\,ds = \lim_{n\to\infty}\sum F(\vec r(\alpha_i))\,\lVert\vec r\,'(\alpha_i)\rVert\,\Delta t_i = \int_a^b F(\vec r(t))\,\lVert\vec r\,'(t)\rVert\,dt$$
+$$\int_C F\thinspace ds = \lim_{n\to\infty}\sum F(\vec r(\alpha_i))\thinspace\lVert\vec r\thinspace'(\alpha_i)\rVert\thinspace\Delta t_i = \int_a^b F(\vec r(t))\thinspace\lVert\vec r\thinspace'(t)\rVert\thinspace dt$$
 
 con $C$ de clase $C^1$ a trozos (derivada continua salvo en finitos puntos).
 
 **Propiedades:**
 
 1. Con $F = 1$ da la longitud.
-2. **Linealidad:** $\int_C(F + G)\,ds = \int_C F\,ds + \int_C G\,ds$.
+2. **Linealidad:** $\int_C(F + G)\thinspace ds = \int_C F\thinspace ds + \int_C G\thinspace ds$.
 3. **Aditividad respecto de los arcos:** $\int_{C_1\cup C_2} = \int_{C_1} + \int_{C_2}$.
 
-**Interpretación geométrica:** si $F \ge 0$ y $C$ es una curva plana, $\int_C F\,ds$ es el **área lateral de la "pared"** que tiene a $C$ como base y altura $F(x,y)$.
+**Interpretación geométrica:** si $F \ge 0$ y $C$ es una curva plana, $\int_C F\thinspace ds$ es el **área lateral de la "pared"** que tiene a $C$ como base y altura $F(x,y)$.
 
-**Campo vectorial: por qué es el trabajo.** En un intervalo chico, la partícula pasa de $\vec r(t)$ a $\vec r(t + \Delta t)$, y por el TVM $\Delta\vec r \approx \vec r\,'(t)\Delta t$. El trabajo de ese tramo es aproximadamente $\vec F(\vec r(t))\cdot\vec r\,'(t)\,\Delta t$ (fuerza · desplazamiento), y sumando y tomando límite:
+**Campo vectorial: por qué es el trabajo.** En un intervalo chico, la partícula pasa de $\vec r(t)$ a $\vec r(t + \Delta t)$, y por el TVM $\Delta\vec r \approx \vec r\thinspace'(t)\Delta t$. El trabajo de ese tramo es aproximadamente $\vec F(\vec r(t))\cdot\vec r\thinspace'(t)\thinspace\Delta t$ (fuerza · desplazamiento), y sumando y tomando límite:
 
-$$W = \int_a^b\vec F(\vec r(t))\cdot\vec r\,'(t)\,dt = \int_a^b(F_1x' + F_2y' + F_3z')\,dt$$
+$$W = \int_a^b\vec F(\vec r(t))\cdot\vec r\thinspace'(t)\thinspace dt = \int_a^b(F_1x' + F_2y' + F_3z')\thinspace dt$$
 
 Si $\vec g$ es una reparametrización de $\vec r$: $\int\vec F\cdot d\vec g = \pm\int\vec F\cdot d\vec r$, según conserve o invierta la orientación.
 
@@ -216,17 +216,17 @@ Si $\vec g$ es una reparametrización de $\vec r$: $\int\vec F\cdot d\vec g = \p
 
 $$\int_C\nabla F\cdot d\vec r = F(\vec r(b)) - F(\vec r(a))$$
 
-*Demostración.* Sea $G = F\circ\vec r$. Por la regla de la cadena, $G'(t) = \nabla F(\vec r(t))\cdot\vec r\,'(t)$. Entonces $\int_a^b\nabla F\cdot\vec r\,'\,dt = \int_a^b G'(t)\,dt = G(b) - G(a)$. $\blacksquare$
+*Demostración.* Sea $G = F\circ\vec r$. Por la regla de la cadena, $G'(t) = \nabla F(\vec r(t))\cdot\vec r\thinspace'(t)$. Entonces $\int_a^b\nabla F\cdot\vec r\thinspace'\thinspace dt = \int_a^b G'(t)\thinspace dt = G(b) - G(a)$. $\blacksquare$
 
 Si la curva es cerrada, la integral es 0. Un campo es **conservativo** si su integral sobre toda curva cerrada es 0.
 
-**Condición necesaria (demostración).** Si $\vec F = (P, Q) = \nabla U$, con $P, Q, P'_y, Q'_x$ continuas en un abierto conexo, entonces $U''_{xy} = P'_y$ y $U''_{yx} = Q'_x$; por Schwarz son iguales: $P'_y = Q'_x$. **No es suficiente**: $\left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ la cumple y tiene circulación $2\pi$ sobre la circunferencia unitaria. No es conservativo en $\mathbb{R}^2 - \{\vec 0\}$, pero sí en cualquier subconjunto simplemente conexo que no contenga al origen.
+**Condición necesaria (demostración).** Si $\vec F = (P, Q) = \nabla U$, con $P, Q, P'_y, Q'_x$ continuas en un abierto conexo, entonces $U''_{xy} = P'_y$ y $U''_{yx} = Q'_x$; por Schwarz son iguales: $P'_y = Q'_x$. **No es suficiente**: $\left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ la cumple y tiene circulación $2\pi$ sobre la circunferencia unitaria. No es conservativo en $\mathbb{R}^2 - \lbrace\vec 0\rbrace$, pero sí en cualquier subconjunto simplemente conexo que no contenga al origen.
 
 **Condición necesaria y suficiente (dominios convexos).** Si $P, Q, P'_y, Q'_x$ son continuas en un abierto **convexo**, $\vec F$ es conservativo si y sólo si $P'_y = Q'_x$ en todo el conjunto. Para $n$ variables, en un abierto convexo: conservativo $\iff \frac{\partial F_i}{\partial x_j} = \frac{\partial F_j}{\partial x_i}$ para todo $i, j$. En $\mathbb{R}^3$ eso equivale a $\nabla\wedge\vec F = \vec 0$: un campo de $\mathbb{R}^3$ en $\mathbb{R}^3$ es conservativo si y sólo si es **irrotacional**.
 
 **Fórmula general de la función potencial** (en $\mathbb{R}^2$):
 
-$$U(x,y) = \int P(x,y)\,dx + \int\left[Q(x,y) - \frac{\partial}{\partial y}\int P(x,y)\,dx\right]dy + C$$
+$$U(x,y) = \int P(x,y)\thinspace dx + \int\left[Q(x,y) - \frac{\partial}{\partial y}\int P(x,y)\thinspace dx\right]dy + C$$
 
 En $\mathbb{R}^3$ se integra tres veces: en la primera la "constante" es una función de dos variables, en la segunda de una variable y en la tercera es un número.
 
@@ -234,10 +234,10 @@ En $\mathbb{R}^3$ se integra tres veces: en la primera la "constante" es una fun
 
 ## 9. Estrategia para los ejercicios
 
-1. **Longitud o integral de un campo escalar:** parametrizar, calcular $\lVert\vec g'\rVert$, armar $\int f(\vec g(t))\lVert\vec g'\rVert\,dt$ e integrar.
+1. **Longitud o integral de un campo escalar:** parametrizar, calcular $\lVert\vec g'\rVert$, armar $\int f(\vec g(t))\lVert\vec g'\rVert\thinspace dt$ e integrar.
 2. **Trabajo o circulación:**
    - ¿El campo es conservativo (jacobiana simétrica en un dominio simplemente conexo)? Entonces se usa $\phi(B) - \phi(A)$, que suele ser mucho más fácil.
-   - Si no, parametrizar **respetando el sentido** pedido y calcular $\int \vec f(\vec g(t))\cdot\vec g'(t)\,dt$.
+   - Si no, parametrizar **respetando el sentido** pedido y calcular $\int \vec f(\vec g(t))\cdot\vec g'(t)\thinspace dt$.
    - Para curvas cerradas planas, se puede usar Green (Unidad 11).
 3. **Curvas por tramos:** sumar las integrales de cada tramo, cada uno parametrizado en el sentido correcto.
 
@@ -247,9 +247,9 @@ En $\mathbb{R}^3$ se integra tres veces: en la primera la "constante" es una fun
 
 | Concepto | Fórmula |
 |---|---|
-| Longitud | $\int_a^b\lVert\vec g'\rVert\,dt$ |
-| Integral de campo escalar | $\int_C f\,ds = \int f(\vec g)\lVert\vec g'\rVert\,dt$ |
-| Integral de campo vectorial | $\int_C\vec f\cdot d\vec s = \int\vec f(\vec g)\cdot\vec g'\,dt$ |
+| Longitud | $\int_a^b\lVert\vec g'\rVert\thinspace dt$ |
+| Integral de campo escalar | $\int_C f\thinspace ds = \int f(\vec g)\lVert\vec g'\rVert\thinspace dt$ |
+| Integral de campo vectorial | $\int_C\vec f\cdot d\vec s = \int\vec f(\vec g)\cdot\vec g'\thinspace dt$ |
 | Campo conservativo | $\int_C\nabla\phi\cdot d\vec s = \phi(B) - \phi(A)$ |
 | Condición necesaria | $D\vec f$ simétrica |
 | Curvatura de flexión | $\lVert\vec g'\times\vec g''\rVert/\lVert\vec g'\rVert^3$ |

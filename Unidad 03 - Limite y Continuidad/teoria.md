@@ -23,11 +23,11 @@ En $\mathbb{R}$ sólo hay **dos** formas de acercarse a un punto: por izquierda 
 
 **Límite de un campo escalar.** Sea $f: A \subseteq \mathbb{R}^n \to \mathbb{R}$ y $\vec x_0$ un **punto de acumulación** de $A$ (no hace falta que $\vec x_0 \in A$).
 
-$$\lim_{\vec x \to \vec x_0} f(\vec x) = L \iff \forall \varepsilon > 0\ \exists \delta > 0 : \ \vec x \in A,\ 0 < \|\vec x - \vec x_0\| < \delta \Rightarrow |f(\vec x) - L| < \varepsilon$$
+$$\lim_{\vec x \to \vec x_0} f(\vec x) = L \iff \forall \varepsilon > 0\ \exists \delta > 0 : \ \vec x \in A,\ 0 < \Vert\vec x - \vec x_0\Vert < \delta \Rightarrow |f(\vec x) - L| < \varepsilon$$
 
 Es decir, $f(\vec x)$ queda tan cerca de $L$ como se quiera tomando $\vec x$ en una **bola reducida** de $\vec x_0$ suficientemente chica, **en cualquier dirección**. Para $n = 2$ se llama **límite doble** y para $n = 3$, **límite triple**.
 
-**Límites infinitos:** $\lim f = +\infty$ si $\forall M > 0\ \exists \delta : 0 < \|\vec x - \vec x_0\| < \delta \Rightarrow f(\vec x) > M$.
+**Límites infinitos:** $\lim f = +\infty$ si $\forall M > 0\ \exists \delta : 0 < \Vert\vec x - \vec x_0\Vert < \delta \Rightarrow f(\vec x) > M$.
 
 **Propiedades** (iguales que en una variable):
 
@@ -41,9 +41,9 @@ Es decir, $f(\vec x)$ queda tan cerca de $L$ como se quiera tomando $\vec x$ en 
 - **Sustitución directa** si la función es continua: $\lim_{(x,y,z)\to(1,0,2)} z^3\cos(x^2 - xy - 1) = 8$.
 - **Factorizar y simplificar:**
 
-$$\frac{xy^3 - x^3y}{x^4 - y^4} = \frac{-xy\,(x^2 - y^2)}{(x^2+y^2)(x^2 - y^2)} = \frac{-xy}{x^2+y^2} \xrightarrow{(1,1)} -\frac12$$
+$$\frac{xy^3 - x^3y}{x^4 - y^4} = \frac{-xy\thinspace(x^2 - y^2)}{(x^2+y^2)(x^2 - y^2)} = \frac{-xy}{x^2+y^2} \xrightarrow{(1,1)} -\frac12$$
 
-- **Cambio de variable a un límite conocido:** $\lim_{(x,y)\to(-2,2)} \dfrac{\operatorname{sen}(x^2 - 2y)}{x^2 - 2y} = 1$, con $u = x^2 - 2y \to 0$.
+- **Cambio de variable a un límite conocido:** $\lim_{(x,y)\to(-2,2)} \dfrac{\mathop{\mathrm{sen}}(x^2 - 2y)}{x^2 - 2y} = 1$, con $u = x^2 - 2y \to 0$.
 - **Infinitésimo por acotada** (ver la sección 6).
 
 ---
@@ -94,7 +94,7 @@ $$L_1 = \lim_{x\to x_0}\left(\lim_{y\to y_0} f(x,y)\right), \qquad L_2 = \lim_{y
   - Si $L_1 \ne L_2$ (ambos existen) ⇒ no existe el límite doble.
   - Si un iterado existe y es distinto de un límite restringido ⇒ no existe el límite doble.
 - **La igualdad de los iterados NO garantiza nada.** Por ejemplo, $\dfrac{2xy}{x^2+y^2}$ tiene $L_1 = L_2 = 0$ y el límite no existe.
-- Los iterados pueden no existir aunque el límite doble sí exista: $x\operatorname{sen}(1/y) + y\operatorname{sen}(1/x) \to 0$, y sus iterados no existen.
+- Los iterados pueden no existir aunque el límite doble sí exista: $x\mathop{\mathrm{sen}}(1/y) + y\mathop{\mathrm{sen}}(1/x) \to 0$, y sus iterados no existen.
 
 **Ejemplo 3.14:** $\dfrac{2x + y}{x - y}$ en el origen tiene $L_1 = \lim_{x\to0} \dfrac{2x}{x} = 2$ y $L_2 = \lim_{y\to0}\dfrac{y}{-y} = -1$ ⇒ no existe.
 
@@ -102,25 +102,25 @@ $$L_1 = \lim_{x\to x_0}\left(\lim_{y\to y_0} f(x,y)\right), \qquad L_2 = \lim_{y
 
 ## 5. Coordenadas polares
 
-$$\begin{cases} x = x_0 + r\cos\theta \\ y = y_0 + r\operatorname{sen}\theta \end{cases} \qquad r > 0,\ \theta \in [0, 2\pi)$$
+$$\begin{cases} x = x_0 + r\cos\theta \cr y = y_0 + r\mathop{\mathrm{sen}}\theta \end{cases} \qquad r > 0,\ \theta \in [0, 2\pi)$$
 
 $(x,y) \to (x_0, y_0)$ equivale a $r \to 0^+$, **uniformemente en $\theta$**. Son muy útiles cuando aparece $x^2 + y^2 = r^2$.
 
-**Teorema:** $\lim_{(x,y)\to(x_0,y_0)} f = L$ si y sólo si $f(x_0 + r\cos\theta, y_0 + r\operatorname{sen}\theta) \to L$ cuando $r \to 0$, uniformemente para todo $\theta$.
+**Teorema:** $\lim_{(x,y)\to(x_0,y_0)} f = L$ si y sólo si $f(x_0 + r\cos\theta, y_0 + r\mathop{\mathrm{sen}}\theta) \to L$ cuando $r \to 0$, uniformemente para todo $\theta$.
 
 **Criterio práctico:** si
 
-$$|f(r\cos\theta, r\operatorname{sen}\theta) - L| \le g(r)\cdot h(\theta) \quad\text{con}\quad g(r) \xrightarrow[r\to0]{} 0 \ \text{ y } \ h(\theta) \text{ acotada}$$
+$$|f(r\cos\theta, r\mathop{\mathrm{sen}}\theta) - L| \le g(r)\cdot h(\theta) \quad\text{con}\quad g(r) \xrightarrow[r\to0]{} 0 \ \text{ y } \ h(\theta) \text{ acotada}$$
 
 entonces el límite **existe y vale $L$**.
 
 - Si después de simplificar **no queda $r$** y queda una expresión que **depende de $\theta$** ⇒ **no existe** (cada rayo da un límite distinto).
-- **Cuidado:** $h(\theta)$ tiene que ser acotada **para todo $\theta$**. En $\dfrac{xy}{x - y} = r\,\dfrac{\cos\theta\operatorname{sen}\theta}{\cos\theta - \operatorname{sen}\theta}$, $h$ no está acotada cerca de $\theta = \pi/4$ y el criterio **no se puede usar**.
+- **Cuidado:** $h(\theta)$ tiene que ser acotada **para todo $\theta$**. En $\dfrac{xy}{x - y} = r\thinspace\dfrac{\cos\theta\mathop{\mathrm{sen}}\theta}{\cos\theta - \mathop{\mathrm{sen}}\theta}$, $h$ no está acotada cerca de $\theta = \pi/4$ y el criterio **no se puede usar**.
 
 **Ejemplos:**
 
-- $\dfrac{x^2y}{x^2+y^2} = r\cos^2\theta\operatorname{sen}\theta$, con $|\cos^2\theta\operatorname{sen}\theta| \le 1$ ⇒ el límite es 0.
-- $\dfrac{|x| + |y|}{\sqrt{x^2+y^2}} = |\cos\theta| + |\operatorname{sen}\theta|$, que depende de $\theta$ ⇒ no existe.
+- $\dfrac{x^2y}{x^2+y^2} = r\cos^2\theta\mathop{\mathrm{sen}}\theta$, con $|\cos^2\theta\mathop{\mathrm{sen}}\theta| \le 1$ ⇒ el límite es 0.
+- $\dfrac{|x| + |y|}{\sqrt{x^2+y^2}} = |\cos\theta| + |\mathop{\mathrm{sen}}\theta|$, que depende de $\theta$ ⇒ no existe.
 
 ---
 
@@ -128,13 +128,13 @@ entonces el límite **existe y vale $L$**.
 
 Si cerca de $\vec x_0$:
 
-$$f(\vec x) = \underbrace{g(\vec x)}_{\to\,0}\cdot\underbrace{h(\vec x)}_{\text{acotada}} \ \Rightarrow\ \lim_{\vec x\to\vec x_0} f(\vec x) = 0$$
+$$f(\vec x) = \underbrace{g(\vec x)}_{\to\thinspace0}\cdot\underbrace{h(\vec x)}_{\text{acotada}} \ \Rightarrow\ \lim_{\vec x\to\vec x_0} f(\vec x) = 0$$
 
 **Cocientes acotados muy usados** (cerca del origen, con $(x,y) \ne (0,0)$):
 
 $$0 \le \frac{x^2}{x^2+y^2} \le 1, \qquad 0 \le \frac{y^2}{x^2+y^2} \le 1, \qquad \frac{|x|}{\sqrt{x^2+y^2}} \le 1, \qquad \frac{|xy|}{x^2+y^2} \le \frac12$$
 
-Además, $\operatorname{sen}(\cdot)$ y $\cos(\cdot)$ están acotados por 1, **aunque su argumento explote**.
+Además, $\mathop{\mathrm{sen}}(\cdot)$ y $\cos(\cdot)$ están acotados por 1, **aunque su argumento explote**.
 
 **Ejemplo:** $\dfrac{3xy^2}{x^2+y^2} = \underbrace{3x}_{\to 0}\cdot\underbrace{\dfrac{y^2}{x^2+y^2}}_{\in[0,1]} \to 0$.
 
@@ -162,7 +162,7 @@ El límite se calcula **componente a componente**, y si alguna componente no tie
 
 **Límites de una variable que conviene recordar:**
 
-$$\lim_{u\to0}\frac{\operatorname{sen}u}{u} = 1,\quad \lim_{u\to0}\frac{1-\cos u}{u^2} = \frac12,\quad \lim_{u\to0}\frac{e^u - 1}{u} = 1,\quad \lim_{u\to0}\frac{\ln(1+u)}{u} = 1,\quad \lim_{u\to0^+} u\ln u = 0$$
+$$\lim_{u\to0}\frac{\mathop{\mathrm{sen}}u}{u} = 1,\quad \lim_{u\to0}\frac{1-\cos u}{u^2} = \frac12,\quad \lim_{u\to0}\frac{e^u - 1}{u} = 1,\quad \lim_{u\to0}\frac{\ln(1+u)}{u} = 1,\quad \lim_{u\to0^+} u\ln u = 0$$
 
 ---
 
@@ -179,7 +179,7 @@ Una **curva** es la imagen de una función vectorial **continua** $\vec g: I \to
 
 **Definición:** $f$ es **continua en $\vec x_0 \in A$** si
 
-$$\forall\varepsilon>0\ \exists\delta>0 : \ \vec x \in A,\ \|\vec x - \vec x_0\| < \delta \Rightarrow |f(\vec x) - f(\vec x_0)| < \varepsilon$$
+$$\forall\varepsilon>0\ \exists\delta>0 : \ \vec x \in A,\ \Vert\vec x - \vec x_0\Vert < \delta \Rightarrow |f(\vec x) - f(\vec x_0)| < \varepsilon$$
 
 Si $\vec x_0$ es de acumulación, esto equivale a tres condiciones:
 
@@ -239,15 +239,15 @@ Sea $\vec f(t) = (f_1(t), \dots, f_n(t))$ y $\vec l = (l_1, \dots, l_n)$.
 
 **(⇒)** Para cada $i$ vale $|f_i(t) - l_i| \le \sqrt{\sum_j(f_j(t) - l_j)^2} = \lVert\vec f(t) - \vec l\rVert$. Si la norma es $< \varepsilon$ en $E'(t_0,\delta)$, cada componente también cumple $|f_i(t) - l_i| < \varepsilon$: $\lim f_i = l_i$.
 
-**(⇐)** Para cada $i$ existe $\delta_i$ con $|f_i(t) - l_i| < \varepsilon$. Tomando $\delta = \min\{\delta_i\}$:
+**(⇐)** Para cada $i$ existe $\delta_i$ con $|f_i(t) - l_i| < \varepsilon$. Tomando $\delta = \min\lbrace\delta_i\rbrace$:
 
-$$\lVert\vec f(t) - \vec l\rVert = \sqrt{\sum(f_i - l_i)^2} < \sqrt{n\,\varepsilon^2} = \sqrt n\,\varepsilon$$
+$$\lVert\vec f(t) - \vec l\rVert = \sqrt{\sum(f_i - l_i)^2} < \sqrt{n\thinspace\varepsilon^2} = \sqrt n\thinspace\varepsilon$$
 
-Como $\sqrt n\,\varepsilon$ es tan chico como se quiera, $\lim\vec f = \vec l$. $\blacksquare$
+Como $\sqrt n\thinspace\varepsilon$ es tan chico como se quiera, $\lim\vec f = \vec l$. $\blacksquare$
 
 ### Ejemplo: función definida por partes
 
-$$F(x,y) = \begin{cases} \dfrac{\operatorname{sen}(x^2 - y^2)}{x^2 - y^2} & \lvert x\rvert \ne \lvert y\rvert \\[2mm] \tfrac12(x + y) & x = y \ \vee\ (x,y) = (-1,1) \\[1mm] 1 & x = -y,\ (x,y) \notin \{(0,0), (-1,1)\} \end{cases}$$
+$$F(x,y) = \begin{cases} \dfrac{\mathop{\mathrm{sen}}(x^2 - y^2)}{x^2 - y^2} & \lvert x\rvert \ne \lvert y\rvert \cr \tfrac12(x + y) & x = y \ \vee\ (x,y) = (-1,1) \cr 1 & x = -y,\ (x,y) \notin \lbrace(0,0), (-1,1)\rbrace \end{cases}$$
 
 Hay que estudiar el límite por cada "pedazo" del dominio que llega al punto:
 
@@ -262,12 +262,12 @@ Esto ilustra el teorema de la **unión finita** de la sección 3: si una cantida
 ## 12. Estrategia para analizar $\lim_{(x,y)\to(x_0,y_0)} f(x,y)$
 
 1. **¿Se puede sustituir directamente?** Si $f$ es continua en el punto, el límite es $f(x_0,y_0)$.
-2. **¿Se puede simplificar o reducir a un límite conocido?** Factorizar, usar $\frac{\operatorname{sen} u}{u}$, etc.
+2. **¿Se puede simplificar o reducir a un límite conocido?** Factorizar, usar $\frac{\mathop{\mathrm{sen}} u}{u}$, etc.
 3. **Probar caminos para obtener un "candidato":** iterados, rectas $y - y_0 = m(x - x_0)$, ejes.
    - Si el resultado depende de $m$ o hay dos valores distintos ⇒ **NO existe** (fin).
 4. **Si todos dan $L$, intentar demostrar que el límite es $L$** con:
    - infinitésimo × acotada;
-   - coordenadas polares con $|f - L| \le g(r)\,h(\theta)$;
+   - coordenadas polares con $|f - L| \le g(r)\thinspace h(\theta)$;
    - el lema del sándwich.
 5. **Si no se logra demostrar**, buscar un camino que dé otra cosa: parábolas, $y = kx^p$ igualando grados, **curvas de nivel**.
 
@@ -284,7 +284,7 @@ Esto ilustra el teorema de la **unión finita** de la sección 3: si una cantida
 | Polares que dependen de $\theta$ | que **no** existe |
 | Curva de nivel por el punto | que **no** existe |
 | Infinitésimo × acotada | que **existe** (y vale 0) |
-| Polares con $g(r)\,h(\theta)$ acotada | que **existe** |
+| Polares con $g(r)\thinspace h(\theta)$ acotada | que **existe** |
 | Sándwich | que **existe** |
 | Álgebra de límites / continuidad | que **existe** |
 | Unión finita de subconjuntos | que **existe** (funciones por partes) |

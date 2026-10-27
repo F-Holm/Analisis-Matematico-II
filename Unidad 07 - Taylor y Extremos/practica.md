@@ -62,7 +62,7 @@ Dadas las superficies de ecuación $z = f(x,y)$ y $z = p(x,y)$, donde $p$ es la 
 
 **Paso 1 — Forma del polinomio** ($n \ge 1$):
 
-$$p(x,y) = f(x_0,y_0) + f'_x(x_0,y_0)\,(x - x_0) + f'_y(x_0,y_0)\,(y - y_0) + (\text{términos de grado} \ge 2)$$
+$$p(x,y) = f(x_0,y_0) + f'_x(x_0,y_0)\thinspace(x - x_0) + f'_y(x_0,y_0)\thinspace(y - y_0) + (\text{términos de grado} \ge 2)$$
 
 **Paso 2 — Valores en el punto.**
 
@@ -91,7 +91,7 @@ Desarrolle los siguientes campos por Taylor hasta 2° orden en un entorno de $\b
 - a) $f(x,y) = x - y\sqrt{6 - x}$, $\ \bar A = (2,3)$.
 - b) $f(x,y) = y\ln(x) + x\ln(y - x)$, $\ \bar A = (1,2)$.
 - c) $f(x,y,z) = e^{xz} - (z + 1)\sqrt{y - x}$, $\ \bar A = (1,2,0)$.
-- d) $f(x,y,z) = \cos(x + y)\,e^{z - x}$, $\ \bar A = (0,0,0)$.
+- d) $f(x,y,z) = \cos(x + y)\thinspace e^{z - x}$, $\ \bar A = (0,0,0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -208,7 +208,7 @@ Calcule en forma aproximada:
 **a)** $f(x,y) = x^y$, con $\vec A = (1, 2)$ y $\vec h = (-0{,}02;\ 0{,}01)$.
 
 - $f(1,2) = 1$.
-- $f'_x = y\,x^{y-1} \to 2$ y $f'_y = x^y\ln x \to 0$.
+- $f'_x = y\thinspace x^{y-1} \to 2$ y $f'_y = x^y\ln x \to 0$.
 - $0{,}98^{2{,}01} \approx 1 + 2(-0{,}02) + 0 = 0{,}96$. (Calculadora: $0{,}9602$.)
 
 **b)** $f(x,y) = \sqrt x + \sqrt[3]{y}$, con $\vec A = (4, 8)$ y $\vec h = (-0{,}01;\ 0{,}06)$.
@@ -237,7 +237,7 @@ Calcule en forma aproximada:
 
 ### 05) Hallar $g$ a partir de una aproximación lineal
 
-Dada $f(x,y) = y\,g(x)$ con $g$ derivable, halle $g(x)$ tal que en un entorno del punto $(x_0,y_0)$ con $y_0 \ne 0$ resulte $f(x,y) \cong g(x_0)\,(x + y - x_0)$.
+Dada $f(x,y) = y\thinspace g(x)$ con $g$ derivable, halle $g(x)$ tal que en un entorno del punto $(x_0,y_0)$ con $y_0 \ne 0$ resulte $f(x,y) \cong g(x_0)\thinspace(x + y - x_0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -245,25 +245,25 @@ Dada $f(x,y) = y\,g(x)$ con $g$ derivable, halle $g(x)$ tal que en un entorno de
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Aproximación lineal de $f$ en $(x_0,y_0)$.** $f'_x = y\,g'(x)$ y $f'_y = g(x)$:
+**Paso 1 — Aproximación lineal de $f$ en $(x_0,y_0)$.** $f'_x = y\thinspace g'(x)$ y $f'_y = g(x)$:
 
-$$f \approx y_0\,g(x_0) + y_0\,g'(x_0)(x - x_0) + g(x_0)(y - y_0)$$
+$$f \approx y_0\thinspace g(x_0) + y_0\thinspace g'(x_0)(x - x_0) + g(x_0)(y - y_0)$$
 
 **Paso 2 — Reescribir la expresión pedida** en la misma forma:
 
-$$g(x_0)(x + y - x_0) = g(x_0)(x - x_0) + g(x_0)(y - y_0) + y_0\,g(x_0)$$
+$$g(x_0)(x + y - x_0) = g(x_0)(x - x_0) + g(x_0)(y - y_0) + y_0\thinspace g(x_0)$$
 
 **Paso 3 — Igualar coeficientes.** Los términos constantes y los de $(y - y_0)$ ya coinciden. Para el de $(x - x_0)$:
 
-$$y_0\,g'(x_0) = g(x_0)$$
+$$y_0\thinspace g'(x_0) = g(x_0)$$
 
 Esto debe valer para todo $x_0$, con $y_0$ fijo.
 
-**Paso 4 — Resolver la EDO.** $g' = \dfrac{g}{y_0} \Rightarrow g(x) = K\,e^{x/y_0}$.
+**Paso 4 — Resolver la EDO.** $g' = \dfrac{g}{y_0} \Rightarrow g(x) = K\thinspace e^{x/y_0}$.
 
 </details>
 
-**Respuesta:** $g(x) = K\,e^{x/y_0}$ con $K$ constante arbitraria.
+**Respuesta:** $g(x) = K\thinspace e^{x/y_0}$ con $K$ constante arbitraria.
 
 </details>
 
@@ -291,7 +291,7 @@ Dada $f : \Re^2 \to \Re$, analice en cada caso si $f(0,0)$ es extremo local; en 
 
 **c)** $f(0,0) = 0$. Sobre el eje $x$ ($y = 0$): $f = (-x^3)(x) = -x^4 < 0$. Sobre la parábola $x = 2y^2$:
 
-$$f = (y - 8y^6)(2y^2 - y^2) = y^3\,(1 - 8y^5)$$
+$$f = (y - 8y^6)(2y^2 - y^2) = y^3\thinspace(1 - 8y^5)$$
 
 Cerca de 0 esto tiene el signo de $y^3$: positivo para $y > 0$. Toma valores de ambos signos ⇒ **no es extremo**.
 
@@ -399,7 +399,7 @@ Pero sobre el eje $z$, $f = z^3$ cambia de signo alrededor de 0 ⇒ **no es extr
 
 ### 09) Extremos absolutos en un disco
 
-Analice la existencia de extremos absolutos de $f(x,y) = x/(x^2 + y^2 + 1)$ en la región $D = \{(x,y) \in \Re^2 \ /\ x^2 + y^2 \le 2x\}$, identifíquelos e indique en qué puntos se producen.
+Analice la existencia de extremos absolutos de $f(x,y) = x/(x^2 + y^2 + 1)$ en la región $D = \lbrace(x,y) \in \Re^2 \ /\ x^2 + y^2 \le 2x\rbrace$, identifíquelos e indique en qué puntos se producen.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -464,7 +464,7 @@ Demuestre que la gráfica de $f(x,y) = 6 + x^3$ tiene infinitos puntos con plano
 
 ### 11) Densidad de carga máxima y mínima
 
-Una chapa circular plana $S = \{(x,y) \in \Re^2 / x^2 + y^2 \le 4\}$ tiene una densidad de carga electrostática $\sigma(x,y) = 2xy^2 - x^2$ en $\mu$Coul/cm². Halle los puntos de máxima y mínima densidad de carga; no olvide analizar en puntos de la frontera.
+Una chapa circular plana $S = \lbrace(x,y) \in \Re^2 / x^2 + y^2 \le 4\rbrace$ tiene una densidad de carga electrostática $\sigma(x,y) = 2xy^2 - x^2$ en $\mu$Coul/cm². Halle los puntos de máxima y mínima densidad de carga; no olvide analizar en puntos de la frontera.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -493,7 +493,7 @@ Valores:
 - $g(-\tfrac43) = -\tfrac{32}{3} + \tfrac{128}{27} - \tfrac{16}{9} = \dfrac{-288 + 128 - 48}{27} = -\dfrac{208}{27} \approx -7{,}70$, en $\left(-\tfrac43, \pm\sqrt{4 - \tfrac{16}{9}}\right) = \left(-\tfrac43, \pm\tfrac{2\sqrt5}{3}\right)$.
 - Extremos del intervalo ($x = \pm2$, $y = 0$): $g(\pm2) = -4$.
 
-**Paso 3 — Comparar:** $\{0,\ 5,\ -208/27,\ -4\}$.
+**Paso 3 — Comparar:** $\lbrace0,\ 5,\ -208/27,\ -4\rbrace$.
 
 - Máximo: 5.
 - Mínimo: $-208/27$.
@@ -583,11 +583,11 @@ $$F'_x(\bar A) = F'_y(\bar A) = 0$$
 
 **Paso 2 — Derivar otra vez.** Derivamos respecto de $x$ el cociente $f'_x = -\dfrac{F'_x}{F'_z}$, teniendo en cuenta que $z = f(x,y)$ también depende de $x$:
 
-$$f''_{xx} = -\frac{\left(F''_{xx} + F''_{xz}\,f'_x\right)F'_z - F'_x\left(F''_{zx} + F''_{zz}\,f'_x\right)}{(F'_z)^2}$$
+$$f''_{xx} = -\frac{\left(F''_{xx} + F''_{xz}\thinspace f'_x\right)F'_z - F'_x\left(F''_{zx} + F''_{zz}\thinspace f'_x\right)}{(F'_z)^2}$$
 
 **Paso 3 — Evaluar en el punto estacionario.** Ahí $f'_x = 0$ y $F'_x = 0$:
 
-$$f''_{xx} = -\frac{F''_{xx}\,F'_z}{(F'_z)^2} = -\frac{F''_{xx}(\bar A)}{F'_z(\bar A)}$$
+$$f''_{xx} = -\frac{F''_{xx}\thinspace F'_z}{(F'_z)^2} = -\frac{F''_{xx}(\bar A)}{F'_z(\bar A)}$$
 
 **Paso 4 — Las otras dos.** Con el mismo razonamiento:
 
@@ -707,9 +707,9 @@ Hay 4 puntos: $(\pm1, \pm1)$.
 **d)** Con $F = xy - z\cos(yz) + 1$, los estacionarios cumplen $F'_x = F'_y = 0$:
 
 - $F'_x = y = 0$.
-- $F'_y = x + z^2\operatorname{sen}(yz)$; con $y = 0$ queda $x = 0$.
+- $F'_y = x + z^2\mathop{\mathrm{sen}}(yz)$; con $y = 0$ queda $x = 0$.
 
-En $(0,0)$: $0 - z + 1 = 0 \Rightarrow z = 1$. Además $F'_z = -\cos(yz) + yz\operatorname{sen}(yz) = -1 \ne 0$.
+En $(0,0)$: $0 - z + 1 = 0 \Rightarrow z = 1$. Además $F'_z = -\cos(yz) + yz\mathop{\mathrm{sen}}(yz) = -1 \ne 0$.
 
 Derivadas segundas (ejercicio 14):
 
@@ -720,7 +720,7 @@ $H = 0 - 1 < 0$ ⇒ silla ⇒ **no produce extremos**.
 
 **e)** Sustituimos la superficie (queda un problema libre en $u$, $v$):
 
-$$g(u,v) = u(u - v) + u\,v^2 = u^2 - uv + uv^2$$
+$$g(u,v) = u(u - v) + u\thinspace v^2 = u^2 - uv + uv^2$$
 
 *Estacionarios:*
 
@@ -778,13 +778,13 @@ $$9(x-1)^2 + 4(y-2)^2 = 36 \ \Rightarrow\ \frac{(x-1)^2}{4} + \frac{(y-2)^2}{9} 
 
 Es una elipse de centro $(1,2)$ y semiejes 2 (horizontal) y 3 (vertical).
 
-**Paso 2 — Parametrizar:** $x = 1 + 2\cos t$, $y = 2 + 3\operatorname{sen}t$.
+**Paso 2 — Parametrizar:** $x = 1 + 2\cos t$, $y = 2 + 3\mathop{\mathrm{sen}}t$.
 
 **Paso 3 — Distancia al cuadrado** a $(1,7)$:
 
-$$d^2 = (2\cos t)^2 + (3\operatorname{sen}t - 5)^2 = 4 - 4\operatorname{sen}^2t + 9\operatorname{sen}^2t - 30\operatorname{sen}t + 25 = 5s^2 - 30s + 29$$
+$$d^2 = (2\cos t)^2 + (3\mathop{\mathrm{sen}}t - 5)^2 = 4 - 4\mathop{\mathrm{sen}}\nolimits^2t + 9\mathop{\mathrm{sen}}\nolimits^2t - 30\mathop{\mathrm{sen}}t + 25 = 5s^2 - 30s + 29$$
 
-con $s = \operatorname{sen}t \in [-1, 1]$.
+con $s = \mathop{\mathrm{sen}}t \in [-1, 1]$.
 
 **Paso 4 — Optimizar en $[-1,1]$.** $\dfrac{d}{ds}(5s^2 - 30s + 29) = 10s - 30 < 0$ para $s \le 1$ ⇒ la función es decreciente:
 
@@ -820,7 +820,7 @@ $$V = \pi r^2h, \qquad A = 2\pi r^2 + 2\pi rh$$
 
 **a) Lagrange:** maximizar $V$ con $A$ fija ⇒ $\nabla V = \lambda\nabla A$:
 
-$$\begin{cases} 2\pi rh = \lambda(4\pi r + 2\pi h) \\ \pi r^2 = \lambda\,2\pi r \end{cases}$$
+$$\begin{cases} 2\pi rh = \lambda(4\pi r + 2\pi h) \cr \pi r^2 = \lambda\thinspace2\pi r \end{cases}$$
 
 - De la segunda: $\lambda = \dfrac r2$.
 - En la primera: $2\pi rh = 2\pi r^2 + \pi rh \Rightarrow \pi rh = 2\pi r^2 \Rightarrow h = 2r$.

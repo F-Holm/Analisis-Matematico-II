@@ -10,13 +10,13 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 ### 01) Clasificación de puntos en $\Re$
 
-Sea $f : D \subset \Re \to \Re \ /\ f(x) = \dfrac{\sqrt{x\,(x + 2)^4}}{x - 1}$ donde $D$ es el dominio natural de $f$.
+Sea $f : D \subset \Re \to \Re \ /\ f(x) = \dfrac{\sqrt{x\thinspace(x + 2)^4}}{x - 1}$ donde $D$ es el dominio natural de $f$.
 
 En el siguiente gráfico se indican los puntos $P_1, P_2, P_3 \in D$ y $P_4, P_5 \notin D$. Para cada uno de esos puntos indique si es punto interior, exterior o frontera de $D$; también indique si es punto aislado de $D$ y si es punto de acumulación de $D$.
 
 ![Recta real con P5 = −3, P1 = −2, P2 = 0, P4 = 1, P3 = 2; el dominio está dibujado con línea llena en [0,1) y (1,+∞) y el punto −2 aislado](img/tp02-ej01-recta.png)
 
-Nota: Observe que $D = \{x \in \Re \ /\ x = -2 \ \vee\ 0 \le x < 1 \ \vee\ x > 1\}$.
+Nota: Observe que $D = \lbrace x \in \Re \ /\ x = -2 \ \vee\ 0 \le x < 1 \ \vee\ x > 1\rbrace$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -26,9 +26,9 @@ Nota: Observe que $D = \{x \in \Re \ /\ x = -2 \ \vee\ 0 \le x < 1 \ \vee\ x > 1
 
 **Paso 1 — Por qué el dominio es ese.**
 
-- La raíz exige $x\,(x+2)^4 \ge 0$. Como $(x+2)^4 \ge 0$ siempre, esto pasa si $x \ge 0$ **o** si $(x+2)^4 = 0$, es decir, $x = -2$.
+- La raíz exige $x\thinspace(x+2)^4 \ge 0$. Como $(x+2)^4 \ge 0$ siempre, esto pasa si $x \ge 0$ **o** si $(x+2)^4 = 0$, es decir, $x = -2$.
 - El denominador exige $x \ne 1$.
-- Resultado: $D = \{-2\} \cup [0, 1) \cup (1, +\infty)$.
+- Resultado: $D = \lbrace-2\rbrace \cup [0, 1) \cup (1, +\infty)$.
 
 **Paso 2 — Analizar cada punto con entornos $(a - r, a + r)$.**
 
@@ -56,7 +56,7 @@ Nota: Observe que $D = \{x \in \Re \ /\ x = -2 \ \vee\ 0 \le x < 1 \ \vee\ x > 1
 
 ### 02) Análisis de un conjunto con un punto aislado
 
-Sea $S = \{(x, y) \in \Re^2 \ /\ 0 < x^2 + y^2 < 4 \ \vee\ (x - 2)^2 + (y - 2)^2 = 0\}$ el conjunto que se representa sombreado en la figura de la derecha. Observe que el punto $(0,0) \notin S$, mientras que $A = (2,2)$ es un punto aislado de $S$.
+Sea $S = \lbrace(x, y) \in \Re^2 \ /\ 0 < x^2 + y^2 < 4 \ \vee\ (x - 2)^2 + (y - 2)^2 = 0\rbrace$ el conjunto que se representa sombreado en la figura de la derecha. Observe que el punto $(0,0) \notin S$, mientras que $A = (2,2)$ es un punto aislado de $S$.
 
 ![Disco de radio 2 sombreado, con borde punteado y el origen hueco, más el punto aislado A = (2,2)](img/tp02-ej02-conjunto.png)
 
@@ -93,17 +93,17 @@ Sea $S = \{(x, y) \in \Re^2 \ /\ 0 < x^2 + y^2 < 4 \ \vee\ (x - 2)^2 + (y - 2)^2
 - **No es abierto:** $A \in S$ y no es interior.
 - **Es acotado:** $S \subset B(\vec 0, 3)$, porque $|A| = 2\sqrt2 < 3$.
 
-**e) Clausura.** $Cl(S) = S \cup S' = \{x^2 + y^2 \le 4\} \cup \{(2,2)\}$.
+**e) Clausura.** $Cl(S) = S \cup S' = \lbrace x^2 + y^2 \le 4\rbrace \cup \lbrace(2,2)\rbrace$.
 
 </details>
 
 **Respuesta:**
 
-- a) $\partial S = \{(x,y) \in \Re^2 / x^2 + y^2 = 4\} \cup \{(0,0)\} \cup \{(2,2)\}$.
-- b) $\overset{\circ}{S} = \{(x,y) \in \Re^2 / 0 < x^2 + y^2 < 4\}$.
-- c) $S' = \{(x,y) \in \Re^2 / x^2 + y^2 \le 4\}$.
+- a) $\partial S = \lbrace(x,y) \in \Re^2 / x^2 + y^2 = 4\rbrace \cup \lbrace(0,0)\rbrace \cup \lbrace(2,2)\rbrace$.
+- b) $\overset{\circ}{S} = \lbrace(x,y) \in \Re^2 / 0 < x^2 + y^2 < 4\rbrace$.
+- c) $S' = \lbrace(x,y) \in \Re^2 / x^2 + y^2 \le 4\rbrace$.
 - d) No es cerrado, no es abierto, es acotado.
-- e) $Cl(S) = \{(x,y) \in \Re^2 / x^2 + y^2 \le 4\} \cup \{(2,2)\}$.
+- e) $Cl(S) = \lbrace(x,y) \in \Re^2 / x^2 + y^2 \le 4\rbrace \cup \lbrace(2,2)\rbrace$.
 
 </details>
 
@@ -113,11 +113,11 @@ Sea $S = \{(x, y) \in \Re^2 \ /\ 0 < x^2 + y^2 < 4 \ \vee\ (x - 2)^2 + (y - 2)^2
 
 Represente geométricamente los siguientes conjuntos de puntos. En cada caso indique cuáles son sus puntos interiores, frontera y exteriores, analice si el conjunto es cerrado, abierto, acotado, compacto, conexo.
 
-- a) $\{(x, y) \in \Re^2 \ /\ x^2 + y^2 - 4 \le 0,\ x + y \ge 1\}$.
-- b) $\{(x, y) \in \Re^2 \ /\ 4x^2 + 7y^2 \le 2,\ x \ge 0\}$.
-- c) $\{(x, y) \in \Re^2 \ /\ x^2 - y^2 \le 3,\ x + y \ge 2\}$.
-- d) $\{(x, y, z) \in \Re^3 \ /\ x^2 + y^2 = a^2 \ \wedge\ x^2 + z^2 = a^2 \ \wedge\ a > 0 \ \wedge\ x, y, z \in \Re_0^+\}$.
-- e) $\{(x, y, z) \in \Re^3 \ /\ x^2 + y^2 < z^2 \ \wedge\ x^2 + y^2 + z^2 < 9\}$.
+- a) $\lbrace(x, y) \in \Re^2 \ /\ x^2 + y^2 - 4 \le 0,\ x + y \ge 1\rbrace$.
+- b) $\lbrace(x, y) \in \Re^2 \ /\ 4x^2 + 7y^2 \le 2,\ x \ge 0\rbrace$.
+- c) $\lbrace(x, y) \in \Re^2 \ /\ x^2 - y^2 \le 3,\ x + y \ge 2\rbrace$.
+- d) $\lbrace(x, y, z) \in \Re^3 \ /\ x^2 + y^2 = a^2 \ \wedge\ x^2 + z^2 = a^2 \ \wedge\ a > 0 \ \wedge\ x, y, z \in \Re_0^+\rbrace$.
+- e) $\lbrace(x, y, z) \in \Re^3 \ /\ x^2 + y^2 < z^2 \ \wedge\ x^2 + y^2 + z^2 < 9\rbrace$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -162,12 +162,12 @@ Represente geométricamente los siguientes conjuntos de puntos. En cada caso ind
 
 Así que el conjunto es la curva formada por los puntos de la circunferencia $x^2 + y^2 = a^2$ con $z = y$, en el primer octante. Parametrizada:
 
-$$\vec X(t) = (a\cos t,\ a\operatorname{sen}t,\ a\operatorname{sen}t), \quad 0 \le t \le \pi/2$$
+$$\vec X(t) = (a\cos t,\ a\mathop{\mathrm{sen}}t,\ a\mathop{\mathrm{sen}}t), \quad 0 \le t \le \pi/2$$
 
 - **Interior:** $\emptyset$, porque una curva no contiene ninguna bolita de $\Re^3$.
 - **Frontera:** la curva misma.
 - **Exterior:** $\Re^3 -$ curva.
-- **Cerrado**, porque es intersección de conjuntos de la forma $\{g = c\}$ y $\{g \ge 0\}$ con $g$ continua.
+- **Cerrado**, porque es intersección de conjuntos de la forma $\lbrace g = c\rbrace$ y $\lbrace g \ge 0\rbrace$ con $g$ continua.
 - **Acotado** ⇒ **compacto**.
 - **Conexo**, porque es la imagen continua del intervalo $[0, \pi/2]$.
 
@@ -184,11 +184,11 @@ $$\vec X(t) = (a\cos t,\ a\operatorname{sen}t,\ a\operatorname{sen}t), \quad 0 \
 
 **Respuesta:**
 
-- a) interior $= \{x^2 + y^2 < 4,\ x + y > 1\}$; frontera $= \{x^2 + y^2 = 4,\ x + y \ge 1\} \cup \{x^2 + y^2 < 4,\ x + y = 1\}$; exterior $= \{x^2 + y^2 > 4\} \cup \{x + y < 1\}$. Es cerrado, no es abierto, es compacto, es conexo.
-- b) interior $= \{4x^2 + 7y^2 < 2,\ x > 0\}$; frontera $= \{4x^2 + 7y^2 = 2,\ x \ge 0\} \cup \{4x^2 + 7y^2 < 2,\ x = 0\}$; exterior $= \{4x^2 + 7y^2 > 2\} \cup \{x < 0\}$. Es cerrado, no es abierto, es compacto, es conexo.
-- c) interior $= \{x^2 - y^2 < 3,\ x + y > 2\}$; frontera $= \{x^2 - y^2 = 3,\ x + y \ge 2\} \cup \{x^2 - y^2 < 3,\ x + y = 2\}$; exterior $= \Re^2 -$ interior $-$ frontera. Es cerrado, no es abierto, no es compacto, es conexo.
-- d) interior $= \emptyset$; frontera $= \{\vec X = (a\cos t,\ a\operatorname{sen}t,\ a\operatorname{sen}t),\ 0 \le t \le \pi/2\}$; exterior $= \Re^3 -$ frontera. Es cerrado, no es abierto, es compacto, es conexo.
-- e) interior $= \{x^2 + y^2 < z^2 \wedge x^2+y^2+z^2 < 9\}$; frontera $= \{x^2+y^2 = z^2 \wedge x^2+y^2+z^2 \le 9\} \cup \{x^2+y^2 < z^2 \wedge x^2+y^2+z^2 = 9\}$; exterior $= \Re^3 -$ interior $-$ frontera. No es cerrado, es abierto, es acotado, no es compacto, es desconexo.
+- a) interior $= \lbrace x^2 + y^2 < 4,\ x + y > 1\rbrace$; frontera $= \lbrace x^2 + y^2 = 4,\ x + y \ge 1\rbrace \cup \lbrace x^2 + y^2 < 4,\ x + y = 1\rbrace$; exterior $= \lbrace x^2 + y^2 > 4\rbrace \cup \lbrace x + y < 1\rbrace$. Es cerrado, no es abierto, es compacto, es conexo.
+- b) interior $= \lbrace4x^2 + 7y^2 < 2,\ x > 0\rbrace$; frontera $= \lbrace4x^2 + 7y^2 = 2,\ x \ge 0\rbrace \cup \lbrace4x^2 + 7y^2 < 2,\ x = 0\rbrace$; exterior $= \lbrace4x^2 + 7y^2 > 2\rbrace \cup \lbrace x < 0\rbrace$. Es cerrado, no es abierto, es compacto, es conexo.
+- c) interior $= \lbrace x^2 - y^2 < 3,\ x + y > 2\rbrace$; frontera $= \lbrace x^2 - y^2 = 3,\ x + y \ge 2\rbrace \cup \lbrace x^2 - y^2 < 3,\ x + y = 2\rbrace$; exterior $= \Re^2 -$ interior $-$ frontera. Es cerrado, no es abierto, no es compacto, es conexo.
+- d) interior $= \emptyset$; frontera $= \lbrace\vec X = (a\cos t,\ a\mathop{\mathrm{sen}}t,\ a\mathop{\mathrm{sen}}t),\ 0 \le t \le \pi/2\rbrace$; exterior $= \Re^3 -$ frontera. Es cerrado, no es abierto, es compacto, es conexo.
+- e) interior $= \lbrace x^2 + y^2 < z^2 \wedge x^2+y^2+z^2 < 9\rbrace$; frontera $= \lbrace x^2+y^2 = z^2 \wedge x^2+y^2+z^2 \le 9\rbrace \cup \lbrace x^2+y^2 < z^2 \wedge x^2+y^2+z^2 = 9\rbrace$; exterior $= \Re^3 -$ interior $-$ frontera. No es cerrado, es abierto, es acotado, no es compacto, es desconexo.
 
 </details>
 
@@ -196,7 +196,7 @@ $$\vec X(t) = (a\cos t,\ a\operatorname{sen}t,\ a\operatorname{sen}t), \quad 0 \
 
 ### 04) Cerrado y conexo pero no convexo
 
-Verifique que $S = \{(x, y) \in \Re^2 \ /\ x\,y \le 4\}$ es cerrado y conexo, pero no es convexo.
+Verifique que $S = \lbrace(x, y) \in \Re^2 \ /\ x\thinspace y \le 4\rbrace$ es cerrado y conexo, pero no es convexo.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -206,9 +206,9 @@ Verifique que $S = \{(x, y) \in \Re^2 \ /\ x\,y \le 4\}$ es cerrado y conexo, pe
 
 ![Conjunto xy ≤ 4: todo el plano salvo las dos regiones "más allá" de las ramas de la hipérbola xy = 4](img/tp02-ej04.svg)
 
-**Cerrado.** El complemento es $S^c = \{xy > 4\}$. Si $(x_0, y_0)$ cumple $x_0y_0 > 4$, como $g(x,y) = xy$ es continua, sigue siendo $xy > 4$ en un disquito alrededor del punto. Entonces $S^c$ es abierto y $S$ es cerrado. Además $S$ contiene a su frontera, la hipérbola $xy = 4$.
+**Cerrado.** El complemento es $S^c = \lbrace xy > 4\rbrace$. Si $(x_0, y_0)$ cumple $x_0y_0 > 4$, como $g(x,y) = xy$ es continua, sigue siendo $xy > 4$ en un disquito alrededor del punto. Entonces $S^c$ es abierto y $S$ es cerrado. Además $S$ contiene a su frontera, la hipérbola $xy = 4$.
 
-**Conexo.** Mostramos que cualquier punto de $S$ se une con el origen por un segmento contenido en $S$. Si $(x, y) \in S$, los puntos del segmento son $t\,(x, y)$ con $t \in [0,1]$, y cumplen $(tx)(ty) = t^2\,xy$:
+**Conexo.** Mostramos que cualquier punto de $S$ se une con el origen por un segmento contenido en $S$. Si $(x, y) \in S$, los puntos del segmento son $t\thinspace(x, y)$ con $t \in [0,1]$, y cumplen $(tx)(ty) = t^2\thinspace xy$:
 
 - Si $xy \ge 0$: $t^2 xy \le xy \le 4$ ✓.
 - Si $xy < 0$: $t^2 xy \le 0 \le 4$ ✓.
@@ -229,16 +229,16 @@ Entonces todo el segmento está en $S$. Dos puntos cualesquiera se unen pasando 
 
 En los siguientes casos, determine y grafique el dominio natural $D$ de la función.
 
-- a) $f(x, y) = \ln((x + 1)\,(y - 2x))$.
+- a) $f(x, y) = \ln((x + 1)\thinspace(y - 2x))$.
 - b) $\vec f(x, y) = (\sqrt{1 - x},\ (x + 1)^{-1/2},\ \ln(y - x))$.
 - c) $f(x, y) = \sqrt{1 - (x^2 + y)^2}$.
 - d) $f(x, y, z) = \sqrt{\ln(z - x - y)}$.
-- e) $f(x, y) = \ln(x\,y)/\sqrt{2 - x - y}$.
+- e) $f(x, y) = \ln(x\thinspace y)/\sqrt{2 - x - y}$.
 - f) $\vec f(x, y) = (x^{-2},\ (x + y)^{-2}\sqrt{y})$.
-- g) $f(x, y, z) = (x\,y + z)/\sqrt{1 - y}$.
+- g) $f(x, y, z) = (x\thinspace y + z)/\sqrt{1 - y}$.
 - h) $f(x, y) = \sqrt{(x^2 + y^2 - x)/(2x - x^2 - y^2)}$.
-- i) $f(x, y) = \int_x^y (1 + t^2)^{-1}\,dt$.
-- j) $f(x, y) = \operatorname{arcsen}(x/(x + y))$.
+- i) $f(x, y) = \int_x^y (1 + t^2)^{-1}\thinspace dt$.
+- j) $f(x, y) = \mathop{\mathrm{arcsen}}(x/(x + y))$.
 
 > **Fe de erratas (31/07/18):** en la respuesta del ítem 05-h dice $x \le x^2 + y^2 \le 2x$, **debe decir** $x \le x^2 + y^2 < 2x$.
 
@@ -276,7 +276,7 @@ Intersección: $-1 < x \le 1$ e $y > x$.
 - El logaritmo exige $z - x - y > 0$.
 - La raíz exige $\ln(z - x - y) \ge 0 \iff z - x - y \ge 1$.
 
-La segunda implica la primera, así que $D = \{z \ge x + y + 1\}$: el semiespacio por encima del plano $z = x + y + 1$, **incluyendo** al plano, porque ahí $\sqrt{\ln 1} = 0$ está definido. La respuesta oficial escribe "$>$"; con "$\ge$" se incluye además el plano, donde la función vale 0.
+La segunda implica la primera, así que $D = \lbrace z \ge x + y + 1\rbrace$: el semiespacio por encima del plano $z = x + y + 1$, **incluyendo** al plano, porque ahí $\sqrt{\ln 1} = 0$ está definido. La respuesta oficial escribe "$>$"; con "$\ge$" se incluye además el plano, donde la función vale 0.
 
 **e)** Hay dos condiciones:
 
@@ -307,7 +307,7 @@ Casos:
 - **Numerador $\ge 0$ y denominador $> 0$:** $x \le x^2 + y^2 < 2x$ ✓.
 - **Numerador $\le 0$ y denominador $< 0$:** sería $x^2 + y^2 \le x$ y $x^2 + y^2 > 2x$. Entonces $2x < x$, o sea $x < 0$, pero $x^2 + y^2 \le x < 0$ es imposible. No aporta puntos.
 
-Resultado: $D = \{x \le x^2 + y^2 < 2x\}$, la "medialuna" entre las dos circunferencias, con el borde chico incluido y el grande excluido. El origen queda afuera porque da $0 < 0$.
+Resultado: $D = \lbrace x \le x^2 + y^2 < 2x\rbrace$, la "medialuna" entre las dos circunferencias, con el borde chico incluido y el grande excluido. El origen queda afuera porque da $0 < 0$.
 
 ![Dominio 05 h](img/tp02-ej05h.svg)
 
@@ -327,16 +327,16 @@ Resultado: $D = \{x \le x^2 + y^2 < 2x\}$, la "medialuna" entre las dos circunfe
 
 **Respuesta:**
 
-- a) $D = \{(x,y) \in \Re^2 / x > -1 \wedge y > 2x\} \cup \{(x,y) \in \Re^2 / x < -1 \wedge y < 2x\}$.
-- b) $D = \{(x,y) \in \Re^2 / y > x \ \wedge\ -1 < x \le 1\}$.
-- c) $D = \{(x,y) \in \Re^2 / -1 \le y + x^2 \le 1\}$.
-- d) $D = \{(x,y,z) \in \Re^3 / z \ge x + y + 1\}$ (la guía escribe $z > x + y + 1$).
+- a) $D = \lbrace(x,y) \in \Re^2 / x > -1 \wedge y > 2x\rbrace \cup \lbrace(x,y) \in \Re^2 / x < -1 \wedge y < 2x\rbrace$.
+- b) $D = \lbrace(x,y) \in \Re^2 / y > x \ \wedge\ -1 < x \le 1\rbrace$.
+- c) $D = \lbrace(x,y) \in \Re^2 / -1 \le y + x^2 \le 1\rbrace$.
+- d) $D = \lbrace(x,y,z) \in \Re^3 / z \ge x + y + 1\rbrace$ (la guía escribe $z > x + y + 1$).
 - e) Puntos debajo de la recta $x + y = 2$ en 1.º y 3.º cuadrante, excluidos los ejes coordenados.
 - f) Semiplano $y \ge 0$ salvo los puntos de la recta $y = -x$ y los puntos del eje $y$.
-- g) $D = \{(x,y,z) \in \Re^3 / y < 1\}$.
-- h) $D = \{(x,y) \in \Re^2 / x \le x^2 + y^2 < 2x\}$.
+- g) $D = \lbrace(x,y,z) \in \Re^3 / y < 1\rbrace$.
+- h) $D = \lbrace(x,y) \in \Re^2 / x \le x^2 + y^2 < 2x\rbrace$.
 - i) $D = \Re^2$.
-- j) $D = \{(x,y) \in \Re^2 / (y \ge -2x \wedge y \ge 0) \vee (y \le -2x \wedge y \le 0)\} - \{(0,0)\}$.
+- j) $D = \lbrace(x,y) \in \Re^2 / (y \ge -2x \wedge y \ge 0) \vee (y \le -2x \wedge y \le 0)\rbrace - \lbrace(0,0)\rbrace$.
 
 </details>
 
@@ -346,13 +346,13 @@ Resultado: $D = \{x \le x^2 + y^2 < 2x\}$, la "medialuna" entre las dos circunfe
 
 Represente geométricamente los conjuntos de nivel de los siguientes campos escalares:
 
-- a) $f(x, y) = x\,y - 2$.
-- b) $f(x, y) = e^{x\,y}$.
+- a) $f(x, y) = x\thinspace y - 2$.
+- b) $f(x, y) = e^{x\thinspace y}$.
 - c) $f(x, y, z) = x^2 + y^2 - z$.
 - d) $f(x, y) = |x| + y$.
 - e) $f(x, y, z) = \ln(x^2 + y^2 + z^2)$.
 - f) $f(x, y) = x / (x^2 + y^2)$.
-- g) $f(x, y, z) = \begin{cases} \dfrac{|z|}{x^2 + y^2} & \text{si } (x, y, z) \neq (0, 0, z) \\ 0 & \text{si } (x, y, z) = (0, 0, 0) \end{cases}$.
+- g) $f(x, y, z) = \begin{cases} \dfrac{|z|}{x^2 + y^2} & \text{si } (x, y, z) \neq (0, 0, z) \cr 0 & \text{si } (x, y, z) = (0, 0, 0) \end{cases}$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -384,7 +384,7 @@ Es como el ítem a), con $k + 2$ reemplazado por $\ln k$.
 
 **e)** $\ln(x^2 + y^2 + z^2) = k \iff x^2 + y^2 + z^2 = e^k$, para todo $k \in \Re$. Son **esferas** centradas en el origen de radio $e^{k/2}$.
 
-**f)** $\dfrac{x}{x^2+y^2} = k$, con dominio $\Re^2 - \{(0,0)\}$.
+**f)** $\dfrac{x}{x^2+y^2} = k$, con dominio $\Re^2 - \lbrace(0,0)\rbrace$.
 
 - **$k = 0$:** $x = 0$, el eje $y$ sin el origen.
 - **$k \ne 0$:** $x^2 + y^2 = \dfrac{x}{k}$. Completando cuadrados:
@@ -398,7 +398,7 @@ Son circunferencias de centro $\left(\frac{1}{2k}, 0\right)$ y radio $\frac{1}{2
 **g)** El dominio es $\Re^3$ sin el eje $z$, salvo el origen, que sí está porque ahí se define $f = 0$. Como $f \ge 0$, debe ser $k \ge 0$.
 
 - **$k = 0$:** $|z| = 0 \Rightarrow z = 0$, que da el plano $xy$ (el origen también tiene $f = 0$).
-- **$k > 0$:** $|z| = k\,(x^2 + y^2)$, es decir, $z = k(x^2+y^2)$ o $z = -k(x^2+y^2)$. Son **dos paraboloides** de revolución, uno hacia arriba y otro hacia abajo, **sin** el punto $(0,0,0)$.
+- **$k > 0$:** $|z| = k\thinspace(x^2 + y^2)$, es decir, $z = k(x^2+y^2)$ o $z = -k(x^2+y^2)$. Son **dos paraboloides** de revolución, uno hacia arriba y otro hacia abajo, **sin** el punto $(0,0,0)$.
 
 </details>
 
@@ -409,7 +409,7 @@ Son circunferencias de centro $\left(\frac{1}{2k}, 0\right)$ y radio $\frac{1}{2
 - c) Paraboloides de ecuación $z = x^2 + y^2 - k$, $k \in \Re$.
 - d) Líneas de ecuación $y = k - |x|$, $k \in \Re$.
 - e) Puntos del espacio $xyz$ cuya distancia al origen de coordenadas es igual a $e^{k/2}$ con $k \in \Re$; la ecuación es $x^2 + y^2 + z^2 = e^k$.
-- f) Para $k \in \Re - \{0\}$: circunferencias de ecuación $(x - (2k)^{-1})^2 + y^2 = (2k)^{-2}$ excluido el origen de coordenadas; para $k = 0$: el eje $y$ salvo el punto $(0,0)$.
+- f) Para $k \in \Re - \lbrace0\rbrace$: circunferencias de ecuación $(x - (2k)^{-1})^2 + y^2 = (2k)^{-2}$ excluido el origen de coordenadas; para $k = 0$: el eje $y$ salvo el punto $(0,0)$.
 - g) Debe ser $k \ge 0$. Para $k = 0$: el plano $xy$. Para $k > 0$: paraboloides de revolución alrededor del eje $z$ de ecuaciones $z = k(x^2 + y^2)$ o $z = -k(x^2 + y^2)$, excluyendo el punto $(0,0,0)$.
 
 </details>
@@ -440,18 +440,18 @@ Para cada uno de los siguientes campos escalares definidos en su dominio natural
 **Método:**
 
 - **Imagen:** qué valores puede tomar $f$ (analizar mínimos, máximos, signos).
-- **Positividad:** $\{f > 0\}$, un subconjunto del dominio.
+- **Positividad:** $\lbrace f > 0\rbrace$, un subconjunto del dominio.
 - **Trazas:** reemplazar $z = 0$, $y = 0$ y $x = 0$ en $z = f(x,y)$.
 
 **a) $z = x^2 + y^2$** — paraboloide circular con vértice en el origen.
 
 - $x^2 + y^2 \ge 0$ y toma cualquier valor $\ge 0$ ⇒ imagen $[0, +\infty)$.
-- $f > 0$ salvo en el origen ⇒ positividad $\Re^2 - \{(0,0)\}$.
+- $f > 0$ salvo en el origen ⇒ positividad $\Re^2 - \lbrace(0,0)\rbrace$.
 - Trazas: $z = 0$ da el punto $(0,0)$; $y = 0$ da la parábola $z = x^2$; $x = 0$ da la parábola $z = y^2$.
 
 **b) $z = \sqrt{x^2+y^2}$** — semicono superior.
 
-- Imagen $[0, +\infty)$; positividad $\Re^2 - \{(0,0)\}$.
+- Imagen $[0, +\infty)$; positividad $\Re^2 - \lbrace(0,0)\rbrace$.
 - Trazas: $z=0$ da $(0,0)$; $y = 0$ da $z = \sqrt{x^2} = |x|$ (dos semirrectas); $x = 0$ da $z = |y|$.
 
 **c) $z = \sqrt{9 - x^2 - y^2}$** — semiesfera superior de radio 3, porque $z \ge 0$ y $x^2 + y^2 + z^2 = 9$.
@@ -485,12 +485,12 @@ Es un **paraboloide circular de eje paralelo al eje $y$**, con vértice $(1, -1,
 
 **Respuesta:**
 
-- a) Conj. imagen: $\{z \in \mathbb{R} / z \ge 0\}$; conj. positiv.: $\mathbb{R}^2 - \{(0,0)\}$. Inter. planos: en $z = 0$: $(0,0)$; en $y = 0$: parábola $z = x^2$; en $x = 0$: parábola $z = y^2$.
-- b) Conj. imagen: $\{z \in \mathbb{R} / z \ge 0\}$; conj. positiv.: $\mathbb{R}^2 - \{(0,0)\}$. Inter. planos: en $z = 0$: $(0,0)$; en $y = 0$: semirrectas $z = |x|$; en $x = 0$: semirrectas $z = |y|$.
-- c) Conj. imagen: $\{z \in \mathbb{R} / 0 \le z \le 3\}$; conj. positiv.: $\{(x,y) \in \mathbb{R}^2 / x^2 + y^2 < 9\}$. Inter. planos: en $z = 0$: circunferencia $x^2 + y^2 = 9$; en $y = 0$: semicircunferencia $z = \sqrt{9 - x^2}$; en $x = 0$: semicircunferencia $z = \sqrt{9 - y^2}$.
-- d) Conj. imagen: $\mathbb{R}$; conj. positiv.: $\{(x,y) \in \mathbb{R}^2 / x + y < 2\}$. Inter. planos: en $z = 0$: recta $x + y = 2$; en $y = 0$: recta $x + z = 2$; en $x = 0$: recta $y + z = 2$.
-- e) Conj. imagen: $\{z \in \mathbb{R} / z \le 2\}$; conj. positiv.: $\{(x,y) \in \mathbb{R}^2 / -\sqrt2 < x < \sqrt2\}$. Inter. planos: en $z = 0$: rectas $x = \pm\sqrt2$; en $y = 0$: parábola $z = 2 - x^2$; en $x = 0$: recta $z = 2$.
-- f) Conj. imagen: $\{y \in \mathbb{R} / y \ge -1\}$; conj. positiv.: $\{(x,z) \in \mathbb{R}^2 / (x-1)^2 + z^2 > 1\}$. Inter. planos: en $z = 0$: parábola $y = (x-1)^2 - 1$; en $y = 0$: circunferencia $(x-1)^2 + z^2 = 1$; en $x = 0$: parábola $y = z^2$.
+- a) Conj. imagen: $\lbrace z \in \mathbb{R} / z \ge 0\rbrace$; conj. positiv.: $\mathbb{R}^2 - \lbrace(0,0)\rbrace$. Inter. planos: en $z = 0$: $(0,0)$; en $y = 0$: parábola $z = x^2$; en $x = 0$: parábola $z = y^2$.
+- b) Conj. imagen: $\lbrace z \in \mathbb{R} / z \ge 0\rbrace$; conj. positiv.: $\mathbb{R}^2 - \lbrace(0,0)\rbrace$. Inter. planos: en $z = 0$: $(0,0)$; en $y = 0$: semirrectas $z = |x|$; en $x = 0$: semirrectas $z = |y|$.
+- c) Conj. imagen: $\lbrace z \in \mathbb{R} / 0 \le z \le 3\rbrace$; conj. positiv.: $\lbrace(x,y) \in \mathbb{R}^2 / x^2 + y^2 < 9\rbrace$. Inter. planos: en $z = 0$: circunferencia $x^2 + y^2 = 9$; en $y = 0$: semicircunferencia $z = \sqrt{9 - x^2}$; en $x = 0$: semicircunferencia $z = \sqrt{9 - y^2}$.
+- d) Conj. imagen: $\mathbb{R}$; conj. positiv.: $\lbrace(x,y) \in \mathbb{R}^2 / x + y < 2\rbrace$. Inter. planos: en $z = 0$: recta $x + y = 2$; en $y = 0$: recta $x + z = 2$; en $x = 0$: recta $y + z = 2$.
+- e) Conj. imagen: $\lbrace z \in \mathbb{R} / z \le 2\rbrace$; conj. positiv.: $\lbrace(x,y) \in \mathbb{R}^2 / -\sqrt2 < x < \sqrt2\rbrace$. Inter. planos: en $z = 0$: rectas $x = \pm\sqrt2$; en $y = 0$: parábola $z = 2 - x^2$; en $x = 0$: recta $z = 2$.
+- f) Conj. imagen: $\lbrace y \in \mathbb{R} / y \ge -1\rbrace$; conj. positiv.: $\lbrace(x,z) \in \mathbb{R}^2 / (x-1)^2 + z^2 > 1\rbrace$. Inter. planos: en $z = 0$: parábola $y = (x-1)^2 - 1$; en $y = 0$: circunferencia $(x-1)^2 + z^2 = 1$; en $x = 0$: parábola $y = z^2$.
 
 </details>
 
@@ -548,12 +548,12 @@ Como campo vectorial: $\vec f = (\ln(3 - x - y),\ \sqrt{x + y + 1})$.
 
 Dibuje los siguientes conjuntos de puntos e indique si tienen algún nombre en especial:
 
-- a) $S = \{(x, y, z) \in \Re^3 \ /\ z = x^2 - 2y^2\}$.
-- b) $S = \{(x, y, z) \in \Re^3 \ /\ z^2 - x^2 - 4y^2 = 1\}$.
-- c) $S = \{(x, y, z) \in \Re^3 \ /\ \dfrac{x^2}{4} + y^2 + \dfrac{z^2}{9} = 1\}$.
-- d) $S = \{(x, y, z) \in \Re^3 \ /\ z = |x|\}$.
-- e) $S = \{(x, y, z) \in \Re^3 \ /\ x + y = 4\}$.
-- f) $S = \{(x, y, z) \in \Re^3 \ /\ z = \operatorname{sen}(y)\}$.
+- a) $S = \lbrace(x, y, z) \in \Re^3 \ /\ z = x^2 - 2y^2\rbrace$.
+- b) $S = \lbrace(x, y, z) \in \Re^3 \ /\ z^2 - x^2 - 4y^2 = 1\rbrace$.
+- c) $S = \lbrace(x, y, z) \in \Re^3 \ /\ \dfrac{x^2}{4} + y^2 + \dfrac{z^2}{9} = 1\rbrace$.
+- d) $S = \lbrace(x, y, z) \in \Re^3 \ /\ z = |x|\rbrace$.
+- e) $S = \lbrace(x, y, z) \in \Re^3 \ /\ x + y = 4\rbrace$.
+- f) $S = \lbrace(x, y, z) \in \Re^3 \ /\ z = \mathop{\mathrm{sen}}(y)\rbrace$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -567,7 +567,7 @@ Dibuje los siguientes conjuntos de puntos e indique si tienen algún nombre en e
 
 - Traza $y = 0$: $z = x^2$, parábola hacia arriba.
 - Traza $x = 0$: $z = -2y^2$, parábola hacia abajo.
-- Curvas de nivel $z = k$: hipérbolas, y para $k = 0$ las rectas $x = \pm\sqrt2\,y$.
+- Curvas de nivel $z = k$: hipérbolas, y para $k = 0$ las rectas $x = \pm\sqrt2\thinspace y$.
 
 Es un **paraboloide hiperbólico** ("silla de montar").
 
@@ -584,7 +584,7 @@ Es un **hiperboloide de dos hojas**.
 
 **e) $x + y = 4$.** Es un **plano** vertical, paralelo al eje $z$, que corta al plano $xy$ en la recta $x + y = 4$.
 
-**f) $z = \operatorname{sen}(y)$.** No depende de $x$: la sinusoide del plano $yz$ se extiende paralela al eje $x$, como una "chapa ondulada". No tiene nombre especial (superficie cilíndrica).
+**f) $z = \mathop{\mathrm{sen}}(y)$.** No depende de $x$: la sinusoide del plano $yz$ se extiende paralela al eje $x$, como una "chapa ondulada". No tiene nombre especial (superficie cilíndrica).
 
 </details>
 
@@ -605,8 +605,8 @@ Es un **hiperboloide de dos hojas**.
 
 Grafique el conjunto imagen de:
 
-- a) $\vec g(u) = (\cos(u),\ \operatorname{sen}(u))$ con $u \in [0, \pi]$.
-- b) $\vec g(u) = (\cos(u),\ \operatorname{sen}(u),\ u)$ con $u \in [0, \pi]$.
+- a) $\vec g(u) = (\cos(u),\ \mathop{\mathrm{sen}}(u))$ con $u \in [0, \pi]$.
+- b) $\vec g(u) = (\cos(u),\ \mathop{\mathrm{sen}}(u),\ u)$ con $u \in [0, \pi]$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -614,9 +614,9 @@ Grafique el conjunto imagen de:
 <details>
 <summary>Solución paso a paso</summary>
 
-**a)** $x = \cos u$, $y = \operatorname{sen} u$ ⇒ $x^2 + y^2 = 1$: los puntos están en la circunferencia unitaria. Con $u \in [0, \pi]$:
+**a)** $x = \cos u$, $y = \mathop{\mathrm{sen}} u$ ⇒ $x^2 + y^2 = 1$: los puntos están en la circunferencia unitaria. Con $u \in [0, \pi]$:
 
-- $\operatorname{sen} u \ge 0$ ⇒ es la **mitad superior**.
+- $\mathop{\mathrm{sen}} u \ge 0$ ⇒ es la **mitad superior**.
 - Se recorre de $\vec g(0) = (1, 0)$ a $\vec g(\pi) = (-1, 0)$, en sentido antihorario.
 
 Despejando $y \ge 0$: $y = \sqrt{1 - x^2}$.
@@ -655,28 +655,28 @@ Sea $C$ la línea que resulta de la intersección de la superficie de ecuación 
 
 **b) Ecuación vectorial.**
 
-- Parametrizamos el cilindro: $x = 2\cos u$, $y = 2\operatorname{sen}u$.
+- Parametrizamos el cilindro: $x = 2\cos u$, $y = 2\mathop{\mathrm{sen}}u$.
 - El plano da $z = x = 2\cos u$.
-- El 1.er octante pide $\cos u \ge 0$ y $\operatorname{sen} u \ge 0$ ⇒ $u \in [0, \pi/2]$.
+- El 1.er octante pide $\cos u \ge 0$ y $\mathop{\mathrm{sen}} u \ge 0$ ⇒ $u \in [0, \pi/2]$.
 
-$$\vec X(u) = (2\cos u,\ 2\operatorname{sen}u,\ 2\cos u), \quad 0 \le u \le \pi/2$$
+$$\vec X(u) = (2\cos u,\ 2\mathop{\mathrm{sen}}u,\ 2\cos u), \quad 0 \le u \le \pi/2$$
 
 **c) Proyecciones.** Proyectar sobre un plano coordenado es "anular" la coordenada que falta.
 
-- **Sobre $xy$ ($z = 0$):** $\vec X = (2\cos u,\ 2\operatorname{sen}u,\ 0)$. Cartesianas: $x^2 + y^2 = 4$, $z = 0$, con $x \ge 0$, $y \ge 0$. Es un cuarto de circunferencia.
+- **Sobre $xy$ ($z = 0$):** $\vec X = (2\cos u,\ 2\mathop{\mathrm{sen}}u,\ 0)$. Cartesianas: $x^2 + y^2 = 4$, $z = 0$, con $x \ge 0$, $y \ge 0$. Es un cuarto de circunferencia.
 - **Sobre $xz$ ($y = 0$):** $\vec X = (2\cos u,\ 0,\ 2\cos u)$. Como $x = z = 2\cos u \in [0, 2]$, se puede reparametrizar con $u' = 2\cos u$: $\vec X = (u', 0, u')$, $u' \in [0, 2]$. Cartesianas: $z = x$, $y = 0$, con $0 \le x \le 2$. Es un **segmento**.
-- **Sobre $yz$ ($x = 0$):** $\vec X = (0,\ 2\operatorname{sen}u,\ 2\cos u)$. Cartesianas: $y^2 + z^2 = 4$, $x = 0$, con $y \ge 0$, $z \ge 0$. Es un cuarto de circunferencia.
+- **Sobre $yz$ ($x = 0$):** $\vec X = (0,\ 2\mathop{\mathrm{sen}}u,\ 2\cos u)$. Cartesianas: $y^2 + z^2 = 4$, $x = 0$, con $y \ge 0$, $z \ge 0$. Es un cuarto de circunferencia.
 
 </details>
 
 **Respuesta:**
 
-- b) $\vec X = (2\cos(u),\ 2\operatorname{sen}(u),\ 2\cos(u))$ con $0 \le u \le \pi/2$.
-- c) Sobre $xy$: $\vec X = (2\cos(u),\ 2\operatorname{sen}(u),\ 0) \wedge u \in [0, \pi/2]$; $\ \begin{cases} x^2 + y^2 = 4 \\ z = 0 \end{cases}$ con $x \ge 0 \wedge y \ge 0$.
+- b) $\vec X = (2\cos(u),\ 2\mathop{\mathrm{sen}}(u),\ 2\cos(u))$ con $0 \le u \le \pi/2$.
+- c) Sobre $xy$: $\vec X = (2\cos(u),\ 2\mathop{\mathrm{sen}}(u),\ 0) \wedge u \in [0, \pi/2]$; $\ \begin{cases} x^2 + y^2 = 4 \cr z = 0 \end{cases}$ con $x \ge 0 \wedge y \ge 0$.
 
-  Sobre $xz$: $\vec X = (u, 0, u) \wedge u \in [0, 2]$; $\ \begin{cases} z = x \\ y = 0 \end{cases}$ con $0 \le x \le 2$.
+  Sobre $xz$: $\vec X = (u, 0, u) \wedge u \in [0, 2]$; $\ \begin{cases} z = x \cr y = 0 \end{cases}$ con $0 \le x \le 2$.
 
-  Sobre $yz$: $\vec X = (0,\ 2\operatorname{sen}(u),\ 2\cos(u)) \wedge u \in [0, \pi/2]$; $\ \begin{cases} y^2 + z^2 = 4 \\ x = 0 \end{cases}$ con $y \ge 0 \wedge z \ge 0$.
+  Sobre $yz$: $\vec X = (0,\ 2\mathop{\mathrm{sen}}(u),\ 2\cos(u)) \wedge u \in [0, \pi/2]$; $\ \begin{cases} y^2 + z^2 = 4 \cr x = 0 \end{cases}$ con $y \ge 0 \wedge z \ge 0$.
 
 </details>
 
@@ -684,7 +684,7 @@ $$\vec X(u) = (2\cos u,\ 2\operatorname{sen}u,\ 2\cos u), \quad 0 \le u \le \pi/
 
 ### 12) *Optativo*
 
-*Optativo*: Dado el conjunto $S = \{(x, y) \in \Re^2 \ /\ 1 \le x^2 + y^2 \le 2 \ \vee\ (n^{-1}, 0),\ n \in \mathbb{N}\}$, halle sus puntos interiores, sus puntos aislados, su frontera, su conjunto derivado y su clausura.
+*Optativo*: Dado el conjunto $S = \lbrace(x, y) \in \Re^2 \ /\ 1 \le x^2 + y^2 \le 2 \ \vee\ (n^{-1}, 0),\ n \in \mathbb{N}\rbrace$, halle sus puntos interiores, sus puntos aislados, su frontera, su conjunto derivado y su clausura.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -716,17 +716,17 @@ $$\vec X(u) = (2\cos u,\ 2\operatorname{sen}u,\ 2\cos u), \quad 0 \le u \le \pi/
 
 Los puntos aislados **no** son de acumulación.
 
-**Clausura:** $Cl(S) = S \cup S' = S \cup \{(0,0)\}$.
+**Clausura:** $Cl(S) = S \cup S' = S \cup \lbrace(0,0)\rbrace$.
 
 </details>
 
 **Respuesta:**
 
-- interior: $\overset{\circ}{S} = \{(x,y) \in \Re^2 / 1 < x^2 + y^2 < 2\}$.
-- puntos aislados: $\{(n^{-1}, 0) \in \Re^2 / n \in \mathbb{N},\ n > 1\}$.
-- frontera: $\partial S = \{(x,y) \in \Re^2 / x^2 + y^2 = 1 \vee x^2 + y^2 = 2 \vee (n^{-1}, 0), n \in \mathbb{N}\} \cup \{(0,0)\}$.
-- conjunto derivado: $S' = \{(x,y) \in \Re^2 / 1 \le x^2 + y^2 \le 2\} \cup \{(0,0)\}$.
-- clausura: $Cl(S) = \{(x,y) \in \Re^2 / 1 \le x^2 + y^2 \le 2 \vee (n^{-1}, 0), n \in \mathbb{N}\} \cup \{(0,0)\}$.
+- interior: $\overset{\circ}{S} = \lbrace(x,y) \in \Re^2 / 1 < x^2 + y^2 < 2\rbrace$.
+- puntos aislados: $\lbrace(n^{-1}, 0) \in \Re^2 / n \in \mathbb{N},\ n > 1\rbrace$.
+- frontera: $\partial S = \lbrace(x,y) \in \Re^2 / x^2 + y^2 = 1 \vee x^2 + y^2 = 2 \vee (n^{-1}, 0), n \in \mathbb{N}\rbrace \cup \lbrace(0,0)\rbrace$.
+- conjunto derivado: $S' = \lbrace(x,y) \in \Re^2 / 1 \le x^2 + y^2 \le 2\rbrace \cup \lbrace(0,0)\rbrace$.
+- clausura: $Cl(S) = \lbrace(x,y) \in \Re^2 / 1 \le x^2 + y^2 \le 2 \vee (n^{-1}, 0), n \in \mathbb{N}\rbrace \cup \lbrace(0,0)\rbrace$.
 
 </details>
 
@@ -759,8 +759,8 @@ Defina gráfica y conjunto de nivel.
 
 **Respuesta:**
 
-- **Gráfica** de $f: D \subseteq \Re^n \to \Re$: $G(f) = \{(\vec x, z) \in \Re^{n+1} : \vec x \in D,\ z = f(\vec x)\}$.
-- **Conjunto de nivel $k$:** $C_k = \{\vec x \in D : f(\vec x) = k\}$, para $k$ en la imagen de $f$. Es un subconjunto del dominio.
+- **Gráfica** de $f: D \subseteq \Re^n \to \Re$: $G(f) = \lbrace(\vec x, z) \in \Re^{n+1} : \vec x \in D,\ z = f(\vec x)\rbrace$.
+- **Conjunto de nivel $k$:** $C_k = \lbrace\vec x \in D : f(\vec x) = k\rbrace$, para $k$ en la imagen de $f$. Es un subconjunto del dominio.
 
 </details>
 
@@ -776,10 +776,10 @@ Calcule la longitud de la poligonal de vértices en (1,2,3), (2,4,6), (3,6,7), e
 <details>
 <summary>Solución paso a paso</summary>
 
-La longitud de una poligonal es la suma de las longitudes de sus segmentos: $L = \|P_2 - P_1\| + \|P_3 - P_2\|$.
+La longitud de una poligonal es la suma de las longitudes de sus segmentos: $L = \Vert P_2 - P_1\Vert + \Vert P_3 - P_2\Vert$.
 
-- $P_2 - P_1 = (1, 2, 3)$ ⇒ $\|P_2 - P_1\| = \sqrt{1 + 4 + 9} = \sqrt{14}$.
-- $P_3 - P_2 = (1, 2, 1)$ ⇒ $\|P_3 - P_2\| = \sqrt{1 + 4 + 1} = \sqrt{6}$.
+- $P_2 - P_1 = (1, 2, 3)$ ⇒ $\Vert P_2 - P_1\Vert = \sqrt{1 + 4 + 9} = \sqrt{14}$.
+- $P_3 - P_2 = (1, 2, 1)$ ⇒ $\Vert P_3 - P_2\Vert = \sqrt{1 + 4 + 1} = \sqrt{6}$.
 
 $$L = \sqrt{14} + \sqrt{6} \approx 3{,}742 + 2{,}449 = 6{,}191$$
 
@@ -793,7 +793,7 @@ $$L = \sqrt{14} + \sqrt{6} \approx 3{,}742 + 2{,}449 = 6{,}191$$
 
 ### Cuestionario 4)
 
-Analice si $\{(x, y) \in \Re^2 / x\,y < 0\}$ es un $E(\bar 0)$.
+Analice si $\lbrace(x, y) \in \Re^2 / x\thinspace y < 0\rbrace$ es un $E(\bar 0)$.
 
 <details>
 <summary><b>Solución</b></summary>

@@ -27,11 +27,11 @@ $$\vec N = \vec F'_u\wedge\vec F'_v$$
 
 - **Cilíndrica:** se genera con rectas paralelas a un vector $\vec w$ que pasan por una curva directriz $\vec c(u)$:
 
-$$\vec X(u,v) = \vec c(u) + v\,\vec w$$
+$$\vec X(u,v) = \vec c(u) + v\thinspace\vec w$$
 
 - **Cónica:** se genera con rectas que unen un vértice $V$ con los puntos de una directriz $\vec c(u)$:
 
-$$\vec X(u,v) = V + v\,(\vec c(u) - V)$$
+$$\vec X(u,v) = V + v\thinspace(\vec c(u) - V)$$
 
   Si $V$ está en el plano de la directriz, la "superficie cónica" es ese plano.
 
@@ -42,10 +42,10 @@ Para obtener la **ecuación cartesiana** hay que **eliminar los parámetros**.
 | Superficie | Parametrización | $\lVert\vec N\rVert$ |
 |---|---|---|
 | Gráfico $z = f(x,y)$ | $(x,\ y,\ f(x,y))$ | $\sqrt{1 + f_x'^2 + f_y'^2}$ |
-| Cilindro $x^2 + y^2 = R^2$ | $(R\cos u,\ R\operatorname{sen}u,\ v)$ | $R$ |
-| Esfera de radio $R$ | $(R\operatorname{sen}\theta\cos\varphi,\ R\operatorname{sen}\theta\operatorname{sen}\varphi,\ R\cos\theta)$ | $R^2\operatorname{sen}\theta$ |
-| Elipsoide $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$ | $(a\operatorname{sen}\theta\cos\varphi,\ b\operatorname{sen}\theta\operatorname{sen}\varphi,\ c\cos\theta)$ | |
-| Cono $z = k\sqrt{x^2+y^2}$ | $(\rho\cos\varphi,\ \rho\operatorname{sen}\varphi,\ k\rho)$ | $\rho\sqrt{1 + k^2}$ |
+| Cilindro $x^2 + y^2 = R^2$ | $(R\cos u,\ R\mathop{\mathrm{sen}}u,\ v)$ | $R$ |
+| Esfera de radio $R$ | $(R\mathop{\mathrm{sen}}\theta\cos\varphi,\ R\mathop{\mathrm{sen}}\theta\mathop{\mathrm{sen}}\varphi,\ R\cos\theta)$ | $R^2\mathop{\mathrm{sen}}\theta$ |
+| Elipsoide $\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1$ | $(a\mathop{\mathrm{sen}}\theta\cos\varphi,\ b\mathop{\mathrm{sen}}\theta\mathop{\mathrm{sen}}\varphi,\ c\cos\theta)$ | |
+| Cono $z = k\sqrt{x^2+y^2}$ | $(\rho\cos\varphi,\ \rho\mathop{\mathrm{sen}}\varphi,\ k\rho)$ | $\rho\sqrt{1 + k^2}$ |
 
 **Normal de un gráfico $z = f(x,y)$:** $\vec N = (-f'_x,\ -f'_y,\ 1)$, que apunta hacia arriba ($z^+$).
 
@@ -53,26 +53,26 @@ Para obtener la **ecuación cartesiana** hay que **eliminar los parámetros**.
 
 ## 2. Área e integral de un campo escalar
 
-$$d\sigma = \lVert\vec F'_u\wedge\vec F'_v\rVert\,du\,dv, \qquad A(S) = \iint_S d\sigma, \qquad \iint_S f\,d\sigma = \iint_D f(\vec F(u,v))\,\lVert\vec N\rVert\,du\,dv$$
+$$d\sigma = \lVert\vec F'_u\wedge\vec F'_v\rVert\thinspace du\thinspace dv, \qquad A(S) = \iint_S d\sigma, \qquad \iint_S f\thinspace d\sigma = \iint_D f(\vec F(u,v))\thinspace\lVert\vec N\rVert\thinspace du\thinspace dv$$
 
 Estas integrales **no dependen de la orientación**.
 
 **Superficie implícita $G(x,y,z) = 0$**, proyectable sobre el plano $xy$ (con $G'_z \ne 0$):
 
-$$d\sigma = \frac{\lVert\nabla G\rVert}{|G'_z|}\,dx\,dy, \qquad \iint_S\vec f\cdot d\vec\sigma = \iint_{D_{xy}}\frac{\vec f\cdot\nabla G}{|G'_z|}\,dx\,dy$$
+$$d\sigma = \frac{\lVert\nabla G\rVert}{|G'_z|}\thinspace dx\thinspace dy, \qquad \iint_S\vec f\cdot d\vec\sigma = \iint_{D_{xy}}\frac{\vec f\cdot\nabla G}{|G'_z|}\thinspace dx\thinspace dy$$
 
 En la segunda fórmula, la orientación es la de $\nabla G$. Análogamente se proyecta sobre $xz$ o $yz$, cambiando $G'_z$ por $G'_y$ o $G'_x$.
 
-**Aplicaciones (chapas):** masa $\iint\delta\,d\sigma$, centro de masa, momento de inercia $\iint d^2\,\delta\,d\sigma$.
+**Aplicaciones (chapas):** masa $\iint\delta\thinspace d\sigma$, centro de masa, momento de inercia $\iint d^2\thinspace\delta\thinspace d\sigma$.
 
 ---
 
 ## 3. Flujo de un campo vectorial
 
-$$\Phi = \iint_S\vec f\cdot d\vec\sigma = \iint_S\vec f\cdot\breve n\,d\sigma = \pm\iint_D\vec f(\vec F(u,v))\cdot(\vec F'_u\wedge\vec F'_v)\,du\,dv$$
+$$\Phi = \iint_S\vec f\cdot d\vec\sigma = \iint_S\vec f\cdot\breve n\thinspace d\sigma = \pm\iint_D\vec f(\vec F(u,v))\cdot(\vec F'_u\wedge\vec F'_v)\thinspace du\thinspace dv$$
 
 - Se toma $+$ si $\vec F'_u\wedge\vec F'_v$ apunta en el sentido de la orientación pedida y $-$ si no.
-- **Notar:** en la última integral **no** se divide por la norma, porque $\breve n\,d\sigma = \vec N\,du\,dv$.
+- **Notar:** en la última integral **no** se divide por la norma, porque $\breve n\thinspace d\sigma = \vec N\thinspace du\thinspace dv$.
 - Mide "cuánto campo atraviesa" la superficie: sólo cuenta la componente **normal** $\vec f\cdot\breve n$.
 - **Cambia de signo** si se invierte la orientación.
 
@@ -83,18 +83,18 @@ $$\Phi = \iint_S\vec f\cdot d\vec\sigma = \iint_S\vec f\cdot\breve n\,d\sigma = 
 ### Casos simples (sin integrar)
 
 - **$\vec f\cdot\breve n$ constante sobre $S$** ⇒ $\Phi = (\vec f\cdot\breve n)\cdot A(S)$.
-  - $\vec f = k\breve n$ ⇒ $\Phi = k\,A(S)$.
+  - $\vec f = k\breve n$ ⇒ $\Phi = k\thinspace A(S)$.
   - $\vec f = (x,y,z)$ sobre una esfera de radio $R$ ⇒ $\vec f\cdot\breve n = R$ ⇒ $\Phi = R\cdot4\pi R^2$.
 - **Campo constante y superficie plana** ⇒ $\Phi = \vec f\cdot\breve n\cdot A(S)$.
 - **Campo tangente a $S$** ⇒ $\Phi = 0$.
-- **Campo de gradientes $\nabla\phi$ a través de una equipotencial** orientada hacia potenciales crecientes ⇒ $\Phi = \iint\lVert\nabla\phi\rVert\,d\sigma > 0$.
+- **Campo de gradientes $\nabla\phi$ a través de una equipotencial** orientada hacia potenciales crecientes ⇒ $\Phi = \iint\lVert\nabla\phi\rVert\thinspace d\sigma > 0$.
 - **Simetrías:** si la región de integración es simétrica y el integrando es impar, la integral es 0.
 
 ### Superficies cerradas
 
 El flujo total es la suma de los flujos a través de cada cara, cada una con normal **saliente**. En la Unidad 11, el **teorema de la divergencia** permite calcularlo con una integral triple:
 
-$$\oint\!\!\!\oint_{\partial H}\vec f\cdot\breve n\,d\sigma = \iiint_H\operatorname{div}\vec f\,dV$$
+$$\oint\negthinspace\negthinspace\negthinspace\oint_{\partial H}\vec f\cdot\breve n\thinspace d\sigma = \iiint_H\mathop{\mathrm{div}}\vec f\thinspace dV$$
 
 ---
 
@@ -111,19 +111,19 @@ $$(P - P_0)\cdot\big(\vec\phi'_u(u_0,v_0)\times\vec\phi'_v(u_0,v_0)\big) = 0$$
 
 - **Superficie regular:** $\vec\phi \in C^1$ y $\vec\phi'_u\times\vec\phi'_v \ne \vec 0$ en todo el dominio (normal no nula y continua).
 
-**Deducción de la fórmula del área.** Hipótesis: $\vec\phi \in C^1$, inyectiva en $D$, y $\vec\phi'_u\times\vec\phi'_v \ne \vec 0$ salvo en finitos puntos. Una partición de $D$ en rectángulos $\Delta u_i\Delta v_j$ induce una partición de $\Sigma$ en "cuadriláteros curvilíneos". Cada uno se aproxima por un paralelogramo en el plano tangente: es la imagen del rectángulo por la T.L. de matriz $(\vec\phi'_u\ \ \vec\phi'_v)$, así que su área es $\lVert\vec\phi'_u\times\vec\phi'_v\rVert\,\Delta u_i\Delta v_j$. Sumando y tomando límite:
+**Deducción de la fórmula del área.** Hipótesis: $\vec\phi \in C^1$, inyectiva en $D$, y $\vec\phi'_u\times\vec\phi'_v \ne \vec 0$ salvo en finitos puntos. Una partición de $D$ en rectángulos $\Delta u_i\Delta v_j$ induce una partición de $\Sigma$ en "cuadriláteros curvilíneos". Cada uno se aproxima por un paralelogramo en el plano tangente: es la imagen del rectángulo por la T.L. de matriz $(\vec\phi'_u\ \ \vec\phi'_v)$, así que su área es $\lVert\vec\phi'_u\times\vec\phi'_v\rVert\thinspace\Delta u_i\Delta v_j$. Sumando y tomando límite:
 
-$$\text{Área}(\Sigma) = \iint_D\lVert\vec\phi'_u\times\vec\phi'_v\rVert\,du\,dv$$
+$$\text{Área}(\Sigma) = \iint_D\lVert\vec\phi'_u\times\vec\phi'_v\rVert\thinspace du\thinspace dv$$
 
 **Superficie explícita $z = F(x,y)$:** $\vec\phi = (x, y, F(x,y))$, $\vec\phi'_x\times\vec\phi'_y = (-F'_x, -F'_y, 1)$, y
 
-$$\text{Área} = \iint_{D_{xy}}\sqrt{1 + F'^2_x + F'^2_y}\,dx\,dy$$
+$$\text{Área} = \iint_{D_{xy}}\sqrt{1 + F'^2_x + F'^2_y}\thinspace dx\thinspace dy$$
 
 Si es $x = x(y,z)$ o $y = y(x,z)$, se proyecta sobre el plano $yz$ o $xz$.
 
 **Superficie implícita $G(x,y,z) = 0$.** El versor normal es $\breve n = \nabla G/\lVert\nabla G\rVert$, y sus componentes son los **cosenos directores**. Como $\sqrt{1 + F'^2_x + F'^2_y} = \dfrac{\lVert\nabla G\rVert}{\lvert G'_z\rvert} = \dfrac{1}{\lvert\cos(\breve n, \breve k)\rvert}$:
 
-$$\text{Área} = \iint_{D_{xy}}\frac{dx\,dy}{\lvert\cos(\breve n,\breve k)\rvert} = \iint_{D_{xz}}\frac{dx\,dz}{\lvert\cos(\breve n,\breve\jmath)\rvert} = \iint_{D_{yz}}\frac{dy\,dz}{\lvert\cos(\breve n,\breve\imath)\rvert}$$
+$$\text{Área} = \iint_{D_{xy}}\frac{dx\thinspace dy}{\lvert\cos(\breve n,\breve k)\rvert} = \iint_{D_{xz}}\frac{dx\thinspace dz}{\lvert\cos(\breve n,\breve\jmath)\rvert} = \iint_{D_{yz}}\frac{dy\thinspace dz}{\lvert\cos(\breve n,\breve\imath)\rvert}$$
 
 según el plano sobre el que se proyecte.
 
@@ -135,7 +135,7 @@ Las fórmulas valen para superficies **regulares a trozos**: imágenes de campos
 
 **Integral de superficie de un campo escalar** (definición). Con la partición anterior, eligiendo un punto $P_{ij}$ en cada cuadrilátero curvilíneo de área $\Delta\sigma_{ij}$:
 
-$$\iint_\Sigma F\,d\sigma = \lim\sum_i\sum_j F(P_{ij})\,\Delta\sigma_{ij}$$
+$$\iint_\Sigma F\thinspace d\sigma = \lim\sum_i\sum_j F(P_{ij})\thinspace\Delta\sigma_{ij}$$
 
 Se calcula igual que el área (con $F$ multiplicando), expresando una variable en función de las otras dos según la superficie y el plano de proyección.
 
@@ -147,7 +147,7 @@ Se calcula igual que el área (con $F$ multiplicando), expresando una variable e
 
 **Flujo (definición):** para $\vec F$ continuo y $\Sigma$ simple, regular a trozos y orientable, el flujo es la integral de superficie de la **componente normal** de $\vec F$:
 
-$$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\,d\sigma$$
+$$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\thinspace d\sigma$$
 
 ---
 
@@ -157,7 +157,7 @@ $$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\,d\sigma$$
 2. Calcular $\vec N = \vec F'_u\wedge\vec F'_v$ y **chequear su sentido** contra la orientación pedida (por ejemplo, "hacia $z^+$" pide $N_z > 0$). Si no coincide, cambiar el signo.
 3. Determinar la **región $D$** de los parámetros: es la proyección de $S$.
 4. Calcular:
-   - **área / campo escalar:** $\iint f\,\lVert\vec N\rVert$;
+   - **área / campo escalar:** $\iint f\thinspace\lVert\vec N\rVert$;
    - **flujo:** $\iint\vec f\cdot\vec N$.
 5. Para superficies cerradas: sumar las caras con normal saliente, o usar el teorema de la divergencia.
 
@@ -169,12 +169,12 @@ $$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\,d\sigma$$
 |---|---|
 | Normal | $\vec N = \vec F'_u\wedge\vec F'_v$ |
 | Normal de un gráfico | $(-f'_x, -f'_y, 1)$ |
-| Elemento de área | $d\sigma = \lVert\vec N\rVert\,du\,dv$ |
-| Área | $\iint_D\lVert\vec N\rVert\,du\,dv$ |
-| Campo escalar | $\iint_D f\,\lVert\vec N\rVert\,du\,dv$ |
-| Flujo | $\iint_D\vec f\cdot\vec N\,du\,dv$ (signo según la orientación) |
-| Implícita | $d\sigma = \frac{\lVert\nabla G\rVert}{\lvert G'_z\rvert}\,dx\,dy$ |
-| Esfera | $d\sigma = R^2\operatorname{sen}\theta\,d\theta\,d\varphi$, $\ \breve n = \vec X/R$ |
+| Elemento de área | $d\sigma = \lVert\vec N\rVert\thinspace du\thinspace dv$ |
+| Área | $\iint_D\lVert\vec N\rVert\thinspace du\thinspace dv$ |
+| Campo escalar | $\iint_D f\thinspace\lVert\vec N\rVert\thinspace du\thinspace dv$ |
+| Flujo | $\iint_D\vec f\cdot\vec N\thinspace du\thinspace dv$ (signo según la orientación) |
+| Implícita | $d\sigma = \frac{\lVert\nabla G\rVert}{\lvert G'_z\rvert}\thinspace dx\thinspace dy$ |
+| Esfera | $d\sigma = R^2\mathop{\mathrm{sen}}\theta\thinspace d\theta\thinspace d\varphi$, $\ \breve n = \vec X/R$ |
 
 ---
 

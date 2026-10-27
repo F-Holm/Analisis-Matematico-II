@@ -8,9 +8,9 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 >
 > - Dada $f : \Re^n \to \Re^m \ /\ f(X) = (f_1(x), \cdots, f_m(x))$, cuando $f$ es derivable<sup>(\*)</sup> en $A$, queda definida la matriz jacobiana de $f$ en $A$ que denotamos como $Df(A)$:
 >
-> $$Df(A) = \begin{pmatrix} \frac{\partial f_1}{\partial x_1}(A) & \cdots & \frac{\partial f_1}{\partial x_n}(A) \\ \vdots & & \vdots \\ \frac{\partial f_m}{\partial x_1}(A) & \cdots & \frac{\partial f_m}{\partial x_n}(A) \end{pmatrix}.$$
+> $$Df(A) = \begin{pmatrix} \frac{\partial f_1}{\partial x_1}(A) & \cdots & \frac{\partial f_1}{\partial x_n}(A) \cr \vdots & & \vdots \cr \frac{\partial f_m}{\partial x_1}(A) & \cdots & \frac{\partial f_m}{\partial x_n}(A) \end{pmatrix}.$$
 >
-> - Siendo $f$ un campo escalar derivable en $\bar A$, el vector cuyas componentes son los elementos de $Df(\bar A)$ se denomina gradiente de $f$ en $\bar A$ y lo denotamos $\nabla f(\bar A) \equiv \operatorname{grad} f(\bar A)$:
+> - Siendo $f$ un campo escalar derivable en $\bar A$, el vector cuyas componentes son los elementos de $Df(\bar A)$ se denomina gradiente de $f$ en $\bar A$ y lo denotamos $\nabla f(\bar A) \equiv \mathop{\mathrm{grad}} f(\bar A)$:
 >
 > $$\nabla f(\bar A) = \left(\frac{\partial f}{\partial x_1}(\bar A), \cdots, \frac{\partial f}{\partial x_n}(\bar A)\right).$$
 >
@@ -27,7 +27,7 @@ Exprese $Df(X)$ y halle el conjunto $W$ tal que $Df$ sea continua en $W$.
 - a) $\vec f(t) = \left(t^3 - 2,\ \dfrac{t^2 - 1}{t + 1},\ \dfrac{\cos(t)}{2t - \pi}\right)$
 - b) $f(x,y) = \dfrac{xy}{x^2 + y^2}$
 - c) $\vec f(x,y,z) = (x^2 + y,\ z\ln(x^2 + z^2))$
-- d) $\vec f(\bar X) = \dfrac{k\,\breve r}{r^2}$ con $\begin{cases} \bar r = \bar X = (x,y,z) \\ r = \|\bar r\| \end{cases}$, $k = $ cte.
+- d) $\vec f(\bar X) = \dfrac{k\thinspace\breve r}{r^2}$ con $\begin{cases} \bar r = \bar X = (x,y,z) \cr r = \Vert\bar r\Vert \end{cases}$, $k = $ cte.
 - e) $f(x,y) = \dfrac{xy^2}{x^2 + y^4}$ si $(x,y) \ne (0,0)$, $f(0,0) = 0$.
 - f) $f(x,y) = (x^2y^3,\ (y - x)^2)$
 
@@ -45,15 +45,15 @@ Exprese $Df(X)$ y halle el conjunto $W$ tal que $Df$ sea continua en $W$.
 - $f_2 = \dfrac{(t-1)(t+1)}{t+1} = t - 1$ (para $t \ne -1$) ⇒ $f_2' = 1$.
 - $f_3 = \dfrac{\cos t}{2t - \pi}$, por la regla del cociente:
 
-$$f_3' = \frac{-\operatorname{sen}t\,(2t - \pi) - 2\cos t}{(2t - \pi)^2} = -\frac{2\cos t}{(2t-\pi)^2} - \frac{\operatorname{sen}t}{2t - \pi}$$
+$$f_3' = \frac{-\mathop{\mathrm{sen}}t\thinspace(2t - \pi) - 2\cos t}{(2t - \pi)^2} = -\frac{2\cos t}{(2t-\pi)^2} - \frac{\mathop{\mathrm{sen}}t}{2t - \pi}$$
 
-Todas son continuas donde están definidas ⇒ $W = \{t \ne -1 \wedge t \ne \pi/2\}$.
+Todas son continuas donde están definidas ⇒ $W = \lbrace t \ne -1 \wedge t \ne \pi/2\rbrace$.
 
 **b)** Por la regla del cociente:
 
 $$f'_x = \frac{y(x^2+y^2) - xy\cdot 2x}{(x^2+y^2)^2} = \frac{y^3 - x^2y}{(x^2+y^2)^2}, \qquad f'_y = \frac{x^3 - xy^2}{(x^2+y^2)^2}$$
 
-Como la función no está definida en el origen: $W = \Re^2 - \{\bar 0\}$.
+Como la función no está definida en el origen: $W = \Re^2 - \lbrace\bar 0\rbrace$.
 
 **c)** Dos componentes y tres variables ⇒ matriz $2\times3$.
 
@@ -62,11 +62,11 @@ Como la función no está definida en el origen: $W = \Re^2 - \{\bar 0\}$.
 
 Están definidas y son continuas donde $x^2 + z^2 \ne 0$.
 
-**d)** Como $\breve r = \bar r/r$, el campo es $\vec f = \dfrac{k\,\bar r}{r^3} = k\left(\dfrac{x}{r^3}, \dfrac{y}{r^3}, \dfrac{z}{r^3}\right)$. Usando $r'_x = x/r$:
+**d)** Como $\breve r = \bar r/r$, el campo es $\vec f = \dfrac{k\thinspace\bar r}{r^3} = k\left(\dfrac{x}{r^3}, \dfrac{y}{r^3}, \dfrac{z}{r^3}\right)$. Usando $r'_x = x/r$:
 
-$$\frac{\partial}{\partial x}\left(\frac{kx}{r^3}\right) = k\,\frac{r^3 - x\cdot 3r^2\frac{x}{r}}{r^6} = k\,r^{-3}\left(1 - \frac{3x^2}{r^2}\right), \qquad \frac{\partial}{\partial y}\left(\frac{kx}{r^3}\right) = kx\cdot(-3)r^{-4}\frac{y}{r} = -\frac{3kxy}{r^5}$$
+$$\frac{\partial}{\partial x}\left(\frac{kx}{r^3}\right) = k\thinspace\frac{r^3 - x\cdot 3r^2\frac{x}{r}}{r^6} = k\thinspace r^{-3}\left(1 - \frac{3x^2}{r^2}\right), \qquad \frac{\partial}{\partial y}\left(\frac{kx}{r^3}\right) = kx\cdot(-3)r^{-4}\frac{y}{r} = -\frac{3kxy}{r^5}$$
 
-Las demás entradas son análogas (la matriz es simétrica). $W = \Re^3 - \{\bar 0\}$.
+Las demás entradas son análogas (la matriz es simétrica). $W = \Re^3 - \lbrace\bar 0\rbrace$.
 
 **e)** **Fuera del origen**, por la regla del cociente:
 
@@ -78,7 +78,7 @@ $$f'_x = \frac{y^2(x^2+y^4) - xy^2\cdot 2x}{(x^2+y^4)^2} = \frac{y^6 - x^2y^2}{(
 
 $$f'_y(x, mx) = \frac{2mx^4(1 - m^4x^2)}{x^4(1 + m^4x^2)^2} \to 2m$$
 
-Depende de $m$ ⇒ $f'_y$ no es continua en el origen ⇒ $W = \Re^2 - \{\bar 0\}$.
+Depende de $m$ ⇒ $f'_y$ no es continua en el origen ⇒ $W = \Re^2 - \lbrace\bar 0\rbrace$.
 
 **f)** Dos componentes y dos variables:
 
@@ -91,12 +91,12 @@ Son polinomios ⇒ $W = \Re^2$.
 
 **Respuesta:**
 
-- a) $D\vec f(t) = \begin{pmatrix} 3t^2 \\ 1 \\ -\dfrac{2\cos(t)}{(2t-\pi)^2} - \dfrac{\operatorname{sen}(t)}{2t - \pi} \end{pmatrix}$, $\ W = \{t \in \Re / t \ne -1 \wedge t \ne \pi/2\}$.
-- b) $Df(x,y) = \left(\dfrac{y^3 - x^2y}{(x^2+y^2)^2}\ \ \dfrac{x^3 - xy^2}{(x^2+y^2)^2}\right)$, $\ W = \Re^2 - \{\bar 0\}$.
-- c) $D\vec f(x,y,z) = \begin{pmatrix} 2x & 1 & 0 \\ \dfrac{2xz}{x^2+z^2} & 0 & \dfrac{2z^2}{x^2+z^2} + \ln(x^2+z^2) \end{pmatrix}$, $\ W = \{(x,y,z) \in \Re^3 / x^2 + z^2 \ne 0\}$.
-- d) $D\vec f(x,y,z) = \begin{pmatrix} kr^{-3}(1 - 3x^2/r^2) & -3kxy/r^5 & -3kxz/r^5 \\ -3kxy/r^5 & kr^{-3}(1 - 3y^2/r^2) & -3kyz/r^5 \\ -3kxz/r^5 & -3kyz/r^5 & kr^{-3}(1 - 3z^2/r^2) \end{pmatrix}$, $\ W = \Re^3 - \{\bar 0\}$.
-- e) $Df(x,y) = \begin{cases} \left(\dfrac{y^6 - x^2y^2}{(x^2+y^4)^2}\ \ \dfrac{2x^3y - 2xy^5}{(x^2+y^4)^2}\right) & \text{si } (x,y) \ne (0,0) \\ (0\ \ 0) & \text{si } (x,y) = (0,0) \end{cases}$, $\ W = \Re^2 - \{\bar 0\}$ (acercándose por rectas es sencillo probar que $f'_y$ no es continua en el origen).
-- f) $D\vec f(x,y) = \begin{pmatrix} 2xy^3 & 3x^2y^2 \\ 2(x - y) & 2(y - x) \end{pmatrix}$, $\ W = \Re^2$.
+- a) $D\vec f(t) = \begin{pmatrix} 3t^2 \cr 1 \cr -\dfrac{2\cos(t)}{(2t-\pi)^2} - \dfrac{\mathop{\mathrm{sen}}(t)}{2t - \pi} \end{pmatrix}$, $\ W = \lbrace t \in \Re / t \ne -1 \wedge t \ne \pi/2\rbrace$.
+- b) $Df(x,y) = \left(\dfrac{y^3 - x^2y}{(x^2+y^2)^2}\ \ \dfrac{x^3 - xy^2}{(x^2+y^2)^2}\right)$, $\ W = \Re^2 - \lbrace\bar 0\rbrace$.
+- c) $D\vec f(x,y,z) = \begin{pmatrix} 2x & 1 & 0 \cr \dfrac{2xz}{x^2+z^2} & 0 & \dfrac{2z^2}{x^2+z^2} + \ln(x^2+z^2) \end{pmatrix}$, $\ W = \lbrace(x,y,z) \in \Re^3 / x^2 + z^2 \ne 0\rbrace$.
+- d) $D\vec f(x,y,z) = \begin{pmatrix} kr^{-3}(1 - 3x^2/r^2) & -3kxy/r^5 & -3kxz/r^5 \cr -3kxy/r^5 & kr^{-3}(1 - 3y^2/r^2) & -3kyz/r^5 \cr -3kxz/r^5 & -3kyz/r^5 & kr^{-3}(1 - 3z^2/r^2) \end{pmatrix}$, $\ W = \Re^3 - \lbrace\bar 0\rbrace$.
+- e) $Df(x,y) = \begin{cases} \left(\dfrac{y^6 - x^2y^2}{(x^2+y^4)^2}\ \ \dfrac{2x^3y - 2xy^5}{(x^2+y^4)^2}\right) & \text{si } (x,y) \ne (0,0) \cr (0\ \ 0) & \text{si } (x,y) = (0,0) \end{cases}$, $\ W = \Re^2 - \lbrace\bar 0\rbrace$ (acercándose por rectas es sencillo probar que $f'_y$ no es continua en el origen).
+- f) $D\vec f(x,y) = \begin{pmatrix} 2xy^3 & 3x^2y^2 \cr 2(x - y) & 2(y - x) \end{pmatrix}$, $\ W = \Re^2$.
 
 </details>
 
@@ -162,7 +162,7 @@ También se ve con el gradiente: $\nabla f(0,0) = (0, 0)$ (las direccionales seg
 
 </details>
 
-**Respuesta:** $f'(\bar 0, (u,v)) = \begin{cases} u^2/v & \text{si } v \ne 0 \\ 0 & \text{si } v = 0 \end{cases}$ con $u^2 + v^2 = 1$; no es continua en $\bar 0$ ⇒ no es diferenciable en $\bar 0$.
+**Respuesta:** $f'(\bar 0, (u,v)) = \begin{cases} u^2/v & \text{si } v \ne 0 \cr 0 & \text{si } v = 0 \end{cases}$ con $u^2 + v^2 = 1$; no es continua en $\bar 0$ ⇒ no es diferenciable en $\bar 0$.
 
 </details>
 
@@ -172,8 +172,8 @@ También se ve con el gradiente: $\nabla f(0,0) = (0, 0)$ (las direccionales seg
 
 En los siguientes casos analice la derivabilidad en distintas direcciones y la diferenciabilidad de la función en el origen de coordenadas.
 
-- a) $f(x,y) = \begin{cases} \dfrac{x^4}{x + y} & \text{si } x + y \ne 0 \\ 0 & \text{si } x + y = 0 \end{cases}$, observe que $f$ no es continua en $(0,0)$.
-- b) $f(x,y) = \begin{cases} \dfrac{x^2y}{x^2 + y^2} & \text{si } (x,y) \ne (0,0) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$. Verifique que en $(0,0)$ la función tiene dos direcciones de derivada direccional máxima y cuatro direcciones para las cuales la derivada resulta nula (cada dirección se especifica mediante el versor correspondiente).
+- a) $f(x,y) = \begin{cases} \dfrac{x^4}{x + y} & \text{si } x + y \ne 0 \cr 0 & \text{si } x + y = 0 \end{cases}$, observe que $f$ no es continua en $(0,0)$.
+- b) $f(x,y) = \begin{cases} \dfrac{x^2y}{x^2 + y^2} & \text{si } (x,y) \ne (0,0) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$. Verifique que en $(0,0)$ la función tiene dos direcciones de derivada direccional máxima y cuatro direcciones para las cuales la derivada resulta nula (cada dirección se especifica mediante el versor correspondiente).
 
 <details>
 <summary><b>Solución</b></summary>
@@ -267,7 +267,7 @@ Dada la superficie de ecuación $z = e^{(x-1)^2 + y^2}$, determine en qué punto
 
 **Paso 2 — Derivadas.**
 
-$$f'_x = 2(x - 1)\,e^{(x-1)^2+y^2}, \qquad f'_y = 2y\,e^{(x-1)^2+y^2}$$
+$$f'_x = 2(x - 1)\thinspace e^{(x-1)^2+y^2}, \qquad f'_y = 2y\thinspace e^{(x-1)^2+y^2}$$
 
 La exponencial nunca se anula ⇒ $x = 1$, $y = 0$.
 
@@ -313,7 +313,7 @@ No coinciden ⇒ **no es diferenciable**.
 
 **Respuesta:**
 
-- Para el límite observe que: $\dfrac{x^3 - xy^2}{x^2+y^2} = x\,\dfrac{x^2}{x^2+y^2} - x\,\dfrac{y^2}{x^2+y^2}$.
+- Para el límite observe que: $\dfrac{x^3 - xy^2}{x^2+y^2} = x\thinspace\dfrac{x^2}{x^2+y^2} - x\thinspace\dfrac{y^2}{x^2+y^2}$.
 - Derivada direccional: $f'(\bar 0, (u,v)) = u^3 - uv^2 \ \forall\breve r = (u,v) \in \Re^2$.
 - Por otra parte, $f'((0,0),(u,v)) \ne \nabla f(0,0)\cdot(u,v)$ ⇒ $f$ no es diferenciable en $(0,0)$.
 
@@ -326,7 +326,7 @@ No coinciden ⇒ **no es diferenciable**.
 Calcule mediante aproximación lineal y compare el resultado con el obtenido con calculadora.
 
 - a) $f(1.96,\ 0.96)$ cuando $f(x,y) = \sqrt{25 - 2x^2 - y^2}$.
-- b) $f(0.99,\ 1.98,\ 1.02)$ cuando $f(x,y,z) = xy + \operatorname{sen}(\operatorname{Exp}(2x - y + 3z - 3) - 1)$.
+- b) $f(0.99,\ 1.98,\ 1.02)$ cuando $f(x,y,z) = xy + \mathop{\mathrm{sen}}(\mathop{\mathrm{Exp}}(2x - y + 3z - 3) - 1)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -354,19 +354,19 @@ $$f(1{,}96;\ 0{,}96) \approx 4 + (-1)(-0{,}04) + \left(-\tfrac14\right)(-0{,}04)
 
 **b)**
 
-*Punto cómodo:* $\vec A = (1, 2, 1)$, donde el argumento $2x - y + 3z - 3 = 0$. Entonces $\operatorname{Exp}(0) - 1 = 0$, $\operatorname{sen}0 = 0$ y $f(\vec A) = 2$. El incremento es $\vec h = (-0{,}01;\ -0{,}02;\ 0{,}02)$.
+*Punto cómodo:* $\vec A = (1, 2, 1)$, donde el argumento $2x - y + 3z - 3 = 0$. Entonces $\mathop{\mathrm{Exp}}(0) - 1 = 0$, $\mathop{\mathrm{sen}}0 = 0$ y $f(\vec A) = 2$. El incremento es $\vec h = (-0{,}01;\ -0{,}02;\ 0{,}02)$.
 
-*Derivadas:* llamamos $u = 2x - y + 3z - 3$ y $g = \operatorname{sen}(e^u - 1)$, con $g'_u = \cos(e^u - 1)\,e^u$, que en $\vec A$ vale 1.
+*Derivadas:* llamamos $u = 2x - y + 3z - 3$ y $g = \mathop{\mathrm{sen}}(e^u - 1)$, con $g'_u = \cos(e^u - 1)\thinspace e^u$, que en $\vec A$ vale 1.
 
-- $f'_x = y + 2\,g'_u \to 2 + 2 = 4$.
+- $f'_x = y + 2\thinspace g'_u \to 2 + 2 = 4$.
 - $f'_y = x - g'_u \to 1 - 1 = 0$.
-- $f'_z = 3\,g'_u \to 3$.
+- $f'_z = 3\thinspace g'_u \to 3$.
 
 *Cálculo:*
 
 $$f \approx 2 + 4(-0{,}01) + 0(-0{,}02) + 3(0{,}02) = 2 - 0{,}04 + 0{,}06 = 2{,}02$$
 
-*Calculadora:* $xy = 1{,}9602$, $u = 0{,}06$, $e^{0{,}06} - 1 \approx 0{,}06184$ y $\operatorname{sen}(0{,}06184) \approx 0{,}06180$. Total $\approx 2{,}0220$.
+*Calculadora:* $xy = 1{,}9602$, $u = 0{,}06$, $e^{0{,}06} - 1 \approx 0{,}06184$ y $\mathop{\mathrm{sen}}(0{,}06184) \approx 0{,}06180$. Total $\approx 2{,}0220$.
 
 </details>
 
@@ -429,7 +429,7 @@ $$\bar X'_u = \left(1,\ -\frac{v^2}{u^2},\ \frac1v\right) \to (1,\ -1,\ \tfrac12
 
 **Paso 3 — Vector normal** $\vec n = \bar X'_u \times \bar X'_v$:
 
-$$\vec n = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ 1 & -1 & \tfrac12 \\ -4 & 2 & -\tfrac12 \end{vmatrix} = \left(\tfrac12 - 1,\ -\left(-\tfrac12 + 2\right),\ 2 - 4\right) = \left(-\tfrac12,\ -\tfrac32,\ -2\right)$$
+$$\vec n = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 1 & -1 & \tfrac12 \cr -4 & 2 & -\tfrac12 \end{vmatrix} = \left(\tfrac12 - 1,\ -\left(-\tfrac12 + 2\right),\ 2 - 4\right) = \left(-\tfrac12,\ -\tfrac32,\ -2\right)$$
 
 Es $\ne \vec 0$ y las derivadas son continuas cerca de $(2,2)$ ⇒ **$\bar A$ es regular**. Multiplicando por $-2$ se obtiene un normal más cómodo: $(1, 3, 4)$.
 
@@ -437,14 +437,14 @@ Es $\ne \vec 0$ y las derivadas son continuas cerca de $(2,2)$ ⇒ **$\bar A$ es
 
 $$1(x + 2) + 3(y - 2) + 4(z - 1) = 0 \ \Rightarrow\ x + 3y + 4z = 8$$
 
-**Paso 5 — Recta normal.** $\vec X = (-2, 2, 1) + t\,(1, 3, 4)$. En forma cartesiana, eliminando $t = x + 2$:
+**Paso 5 — Recta normal.** $\vec X = (-2, 2, 1) + t\thinspace(1, 3, 4)$. En forma cartesiana, eliminando $t = x + 2$:
 
 - $y - 2 = 3(x + 2) \Rightarrow y - 3x = 8$.
 - $z - 1 = 4(x + 2) \Rightarrow z - 4x = 9$.
 
 </details>
 
-**Respuesta:** Plano tangente: $x + 3y + 4z = 8$. Recta normal: $r_0 = \begin{cases} y - 3x = 8 \\ z - 4x = 9 \end{cases}$.
+**Respuesta:** Plano tangente: $x + 3y + 4z = 8$. Recta normal: $r_0 = \begin{cases} y - 3x = 8 \cr z - 4x = 9 \end{cases}$.
 
 </details>
 
@@ -468,7 +468,7 @@ La tercera componente es $-1 \ne 0$ ⇒ $\nabla F \ne \vec 0$ en todo punto, y $
 
 **Plano horizontal.** La normal tiene que ser paralela a $\breve k$, o sea $z'_x = z'_y = 0$:
 
-$$\begin{cases} 2x - y^3 + 1 = 0 \\ -3xy^2 = 0 \end{cases}$$
+$$\begin{cases} 2x - y^3 + 1 = 0 \cr -3xy^2 = 0 \end{cases}$$
 
 De la segunda, $x = 0$ o $y = 0$:
 
@@ -497,7 +497,7 @@ Sea $r_0$ la recta normal a la superficie de ecuación $z = \sqrt{9 - x^2 - y^2}
 
 **Paso 2 — Normal.** La superficie es la semiesfera $x^2 + y^2 + z^2 = 9$ con $z \ge 0$. Con $F = x^2 + y^2 + z^2$, $\nabla F = (2x, 2y, 2z) = (2, 4, 4) \parallel (1, 2, 2)$. Es radial, como en toda esfera.
 
-**Paso 3 — Recta normal.** $r_0: \vec X = (1,2,2) + t(1,2,2) = s\,(1, 2, 2)$, con $s = 1 + t$. Pasa por el origen.
+**Paso 3 — Recta normal.** $r_0: \vec X = (1,2,2) + t(1,2,2) = s\thinspace(1, 2, 2)$, con $s = 1 + t$. Pasa por el origen.
 
 **Paso 4 — Intersección con $z = x^2$.** $2s = s^2 \Rightarrow s(s - 2) = 0 \Rightarrow s = 0$ o $s = 2$:
 
@@ -564,7 +564,7 @@ Siendo $g(x,y) = 3x^4 - xy + y^3$, calcule la derivada direccional de $g$ en el 
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Versor.** $\breve r = (\cos\frac\pi3,\ \operatorname{sen}\frac\pi3) = \left(\frac12, \frac{\sqrt3}{2}\right)$.
+**Paso 1 — Versor.** $\breve r = (\cos\frac\pi3,\ \mathop{\mathrm{sen}}\frac\pi3) = \left(\frac12, \frac{\sqrt3}{2}\right)$.
 
 **Paso 2 — Gradiente** ($g$ es un polinomio, así que es diferenciable):
 
@@ -630,7 +630,7 @@ La temperatura en ºC en cada punto $(x,y,z)$ de un cuerpo es $T(x,y,z) = e^{2x 
 
 El mayor incremento está en la dirección del gradiente:
 
-$$\nabla T = e^{2x+y+3z}\,(2, 1, 3) \ \Rightarrow\ \nabla T(\bar 0) = (2, 1, 3), \qquad \lVert\nabla T\rVert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
+$$\nabla T = e^{2x+y+3z}\thinspace(2, 1, 3) \ \Rightarrow\ \nabla T(\bar 0) = (2, 1, 3), \qquad \lVert\nabla T\rVert = \sqrt{4 + 1 + 9} = \sqrt{14}$$
 
 El versor es $\breve r = \dfrac{(2,1,3)}{\sqrt{14}}$.
 
@@ -658,7 +658,7 @@ Sea $f \in C^1$, si $f'(\bar A,(3,4)) = 4$ y $f'(\bar A,(2,7)) = -6$.
 
 **Paso 1 — Planteo.** Como $f \in C^1$, es diferenciable y $f'(\bar A, \vec r) = \nabla f(\bar A)\cdot\vec r$ para **cualquier** vector $\vec r$. Llamamos $\nabla f(\bar A) = (a, b)$:
 
-$$\begin{cases} 3a + 4b = 4 \\ 2a + 7b = -6 \end{cases}$$
+$$\begin{cases} 3a + 4b = 4 \cr 2a + 7b = -6 \end{cases}$$
 
 **Paso 2 — Resolver.** Multiplicamos la primera por 2 y la segunda por 3, y restamos:
 
@@ -714,7 +714,7 @@ $$f(0{,}98;\ 0{,}01) \approx 1 + (-1)(-0{,}02) + 0\cdot(0{,}01) = 1{,}02$$
 
 ### 19) Plano tangente a una superficie implícita
 
-Dada la superficie $\Sigma$ de ecuación $z\,e^{y - 2x} - 5 = 0$, halle una ecuación cartesiana para el plano tangente a $\Sigma$ en $(1,2,z_0)$; con esta última calcule aproximadamente $z_1$ sabiendo que $(1.01,\ 1.97,\ z_1) \in \Sigma$.
+Dada la superficie $\Sigma$ de ecuación $z\thinspace e^{y - 2x} - 5 = 0$, halle una ecuación cartesiana para el plano tangente a $\Sigma$ en $(1,2,z_0)$; con esta última calcule aproximadamente $z_1$ sabiendo que $(1.01,\ 1.97,\ z_1) \in \Sigma$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -722,13 +722,13 @@ Dada la superficie $\Sigma$ de ecuación $z\,e^{y - 2x} - 5 = 0$, halle una ecua
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — $z_0$.** $z_0\,e^{2 - 2} - 5 = 0 \Rightarrow z_0 = 5$.
+**Paso 1 — $z_0$.** $z_0\thinspace e^{2 - 2} - 5 = 0 \Rightarrow z_0 = 5$.
 
-**Paso 2 — Despejar $z$.** $z = 5\,e^{2x - y}$, una función $C^1$.
+**Paso 2 — Despejar $z$.** $z = 5\thinspace e^{2x - y}$, una función $C^1$.
 
 **Paso 3 — Derivadas en $(1,2)$.**
 
-$$z'_x = 10\,e^{2x-y} \to 10, \qquad z'_y = -5\,e^{2x-y} \to -5$$
+$$z'_x = 10\thinspace e^{2x-y} \to 10, \qquad z'_y = -5\thinspace e^{2x-y} \to -5$$
 
 **Paso 4 — Plano tangente.**
 
@@ -782,7 +782,7 @@ $$f'((1,2), \breve r) = \left(-\frac12 - \frac34\right)\frac{1}{\sqrt2} = -\frac
 
 El resultado de la medición de una magnitud escalar $w$ es del tipo $w_0 \pm \varepsilon_w$, donde $w_0$ es el valor medido y $\varepsilon_w = |\Delta w|_{\text{máx}}$ es la ***cota de error absoluto*** de la medición. Cuando $w = f(x_1, \cdots, x_n)$ y se miden los $x_i$ para calcular $w$ a través de $f$, una forma acostumbrada de evaluar $\varepsilon_w$ es:
 
-$$\varepsilon_w = \sum_{i=1}^n |f'_{x_i}(A)|\,\varepsilon_{x_i}, \quad \text{donde } A = (a_1, \cdots, a_n), \ a_i \text{ es el valor medido para cada } x_i.$$
+$$\varepsilon_w = \sum_{i=1}^n |f'_{x_i}(A)|\thinspace\varepsilon_{x_i}, \quad \text{donde } A = (a_1, \cdots, a_n), \ a_i \text{ es el valor medido para cada } x_i.$$
 
 - a) Sea $I = 0.50$ mA la intensidad de corriente eléctrica a través de un resistor y $V = 0.44$ Volt la diferencia de potencial entre sus terminales. Sabiendo que $R = V / I$ es la resistencia eléctrica del resistor, determine $R \pm \varepsilon_R$ considerando que Volt/mA = kΩ<sup>(\*)</sup> y que ambos instrumentos tienen un error máximo de $\pm1$ en el dígito menos significativo (típico en instrumentos digitales).
 - b) Un recipiente tiene forma de cilindro circular recto, sus dimensiones internas son: diámetro $3.1 \pm 0.05$ cm y altura $5.2 \pm 0.05$ cm. Calcule su capacidad $V \pm \varepsilon_V$.
@@ -801,7 +801,7 @@ $$\varepsilon_w = \sum_{i=1}^n |f'_{x_i}(A)|\,\varepsilon_{x_i}, \quad \text{don
 
 *Fórmula:* $R = \dfrac{V}{I}$, $R'_V = \dfrac1I$, $R'_I = -\dfrac{V}{I^2}$:
 
-$$\varepsilon_R = \frac{1}{I}\,\varepsilon_V + \frac{V}{I^2}\,\varepsilon_I$$
+$$\varepsilon_R = \frac{1}{I}\thinspace\varepsilon_V + \frac{V}{I^2}\thinspace\varepsilon_I$$
 
 *Datos:* $V = 0{,}44$ V e $I = 0{,}50$ mA. Un error de $\pm1$ en el último dígito da $\varepsilon_V = 0{,}01$ V y $\varepsilon_I = 0{,}01$ mA.
 
@@ -814,7 +814,7 @@ $$\varepsilon_R = \frac{1}{I}\,\varepsilon_V + \frac{V}{I^2}\,\varepsilon_I$$
 
 *Fórmula:* $V = \pi\left(\dfrac d2\right)^2h = \dfrac{\pi d^2h}{4}$, con $V'_d = \dfrac{\pi dh}{2}$ y $V'_h = \dfrac{\pi d^2}{4}$:
 
-$$\varepsilon_V = \frac{\pi d h}{2}\,\varepsilon_d + \frac{\pi d^2}{4}\,\varepsilon_h$$
+$$\varepsilon_V = \frac{\pi d h}{2}\thinspace\varepsilon_d + \frac{\pi d^2}{4}\thinspace\varepsilon_h$$
 
 *Cálculo* con $d = 3{,}1$, $h = 5{,}2$ y $\varepsilon_d = \varepsilon_h = 0{,}05$:
 
@@ -837,9 +837,9 @@ $$\frac{\partial R_{EQ}}{\partial R_1} = \frac{R_2(R_1 + R_2) - R_1R_2}{(R_1+R_2
 
 - $R_{EQ} = \dfrac{39\cdot39}{78} = 19{,}5$ kΩ.
 - Ambas derivadas valen $\dfrac{39^2}{78^2} = \dfrac14$.
-- $\varepsilon_{R_1} = \varepsilon_{R_2} = 5\%\cdot39 = 1{,}95$ kΩ.
+- $\varepsilon_{R_1} = \varepsilon_{R_2} = 0{,}05\cdot39 = 1{,}95$ kΩ (5 % de 39).
 - $\varepsilon_{R_{EQ}} = \dfrac14(1{,}95) + \dfrac14(1{,}95) = 0{,}975$ kΩ.
-- Error relativo: $\dfrac{0{,}975}{19{,}5} = 5\%$.
+- Error relativo: $\dfrac{0{,}975}{19{,}5} = 0{,}05$, es decir 5 %.
 
 </details>
 
@@ -866,13 +866,13 @@ Demuestre que todo campo diferenciable es continuo y derivable en toda direcció
 <details>
 <summary>Solución paso a paso</summary>
 
-Por hipótesis, $f(\vec A + \vec h) - f(\vec A) = T(\vec h) + \lVert\vec h\rVert\,\varphi(\vec h)$, con $T$ lineal y $\varphi \to 0$.
+Por hipótesis, $f(\vec A + \vec h) - f(\vec A) = T(\vec h) + \lVert\vec h\rVert\thinspace\varphi(\vec h)$, con $T$ lineal y $\varphi \to 0$.
 
-**Continuidad.** Cuando $\vec h \to \vec 0$, $T(\vec h) \to 0$ (una transformación lineal es continua) y $\lVert\vec h\rVert\,\varphi(\vec h) \to 0$. Entonces $f(\vec A + \vec h) \to f(\vec A)$ ✓.
+**Continuidad.** Cuando $\vec h \to \vec 0$, $T(\vec h) \to 0$ (una transformación lineal es continua) y $\lVert\vec h\rVert\thinspace\varphi(\vec h) \to 0$. Entonces $f(\vec A + \vec h) \to f(\vec A)$ ✓.
 
 **Derivabilidad.** Tomamos $\vec h = t\vec r$:
 
-$$\frac{f(\vec A + t\vec r) - f(\vec A)}{t} = \frac{t\,T(\vec r) + |t|\,\lVert\vec r\rVert\,\varphi(t\vec r)}{t} = T(\vec r) \pm \lVert\vec r\rVert\,\varphi(t\vec r) \xrightarrow[t\to0]{} T(\vec r)$$
+$$\frac{f(\vec A + t\vec r) - f(\vec A)}{t} = \frac{t\thinspace T(\vec r) + |t|\thinspace\lVert\vec r\rVert\thinspace\varphi(t\vec r)}{t} = T(\vec r) \pm \lVert\vec r\rVert\thinspace\varphi(t\vec r) \xrightarrow[t\to0]{} T(\vec r)$$
 
 Por lo tanto $f'(\vec A, \vec r) = T(\vec r)$ existe para todo $\vec r$. $\blacksquare$
 
@@ -921,7 +921,7 @@ Determine los casos en los que $\Delta w = dw$.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $\Delta w - dw = \lVert\vec h\rVert\,\varphi(\vec h)$ es el "resto" de la aproximación lineal. Es nulo para **todo** incremento si y sólo si $f$ es **afín**: $f(\vec x) = \vec c\cdot\vec x + d$ (un polinomio de grado $\le 1$). En ese caso $f(\vec A + \vec h) - f(\vec A) = \vec c\cdot\vec h = df$ exactamente. Para otras funciones puede coincidir sólo para algunos incrementos particulares.
+**Respuesta:** $\Delta w - dw = \lVert\vec h\rVert\thinspace\varphi(\vec h)$ es el "resto" de la aproximación lineal. Es nulo para **todo** incremento si y sólo si $f$ es **afín**: $f(\vec x) = \vec c\cdot\vec x + d$ (un polinomio de grado $\le 1$). En ese caso $f(\vec A + \vec h) - f(\vec A) = \vec c\cdot\vec h = df$ exactamente. Para otras funciones puede coincidir sólo para algunos incrementos particulares.
 
 </details>
 
@@ -966,7 +966,7 @@ Además, sobre $x = y^{3/2}$ con $y \ge 0$ el límite da $1/3$. En ningún caso 
 
 **Respuesta:** Verifique que la $f$ propuesta cumple con la definición de diferenciabilidad en $(0,0)$. Por otra parte,
 
-$$f'_x(x,y) = \begin{cases} \dfrac{4x^2 + y^2}{3x^{2/3}\sqrt{x^2+y^2}} & \text{si } (x,y) \ne (0,y) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$$
+$$f'_x(x,y) = \begin{cases} \dfrac{4x^2 + y^2}{3x^{2/3}\sqrt{x^2+y^2}} & \text{si } (x,y) \ne (0,y) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$$
 
 con lo cual $f'_x$ no es continua en $(0,0)$. Esto puede demostrarse analizando límites por curvas: por ejemplo, acercándose por $x = y^2$, $\lim\limits_{y\to0} f'_x(y^2, y) = \infty$. También puede analizarse por $x = y^{3/2}$ con $y \ge 0$, que resulta $\lim\limits_{y\to0^+} f'_x(y^{3/2}, y) = 1/3$.
 

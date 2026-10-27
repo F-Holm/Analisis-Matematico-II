@@ -16,19 +16,19 @@ Para $f \in C^n$ en un entorno de $(x_0, y_0)$, con $h = x - x_0$ y $k = y - y_0
 
 **Orden 1** (es el plano tangente):
 
-$$P_1 = f(x_0,y_0) + f'_x\,h + f'_y\,k$$
+$$P_1 = f(x_0,y_0) + f'_x\thinspace h + f'_y\thinspace k$$
 
 **Orden 2:**
 
-$$P_2 = P_1 + \frac{1}{2!}\left(f''_{xx}\,h^2 + 2f''_{xy}\,hk + f''_{yy}\,k^2\right)$$
+$$P_2 = P_1 + \frac{1}{2!}\left(f''_{xx}\thinspace h^2 + 2f''_{xy}\thinspace hk + f''_{yy}\thinspace k^2\right)$$
 
 Todas las derivadas se evalúan en $(x_0,y_0)$.
 
 **Orden 3** (se suman los términos de 3.er orden):
 
-$$P_3 = P_2 + \frac{1}{3!}\left(f'''_{xxx}\,h^3 + 3f'''_{xxy}\,h^2k + 3f'''_{xyy}\,hk^2 + f'''_{yyy}\,k^3\right)$$
+$$P_3 = P_2 + \frac{1}{3!}\left(f'''_{xxx}\thinspace h^3 + 3f'''_{xxy}\thinspace h^2k + 3f'''_{xyy}\thinspace hk^2 + f'''_{yyy}\thinspace k^3\right)$$
 
-Los coeficientes son los binomiales, como en $(h\,\partial_x + k\,\partial_y)^n f$.
+Los coeficientes son los binomiales, como en $(h\thinspace\partial_x + k\thinspace\partial_y)^n f$.
 
 **Tres variables, orden 2:**
 
@@ -36,7 +36,7 @@ $$P_2 = f + f'_x h + f'_y k + f'_z l + \frac12\left(f''_{xx}h^2 + f''_{yy}k^2 + 
 
 **Forma matricial:**
 
-$$P_2(\vec X) = f(\vec A) + \nabla f(\vec A)\cdot\vec H + \tfrac12\,\vec H^{T}\,Hf(\vec A)\,\vec H, \qquad \vec H = \vec X - \vec A$$
+$$P_2(\vec X) = f(\vec A) + \nabla f(\vec A)\cdot\vec H + \tfrac12\thinspace\vec H^{T}\thinspace Hf(\vec A)\thinspace\vec H, \qquad \vec H = \vec X - \vec A$$
 
 **Propiedades:**
 
@@ -71,7 +71,7 @@ $f(\vec A)$ es:
 
 ## 3. Clasificación con el Hessiano
 
-$$Hf(\vec A) = \begin{pmatrix} f''_{xx} & f''_{xy} \\ f''_{xy} & f''_{yy} \end{pmatrix}_{\vec A}, \qquad H = \det Hf(\vec A) = f''_{xx}f''_{yy} - (f''_{xy})^2$$
+$$Hf(\vec A) = \begin{pmatrix} f''_{xx} & f''_{xy} \cr f''_{xy} & f''_{yy} \end{pmatrix}_{\vec A}, \qquad H = \det Hf(\vec A) = f''_{xx}f''_{yy} - (f''_{xy})^2$$
 
 **Caso $n = 2$** ($f \in C^2$, $\nabla f(\vec A) = \vec 0$):
 
@@ -124,11 +124,11 @@ $$f''_{xx} = -\frac{F''_{xx}}{F'_z}, \qquad f''_{xy} = -\frac{F''_{xy}}{F'_z}, \
 
 **Problema:** maximizar o minimizar $f(\vec X)$ sujeto a $g(\vec X) = 0$.
 
-**Método 1 — Sustitución / parametrización:** si se puede despejar una variable o parametrizar la restricción (una recta, una superficie dada como $\vec X(u,v)$, una elipse con $\cos$ y $\operatorname{sen}$), se reemplaza en $f$ y queda un problema **libre** con menos variables.
+**Método 1 — Sustitución / parametrización:** si se puede despejar una variable o parametrizar la restricción (una recta, una superficie dada como $\vec X(u,v)$, una elipse con $\cos$ y $\mathop{\mathrm{sen}}$), se reemplaza en $f$ y queda un problema **libre** con menos variables.
 
 **Método 2 — Lagrange:** si $f, g \in C^1$ y $\nabla g \ne \vec 0$, los extremos condicionados cumplen
 
-$$\boxed{\nabla f = \lambda\,\nabla g, \qquad g = 0}$$
+$$\boxed{\nabla f = \lambda\thinspace\nabla g, \qquad g = 0}$$
 
 Geométricamente, en el extremo la curva de nivel de $f$ es **tangente** a la restricción, así que sus normales son paralelas.
 
@@ -154,7 +154,7 @@ $$d^3F = F'''_{xxx}h^3 + 3F'''_{xxy}h^2k + 3F'''_{xyy}hk^2 + F'''_{yyy}k^3$$
 
 En general, con el "operador binomio":
 
-$$d^nF = \left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right)^{(n)}F = \sum_{i=0}^n\binom{n}{i}\frac{\partial^nF}{\partial x^{n-i}\partial y^i}\,h^{n-i}k^i$$
+$$d^nF = \left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right)^{(n)}F = \sum_{i=0}^n\binom{n}{i}\frac{\partial^nF}{\partial x^{n-i}\partial y^i}\thinspace h^{n-i}k^i$$
 
 (Schwarz permite juntar las derivadas cruzadas.)
 
@@ -192,13 +192,13 @@ Con $h = x - a$ y $k = y - b$ se obtiene el polinomio en potencias de $(x - a)$ 
 
 **Paso 2.** Taylor de orden 1 con resto de orden 2 (las derivadas primeras se anulan):
 
-$$2\,\Delta F = F''_{xx}h^2 + 2F''_{xy}hk + F''_{yy}k^2$$
+$$2\thinspace\Delta F = F''_{xx}h^2 + 2F''_{xy}hk + F''_{yy}k^2$$
 
 con las derivadas segundas evaluadas en $(x_0 + ch, y_0 + ck)$, $0 < c < 1$.
 
 **Paso 3.** Se saca $F''_{xx}$ de factor común y se completa el cuadrado:
 
-$$2\,\Delta F = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + \frac{F''_{xx}F''_{yy} - (F''_{xy})^2}{F''_{xx}}\,k^2 = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + \frac{H}{F''_{xx}}\,k^2$$
+$$2\thinspace\Delta F = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + \frac{F''_{xx}F''_{yy} - (F''_{xy})^2}{F''_{xx}}\thinspace k^2 = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + \frac{H}{F''_{xx}}\thinspace k^2$$
 
 **Paso 4 — casos:**
 
@@ -212,19 +212,19 @@ $$2\,\Delta F = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + \frac{F'
 
 **Ejemplo introductorio:** el rectángulo de perímetro 24 y área máxima. Se maximiza $A = xy$ con la restricción $\phi(x,y) = x + y - 12 = 0$. Fijar $A$ es elegir una curva de nivel de $A$; el extremo condicionado se da donde esa curva es **tangente** a la restricción, es decir donde sus normales son paralelas: $\nabla A = \lambda\nabla\phi$.
 
-$$\begin{cases} y = \lambda \\ x = \lambda \\ x + y = 12 \end{cases} \ \Rightarrow\ x = y = 6,\ A = 36$$
+$$\begin{cases} y = \lambda \cr x = \lambda \cr x + y = 12 \end{cases} \ \Rightarrow\ x = y = 6,\ A = 36$$
 
 Es el cuadrado de lado 6.
 
-**Teorema.** Si $F$ y $\phi$ tienen derivadas parciales continuas, $F$ tiene un extremo en $(x_0,y_0)$ sujeto a $\phi = 0$ y $\nabla\phi(x_0,y_0) \ne \vec 0$, entonces existe $k_0$ con $\nabla F(x_0,y_0) = k_0\,\nabla\phi(x_0,y_0)$.
+**Teorema.** Si $F$ y $\phi$ tienen derivadas parciales continuas, $F$ tiene un extremo en $(x_0,y_0)$ sujeto a $\phi = 0$ y $\nabla\phi(x_0,y_0) \ne \vec 0$, entonces existe $k_0$ con $\nabla F(x_0,y_0) = k_0\thinspace\nabla\phi(x_0,y_0)$.
 
-*Demostración.* La restricción es una curva $C$: $\vec r(t)$, con $\vec r(t_0) = P_0$. $F_C(t) = F(\vec r(t))$ tiene un extremo en $t_0$, así que $F_C'(t_0) = \nabla F(P_0)\cdot\vec r\,'(t_0) = 0$: $\nabla F(P_0)$ es perpendicular a la tangente de $C$. Además $\nabla\phi(P_0)$ también lo es, porque $C$ es una curva de nivel de $\phi$. Dos vectores perpendiculares a la misma dirección (en el plano) son paralelos. $\blacksquare$
+*Demostración.* La restricción es una curva $C$: $\vec r(t)$, con $\vec r(t_0) = P_0$. $F_C(t) = F(\vec r(t))$ tiene un extremo en $t_0$, así que $F_C'(t_0) = \nabla F(P_0)\cdot\vec r\thinspace'(t_0) = 0$: $\nabla F(P_0)$ es perpendicular a la tangente de $C$. Además $\nabla\phi(P_0)$ también lo es, porque $C$ es una curva de nivel de $\phi$. Dos vectores perpendiculares a la misma dirección (en el plano) son paralelos. $\blacksquare$
 
-**Función de Lagrange:** con $\lambda_0 = -k_0$, $L(x,y,\lambda) = F(x,y) + \lambda\,\phi(x,y)$, y los candidatos son los puntos con $\nabla L = \vec 0$. Con dos restricciones: $L = F + \lambda_1\phi_1 + \lambda_2\phi_2$.
+**Función de Lagrange:** con $\lambda_0 = -k_0$, $L(x,y,\lambda) = F(x,y) + \lambda\thinspace\phi(x,y)$, y los candidatos son los puntos con $\nabla L = \vec 0$. Con dos restricciones: $L = F + \lambda_1\phi_1 + \lambda_2\phi_2$.
 
 **Condición suficiente: Hessiano orlado.** En un punto $(x_0, y_0, \lambda_0)$ con $\nabla L = \vec 0$:
 
-$$H_0 = \begin{vmatrix} L''_{xx} & L''_{xy} & \phi'_x \\ L''_{xy} & L''_{yy} & \phi'_y \\ \phi'_x & \phi'_y & 0 \end{vmatrix}$$
+$$H_0 = \begin{vmatrix} L''_{xx} & L''_{xy} & \phi'_x \cr L''_{xy} & L''_{yy} & \phi'_y \cr \phi'_x & \phi'_y & 0 \end{vmatrix}$$
 
 - $H_0 > 0$ ⇒ **máximo** condicionado;
 - $H_0 < 0$ ⇒ **mínimo** condicionado;
@@ -232,7 +232,7 @@ $$H_0 = \begin{vmatrix} L''_{xx} & L''_{xy} & \phi'_x \\ L''_{xy} & L''_{yy} & \
 
 **Ejemplo 1:** extremos de $F = x^2 + y$ sobre $x^2 + y^2 = 9$. Con $L = x^2 + y - \lambda(x^2 + y^2 - 9)$:
 
-$$\begin{cases} 2x = 2\lambda x \\ 1 = 2\lambda y \\ x^2 + y^2 = 9 \end{cases}$$
+$$\begin{cases} 2x = 2\lambda x \cr 1 = 2\lambda y \cr x^2 + y^2 = 9 \end{cases}$$
 
 - $x = 0$: $y = \pm3$, con $\lambda = \pm\frac16$.
 - $\lambda = 1$: $y = \frac12$, $x = \pm\frac{\sqrt{35}}{2}$.

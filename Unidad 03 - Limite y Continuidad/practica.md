@@ -13,9 +13,9 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 Analice la existencia de los siguiente límites de funciones escalares de una variable.
 
 - a) $\displaystyle\lim_{x\to1} \frac{x^2 - 1}{x - 1}$.
-- b) $\displaystyle\lim_{x\to0} \frac{\operatorname{sen}(x)}{|x|}$.
+- b) $\displaystyle\lim_{x\to0} \frac{\mathop{\mathrm{sen}}(x)}{|x|}$.
 - c) $\displaystyle\lim_{x\to0} \sqrt{x}$.
-- d) $\displaystyle\lim_{x\to0} f(x)$ si $f(x) = \begin{cases} 2x - 1 & \text{si } x \ge 0 \\ x^2 & \text{si } x < 0 \end{cases}$.
+- d) $\displaystyle\lim_{x\to0} f(x)$ si $f(x) = \begin{cases} 2x - 1 & \text{si } x \ge 0 \cr x^2 & \text{si } x < 0 \end{cases}$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -29,8 +29,8 @@ $$\lim_{x\to1}\frac{(x-1)(x+1)}{x-1} = \lim_{x\to1}(x+1) = 2$$
 
 **b)** Como aparece $|x|$, calculamos los límites laterales:
 
-- Por derecha ($x > 0$, $|x| = x$): $\dfrac{\operatorname{sen}x}{x} \to 1$.
-- Por izquierda ($x < 0$, $|x| = -x$): $\dfrac{\operatorname{sen}x}{-x} \to -1$.
+- Por derecha ($x > 0$, $|x| = x$): $\dfrac{\mathop{\mathrm{sen}}x}{x} \to 1$.
+- Por izquierda ($x < 0$, $|x| = -x$): $\dfrac{\mathop{\mathrm{sen}}x}{-x} \to -1$.
 
 Son distintos ⇒ el límite no existe.
 
@@ -58,7 +58,7 @@ Son distintos ⇒ no existe.
 
 ### 02) Dominio natural de una función vectorial
 
-¿Por qué existe el $\displaystyle\lim_{u\to0} \left(\frac{\operatorname{sen}(u)}{|u|},\ u\ln(u)\right)$ pero no existe el $\displaystyle\lim_{u\to0} \left(\frac{\operatorname{sen}(u)}{|u|},\ u\right)$?
+¿Por qué existe el $\displaystyle\lim_{u\to0} \left(\frac{\mathop{\mathrm{sen}}(u)}{|u|},\ u\ln(u)\right)$ pero no existe el $\displaystyle\lim_{u\to0} \left(\frac{\mathop{\mathrm{sen}}(u)}{|u|},\ u\right)$?
 
 <details>
 <summary><b>Solución</b></summary>
@@ -68,22 +68,22 @@ Son distintos ⇒ no existe.
 
 **Clave:** el límite se toma **dentro del dominio natural** de la función, que es la intersección de los dominios de las componentes.
 
-**Primera función:** $\left(\dfrac{\operatorname{sen}u}{|u|},\ u\ln u\right)$.
+**Primera función:** $\left(\dfrac{\mathop{\mathrm{sen}}u}{|u|},\ u\ln u\right)$.
 
 - $\ln u$ exige $u > 0$, así que el dominio es $\mathbb{R}^+$ y sólo nos acercamos a 0 **por la derecha**.
-- Ahí $|u| = u$ y $\dfrac{\operatorname{sen}u}{u} \to 1$.
+- Ahí $|u| = u$ y $\dfrac{\mathop{\mathrm{sen}}u}{u} \to 1$.
 - $u\ln u \to 0$ (por L'Hôpital: $\dfrac{\ln u}{1/u}$ da $\dfrac{1/u}{-1/u^2} = -u \to 0$).
 - Ambas componentes tienen límite ⇒ el límite existe y es $(1, 0)$.
 
-**Segunda función:** $\left(\dfrac{\operatorname{sen}u}{|u|},\ u\right)$.
+**Segunda función:** $\left(\dfrac{\mathop{\mathrm{sen}}u}{|u|},\ u\right)$.
 
-- El dominio es $\mathbb{R} - \{0\}$, así que nos acercamos por los dos lados.
+- El dominio es $\mathbb{R} - \lbrace0\rbrace$, así que nos acercamos por los dos lados.
 - La primera componente tiende a $1$ por derecha y a $-1$ por izquierda ⇒ no tiene límite.
 - Un límite vectorial existe sólo si existen los de **todas** las componentes ⇒ no existe.
 
 </details>
 
-**Respuesta:** Al no aclararse otra cosa, $(\operatorname{sen}(u)/|u|,\ u\ln(u))$ tiene dominio natural $\mathbb{R}^+$ y ambas componentes tienen límite en $\mathbb{R}^+$. En cambio, $(\operatorname{sen}(u)/|u|,\ u)$ está definida en $\mathbb{R} - \{0\}$, donde no existe el $\displaystyle\lim_{u\to0}\operatorname{sen}(u)/|u|$.
+**Respuesta:** Al no aclararse otra cosa, $(\mathop{\mathrm{sen}}(u)/|u|,\ u\ln(u))$ tiene dominio natural $\mathbb{R}^+$ y ambas componentes tienen límite en $\mathbb{R}^+$. En cambio, $(\mathop{\mathrm{sen}}(u)/|u|,\ u)$ está definida en $\mathbb{R} - \lbrace0\rbrace$, donde no existe el $\displaystyle\lim_{u\to0}\mathop{\mathrm{sen}}(u)/|u|$.
 
 </details>
 
@@ -91,7 +91,7 @@ Son distintos ⇒ no existe.
 
 ### 03) Límite de una función vectorial
 
-Analice la existencia del $\displaystyle\lim_{u\to0}\left(\frac{1 - \cos(u)}{u^2},\ 1 + 2u,\ \frac{\operatorname{sen}(u^2)}{u^3 + u^2}\right)$.
+Analice la existencia del $\displaystyle\lim_{u\to0}\left(\frac{1 - \cos(u)}{u^2},\ 1 + 2u,\ \frac{\mathop{\mathrm{sen}}(u^2)}{u^3 + u^2}\right)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -103,13 +103,13 @@ El límite vectorial se calcula **componente a componente**.
 
 **Componente 1.** Multiplicamos y dividimos por $1 + \cos u$:
 
-$$\frac{1 - \cos u}{u^2} = \frac{1 - \cos^2 u}{u^2(1 + \cos u)} = \left(\frac{\operatorname{sen}u}{u}\right)^2\frac{1}{1 + \cos u} \to 1^2\cdot\frac12 = \frac12$$
+$$\frac{1 - \cos u}{u^2} = \frac{1 - \cos^2 u}{u^2(1 + \cos u)} = \left(\frac{\mathop{\mathrm{sen}}u}{u}\right)^2\frac{1}{1 + \cos u} \to 1^2\cdot\frac12 = \frac12$$
 
 **Componente 2.** $1 + 2u \to 1$.
 
 **Componente 3.** Sacamos factor común $u^2$ en el denominador:
 
-$$\frac{\operatorname{sen}(u^2)}{u^2(u + 1)} = \frac{\operatorname{sen}(u^2)}{u^2}\cdot\frac{1}{u+1} \to 1\cdot 1 = 1$$
+$$\frac{\mathop{\mathrm{sen}}(u^2)}{u^2(u + 1)} = \frac{\mathop{\mathrm{sen}}(u^2)}{u^2}\cdot\frac{1}{u+1} \to 1\cdot 1 = 1$$
 
 </details>
 
@@ -125,12 +125,12 @@ Represente el conjunto imagen de las siguientes funciones vectoriales de una var
 
 - a) $\vec g : \Re \to \Re^2 \ /\ \vec g(t) = (t,\ 2t)$
 - b) $\vec g : [-1, 2] \subset \Re \to \Re^2 \ /\ \vec g(u) = (u,\ |u|)$
-- c) $\vec g : [0, \pi] \subset \Re \to \Re^2 \ /\ \vec g(\varphi) = (\cos(\varphi),\ \operatorname{sen}(\varphi))$
+- c) $\vec g : [0, \pi] \subset \Re \to \Re^2 \ /\ \vec g(\varphi) = (\cos(\varphi),\ \mathop{\mathrm{sen}}(\varphi))$
 - d) $\vec g : \Re \to \Re^3 \ /\ \vec g(t) = (t,\ 2t,\ 1 - t)$
-- e) $\vec g : D \subset \Re \to \Re^2 \ /\ \vec g(x) = (x,\ x^2)$ con $D = \{x \in \Re \ /\ |x| > 1\}$
-- f) $\vec g(u) = \begin{cases} u^2 + 1 & \text{si } u \ge 0 \\ u^2 & \text{si } u < 0 \end{cases}$
+- e) $\vec g : D \subset \Re \to \Re^2 \ /\ \vec g(x) = (x,\ x^2)$ con $D = \lbrace x \in \Re \ /\ |x| > 1\rbrace$
+- f) $\vec g(u) = \begin{cases} u^2 + 1 & \text{si } u \ge 0 \cr u^2 & \text{si } u < 0 \end{cases}$
 
-> **Fe de erratas (31/07/18):** en el ítem 04-f dice $\vec g(u) = \begin{cases} u^2 + 1 & \text{si } u \ge 0 \\ u^2 & \text{si } u < 0 \end{cases}$, **debe decir** $\vec g(u) = \begin{cases} (u,\ u^2 + 1) & \text{si } u \ge 0 \\ (u,\ u^2) & \text{si } u < 0 \end{cases}$.
+> **Fe de erratas (31/07/18):** en el ítem 04-f dice $\vec g(u) = \begin{cases} u^2 + 1 & \text{si } u \ge 0 \cr u^2 & \text{si } u < 0 \end{cases}$, **debe decir** $\vec g(u) = \begin{cases} (u,\ u^2 + 1) & \text{si } u \ge 0 \cr (u,\ u^2) & \text{si } u < 0 \end{cases}$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -146,9 +146,9 @@ Represente el conjunto imagen de las siguientes funciones vectoriales de una var
 
 ![Imagen de (u, |u|)](img/tp03-ej04b.svg)
 
-**c)** $(\cos\varphi, \operatorname{sen}\varphi)$ con $\varphi \in [0,\pi]$: es la **semicircunferencia** superior de radio 1, recorrida de $(1,0)$ a $(-1,0)$ ⇒ **es curva**.
+**c)** $(\cos\varphi, \mathop{\mathrm{sen}}\varphi)$ con $\varphi \in [0,\pi]$: es la **semicircunferencia** superior de radio 1, recorrida de $(1,0)$ a $(-1,0)$ ⇒ **es curva**.
 
-**d)** $(t, 2t, 1 - t) = (0, 0, 1) + t\,(1, 2, -1)$: es una **recta en $\Re^3$** ⇒ **es curva**.
+**d)** $(t, 2t, 1 - t) = (0, 0, 1) + t\thinspace(1, 2, -1)$: es una **recta en $\Re^3$** ⇒ **es curva**.
 
 **e)** $(x, x^2)$ con $|x| > 1$: son dos arcos separados de la parábola $y = x^2$, uno con $x < -1$ y otro con $x > 1$. El dominio $(-\infty,-1)\cup(1,+\infty)$ **no es un intervalo** (es desconexo) ⇒ **no es curva**.
 
@@ -194,11 +194,11 @@ Analice la existencia de los siguientes límites de campos escalares.
 - j) $\displaystyle\lim_{(x,y)\to(0,0)} \frac{xy^3}{x^2 + y^6}$
 - k) $\displaystyle\lim_{(x,y)\to(0,0)} \frac{y}{x^2 + y^2}$
 - l) $\displaystyle\lim_{(x,y)\to(0,1)} e^{-y/x^2}$
-- m) $\displaystyle\lim_{(x,y)\to(0,0)} (y^3 + 1)\cos\!\left(\frac{1}{x^2 + y^2}\right)$
-- n) $\displaystyle\lim_{(x,y)\to(0,0)} (x + y)\operatorname{sen}(1/x)\cos(1/y)$
-- o) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} x^3/(x^2 - y^2) & \text{si } x^2 - y^2 \ne 0 \\ 0 & \text{si } x^2 - y^2 = 0 \end{cases}$
-- p) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} xy & \text{si } y \ge x \\ x\operatorname{sen}(\frac{1}{y}) & \text{si } y < x \end{cases}$
-- q) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} (x + y)/(x^2 + xy + y^2) & \text{si } (x,y) \ne (0,0) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$
+- m) $\displaystyle\lim_{(x,y)\to(0,0)} (y^3 + 1)\cos\negthinspace\left(\frac{1}{x^2 + y^2}\right)$
+- n) $\displaystyle\lim_{(x,y)\to(0,0)} (x + y)\mathop{\mathrm{sen}}(1/x)\cos(1/y)$
+- o) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} x^3/(x^2 - y^2) & \text{si } x^2 - y^2 \ne 0 \cr 0 & \text{si } x^2 - y^2 = 0 \end{cases}$
+- p) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} xy & \text{si } y \ge x \cr x\mathop{\mathrm{sen}}(\frac{1}{y}) & \text{si } y < x \end{cases}$
+- q) $\displaystyle\lim_{(x,y)\to(0,0)} f(x,y)$ si $f(x,y) = \begin{cases} (x + y)/(x^2 + xy + y^2) & \text{si } (x,y) \ne (0,0) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -214,7 +214,7 @@ Analice la existencia de los siguientes límites de campos escalares.
 
 **a)** Es $\frac00$. Factorizamos:
 
-$$\frac{x^3y - xy^3}{x^4 - y^4} = \frac{xy\,(x^2 - y^2)}{(x^2+y^2)(x^2-y^2)} = \frac{xy}{x^2+y^2}, \quad \text{si } x^2 \ne y^2$$
+$$\frac{x^3y - xy^3}{x^4 - y^4} = \frac{xy\thinspace(x^2 - y^2)}{(x^2+y^2)(x^2-y^2)} = \frac{xy}{x^2+y^2}, \quad \text{si } x^2 \ne y^2$$
 
 La expresión simplificada es continua en $(1,1)$ ⇒ $L = \dfrac{1\cdot1}{1+1} = \dfrac12$.
 
@@ -243,7 +243,7 @@ $$\frac{3x^2y}{x^2+y^2} = \underbrace{3y}_{\to 0}\cdot\underbrace{\frac{x^2}{x^2
 
 **f)** En polares:
 
-$$\frac{|r\cos\theta| + |r\operatorname{sen}\theta|}{r} = |\cos\theta| + |\operatorname{sen}\theta|$$
+$$\frac{|r\cos\theta| + |r\mathop{\mathrm{sen}}\theta|}{r} = |\cos\theta| + |\mathop{\mathrm{sen}}\theta|$$
 
 Depende de $\theta$: vale 1 en $\theta = 0$ y $\sqrt2$ en $\theta = \pi/4$ ⇒ $\nexists L$.
 
@@ -277,11 +277,11 @@ $$0 < e^{-y/x^2} < e^{-1/(2x^2)} \xrightarrow[x\to0]{} 0$$
 
 Por el sándwich, $L = 0$.
 
-**m)** $y^3 + 1 \to 1$, pero $\cos\!\left(\dfrac{1}{x^2+y^2}\right)$ oscila. Sobre $y = 0$ queda $\cos(1/x^2)$, que no tiene límite: sobre $x_n = \frac{1}{\sqrt{2n\pi}}$ vale 1 y sobre $x_n = \frac{1}{\sqrt{(2n+1)\pi}}$ vale $-1$ ⇒ $\nexists L$.
+**m)** $y^3 + 1 \to 1$, pero $\cos\negthinspace\left(\dfrac{1}{x^2+y^2}\right)$ oscila. Sobre $y = 0$ queda $\cos(1/x^2)$, que no tiene límite: sobre $x_n = \frac{1}{\sqrt{2n\pi}}$ vale 1 y sobre $x_n = \frac{1}{\sqrt{(2n+1)\pi}}$ vale $-1$ ⇒ $\nexists L$.
 
 **n)** Infinitésimo por acotada:
 
-$$\underbrace{(x + y)}_{\to 0}\cdot\underbrace{\operatorname{sen}(1/x)\cos(1/y)}_{|\cdot|\le 1} \to 0$$
+$$\underbrace{(x + y)}_{\to 0}\cdot\underbrace{\mathop{\mathrm{sen}}(1/x)\cos(1/y)}_{|\cdot|\le 1} \to 0$$
 
 **o)** Por rectas $y = mx$ (con $m \ne \pm1$) da $\dfrac{x^3}{x^2(1 - m^2)} = \dfrac{x}{1-m^2} \to 0$. Sobre las rectas $y = \pm x$, $f = 0$. Todo da 0, pero buscamos una **curva de nivel $k \ne 0$** que pase por el origen:
 
@@ -291,10 +291,10 @@ Para $x$ cerca de 0 el paréntesis es positivo, así que $y = \pm x\sqrt{1 - x/k
 
 ![Curvas de nivel de x³/(x²−y²): todas llegan al origen](img/tp03-ej05o.svg)
 
-**p)** Usamos el teorema de la **unión finita**: el dominio es $S_1 \cup S_2$, con $S_1 = \{y \ge x\}$ y $S_2 = \{y < x\}$.
+**p)** Usamos el teorema de la **unión finita**: el dominio es $S_1 \cup S_2$, con $S_1 = \lbrace y \ge x\rbrace$ y $S_2 = \lbrace y < x\rbrace$.
 
 - En $S_1$: $|xy| \to 0$.
-- En $S_2$: $|x\operatorname{sen}(1/y)| \le |x| \to 0$.
+- En $S_2$: $|x\mathop{\mathrm{sen}}(1/y)| \le |x| \to 0$.
 
 Ambos límites restringidos valen 0 y son 2 conjuntos que cubren el dominio ⇒ $L = 0$.
 
@@ -332,7 +332,7 @@ Esto no tiene límite finito ($\pm\infty$ según el lado) ⇒ $\nexists L$.
 
 ### 06) *Optativo*: límites en la frontera del dominio
 
-*Optativo*: Sea $f(x,y) = \dfrac{\operatorname{sen}(xy)}{\ln(1 - x^2)}$
+*Optativo*: Sea $f(x,y) = \dfrac{\mathop{\mathrm{sen}}(xy)}{\ln(1 - x^2)}$
 
 - a) Halle el dominio natural $D$ de $f$ y grafíquelo.
 - b) Analice si existe el $\displaystyle\lim_{(x,y)\to(a,b)} f(x,y)$ para puntos $(a,b) \in \partial D$ (frontera de $D$).
@@ -348,21 +348,21 @@ Esto no tiene límite finito ($\pm\infty$ según el lado) ⇒ $\nexists L$.
 - El logaritmo exige $1 - x^2 > 0 \iff |x| < 1$.
 - El denominador no se puede anular: $\ln(1 - x^2) \ne 0 \iff 1 - x^2 \ne 1 \iff x \ne 0$.
 
-$D = \{(x,y) : |x| < 1,\ x \ne 0\}$: dos franjas verticales abiertas.
+$D = \lbrace(x,y) : |x| < 1,\ x \ne 0\rbrace$: dos franjas verticales abiertas.
 
 ![Dominio: −1 < x < 1 sin el eje y](img/tp03-ej06.svg)
 
 La frontera son las rectas $x = -1$, $x = 0$ y $x = 1$.
 
-**b) Puntos $(\pm1, y_0)$:** cuando $x \to \pm1$, $1 - x^2 \to 0^+$ ⇒ $\ln(1 - x^2) \to -\infty$. El numerador está acotado ($|\operatorname{sen}| \le 1$):
+**b) Puntos $(\pm1, y_0)$:** cuando $x \to \pm1$, $1 - x^2 \to 0^+$ ⇒ $\ln(1 - x^2) \to -\infty$. El numerador está acotado ($|\mathop{\mathrm{sen}}| \le 1$):
 
 $$|f| \le \frac{1}{|\ln(1-x^2)|} \to 0$$
 
 Por lo tanto el límite es 0.
 
-**Puntos $(0, y_0)$:** cerca de $x = 0$ usamos $\ln(1 - x^2) \approx -x^2$ y $\operatorname{sen}(xy) \approx xy$. Más precisamente:
+**Puntos $(0, y_0)$:** cerca de $x = 0$ usamos $\ln(1 - x^2) \approx -x^2$ y $\mathop{\mathrm{sen}}(xy) \approx xy$. Más precisamente:
 
-$$f = \underbrace{\frac{\operatorname{sen}(xy)}{xy}}_{\to 1}\cdot\underbrace{\frac{-x^2}{\ln(1-x^2)}}_{\to 1}\cdot\left(-\frac{y}{x}\right)$$
+$$f = \underbrace{\frac{\mathop{\mathrm{sen}}(xy)}{xy}}_{\to 1}\cdot\underbrace{\frac{-x^2}{\ln(1-x^2)}}_{\to 1}\cdot\left(-\frac{y}{x}\right)$$
 
 (si $y = 0$, $f = 0$). El límite de $f$ es entonces el de $-\dfrac{y}{x}$:
 
@@ -373,7 +373,7 @@ $$f = \underbrace{\frac{\operatorname{sen}(xy)}{xy}}_{\to 1}\cdot\underbrace{\fr
 
 **Respuesta:**
 
-- a) $D = \{(x,y) \in \Re^2 / |x| < 1 \wedge x \ne 0\}$.
+- a) $D = \lbrace(x,y) \in \Re^2 / |x| < 1 \wedge x \ne 0\rbrace$.
 - b) $\nexists \displaystyle\lim_{(x,y)\to(0,y_0)} f(x,y)$, $\ \displaystyle\lim_{(x,y)\to(-1,y_0)} f(x,y) = \lim_{(x,y)\to(1,y_0)} f(x,y) = 0$.
 
 </details>
@@ -386,10 +386,10 @@ Analice la existencia de los siguientes límites.
 
 - a) $\displaystyle\lim_{(x,y,z)\to(0,0,0)} \frac{x + y - z}{x + y + z}$
 - b) $\displaystyle\lim_{(x,y)\to(1,1)} \frac{x + y - 2}{x - y}$
-- c) $\displaystyle\lim_{(x,y)\to(2,2)} \frac{\operatorname{sen}(4 - xy)}{16 - x^2y^2}$
+- c) $\displaystyle\lim_{(x,y)\to(2,2)} \frac{\mathop{\mathrm{sen}}(4 - xy)}{16 - x^2y^2}$
 - d) $\displaystyle\lim_{(x,y,z)\to(0,0,0)} \frac{xyz}{x^3 + y^3 + z^3}$
 - e) $\displaystyle\lim_{(x,y)\to(0,0)} \left(\frac{xy}{x^2 + y^2},\ \frac{e^{xy} - 1}{xy}\right)$
-- f) $\displaystyle\lim_{(x,y)\to(0,0)} \left(x\operatorname{sen}(1/y),\ \frac{1 - \cos(x)}{x^2}\right)$
+- f) $\displaystyle\lim_{(x,y)\to(0,0)} \left(x\mathop{\mathrm{sen}}(1/y),\ \frac{1 - \cos(x)}{x^2}\right)$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -413,7 +413,7 @@ Son distintos ⇒ $\nexists L$.
 
 **c)** Diferencia de cuadrados en el denominador: $16 - x^2y^2 = (4 - xy)(4 + xy)$. Con $u = 4 - xy \to 0$:
 
-$$\frac{\operatorname{sen}(4 - xy)}{(4 - xy)(4 + xy)} = \underbrace{\frac{\operatorname{sen}u}{u}}_{\to 1}\cdot\underbrace{\frac{1}{4 + xy}}_{\to 1/8} \to \frac18$$
+$$\frac{\mathop{\mathrm{sen}}(4 - xy)}{(4 - xy)(4 + xy)} = \underbrace{\frac{\mathop{\mathrm{sen}}u}{u}}_{\to 1}\cdot\underbrace{\frac{1}{4 + xy}}_{\to 1/8} \to \frac18$$
 
 **d)** Por dos caminos:
 
@@ -426,7 +426,7 @@ $$\frac{\operatorname{sen}(4 - xy)}{(4 - xy)(4 + xy)} = \underbrace{\frac{\opera
 
 **f)** Componente a componente:
 
-- $x\operatorname{sen}(1/y)$: $x \to 0$ y $|\operatorname{sen}(1/y)| \le 1$ ⇒ tiende a $0$.
+- $x\mathop{\mathrm{sen}}(1/y)$: $x \to 0$ y $|\mathop{\mathrm{sen}}(1/y)| \le 1$ ⇒ tiende a $0$.
 - $\dfrac{1 - \cos x}{x^2} \to \dfrac12$ (límite notable).
 
 </details>
@@ -490,7 +490,7 @@ Sea $C$ la curva de ecuación $\vec X = (t,\ t^2,\ 2t^2)$ con $t \in \Re$.
 
 **a)** Eliminamos el parámetro: $x = t$, $y = t^2 = x^2$, $z = 2t^2 = 2x^2$. Entonces:
 
-$$C: \begin{cases} y = x^2 \\ z = 2x^2 \end{cases} \quad\text{o también}\quad C: \begin{cases} y = x^2 \\ z = 2y \end{cases}$$
+$$C: \begin{cases} y = x^2 \cr z = 2x^2 \end{cases} \quad\text{o también}\quad C: \begin{cases} y = x^2 \cr z = 2y \end{cases}$$
 
 Son dos cilindros parabólicos (primera forma), o un cilindro parabólico y un plano (segunda forma).
 
@@ -510,7 +510,7 @@ Verificamos con los puntos de $C$: $x^2 + y = t^2 + t^2 = 2t^2 = z$ ✓. Todos l
 
 **Respuesta:**
 
-- a) Por ejemplo $C: \begin{cases} y = x^2 \\ z = 2x^2 \end{cases}$ (1); también podría ser $C: \begin{cases} y = x^2 \\ z = 2y \end{cases}$ (2).
+- a) Por ejemplo $C: \begin{cases} y = x^2 \cr z = 2x^2 \end{cases}$ (1); también podría ser $C: \begin{cases} y = x^2 \cr z = 2y \end{cases}$ (2).
 - b) La forma (2) muestra que los puntos de $C$ están sobre el plano de ecuación $z = 2y$; por lo tanto $C$ es una curva plana.
 - c) La ecuación cartesiana de la superficie es $z = x^2 + y$, y con ella cumplen todos los puntos de $C$.
 
@@ -522,14 +522,14 @@ Verificamos con los puntos de $C$: $x^2 + y = t^2 + t^2 = 2t^2 = z$ ✓. Todos l
 
 Analice la continuidad en el origen de los siguientes campos escalares.
 
-- a) $f(x,y) = \begin{cases} x^3/(x^2 + y) & \text{si } x^2 + y \ne 0 \\ 0 & \text{si } x^2 + y = 0 \end{cases}$
-- b) $f(x,y) = \begin{cases} \dfrac{1 - \cos(xy)}{x} & \text{si } x \ne 0 \\ 0 & \text{si } x = 0 \end{cases}$
-- c) $f(x,y) = \begin{cases} \operatorname{sen}(y)\operatorname{sen}(1/x) & \text{si } (x,y) \ne (0,y) \\ 0 & \text{si } (x,y) = (0,y) \end{cases}$
-- d) $f(x,y) = \begin{cases} \dfrac{xy^3}{x^2 + y^6} & \text{si } (x,y) \ne (0,0) \\ 0 & \text{si } (x,y) = (0,0) \end{cases}$
-- e) $f(x,y) = \begin{cases} \dfrac{y^2 - 4x^2}{y - 2x} & \text{si } y \ne 2x \\ 1 - x - y & \text{si } y = 2x \end{cases}$
-- f) $f(x,y) = \begin{cases} \dfrac{xy}{x^2 - y^2} & \text{si } |y| \ne |x| \\ 0 & \text{si } |y| = |x| \end{cases}$
-- g) $f(x,y) = \begin{cases} \dfrac{y^2}{x + y} & \text{si } x + y \ne 0 \\ 0 & \text{si } x + y = 0 \end{cases}$
-- h) $f(x,y) = \begin{cases} \dfrac{(2 + x^2)\operatorname{sen}(y)}{y} & \text{si } y \ne 0 \\ 2 & \text{si } y = 0 \end{cases}$
+- a) $f(x,y) = \begin{cases} x^3/(x^2 + y) & \text{si } x^2 + y \ne 0 \cr 0 & \text{si } x^2 + y = 0 \end{cases}$
+- b) $f(x,y) = \begin{cases} \dfrac{1 - \cos(xy)}{x} & \text{si } x \ne 0 \cr 0 & \text{si } x = 0 \end{cases}$
+- c) $f(x,y) = \begin{cases} \mathop{\mathrm{sen}}(y)\mathop{\mathrm{sen}}(1/x) & \text{si } (x,y) \ne (0,y) \cr 0 & \text{si } (x,y) = (0,y) \end{cases}$
+- d) $f(x,y) = \begin{cases} \dfrac{xy^3}{x^2 + y^6} & \text{si } (x,y) \ne (0,0) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$
+- e) $f(x,y) = \begin{cases} \dfrac{y^2 - 4x^2}{y - 2x} & \text{si } y \ne 2x \cr 1 - x - y & \text{si } y = 2x \end{cases}$
+- f) $f(x,y) = \begin{cases} \dfrac{xy}{x^2 - y^2} & \text{si } |y| \ne |x| \cr 0 & \text{si } |y| = |x| \end{cases}$
+- g) $f(x,y) = \begin{cases} \dfrac{y^2}{x + y} & \text{si } x + y \ne 0 \cr 0 & \text{si } x + y = 0 \end{cases}$
+- h) $f(x,y) = \begin{cases} \dfrac{(2 + x^2)\mathop{\mathrm{sen}}(y)}{y} & \text{si } y \ne 0 \cr 2 & \text{si } y = 0 \end{cases}$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -547,13 +547,13 @@ Esta curva pasa por el origen y, para $x \ne 0$ chico, cumple $x^2 + y = x^3/k \
 
 ![Curvas de nivel de x³/(x²+y) que llegan al origen](img/tp03-ej10a.svg)
 
-**b)** $f(0,0) = 0$. Usamos $1 - \cos u = 2\operatorname{sen}^2(u/2) \le \dfrac{u^2}{2}$:
+**b)** $f(0,0) = 0$. Usamos $1 - \cos u = 2\mathop{\mathrm{sen}}\nolimits^2(u/2) \le \dfrac{u^2}{2}$:
 
-$$|f| = \frac{1 - \cos(xy)}{|x|} \le \frac{x^2y^2}{2|x|} = \frac{|x|\,y^2}{2} \to 0$$
+$$|f| = \frac{1 - \cos(xy)}{|x|} \le \frac{x^2y^2}{2|x|} = \frac{|x|\thinspace y^2}{2} \to 0$$
 
 En los puntos con $x = 0$, $f = 0$ también. Entonces el límite es $0 = f(0,0)$ ⇒ **continua**.
 
-**c)** $f(0,0) = 0$. Fuera del eje $y$: $|\operatorname{sen}(y)\operatorname{sen}(1/x)| \le |\operatorname{sen} y| \to 0$. Sobre el eje $y$, $f = 0$. Entonces el límite es $0 = f(0,0)$ ⇒ **continua**.
+**c)** $f(0,0) = 0$. Fuera del eje $y$: $|\mathop{\mathrm{sen}}(y)\mathop{\mathrm{sen}}(1/x)| \le |\mathop{\mathrm{sen}} y| \to 0$. Sobre el eje $y$, $f = 0$. Entonces el límite es $0 = f(0,0)$ ⇒ **continua**.
 
 **d)** Sobre $x = y^3$: $\dfrac{y^6}{2y^6} = \dfrac12$. Sobre $y = 0$: 0. ⇒ No existe el límite ⇒ **no es continua**.
 
@@ -570,7 +570,7 @@ Son límites restringidos distintos (0 y 1) ⇒ no existe el límite ⇒ **no es
 
 **h)** $f(0,0) = 2$.
 
-- Para $y \ne 0$: $(2 + x^2)\cdot\dfrac{\operatorname{sen}y}{y} \to 2\cdot 1 = 2$.
+- Para $y \ne 0$: $(2 + x^2)\cdot\dfrac{\mathop{\mathrm{sen}}y}{y} \to 2\cdot 1 = 2$.
 - Sobre $y = 0$: $f = 2$.
 
 Entonces el límite es $2 = f(0,0)$ ⇒ **continua**.
@@ -592,12 +592,12 @@ Entonces el límite es $2 = f(0,0)$ ⇒ **continua**.
 
 Analice la posibilidad de redefinir la función extendiendo su dominio por continuidad.
 
-- a) $f : \Re^2 - \{\bar 0\} \to \Re \ /\ \vec f(x,y) = (x^2,\ xy^2)/(x^2 + y^2)$.
-- b) $f(x,y) = x\operatorname{sen}(xy)/y$ si $(x,y) \ne (x,0)$.
+- a) $f : \Re^2 - \lbrace\bar 0\rbrace \to \Re \ /\ \vec f(x,y) = (x^2,\ xy^2)/(x^2 + y^2)$.
+- b) $f(x,y) = x\mathop{\mathrm{sen}}(xy)/y$ si $(x,y) \ne (x,0)$.
 - c) $\vec g : \Re^+ \to \Re^3 \ /\ \vec g(t) = \left(\dfrac{t}{|t|},\ t\ln(t),\ \dfrac{1 - \cos(t)}{t}\right)$.
 - d) $\vec g(u) = (\sqrt{u^2}/u,\ \sqrt{u})$ si $u > 0$.
 
-> **Fe de erratas (31/07/18):** en el ítem 11-a dice $f : \Re^2 - \{\bar 0\} \to \Re$, **debe decir** $f : \Re^2 - \{\bar 0\} \to \Re^2$.
+> **Fe de erratas (31/07/18):** en el ítem 11-a dice $f : \Re^2 - \lbrace\bar 0\rbrace \to \Re$, **debe decir** $f : \Re^2 - \lbrace\bar 0\rbrace \to \Re^2$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -616,10 +616,10 @@ Analice la posibilidad de redefinir la función extendiendo su dominio por conti
 
 **b)** El dominio es $y \ne 0$; faltan los puntos del eje $x$, $(a, 0)$. Escribimos:
 
-$$f = \frac{x\operatorname{sen}(xy)}{y} = x^2\cdot\frac{\operatorname{sen}(xy)}{xy} \quad (x \ne 0)$$
+$$f = \frac{x\mathop{\mathrm{sen}}(xy)}{y} = x^2\cdot\frac{\mathop{\mathrm{sen}}(xy)}{xy} \quad (x \ne 0)$$
 
-- Si $a \ne 0$: cuando $(x,y)\to(a,0)$, $xy \to 0$ y $\dfrac{\operatorname{sen}(xy)}{xy} \to 1$ ⇒ $f \to a^2$.
-- Si $a = 0$: $|f| \le x^2 \to 0 = a^2$, usando $|\operatorname{sen}u| \le |u|$. Los puntos con $x = 0$ dan $f = 0$.
+- Si $a \ne 0$: cuando $(x,y)\to(a,0)$, $xy \to 0$ y $\dfrac{\mathop{\mathrm{sen}}(xy)}{xy} \to 1$ ⇒ $f \to a^2$.
+- Si $a = 0$: $|f| \le x^2 \to 0 = a^2$, usando $|\mathop{\mathrm{sen}}u| \le |u|$. Los puntos con $x = 0$ dan $f = 0$.
 
 Entonces el límite en $(a, 0)$ existe y vale $a^2$ ⇒ **sí**, definiendo $f(x, 0) = x^2$.
 
@@ -651,7 +651,7 @@ Entonces el límite en $(a, 0)$ existe y vale $a^2$ ⇒ **sí**, definiendo $f(x
 Determine el conjunto de puntos del plano para los cuales $f$ es continua y realice la representación geométrica de la gráfica de $f$.
 
 - a) $f(x,y) = \sqrt{4 - x^2 - y^2}$ si $y \le 0 \ \wedge\ x^2 + y^2 \le 4$, $\ f(x,y) = 0 \ \ \forall$otro $(x,y)$.
-- b) $f(x,y) = \dfrac{\operatorname{sen}(x^2 + y^2)}{x^2 + y^2}$ si $(x,y) \ne (0,0)$, $\ f(x,y) = 1$ si $(x,y) = (0,0)$.
+- b) $f(x,y) = \dfrac{\mathop{\mathrm{sen}}(x^2 + y^2)}{x^2 + y^2}$ si $(x,y) \ne (0,0)$, $\ f(x,y) = 1$ si $(x,y) = (0,0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -674,18 +674,18 @@ Determine el conjunto de puntos del plano para los cuales $f$ es continua y real
 
 ![En verde, la región donde f = √(4−x²−y²); en rojo, el segmento de discontinuidad](img/tp03-ej12a.svg)
 
-**b)** **Gráfica:** es una superficie de revolución, $z = \dfrac{\operatorname{sen}(r^2)}{r^2}$ con $r^2 = x^2 + y^2$: ondas concéntricas amortiguadas que valen 1 en el centro.
+**b)** **Gráfica:** es una superficie de revolución, $z = \dfrac{\mathop{\mathrm{sen}}(r^2)}{r^2}$ con $r^2 = x^2 + y^2$: ondas concéntricas amortiguadas que valen 1 en el centro.
 
 **Continuidad:**
 
 - Fuera del origen es cociente de continuas con denominador no nulo ⇒ continua.
-- En el origen: con $u = x^2 + y^2 \to 0^+$, $\dfrac{\operatorname{sen}u}{u} \to 1 = f(0,0)$ ⇒ continua.
+- En el origen: con $u = x^2 + y^2 \to 0^+$, $\dfrac{\mathop{\mathrm{sen}}u}{u} \to 1 = f(0,0)$ ⇒ continua.
 
 </details>
 
 **Respuesta:**
 
-- a) $\Re^2 - \{(x,0) \in \Re^2 / -2 < x < 2\}$.
+- a) $\Re^2 - \lbrace(x,0) \in \Re^2 / -2 < x < 2\rbrace$.
 - b) $\Re^2$.
 
 </details>
@@ -707,7 +707,7 @@ Sea $f(x,y) = x^3/(x^2 + y^2)$ si $(x,y) \ne (0,0)$, $f(0,0) = 0$.
 
 **a)** Escribimos $f$ como infinitésimo por acotada:
 
-$$f(x,y) = \underbrace{x}_{\to 0}\cdot\underbrace{\frac{x^2}{x^2+y^2}}_{0\,\le\,\cdot\,\le\,1}$$
+$$f(x,y) = \underbrace{x}_{\to 0}\cdot\underbrace{\frac{x^2}{x^2+y^2}}_{0\thinspace\le\thinspace\cdot\thinspace\le\thinspace1}$$
 
 En todo entorno reducido del origen vale $\left|\dfrac{x^2}{x^2+y^2}\right| \le 1$. Entonces $|f(x,y)| \le |x| \to 0$, y el límite es $0 = f(0,0)$ ⇒ continua.
 
@@ -775,9 +775,9 @@ Defina límite de un campo cuando $\vec X \to \vec A$ acercándose por una curva
 
 **Respuesta:** sea $C$ una curva parametrizada por $\vec g: I \to \Re^n$ continua, con $\vec g(t_0) = \vec A$, y con $\vec A$ punto de acumulación de $C \cap D_f$. El límite de $f$ acercándose a $\vec A$ por $C$ es el límite restringido a $C$:
 
-$$\lim_{\substack{\vec X\to\vec A \\ \vec X\in C}} f(\vec X) = \lim_{t\to t_0} f(\vec g(t))$$
+$$\lim_{\substack{\vec X\to\vec A \cr \vec X\in C}} f(\vec X) = \lim_{t\to t_0} f(\vec g(t))$$
 
-Es decir: $L_C$ es ese límite si $\forall\varepsilon>0\ \exists\delta>0$ tal que si $\vec X \in C \cap D_f$ y $0 < \|\vec X - \vec A\| < \delta$, entonces $|f(\vec X) - L_C| < \varepsilon$.
+Es decir: $L_C$ es ese límite si $\forall\varepsilon>0\ \exists\delta>0$ tal que si $\vec X \in C \cap D_f$ y $0 < \Vert\vec X - \vec A\Vert < \delta$, entonces $|f(\vec X) - L_C| < \varepsilon$.
 
 </details>
 
@@ -790,7 +790,7 @@ Indique un ejemplo de campo escalar con una discontinuidad evitable.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $f(x,y) = \begin{cases} \dfrac{\operatorname{sen}(x^2+y^2)}{x^2+y^2} & (x,y)\ne(0,0) \\ 0 & (x,y) = (0,0) \end{cases}$.
+**Respuesta:** $f(x,y) = \begin{cases} \dfrac{\mathop{\mathrm{sen}}(x^2+y^2)}{x^2+y^2} & (x,y)\ne(0,0) \cr 0 & (x,y) = (0,0) \end{cases}$.
 
 El límite en el origen existe y vale 1, pero $f(0,0) = 0 \ne 1$. Redefiniendo $f(0,0) = 1$ queda continua.
 
@@ -805,7 +805,7 @@ Indique un ejemplo de campo escalar con una discontinuidad esencial.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $f(x,y) = \begin{cases} \dfrac{2xy}{x^2+y^2} & (x,y)\ne(0,0) \\ 0 & (x,y) = (0,0) \end{cases}$.
+**Respuesta:** $f(x,y) = \begin{cases} \dfrac{2xy}{x^2+y^2} & (x,y)\ne(0,0) \cr 0 & (x,y) = (0,0) \end{cases}$.
 
 El límite en el origen no existe: por $y = mx$ da $\dfrac{2m}{1+m^2}$. Ningún valor de $f(0,0)$ la hace continua.
 
@@ -823,7 +823,7 @@ Demuestre que toda función escalar continua y no nula en un punto, mantiene su 
 <details>
 <summary>Solución paso a paso</summary>
 
-Sea $f$ continua en $\vec A$ con $f(\vec A) \ne 0$. Tomamos en la definición de continuidad $\varepsilon = \dfrac{|f(\vec A)|}{2} > 0$. Existe $\delta > 0$ tal que si $\|\vec X - \vec A\| < \delta$:
+Sea $f$ continua en $\vec A$ con $f(\vec A) \ne 0$. Tomamos en la definición de continuidad $\varepsilon = \dfrac{|f(\vec A)|}{2} > 0$. Existe $\delta > 0$ tal que si $\Vert\vec X - \vec A\Vert < \delta$:
 
 $$|f(\vec X) - f(\vec A)| < \frac{|f(\vec A)|}{2}$$
 
@@ -851,10 +851,10 @@ Indique un ejemplo de campo escalar que tenga límite, aún con límites sucesiv
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** $f(x,y) = x\operatorname{sen}(1/y) + y\operatorname{sen}(1/x)$ en el origen.
+**Respuesta:** $f(x,y) = x\mathop{\mathrm{sen}}(1/y) + y\mathop{\mathrm{sen}}(1/x)$ en el origen.
 
 - **Tiene límite 0:** $|f| \le |x| + |y| \to 0$.
-- **Los iterados no existen:** por ejemplo, para $x \ne 0$ fijo, $\lim_{y\to0}[x\operatorname{sen}(1/y)]$ no existe, porque el seno oscila.
+- **Los iterados no existen:** por ejemplo, para $x \ne 0$ fijo, $\lim_{y\to0}[x\mathop{\mathrm{sen}}(1/y)]$ no existe, porque el seno oscila.
 
 </details>
 

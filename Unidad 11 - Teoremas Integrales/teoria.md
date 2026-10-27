@@ -17,27 +17,27 @@ Para $\vec f = (P, Q, R)$:
 | Operador | Definición | Resultado |
 |---|---|---|
 | Gradiente | $\nabla\phi = (\phi'_x, \phi'_y, \phi'_z)$ | vector |
-| Divergencia | $\operatorname{div}\vec f = \nabla\cdot\vec f = P'_x + Q'_y + R'_z$ | escalar |
-| Rotor | $\operatorname{rot}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ | vector |
-| Laplaciano | $\nabla^2\phi = \operatorname{div}(\nabla\phi) = \phi''_{xx} + \phi''_{yy} + \phi''_{zz}$ | escalar |
+| Divergencia | $\mathop{\mathrm{div}}\vec f = \nabla\cdot\vec f = P'_x + Q'_y + R'_z$ | escalar |
+| Rotor | $\mathop{\mathrm{rot}}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ | vector |
+| Laplaciano | $\nabla^2\phi = \mathop{\mathrm{div}}(\nabla\phi) = \phi''_{xx} + \phi''_{yy} + \phi''_{zz}$ | escalar |
 
 El rotor se calcula con el "determinante":
 
-$$\operatorname{rot}\vec f = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ \partial_x & \partial_y & \partial_z \\ P & Q & R \end{vmatrix}$$
+$$\mathop{\mathrm{rot}}\vec f = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr \partial_x & \partial_y & \partial_z \cr P & Q & R \end{vmatrix}$$
 
 **Clasificación de campos:**
 
-- **Solenoidal:** $\operatorname{div}\vec f \equiv 0$ (no tiene "fuentes" ni "sumideros").
-- **Irrotacional:** $\operatorname{rot}\vec f \equiv \vec 0$, que equivale a que $D\vec f$ sea simétrica.
+- **Solenoidal:** $\mathop{\mathrm{div}}\vec f \equiv 0$ (no tiene "fuentes" ni "sumideros").
+- **Irrotacional:** $\mathop{\mathrm{rot}}\vec f \equiv \vec 0$, que equivale a que $D\vec f$ sea simétrica.
 - **Armónico** (para un campo escalar): $\nabla^2\phi \equiv 0$.
 
 **Identidades:**
 
-- $\operatorname{rot}(\nabla\phi) = \vec 0$ (con $\phi\in C^2$).
-- $\operatorname{div}(\operatorname{rot}\vec g) = 0$ (con $\vec g\in C^2$).
-- $\operatorname{div}(f\vec g) = f\operatorname{div}\vec g + \nabla f\cdot\vec g$.
-- $\operatorname{rot}(f\vec g) = f\operatorname{rot}\vec g + \nabla f\wedge\vec g$.
-- $\operatorname{div}(\vec f\wedge\vec g) = \operatorname{rot}\vec f\cdot\vec g - \vec f\cdot\operatorname{rot}\vec g$.
+- $\mathop{\mathrm{rot}}(\nabla\phi) = \vec 0$ (con $\phi\in C^2$).
+- $\mathop{\mathrm{div}}(\mathop{\mathrm{rot}}\vec g) = 0$ (con $\vec g\in C^2$).
+- $\mathop{\mathrm{div}}(f\vec g) = f\mathop{\mathrm{div}}\vec g + \nabla f\cdot\vec g$.
+- $\mathop{\mathrm{rot}}(f\vec g) = f\mathop{\mathrm{rot}}\vec g + \nabla f\wedge\vec g$.
+- $\mathop{\mathrm{div}}(\vec f\wedge\vec g) = \mathop{\mathrm{rot}}\vec f\cdot\vec g - \vec f\cdot\mathop{\mathrm{rot}}\vec g$.
 
 **Interpretación física:**
 
@@ -55,7 +55,7 @@ $$\operatorname{rot}\vec f = \begin{vmatrix} \breve\imath & \breve\jmath & \brev
 
 **Tesis:**
 
-$$\boxed{\oint_{\partial D^+}P\,dx + Q\,dy = \iint_D\left(Q'_x - P'_y\right)dx\,dy}$$
+$$\boxed{\oint_{\partial D^+}P\thinspace dx + Q\thinspace dy = \iint_D\left(Q'_x - P'_y\right)dx\thinspace dy}$$
 
 **Orientación positiva:** se recorre la frontera dejando la región **a la izquierda**. La curva exterior va en sentido antihorario y las curvas interiores (los "agujeros"), en sentido horario.
 
@@ -65,7 +65,7 @@ $$\boxed{\oint_{\partial D^+}P\,dx + Q\,dy = \iint_D\left(Q'_x - P'_y\right)dx\,
 
 - **Área con una integral de línea:** si $Q'_x - P'_y = 1$, entonces $A(D) = \oint_{\partial D^+}\vec f\cdot d\vec s$. Por ejemplo:
 
-$$A = \oint x\,dy = -\oint y\,dx = \frac12\oint(x\,dy - y\,dx)$$
+$$A = \oint x\thinspace dy = -\oint y\thinspace dx = \frac12\oint(x\thinspace dy - y\thinspace dx)$$
 
   En general, si $Q'_x - P'_y = k \ne 0$ es constante, $A = \frac1k\oint\vec f\cdot d\vec s$.
 - **Circulación fácil:** si $Q'_x - P'_y$ es simple (constante, o lineal con una región simétrica), Green ahorra parametrizar curvas complicadas.
@@ -75,7 +75,7 @@ $$A = \oint x\,dy = -\oint y\,dx = \frac12\oint(x\,dy - y\,dx)$$
 
 Si $\vec f$ no es $C^1$ en un punto $A$, **no** se puede aplicar Green a una región que lo contenga. Se aplica a la región **entre dos curvas** que rodean a $A$:
 
-$$\oint_{C_1^+}\vec f\cdot d\vec s - \oint_{C_2^+}\vec f\cdot d\vec s = \iint_{\text{entre } C_1 \text{ y } C_2}(Q'_x - P'_y)\,dA$$
+$$\oint_{C_1^+}\vec f\cdot d\vec s - \oint_{C_2^+}\vec f\cdot d\vec s = \iint_{\text{entre } C_1 \text{ y } C_2}(Q'_x - P'_y)\thinspace dA$$
 
 donde ambas curvas se recorren en sentido antihorario.
 
@@ -90,7 +90,7 @@ Sea $\vec f\in C^1$ con $D\vec f$ simétrica ($Q'_x = P'_y$) en su dominio $D$.
 | Dominio | ¿Admite potencial? |
 |---|---|
 | Simplemente conexo (sin agujeros), por ejemplo $\mathbb{R}^2$ | **Sí**: por Green toda circulación cerrada es 0 |
-| $\mathbb{R}^2 - \{A\}$ | **Sí, si y sólo si** la circulación sobre **una** curva que rodee a $A$ es 0. Si da $\ne 0$, no admite |
+| $\mathbb{R}^2 - \lbrace A\rbrace$ | **Sí, si y sólo si** la circulación sobre **una** curva que rodee a $A$ es 0. Si da $\ne 0$, no admite |
 
 **Ejemplo típico:** $\left(\dfrac{-y}{x^2+y^2}, \dfrac{x}{x^2+y^2}\right)$ tiene jacobiana simétrica y circulación $2\pi$ alrededor del origen ⇒ no admite potencial.
 
@@ -105,19 +105,19 @@ Sea $\vec f\in C^1$ con $D\vec f$ simétrica ($Q'_x = P'_y$) en su dominio $D$.
 
 **Tesis:**
 
-$$\boxed{\oint\!\!\!\oint_{\partial H}\vec f\cdot\breve n\,d\sigma = \iiint_H\operatorname{div}\vec f\,dV}$$
+$$\boxed{\oint\negthinspace\negthinspace\negthinspace\oint_{\partial H}\vec f\cdot\breve n\thinspace d\sigma = \iiint_H\mathop{\mathrm{div}}\vec f\thinspace dV}$$
 
 ### Usos típicos
 
 - **Flujo a través de una superficie cerrada:** con una sola integral triple, en lugar de una integral por cada cara.
 - **Flujo a través de una superficie abierta $S$** (por ejemplo, un paraboloide): se la **cierra** con una "tapa" $T$ simple, como un disco plano:
 
-$$\Phi_S = \iiint_H\operatorname{div}\vec f\,dV - \Phi_T$$
+$$\Phi_S = \iiint_H\mathop{\mathrm{div}}\vec f\thinspace dV - \Phi_T$$
 
   Hay que cuidar que las normales de $S$ y $T$ sean salientes, y ajustar el signo según la orientación pedida.
-- **Campos solenoidales** ($\operatorname{div} = 0$): el flujo a través de cualquier superficie cerrada es 0, y el flujo a través de superficies con el **mismo borde** es el mismo.
-- **Campos con una singularidad** en $A$ y $\operatorname{div} = 0$ fuera de $A$: el flujo a través de una superficie cerrada es 0 si no encierra a $A$, y es **siempre el mismo** si lo encierra (ley de Gauss: $4\pi kq$ para el campo de una carga puntual).
-- **Simetrías:** si $\operatorname{div}\vec f$ es impar respecto de un plano de simetría del cuerpo, la integral triple es 0.
+- **Campos solenoidales** ($\mathop{\mathrm{div}} = 0$): el flujo a través de cualquier superficie cerrada es 0, y el flujo a través de superficies con el **mismo borde** es el mismo.
+- **Campos con una singularidad** en $A$ y $\mathop{\mathrm{div}} = 0$ fuera de $A$: el flujo a través de una superficie cerrada es 0 si no encierra a $A$, y es **siempre el mismo** si lo encierra (ley de Gauss: $4\pi kq$ para el campo de una carga puntual).
+- **Simetrías:** si $\mathop{\mathrm{div}}\vec f$ es impar respecto de un plano de simetría del cuerpo, la integral triple es 0.
 
 ---
 
@@ -130,7 +130,7 @@ $$\Phi_S = \iiint_H\operatorname{div}\vec f\,dV - \Phi_T$$
 
 **Tesis:**
 
-$$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec f\cdot\breve n\,d\sigma}$$
+$$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\mathop{\mathrm{rot}}\vec f\cdot\breve n\thinspace d\sigma}$$
 
 **Orientaciones compatibles (regla de la mano derecha):** si el pulgar apunta como $\breve n$, los dedos indican el sentido de recorrido de $\partial S$. Equivalentemente, caminando sobre el borde con la cabeza hacia $\breve n$, la superficie queda **a la izquierda**.
 
@@ -139,8 +139,8 @@ $$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec
 ### Usos típicos
 
 - **Circulación en el espacio** sobre una curva cerrada complicada (la intersección de dos superficies): se elige la superficie **más simple** cuyo borde sea esa curva (casi siempre un trozo de plano) y se calcula el flujo del rotor.
-- **Green es el caso plano de Stokes:** $\breve n = \breve k$ y $\operatorname{rot}\vec f\cdot\breve k = Q'_x - P'_y$.
-- **Potencial en el espacio:** si $\operatorname{rot}\vec f = \vec 0$ en un dominio **simplemente conexo** (por ejemplo $\mathbb{R}^3$, o $\mathbb{R}^3 - \{A\}$, que sí lo es), toda curva cerrada es borde de una superficie dentro del dominio, por Stokes la circulación es 0 y existe la potencial. $\mathbb{R}^3$ menos una **recta** (por ejemplo el eje $z$) **no** es simplemente conexo.
+- **Green es el caso plano de Stokes:** $\breve n = \breve k$ y $\mathop{\mathrm{rot}}\vec f\cdot\breve k = Q'_x - P'_y$.
+- **Potencial en el espacio:** si $\mathop{\mathrm{rot}}\vec f = \vec 0$ en un dominio **simplemente conexo** (por ejemplo $\mathbb{R}^3$, o $\mathbb{R}^3 - \lbrace A\rbrace$, que sí lo es), toda curva cerrada es borde de una superficie dentro del dominio, por Stokes la circulación es 0 y existe la potencial. $\mathbb{R}^3$ menos una **recta** (por ejemplo el eje $z$) **no** es simplemente conexo.
 
 ---
 
@@ -154,18 +154,18 @@ $$\boxed{\oint_{\partial S^+}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec
 
 ### Interpretación física de la divergencia
 
-Sea $\vec F = \delta\,\vec v$ ($\delta$ densidad de un fluido, $\vec v$ su velocidad): $\vec F$ mide la masa por unidad de área y de tiempo. En un prisma chico de aristas $\Delta x, \Delta y, \Delta z$ con vértice en $P_0$, en la dirección $\breve\jmath$ la masa que sale por una cara menos la que entra por la opuesta es
+Sea $\vec F = \delta\thinspace\vec v$ ($\delta$ densidad de un fluido, $\vec v$ su velocidad): $\vec F$ mide la masa por unidad de área y de tiempo. En un prisma chico de aristas $\Delta x, \Delta y, \Delta z$ con vértice en $P_0$, en la dirección $\breve\jmath$ la masa que sale por una cara menos la que entra por la opuesta es
 
-$$[F_2(x_0, y_0 + \Delta y, z_0) - F_2(x_0, y_0, z_0)]\,\Delta x\,\Delta z$$
+$$[F_2(x_0, y_0 + \Delta y, z_0) - F_2(x_0, y_0, z_0)]\thinspace\Delta x\thinspace\Delta z$$
 
 Dividiendo por el volumen y tomando límite se obtiene $\dfrac{\partial F_2}{\partial y}$. Sumando las tres direcciones:
 
-$$\operatorname{div}\vec F(P_0) = \frac{\partial F_1}{\partial x} + \frac{\partial F_2}{\partial y} + \frac{\partial F_3}{\partial z}$$
+$$\mathop{\mathrm{div}}\vec F(P_0) = \frac{\partial F_1}{\partial x} + \frac{\partial F_2}{\partial y} + \frac{\partial F_3}{\partial z}$$
 
 es la variación total de masa por unidad de tiempo y de volumen en $P_0$.
 
-- $\operatorname{div}\vec F > 0$: en $P_0$ hay una **fuente** (manantial): se genera fluido.
-- $\operatorname{div}\vec F < 0$: hay un **sumidero** (pozo): se pierde fluido.
+- $\mathop{\mathrm{div}}\vec F > 0$: en $P_0$ hay una **fuente** (manantial): se genera fluido.
+- $\mathop{\mathrm{div}}\vec F < 0$: hay un **sumidero** (pozo): se pierde fluido.
 
 **Interpretación del teorema de la divergencia:** el flujo neto que sale por la frontera de $V$ (lo que sale menos lo que entra) es igual a la masa que se genera adentro por unidad de tiempo.
 
@@ -173,7 +173,7 @@ es la variación total de masa por unidad de tiempo y de volumen en $P_0$.
 
 En un cuerpo rígido que gira alrededor de un eje con velocidad angular $\vec w$, la velocidad tangencial de cada punto es $\vec v = \vec w\times\vec r$. Si gira alrededor del eje $z$, $\vec w = w\breve k$ y $\vec v = (-wy,\ wx,\ 0)$:
 
-$$\nabla\times\vec v = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ \partial_x & \partial_y & \partial_z \\ -wy & wx & 0 \end{vmatrix} = (0,\ 0,\ 2w) = 2\vec w$$
+$$\nabla\times\vec v = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr \partial_x & \partial_y & \partial_z \cr -wy & wx & 0 \end{vmatrix} = (0,\ 0,\ 2w) = 2\vec w$$
 
 **El rotor del campo de velocidades es el doble de la velocidad angular.** Un campo con rotor nulo no produce rotaciones: es **irrotacional** (como los campos de gradientes).
 
@@ -181,15 +181,15 @@ $$\nabla\times\vec v = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\
 
 ## 7. Complementos: demostración de Green y consecuencias
 
-**Demostración de Green** (para un recinto $R$ tal que toda paralela a los ejes corta a su borde en a lo sumo dos puntos). Se demuestran por separado $\iint_R Q'_x = \oint Q\,dy$ y $-\iint_R P'_y = \oint P\,dx$.
+**Demostración de Green** (para un recinto $R$ tal que toda paralela a los ejes corta a su borde en a lo sumo dos puntos). Se demuestran por separado $\iint_R Q'_x = \oint Q\thinspace dy$ y $-\iint_R P'_y = \oint P\thinspace dx$.
 
 - Mirando $R$ como tipo I, $y_1(x) \le y \le y_2(x)$:
 
-$$-\iint_R\frac{\partial P}{\partial y}\,dx\,dy = -\int_a^b\big[P(x, y_2(x)) - P(x, y_1(x))\big]dx = \int_{\text{abajo}}P\,dx + \int_{\text{arriba}}P\,dx = \oint_C P\,dx$$
+$$-\iint_R\frac{\partial P}{\partial y}\thinspace dx\thinspace dy = -\int_a^b\big[P(x, y_2(x)) - P(x, y_1(x))\big]dx = \int_{\text{abajo}}P\thinspace dx + \int_{\text{arriba}}P\thinspace dx = \oint_C P\thinspace dx$$
 
   (el arco de abajo se recorre de izquierda a derecha y el de arriba al revés, por eso aparecen los signos).
 
-- Mirando $R$ como tipo II, $x_1(y) \le x \le x_2(y)$, del mismo modo $\iint_R\frac{\partial Q}{\partial x} = \oint_C Q\,dy$.
+- Mirando $R$ como tipo II, $x_1(y) \le x \le x_2(y)$, del mismo modo $\iint_R\frac{\partial Q}{\partial x} = \oint_C Q\thinspace dy$.
 
 Sumando se obtiene el teorema. Si el recinto no cumple la condición, se lo divide en finitos recintos que sí la cumplen: las integrales sobre los cortes interiores se recorren dos veces en sentidos opuestos y se cancelan. $\blacksquare$
 
@@ -216,12 +216,12 @@ Sumando se obtiene el teorema. Si el recinto no cumple la condición, se lo divi
 
 | Teorema | Fórmula |
 |---|---|
-| Green | $\oint_{\partial D^+}\vec f\cdot d\vec s = \iint_D(Q'_x - P'_y)\,dA$ |
-| Área con Green | $A = \oint x\,dy = -\oint y\,dx = \frac12\oint(x\,dy - y\,dx)$ |
-| Divergencia | $\oint\!\!\oint_{\partial H}\vec f\cdot\breve n\,d\sigma = \iiint_H\operatorname{div}\vec f\,dV$ |
-| Rotor (Stokes) | $\oint_{\partial S}\vec f\cdot d\vec s = \iint_S\operatorname{rot}\vec f\cdot\breve n\,d\sigma$ |
-| Identidades | $\operatorname{rot}\nabla\phi = \vec 0$, $\ \operatorname{div}\operatorname{rot}\vec g = 0$ |
-| Ley de Gauss | $\oint\!\!\oint\frac{kq\,\vec r}{r^3}\cdot\breve n\,d\sigma = 4\pi kq$ (si encierra al origen) |
+| Green | $\oint_{\partial D^+}\vec f\cdot d\vec s = \iint_D(Q'_x - P'_y)\thinspace dA$ |
+| Área con Green | $A = \oint x\thinspace dy = -\oint y\thinspace dx = \frac12\oint(x\thinspace dy - y\thinspace dx)$ |
+| Divergencia | $\oint\negthinspace\negthinspace\oint_{\partial H}\vec f\cdot\breve n\thinspace d\sigma = \iiint_H\mathop{\mathrm{div}}\vec f\thinspace dV$ |
+| Rotor (Stokes) | $\oint_{\partial S}\vec f\cdot d\vec s = \iint_S\mathop{\mathrm{rot}}\vec f\cdot\breve n\thinspace d\sigma$ |
+| Identidades | $\mathop{\mathrm{rot}}\nabla\phi = \vec 0$, $\ \mathop{\mathrm{div}}\mathop{\mathrm{rot}}\vec g = 0$ |
+| Ley de Gauss | $\oint\negthinspace\negthinspace\oint\frac{kq\thinspace\vec r}{r^3}\cdot\breve n\thinspace d\sigma = 4\pi kq$ (si encierra al origen) |
 
 ---
 

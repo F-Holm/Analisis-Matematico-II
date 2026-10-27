@@ -14,7 +14,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 ### T1) Derivada direccional máxima
 
-Sea $f: \mathbb{R}^2 \to \mathbb{R}$. Demuestre que si $f$ es diferenciable en $(x_0,y_0)$ y $\nabla f(x_0,y_0) \ne (0,0)$, entonces existe la derivada direccional máxima y esta vale $\|\nabla f(x_0,y_0)\|$.
+Sea $f: \mathbb{R}^2 \to \mathbb{R}$. Demuestre que si $f$ es diferenciable en $(x_0,y_0)$ y $\nabla f(x_0,y_0) \ne (0,0)$, entonces existe la derivada direccional máxima y esta vale $\Vert\nabla f(x_0,y_0)\Vert$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -24,7 +24,7 @@ Sea $f: \mathbb{R}^2 \to \mathbb{R}$. Demuestre que si $f$ es diferenciable en $
 
 **Paso 1 — Fórmula de la derivada.** Como $f$ es diferenciable, para todo versor $\breve r$:
 
-$$f'(\vec A, \breve r) = \nabla f(\vec A)\cdot\breve r = \lVert\nabla f(\vec A)\rVert\,\lVert\breve r\rVert\cos\theta = \lVert\nabla f(\vec A)\rVert\cos\theta$$
+$$f'(\vec A, \breve r) = \nabla f(\vec A)\cdot\breve r = \lVert\nabla f(\vec A)\rVert\thinspace\lVert\breve r\rVert\cos\theta = \lVert\nabla f(\vec A)\rVert\cos\theta$$
 
 donde $\theta$ es el ángulo entre $\nabla f(\vec A)$ y $\breve r$.
 
@@ -48,7 +48,7 @@ Entonces el máximo existe, se alcanza en la dirección del gradiente y vale $\l
 
 Defina solución general y solución particular de una ecuación diferencial de primer orden.
 
-Halle $f$ sabiendo que $y_p = \dfrac{x^4 + 2x^2}{2}$ es una solución de la ecuación $y' - \dfrac2x\,y = f(x)$ y encuentre, con la función hallada, la solución general de la ecuación.
+Halle $f$ sabiendo que $y_p = \dfrac{x^4 + 2x^2}{2}$ es una solución de la ecuación $y' - \dfrac2x\thinspace y = f(x)$ y encuentre, con la función hallada, la solución general de la ecuación.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -65,7 +65,7 @@ Halle $f$ sabiendo que $y_p = \dfrac{x^4 + 2x^2}{2}$ es una solución de la ecua
 
 $$f(x) = 2x^3 + 2x - \frac2x\cdot\frac{x^4 + 2x^2}{2} = 2x^3 + 2x - x^3 - 2x = x^3$$
 
-**Paso 2 — Homogénea.** $y' = \dfrac2x\,y \Rightarrow \dfrac{dy}{y} = \dfrac{2\,dx}{x} \Rightarrow y_H = kx^2$.
+**Paso 2 — Homogénea.** $y' = \dfrac2x\thinspace y \Rightarrow \dfrac{dy}{y} = \dfrac{2\thinspace dx}{x} \Rightarrow y_H = kx^2$.
 
 **Paso 3 — S.G.** (lineal: $y = y_H + y_P$):
 
@@ -85,7 +85,7 @@ Como el término $x^2$ se puede absorber en $k$, también se escribe $y = Cx^2 +
 
 ### E1) Continuidad y derivadas direccionales
 
-Sea $f(x,y) = \begin{cases} \dfrac{x\operatorname{sen}(y)}{y}, & \text{si } y \ne 0, \\ 0, & \text{si } y = 0. \end{cases}$
+Sea $f(x,y) = \begin{cases} \dfrac{x\mathop{\mathrm{sen}}(y)}{y}, & \text{si } y \ne 0, \cr 0, & \text{si } y = 0. \end{cases}$
 
 Analice la continuidad y la existencia de derivadas en distintas direcciones de $f$ en $(0,0)$.
 
@@ -97,7 +97,7 @@ Analice la continuidad y la existencia de derivadas en distintas direcciones de 
 
 **Continuidad.**
 
-- Para $y \ne 0$: $f = \underbrace{x}_{\to0}\cdot\underbrace{\dfrac{\operatorname{sen}y}{y}}_{\to1} \to 0$.
+- Para $y \ne 0$: $f = \underbrace{x}_{\to0}\cdot\underbrace{\dfrac{\mathop{\mathrm{sen}}y}{y}}_{\to1} \to 0$.
 - Sobre $y = 0$: $f = 0$.
 
 El límite es $0 = f(0,0)$ ⇒ **continua**.
@@ -106,13 +106,13 @@ El límite es $0 = f(0,0)$ ⇒ **continua**.
 
 - **Si $b \ne 0$:**
 
-$$\lim_{t\to0}\frac{f(at, bt) - 0}{t} = \lim_{t\to0}\frac{1}{t}\cdot\frac{at\operatorname{sen}(bt)}{bt} = \lim_{t\to0}a\,\frac{\operatorname{sen}(bt)}{bt} = a$$
+$$\lim_{t\to0}\frac{f(at, bt) - 0}{t} = \lim_{t\to0}\frac{1}{t}\cdot\frac{at\mathop{\mathrm{sen}}(bt)}{bt} = \lim_{t\to0}a\thinspace\frac{\mathop{\mathrm{sen}}(bt)}{bt} = a$$
 
 - **Si $b = 0$** (es decir $\breve r = (\pm1, 0)$): $f(at, 0) = 0$ ⇒ la derivada es $0$.
 
 Existe en **todas** las direcciones:
 
-$$f'(\vec 0, (a,b)) = \begin{cases} a & b \ne 0 \\ 0 & b = 0 \end{cases}$$
+$$f'(\vec 0, (a,b)) = \begin{cases} a & b \ne 0 \cr 0 & b = 0 \end{cases}$$
 
 > **Observación:** la resolución manuscrita de la cátedra da "$= a$" para todas las direcciones, pero con $b = 0$ la función vale 0 sobre el eje $x$, así que ahí la derivada es 0. Esto muestra además que $f$ **no es diferenciable** en el origen: $\nabla f(\vec 0) = (0,0)$ y, sin embargo, $f'(\vec 0,(a,b)) = a \ne 0$ para $b \ne 0$, $a \ne 0$.
 
@@ -128,7 +128,7 @@ $$f'(\vec 0, (a,b)) = \begin{cases} a & b \ne 0 \\ 0 & b = 0 \end{cases}$$
 
 Sea $f: \mathbb{R}^2 \to \mathbb{R}$ una función diferenciable tal que el plano tangente al gráfico de $f$ en $(4, 2, f(4,2))$ es el plano normal a la curva $C$ definida por
 
-$$C: \begin{cases} z = x^2 - 3y^2 \\ x = 2y \end{cases}$$
+$$C: \begin{cases} z = x^2 - 3y^2 \cr x = 2y \end{cases}$$
 
 Calcule mediante una aproximación lineal conveniente $f(3.94;\ 2.04)$.
 
@@ -188,11 +188,11 @@ $$f'_x(2,4) = -\frac73, \qquad f'_y(2,4) = -\frac23$$
 
 **Paso 4 — Jacobiana de $\vec g$ en $(2,1)$.**
 
-$$D\vec g = \begin{pmatrix} 2u & -4v \\ 3 & -4v \end{pmatrix} = \begin{pmatrix} 4 & -4 \\ 3 & -4 \end{pmatrix}$$
+$$D\vec g = \begin{pmatrix} 2u & -4v \cr 3 & -4v \end{pmatrix} = \begin{pmatrix} 4 & -4 \cr 3 & -4 \end{pmatrix}$$
 
 **Paso 5 — Regla de la cadena.**
 
-$$\nabla h(2,1) = \left(-\tfrac73,\ -\tfrac23\right)\begin{pmatrix} 4 & -4 \\ 3 & -4 \end{pmatrix} = \left(-\tfrac{28}{3} - 2,\ \tfrac{28}{3} + \tfrac83\right) = \left(-\tfrac{34}{3},\ 12\right)$$
+$$\nabla h(2,1) = \left(-\tfrac73,\ -\tfrac23\right)\begin{pmatrix} 4 & -4 \cr 3 & -4 \end{pmatrix} = \left(-\tfrac{28}{3} - 2,\ \tfrac{28}{3} + \tfrac83\right) = \left(-\tfrac{34}{3},\ 12\right)$$
 
 **Paso 6 — Máxima.**
 
@@ -224,7 +224,7 @@ $$\lVert\nabla h\rVert = \sqrt{\frac{1156}{9} + 144} = \frac{\sqrt{2452}}{3} = \
 **a)**
 
 - Derivando: $3y^2y' = C = \dfrac{y^3}{x}$ ⇒ $y' = \dfrac{y}{3x}$.
-- Ortogonal ($y' \to -1/y'$): $y' = -\dfrac{3x}{y}$ ⇒ $y\,dy = -3x\,dx$.
+- Ortogonal ($y' \to -1/y'$): $y' = -\dfrac{3x}{y}$ ⇒ $y\thinspace dy = -3x\thinspace dx$.
 - Integrando: $\dfrac{y^2}{2} = -\dfrac{3x^2}{2} + c$ ⇒ $3x^2 + y^2 = C$, que es una familia de elipses.
 
 **b)** *Puntos críticos:*
@@ -234,7 +234,7 @@ $$f'_x = 2x + y^2 - 1 = 0, \qquad f'_y = 2xy = 0$$
 - $x = 0$ ⇒ $y^2 = 1$ ⇒ $(0, 1)$ y $(0, -1)$.
 - $y = 0$ ⇒ $x = \frac12$ ⇒ $\left(\frac12, 0\right)$.
 
-*Hessiano:* $Hf = \begin{pmatrix} 2 & 2y \\ 2y & 2x \end{pmatrix}$.
+*Hessiano:* $Hf = \begin{pmatrix} 2 & 2y \cr 2y & 2x \end{pmatrix}$.
 
 - $(0, \pm1)$: $\det = 0 - 4 < 0$ ⇒ **puntos silla**.
 - $\left(\frac12, 0\right)$: $\det = 2\cdot1 = 2 > 0$, con $f''_{xx} = 2 > 0$ ⇒ **mínimo local**, $f = \frac14 - \frac12 = -\frac14$.

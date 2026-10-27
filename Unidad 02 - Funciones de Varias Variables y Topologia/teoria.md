@@ -18,7 +18,7 @@ En Análisis I se estudiaban funciones $f:\mathbb{R}\to\mathbb{R}$. Pero los fen
 |---|---|---|---|
 | **Campo escalar** | $f: D \subseteq \mathbb{R}^n \to \mathbb{R}$ | un número a cada punto | $f(x,y) = x^2 + y^2$ |
 | **Campo vectorial** | $\vec F: D \subseteq \mathbb{R}^n \to \mathbb{R}^m$ ($m \ge 2$) | un vector a cada punto | $\vec F(x,y) = (-y, x)$ |
-| **Función vectorial** | $\vec g: I \subseteq \mathbb{R} \to \mathbb{R}^m$ | un vector a cada número real | $\vec g(t) = (\cos t, \operatorname{sen} t)$ |
+| **Función vectorial** | $\vec g: I \subseteq \mathbb{R} \to \mathbb{R}^m$ | un vector a cada número real | $\vec g(t) = (\cos t, \mathop{\mathrm{sen}} t)$ |
 
 - **Dominio** $D$: el conjunto donde la función está definida. El **dominio natural** es el mayor conjunto donde la fórmula tiene sentido.
 - **Imagen o recorrido**: el conjunto de los valores que toma la función.
@@ -38,8 +38,8 @@ En Análisis I se estudiaban funciones $f:\mathbb{R}\to\mathbb{R}$. Pero los fen
 **Ejemplos del material:**
 
 - $f(x,y) = x^2 + y^2$: $D = \mathbb{R}^2$, imagen $[0, +\infty)$.
-- $f(x,y) = \sqrt{y - x}$: $D = \{(x,y) : y \ge x\}$, imagen $[0, +\infty)$.
-- $f(x,y,z) = \ln(xyz)$: $D = \{xyz > 0\}$, que son los octantes 1.º, 3.º, 6.º y 8.º sin los planos coordenados. Imagen $\mathbb{R}$.
+- $f(x,y) = \sqrt{y - x}$: $D = \lbrace(x,y) : y \ge x\rbrace$, imagen $[0, +\infty)$.
+- $f(x,y,z) = \ln(xyz)$: $D = \lbrace xyz > 0\rbrace$, que son los octantes 1.º, 3.º, 6.º y 8.º sin los planos coordenados. Imagen $\mathbb{R}$.
 
 ---
 
@@ -47,7 +47,7 @@ En Análisis I se estudiaban funciones $f:\mathbb{R}\to\mathbb{R}$. Pero los fen
 
 **Definición:** la gráfica de $f: D\subseteq\mathbb{R}^n \to \mathbb{R}$ es
 
-$$G(f) = \{(x_1, \dots, x_n, z) \in \mathbb{R}^{n+1} : (x_1,\dots,x_n) \in D,\ z = f(x_1,\dots,x_n)\}$$
+$$G(f) = \lbrace(x_1, \dots, x_n, z) \in \mathbb{R}^{n+1} : (x_1,\dots,x_n) \in D,\ z = f(x_1,\dots,x_n)\rbrace$$
 
 - Para $n = 1$ es una curva en el plano y para $n = 2$ es (en general) una **superficie** en $\mathbb{R}^3$.
 - Para $n \ge 3$ no se puede dibujar: es una "hipersuperficie" de $\mathbb{R}^{n+1}$.
@@ -60,7 +60,7 @@ Marcar puntos sueltos no alcanza para imaginar una superficie, así que se usan 
 
 **Definición:** para cada $k$ de la imagen de $f$, el **conjunto de nivel $k$** es
 
-$$C_k = \{\vec x \in D : f(\vec x) = k\}$$
+$$C_k = \lbrace\vec x \in D : f(\vec x) = k\rbrace$$
 
 Es un subconjunto del **dominio**, no de la gráfica.
 
@@ -107,17 +107,17 @@ Es un subconjunto del **dominio**, no de la gráfica.
 **Ejemplos:**
 
 - $\vec g(t) = (t, t^2)$, $t\in[-2,1]$: arco de la parábola $y = x^2$, que va de $(-2,4)$ a $(1,1)$.
-- $\vec g(t) = (\cos t, \operatorname{sen} t)$, $t\in[0, 2\pi]$: circunferencia unitaria recorrida en sentido antihorario. Es una curva **cerrada**.
-- $\vec g(t) = (\cos t, \operatorname{sen} t, t)$: **hélice circular** ("resorte"), que va enrollándose sobre el cilindro $x^2 + y^2 = 1$.
+- $\vec g(t) = (\cos t, \mathop{\mathrm{sen}} t)$, $t\in[0, 2\pi]$: circunferencia unitaria recorrida en sentido antihorario. Es una curva **cerrada**.
+- $\vec g(t) = (\cos t, \mathop{\mathrm{sen}} t, t)$: **hélice circular** ("resorte"), que va enrollándose sobre el cilindro $x^2 + y^2 = 1$.
 
 ### Curva intersección de dos superficies
 
 Para parametrizar la curva intersección de dos superficies:
 
-1. Parametrizar la superficie "más simple". Por ejemplo, para $x^2 + y^2 = r^2$ se usa $x = r\cos t$, $y = r\operatorname{sen} t$.
+1. Parametrizar la superficie "más simple". Por ejemplo, para $x^2 + y^2 = r^2$ se usa $x = r\cos t$, $y = r\mathop{\mathrm{sen}} t$.
 2. Despejar la otra coordenada de la segunda ecuación.
 
-**Ejemplo:** el cilindro $x^2 + z^2 = 1$ cortado por el plano $y = z$ da la elipse $\vec g(t) = (\cos t, \operatorname{sen} t, \operatorname{sen} t)$.
+**Ejemplo:** el cilindro $x^2 + z^2 = 1$ cortado por el plano $y = z$ da la elipse $\vec g(t) = (\cos t, \mathop{\mathrm{sen}} t, \mathop{\mathrm{sen}} t)$.
 
 ---
 
@@ -125,7 +125,7 @@ Para parametrizar la curva intersección de dos superficies:
 
 **Distancia euclídea:**
 
-$$d(\vec x, \vec y) = \|\vec x - \vec y\| = \sqrt{(x_1 - y_1)^2 + \dots + (x_n - y_n)^2}$$
+$$d(\vec x, \vec y) = \Vert\vec x - \vec y\Vert = \sqrt{(x_1 - y_1)^2 + \dots + (x_n - y_n)^2}$$
 
 Cumple tres propiedades:
 
@@ -137,9 +137,9 @@ Cumple tres propiedades:
 
 | Nombre | Notación | Definición | En $\mathbb{R}^2$ |
 |---|---|---|---|
-| Bola abierta | $B(\vec a, r)$ o $E(\vec a, r)$ | $\{\vec x : d(\vec x, \vec a) < r\}$ | círculo sin el borde |
-| Bola cerrada | $B[\vec a, r]$ | $\{\vec x : d(\vec x, \vec a) \le r\}$ | círculo con el borde |
-| Bola reducida | $B^*(\vec a, r)$ o $E'(\vec a, r)$ | $\{\vec x : 0 < d(\vec x, \vec a) < r\}$ | círculo sin borde y sin centro |
+| Bola abierta | $B(\vec a, r)$ o $E(\vec a, r)$ | $\lbrace\vec x : d(\vec x, \vec a) < r\rbrace$ | círculo sin el borde |
+| Bola cerrada | $B[\vec a, r]$ | $\lbrace\vec x : d(\vec x, \vec a) \le r\rbrace$ | círculo con el borde |
+| Bola reducida | $B^*(\vec a, r)$ o $E'(\vec a, r)$ | $\lbrace\vec x : 0 < d(\vec x, \vec a) < r\rbrace$ | círculo sin borde y sin centro |
 
 ---
 
@@ -151,11 +151,11 @@ Cumple tres propiedades:
 | **Exterior** | existe $r > 0$ con $B(\vec a, r) \subseteq A^c$ | está "bien afuera" |
 | **Frontera** | toda $B(\vec a, r)$ tiene puntos de $A$ **y** de $A^c$ | está "en el borde" (puede o no pertenecer a $A$) |
 | **De acumulación** | toda $B^*(\vec a, r)$ contiene puntos de $A$ (infinitos) | se puede llegar a él "caminando por $A$" (puede no pertenecer a $A$) |
-| **Aislado** | $\vec a \in A$ y existe $r$ con $B(\vec a, r)\cap A = \{\vec a\}$ | es un punto "suelto" de $A$ |
+| **Aislado** | $\vec a \in A$ y existe $r$ con $B(\vec a, r)\cap A = \lbrace\vec a\rbrace$ | es un punto "suelto" de $A$ |
 
 **Notación:**
 
-- $\overset{\circ}{A}$ (o $\operatorname{int}A$): los puntos interiores.
+- $\overset{\circ}{A}$ (o $\mathop{\mathrm{int}}A$): los puntos interiores.
 - $\partial A$: la frontera.
 - $A'$: el **conjunto derivado** (los puntos de acumulación).
 - $\bar A = Cl(A) = A \cup A'$ (equivalentemente $A \cup \partial A$): la **clausura** o adherencia.
@@ -185,24 +185,24 @@ Cumple tres propiedades:
 **Cuidado:**
 
 - "Abierto" y "cerrado" **no son opuestos**: un conjunto puede no ser ni abierto ni cerrado (por ejemplo, un anillo con un solo borde), y $\mathbb{R}^n$ y $\emptyset$ son abiertos y cerrados a la vez.
-- **Herramienta práctica:** si $f$ es continua, $\{f < c\}$ y $\{f > c\}$ son abiertos, y $\{f \le c\}$, $\{f \ge c\}$ y $\{f = c\}$ son cerrados.
+- **Herramienta práctica:** si $f$ es continua, $\lbrace f < c\rbrace$ y $\lbrace f > c\rbrace$ son abiertos, y $\lbrace f \le c\rbrace$, $\lbrace f \ge c\rbrace$ y $\lbrace f = c\rbrace$ son cerrados.
 
 ### Ejemplos del material
 
-**Ejemplo 2.23:** $A = \{(x,y) : xy > 0\}$ (cuadrantes 1.º y 3.º, sin los ejes).
+**Ejemplo 2.23:** $A = \lbrace(x,y) : xy > 0\rbrace$ (cuadrantes 1.º y 3.º, sin los ejes).
 
 - Es abierto, no es cerrado y no es acotado.
 - Su frontera son los ejes coordenados.
 - No es convexo ni conexo: está formado por dos "pedazos".
 
-**Ejemplo 2.24:** $A = \{(x,y) : y \ge x^2\}$ (sobre la parábola o por encima).
+**Ejemplo 2.24:** $A = \lbrace(x,y) : y \ge x^2\rbrace$ (sobre la parábola o por encima).
 
 - Es cerrado, no es abierto y no es acotado.
 - Su frontera es la parábola.
 - No es convexo: el segmento de $(1,1)$ a $(-1,1)$ está en $A$, pero el de $(1,0)$ a $(-1,0)$ ya no está.
 - Es conexo y simplemente conexo.
 
-**Ejemplo 2.25:** $A = \{(x,y,z) : 1 < x^2+y^2+z^2 \le 4\} \cup \{(0,0,0)\}$.
+**Ejemplo 2.25:** $A = \lbrace(x,y,z) : 1 < x^2+y^2+z^2 \le 4\rbrace \cup \lbrace(0,0,0)\rbrace$.
 
 - No es abierto ni cerrado, pero es acotado.
 - Tiene un punto aislado: el origen.
@@ -232,13 +232,13 @@ Un conjunto no vacío en el que se definió una distancia es un **espacio métri
 | $\mathbb{R}^3$ | $\sqrt{(b_1 - a_1)^2 + (b_2 - a_2)^2 + (b_3 - a_3)^2}$ |
 | $\mathbb{R}^n$ | $\sqrt{\sum_{i=1}^n(a_i - b_i)^2}$ |
 
-**Entorno (simétrico) de $A$ de radio $\delta$:** $E(A;\delta) = \{X \in M : d(X, A) < \delta\}$.
+**Entorno (simétrico) de $A$ de radio $\delta$:** $E(A;\delta) = \lbrace X \in M : d(X, A) < \delta\rbrace$.
 
 - En $\mathbb{R}$: el intervalo $(a - \delta,\ a + \delta)$.
 - En $\mathbb{R}^2$: el círculo abierto $(x - a_1)^2 + (y - a_2)^2 < \delta^2$.
 - En $\mathbb{R}^3$: la esfera abierta $(x - a_1)^2 + (y - a_2)^2 + (z - a_3)^2 < \delta^2$.
 
-**Entorno reducido** (sin el centro): $E'(A;\delta) = \{X : 0 < d(X,A) < \delta\}$.
+**Entorno reducido** (sin el centro): $E'(A;\delta) = \lbrace X : 0 < d(X,A) < \delta\rbrace$.
 
 **Otras caracterizaciones útiles:**
 
@@ -266,8 +266,8 @@ $A$ es el dominio, $B$ el conjunto de llegada, y el conjunto de los elementos de
 |---|---|---|
 | Función escalar | $A \subseteq \mathbb{R}$, $B \subseteq \mathbb{R}$ | $f(x) = x^2$ |
 | Campo escalar | $A \subseteq \mathbb{R}^n$ ($n \ge 2$), $B \subseteq \mathbb{R}$ | $G(x,y) = x^2 + y^2$ (paraboloide) |
-| Función vectorial | $A \subseteq \mathbb{R}$, $B \subseteq \mathbb{R}^m$ ($m \ge 2$) | $\vec g(t) = (\cos t, \operatorname{sen}t, t)$ (hélice) |
-| Campo vectorial | $A \subseteq \mathbb{R}^n$, $B \subseteq \mathbb{R}^m$ ($n, m \ge 2$) | $\vec F(u,v) = (\cos u\operatorname{sen}v,\ \operatorname{sen}u\operatorname{sen}v,\ \cos v)$ (esfera) |
+| Función vectorial | $A \subseteq \mathbb{R}$, $B \subseteq \mathbb{R}^m$ ($m \ge 2$) | $\vec g(t) = (\cos t, \mathop{\mathrm{sen}}t, t)$ (hélice) |
+| Campo vectorial | $A \subseteq \mathbb{R}^n$, $B \subseteq \mathbb{R}^m$ ($n, m \ge 2$) | $\vec F(u,v) = (\cos u\mathop{\mathrm{sen}}v,\ \mathop{\mathrm{sen}}u\mathop{\mathrm{sen}}v,\ \cos v)$ (esfera) |
 
 Un campo escalar de 3 variables, como $U(x,y,z) = x + y + z$, no tiene representación cartesiana (haría falta $\mathbb{R}^4$): sólo se pueden dibujar sus superficies de nivel.
 
@@ -287,13 +287,13 @@ Un campo escalar de 3 variables, como $U(x,y,z) = x + y + z$, no tiene represent
 ## 10. Curvas y superficies asociadas a funciones
 
 - **Curva asociada** a una función vectorial $\vec f: A \subseteq \mathbb{R} \to \mathbb{R}^n$ con componentes continuas: es el conjunto imagen $\vec f(A)$. Ejemplo: $\vec f(t) = (t, t, t^2)$.
-- **Superficie asociada** a un campo vectorial $\vec G: A \subseteq \mathbb{R}^2 \to \mathbb{R}^3$ con componentes continuas: es el conjunto imagen. Ejemplo: $\vec G(u,v) = (2\cos u,\ 2\operatorname{sen}u,\ v)$ es una superficie cilíndrica.
+- **Superficie asociada** a un campo vectorial $\vec G: A \subseteq \mathbb{R}^2 \to \mathbb{R}^3$ con componentes continuas: es el conjunto imagen. Ejemplo: $\vec G(u,v) = (2\cos u,\ 2\mathop{\mathrm{sen}}u,\ v)$ es una superficie cilíndrica.
 - Si $\vec G$ es **inyectiva** en un conjunto conexo, la superficie es **simple**.
 - **Curva sobre una superficie:** si $\vec f: [a,b] \to D \subseteq \mathbb{R}^2$ es continua y $\vec G: A \to \mathbb{R}^3$ (con $D \subseteq A$) representa la superficie $\Sigma$, la composición $\vec G\circ\vec f$ describe una curva **contenida en** $\Sigma$.
 
-**Ejemplo:** $\vec G(u,v) = (3 + u\cos v,\ 3 + u\operatorname{sen}v,\ u)$ (superficie cónica) y $\vec f(t) = (3, t)$. Componiendo ($u = 3$, $v = t$):
+**Ejemplo:** $\vec G(u,v) = (3 + u\cos v,\ 3 + u\mathop{\mathrm{sen}}v,\ u)$ (superficie cónica) y $\vec f(t) = (3, t)$. Componiendo ($u = 3$, $v = t$):
 
-$$(\vec G\circ\vec f)(t) = (3 + 3\cos t,\ 3 + 3\operatorname{sen}t,\ 3)$$
+$$(\vec G\circ\vec f)(t) = (3 + 3\cos t,\ 3 + 3\mathop{\mathrm{sen}}t,\ 3)$$
 
 Es la circunferencia de centro $(3,3,3)$ y radio 3 en el plano $z = 3$, contenida en el cono.
 
@@ -321,13 +321,13 @@ Es la circunferencia de centro $(3,3,3)$ y radio 3 en el plano $z = 3$, contenid
 | Concepto | Fórmula |
 |---|---|
 | Distancia | $d(\vec x,\vec y) = \sqrt{\sum (x_i - y_i)^2}$ |
-| Bola abierta | $B(\vec a, r) = \{\vec x : d(\vec x, \vec a) < r\}$ |
-| Gráfica | $G(f) = \{(\vec x, f(\vec x)) : \vec x \in D\}$ |
-| Conjunto de nivel | $C_k = \{\vec x \in D : f(\vec x) = k\}$ |
+| Bola abierta | $B(\vec a, r) = \lbrace\vec x : d(\vec x, \vec a) < r\rbrace$ |
+| Gráfica | $G(f) = \lbrace(\vec x, f(\vec x)) : \vec x \in D\rbrace$ |
+| Conjunto de nivel | $C_k = \lbrace\vec x \in D : f(\vec x) = k\rbrace$ |
 | Clausura | $\bar A = A \cup A' = A \cup \partial A$ |
 | Compacto | cerrado + acotado |
-| Circunferencia | $(x - a)^2 + (y - b)^2 = r^2$ ↔ $x = a + r\cos t,\ y = b + r\operatorname{sen} t$ |
-| Elipse | $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ↔ $x = a\cos t,\ y = b\operatorname{sen} t$ |
+| Circunferencia | $(x - a)^2 + (y - b)^2 = r^2$ ↔ $x = a + r\cos t,\ y = b + r\mathop{\mathrm{sen}} t$ |
+| Elipse | $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ ↔ $x = a\cos t,\ y = b\mathop{\mathrm{sen}} t$ |
 
 ---
 

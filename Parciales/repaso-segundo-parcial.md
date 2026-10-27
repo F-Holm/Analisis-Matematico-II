@@ -35,7 +35,7 @@ $$\vec T'_u\wedge\vec T'_v = \left(\frac{u}{\sqrt{5 - u^2}},\ 0,\ 1\right), \qqu
 
 **Paso 3 — Área de una mitad.**
 
-$$\int_0^1\!\!\int_0^u\frac{\sqrt5}{\sqrt{5 - u^2}}\,dv\,du = \sqrt5\int_0^1\frac{u}{\sqrt{5 - u^2}}\,du = \sqrt5\left[-\sqrt{5 - u^2}\right]_0^1 = \sqrt5(\sqrt5 - 2) = 5 - 2\sqrt5$$
+$$\int_0^1\negthinspace\negthinspace\int_0^u\frac{\sqrt5}{\sqrt{5 - u^2}}\thinspace dv\thinspace du = \sqrt5\int_0^1\frac{u}{\sqrt{5 - u^2}}\thinspace du = \sqrt5\left[-\sqrt{5 - u^2}\right]_0^1 = \sqrt5(\sqrt5 - 2) = 5 - 2\sqrt5$$
 
 **Paso 4 — Total.** La superficie $x^2 + z^2 = 5$ tiene dos mitades ($z \ge 0$ y $z \le 0$), y el pizarrón multiplica por 2:
 
@@ -51,7 +51,7 @@ $$A = 2(5 - 2\sqrt5) = 10 - 4\sqrt5 \approx 1{,}06$$
 
 ### Ejercicio 1) Flujo igual al volumen
 
-Sea $\vec f(x,y,z) = (x + g'(x),\ y\,g'(x),\ -2z\,g(x))$ con $\vec f \in C^1(\Re^3)$ y $\vec f(0,0,1) = (2,0,0)$. **Halle** $g(x)$ de manera que el flujo de $\vec f$ a través de la superficie frontera de un cuerpo esférico de radio $R > 0$ resulte numéricamente igual al volumen del cuerpo. **Indique** gráficamente cómo decidió orientar a la superficie.
+Sea $\vec f(x,y,z) = (x + g'(x),\ y\thinspace g'(x),\ -2z\thinspace g(x))$ con $\vec f \in C^1(\Re^3)$ y $\vec f(0,0,1) = (2,0,0)$. **Halle** $g(x)$ de manera que el flujo de $\vec f$ a través de la superficie frontera de un cuerpo esférico de radio $R > 0$ resulte numéricamente igual al volumen del cuerpo. **Indique** gráficamente cómo decidió orientar a la superficie.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -59,11 +59,11 @@ Sea $\vec f(x,y,z) = (x + g'(x),\ y\,g'(x),\ -2z\,g(x))$ con $\vec f \in C^1(\Re
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Condición.** Por el teorema de la divergencia (normal saliente), $\oint\!\!\oint = \iiint\operatorname{div}\vec f\,dV$. Para que sea igual al volumen para **toda** esfera, alcanza con $\operatorname{div}\vec f = 1$.
+**Paso 1 — Condición.** Por el teorema de la divergencia (normal saliente), $\oint\negthinspace\negthinspace\oint = \iiint\mathop{\mathrm{div}}\vec f\thinspace dV$. Para que sea igual al volumen para **toda** esfera, alcanza con $\mathop{\mathrm{div}}\vec f = 1$.
 
 **Paso 2 — Divergencia.**
 
-$$\operatorname{div}\vec f = (1 + g'') + g' - 2g = 1 \ \Rightarrow\ g'' + g' - 2g = 0$$
+$$\mathop{\mathrm{div}}\vec f = (1 + g'') + g' - 2g = 1 \ \Rightarrow\ g'' + g' - 2g = 0$$
 
 **Paso 3 — Resolver.** $r^2 + r - 2 = 0 \Rightarrow r = 1,\ -2$ ⇒ $g = C_1e^x + C_2e^{-2x}$.
 
@@ -98,7 +98,7 @@ Dada la superficie abierta $\Sigma$ de ecuación $x^2 + y^2 + z^2 = 5$ con $z \g
 
 **Paso 3 — Integral triple.** El volumen del casquete es $\frac{2\pi(5\sqrt5 - 7)}{3}$ (ver el 2.º parcial del 18/06/2019, P3):
 
-$$\iiint 10\,dV = \frac{20\pi(5\sqrt5 - 7)}{3}$$
+$$\iiint 10\thinspace dV = \frac{20\pi(5\sqrt5 - 7)}{3}$$
 
 **Paso 4 — Tapa.** $\vec f\cdot(0,0,-1) = -5z = -5$ ⇒ $\Phi_T = -5\cdot4\pi = -20\pi$.
 
@@ -130,7 +130,7 @@ $$\Phi_\Sigma = \frac{20\pi(5\sqrt5 - 7)}{3} + 20\pi = \frac{20\pi(5\sqrt5 - 4)}
 
 **Paso 2 — Integral en cilíndricas.**
 
-$$V = \int_0^{2\pi}\!\!\int_0^1\!\!\int_r^{2 - r^2}r\,dz\,dr\,d\varphi = 2\pi\int_0^1(2r - r^3 - r^2)\,dr = 2\pi\left(1 - \frac14 - \frac13\right) = \frac{5\pi}{6}$$
+$$V = \int_0^{2\pi}\negthinspace\negthinspace\int_0^1\negthinspace\negthinspace\int_r^{2 - r^2}r\thinspace dz\thinspace dr\thinspace d\varphi = 2\pi\int_0^1(2r - r^3 - r^2)\thinspace dr = 2\pi\left(1 - \frac14 - \frac13\right) = \frac{5\pi}{6}$$
 
 </details>
 
@@ -142,7 +142,7 @@ $$V = \int_0^{2\pi}\!\!\int_0^1\!\!\int_r^{2 - r^2}r\,dz\,dr\,d\varphi = 2\pi\in
 
 ### Pizarrón) Circulación sobre una curva cerrada
 
-*Ejercicio del pizarrón:* $\vec f(x,y,z) = (2x;\ z;\ y)$, calcular $\oint_C\vec f\cdot d\vec s$ si $C: \begin{cases} z - x = 2 \\ x^2 + y^2 + z^2 = 4z \end{cases}$ (sentido antihorario).
+*Ejercicio del pizarrón:* $\vec f(x,y,z) = (2x;\ z;\ y)$, calcular $\oint_C\vec f\cdot d\vec s$ si $C: \begin{cases} z - x = 2 \cr x^2 + y^2 + z^2 = 4z \end{cases}$ (sentido antihorario).
 
 <details>
 <summary><b>Solución</b></summary>
@@ -150,7 +150,7 @@ $$V = \int_0^{2\pi}\!\!\int_0^1\!\!\int_r^{2 - r^2}r\,dz\,dr\,d\varphi = 2\pi\in
 <details>
 <summary>Solución paso a paso</summary>
 
-$\vec f = \nabla(x^2 + yz)$ es un campo de gradientes en $\Re^3$ (también: $\operatorname{rot}\vec f = (1 - 1,\ 0,\ 0) = \vec 0$). $C$ es una curva **cerrada**, la intersección de un plano con una esfera ⇒ la circulación es 0, para cualquier sentido de recorrido.
+$\vec f = \nabla(x^2 + yz)$ es un campo de gradientes en $\Re^3$ (también: $\mathop{\mathrm{rot}}\vec f = (1 - 1,\ 0,\ 0) = \vec 0$). $C$ es una curva **cerrada**, la intersección de un plano con una esfera ⇒ la circulación es 0, para cualquier sentido de recorrido.
 
 </details>
 
@@ -180,7 +180,7 @@ $$\vec f\cdot\vec N = 2u\cdot u^2 + 2u(16 - u^2) = 32u$$
 
 **Paso 4 — Integral.**
 
-$$\int_0^4\!\!\int_0^u 32u\,dv\,du = \int_0^4 32u^2\,du = \frac{2048}{3}$$
+$$\int_0^4\negthinspace\negthinspace\int_0^u 32u\thinspace dv\thinspace du = \int_0^4 32u^2\thinspace du = \frac{2048}{3}$$
 
 </details>
 
@@ -206,7 +206,7 @@ Dado $\vec f(x,y) = (x^2,\ xy)$, **calcule** la circulación en sentido positivo
 
 **Paso 3 — Integral.**
 
-$$\int_0^{\pi/3}\!\!\int_1^{2\cos\varphi}r\operatorname{sen}\varphi\,r\,dr\,d\varphi = \int_0^{\pi/3}\left(\frac83\cos^3\varphi - \frac13\right)\operatorname{sen}\varphi\,d\varphi$$
+$$\int_0^{\pi/3}\negthinspace\negthinspace\int_1^{2\cos\varphi}r\mathop{\mathrm{sen}}\varphi\thinspace r\thinspace dr\thinspace d\varphi = \int_0^{\pi/3}\left(\frac83\cos^3\varphi - \frac13\right)\mathop{\mathrm{sen}}\varphi\thinspace d\varphi$$
 
 **Paso 4 — Calcular.**
 
@@ -271,7 +271,7 @@ $$\vec f\cdot\vec\gamma' = t(9 - t^2) + 2t(9 - t^2)^2 - 2t(9 - t^2)^2 = t(9 - t^
 
 **Paso 4 — Integral.**
 
-$$\int_3^0 t(9 - t^2)\,dt = -\left[\frac{9t^2}{2} - \frac{t^4}{4}\right]_0^3 = -\frac{81}{4}$$
+$$\int_3^0 t(9 - t^2)\thinspace dt = -\left[\frac{9t^2}{2} - \frac{t^4}{4}\right]_0^3 = -\frac{81}{4}$$
 
 </details>
 
@@ -293,7 +293,7 @@ $$\int_3^0 t(9 - t^2)\,dt = -\left[\frac{9t^2}{2} - \frac{t^4}{4}\right]_0^3 = -
 
 A altura $z$, la sección es el disco $r \le z$, de área $\pi z^2$:
 
-$$V = \int_1^4\pi z^2\,dz = \pi\,\frac{64 - 1}{3} = 21\pi$$
+$$V = \int_1^4\pi z^2\thinspace dz = \pi\thinspace\frac{64 - 1}{3} = 21\pi$$
 
 Es el volumen del cono hasta $z = 4$ menos el del cono hasta $z = 1$, que es la descomposición que se dibuja en el pizarrón.
 
@@ -315,7 +315,7 @@ Dado $\vec f(x,y) = (y,\ -x)$, **calcule** la longitud de la línea de campo que
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Líneas de campo.** $y' = \dfrac{-x}{y} \Rightarrow y\,dy = -x\,dx \Rightarrow x^2 + y^2 = C$: circunferencias centradas en el origen.
+**Paso 1 — Líneas de campo.** $y' = \dfrac{-x}{y} \Rightarrow y\thinspace dy = -x\thinspace dx \Rightarrow x^2 + y^2 = C$: circunferencias centradas en el origen.
 
 **Paso 2 — La que pasa por $(3,4)$:** $x^2 + y^2 = 25$, de radio 5.
 
@@ -347,7 +347,7 @@ Dado $\vec f(x,y) = (y,\ -x)$, **calcule** la longitud de la línea de campo que
 
 </details>
 
-**Respuesta:** $\sqrt5\,\pi$.
+**Respuesta:** $\sqrt5\thinspace\pi$.
 
 </details>
 
@@ -355,7 +355,7 @@ Dado $\vec f(x,y) = (y,\ -x)$, **calcule** la longitud de la línea de campo que
 
 ### Ejercicio 11) Flujo a través de un casquete esférico
 
-Sea $\vec f \in C^1$ tal que $\vec f(x,y,z) = (x\,\varphi(xy),\ y - y\,\varphi(xy),\ 3z^2 - z)$, **calcule** el flujo de $\vec f$ a través del trozo de superficie esférica de ecuación $x^2 + y^2 + z^2 = 5$ con $z \ge 1$. **Indique** gráficamente cómo orientó la superficie.
+Sea $\vec f \in C^1$ tal que $\vec f(x,y,z) = (x\thinspace\varphi(xy),\ y - y\thinspace\varphi(xy),\ 3z^2 - z)$, **calcule** el flujo de $\vec f$ a través del trozo de superficie esférica de ecuación $x^2 + y^2 + z^2 = 5$ con $z \ge 1$. **Indique** gráficamente cómo orientó la superficie.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -369,7 +369,7 @@ $$(\varphi + xy\varphi') + (1 - \varphi - xy\varphi') + (6z - 1) = 6z$$
 
 **Paso 2 — Integral triple sobre el casquete** $H$: $1 \le z \le \sqrt5$, por secciones de área $\pi(5 - z^2)$:
 
-$$\iiint_H 6z\,dV = 6\pi\int_1^{\sqrt5}z(5 - z^2)\,dz = 6\pi\left[\frac{5z^2}{2} - \frac{z^4}{4}\right]_1^{\sqrt5} = 6\pi\left(\frac{25}{4} - \frac94\right) = 24\pi$$
+$$\iiint_H 6z\thinspace dV = 6\pi\int_1^{\sqrt5}z(5 - z^2)\thinspace dz = 6\pi\left[\frac{5z^2}{2} - \frac{z^4}{4}\right]_1^{\sqrt5} = 6\pi\left(\frac{25}{4} - \frac94\right) = 24\pi$$
 
 **Paso 3 — Tapa** $z = 1$, $r \le 2$, con normal saliente $(0,0,-1)$: $\vec f\cdot\breve n = -(3 - 1) = -2$ ⇒ $\Phi_T = -2\cdot4\pi = -8\pi$.
 
@@ -405,17 +405,17 @@ Sea $S$ en el primer octante el trozo sombreado de superficie cilíndrica circul
 - El plano que contiene al eje $x$ (dirección) y a los puntos $(0,4,0)$ y $(0,0,4)$ es $y + z = 4$.
 - $S$ es la mitad con $x \ge 0$ (1.er octante) y $z \ge 4 - y$.
 
-**Paso 2 — Parametrización.** $x = 2\cos\theta$, $y = 2 + 2\operatorname{sen}\theta$, con $\theta\in[-\frac\pi2, \frac\pi2]$. La normal saliente, que tiene componente $x \ge 0$, es $\breve n = (\cos\theta,\ \operatorname{sen}\theta,\ 0)$, y $d\sigma = 2\,d\theta\,dz$.
+**Paso 2 — Parametrización.** $x = 2\cos\theta$, $y = 2 + 2\mathop{\mathrm{sen}}\theta$, con $\theta\in[-\frac\pi2, \frac\pi2]$. La normal saliente, que tiene componente $x \ge 0$, es $\breve n = (\cos\theta,\ \mathop{\mathrm{sen}}\theta,\ 0)$, y $d\sigma = 2\thinspace d\theta\thinspace dz$.
 
 **Paso 3 — Integrando.**
 
-$$\vec f\cdot\breve n = (5 - 4 - 4\operatorname{sen}\theta)\cos\theta + 4\cos\theta\operatorname{sen}\theta = \cos\theta$$
+$$\vec f\cdot\breve n = (5 - 4 - 4\mathop{\mathrm{sen}}\theta)\cos\theta + 4\cos\theta\mathop{\mathrm{sen}}\theta = \cos\theta$$
 
-**Paso 4 — Límites en $z$.** De $4 - y = 2 - 2\operatorname{sen}\theta$ hasta $4$: longitud $2 + 2\operatorname{sen}\theta$.
+**Paso 4 — Límites en $z$.** De $4 - y = 2 - 2\mathop{\mathrm{sen}}\theta$ hasta $4$: longitud $2 + 2\mathop{\mathrm{sen}}\theta$.
 
 **Paso 5 — Integral.**
 
-$$\Phi = \int_{-\pi/2}^{\pi/2}\cos\theta\,(2 + 2\operatorname{sen}\theta)\cdot2\,d\theta = 4\int_{-\pi/2}^{\pi/2}\cos\theta\,d\theta + 4\int_{-\pi/2}^{\pi/2}\cos\theta\operatorname{sen}\theta\,d\theta = 8 + 0 = 8$$
+$$\Phi = \int_{-\pi/2}^{\pi/2}\cos\theta\thinspace(2 + 2\mathop{\mathrm{sen}}\theta)\cdot2\thinspace d\theta = 4\int_{-\pi/2}^{\pi/2}\cos\theta\thinspace d\theta + 4\int_{-\pi/2}^{\pi/2}\cos\theta\mathop{\mathrm{sen}}\theta\thinspace d\theta = 8 + 0 = 8$$
 
 </details>
 
@@ -427,7 +427,7 @@ $$\Phi = \int_{-\pi/2}^{\pi/2}\cos\theta\,(2 + 2\operatorname{sen}\theta)\cdot2\
 
 ### Pizarrón) Circulación de $\vec g + \nabla h$
 
-*Diapositiva final:* Sea $\vec g(x,y,z) = (y,\ xy,\ z)$, $h(x,y,z) = z^2\,w(x) - 2z\,w(y)$, $w \in C^1$. Calcular la circulación de $\vec f(x,y,z) = (\vec g + \nabla h)(x,y,z)$ a través del arco $C: \begin{cases} x^2 + y^2 + z^2 = 8 \\ y = \sqrt{x^2 + z^2} \end{cases}$
+*Diapositiva final:* Sea $\vec g(x,y,z) = (y,\ xy,\ z)$, $h(x,y,z) = z^2\thinspace w(x) - 2z\thinspace w(y)$, $w \in C^1$. Calcular la circulación de $\vec f(x,y,z) = (\vec g + \nabla h)(x,y,z)$ a través del arco $C: \begin{cases} x^2 + y^2 + z^2 = 8 \cr y = \sqrt{x^2 + z^2} \end{cases}$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -437,11 +437,11 @@ $$\Phi = \int_{-\pi/2}^{\pi/2}\cos\theta\,(2 + 2\operatorname{sen}\theta)\cdot2\
 
 **Paso 1 — Curva.** $2y^2 = 8 \Rightarrow y = 2$, con $x^2 + z^2 = 4$: una circunferencia en el plano $y = 2$ (curva cerrada).
 
-**Paso 2 — Rotor.** $\nabla h$ aporta circulación 0 (TP11 19c: $\operatorname{rot}\nabla h = \vec 0$), así que $\operatorname{rot}\vec f = \operatorname{rot}\vec g = (0,\ 0,\ y - 1)$.
+**Paso 2 — Rotor.** $\nabla h$ aporta circulación 0 (TP11 19c: $\mathop{\mathrm{rot}}\nabla h = \vec 0$), así que $\mathop{\mathrm{rot}}\vec f = \mathop{\mathrm{rot}}\vec g = (0,\ 0,\ y - 1)$.
 
 **Paso 3 — Stokes** con el disco $y = 2$, $x^2 + z^2 \le 4$, de normal $(0, \pm1, 0)$:
 
-$$\operatorname{rot}\vec f\cdot\breve n = 0 \ \Rightarrow\ \oint_C\vec f\cdot d\vec s = 0$$
+$$\mathop{\mathrm{rot}}\vec f\cdot\breve n = 0 \ \Rightarrow\ \oint_C\vec f\cdot d\vec s = 0$$
 
 </details>
 

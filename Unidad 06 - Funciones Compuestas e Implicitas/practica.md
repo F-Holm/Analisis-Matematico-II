@@ -27,21 +27,21 @@ Dadas $f$ y $g$, analice en cada caso si quedan definidas $f\circ g$ y $g\circ f
 
 *Jacobianas genéricas:*
 
-$$D\vec f(x,y) = \begin{pmatrix} y & x \\ 1 & -1 \end{pmatrix}, \qquad D\vec g(u,v) = \begin{pmatrix} 2u & 0 \\ -1 & 1 \end{pmatrix}$$
+$$D\vec f(x,y) = \begin{pmatrix} y & x \cr 1 & -1 \end{pmatrix}, \qquad D\vec g(u,v) = \begin{pmatrix} 2u & 0 \cr -1 & 1 \end{pmatrix}$$
 
 *$f\circ g$ en $(1,1)$:*
 
 - $\vec g(1,1) = (1, 0)$.
-- $D\vec f(1,0) = \begin{pmatrix} 0 & 1 \\ 1 & -1 \end{pmatrix}$ y $D\vec g(1,1) = \begin{pmatrix} 2 & 0 \\ -1 & 1 \end{pmatrix}$.
+- $D\vec f(1,0) = \begin{pmatrix} 0 & 1 \cr 1 & -1 \end{pmatrix}$ y $D\vec g(1,1) = \begin{pmatrix} 2 & 0 \cr -1 & 1 \end{pmatrix}$.
 
-$$D(\vec f\circ\vec g)(1,1) = \begin{pmatrix} 0\cdot2 + 1\cdot(-1) & 0\cdot0 + 1\cdot1 \\ 1\cdot2 + (-1)(-1) & 1\cdot0 + (-1)\cdot1 \end{pmatrix} = \begin{pmatrix} -1 & 1 \\ 3 & -1 \end{pmatrix}$$
+$$D(\vec f\circ\vec g)(1,1) = \begin{pmatrix} 0\cdot2 + 1\cdot(-1) & 0\cdot0 + 1\cdot1 \cr 1\cdot2 + (-1)(-1) & 1\cdot0 + (-1)\cdot1 \end{pmatrix} = \begin{pmatrix} -1 & 1 \cr 3 & -1 \end{pmatrix}$$
 
 *$g\circ f$ en $(1,1)$:*
 
 - $\vec f(1,1) = (1, 0)$.
-- $D\vec g(1,0) = \begin{pmatrix} 2 & 0 \\ -1 & 1 \end{pmatrix}$ y $D\vec f(1,1) = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$.
+- $D\vec g(1,0) = \begin{pmatrix} 2 & 0 \cr -1 & 1 \end{pmatrix}$ y $D\vec f(1,1) = \begin{pmatrix} 1 & 1 \cr 1 & -1 \end{pmatrix}$.
 
-$$D(\vec g\circ\vec f)(1,1) = \begin{pmatrix} 2 & 2 \\ -1 + 1 & -1 - 1 \end{pmatrix} = \begin{pmatrix} 2 & 2 \\ 0 & -2 \end{pmatrix}$$
+$$D(\vec g\circ\vec f)(1,1) = \begin{pmatrix} 2 & 2 \cr -1 + 1 & -1 - 1 \end{pmatrix} = \begin{pmatrix} 2 & 2 \cr 0 & -2 \end{pmatrix}$$
 
 **b)** $f: \Re^2\to\Re$ (dominio $y \ge 0$) y $\vec g: \Re\to\Re^2$.
 
@@ -51,10 +51,10 @@ $$(f\circ g)'(u) = \sqrt{2-u} - \frac{u}{2\sqrt{2-u}} \ \Rightarrow\ (f\circ g)'
 
 *$g\circ f$:* $\vec g(x\sqrt y) = (x\sqrt y,\ 2 - x\sqrt y)$, con dominio $y \ge 0$. Interior: $y > 0$.
 
-- $D\vec g = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$ (constante).
+- $D\vec g = \begin{pmatrix} 1 \cr -1 \end{pmatrix}$ (constante).
 - $Df(1,1) = \left(\sqrt y,\ \dfrac{x}{2\sqrt y}\right)\Big|_{(1,1)} = \left(1,\ \tfrac12\right)$.
 
-$$D(\vec g\circ f)(1,1) = \begin{pmatrix} 1 \\ -1 \end{pmatrix}\left(1\ \ \tfrac12\right) = \begin{pmatrix} 1 & \tfrac12 \\ -1 & -\tfrac12 \end{pmatrix}$$
+$$D(\vec g\circ f)(1,1) = \begin{pmatrix} 1 \cr -1 \end{pmatrix}\left(1\ \ \tfrac12\right) = \begin{pmatrix} 1 & \tfrac12 \cr -1 & -\tfrac12 \end{pmatrix}$$
 
 **c)**
 
@@ -66,26 +66,26 @@ $$D(\vec g\circ f)(1,1) = \begin{pmatrix} 1 \\ -1 \end{pmatrix}\left(1\ \ \tfrac
 *$f\circ g$:* el dominio es el de $\vec g$, $u \le 1$, porque $\vec f$ está definida en todo $\Re^2$. Calculamos en $(0,1,1)$:
 
 - $\vec g(0,1,1) = (-1,\ 1\cdot\sqrt1) = (-1, 1)$.
-- $D\vec f(x,y) = \begin{pmatrix} y^2 & 2xy \\ -1 & 1 \\ 1 & 0 \end{pmatrix}$, que en $(-1,1)$ es $\begin{pmatrix} 1 & -2 \\ -1 & 1 \\ 1 & 0 \end{pmatrix}$.
-- $D\vec g(u,v,w) = \begin{pmatrix} 1 & -1 & 0 \\ \frac{-w}{2\sqrt{1-u}} & 0 & \sqrt{1-u} \end{pmatrix}$, que en $(0,1,1)$ es $\begin{pmatrix} 1 & -1 & 0 \\ -\frac12 & 0 & 1 \end{pmatrix}$.
+- $D\vec f(x,y) = \begin{pmatrix} y^2 & 2xy \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$, que en $(-1,1)$ es $\begin{pmatrix} 1 & -2 \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$.
+- $D\vec g(u,v,w) = \begin{pmatrix} 1 & -1 & 0 \cr \frac{-w}{2\sqrt{1-u}} & 0 & \sqrt{1-u} \end{pmatrix}$, que en $(0,1,1)$ es $\begin{pmatrix} 1 & -1 & 0 \cr -\frac12 & 0 & 1 \end{pmatrix}$.
 
-$$D(\vec f\circ\vec g)(0,1,1) = \begin{pmatrix} 1 + 1 & -1 & -2 \\ -1 - \frac12 & 1 & 1 \\ 1 & -1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & -1 & -2 \\ -\frac32 & 1 & 1 \\ 1 & -1 & 0 \end{pmatrix}$$
+$$D(\vec f\circ\vec g)(0,1,1) = \begin{pmatrix} 1 + 1 & -1 & -2 \cr -1 - \frac12 & 1 & 1 \cr 1 & -1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & -1 & -2 \cr -\frac32 & 1 & 1 \cr 1 & -1 & 0 \end{pmatrix}$$
 
 *$g\circ f$:* $\vec g(xy^2,\ y - x,\ x) = (xy^2 - y + x,\ x\sqrt{1 - xy^2})$, con dominio $xy^2 \le 1$. Calculamos en $(0,1)$:
 
 - $\vec f(0,1) = (0, 1, 0)$.
-- $D\vec g(0,1,0) = \begin{pmatrix} 1 & -1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$ y $D\vec f(0,1) = \begin{pmatrix} 1 & 0 \\ -1 & 1 \\ 1 & 0 \end{pmatrix}$.
+- $D\vec g(0,1,0) = \begin{pmatrix} 1 & -1 & 0 \cr 0 & 0 & 1 \end{pmatrix}$ y $D\vec f(0,1) = \begin{pmatrix} 1 & 0 \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$.
 
-$$D(\vec g\circ\vec f)(0,1) = \begin{pmatrix} 1 + 1 & -1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & -1 \\ 1 & 0 \end{pmatrix}$$
+$$D(\vec g\circ\vec f)(0,1) = \begin{pmatrix} 1 + 1 & -1 \cr 1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & -1 \cr 1 & 0 \end{pmatrix}$$
 
 </details>
 
 **Respuesta:**
 
-- a) Ambas quedan definidas con dominio $\Re^2$. $D(\vec f\circ\vec g)(1,1) = \begin{pmatrix} -1 & 1 \\ 3 & -1 \end{pmatrix}$; $\ D(\vec g\circ\vec f)(1,1) = \begin{pmatrix} 2 & 2 \\ 0 & -2 \end{pmatrix}$.
-- b) Dominio de $f\circ g = \{u \in \Re / u \le 2\}$; dominio de $g\circ f = \{(x,y) \in \Re^2 / y \ge 0\}$. $D(f\circ g)(1) = (0.5)$; $\ D(g\circ f)(1,1) = \begin{pmatrix} 1 & 1/2 \\ -1 & -1/2 \end{pmatrix}$.
+- a) Ambas quedan definidas con dominio $\Re^2$. $D(\vec f\circ\vec g)(1,1) = \begin{pmatrix} -1 & 1 \cr 3 & -1 \end{pmatrix}$; $\ D(\vec g\circ\vec f)(1,1) = \begin{pmatrix} 2 & 2 \cr 0 & -2 \end{pmatrix}$.
+- b) Dominio de $f\circ g = \lbrace u \in \Re / u \le 2\rbrace$; dominio de $g\circ f = \lbrace(x,y) \in \Re^2 / y \ge 0\rbrace$. $D(f\circ g)(1) = (0.5)$; $\ D(g\circ f)(1,1) = \begin{pmatrix} 1 & 1/2 \cr -1 & -1/2 \end{pmatrix}$.
 - c) Ninguna queda definida; tampoco sus matrices jacobianas.
-- d) Dominio de $\vec f\circ\vec g = \{(u,v,w) \in \Re^3 / u \le 1\}$; dominio de $\vec g\circ\vec f = \{(x,y) \in \Re^2 / xy^2 \le 1\}$. $D(\vec f\circ\vec g)(0,1,1) = \begin{pmatrix} 2 & -1 & -2 \\ -3/2 & 1 & 1 \\ 1 & -1 & 0 \end{pmatrix}$; $\ D(\vec g\circ\vec f)(0,1) = \begin{pmatrix} 2 & -1 \\ 1 & 0 \end{pmatrix}$.
+- d) Dominio de $\vec f\circ\vec g = \lbrace(u,v,w) \in \Re^3 / u \le 1\rbrace$; dominio de $\vec g\circ\vec f = \lbrace(x,y) \in \Re^2 / xy^2 \le 1\rbrace$. $D(\vec f\circ\vec g)(0,1,1) = \begin{pmatrix} 2 & -1 & -2 \cr -3/2 & 1 & 1 \cr 1 & -1 & 0 \end{pmatrix}$; $\ D(\vec g\circ\vec f)(0,1) = \begin{pmatrix} 2 & -1 \cr 1 & 0 \end{pmatrix}$.
 
 </details>
 
@@ -110,7 +110,7 @@ Dada $h : D \subset \Re^2 \to \Re \ /\ h(x,y) = x\ln(1 - xy)$ siendo $D$ su domi
 
 </details>
 
-**Respuesta:** Por ejemplo, $h = f\circ\vec g$ si $f : D_f \subset \Re^2 \to \Re \ /\ f(u,v) = u\ln(v)$ con $D_f = \{(u,v) \in \Re^2 / v > 0\}$ y $\vec g : D_g \subset \Re^2 \to \Re^2 \ /\ \vec g(x,y) = (x,\ 1 - xy)$ con $D_g = \{(x,y) \in \Re^2 / xy < 1\}$.
+**Respuesta:** Por ejemplo, $h = f\circ\vec g$ si $f : D_f \subset \Re^2 \to \Re \ /\ f(u,v) = u\ln(v)$ con $D_f = \lbrace(u,v) \in \Re^2 / v > 0\rbrace$ y $\vec g : D_g \subset \Re^2 \to \Re^2 \ /\ \vec g(x,y) = (x,\ 1 - xy)$ con $D_g = \lbrace(x,y) \in \Re^2 / xy < 1\rbrace$.
 
 </details>
 
@@ -118,7 +118,7 @@ Dada $h : D \subset \Re^2 \to \Re \ /\ h(x,y) = x\ln(1 - xy)$ siendo $D$ su domi
 
 ### 03) Composición, derivada direccional y recta normal
 
-Si $z = 2uv - 2\sqrt{v - u}$ con $\begin{cases} u = x - y^2 \\ v = x + 2xy - 1 \end{cases}$, resulta $z = h(x,y)$.
+Si $z = 2uv - 2\sqrt{v - u}$ con $\begin{cases} u = x - y^2 \cr v = x + 2xy - 1 \end{cases}$, resulta $z = h(x,y)$.
 
 - a) Reconozca las funciones $f$ y $g$ que generan $h$ como $h = f\circ g$.
 - b) Calcule la derivada direccional de $h$ en $(2,1)$, en la dirección que va hacia el $(5,5)$.
@@ -175,7 +175,7 @@ Eliminamos $t$:
 
 - a) $f(u,v) = 2uv - 2\sqrt{v - u}$, $\ g(x,y) = (x - y^2,\ x + 2xy - 1)$.
 - b) $-3$.
-- c) $\begin{cases} x + y = 3 \\ x + 15z = 92 \end{cases}$.
+- c) $\begin{cases} x + y = 3 \cr x + 15z = 92 \end{cases}$.
 - d) No.
 
 </details>
@@ -194,7 +194,7 @@ Dada $w = u^3 - xv^2$ con $u = x\sqrt{y - x} \ \wedge\ v = 2x + y^2$, resulta $w
 
 **Paso 1 — Árbol.** $w$ depende de $u$, de $v$ y **también directamente de $x$**, por el término $-xv^2$. Entonces:
 
-$$f'_x = w'_u\,u'_x + w'_v\,v'_x + w'_x\big|_{\text{directa}}$$
+$$f'_x = w'_u\thinspace u'_x + w'_v\thinspace v'_x + w'_x\big|_{\text{directa}}$$
 
 **Paso 2 — Valores en $(0,1)$:** $u = 0\cdot\sqrt1 = 0$ y $v = 0 + 1 = 1$.
 
@@ -246,7 +246,7 @@ La composición resulta "mejor" que $f$ porque $\vec g$ sólo toma valores $u = 
 
 ### 06) Función de una expresión homogénea
 
-Sea $z = f\!\left(\dfrac{x^2 - y^2}{x^2 + y^2}\right)$ con $f$ diferenciable, calcule $x\dfrac{\partial z}{\partial x} + y\dfrac{\partial z}{\partial y}$ para todo $(x,y) \ne (0,0)$.
+Sea $z = f\negthinspace\left(\dfrac{x^2 - y^2}{x^2 + y^2}\right)$ con $f$ diferenciable, calcule $x\dfrac{\partial z}{\partial x} + y\dfrac{\partial z}{\partial y}$ para todo $(x,y) \ne (0,0)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -256,7 +256,7 @@ Sea $z = f\!\left(\dfrac{x^2 - y^2}{x^2 + y^2}\right)$ con $f$ diferenciable, ca
 
 **Paso 1 — Variable intermedia.** $t = \dfrac{x^2 - y^2}{x^2 + y^2}$, así que $z = f(t)$ y:
 
-$$z'_x = f'(t)\,t'_x, \qquad z'_y = f'(t)\,t'_y$$
+$$z'_x = f'(t)\thinspace t'_x, \qquad z'_y = f'(t)\thinspace t'_y$$
 
 **Paso 2 — Derivadas de $t$** (regla del cociente):
 
@@ -264,7 +264,7 @@ $$t'_x = \frac{2x(x^2+y^2) - (x^2-y^2)2x}{(x^2+y^2)^2} = \frac{4xy^2}{(x^2+y^2)^
 
 **Paso 3 — Combinación:**
 
-$$x\,z'_x + y\,z'_y = f'(t)\,\frac{4x^2y^2 - 4x^2y^2}{(x^2+y^2)^2} = 0$$
+$$x\thinspace z'_x + y\thinspace z'_y = f'(t)\thinspace\frac{4x^2y^2 - 4x^2y^2}{(x^2+y^2)^2} = 0$$
 
 **Interpretación:** $t$ es homogénea de grado 0 ($t(\lambda x, \lambda y) = t(x,y)$), así que es constante sobre las rectas por el origen. La combinación $xz'_x + yz'_y$ es la derivada en la dirección radial, y por eso es 0.
 
@@ -278,7 +278,7 @@ $$x\,z'_x + y\,z'_y = f'(t)\,\frac{4x^2y^2 - 4x^2y^2}{(x^2+y^2)^2} = 0$$
 
 ### 07) Verificación de una identidad
 
-Dada $h(x,y) = f(2x/y) - f(y/x)$ con $f \in C^1$, verifique que $x\,h'_x + y\,h'_y = 0$ para todo punto $(x,y)$ tal que $xy \ne 0$.
+Dada $h(x,y) = f(2x/y) - f(y/x)$ con $f \in C^1$, verifique que $x\thinspace h'_x + y\thinspace h'_y = 0$ para todo punto $(x,y)$ tal que $xy \ne 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -292,7 +292,7 @@ $$h'_x = f'(s)\cdot\frac{2}{y} - f'(t)\cdot\left(-\frac{y}{x^2}\right), \qquad h
 
 **Paso 2 — Combinación.**
 
-$$x\,h'_x + y\,h'_y = f'(s)\left(\frac{2x}{y} - \frac{2x}{y}\right) + f'(t)\left(\frac{y}{x} - \frac{y}{x}\right) = 0 \ ✓$$
+$$x\thinspace h'_x + y\thinspace h'_y = f'(s)\left(\frac{2x}{y} - \frac{2x}{y}\right) + f'(t)\left(\frac{y}{x} - \frac{y}{x}\right) = 0 \ ✓$$
 
 Como en el ejercicio 06, $s$ y $t$ son homogéneas de grado 0.
 
@@ -341,7 +341,7 @@ La temperatura en cada punto $(x,y)$ de una lámina metálica plana es $T = 3x/(
 - a) Halle la línea de nivel (isoterma) que pasa por el punto $\bar A = (2,-1)$.
 - b) Halle la dirección de máximo crecimiento de la temperatura en $\bar A = (2,-1)$.
 - c) Halle el coeficiente de variación de temperatura, $f'(\bar A, \breve r)$ con $\bar A = (2,-1)$, en la dirección de la bisectriz del 1º cuadrante con componente positiva según $x$.
-- d) Halle el coeficiente de variación de temperatura a lo largo de la curva $C$ de ecuación $\bar X = (2\operatorname{sen}(t),\ \cos(t))$ con $t \in [0, 2\pi]$. Esto es $dT/dt$ con $T = f(\bar X)$ y $\bar X \in C$.<sup>(\*)</sup>
+- d) Halle el coeficiente de variación de temperatura a lo largo de la curva $C$ de ecuación $\bar X = (2\mathop{\mathrm{sen}}(t),\ \cos(t))$ con $t \in [0, 2\pi]$. Esto es $dT/dt$ con $T = f(\bar X)$ y $\bar X \in C$.<sup>(\*)</sup>
 - e) Halle la cota de error relativo porcentual en el cálculo de $T$ si se midieron $x = 2$ e $y = -1$ con cotas de errores relativos de 1% y 2% respectivamente.
 
 <sup>(\*)</sup> Observe que esta derivada, para funciones diferenciables, coincide con $f'(\bar X, \breve r)$ para $\bar X \in C$ y $\breve r$ versor tangente a la curva orientado según lo impone la parametrización de la misma.
@@ -374,38 +374,38 @@ Su norma es $\dfrac{15}{25}$, así que el versor es $\left(-\frac35, \frac45\rig
 
 $$T'(\bar A, \breve r) = \frac{-9 + 12}{25\sqrt2} = \frac{3}{25\sqrt2} = \frac{3\sqrt2}{50}$$
 
-**d)** Sobre la curva, $x = 2\operatorname{sen}t$ e $y = \cos t$, así que $x^2 + y^2 = 4\operatorname{sen}^2t + \cos^2t = 3\operatorname{sen}^2t + 1$:
+**d)** Sobre la curva, $x = 2\mathop{\mathrm{sen}}t$ e $y = \cos t$, así que $x^2 + y^2 = 4\mathop{\mathrm{sen}}\nolimits^2t + \cos^2t = 3\mathop{\mathrm{sen}}\nolimits^2t + 1$:
 
-$$T(t) = \frac{6\operatorname{sen}t}{3\operatorname{sen}^2t + 1}$$
+$$T(t) = \frac{6\mathop{\mathrm{sen}}t}{3\mathop{\mathrm{sen}}\nolimits^2t + 1}$$
 
 Derivando como cociente:
 
-$$\frac{dT}{dt} = \frac{6\cos t\,(3\operatorname{sen}^2t + 1) - 6\operatorname{sen}t\cdot6\operatorname{sen}t\cos t}{(3\operatorname{sen}^2t + 1)^2} = \frac{6\cos t\,(1 - 3\operatorname{sen}^2t)}{(3\operatorname{sen}^2t + 1)^2}$$
+$$\frac{dT}{dt} = \frac{6\cos t\thinspace(3\mathop{\mathrm{sen}}\nolimits^2t + 1) - 6\mathop{\mathrm{sen}}t\cdot6\mathop{\mathrm{sen}}t\cos t}{(3\mathop{\mathrm{sen}}\nolimits^2t + 1)^2} = \frac{6\cos t\thinspace(1 - 3\mathop{\mathrm{sen}}\nolimits^2t)}{(3\mathop{\mathrm{sen}}\nolimits^2t + 1)^2}$$
 
-Sobre la nota: $\dfrac{dT}{dt} = \nabla T\cdot\bar X'(t) = \lVert\bar X'(t)\rVert\,T'(\bar X, \breve r)$. Es **proporcional** a la derivada direccional, con factor $\lVert\bar X'\rVert$; coincide sólo si la curva está parametrizada por longitud de arco. Por eso la fe de erratas.
+Sobre la nota: $\dfrac{dT}{dt} = \nabla T\cdot\bar X'(t) = \lVert\bar X'(t)\rVert\thinspace T'(\bar X, \breve r)$. Es **proporcional** a la derivada direccional, con factor $\lVert\bar X'\rVert$; coincide sólo si la curva está parametrizada por longitud de arco. Por eso la fe de erratas.
 
 **e)** **Fórmula:**
 
-$$\varepsilon_{\text{rel}\,T} = \left|\frac{x\,T'_x}{T}\right|\varepsilon_{\text{rel}\,x} + \left|\frac{y\,T'_y}{T}\right|\varepsilon_{\text{rel}\,y}$$
+$$\varepsilon_{\text{rel}\thinspace T} = \left|\frac{x\thinspace T'_x}{T}\right|\varepsilon_{\text{rel}\thinspace x} + \left|\frac{y\thinspace T'_y}{T}\right|\varepsilon_{\text{rel}\thinspace y}$$
 
-Sale de dividir $\varepsilon_T = |T'_x|\varepsilon_x + |T'_y|\varepsilon_y$ por $|T|$ y escribir $\varepsilon_x = |x|\,\varepsilon_{\text{rel}\,x}$.
+Sale de dividir $\varepsilon_T = |T'_x|\varepsilon_x + |T'_y|\varepsilon_y$ por $|T|$ y escribir $\varepsilon_x = |x|\thinspace\varepsilon_{\text{rel}\thinspace x}$.
 
 **Cálculo:** $T = \dfrac{30}{25}$, $T'_x = -\dfrac{9}{25}$ y $T'_y = \dfrac{12}{25}$:
 
 - $\left|\dfrac{2\cdot(-9)}{30}\right| = 0{,}6$.
 - $\left|\dfrac{(-1)\cdot12}{30}\right| = 0{,}4$.
 
-$$\varepsilon_{\text{rel}\,T} = 0{,}6\cdot1\% + 0{,}4\cdot2\% = 1{,}4\%$$
+$$\varepsilon_{\text{rel}\thinspace T} = 0{,}6\cdot0{,}01 + 0{,}4\cdot0{,}02 = 0{,}014 \quad (1{,}4\text{ por ciento})$$
 
 </details>
 
 **Respuesta:**
 
-- a) $\{(x,y) \in \Re^2 - \{\bar 0\} / x^2 + y^2 = 5x/2\}$. Es decir: puntos de la circunferencia con centro en $(5/4, 0)$ y radio $5/4$, salvo el origen de coordenadas.
+- a) $\lbrace(x,y) \in \Re^2 - \lbrace\bar 0\rbrace / x^2 + y^2 = 5x/2\rbrace$. Es decir: puntos de la circunferencia con centro en $(5/4, 0)$ y radio $5/4$, salvo el origen de coordenadas.
 - b) $\breve r_{\text{máx}} = (-3/5,\ 4/5)$.
 - c) $3\sqrt2/50$.
-- d) $\dfrac{6\cos(t)\,(1 - 3\operatorname{sen}^2(t))}{(3\operatorname{sen}^2(t) + 1)^2}$.
-- e) $1.4\%$.
+- d) $\dfrac{6\cos(t)\thinspace(1 - 3\mathop{\mathrm{sen}}\nolimits^2(t))}{(3\mathop{\mathrm{sen}}\nolimits^2(t) + 1)^2}$.
+- e) 1,4 %.
 
 </details>
 
@@ -555,7 +555,7 @@ $$f' = -\frac{46\cdot3 - 6\cdot1 + 0}{\sqrt{14}} = -\frac{132}{\sqrt{14}} = -66\
 
 ### 14) Derivada en la dirección normal exterior a la línea de nivel
 
-Dada $f : \Re^2 - \{\bar 0\} \to \Re \ /\ f(x,y) = \ln(x^2 + y^2)$, calcule la derivada direccional de $f$ en el punto $(x_0,y_0)$ de su dominio natural, en la dirección normal exterior<sup>(@)</sup> a la línea de nivel de $f$ que pasa por dicho punto.
+Dada $f : \Re^2 - \lbrace\bar 0\rbrace \to \Re \ /\ f(x,y) = \ln(x^2 + y^2)$, calcule la derivada direccional de $f$ en el punto $(x_0,y_0)$ de su dominio natural, en la dirección normal exterior<sup>(@)</sup> a la línea de nivel de $f$ que pasa por dicho punto.
 
 <sup>(@)</sup> Hacia afuera de la región acotada que la línea encierra.
 
@@ -577,7 +577,7 @@ Tiene la misma dirección y sentido que $\breve r$. Por eso la derivada es la m�
 
 **Paso 3 — Derivada.** Con $\rho = \sqrt{x_0^2 + y_0^2}$:
 
-$$f' = \nabla f\cdot\breve r = \frac{2x_0^2 + 2y_0^2}{(x_0^2 + y_0^2)\,\rho} = \frac{2}{\rho}$$
+$$f' = \nabla f\cdot\breve r = \frac{2x_0^2 + 2y_0^2}{(x_0^2 + y_0^2)\thinspace\rho} = \frac{2}{\rho}$$
 
 </details>
 
@@ -636,7 +636,7 @@ Siendo $C$ la curva intersección de las superficies: $x^2 - y^2 = 12$ y $z = x 
 
 **Paso 3 — Dirección tangente.**
 
-$$\bar d = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \\ 8 & -4 & 0 \\ 1 & 4 & -1 \end{vmatrix} = (4 - 0,\ -(-8 - 0),\ 32 + 4) = (4, 8, 36) \parallel (1, 2, 9)$$
+$$\bar d = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 8 & -4 & 0 \cr 1 & 4 & -1 \end{vmatrix} = (4 - 0,\ -(-8 - 0),\ 32 + 4) = (4, 8, 36) \parallel (1, 2, 9)$$
 
 **Paso 4 — Recta tangente.** $\vec X = (4 + t,\ 2 + 2t,\ 8 + 9t)$.
 
@@ -656,7 +656,7 @@ El discriminante es $36 - 56 = -20 < 0$ ⇒ no hay soluciones reales ⇒ **no** 
 
 ### 17) Direcciones de derivada nula de una composición con implícita
 
-Dada $z = u + v\,e^{u - v}$ con $(u,v) = (f(x,y),\ y^2)$ resulta $z = h(x,y)$. Halle las direcciones $\breve r$ tales que $h'((2,1), \breve r) = 0$, si la función $f$ queda definida implícitamente mediante la ecuación $2y - ux - \ln(u) = 0$.
+Dada $z = u + v\thinspace e^{u - v}$ con $(u,v) = (f(x,y),\ y^2)$ resulta $z = h(x,y)$. Halle las direcciones $\breve r$ tales que $h'((2,1), \breve r) = 0$, si la función $f$ queda definida implícitamente mediante la ecuación $2y - ux - \ln(u) = 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -680,8 +680,8 @@ $$u'_x = -\frac{G'_x}{G'_u} = -\frac13, \qquad u'_y = -\frac{G'_y}{G'_u} = \frac
 
 **Paso 4 — Derivadas de $z$ respecto de $u$, $v$** (en $u = v = 1$, donde $e^{u-v} = 1$):
 
-- $z'_u = 1 + v\,e^{u-v} = 2$.
-- $z'_v = e^{u-v} - v\,e^{u-v} = 1 - 1 = 0$.
+- $z'_u = 1 + v\thinspace e^{u-v} = 2$.
+- $z'_v = e^{u-v} - v\thinspace e^{u-v} = 1 - 1 = 0$.
 
 **Paso 5 — Regla de la cadena.**
 
@@ -731,7 +731,7 @@ $$1(x - 2) + 4(y - 1) + 6(z + 4) = 0 \ \Rightarrow\ x + 4y + 6z + 18 = 0$$
 
 ### 19) Una EDO a partir de una implícita
 
-Considere $h = f\circ\vec g$ con $\vec g(x) = (e^x,\ e^{x^2})$ y $f(u,v)$ definida por $y - 1 + \ln(yuv) = 0$. Demuestre que $y = h(x)$ con $h(0) = 1$ satisface la ecuación $(1 + y)\,y' + (1 + 2x)\,y = 0$.
+Considere $h = f\circ\vec g$ con $\vec g(x) = (e^x,\ e^{x^2})$ y $f(u,v)$ definida por $y - 1 + \ln(yuv) = 0$. Demuestre que $y = h(x)$ con $h(0) = 1$ satisface la ecuación $(1 + y)\thinspace y' + (1 + 2x)\thinspace y = 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -741,7 +741,7 @@ Considere $h = f\circ\vec g$ con $\vec g(x) = (e^x,\ e^{x^2})$ y $f(u,v)$ defini
 
 **Paso 1 — Ecuación para $y = h(x)$.** Reemplazando $u = e^x$ y $v = e^{x^2}$ en la ecuación que define $f$:
 
-$$y - 1 + \ln\!\left(y\,e^x\,e^{x^2}\right) = 0 \ \Rightarrow\ y - 1 + \ln y + x + x^2 = 0$$
+$$y - 1 + \ln\negthinspace\left(y\thinspace e^x\thinspace e^{x^2}\right) = 0 \ \Rightarrow\ y - 1 + \ln y + x + x^2 = 0$$
 
 En $x = 0$: $y - 1 + \ln y = 0$ se cumple con $y = 1$, que es consistente con $h(0) = 1$.
 
@@ -751,7 +751,7 @@ $$y' + \frac{y'}{y} + 1 + 2x = 0$$
 
 **Paso 3 — Multiplicar por $y$** ($y > 0$):
 
-$$y\,y' + y' + (1 + 2x)\,y = 0 \ \Rightarrow\ (1 + y)\,y' + (1 + 2x)\,y = 0 \ ✓$$
+$$y\thinspace y' + y' + (1 + 2x)\thinspace y = 0 \ \Rightarrow\ (1 + y)\thinspace y' + (1 + 2x)\thinspace y = 0 \ ✓$$
 
 </details>
 
@@ -763,7 +763,7 @@ $$y\,y' + y' + (1 + 2x)\,y = 0 \ \Rightarrow\ (1 + y)\,y' + (1 + 2x)\,y = 0 \ �
 
 ### 20) Identidad para una implícita
 
-Verifique que $z = f(x,y)$ definida implícitamente por $x + yz - e^z = 0$ satisface la ecuación que $z\,z'_x - z'_y = 0$.
+Verifique que $z = f(x,y)$ definida implícitamente por $x + yz - e^z = 0$ satisface la ecuación que $z\thinspace z'_x - z'_y = 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -779,7 +779,7 @@ $$z'_x = -\frac{1}{y - e^z}, \qquad z'_y = -\frac{z}{y - e^z}$$
 
 **Paso 3 — Verificación.**
 
-$$z\,z'_x - z'_y = -\frac{z}{y - e^z} + \frac{z}{y - e^z} = 0 \ ✓$$
+$$z\thinspace z'_x - z'_y = -\frac{z}{y - e^z} + \frac{z}{y - e^z} = 0 \ ✓$$
 
 </details>
 
@@ -836,7 +836,7 @@ $$\lVert\nabla h\rVert = \sqrt{4 + \frac94} = \sqrt{\frac{25}{4}} = \frac52$$
 
 ### 22) Aproximación con una variable implícita
 
-Dada $w = u^2v + 3v^2$ con $\begin{cases} u = x + y^2 \\ v = g(x,y) \end{cases}$, resulta $w = h(x,y)$. Calcule aproximadamente $h(2.98,\ 2.01)$ sabiendo que $g$ queda definida por $xv + \ln(v + y - 2) - 3 = 0$.
+Dada $w = u^2v + 3v^2$ con $\begin{cases} u = x + y^2 \cr v = g(x,y) \end{cases}$, resulta $w = h(x,y)$. Calcule aproximadamente $h(2.98,\ 2.01)$ sabiendo que $g$ queda definida por $xv + \ln(v + y - 2) - 3 = 0$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -881,7 +881,7 @@ $$h(2{,}98;\ 2{,}01) \approx 52 + 0{,}25(-0{,}02) + 42{,}25(0{,}01) = 52 - 0{,}0
 
 ### 23) Función decreciente a lo largo de una curva
 
-La ecuación $uy + x + e^{2u + y + x - 5} - 4 = 0$ define implícitamente $u = f(x,y)$, sabiendo que los puntos $(x,y)$ pertenecen a la curva de ecuación $\bar X = (t^2 - 3,\ 2 + \operatorname{sen}(t - 2))$ resulta que $u = h(t)$; verifique que $h$ es decreciente en $t_0 = 2$.
+La ecuación $uy + x + e^{2u + y + x - 5} - 4 = 0$ define implícitamente $u = f(x,y)$, sabiendo que los puntos $(x,y)$ pertenecen a la curva de ecuación $\bar X = (t^2 - 3,\ 2 + \mathop{\mathrm{sen}}(t - 2))$ resulta que $u = h(t)$; verifique que $h$ es decreciente en $t_0 = 2$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -919,7 +919,7 @@ Por lo tanto $h$ es decreciente en $t_0 = 2$.
 
 ### 24) Hallar $g$ para que la composición sea constante
 
-Sea $f \in C^1$ con $\nabla f = (1,-1)$ constante, halle $g$ derivable tal que $h(x) = f(x\,g(x),\ g(x))$ sea constante; suponga que la gráfica de $g$ pasa por $(3,1)$.
+Sea $f \in C^1$ con $\nabla f = (1,-1)$ constante, halle $g$ derivable tal que $h(x) = f(x\thinspace g(x),\ g(x))$ sea constante; suponga que la gráfica de $g$ pasa por $(3,1)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -927,13 +927,13 @@ Sea $f \in C^1$ con $\nabla f = (1,-1)$ constante, halle $g$ derivable tal que $
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Derivada de $h$.** Con $u = x\,g(x)$ y $v = g(x)$:
+**Paso 1 — Derivada de $h$.** Con $u = x\thinspace g(x)$ y $v = g(x)$:
 
-$$h'(x) = f'_u\,u' + f'_v\,v' = 1\cdot\big(g + x\,g'\big) + (-1)\cdot g' = g + (x - 1)\,g'$$
+$$h'(x) = f'_u\thinspace u' + f'_v\thinspace v' = 1\cdot\big(g + x\thinspace g'\big) + (-1)\cdot g' = g + (x - 1)\thinspace g'$$
 
 **Paso 2 — $h$ constante ⇔ $h' = 0$:**
 
-$$g + (x - 1)\,g' = 0 \ \Rightarrow\ \frac{g'}{g} = -\frac{1}{x - 1}$$
+$$g + (x - 1)\thinspace g' = 0 \ \Rightarrow\ \frac{g'}{g} = -\frac{1}{x - 1}$$
 
 **Paso 3 — Resolver (separable).** $\ln|g| = -\ln|x - 1| + c \Rightarrow g = \dfrac{C}{x - 1}$.
 
@@ -949,7 +949,7 @@ $$g + (x - 1)\,g' = 0 \ \Rightarrow\ \frac{g'}{g} = -\frac{1}{x - 1}$$
 
 ### 25) Hallar $f$ para que sea solución de una EDO
 
-Halle $f(u)$ tal que $y = x\,f(x^2 - 1)$ sea solución de la ecuación diferencial $x\,y' - y = 2x^3$.
+Halle $f(u)$ tal que $y = x\thinspace f(x^2 - 1)$ sea solución de la ecuación diferencial $x\thinspace y' - y = 2x^3$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -959,11 +959,11 @@ Halle $f(u)$ tal que $y = x\,f(x^2 - 1)$ sea solución de la ecuación diferenci
 
 **Paso 1 — Derivar.** Con $u = x^2 - 1$ y $u' = 2x$:
 
-$$y' = f(u) + x\,f'(u)\cdot2x = f(u) + 2x^2f'(u)$$
+$$y' = f(u) + x\thinspace f'(u)\cdot2x = f(u) + 2x^2f'(u)$$
 
 **Paso 2 — Reemplazar en la EDO.**
 
-$$x\,y' - y = x\,f(u) + 2x^3f'(u) - x\,f(u) = 2x^3f'(u) = 2x^3$$
+$$x\thinspace y' - y = x\thinspace f(u) + 2x^3f'(u) - x\thinspace f(u) = 2x^3f'(u) = 2x^3$$
 
 **Paso 3 — Despejar.** $f'(u) = 1$ (para $x \ne 0$) ⇒ $f(u) = u + C$.
 
@@ -1054,8 +1054,8 @@ Proponga dos funciones discontinuas (no son continuas en todo punto) cuya compos
 
 **Respuesta:** por ejemplo:
 
-- $g(x) = \begin{cases} 1 & x \ge 0 \\ -1 & x < 0 \end{cases}$, discontinua en 0.
-- $f(u) = \begin{cases} 0 & u = \pm1 \\ 1 & u \ne \pm1 \end{cases}$, discontinua en $\pm1$.
+- $g(x) = \begin{cases} 1 & x \ge 0 \cr -1 & x < 0 \end{cases}$, discontinua en 0.
+- $f(u) = \begin{cases} 0 & u = \pm1 \cr 1 & u \ne \pm1 \end{cases}$, discontinua en $\pm1$.
 
 Como $g$ sólo toma los valores $\pm1$, $(f\circ g)(x) = 0$ para todo $x$: es **constante**, y por lo tanto continua y derivable en todo punto.
 

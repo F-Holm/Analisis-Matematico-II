@@ -16,18 +16,18 @@ $f(x,y)$ es **homogénea de grado 0** si $f(tx, ty) = f(x,y)$. Entonces $f$ depe
 
 La EDO $y' = f(x,y)$, con $f$ homogénea de grado 0, se resuelve con el cambio
 
-$$z = \frac yx, \qquad y = zx, \qquad y' = z + x\,z'$$
+$$z = \frac yx, \qquad y = zx, \qquad y' = z + x\thinspace z'$$
 
-y queda **separable**: $\ x\,z' = f(1,z) - z$.
+y queda **separable**: $\ x\thinspace z' = f(1,z) - z$.
 
-- También vale escrito como $M\,dx + N\,dy = 0$ con $M$ y $N$ homogéneas del **mismo grado**.
+- También vale escrito como $M\thinspace dx + N\thinspace dy = 0$ con $M$ y $N$ homogéneas del **mismo grado**.
 - **Ecuaciones "casi homogéneas"**, como $y' = \dfrac{a_1x + b_1y + c_1}{a_2x + b_2y + c_2}$: se trasladan el origen al punto donde se cortan las rectas ($x = u + h$, $y = v + k$) y quedan homogéneas en $u$, $v$.
 
 ---
 
 ## 2. Ecuaciones diferenciales totales exactas
 
-$M(x,y)\,dx + N(x,y)\,dy = 0$ es **exacta** si existe $U$ con $U'_x = M$ y $U'_y = N$. Es decir, $(M,N)$ es un campo de gradientes.
+$M(x,y)\thinspace dx + N(x,y)\thinspace dy = 0$ es **exacta** si existe $U$ con $U'_x = M$ y $U'_y = N$. Es decir, $(M,N)$ es un campo de gradientes.
 
 **Criterio** (en un dominio simplemente conexo, con $M, N \in C^1$):
 
@@ -39,7 +39,7 @@ $$\boxed{M'_y = N'_x}$$
 
 ### Factor integrante
 
-Si $M'_y \ne N'_x$, se busca $\mu \ne 0$ tal que $\mu M\,dx + \mu N\,dy = 0$ sea exacta. Hay dos casos útiles:
+Si $M'_y \ne N'_x$, se busca $\mu \ne 0$ tal que $\mu M\thinspace dx + \mu N\thinspace dy = 0$ sea exacta. Hay dos casos útiles:
 
 | Si … depende sólo de | Factor integrante |
 |---|---|
@@ -52,7 +52,7 @@ Si $M'_y \ne N'_x$, se busca $\mu \ne 0$ tal que $\mu M\,dx + \mu N\,dy = 0$ sea
 
 ## 3. Líneas de campo
 
-Las **líneas de campo** (o líneas de flujo) de $\vec f$ son las curvas que en cada punto son **tangentes al campo**. Si $\vec g(t)$ es una línea de campo, $\vec g'(t) = \lambda\,\vec f(\vec g(t))$.
+Las **líneas de campo** (o líneas de flujo) de $\vec f$ son las curvas que en cada punto son **tangentes al campo**. Si $\vec g(t)$ es una línea de campo, $\vec g'(t) = \lambda\thinspace\vec f(\vec g(t))$.
 
 **En el plano**, con $\vec f = (P, Q)$:
 
@@ -80,9 +80,9 @@ Se reemplaza $y = e^{rx}$ y queda $a_nr^n + \dots + a_1r + a_0 = 0$.
 
 | Raíces de la característica | Aporte a $y_H$ |
 |---|---|
-| Real simple $r$ | $C\,e^{rx}$ |
-| Real de multiplicidad $m$ | $(C_1 + C_2x + \dots + C_mx^{m-1})\,e^{rx}$ |
-| Complejas $\alpha \pm \beta i$ | $e^{\alpha x}(C_1\cos\beta x + C_2\operatorname{sen}\beta x)$ |
+| Real simple $r$ | $C\thinspace e^{rx}$ |
+| Real de multiplicidad $m$ | $(C_1 + C_2x + \dots + C_mx^{m-1})\thinspace e^{rx}$ |
+| Complejas $\alpha \pm \beta i$ | $e^{\alpha x}(C_1\cos\beta x + C_2\mathop{\mathrm{sen}}\beta x)$ |
 
 ### Solución particular: coeficientes indeterminados
 
@@ -92,7 +92,7 @@ Se usa cuando $f$ es un polinomio, una exponencial, un seno/coseno, o productos 
 |---|---|
 | Polinomio de grado $k$ | Polinomio completo de grado $k$ |
 | $e^{ax}\cdot$ polinomio | $e^{ax}\cdot$ polinomio completo |
-| $\operatorname{sen}(bx)$ o $\cos(bx)$ | $A\cos bx + B\operatorname{sen}bx$ |
+| $\mathop{\mathrm{sen}}(bx)$ o $\cos(bx)$ | $A\cos bx + B\mathop{\mathrm{sen}}bx$ |
 
 > **Regla de resonancia:** si la propuesta (o parte de ella) ya es solución de la homogénea, se **multiplica por $x^m$**, con $m$ la multiplicidad de la raíz correspondiente. Por ejemplo, $f = 2x$ con raíz $r = 0$ ⇒ $y_P = x(Ax + B)$.
 
@@ -100,15 +100,15 @@ Se usa cuando $f$ es un polinomio, una exponencial, un seno/coseno, o productos 
 
 ### Solución particular: variación de parámetros
 
-Sirve para **cualquier** $f$ continua, por ejemplo $\sec x$ o $e^x/x$. Para el orden 2, $y'' + p\,y' + q\,y = f$ (coeficiente principal 1):
+Sirve para **cualquier** $f$ continua, por ejemplo $\sec x$ o $e^x/x$. Para el orden 2, $y'' + p\thinspace y' + q\thinspace y = f$ (coeficiente principal 1):
 
 - Con $y_H = C_1y_1 + C_2y_2$, se propone $y_P = C_1(x)y_1 + C_2(x)y_2$, imponiendo:
 
-$$\begin{cases} C_1'y_1 + C_2'y_2 = 0 \\ C_1'y_1' + C_2'y_2' = f \end{cases}$$
+$$\begin{cases} C_1'y_1 + C_2'y_2 = 0 \cr C_1'y_1' + C_2'y_2' = f \end{cases}$$
 
 - Resolviendo con el **wronskiano** $W = y_1y_2' - y_2y_1'$:
 
-$$C_1' = -\frac{y_2\,f}{W}, \qquad C_2' = \frac{y_1\,f}{W}$$
+$$C_1' = -\frac{y_2\thinspace f}{W}, \qquad C_2' = \frac{y_1\thinspace f}{W}$$
 
 ### Problemas de valores iniciales
 
@@ -120,7 +120,7 @@ Las condiciones de "recta tangente" o "recta normal" en un punto dan $y(x_0)$ y 
 
 ## 5. Aplicaciones: sistemas masa-resorte-amortiguador y circuitos RLC
 
-$$M\,x'' + d\,x' + k\,x = F \qquad\longleftrightarrow\qquad LC\,v'' + RC\,v' + v = E$$
+$$M\thinspace x'' + d\thinspace x' + k\thinspace x = F \qquad\longleftrightarrow\qquad LC\thinspace v'' + RC\thinspace v' + v = E$$
 
 Con la característica $Mr^2 + dr + k = 0$ (discriminante $\Delta = d^2 - 4Mk$):
 
@@ -141,7 +141,7 @@ El equilibrio (régimen permanente) es $x \to F/k$, es decir $v \to E$.
 **Método matricial:** para $\vec X' = A\vec X$:
 
 - se hallan los autovalores $\lambda_i$ y los autovectores $\vec v_i$ de $A$;
-- si son reales y distintos, $\vec X = \sum C_i\,e^{\lambda_it}\,\vec v_i$.
+- si son reales y distintos, $\vec X = \sum C_i\thinspace e^{\lambda_it}\thinspace\vec v_i$.
 
 **Sistemas no homogéneos:** a veces una ecuación queda **desacoplada** (depende de una sola incógnita): se resuelve primero esa y se reemplaza en las otras.
 
@@ -162,9 +162,9 @@ $$\ln|x| = \int\frac{dz}{G(z) - z} + C$$
 
 **Exactas: un error a evitar.** La función potencial $U(x,y)$ es un campo escalar de **dos** variables, y lo que se busca es una familia de funciones de **una** variable: las **curvas de nivel** $U(x,y) = C$. Es un error grave dar $U(x,y)$ como solución general.
 
-**Ejemplo:** $(\cos y + y\cos x)\,dx + (\operatorname{sen}x - x\operatorname{sen}y)\,dy = 0$. Es exacta: $M'_y = -\operatorname{sen}y + \cos x = N'_x$. Integrando: $U = x\cos y + y\operatorname{sen}x + \varphi(y)$, y derivando respecto de $y$, $\varphi' = 0$. **S.G.:** $x\cos y + y\operatorname{sen}x = C$.
+**Ejemplo:** $(\cos y + y\cos x)\thinspace dx + (\mathop{\mathrm{sen}}x - x\mathop{\mathrm{sen}}y)\thinspace dy = 0$. Es exacta: $M'_y = -\mathop{\mathrm{sen}}y + \cos x = N'_x$. Integrando: $U = x\cos y + y\mathop{\mathrm{sen}}x + \varphi(y)$, y derivando respecto de $y$, $\varphi' = 0$. **S.G.:** $x\cos y + y\mathop{\mathrm{sen}}x = C$.
 
-**Deducción del factor integrante.** Se busca $\mu$ tal que $\mu M\,dx + \mu N\,dy = 0$ sea exacta: $(\mu M)'_y = (\mu N)'_x$. En general es una ecuación en derivadas parciales para $\mu$; sólo se puede resolver si $\mu$ depende de una sola variable.
+**Deducción del factor integrante.** Se busca $\mu$ tal que $\mu M\thinspace dx + \mu N\thinspace dy = 0$ sea exacta: $(\mu M)'_y = (\mu N)'_x$. En general es una ecuación en derivadas parciales para $\mu$; sólo se puede resolver si $\mu$ depende de una sola variable.
 
 - Si $\mu = \mu(x)$: $\mu M'_y = \mu'N + \mu N'_x$, así que $\dfrac{\mu'}{\mu} = \dfrac{M'_y - N'_x}{N}$. Hace falta que el segundo miembro dependa **sólo de $x$**.
 - Si $\mu = \mu(y)$: $\mu'M + \mu M'_y = \mu N'_x$, así que $\dfrac{\mu'}{\mu} = \dfrac{N'_x - M'_y}{M}$. Hace falta que dependa **sólo de $y$**.
@@ -175,11 +175,11 @@ $$\ln|x| = \int\frac{dz}{G(z) - z} + C$$
 
 ## 8. Complementos: teoría de las EDO lineales de 2.º orden
 
-**Funciones linealmente independientes.** $\{y_1, \dots, y_n\}$ es **L.I.** en $(a,b)$ si la única combinación lineal que da la función nula (para todo $x$ del intervalo) es la de coeficientes todos nulos.
+**Funciones linealmente independientes.** $\lbrace y_1, \dots, y_n\rbrace$ es **L.I.** en $(a,b)$ si la única combinación lineal que da la función nula (para todo $x$ del intervalo) es la de coeficientes todos nulos.
 
 **Wronskiano** de $n$ funciones derivables hasta el orden $n - 1$:
 
-$$W(y_1, \dots, y_n) = \begin{vmatrix} y_1 & y_2 & \cdots & y_n \\ y_1' & y_2' & \cdots & y_n' \\ \vdots & & & \vdots \\ y_1^{(n-1)} & y_2^{(n-1)} & \cdots & y_n^{(n-1)} \end{vmatrix}$$
+$$W(y_1, \dots, y_n) = \begin{vmatrix} y_1 & y_2 & \cdots & y_n \cr y_1' & y_2' & \cdots & y_n' \cr \vdots & & & \vdots \cr y_1^{(n-1)} & y_2^{(n-1)} & \cdots & y_n^{(n-1)} \end{vmatrix}$$
 
 **Teorema:** si $W \ne 0$ en $(a,b)$, las funciones son L.I. *Demostración:* si $C_1y_1 + \dots + C_ny_n = 0$, derivando $n - 1$ veces se obtiene un sistema lineal homogéneo en los $C_i$ cuyo determinante es $W \ne 0$; la única solución es la trivial. $\blacksquare$
 
@@ -193,11 +193,11 @@ $$W(y_1, \dots, y_n) = \begin{vmatrix} y_1 & y_2 & \cdots & y_n \\ y_1' & y_2' &
 **Ecuación característica.** Proponiendo $y = e^{rx}$: $e^{rx}(a_0r^2 + a_1r + a_2) = 0$, y como $e^{rx} \ne 0$, $a_0r^2 + a_1r + a_2 = 0$.
 
 - **Raíces reales distintas:** $y_1 = e^{r_1x}$, $y_2 = e^{r_2x}$, con $W = e^{(r_1+r_2)x}(r_2 - r_1) \ne 0$ ⇒ L.I.
-- **Raíces complejas $a \pm bi$:** con la fórmula de Euler $e^{i\varphi} = \cos\varphi + i\operatorname{sen}\varphi$,
+- **Raíces complejas $a \pm bi$:** con la fórmula de Euler $e^{i\varphi} = \cos\varphi + i\mathop{\mathrm{sen}}\varphi$,
 
-$$c_1e^{(a+bi)x} + c_2e^{(a-bi)x} = e^{ax}\big[(c_1 + c_2)\cos bx + i(c_1 - c_2)\operatorname{sen}bx\big] = e^{ax}(A_1\cos bx + A_2\operatorname{sen}bx)$$
+$$c_1e^{(a+bi)x} + c_2e^{(a-bi)x} = e^{ax}\big[(c_1 + c_2)\cos bx + i(c_1 - c_2)\mathop{\mathrm{sen}}bx\big] = e^{ax}(A_1\cos bx + A_2\mathop{\mathrm{sen}}bx)$$
 
-- **Raíz doble $r_1$:** además de $e^{r_1x}$, también $y_2 = x\,e^{r_1x}$ es solución. Al reemplazar queda $e^{r_1x}[x(a_0r_1^2 + a_1r_1 + a_2) + (2a_0r_1 + a_1)]$; el primer paréntesis es 0 porque $r_1$ es raíz, y el segundo también, porque una raíz doble es raíz del polinomio derivado. Su wronskiano es $e^{2r_1x} \ne 0$.
+- **Raíz doble $r_1$:** además de $e^{r_1x}$, también $y_2 = x\thinspace e^{r_1x}$ es solución. Al reemplazar queda $e^{r_1x}[x(a_0r_1^2 + a_1r_1 + a_2) + (2a_0r_1 + a_1)]$; el primer paréntesis es 0 porque $r_1$ es raíz, y el segundo también, porque una raíz doble es raíz del polinomio derivado. Su wronskiano es $e^{2r_1x} \ne 0$.
 
 **Ecuación no homogénea:**
 
@@ -208,9 +208,9 @@ $$c_1e^{(a+bi)x} + c_2e^{(a-bi)x} = e^{ax}\big[(c_1 + c_2)\cos bx + i(c_1 - c_2)
 
 Se propone $y_P = C_1(x)u_1 + C_2(x)u_2$. Hay dos incógnitas y una sola ecuación, así que se impone una condición extra que simplifique: $C_1'u_1 + C_2'u_2 = 0$. Entonces $y_P' = C_1u_1' + C_2u_2'$, y al reemplazar en $a_0y'' + a_1y' + a_2y = Q$ los términos con $C_1$ y $C_2$ se anulan (porque $u_1$, $u_2$ resuelven la homogénea). Queda el sistema:
 
-$$\begin{cases} C_1'u_1 + C_2'u_2 = 0 \\ C_1'u_1' + C_2'u_2' = \dfrac{Q(x)}{a_0} \end{cases}$$
+$$\begin{cases} C_1'u_1 + C_2'u_2 = 0 \cr C_1'u_1' + C_2'u_2' = \dfrac{Q(x)}{a_0} \end{cases}$$
 
-Por Cramer, con $W = u_1u_2' - u_2u_1' \ne 0$: $C_1' = -\dfrac{u_2\,Q/a_0}{W}$ y $C_2' = \dfrac{u_1\,Q/a_0}{W}$. Se integra y se reemplaza.
+Por Cramer, con $W = u_1u_2' - u_2u_1' \ne 0$: $C_1' = -\dfrac{u_2\thinspace Q/a_0}{W}$ y $C_2' = \dfrac{u_1\thinspace Q/a_0}{W}$. Se integra y se reemplaza.
 
 > Si el coeficiente principal $a_0$ no es 1, en el segundo miembro va $Q/a_0$.
 
@@ -221,18 +221,18 @@ Por Cramer, con $W = u_1u_2' - u_2u_1' \ne 0$: $C_1' = -\dfrac{u_2\,Q/a_0}{W}$ y
 | Polinomio de grado $n$ | 0 no es raíz ($a_2 \ne 0$) | polinomio **completo** de grado $n$ |
 | | 0 es raíz simple ($a_2 = 0$) | $x\cdot$ polinomio completo de grado $n$ |
 | | 0 es raíz doble ($a_1 = a_2 = 0$) | $x^2\cdot$ polinomio completo de grado $n$ |
-| $B\,e^{\alpha x}$ | $\alpha$ no es raíz | $A\,e^{\alpha x}$ |
-| | $\alpha$ raíz simple | $A\,x\,e^{\alpha x}$ |
-| | $\alpha$ raíz doble | $A\,x^2e^{\alpha x}$ |
-| $M\cos\beta x + N\operatorname{sen}\beta x$ | $\pm\beta i$ no son raíces | $A_1\cos\beta x + A_2\operatorname{sen}\beta x$ |
-| | $\pm\beta i$ son raíces | $x(A_1\cos\beta x + A_2\operatorname{sen}\beta x)$ |
+| $B\thinspace e^{\alpha x}$ | $\alpha$ no es raíz | $A\thinspace e^{\alpha x}$ |
+| | $\alpha$ raíz simple | $A\thinspace x\thinspace e^{\alpha x}$ |
+| | $\alpha$ raíz doble | $A\thinspace x^2e^{\alpha x}$ |
+| $M\cos\beta x + N\mathop{\mathrm{sen}}\beta x$ | $\pm\beta i$ no son raíces | $A_1\cos\beta x + A_2\mathop{\mathrm{sen}}\beta x$ |
+| | $\pm\beta i$ son raíces | $x(A_1\cos\beta x + A_2\mathop{\mathrm{sen}}\beta x)$ |
 | Combinación lineal de los anteriores | | combinación de las propuestas |
 
 Aunque $M$ o $N$ sean 0, se propone **seno y coseno**; y aunque al polinomio le falten términos, se propone el polinomio **completo**.
 
 **Ejemplo:** $y'' - 2y' = x^2 + 3e^{2x} + \cos x$. La característica $\lambda^2 - 2\lambda = 0$ tiene raíces $0$ y $2$, así que:
 
-$$y_P = x(A_2x^2 + A_1x + A_0) + A_3\,x\,e^{2x} + A_4\cos x + A_5\operatorname{sen}x$$
+$$y_P = x(A_2x^2 + A_1x + A_0) + A_3\thinspace x\thinspace e^{2x} + A_4\cos x + A_5\mathop{\mathrm{sen}}x$$
 
 ---
 
@@ -254,10 +254,10 @@ $$y_P = x(A_2x^2 + A_1x + A_0) + A_3\,x\,e^{2x} + A_4\cos x + A_5\operatorname{s
 |---|---|
 | Homogénea | $y = zx$, $\ y' = z + xz'$ |
 | Exacta | $M'_y = N'_x$ ⇒ $U = C$ con $\nabla U = (M,N)$ |
-| Factor integrante $\mu(x)$ | $e^{\int(M'_y - N'_x)/N\,dx}$ |
-| Factor integrante $\mu(y)$ | $e^{\int(N'_x - M'_y)/M\,dy}$ |
+| Factor integrante $\mu(x)$ | $e^{\int(M'_y - N'_x)/N\thinspace dx}$ |
+| Factor integrante $\mu(y)$ | $e^{\int(N'_x - M'_y)/M\thinspace dy}$ |
 | Líneas de campo | $dx/P = dy/Q\ (= dz/R)$ |
-| Raíces complejas $\alpha\pm\beta i$ | $e^{\alpha x}(C_1\cos\beta x + C_2\operatorname{sen}\beta x)$ |
+| Raíces complejas $\alpha\pm\beta i$ | $e^{\alpha x}(C_1\cos\beta x + C_2\mathop{\mathrm{sen}}\beta x)$ |
 | Variación de parámetros | $C_1' = -y_2f/W$, $\ C_2' = y_1f/W$ |
 | Wronskiano | $W = y_1y_2' - y_2y_1'$ |
 
