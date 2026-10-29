@@ -650,7 +650,7 @@ Entonces el límite en $(a, 0)$ existe y vale $a^2$ ⇒ **sí**, definiendo $f(x
 
 Determine el conjunto de puntos del plano para los cuales $f$ es continua y realice la representación geométrica de la gráfica de $f$.
 
-- a) $f(x,y) = \sqrt{4 - x^2 - y^2}$ si $y \le 0 \ \wedge\ x^2 + y^2 \le 4$, $\ f(x,y) = 0 \ \ \forall$otro $(x,y)$.
+- a) $f(x,y) = \sqrt{4 - x^2 - y^2}$ si $y \le 0 \ \wedge\ x^2 + y^2 \le 4$, $\ f(x,y) = 0 \ \ \forall$ otro $(x,y)$.
 - b) $f(x,y) = \dfrac{\mathop{\mathrm{sen}}(x^2 + y^2)}{x^2 + y^2}$ si $(x,y) \ne (0,0)$, $\ f(x,y) = 1$ si $(x,y) = (0,0)$.
 
 <details>

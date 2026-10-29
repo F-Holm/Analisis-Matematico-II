@@ -464,7 +464,7 @@ Demuestre que la gráfica de $f(x,y) = 6 + x^3$ tiene infinitos puntos con plano
 
 ### 11) Densidad de carga máxima y mínima
 
-Una chapa circular plana $S = \lbrace(x,y) \in \Re^2 / x^2 + y^2 \le 4\rbrace$ tiene una densidad de carga electrostática $\sigma(x,y) = 2xy^2 - x^2$ en $\mu$Coul/cm². Halle los puntos de máxima y mínima densidad de carga; no olvide analizar en puntos de la frontera.
+Una chapa circular plana $S = \lbrace(x,y) \in \Re^2 / x^2 + y^2 \le 4\rbrace$ tiene una densidad de carga electrostática $\sigma(x,y) = 2xy^2 - x^2$ en $\mu\mathrm{Coul/cm^2}$. Halle los puntos de máxima y mínima densidad de carga; no olvide analizar en puntos de la frontera.
 
 <details>
 <summary><b>Solución</b></summary>

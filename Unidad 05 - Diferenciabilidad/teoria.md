@@ -179,7 +179,7 @@ $$w = x^a y^b \ \Rightarrow\ \varepsilon_{\text{rel}\thinspace w} = |a|\thinspac
 
 $$f(x) - f(x_0) = f'(x_0)(x - x_0) + \varphi(x)(x - x_0), \qquad \varphi(x) \xrightarrow[x\to x_0]{} 0$$
 
-El término $df(x_0; \Delta x) = f'(x_0)\thinspace\Delta x$ es el **diferencial**: es la variación de la ordenada de la **recta tangente** al pasar de $x_0$ a $x_0 + \Delta x$, una aproximación lineal de $\Delta f$. Como $f'(x_0)$ es constante, $df$ es una T.L. de $\mathbb{R}$ en $\mathbb{R}$. Esta forma ("existe una T.L. $T$ con $f(x) - f(x_0) = T(x - x_0) + $ resto") es la que se generaliza a varias variables.
+El término $df(x_0; \Delta x) = f'(x_0)\thinspace\Delta x$ es el **diferencial**: es la variación de la ordenada de la **recta tangente** al pasar de $x_0$ a $x_0 + \Delta x$, una aproximación lineal de $\Delta f$. Como $f'(x_0)$ es constante, $df$ es una T.L. de $\mathbb{R}$ en $\mathbb{R}$. Esta forma ("existe una T.L. $T$ con $f(x) - f(x_0) = T(x - x_0) +$ resto") es la que se generaliza a varias variables.
 
 **Ejemplo de por qué hace falta algo más que las parciales:** $F(x,y) = x^{1/3}y^{1/3}$ tiene $F'_x(0,0) = F'_y(0,0) = 0$, así que el "candidato" a plano tangente sería $z = 0$; pero la superficie no tiene plano tangente en el origen.
 
@@ -242,7 +242,7 @@ El segundo miembro de la ecuación del plano tangente es justamente $dF(x_0,y_0)
 
 - Máximo crecimiento ⇒ dirección de $\nabla f$.
 - Derivada direccional ⇒ $\nabla f\cdot\breve r$.
-- Si te dan dos derivadas direccionales de una $f \in C^1$, plantear $\nabla f\cdot\vec r_i = $ dato y resolver el sistema para obtener $\nabla f$.
+- Si te dan dos derivadas direccionales de una $f \in C^1$, plantear $\nabla f\cdot\vec r_i =$ dato y resolver el sistema para obtener $\nabla f$.
 
 **Aproximaciones:** elegir $\vec A$ cercano con valores "redondos" y usar $f(\vec A) + \nabla f\cdot\vec h$.
 

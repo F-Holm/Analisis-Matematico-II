@@ -691,7 +691,7 @@ Resuelva las siguientes ecuaciones diferenciales lineales de 1° orden.
 **Método (variación de parámetros):**
 
 1. Resolver la homogénea: $y_H = C\thinspace\varphi(x)$.
-2. Proponer $y_P = K(x)\thinspace\varphi(x)$. Al reemplazar, los términos con $K$ se cancelan y queda $K'(x)\thinspace\varphi(x) = $ (término independiente en forma normal).
+2. Proponer $y_P = K(x)\thinspace\varphi(x)$. Al reemplazar, los términos con $K$ se cancelan y queda $K'(x)\thinspace\varphi(x) =$ (término independiente en forma normal).
 3. $y = y_H + y_P$.
 
 **a)** $x\thinspace y' - y = x^3$. En forma normal: $y' - \dfrac{y}{x} = x^2$.
@@ -1029,7 +1029,7 @@ $$\frac{y^2}{2} = \frac14\ln|\cos(2x)| + c \ \Rightarrow\ \ln|\cos(2x)| - 2y^2 =
 
 **f)** $(x + y)^2 = kx^2$, $k > 0$.
 
-- Despejamos: $\dfrac{x + y}{x} = \pm\sqrt{k}$, es decir, $\dfrac{y}{x} = $ constante ⇒ son **rectas por el origen**, $y = m\thinspace x$ (con $x \ne 0$).
+- Despejamos: $\dfrac{x + y}{x} = \pm\sqrt{k}$, es decir, $\dfrac{y}{x} =$ constante ⇒ son **rectas por el origen**, $y = m\thinspace x$ (con $x \ne 0$).
 - Su EDO: $y' = m = \dfrac{y}{x}$.
 - Ortogonal: $-\dfrac{1}{y'} = \dfrac{y}{x} \Rightarrow y\thinspace y' = -x \Rightarrow x^2 + y^2 = C$, con $C > 0$.
 

@@ -983,13 +983,13 @@ Describa las superficies coordenadas de cilíndricas y esféricas en el espacio 
 **Respuesta:**
 
 - **Cilíndricas** $(\rho, \varphi, z)$:
-  - $\rho = $ cte: cilindros circulares de eje $z$;
-  - $\varphi = $ cte: semiplanos verticales que contienen al eje $z$;
-  - $z = $ cte: planos horizontales.
+  - $\rho =$ cte: cilindros circulares de eje $z$;
+  - $\varphi =$ cte: semiplanos verticales que contienen al eje $z$;
+  - $z =$ cte: planos horizontales.
 - **Esféricas** $(r, \theta, \varphi)$:
-  - $r = $ cte: esferas centradas en el origen;
-  - $\theta = $ cte (ángulo con $z^+$): conos circulares de eje $z$ y vértice en el origen (para $\theta = \pi/2$, el plano $xy$);
-  - $\varphi = $ cte: semiplanos que contienen al eje $z$.
+  - $r =$ cte: esferas centradas en el origen;
+  - $\theta =$ cte (ángulo con $z^+$): conos circulares de eje $z$ y vértice en el origen (para $\theta = \pi/2$, el plano $xy$);
+  - $\varphi =$ cte: semiplanos que contienen al eje $z$.
 
 </details>
 

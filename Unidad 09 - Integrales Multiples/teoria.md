@@ -189,7 +189,7 @@ $$\iint_A F\thinspace dx\thinspace dy = \lim_{n,m\to\infty}\sum_i\sum_j F(P_{ij}
 
 $$V = \lim\sum A(c_i)\thinspace\Delta x_i = \int_a^bA(x)\thinspace dx = \int_a^b dx\int_c^d F(x,y)\thinspace dy$$
 
-Cortando con $y = $ cte se obtiene el otro orden, y ambos dan lo mismo.
+Cortando con $y =$ cte se obtiene el otro orden, y ambos dan lo mismo.
 
 **Recintos no rectangulares.** Un recinto **simple de tipo I** es $a \le x \le b$, $y_1(x) \le y \le y_2(x)$; uno de **tipo II** es $c \le y \le d$, $x_1(y) \le x \le x_2(y)$. Los demás se descomponen en uniones de recintos simples.
 

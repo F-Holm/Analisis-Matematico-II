@@ -474,7 +474,7 @@ El cuerpo de masa $M$ puede desplazarse horizontalmente con rozamiento desprecia
 Siendo: $\underbrace{F - \underbrace{kx}_{\text{resorte}} - \underbrace{dx'}_{\text{amortig.}}}_{\text{fuerza total}} = \underbrace{M}_{\text{masa}}\cdot\underbrace{x''}_{\text{aceleración}}$, resulta $\boxed{Mx'' + dx' + kx = F}$.
 
 - a) Con $F = 4.35$, $M = 3$, $k = 87$ halle y grafique $x(t)$ para: a₁) $d = 12$, a₂) $d = 38$.
-- b) Indique las unidades de medida de $x'$, $x''$, $M$, $k$, $d$ cuando el tiempo se mide en segundos ($[t] = $ s), $[F] = $ Newton (N) $= $ kgm/s² y $[x] = $ m.
+- b) Indique las unidades de medida de $x'$, $x''$, $M$, $k$, $d$ cuando el tiempo se mide en segundos ($[t] =$ s), $[F] =$ Newton (N) $=$ kgm/s² y $[x] =$ m.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -523,10 +523,10 @@ En ambos casos, $x(t) \to 0{,}05$ m $= 50$ mm.
 
 **b) Unidades.**
 
-- $[x'] = $ m/s y $[x''] = $ m/s².
-- $[M] = $ kg.
-- $kx$ es una fuerza ⇒ $[k] = $ N/m.
-- $dx'$ es una fuerza ⇒ $[d] = $ N·s/m.
+- $[x'] =$ m/s y $[x''] =$ m/s².
+- $[M] =$ kg.
+- $kx$ es una fuerza ⇒ $[k] =$ N/m.
+- $dx'$ es una fuerza ⇒ $[d] =$ N·s/m.
 
 </details>
 
@@ -534,7 +534,7 @@ En ambos casos, $x(t) \to 0{,}05$ m $= 50$ mm.
 
 - a₁) En metros: $x(t) = \frac{1}{100}[5 - 5e^{-2t}\cos(5t) - 2e^{-2t}\mathop{\mathrm{sen}}(5t)] = \frac{1}{100}[5 - \sqrt{29}\thinspace e^{-2t}\mathop{\mathrm{sen}}(5t + \mathop{\mathrm{arctg}}(5/2))]$; $x(t) \to 0.05$ m $= 50$ mm, oscilación amortiguada.
 - a₂) En metros: $x(t) = \frac{1}{100}(5 + \frac94e^{-29t/3} - \frac{29}{4}e^{-3t})$; $x(t) \to 0.05$ m $= 50$ mm, sin oscilaciones.
-- b) $[x'] = $ m/s, $[x''] = $ m/s², $[M] = $ kg, $[k] = $ N/m, $[d] = $ N s / m.
+- b) $[x'] =$ m/s, $[x''] =$ m/s², $[M] =$ kg, $[k] =$ N/m, $[d] =$ N s / m.
 
 </details>
 
@@ -556,7 +556,7 @@ En tiempo $t = 0$, con capacitor descargado ($v(0) = 0$) se cierra $LL$ y comien
 
 Nota: Observe que $v(t)$ permite simular $x(t)$ del ítem anterior para el caso caso "a₁)" (equivalente eléctrico del sistema mecánico).
 
-<sup>(#)</sup> $i$ es la intensidad de corriente eléctrica en el circuito. Unidades de medida: [*tensión*] $=$ Volt, $[i] = $ Ampere, $[R] = $ Ohm, $[L] = $ Henry, $[C] = $ Faradio.
+<sup>(#)</sup> $i$ es la intensidad de corriente eléctrica en el circuito. Unidades de medida: [*tensión*] $=$ Volt, $[i] =$ Ampere, $[R] =$ Ohm, $[L] =$ Henry, $[C] =$ Faradio.
 
 <details>
 <summary><b>Solución</b></summary>

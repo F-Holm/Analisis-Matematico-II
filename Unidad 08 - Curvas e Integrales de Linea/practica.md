@@ -179,7 +179,7 @@ $$L = \int_0^1\sqrt{4 + 1 + 400}\thinspace dt = \sqrt{405} = 9\sqrt5 \approx 20{
 
 ### 04) Resistencia de un hilo conductor
 
-Entre los puntos $(0,0,0)$ y $(1,1,1)$, en la intersección del plano $y = x$ con la superficie de ecuación $z = 2y - x^2$ con $z \ge 0$, se ha formado un hilo conductor eléctrico con resistividad lineal ($\Omega/$m) que en cada punto es proporcional a la distancia desde el punto al plano $x = 1$. Calcule la resistencia eléctrica de dicho hilo conductor.
+Entre los puntos $(0,0,0)$ y $(1,1,1)$, en la intersección del plano $y = x$ con la superficie de ecuación $z = 2y - x^2$ con $z \ge 0$, se ha formado un hilo conductor eléctrico con resistividad lineal ($\Omega/\mathrm{m}$) que en cada punto es proporcional a la distancia desde el punto al plano $x = 1$. Calcule la resistencia eléctrica de dicho hilo conductor.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -690,7 +690,7 @@ Sean $\bar f$ un campo de gradientes con matriz jacobiana $D\bar f(x,y) = \begin
 **Paso 1 — Reconstruir $\phi$.** $D\bar f$ es el Hessiano de $\phi$:
 
 - $\phi''_{xx} = 2y - 6x$, así que $\phi'_x = 2xy - 3x^2 + a(y)$.
-- $\phi''_{xy} = 2x + a'(y) = 2x \Rightarrow a = $ constante $= a$.
+- $\phi''_{xy} = 2x + a'(y) = 2x \Rightarrow a =$ constante $= a$.
 - $\phi = x^2y - x^3 + ax + c(y)$.
 - $\phi''_{yy} = c''(y) = 0 \Rightarrow c = by + c_0$.
 

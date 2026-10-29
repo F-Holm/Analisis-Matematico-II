@@ -27,7 +27,7 @@ Exprese $Df(X)$ y halle el conjunto $W$ tal que $Df$ sea continua en $W$.
 - a) $\vec f(t) = \left(t^3 - 2,\ \dfrac{t^2 - 1}{t + 1},\ \dfrac{\cos(t)}{2t - \pi}\right)$
 - b) $f(x,y) = \dfrac{xy}{x^2 + y^2}$
 - c) $\vec f(x,y,z) = (x^2 + y,\ z\ln(x^2 + z^2))$
-- d) $\vec f(\bar X) = \dfrac{k\thinspace\breve r}{r^2}$ con $\begin{cases} \bar r = \bar X = (x,y,z) \cr r = \Vert\bar r\Vert \end{cases}$, $k = $ cte.
+- d) $\vec f(\bar X) = \dfrac{k\thinspace\breve r}{r^2}$ con $\begin{cases} \bar r = \bar X = (x,y,z) \cr r = \Vert\bar r\Vert \end{cases}$, $k =$ cte.
 - e) $f(x,y) = \dfrac{xy^2}{x^2 + y^4}$ si $(x,y) \ne (0,0)$, $f(0,0) = 0$.
 - f) $f(x,y) = (x^2y^3,\ (y - x)^2)$
 
