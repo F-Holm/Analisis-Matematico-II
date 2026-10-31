@@ -42,6 +42,33 @@ Material general: [resumen de UTNianos](UTNianos/Resumen%20AM2.pdf), [respuestas
 | [2.º Parcial (19/11/2024) — cuatro temas](Parciales/segundo-parcial-2024-11-19.md) | Green, EDO, Stokes, áreas, trabajo, volúmenes, flujo, campos conservativos |
 | [Repaso](Parciales/repaso-segundo-parcial.md) | ejercicios de las diapositivas de repaso de la cátedra |
 
+#### Parciales de práctica (no oficiales)
+
+Veinte parciales armados con el mismo formato (2 teóricos + 4 prácticos), con enunciados y resoluciones propios.
+
+| Examen | Temas |
+|---|---|
+| [Práctica 01](Parciales/practica-segundo-parcial-01.md) | potencial y trabajo, EDO, Stokes, volumen, Gauss, masa de un cono |
+| [Práctica 02](Parciales/practica-segundo-parcial-02.md) | área con Green, Stokes V/F, Green en corona, potencial con parámetros, flujo, EDO y campo conservativo |
+| [Práctica 03](Parciales/practica-segundo-parcial-03.md) | jacobiana simétrica, div del rotor, masa de chapa, Stokes, flujo por cilindro, EDO |
+| [Práctica 04](Parciales/practica-segundo-parcial-04.md) | rotor de un gradiente, área de un lazo, volumen en esféricas, área de paraboloide, Gauss, circulación |
+| [Práctica 05](Parciales/practica-segundo-parcial-05.md) | flujo de un rotor, EDO desde su solución, Green, flujo por triángulo, volumen, masa de alambre |
+| [Práctica 06](Parciales/practica-segundo-parcial-06.md) | líneas de campo, Gauss y volumen, Stokes, campo solenoidal y EDO, cambio de variables, masa de casquete |
+| [Práctica 07](Parciales/practica-segundo-parcial-07.md) | independencia del camino, flujo con mismo borde V/F, Green, Gauss, EDO, circulación |
+| [Práctica 08](Parciales/practica-segundo-parcial-08.md) | divergencia nula, EDO desde soluciones, masa de sólido, área de cono, Stokes en triángulo, masa de chapa |
+| [Práctica 09](Parciales/practica-segundo-parcial-09.md) | área de elipse, campo radial, flujo por cono, EDO, volumen, Stokes |
+| [Práctica 10](Parciales/practica-segundo-parcial-10.md) | circulación y área, forma de $y_P$, circulación, Gauss, área de casquete, cambio de variables |
+| [Práctica 11](Parciales/practica-segundo-parcial-11.md) | Green, Gauss, potencial con parámetro, flujo por semicilindro, volumen, EDO y circulación nula |
+| [Práctica 12](Parciales/practica-segundo-parcial-12.md) | Green con singularidad, raíces complejas, Gauss, Green, masa de triángulo, circulación |
+| [Práctica 13](Parciales/practica-segundo-parcial-13.md) | Stokes, líneas de campo, volumen en esféricas, flujo por paraboloide, EDO, masa de alambre |
+| [Práctica 14](Parciales/practica-segundo-parcial-14.md) | campo de gradientes, Gauss, Stokes, área de helicoide, orden de integración, divergencia nula y EDO |
+| [Práctica 15](Parciales/practica-segundo-parcial-15.md) | área de cardioide, raíz doble, Green, flujo por casquete, masa de bola, Stokes |
+| [Práctica 16](Parciales/practica-segundo-parcial-16.md) | conservativo con datos, flujo de un rotor, volumen, Gauss, EDO, trabajo |
+| [Práctica 17](Parciales/practica-segundo-parcial-17.md) | flujo del rotor por superficie cerrada, longitud de línea de campo, Green con singularidad, área, flujo, resonancia |
+| [Práctica 18](Parciales/practica-segundo-parcial-18.md) | trabajo, Gauss, Stokes, masa de cilindro, flujo por tronco de cono, EDO |
+| [Práctica 19](Parciales/practica-segundo-parcial-19.md) | div del rotor, EDO desde su solución, área de esfera, Gauss, circulación, volumen |
+| [Práctica 20](Parciales/practica-segundo-parcial-20.md) | Stokes V/F, EDO, Green, flujo por semicilindro, volumen, masa de superficie |
+
 ## Cómo usar los ejercicios
 
 Cada ejercicio tiene un botón **Solución** que muestra la respuesta. Dentro aparece otro botón, **Solución paso a paso**, con el desarrollo completo. Así se puede intentar resolverlo antes de mirar.
