@@ -278,15 +278,25 @@ Con parámetros: en [Práctica 02, P2](practica-segundo-parcial-02.md), $(axy + 
 
 **Método.** La circulación de la parte gradiente es 0 sobre una curva cerrada y $\varphi(B) - \varphi(A)$ sobre un arco. Sólo se calcula la del otro campo.
 
+**Qué es Green.** Es un teorema que convierte la circulación sobre una curva **cerrada** del plano en una integral doble sobre la región $D$ que esa curva encierra. Si $C$ es cerrada, simple, suave a trozos y recorrida en sentido antihorario (dejando $D$ a la izquierda), y $\vec g = (P, Q)$ es $C^1$ en un abierto que contiene a $D$:
+
+$$\oint_CP\thinspace dx + Q\thinspace dy = \iint_D(Q'_x - P'_y)\thinspace dA$$
+
+- **Qué significa.** $Q'_x - P'_y$ mide cuánto tiende a hacer girar el campo alrededor de cada punto. Al sumar ese giro en toda $D$, los giros de zonas vecinas se cancelan entre sí en el interior y sólo sobrevive lo que ocurre en el borde: la circulación sobre $C$.
+- **Orientación.** Si $C$ se recorre en sentido horario, el resultado cambia de signo.
+- **Cuándo conviene.** Cuando la curva es cerrada y parametrizarla lleva a una integral difícil, pero $Q'_x - P'_y$ es simple.
+- **Relación con los conservativos.** Si el campo es conservativo y $C^1$ en un abierto que contiene a $D$, entonces $Q'_x = P'_y$: el integrando es 0 y la circulación también.
+- **Cuándo no se aplica directamente.** Si la curva no es cerrada, ver el [Tipo 25](#tipo-25-green-sobre-un-arco-plano); si el campo no es $C^1$ en algún punto de $D$, ver el [Tipo 7](#tipo-7-campo-con-una-singularidad). El enunciado formal está en el [Bloque E](#bloque-e-divergencia-rotor-y-teoremas-integrales).
+
 **Ejemplo** ([2.º Parcial 18/06/2019, P2](segundo-parcial-2019-06-18.md)).
 
 > Sean $\vec f$ un campo $C^1$ conservativo, $\vec g(x,y) = (xy,\ \mathop{\mathrm{sen}}(y^4))$ y $\vec h = \vec f + \vec g$. Calcule la circulación de $\vec h$ sobre $C$: $x^2 + y^2 = 6x$, indicando la orientación.
 
 *Paso 1 — Separar.* $C$ es cerrada: $\oint\vec f\cdot d\vec s = 0$, y queda $\oint\vec g\cdot d\vec s$.
 
-*Paso 2 — Green,* en sentido antihorario: $Q'_x - P'_y = 0 - x = -x$.
+*Paso 2 — Green,* en sentido antihorario. Parametrizar $C$ obligaría a integrar el término $\mathop{\mathrm{sen}}(y^4)\thinspace dy$, que es muy incómodo. En cambio, $\vec g$ es $C^1$ en todo $\mathbb{R}^2$, con $P = xy$ y $Q = \mathop{\mathrm{sen}}(y^4)$. Como $Q$ no depende de $x$, $Q'_x = 0$; además, $P'_y = x$. Entonces $Q'_x - P'_y = 0 - x = -x$, y el término incómodo desaparece.
 
-*Paso 3 — Región.* $C$ es la circunferencia $(x - 3)^2 + y^2 = 9$. Como $\iint_Dx\thinspace dA = \bar x\cdot\text{Área}$ con centroide $\bar x = 3$:
+*Paso 3 — Región.* Completando cuadrados, $x^2 - 6x + y^2 = 0$ es $(x - 3)^2 + y^2 = 9$: la circunferencia de centro $(3, 0)$ y radio 3, así que $D$ es un disco de área $9\pi$. Como $\iint_Dx\thinspace dA = \bar x\cdot\text{Área}$ con centroide $\bar x = 3$:
 
 $$\oint\vec g\cdot d\vec s = -\iint_Dx\thinspace dA = -3\cdot9\pi$$
 
