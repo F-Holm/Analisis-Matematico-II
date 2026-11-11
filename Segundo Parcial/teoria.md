@@ -353,9 +353,9 @@ La misma cuenta del punto a muestra que la circulación sobre $E$ vale $\pi$ par
 
 ![Curvas C1, C2, C3 y C4 con los puntos A y B](img/parcial2-2012-12-01-t2-curvas.jpeg)
 
-*$C_4$:* $C_4$ y su interior están en $D$. Por Green, $\oint_{C_4} = \pm\iint(Q'_x - P'_y)\thinspace dA = 0$.
+*Curva* $C_4$: $C_4$ y su interior están en $D$. Por Green, $\oint_{C_4} = \pm\iint(Q'_x - P'_y)\thinspace dA = 0$.
 
-*$C_1$:* se aplica Green en la región entre $C_1$ y las curvas $C_2$, $C_3$. Su frontera positiva es $C_1$ antihoraria y $C_2$, $C_3$ horarias:
+*Curva* $C_1$: se aplica Green en la región entre $C_1$ y las curvas $C_2$, $C_3$. Su frontera positiva es $C_1$ antihoraria y $C_2$, $C_3$ horarias:
 
 $$\oint_{C_1} - \oint_{C_2} - \oint_{C_3} = \iint(Q'_x - P'_y)\thinspace dA = 0$$
 
@@ -471,7 +471,7 @@ $$\iint_Df(x,y)\thinspace dx\thinspace dy = \iint_{D^*}f(\vec T(u,v))\left|\frac
 
 **Método.**
 
-1. Elegir $u$, $v$ tales que las curvas de borde sean $u = $ cte., $v = $ cte.
+1. Elegir $u$, $v$ tales que las curvas de borde sean $u = \text{cte.}$, $v = \text{cte.}$
 2. Calcular $\dfrac{\partial(u,v)}{\partial(x,y)}$ e **invertirlo**.
 3. Integrar en el rectángulo.
 

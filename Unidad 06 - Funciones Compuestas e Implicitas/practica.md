@@ -29,14 +29,14 @@ Dadas $f$ y $g$, analice en cada caso si quedan definidas $f\circ g$ y $g\circ f
 
 $$D\vec f(x,y) = \begin{pmatrix} y & x \cr 1 & -1 \end{pmatrix}, \qquad D\vec g(u,v) = \begin{pmatrix} 2u & 0 \cr -1 & 1 \end{pmatrix}$$
 
-*$f\circ g$ en $(1,1)$:*
+*Composición* $f\circ g$ en $(1,1)$:
 
 - $\vec g(1,1) = (1, 0)$.
 - $D\vec f(1,0) = \begin{pmatrix} 0 & 1 \cr 1 & -1 \end{pmatrix}$ y $D\vec g(1,1) = \begin{pmatrix} 2 & 0 \cr -1 & 1 \end{pmatrix}$.
 
 $$D(\vec f\circ\vec g)(1,1) = \begin{pmatrix} 0\cdot2 + 1\cdot(-1) & 0\cdot0 + 1\cdot1 \cr 1\cdot2 + (-1)(-1) & 1\cdot0 + (-1)\cdot1 \end{pmatrix} = \begin{pmatrix} -1 & 1 \cr 3 & -1 \end{pmatrix}$$
 
-*$g\circ f$ en $(1,1)$:*
+*Composición* $g\circ f$ en $(1,1)$:
 
 - $\vec f(1,1) = (1, 0)$.
 - $D\vec g(1,0) = \begin{pmatrix} 2 & 0 \cr -1 & 1 \end{pmatrix}$ y $D\vec f(1,1) = \begin{pmatrix} 1 & 1 \cr 1 & -1 \end{pmatrix}$.
@@ -45,11 +45,11 @@ $$D(\vec g\circ\vec f)(1,1) = \begin{pmatrix} 2 & 2 \cr -1 + 1 & -1 - 1 \end{pma
 
 **b)** $f: \Re^2\to\Re$ (dominio $y \ge 0$) y $\vec g: \Re\to\Re^2$.
 
-*$f\circ g$:* $f(u, 2 - u) = u\sqrt{2 - u}$, con dominio $u \le 2$.
+*Composición* $f\circ g$: $f(u, 2 - u) = u\sqrt{2 - u}$, con dominio $u \le 2$.
 
 $$(f\circ g)'(u) = \sqrt{2-u} - \frac{u}{2\sqrt{2-u}} \ \Rightarrow\ (f\circ g)'(1) = 1 - \frac12 = 0{,}5$$
 
-*$g\circ f$:* $\vec g(x\sqrt y) = (x\sqrt y,\ 2 - x\sqrt y)$, con dominio $y \ge 0$. Interior: $y > 0$.
+*Composición* $g\circ f$: $\vec g(x\sqrt y) = (x\sqrt y,\ 2 - x\sqrt y)$, con dominio $y \ge 0$. Interior: $y > 0$.
 
 - $D\vec g = \begin{pmatrix} 1 \cr -1 \end{pmatrix}$ (constante).
 - $Df(1,1) = \left(\sqrt y,\ \dfrac{x}{2\sqrt y}\right)\Big|_{(1,1)} = \left(1,\ \tfrac12\right)$.
@@ -58,12 +58,12 @@ $$D(\vec g\circ f)(1,1) = \begin{pmatrix} 1 \cr -1 \end{pmatrix}\left(1\ \ \tfra
 
 **c)**
 
-- *$f\circ g$:* $\vec f(2 - t,\ t - 3) = (5 - 2t,\ \sqrt{(2-t)+(t-3)}) = (5 - 2t,\ \sqrt{-1})$. La raíz nunca está definida ⇒ dominio vacío ⇒ no queda definida.
-- *$g\circ f$:* $\vec g$ tiene **una** variable, pero $\vec f$ da vectores de $\Re^2$ ⇒ dimensiones incompatibles ⇒ no queda definida.
+- *Composición* $f\circ g$: $\vec f(2 - t,\ t - 3) = (5 - 2t,\ \sqrt{(2-t)+(t-3)}) = (5 - 2t,\ \sqrt{-1})$. La raíz nunca está definida ⇒ dominio vacío ⇒ no queda definida.
+- *Composición* $g\circ f$: $\vec g$ tiene **una** variable, pero $\vec f$ da vectores de $\Re^2$ ⇒ dimensiones incompatibles ⇒ no queda definida.
 
 **d)** $\vec f: \Re^2\to\Re^3$ y $\vec g: \Re^3\to\Re^2$ ⇒ las dos composiciones son posibles.
 
-*$f\circ g$:* el dominio es el de $\vec g$, $u \le 1$, porque $\vec f$ está definida en todo $\Re^2$. Calculamos en $(0,1,1)$:
+*Composición* $f\circ g$: el dominio es el de $\vec g$, $u \le 1$, porque $\vec f$ está definida en todo $\Re^2$. Calculamos en $(0,1,1)$:
 
 - $\vec g(0,1,1) = (-1,\ 1\cdot\sqrt1) = (-1, 1)$.
 - $D\vec f(x,y) = \begin{pmatrix} y^2 & 2xy \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$, que en $(-1,1)$ es $\begin{pmatrix} 1 & -2 \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$.
@@ -71,7 +71,7 @@ $$D(\vec g\circ f)(1,1) = \begin{pmatrix} 1 \cr -1 \end{pmatrix}\left(1\ \ \tfra
 
 $$D(\vec f\circ\vec g)(0,1,1) = \begin{pmatrix} 1 + 1 & -1 & -2 \cr -1 - \frac12 & 1 & 1 \cr 1 & -1 & 0 \end{pmatrix} = \begin{pmatrix} 2 & -1 & -2 \cr -\frac32 & 1 & 1 \cr 1 & -1 & 0 \end{pmatrix}$$
 
-*$g\circ f$:* $\vec g(xy^2,\ y - x,\ x) = (xy^2 - y + x,\ x\sqrt{1 - xy^2})$, con dominio $xy^2 \le 1$. Calculamos en $(0,1)$:
+*Composición* $g\circ f$: $\vec g(xy^2,\ y - x,\ x) = (xy^2 - y + x,\ x\sqrt{1 - xy^2})$, con dominio $xy^2 \le 1$. Calculamos en $(0,1)$:
 
 - $\vec f(0,1) = (0, 1, 0)$.
 - $D\vec g(0,1,0) = \begin{pmatrix} 1 & -1 & 0 \cr 0 & 0 & 1 \end{pmatrix}$ y $D\vec f(0,1) = \begin{pmatrix} 1 & 0 \cr -1 & 1 \cr 1 & 0 \end{pmatrix}$.

@@ -301,14 +301,14 @@ $$f'_x(a,b) = \lim_{h\to0}\frac{f(a+h, b) - f(a,b)}{h}, \qquad f'_y(a,b) = \lim_
 
 **b)** $f(1,1) = 1 + 2 = 3$, con la rama $x \ge 1$.
 
-*$f'_x$:* al mover $x$ cambiamos de rama según el signo de $h$, así que hay que separar en laterales.
+*Derivada* $f'_x$: al mover $x$ cambiamos de rama según el signo de $h$, así que hay que separar en laterales.
 
 - $h > 0$ ($x = 1 + h \ge 1$): $\dfrac{(1+h)^2 + 2 - 3}{h} = \dfrac{2h + h^2}{h} \to 2$.
 - $h < 0$ ($x = 1 + h < 1$): $\dfrac{2(1+h) - 1 - 3}{h} = \dfrac{2h - 2}{h} = 2 - \dfrac{2}{h} \to +\infty$.
 
 ⇒ $\nexists f'_x(1,1)$. Además $f$ es discontinua en $(1,1)$: por la izquierda tiende a $2 - 1 = 1 \ne 3$.
 
-*$f'_y$:* con $x = 1$ fijo siempre usamos la rama $x \ge 1$: $f(1, 1+k) = 1 + 2 + 2k$, así que $\dfrac{2k}{k} \to 2$ ⇒ $f'_y(1,1) = 2$. Coincide con la regla práctica de la rama $x \ge 1$.
+*Derivada* $f'_y$: con $x = 1$ fijo siempre usamos la rama $x \ge 1$: $f(1, 1+k) = 1 + 2 + 2k$, así que $\dfrac{2k}{k} \to 2$ ⇒ $f'_y(1,1) = 2$. Coincide con la regla práctica de la rama $x \ge 1$.
 
 **c)** $f(0,0) = 0$.
 
