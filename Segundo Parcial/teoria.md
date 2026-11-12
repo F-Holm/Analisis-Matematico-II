@@ -10,86 +10,87 @@ Los ejemplos salen de parciales reales, recuperatorios y del repaso de la cáted
 
 | Pedido | Ir a |
 |---|---|
-| Trabajo o circulación sobre un arco, campo no conservativo | [Tipo 1](#tipo-1-circulación-parametrizando-la-curva), [Tipo 24](#tipo-24-green-sobre-una-curva-cerrada) |
+| Trabajo o circulación sobre un arco, campo no conservativo | [Tipo 1](#tipo-1-circulación-parametrizando-la-curva), [Tipo 19](#tipo-19-green-sobre-una-curva-cerrada) |
 | Longitud de una curva, masa de un alambre | [Tipo 2](#tipo-2-longitud-de-una-curva-y-masa-de-un-alambre) |
 | ¿Es conservativo? Hallar potencial | [Tipo 3](#tipo-3-es-conservativo-hallar-el-potencial) |
 | Circulación con campo conservativo | [Tipo 4](#tipo-4-circulación-de-un-campo-conservativo) |
 | Hallar $g$ o parámetros para que sea conservativo | [Tipo 5](#tipo-5-hallar-una-función-o-parámetros-para-que-sea-conservativo) |
-| Campo $=$ gradiente $+$ otro campo | [Tipo 6](#tipo-6-campo-conservativo-más-otro-campo) |
-| Campo singular en un punto | [Tipo 7](#tipo-7-campo-con-una-singularidad), [Tipo 8](#tipo-8-campo-con-varias-singularidades), [Tipo 9](#tipo-9-campo-singular-que-sí-es-conservativo) |
-| Líneas de campo | [Tipo 10](#tipo-10-líneas-de-campo) |
-| Integral doble, polares, área de una región | [Tipo 11](#tipo-11-integral-doble-en-polares), [Tipo 12](#tipo-12-cambio-de-variables), [Tipo 13](#tipo-13-elegir-o-cambiar-el-orden-de-integración) |
-| Volumen de un sólido | [Tipo 14](#tipo-14-volumen-entre-dos-superficies-de-revolución), [Tipo 15](#tipo-15-volumen-sobre-un-disco-corrido), [Tipo 16](#tipo-16-volumen-con-planos-y-cilindros-en-cartesianas), [Tipo 18](#tipo-18-volumen-en-esféricas) |
-| Masa de un sólido | [Tipo 17](#tipo-17-masa-de-un-sólido-con-eje-de-simetría-distinto-de-z) |
-| Área de una superficie | [Tipo 19](#tipo-19-área-de-un-gráfico), [Tipo 20](#tipo-20-área-de-un-cilindro) |
-| Masa de una chapa | [Tipo 21](#tipo-21-masa-de-una-chapa) |
-| Flujo por una superficie abierta | [Tipo 22](#tipo-22-flujo-directo-por-un-gráfico), [Tipo 23](#tipo-23-flujo-por-un-cono-o-un-cilindro), [Tipo 29](#tipo-29-flujo-por-una-superficie-abierta-cerrando-con-una-tapa) |
-| Circulación sobre una curva cerrada plana | [Tipo 24](#tipo-24-green-sobre-una-curva-cerrada) |
-| Circulación sobre un arco plano | [Tipo 25](#tipo-25-green-sobre-un-arco-plano) |
-| Área con integrales de línea | [Tipo 26](#tipo-26-área-con-integrales-de-línea) |
-| "La circulación vale $k$ veces el área" | [Tipo 27](#tipo-27-la-circulación-vale-k-veces-el-área) |
-| Flujo por la frontera de un sólido | [Tipo 28](#tipo-28-gauss-en-la-frontera-de-un-sólido) |
-| Datos: divergencia, o $g$ con condición sobre la divergencia | [Tipo 29](#tipo-29-flujo-por-una-superficie-abierta-cerrando-con-una-tapa), [Tipo 30](#tipo-30-hallar-una-función-a-partir-de-la-divergencia) |
-| Circulación sobre una curva en el espacio | [Tipo 31](#tipo-31-stokes-sobre-una-curva-cerrada-en-el-espacio), [Tipo 32](#tipo-32-stokes-sobre-el-borde-de-una-superficie-dada) |
-| Flujo de un rotor | [Tipo 33](#tipo-33-flujo-de-un-rotor) |
+| Integral doble, polares, área de una región | [Tipo 6](#tipo-6-integral-doble-en-polares), [Tipo 7](#tipo-7-cambio-de-variables), [Tipo 8](#tipo-8-elegir-o-cambiar-el-orden-de-integración) |
+| Volumen de un sólido | [Tipo 9](#tipo-9-volumen-entre-dos-superficies-de-revolución), [Tipo 10](#tipo-10-volumen-sobre-un-disco-corrido), [Tipo 11](#tipo-11-volumen-con-planos-y-cilindros-en-cartesianas), [Tipo 13](#tipo-13-volumen-en-esféricas) |
+| Masa de un sólido | [Tipo 12](#tipo-12-masa-de-un-sólido-con-eje-de-simetría-distinto-de-z) |
+| Área de una superficie | [Tipo 14](#tipo-14-área-de-un-gráfico), [Tipo 15](#tipo-15-área-de-un-cilindro) |
+| Masa de una chapa | [Tipo 16](#tipo-16-masa-de-una-chapa) |
+| Flujo por una superficie abierta | [Tipo 17](#tipo-17-flujo-directo-por-un-gráfico), [Tipo 18](#tipo-18-flujo-por-un-cono-o-un-cilindro), [Tipo 28](#tipo-28-flujo-por-una-superficie-abierta-cerrando-con-una-tapa) |
+| Circulación sobre una curva cerrada plana | [Tipo 19](#tipo-19-green-sobre-una-curva-cerrada) |
+| Circulación sobre un arco plano | [Tipo 20](#tipo-20-green-sobre-un-arco-plano) |
+| Área con integrales de línea | [Tipo 21](#tipo-21-área-con-integrales-de-línea) |
+| "La circulación vale $k$ veces el área" | [Tipo 22](#tipo-22-la-circulación-vale-k-veces-el-área) |
+| Campo $=$ gradiente $+$ otro campo | [Tipo 23](#tipo-23-campo-conservativo-más-otro-campo) |
+| Campo singular en un punto | [Tipo 24](#tipo-24-campo-con-una-singularidad), [Tipo 25](#tipo-25-campo-con-varias-singularidades), [Tipo 26](#tipo-26-campo-singular-que-sí-es-conservativo) |
+| Flujo por la frontera de un sólido | [Tipo 27](#tipo-27-gauss-en-la-frontera-de-un-sólido) |
+| Datos: divergencia, o $g$ con condición sobre la divergencia | [Tipo 28](#tipo-28-flujo-por-una-superficie-abierta-cerrando-con-una-tapa), [Tipo 29](#tipo-29-hallar-una-función-a-partir-de-la-divergencia) |
+| Circulación sobre una curva en el espacio | [Tipo 30](#tipo-30-stokes-sobre-una-curva-cerrada-en-el-espacio), [Tipo 31](#tipo-31-stokes-sobre-el-borde-de-una-superficie-dada) |
+| Flujo de un rotor | [Tipo 32](#tipo-32-flujo-de-un-rotor) |
+| Líneas de campo | [Tipo 33](#tipo-33-líneas-de-campo) |
 | EDO lineal | [Tipo 34](#tipo-34-edo-lineal-con-condiciones-iniciales), [Tipo 35](#tipo-35-edo-con-resonancia) |
 | Hallar coeficientes o la EDO desde sus soluciones | [Tipo 36](#tipo-36-hallar-coeficientes-y-usar-la-recta-tangente), [Tipo 37](#tipo-37-armar-la-edo-desde-sus-soluciones) |
 | "Defina…", "Enuncie…", "Demuestre…" | [Tipo 38](#tipo-38-definiciones-enunciados-y-demostraciones) |
 
 ## Índice
 
-- **[Bloque A: Curvas e integrales de línea](#bloque-a-curvas-e-integrales-de-línea)**
+- **[Unidad 8: Curvas, integrales de línea y campos conservativos](#unidad-8-curvas-integrales-de-línea-y-campos-conservativos)**
   - [Tipo 1: Circulación parametrizando la curva](#tipo-1-circulación-parametrizando-la-curva)
   - [Tipo 2: Longitud de una curva y masa de un alambre](#tipo-2-longitud-de-una-curva-y-masa-de-un-alambre)
-- **[Bloque B: Campos conservativos](#bloque-b-campos-conservativos)**
   - [Tipo 3: ¿Es conservativo? Hallar el potencial](#tipo-3-es-conservativo-hallar-el-potencial)
   - [Tipo 4: Circulación de un campo conservativo](#tipo-4-circulación-de-un-campo-conservativo)
   - [Tipo 5: Hallar una función o parámetros para que sea conservativo](#tipo-5-hallar-una-función-o-parámetros-para-que-sea-conservativo)
-  - [Tipo 6: Campo conservativo más otro campo](#tipo-6-campo-conservativo-más-otro-campo)
-  - [Tipo 7: Campo con una singularidad](#tipo-7-campo-con-una-singularidad)
-  - [Tipo 8: Campo con varias singularidades](#tipo-8-campo-con-varias-singularidades)
-  - [Tipo 9: Campo singular que sí es conservativo](#tipo-9-campo-singular-que-sí-es-conservativo)
-  - [Tipo 10: Líneas de campo](#tipo-10-líneas-de-campo)
-- **[Bloque C: Integrales múltiples](#bloque-c-integrales-múltiples)**
-  - [Tipo 11: Integral doble en polares](#tipo-11-integral-doble-en-polares)
-  - [Tipo 12: Cambio de variables](#tipo-12-cambio-de-variables)
-  - [Tipo 13: Elegir o cambiar el orden de integración](#tipo-13-elegir-o-cambiar-el-orden-de-integración)
-  - [Tipo 14: Volumen entre dos superficies de revolución](#tipo-14-volumen-entre-dos-superficies-de-revolución)
-  - [Tipo 15: Volumen sobre un disco corrido](#tipo-15-volumen-sobre-un-disco-corrido)
-  - [Tipo 16: Volumen con planos y cilindros, en cartesianas](#tipo-16-volumen-con-planos-y-cilindros-en-cartesianas)
-  - [Tipo 17: Masa de un sólido con eje de simetría distinto de $z$](#tipo-17-masa-de-un-sólido-con-eje-de-simetría-distinto-de-z)
-  - [Tipo 18: Volumen en esféricas](#tipo-18-volumen-en-esféricas)
-- **[Bloque D: Superficies, área, masa y flujo](#bloque-d-superficies-área-masa-y-flujo)**
-  - [Tipo 19: Área de un gráfico](#tipo-19-área-de-un-gráfico)
-  - [Tipo 20: Área de un cilindro](#tipo-20-área-de-un-cilindro)
-  - [Tipo 21: Masa de una chapa](#tipo-21-masa-de-una-chapa)
-  - [Tipo 22: Flujo directo por un gráfico](#tipo-22-flujo-directo-por-un-gráfico)
-  - [Tipo 23: Flujo por un cono o un cilindro](#tipo-23-flujo-por-un-cono-o-un-cilindro)
-- **[Bloque E: Divergencia, rotor y teoremas integrales](#bloque-e-divergencia-rotor-y-teoremas-integrales)**
-  - [Tipo 24: Green sobre una curva cerrada](#tipo-24-green-sobre-una-curva-cerrada)
-  - [Tipo 25: Green sobre un arco plano](#tipo-25-green-sobre-un-arco-plano)
-  - [Tipo 26: Área con integrales de línea](#tipo-26-área-con-integrales-de-línea)
-  - [Tipo 27: "La circulación vale $k$ veces el área"](#tipo-27-la-circulación-vale-k-veces-el-área)
-  - [Tipo 28: Gauss en la frontera de un sólido](#tipo-28-gauss-en-la-frontera-de-un-sólido)
-  - [Tipo 29: Flujo por una superficie abierta, cerrando con una tapa](#tipo-29-flujo-por-una-superficie-abierta-cerrando-con-una-tapa)
-  - [Tipo 30: Hallar una función a partir de la divergencia](#tipo-30-hallar-una-función-a-partir-de-la-divergencia)
-  - [Tipo 31: Stokes sobre una curva cerrada en el espacio](#tipo-31-stokes-sobre-una-curva-cerrada-en-el-espacio)
-  - [Tipo 32: Stokes sobre el borde de una superficie dada](#tipo-32-stokes-sobre-el-borde-de-una-superficie-dada)
-  - [Tipo 33: Flujo de un rotor](#tipo-33-flujo-de-un-rotor)
-- **[Bloque F: Ecuaciones diferenciales lineales](#bloque-f-ecuaciones-diferenciales-lineales)**
+- **[Unidad 9: Integrales múltiples](#unidad-9-integrales-múltiples)**
+  - [Tipo 6: Integral doble en polares](#tipo-6-integral-doble-en-polares)
+  - [Tipo 7: Cambio de variables](#tipo-7-cambio-de-variables)
+  - [Tipo 8: Elegir o cambiar el orden de integración](#tipo-8-elegir-o-cambiar-el-orden-de-integración)
+  - [Tipo 9: Volumen entre dos superficies de revolución](#tipo-9-volumen-entre-dos-superficies-de-revolución)
+  - [Tipo 10: Volumen sobre un disco corrido](#tipo-10-volumen-sobre-un-disco-corrido)
+  - [Tipo 11: Volumen con planos y cilindros, en cartesianas](#tipo-11-volumen-con-planos-y-cilindros-en-cartesianas)
+  - [Tipo 12: Masa de un sólido con eje de simetría distinto de $z$](#tipo-12-masa-de-un-sólido-con-eje-de-simetría-distinto-de-z)
+  - [Tipo 13: Volumen en esféricas](#tipo-13-volumen-en-esféricas)
+- **[Unidad 10: Superficies, área, masa y flujo](#unidad-10-superficies-área-masa-y-flujo)**
+  - [Tipo 14: Área de un gráfico](#tipo-14-área-de-un-gráfico)
+  - [Tipo 15: Área de un cilindro](#tipo-15-área-de-un-cilindro)
+  - [Tipo 16: Masa de una chapa](#tipo-16-masa-de-una-chapa)
+  - [Tipo 17: Flujo directo por un gráfico](#tipo-17-flujo-directo-por-un-gráfico)
+  - [Tipo 18: Flujo por un cono o un cilindro](#tipo-18-flujo-por-un-cono-o-un-cilindro)
+- **[Unidad 11: Divergencia, rotor y teoremas integrales](#unidad-11-divergencia-rotor-y-teoremas-integrales)**
+  - [Tipo 19: Green sobre una curva cerrada](#tipo-19-green-sobre-una-curva-cerrada)
+  - [Tipo 20: Green sobre un arco plano](#tipo-20-green-sobre-un-arco-plano)
+  - [Tipo 21: Área con integrales de línea](#tipo-21-área-con-integrales-de-línea)
+  - [Tipo 22: "La circulación vale $k$ veces el área"](#tipo-22-la-circulación-vale-k-veces-el-área)
+  - [Tipo 23: Campo conservativo más otro campo](#tipo-23-campo-conservativo-más-otro-campo)
+  - [Tipo 24: Campo con una singularidad](#tipo-24-campo-con-una-singularidad)
+  - [Tipo 25: Campo con varias singularidades](#tipo-25-campo-con-varias-singularidades)
+  - [Tipo 26: Campo singular que sí es conservativo](#tipo-26-campo-singular-que-sí-es-conservativo)
+  - [Tipo 27: Gauss en la frontera de un sólido](#tipo-27-gauss-en-la-frontera-de-un-sólido)
+  - [Tipo 28: Flujo por una superficie abierta, cerrando con una tapa](#tipo-28-flujo-por-una-superficie-abierta-cerrando-con-una-tapa)
+  - [Tipo 29: Hallar una función a partir de la divergencia](#tipo-29-hallar-una-función-a-partir-de-la-divergencia)
+  - [Tipo 30: Stokes sobre una curva cerrada en el espacio](#tipo-30-stokes-sobre-una-curva-cerrada-en-el-espacio)
+  - [Tipo 31: Stokes sobre el borde de una superficie dada](#tipo-31-stokes-sobre-el-borde-de-una-superficie-dada)
+  - [Tipo 32: Flujo de un rotor](#tipo-32-flujo-de-un-rotor)
+- **[Unidad 12: Ecuaciones diferenciales (2.ª parte)](#unidad-12-ecuaciones-diferenciales-2ª-parte)**
+  - [Tipo 33: Líneas de campo](#tipo-33-líneas-de-campo)
   - [Tipo 34: EDO lineal con condiciones iniciales](#tipo-34-edo-lineal-con-condiciones-iniciales)
   - [Tipo 35: EDO con resonancia](#tipo-35-edo-con-resonancia)
   - [Tipo 36: Hallar coeficientes y usar la recta tangente](#tipo-36-hallar-coeficientes-y-usar-la-recta-tangente)
   - [Tipo 37: Armar la EDO desde sus soluciones](#tipo-37-armar-la-edo-desde-sus-soluciones)
-- **[Bloque G: Ejercicios teóricos](#bloque-g-ejercicios-teóricos)**
+- **[Ejercicios teóricos (todas las unidades)](#ejercicios-teóricos-todas-las-unidades)**
   - [Tipo 38: Definiciones, enunciados y demostraciones](#tipo-38-definiciones-enunciados-y-demostraciones)
 - **[Errores frecuentes](#errores-frecuentes)**
 
 ---
 
-## Bloque A: Curvas e integrales de línea
+## Unidad 8: Curvas, integrales de línea y campos conservativos
 
-### Teoría
+Teoría completa de la unidad: [Unidad 08 - Curvas e Integrales de Linea/teoria.md](../Unidad%2008%20-%20Curvas%20e%20Integrales%20de%20Linea/teoria.md).
+
+### Teoría: curvas e integrales de línea
 
 **Curva:** imagen de una función $\vec g: [a,b] \to \mathbb{R}^n$ continua. Es **suave** si $\vec g \in C^1$ y $\vec g' \ne \vec 0$; **simple** si no se corta a sí misma; **cerrada** si $\vec g(a) = \vec g(b)$.
 
@@ -172,11 +173,7 @@ $\delta = |z| = t$ y $\Vert\vec\alpha'\Vert = \sqrt2$. Entonces $M = \displaysty
 
 **Resultado:** $M = 2\sqrt2\thinspace \pi^2$.
 
----
-
-## Bloque B: Campos conservativos
-
-### Teoría
+### Teoría: campos conservativos
 
 $\vec f$ es **conservativo** (campo de gradientes) en un abierto $D$ si existe $\varphi: D \to \mathbb{R}$ diferenciable con $\nabla\varphi = \vec f$. La función $\varphi$ es una **función potencial**.
 
@@ -248,7 +245,7 @@ Las definiciones son las de arriba.
 
 **Método.**
 
-1. Imponer la simetría. Con función incógnita, sale una EDO (Bloque F). Con parámetros, se igualan coeficientes.
+1. Imponer la simetría. Con función incógnita, sale una EDO (Unidad 12). Con parámetros, se igualan coeficientes.
 2. Resolver usando las condiciones dadas.
 3. Con el campo ya definido, hallar el potencial y calcular lo que se pida.
 
@@ -272,7 +269,476 @@ $$\varphi(\pi,0) - \varphi(-\pi,0) = \frac{\pi^3}{3} - \frac{\pi^2}{2} + \frac{\
 
 Con parámetros: en [Práctica 02, P2](practica-segundo-parcial-02.md), $(axy + z,\ x^2 + bz,\ x + 3y)$ pide $ax = 2x$ y $b = 3$, es decir $a = 2$, $b = 3$.
 
-### Tipo 6: Campo conservativo más otro campo
+---
+
+## Unidad 9: Integrales múltiples
+
+Teoría completa de la unidad: [Unidad 09 - Integrales Multiples/teoria.md](../Unidad%2009%20-%20Integrales%20Multiples/teoria.md).
+
+### Teoría
+
+**Fubini:** en una región elemental, $\iint_Df\thinspace dA = \int_a^b\int_{\varphi_1(x)}^{\varphi_2(x)}f\thinspace dy\thinspace dx$, o en el otro orden.
+
+**Cambio de variables:** si $\vec T: D^* \to D$, $(u,v) \mapsto (x,y)$, es $C^1$, biyectiva salvo en un conjunto de área nula y con jacobiano no nulo,
+
+$$\iint_Df(x,y)\thinspace dx\thinspace dy = \iint_{D^*}f(\vec T(u,v))\left|\frac{\partial(x,y)}{\partial(u,v)}\right|du\thinspace dv$$
+
+| Coordenadas | Transformación | $\lvert J\rvert$ |
+|---|---|---|
+| Polares | $x = r\cos\theta$, $y = r\mathop{\mathrm{sen}}\theta$ | $r$ |
+| Polares desplazadas (centro $(a,b)$) | $x = a + r\cos\theta$, $y = b + r\mathop{\mathrm{sen}}\theta$ | $r$ |
+| Polares elípticas | $x = a\thinspace r\cos\theta$, $y = b\thinspace r\mathop{\mathrm{sen}}\theta$ | $ab\thinspace r$ |
+| Cilíndricas | $(r\cos\theta,\ r\mathop{\mathrm{sen}}\theta,\ z)$ | $r$ |
+| Cilíndricas con eje $y$ | $x = r\cos\theta$, $z = r\mathop{\mathrm{sen}}\theta$, $y = y$ | $r$ |
+| Esféricas | $x = \rho\mathop{\mathrm{sen}}\varphi\cos\theta$, $y = \rho\mathop{\mathrm{sen}}\varphi\mathop{\mathrm{sen}}\theta$, $z = \rho\cos\varphi$ | $\rho^2\mathop{\mathrm{sen}}\varphi$ |
+| Lineal $u = ax + by$, $v = cx + dy$ | | $\dfrac{1}{\lvert ad - bc\rvert}$ |
+
+**Aplicaciones:** área $\iint_DdA$; volumen $\iiint_HdV$ o $\iint_D(z_{sup} - z_{inf})\thinspace dA$; masa $\iiint\delta\thinspace dV$; centro de masa $\bar x = \frac1M\iiint x\delta\thinspace dV$; momento de inercia respecto de un eje $\iiint d^2\delta\thinspace dV$.
+
+**"Densidad proporcional a la distancia a…":** al eje $z$, $k\sqrt{x^2 + y^2}$; al eje $y$, $k\sqrt{x^2 + z^2}$; al origen, $k\sqrt{x^2 + y^2 + z^2}$; al plano $xy$, $k|z|$.
+
+**Atajos por simetría:** la integral de una función impar sobre una región simétrica es 0, e $\iint_Dx\thinspace dA = \bar x\cdot\text{Área}$, con $\bar x$ el centroide.
+
+### Tipo 6: Integral doble en polares
+
+**Cómo se reconoce.** Aparece $x^2 + y^2$ en el integrando, o la región es un sector o un disco.
+
+**Método.**
+
+1. Dibujar la región.
+2. Ángulo: rectas por el origen. Radio: desde dónde hasta dónde, a ángulo fijo.
+3. Reemplazar, **multiplicando por $r$**.
+
+**Ejemplo** ([2.º Parcial 15/11/2022, T1](segundo-parcial-2022-11-15.md)).
+
+> Calcule $\displaystyle\iint_D\frac{x + 2y}{x^2 + y^2}\thinspace dA$, con $D$: $y \ge |x|$, $x + 2y \le 4$.
+
+*Paso 1 — Ángulo.* $y \ge |x|$ es el sector entre las rectas $y = x$ e $y = -x$, hacia arriba: $\theta\in\left[\tfrac\pi4, \tfrac{3\pi}{4}\right]$.
+
+*Paso 2 — Radio.* La recta en polares es $r(\cos\theta + 2\mathop{\mathrm{sen}}\theta) = 4$, entonces $0 \le r \le \dfrac{4}{\cos\theta + 2\mathop{\mathrm{sen}}\theta}$.
+
+*Paso 3 — Integrando.* $\dfrac{r(\cos\theta + 2\mathop{\mathrm{sen}}\theta)}{r^2}\cdot r = \cos\theta + 2\mathop{\mathrm{sen}}\theta$. La $r$ se fue.
+
+*Paso 4 — Integrar en $r$.* Queda $(\cos\theta + 2\mathop{\mathrm{sen}}\theta)\cdot\dfrac{4}{\cos\theta + 2\mathop{\mathrm{sen}}\theta} = 4$.
+
+*Paso 5 — Integrar en $\theta$.* $\displaystyle\int_{\pi/4}^{3\pi/4}4\thinspace d\theta$.
+
+**Resultado:** $2\pi$.
+
+**Variante: área de un dominio** ([2.º Parcial sin fecha C, 4](segundo-parcial-sin-fecha-c.md)). El dominio de $f = \sqrt{-x^2 + 2x - y^2}\thinspace \ln(x - y)$ es el disco $(x - 1)^2 + y^2 \le 1$ con $y < x$. La recta $y = x$ corta el borde en $(0,0)$ y $(1,1)$, y esa cuerda subtiende un ángulo de $\frac\pi2$ desde el centro. Se le resta al disco el segmento circular: $A = \pi - \left(\frac\pi4 - \frac12\right) = \frac{3\pi}{4} + \frac12$.
+
+### Tipo 7: Cambio de variables
+
+**Cómo se reconoce.** La región está limitada por dos familias de curvas, como $xy = c$ e $y = cx$.
+
+**Método.**
+
+1. Elegir $u$, $v$ tales que las curvas de borde sean $u = \text{cte.}$, $v = \text{cte.}$
+2. Calcular $\dfrac{\partial(u,v)}{\partial(x,y)}$ e **invertirlo**.
+3. Integrar en el rectángulo.
+
+**Ejemplo** ([Práctica 06, P3](practica-segundo-parcial-06.md)).
+
+> Calcule el área de la región del primer cuadrante limitada por $xy = 1$, $xy = 4$, $y = x$ e $y = 4x$.
+
+*Paso 1 — Variables.* $u = xy$, $v = \dfrac yx$: la región es $1 \le u \le 4$, $1 \le v \le 4$.
+
+*Paso 2 — Jacobiano.*
+
+$$\frac{\partial(u,v)}{\partial(x,y)} = \begin{vmatrix} y & x \cr -\frac{y}{x^2} & \frac1x \end{vmatrix} = \frac yx + \frac yx = 2v \ \Rightarrow\ \left|\frac{\partial(x,y)}{\partial(u,v)}\right| = \frac{1}{2v}$$
+
+*Paso 3 — Integrar.* $A = \displaystyle\int_1^4\int_1^4\frac{1}{2v}\thinspace du\thinspace dv = 3\cdot\frac{\ln4}{2}$.
+
+**Resultado:** $A = 3\ln2$.
+
+### Tipo 8: Elegir o cambiar el orden de integración
+
+**Cómo se reconoce.** Una función sin primitiva elemental en una de las variables, como $e^{y^2}$ o $\mathop{\mathrm{sen}}(x^2)$.
+
+**Método.** Dibujar la región desde los límites y describirla en el orden que integre primero la variable fácil.
+
+**Ejemplo** ([Práctica 14, P3](practica-segundo-parcial-14.md)).
+
+> Calcule la masa de la chapa $0 \le x \le y \le 1$ con densidad $\delta = e^{y^2}$.
+
+$e^{y^2}$ no se puede integrar en $y$, así que se integra primero en $x$:
+
+$$M = \int_0^1\int_0^ye^{y^2}\thinspace dx\thinspace dy = \int_0^1ye^{y^2}\thinspace dy = \left[\frac{e^{y^2}}{2}\right]_0^1$$
+
+**Resultado:** $M = \dfrac{e - 1}{2}$.
+
+### Tipo 9: Volumen entre dos superficies de revolución
+
+**Método.**
+
+1. Identificar las superficies: $z = \sqrt{x^2 + y^2}$ cono, $z = a - x^2 - y^2$ paraboloide, $x^2 + y^2 + z^2 = R^2$ esfera.
+2. Igualarlas para encontrar la intersección: da el radio de la proyección.
+3. Decidir cuál está arriba, probando un punto.
+4. Integrar en cilíndricas: $V = \iint(z_{sup} - z_{inf})\thinspace r\thinspace dr\thinspace d\theta$.
+
+**Ejemplo** ([2.º Parcial 01/12/2012, P1](segundo-parcial-2012-12-01.md)).
+
+> Plantee las integrales que permiten calcular el volumen del macizo $z \le 6 - x^2 - y^2$; $z \ge \sqrt{x^2 + y^2}$.
+
+*Paso 1 — Intersección.* $r = 6 - r^2$ da $r^2 + r - 6 = 0$, con $r = 2$.
+
+*Paso 2 — Quién está arriba.* El enunciado ya lo dice: el cono abajo y el paraboloide arriba.
+
+*Paso 3 — Integral.*
+
+$$V = \int_0^{2\pi}\int_0^2\int_r^{6 - r^2}r\thinspace dz\thinspace dr\thinspace d\theta = 2\pi\left[3r^2 - \frac{r^4}{4} - \frac{r^3}{3}\right]_0^2 = 2\pi\left(12 - 4 - \frac83\right)$$
+
+**Resultado:** $V = \dfrac{32\pi}{3}$.
+
+**Variante con parámetro** ([Recuperatorio 01/12/2023, 4](recuperatorio-segundo-parcial-2023-12-01.md)): para $z = r$ y $z = ar^2$, la intersección es $r = \tfrac1a$ y $V = 2\pi\displaystyle\int_0^{1/a}r(r - ar^2)\thinspace dr = \frac{\pi}{6a^3}$. Igualando a $\frac\pi6$: $a = 1$.
+
+### Tipo 10: Volumen sobre un disco corrido
+
+**Método.** Si el integrando es lineal, conviene usar el centroide en lugar de polares.
+
+**Ejemplo** ([2.º Parcial 24/11/2020, P2 a](segundo-parcial-2020-11-24.md)).
+
+> Determine el volumen del sólido $x^2 + y^2 \le 4y$; $y \le z \le 4$.
+
+*Paso 1 — Proyección.* $x^2 + (y - 2)^2 \le 4$: disco de centro $(0,2)$ y radio 2.
+
+*Paso 2 — Integrar la altura.* $V = \iint_D(4 - y)\thinspace dA = 4\cdot\text{Área} - \iint_Dy\thinspace dA$.
+
+*Paso 3 — Centroide.* Área $= 4\pi$ y $\bar y = 2$, entonces $\iint_Dy\thinspace dA = 8\pi$.
+
+**Resultado:** $V = 16\pi - 8\pi = 8\pi$.
+
+### Tipo 11: Volumen con planos y cilindros, en cartesianas
+
+**Cómo se reconoce.** Las condiciones son rectas o parábolas y no hay simetría circular.
+
+**Método.**
+
+1. Proyectar sobre el plano que da una región simple.
+2. Elegir el orden para no partir la región.
+3. Integrar la altura.
+
+**Ejemplo** ([2.º Parcial 19/11/2024, Z2004 Tema 1, P2](segundo-parcial-2024-11-19.md)).
+
+> Calcule el volumen del sólido del primer octante $z \le 4 - y^2$; $y \ge x$; $y - 2x \le 0$.
+
+*Paso 1 — Proyección.* En el plano $xy$: $\dfrac y2 \le x \le y$. El techo $z = 4 - y^2$ corta a $z = 0$ en $y = 2$, así que $0 \le y \le 2$.
+
+*Paso 2 — Orden.* Con $x$ primero, la región queda en una sola pieza; con $y$ primero habría que partirla.
+
+*Paso 3 — Integrar.*
+
+$$V = \int_0^2\int_{y/2}^y(4 - y^2)\thinspace dx\thinspace dy = \int_0^2\frac y2(4 - y^2)\thinspace dy = \left[y^2 - \frac{y^4}{8}\right]_0^2 = 4 - 2$$
+
+**Resultado:** $V = 2$.
+
+### Tipo 12: Masa de un sólido con eje de simetría distinto de $z$
+
+**Método.** Tomar el eje de simetría como eje de las cilíndricas. Si la simetría es alrededor de $y$: $x = r\cos\theta$, $z = r\mathop{\mathrm{sen}}\theta$, $|J| = r$.
+
+**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P1](segundo-parcial-2021-11-16.md)).
+
+> Calcule la masa de $\sqrt{x^2 + z^2} \le y \le 3$, $z \ge 0$, con densidad $\delta = x^2 + z^2$.
+
+*Paso 1 — Reconocer.* Es un cono de eje $y$, con vértice en el origen y tapa en $y = 3$. La condición $z \ge 0$ deja la mitad.
+
+*Paso 2 — Coordenadas.* $\delta = r^2$, $\theta\in[0, \pi]$ (porque $z = r\mathop{\mathrm{sen}}\theta \ge 0$), $0 \le r \le 3$, $r \le y \le 3$.
+
+*Paso 3 — Integrar.*
+
+$$M = \int_0^\pi\int_0^3\int_r^3r^2\cdot r\thinspace dy\thinspace dr\thinspace d\theta = \pi\int_0^3r^3(3 - r)\thinspace dr = \pi\left(\frac{243}{4} - \frac{243}{5}\right)$$
+
+**Resultado:** $M = \dfrac{243\pi}{20}$.
+
+### Tipo 13: Volumen en esféricas
+
+**Cómo se reconoce.** Esferas y conos con vértice en el origen, a veces con una esfera que pasa por él.
+
+**Método.** Escribir cada superficie en esféricas y usar $\rho^2\mathop{\mathrm{sen}}\varphi$.
+
+**Ejemplo** ([Práctica 13, P1](practica-segundo-parcial-13.md)).
+
+> Calcule el volumen interior a $x^2 + y^2 + z^2 = 4z$ y por encima de $z = \sqrt{x^2 + y^2}$.
+
+*Paso 1 — Esfera.* $\rho^2 = 4\rho\cos\varphi$, entonces $\rho = 4\cos\varphi$.
+
+*Paso 2 — Cono.* $\varphi = \tfrac\pi4$. La región es $0 \le \varphi \le \tfrac\pi4$.
+
+*Paso 3 — Integrar.*
+
+$$V = \int_0^{2\pi}\int_0^{\pi/4}\int_0^{4\cos\varphi}\rho^2\mathop{\mathrm{sen}}\varphi\thinspace d\rho\thinspace d\varphi\thinspace d\theta = 2\pi\cdot\frac{64}{3}\cdot\frac14\left(1 - \frac14\right)$$
+
+**Resultado:** $V = 8\pi$.
+
+---
+
+## Unidad 10: Superficies, área, masa y flujo
+
+Teoría completa de la unidad: [Unidad 10 - Integrales de Superficie/teoria.md](../Unidad%2010%20-%20Integrales%20de%20Superficie/teoria.md).
+
+### Teoría
+
+**Superficie paramétrica:** $\vec\Sigma: D \subset \mathbb{R}^2 \to \mathbb{R}^3$, con vector normal $\vec n = \vec\Sigma'_u\wedge\vec\Sigma'_v$. Es **suave** si $\vec n \ne \vec 0$ y **orientable** si se puede elegir una normal unitaria que varíe con continuidad.
+
+| Superficie | Parametrización | Normal |
+|---|---|---|
+| Gráfico $z = f(x,y)$ | $(x,\ y,\ f(x,y))$ | $(-f'_x,\ -f'_y,\ 1)$ (hacia arriba) |
+| Gráfico $y = f(x,z)$ | $(x,\ f(x,z),\ z)$ | $\pm(-f'_x,\ 1,\ -f'_z)$ |
+| Cono $z = \sqrt{x^2 + y^2}$ | $(x,\ y,\ \sqrt{x^2 + y^2})$ | $\Vert\vec n\Vert = \sqrt2$ |
+| Cilindro $x^2 + y^2 = R^2$ | $(R\cos\theta,\ R\mathop{\mathrm{sen}}\theta,\ z)$ | $(R\cos\theta,\ R\mathop{\mathrm{sen}}\theta,\ 0)$ (exterior) |
+| Esfera de radio $R$ | $(R\mathop{\mathrm{sen}}\varphi\cos\theta,\ R\mathop{\mathrm{sen}}\varphi\mathop{\mathrm{sen}}\theta,\ R\cos\varphi)$ | $\Vert\vec n\Vert = R^2\mathop{\mathrm{sen}}\varphi$ (exterior) |
+| Plano $z = a + bx + cy$ | $(x,\ y,\ a + bx + cy)$ | $(-b,\ -c,\ 1)$ |
+
+| Qué | Fórmula |
+|---|---|
+| Área | $A = \iint_D\Vert\vec n\Vert\thinspace du\thinspace dv$; para $z = f(x,y)$: $\iint_D\sqrt{1 + f'^2_x + f'^2_y}\thinspace dx\thinspace dy$ |
+| Masa de una chapa | $M = \iint_D\delta(\vec\Sigma)\thinspace \Vert\vec n\Vert\thinspace du\thinspace dv$ |
+| Flujo | $\Phi = \iint_S\vec f\cdot\breve n\thinspace dS = \iint_D\vec f(\vec\Sigma)\cdot\vec n\thinspace du\thinspace dv$ |
+
+**La diferencia que más errores causa:** en el área y la masa va $\Vert\vec n\Vert$. En el flujo va el **vector** $\vec n$, sin dividir por su norma.
+
+**Orientación.** Cuando se pide indicarla, hay que decir con palabras qué normal se usó ("normal hacia arriba", "normal exterior", "$\vec n = (2x, 1, 0)$") y aclarar que con la opuesta el flujo cambia de signo.
+
+### Tipo 14: Área de un gráfico
+
+**Método.**
+
+1. Calcular $\Vert\vec n\Vert$.
+2. Proyectar: pasar las condiciones sobre $z$ a condiciones sobre $(x,y)$.
+3. Integrar, en polares si la proyección es circular.
+
+**Ejemplo** ([2.º Parcial 27/11/2020, P4](segundo-parcial-2020-11-27.md)).
+
+> Calcule el área de $z = 6 - x^2 - y^2$, $2 \le z \le 5$, $x \ge 0$, $y \ge 0$.
+
+*Paso 1 — Norma.* $\Vert\vec n\Vert = \sqrt{1 + 4x^2 + 4y^2} = \sqrt{1 + 4r^2}$.
+
+*Paso 2 — Proyección.* $2 \le 6 - r^2 \le 5$ da $1 \le r \le 2$. El primer cuadrante da $\theta\in\left[0, \tfrac\pi2\right]$.
+
+*Paso 3 — Integrar.*
+
+$$A = \frac\pi2\int_1^2r\sqrt{1 + 4r^2}\thinspace dr = \frac\pi2\left[\frac{(1 + 4r^2)^{3/2}}{12}\right]_1^2$$
+
+**Resultado:** $A = \dfrac{\pi}{24}\left(17\sqrt{17} - 5\sqrt5\right)$.
+
+**Atajo:** en un cono o un plano, $\Vert\vec n\Vert$ es constante, y el área es $\Vert\vec n\Vert$ por el área de la proyección. En [2020, P4](segundo-parcial-2020-11-24.md): $z = 7 - r$, $4 \le z \le 6$, primer cuadrante; proyección de área $\frac14\pi(9 - 1) = 2\pi$ y $\Vert\vec n\Vert = \sqrt2$, así que $A = 2\sqrt2\thinspace \pi$.
+
+### Tipo 15: Área de un cilindro
+
+**Método.** Parametrizar con el ángulo y la altura: un elemento de área mide $R\thinspace d\theta\thinspace dz$. Para cada $\theta$, la altura va desde $z_{inf}(\theta)$ hasta $z_{sup}(\theta)$.
+
+**Ejemplo** ([2.º Parcial 19/11/2024, z2051 Tema 1, P2](segundo-parcial-2024-11-19.md)).
+
+> Calcule el área de $x^2 + y^2 = 2y$ limitada por $z = 0$ y $z + y = 2$.
+
+*Paso 1 — Parametrizar.* $x^2 + (y - 1)^2 = 1$, con $R = 1$: $x = \cos\theta$, $y = 1 + \mathop{\mathrm{sen}}\theta$.
+
+*Paso 2 — Altura.* $0 \le z \le 2 - y = 1 - \mathop{\mathrm{sen}}\theta$, que es no negativa.
+
+*Paso 3 — Integrar.* $A = \displaystyle\int_0^{2\pi}(1 - \mathop{\mathrm{sen}}\theta)\thinspace d\theta$.
+
+**Resultado:** $A = 2\pi$.
+
+### Tipo 16: Masa de una chapa
+
+**Método.** Calcular $\Vert\vec n\Vert$, escribir $\delta$ en los parámetros y multiplicar. Si $\delta$ trae una raíz rara, suele simplificarse con $\Vert\vec n\Vert$.
+
+**Ejemplo** ([2.º Parcial 11/11/2019, P1](segundo-parcial-2019-11-11.md)).
+
+> Calcule la masa de $S$: $z = x^2 + y^2$, $1 \le z \le 4$, con densidad $\delta = \dfrac{z}{\sqrt{1 + 4x^2 + 4y^2}}$.
+
+*Paso 1 — Simplificar.* $\Vert\vec n\Vert = \sqrt{1 + 4x^2 + 4y^2}$, que se cancela con el denominador. Queda $\delta\thinspace \Vert\vec n\Vert = z = r^2$.
+
+*Paso 2 — Región.* $1 \le r^2 \le 4$, entonces $1 \le r \le 2$.
+
+*Paso 3 — Integrar.* $M = \displaystyle\int_0^{2\pi}\int_1^2r^2\cdot r\thinspace dr\thinspace d\theta = 2\pi\cdot\frac{15}{4}$.
+
+**Resultado:** $M = \dfrac{15\pi}{2}$.
+
+**Variante con eje $y$** ([2019, P1](segundo-parcial-2019-06-18.md)): $y = \sqrt{x^2 + z^2}$, $1 \le y \le 3$, densidad proporcional a la distancia al plano $xz$. Es $\delta = ky$, $\Vert\vec n\Vert = \sqrt2$, y $M = \sqrt2\thinspace k\cdot2\pi\displaystyle\int_1^3r^2\thinspace dr = \frac{52\sqrt2\thinspace k\pi}{3}$.
+
+### Tipo 17: Flujo directo por un gráfico
+
+**Cómo se reconoce.** Una superficie abierta, sin una tapa que simplifique y con un campo que no invita a usar Gauss. Muchas veces al hacer $\vec f\cdot\vec n$ se cancelan términos: **no integrar antes de simplificar**.
+
+**Método.**
+
+1. Parametrizar como gráfico y escribir $\vec n$, **indicando la orientación**.
+2. Reemplazar la superficie en $\vec f$ y hacer $\vec f\cdot\vec n$.
+3. Hallar la proyección igualando las superficies.
+4. Integrar.
+
+**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P2](segundo-parcial-2021-11-16.md)).
+
+> Calcule el flujo de $\vec f = (2y - 6;\ -2x;\ -z + 2y)$ a través de $z = 9 - x^2 - (y - 3)^2$ con $z \ge 2y$. Indique la orientación.
+
+*Paso 1 — Normal.* Se elige hacia arriba: $\vec n = (2x,\ 2(y - 3),\ 1)$.
+
+*Paso 2 — Producto escalar.* Los dos primeros términos se cancelan:
+
+$$\vec f\cdot\vec n = 2x(2y - 6) - 2x(2y - 6) + (-z + 2y) = 2y - z$$
+
+*Paso 3 — Reemplazar $z$.* $2y - 9 + x^2 + (y - 3)^2 = x^2 + y^2 - 4y$.
+
+*Paso 4 — Proyección.* $z \ge 2y$ equivale a $x^2 + y^2 - 4y \le 0$: disco $x^2 + (y - 2)^2 \le 4$. En polares desplazadas, el integrando es $r^2 - 4$.
+
+*Paso 5 — Integrar.*
+
+$$\Phi = \int_0^{2\pi}\int_0^2(r^2 - 4)\thinspace r\thinspace dr\thinspace d\theta = 2\pi(4 - 8)$$
+
+**Resultado:** $\Phi = -8\pi$ con normal hacia arriba ($8\pi$ con la opuesta).
+
+**Variante: gráfico sobre otro plano** ([2012, P3](segundo-parcial-2012-12-01.md)). Para $y + z = 3$ con $x^2 + z^2 \le 9$ y $\vec f = (e^{xy} + x;\ y + x^2;\ z^2 - y)$, se parametriza $(x,\ 3 - z,\ z)$, con $\vec n = (0, 1, 1)$. Entonces $\vec f\cdot\vec n = x^2 + z^2$, sobre un disco en el plano $xz$, y $\Phi = \frac{81\pi}{2}$.
+
+### Tipo 18: Flujo por un cono o un cilindro
+
+**Método.** Igual que el anterior; lo que cambia es la normal. En un cilindro conviene parametrizar con ángulo y altura. En un cono, con $(x, y)$ o $(r, \theta)$.
+
+**Ejemplo** ([2.º Parcial 19/11/2024, Z2004 Tema 1, P1](segundo-parcial-2024-11-19.md)).
+
+> Sea $S$: $z^2 = x^2 + y^2$, $-2 \le z \le -1$. Calcule el flujo de $\vec F = (-zx,\ -zy,\ z^2)$, indicando la orientación.
+
+*Paso 1 — Parametrizar.* Como $z < 0$: $z = -\sqrt{x^2 + y^2} = -r$, con $1 \le r \le 2$.
+
+*Paso 2 — Normal.* Se elige la de componente $z$ positiva: $(-z'_x, -z'_y, 1) = \left(\dfrac xr,\ \dfrac yr,\ 1\right)$.
+
+*Paso 3 — Producto escalar.*
+
+$$\vec F\cdot\vec n = \frac{-z(x^2 + y^2)}{r} + z^2 = -zr + z^2 = r^2 + r^2 = 2r^2$$
+
+*Paso 4 — Integrar.*
+
+$$\Phi = \int_0^{2\pi}\int_1^22r^2\cdot r\thinspace dr\thinspace d\theta = 2\pi\left[\frac{r^4}{2}\right]_1^2$$
+
+**Resultado:** $\Phi = 15\pi$ con $\breve n\cdot(0,0,1) > 0$ ($-15\pi$ con la opuesta).
+
+Con cilindro: [Repaso, Ejercicio 12](repaso-segundo-parcial.md), y cilindro parabólico: [Repaso, Ejercicio 4](repaso-segundo-parcial.md).
+
+---
+
+## Unidad 11: Divergencia, rotor y teoremas integrales
+
+Teoría completa de la unidad: [Unidad 11 - Teoremas Integrales/teoria.md](../Unidad%2011%20-%20Teoremas%20Integrales/teoria.md).
+
+### Teoría
+
+Para $\vec f = (P, Q, R)$:
+
+$$\operatorname{div}\vec f = P'_x + Q'_y + R'_z, \qquad \operatorname{rot}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
+
+**Propiedades** (funciones $C^2$): $\nabla\times(\nabla\varphi) = \vec 0$; $\operatorname{div}(\nabla\times\vec f) = 0$, por lo que el flujo de un rotor por una superficie cerrada es 0; $\operatorname{div}(\nabla\varphi) = \Delta\varphi$. **Solenoidal:** $\operatorname{div}\vec f = 0$. **Irrotacional:** $\nabla\times\vec f = \vec 0$.
+
+**Truco:** una función desconocida como $h(z)$ en la primera componente, o $\mu(x)$ en la tercera, **no aporta a la divergencia**, porque no depende de la variable que se deriva. En el rotor, $g(x)$ en $P$, $g(y)$ en $Q$ o $g(z)$ en $R$ tampoco aportan. Si el enunciado trae una función incógnita, casi seguro desaparece.
+
+**Teorema de Green.** Sea $D \subset \mathbb{R}^2$ una región acotada cuya frontera $C = \partial D$ es una curva cerrada, simple, suave a trozos y orientada positivamente (dejando $D$ a la izquierda), y sea $\vec f = (P, Q)$ de clase $C^1$ en un abierto que contiene a $D$. Entonces
+
+$$\oint_CP\thinspace dx + Q\thinspace dy = \iint_D(Q'_x - P'_y)\thinspace dx\thinspace dy$$
+
+Vale también para regiones con agujeros, con la frontera exterior antihoraria y las interiores horarias.
+
+**Teorema de la divergencia (Gauss).** Sea $H \subset \mathbb{R}^3$ un sólido acotado cuya frontera $\partial H$ es una superficie cerrada, suave a trozos, orientada con la **normal exterior**, y sea $\vec f$ de clase $C^1$ en un abierto que contiene a $H$. Entonces
+
+$$\iint_{\partial H}\vec f\cdot\breve n\thinspace dS = \iiint_H\operatorname{div}\vec f\thinspace dV$$
+
+**Teorema del rotor (Stokes).** Sea $S$ una superficie orientable, suave a trozos, con normal $\breve n$, cuyo borde $\partial S$ es una curva cerrada simple, suave a trozos, **orientada de forma coherente con $\breve n$** (caminando por el borde con la cabeza hacia $\breve n$, la superficie queda a la izquierda). Si $\vec f$ es $C^1$ en un abierto que contiene a $S$,
+
+$$\oint_{\partial S}\vec f\cdot d\vec s = \iint_S(\nabla\times\vec f)\cdot\breve n\thinspace dS$$
+
+Dos superficies con el mismo borde y orientación coherente tienen el mismo flujo del rotor.
+
+### Tipo 19: Green sobre una curva cerrada
+
+**Método.**
+
+1. Calcular $Q'_x - P'_y$, que suele simplificarse mucho.
+2. Describir la región.
+3. Integrar, usando centroides o polares si conviene.
+4. Si la curva es **horaria**, el resultado lleva signo menos.
+
+**Ejemplo** ([2.º Parcial 15/11/2022, P2](segundo-parcial-2022-11-15.md)).
+
+> Calcule la circulación de $\vec f = (2xe^y - 1;\ x^2e^y + yx)$ sobre la frontera de $x + y \ge 4$; $x + 2y \le 8$; $y \ge 0$, en sentido positivo.
+
+*Paso 1 — Green.* $Q'_x - P'_y = 2xe^y + y - 2xe^y = y$. Las exponenciales se cancelan.
+
+*Paso 2 — Región.* Es el triángulo de vértices $(4,0)$, $(8,0)$ y $(0,4)$, con área $\tfrac12\cdot4\cdot4 = 8$.
+
+*Paso 3 — Centroide.* $\bar y = \dfrac{0 + 0 + 4}{3} = \dfrac43$, entonces $\iint y\thinspace dA = \dfrac43\cdot8$.
+
+**Resultado:** $\dfrac{32}{3}$.
+
+**Variante horaria** ([2024, Tema 1, P4](segundo-parcial-2024-11-19.md)): con $\vec G = (x - y^2,\ 3x + y)$ sobre $x^2 + \frac{(y - 1)^2}{4} = 1$, $Q'_x - P'_y = 3 + 2y$. La elipse tiene área $2\pi$ y $\bar y = 1$, así que la integral doble vale $3\cdot2\pi + 2\cdot1\cdot2\pi = 10\pi$. Como es horaria: $-10\pi$.
+
+### Tipo 20: Green sobre un arco plano
+
+**Cómo se reconoce.** La curva no es cerrada y parametrizar es incómodo, o hay una función incógnita.
+
+**Método.**
+
+1. Cerrar la curva con un segmento, sobre un eje si es posible.
+2. Fijar el sentido de la curva cerrada resultante.
+3. Aplicar Green.
+4. Calcular la integral sobre el segmento y restarla.
+
+**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P4](segundo-parcial-2021-11-16.md)).
+
+> Sea $\vec f = (y + x;\ 5x + \varphi(y))$. Calcule la circulación desde $(0,0)$ hasta $(2,0)$ a lo largo de $x^2 + y^2 = 2x$ con $y \ge 0$.
+
+*Paso 1 — Cerrar.* Se agrega el segmento $T$ de $(2,0)$ a $(0,0)$.
+
+*Paso 2 — Sentido.* La semicircunferencia va por arriba de izquierda a derecha, y el segmento vuelve por abajo: la curva cerrada es **horaria**.
+
+*Paso 3 — Green.* $Q'_x - P'_y = 5 - 1 = 4$. El medio disco tiene área $\frac\pi2$. Por ser horaria:
+
+$$\int_C + \int_T = -4\cdot\frac\pi2 = -2\pi$$
+
+*Paso 4 — Segmento.* Sobre $T$, $y = 0$ y $dy = 0$, y por lo tanto $\varphi$ no aparece:
+
+$$\int_T\vec f\cdot d\vec s = \int_2^0x\thinspace dx = -2$$
+
+*Paso 5 — Despejar.* $\int_C = -2\pi - (-2)$.
+
+**Resultado:** $2 - 2\pi$.
+
+### Tipo 21: Área con integrales de línea
+
+**Teoría.** Con un campo tal que $Q'_x - P'_y = 1$, Green da el área:
+
+$$\text{Área}(D) = \oint_Cx\thinspace dy = -\oint_Cy\thinspace dx = \frac12\oint_C(x\thinspace dy - y\thinspace dx)$$
+
+Si sale negativo, la parametrización recorría la curva en sentido horario: el área es el valor absoluto.
+
+**Ejemplo** ([2.º Parcial 11/11/2019, T2](segundo-parcial-2019-11-11.md)).
+
+> Enuncie Green y úselo para calcular el área encerrada por $\vec\alpha(t) = (t^3 - 4t,\ 16 - t^4)$, $-2 \le t \le 2$.
+
+*Paso 1 — Comprobar que es cerrada.* $\vec\alpha(-2) = (0, 0) = \vec\alpha(2)$.
+
+*Paso 2 — Campo.* $\vec f = (0, x)$, con $Q'_x - P'_y = 1$. Sobre la curva, $dy = -4t^3\thinspace dt$.
+
+*Paso 3 — Integrar.*
+
+$$\oint x\thinspace dy = \int_{-2}^2(t^3 - 4t)(-4t^3)\thinspace dt = 2\int_0^2(-4t^6 + 16t^4)\thinspace dt = 2\left(-\frac{512}{7} + \frac{512}{5}\right)$$
+
+**Resultado:** $\text{Área} = \dfrac{2048}{35}$. Es positivo: la curva se recorre en sentido antihorario.
+
+### Tipo 22: "La circulación vale $k$ veces el área"
+
+**Método.** Por Green, la circulación es $\iint(Q'_x - P'_y)\thinspace dA$. Que valga $k\cdot$Área **para toda curva** exige $Q'_x - P'_y = k$ en todo punto.
+
+**Ejemplo** ([2.º Parcial 24/11/2020, P1](segundo-parcial-2020-11-24.md)).
+
+> Sea $\vec f(x,y) = (3x^7 + 4yg(x);\ 2g'(x) + 3y + 5x)$. Halle $g$ tal que $\vec f(0,1) = (8,\ 3 - 4\sqrt2)$ y la circulación sobre toda curva simple, suave y cerrada con orientación positiva valga 5 veces el área encerrada.
+
+*Paso 1 — Condición.* $Q'_x - P'_y = 2g'' + 5 - 4g = 5$, entonces $g'' - 2g = 0$.
+
+*Paso 2 — EDO.* $r^2 = 2$: $g = C_1e^{\sqrt2x} + C_2e^{-\sqrt2x}$.
+
+*Paso 3 — Condiciones.* $\vec f(0,1) = (4g(0),\ 2g'(0) + 3)$, de donde $g(0) = 2$ y $g'(0) = -2\sqrt2$. Entonces $C_1 + C_2 = 2$ y $C_1 - C_2 = -2$.
+
+**Resultado:** $g(x) = 2e^{-\sqrt2x}$.
+
+### Tipo 23: Campo conservativo más otro campo
 
 **Cómo se reconoce.** $\vec h = \vec f + \vec g$, con $\vec f$ "conservativo" sin fórmula, o $\vec f = \nabla h + \vec g$. También sirve cuando una parte del campo es un gradiente visible.
 
@@ -286,7 +752,7 @@ $$\oint_CP\thinspace dx + Q\thinspace dy = \iint_D(Q'_x - P'_y)\thinspace dA$$
 - **Orientación.** Si $C$ se recorre en sentido horario, el resultado cambia de signo.
 - **Cuándo conviene.** Cuando la curva es cerrada y parametrizarla lleva a una integral difícil, pero $Q'_x - P'_y$ es simple.
 - **Relación con los conservativos.** Si el campo es conservativo y $C^1$ en un abierto que contiene a $D$, entonces $Q'_x = P'_y$: el integrando es 0 y la circulación también.
-- **Cuándo no se aplica directamente.** Si la curva no es cerrada, ver el [Tipo 25](#tipo-25-green-sobre-un-arco-plano); si el campo no es $C^1$ en algún punto de $D$, ver el [Tipo 7](#tipo-7-campo-con-una-singularidad). El enunciado formal está en el [Bloque E](#bloque-e-divergencia-rotor-y-teoremas-integrales).
+- **Cuándo no se aplica directamente.** Si la curva no es cerrada, ver el [Tipo 20](#tipo-20-green-sobre-un-arco-plano); si el campo no es $C^1$ en algún punto de $D$, ver el [Tipo 24](#tipo-24-campo-con-una-singularidad). El enunciado formal está en la [teoría de la Unidad 11](#unidad-11-divergencia-rotor-y-teoremas-integrales).
 
 **Ejemplo** ([2.º Parcial 18/06/2019, P2](segundo-parcial-2019-06-18.md)).
 
@@ -302,7 +768,7 @@ $$\oint\vec g\cdot d\vec s = -\iint_Dx\thinspace dA = -3\cdot9\pi$$
 
 **Resultado:** $-27\pi$ en sentido antihorario ($27\pi$ en sentido horario).
 
-### Tipo 7: Campo con una singularidad
+### Tipo 24: Campo con una singularidad
 
 Aparece en casi todos los parciales.
 
@@ -343,7 +809,7 @@ La misma cuenta del punto a muestra que la circulación sobre $E$ vale $\pi$ par
 
 **Regla general:** $\dfrac{(-y, x)}{ax^2 + by^2}$ da $\dfrac{2\pi}{\sqrt{ab}}$, y un factor $k$ multiplica el resultado. Si la singularidad está corrida, como en $\dfrac{(1 - y,\ x)}{x^2 + (y - 1)^2}$ ([2024, T2](segundo-parcial-2024-11-19.md)), se razona igual alrededor de $(0,1)$.
 
-### Tipo 8: Campo con varias singularidades
+### Tipo 25: Campo con varias singularidades
 
 **Método.** Si la jacobiana es simétrica fuera de los puntos singulares, la circulación sólo depende de **qué singularidades rodea la curva**.
 
@@ -363,9 +829,9 @@ $$\oint_{C_1} - \oint_{C_2} - \oint_{C_3} = \iint(Q'_x - P'_y)\thinspace dA = 0$
 
 **Resultado:** $\oint_{C_1} = 6$, $\oint_{C_4} = 0$, y no admite potencial en $D$.
 
-### Tipo 9: Campo singular que sí es conservativo
+### Tipo 26: Campo singular que sí es conservativo
 
-**Cómo se reconoce.** Se parece al campo del Tipo 7, pero las componentes son $(x, y)$ sobre el denominador, en vez de $(-y, x)$. Conviene buscar el potencial.
+**Cómo se reconoce.** Se parece al campo del Tipo 24, pero las componentes son $(x, y)$ sobre el denominador, en vez de $(-y, x)$. Conviene buscar el potencial.
 
 **Ejemplo** ([Recuperatorio 01/12/2023, T2](recuperatorio-segundo-parcial-2023-12-01.md)).
 
@@ -379,500 +845,7 @@ $$\oint_{C_1} - \oint_{C_2} - \oint_{C_3} = \iint(Q'_x - P'_y)\thinspace dA = 0$
 
 **Resultado:** $0$, en cualquier sentido.
 
-### Tipo 10: Líneas de campo
-
-**Teoría.** Las líneas de campo de $\vec f$ son las curvas cuyo vector tangente en cada punto es paralelo a $\vec f$. En $\mathbb{R}^2$ eso da $\dfrac{dy}{dx} = \dfrac{Q}{P}$; en $\mathbb{R}^3$, $\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{dz}{R}$.
-
-**Método.**
-
-1. Plantear la EDO $y' = Q/P$ y resolverla (suele ser separable).
-2. Calcular la constante con el punto.
-3. Usar la curva para lo que se pida: longitud, área o trabajo.
-
-**Ejemplo 1** ([2.º Parcial 18/06/2019, P4 b](segundo-parcial-2019-06-18.md)).
-
-> Halle la línea de campo de $\vec f(x,y) = (x,\ 2y)$ que pasa por $(3,-4)$.
-
-$y' = \dfrac{2y}{x}$, entonces $\dfrac{dy}{y} = \dfrac{2\thinspace dx}{x}$ e $y = Cx^2$. En el punto: $-4 = 9C$.
-
-**Resultado:** $y = -\dfrac49x^2$.
-
-**Ejemplo 2: el área que encierra** ([2.º Parcial sin fecha B, P3](segundo-parcial-sin-fecha-b.md)).
-
-> Determine, con integrales dobles, el área de la región limitada por la línea de campo de $\vec f(x,y) = \left(\dfrac{y}{x^2 + y^2};\ \dfrac{-9x}{x^2 + y^2}\right)$ que pasa por $(1,0)$.
-
-*Paso 1 — Línea.* $y' = \dfrac{-9x}{y}$ (el denominador común se cancela), entonces $y\thinspace dy = -9x\thinspace dx$ y $9x^2 + y^2 = C$. En $(1,0)$: $C = 9$.
-
-*Paso 2 — Área.* Es la elipse $x^2 + \dfrac{y^2}{9} = 1$. Con polares elípticas, $x = r\cos\theta$, $y = 3r\mathop{\mathrm{sen}}\theta$, $|J| = 3r$:
-
-$$A = \int_0^{2\pi}\int_0^13r\thinspace dr\thinspace d\theta$$
-
-**Resultado:** $A = 3\pi$.
-
----
-
-## Bloque C: Integrales múltiples
-
-### Teoría
-
-**Fubini:** en una región elemental, $\iint_Df\thinspace dA = \int_a^b\int_{\varphi_1(x)}^{\varphi_2(x)}f\thinspace dy\thinspace dx$, o en el otro orden.
-
-**Cambio de variables:** si $\vec T: D^* \to D$, $(u,v) \mapsto (x,y)$, es $C^1$, biyectiva salvo en un conjunto de área nula y con jacobiano no nulo,
-
-$$\iint_Df(x,y)\thinspace dx\thinspace dy = \iint_{D^*}f(\vec T(u,v))\left|\frac{\partial(x,y)}{\partial(u,v)}\right|du\thinspace dv$$
-
-| Coordenadas | Transformación | $\lvert J\rvert$ |
-|---|---|---|
-| Polares | $x = r\cos\theta$, $y = r\mathop{\mathrm{sen}}\theta$ | $r$ |
-| Polares desplazadas (centro $(a,b)$) | $x = a + r\cos\theta$, $y = b + r\mathop{\mathrm{sen}}\theta$ | $r$ |
-| Polares elípticas | $x = a\thinspace r\cos\theta$, $y = b\thinspace r\mathop{\mathrm{sen}}\theta$ | $ab\thinspace r$ |
-| Cilíndricas | $(r\cos\theta,\ r\mathop{\mathrm{sen}}\theta,\ z)$ | $r$ |
-| Cilíndricas con eje $y$ | $x = r\cos\theta$, $z = r\mathop{\mathrm{sen}}\theta$, $y = y$ | $r$ |
-| Esféricas | $x = \rho\mathop{\mathrm{sen}}\varphi\cos\theta$, $y = \rho\mathop{\mathrm{sen}}\varphi\mathop{\mathrm{sen}}\theta$, $z = \rho\cos\varphi$ | $\rho^2\mathop{\mathrm{sen}}\varphi$ |
-| Lineal $u = ax + by$, $v = cx + dy$ | | $\dfrac{1}{\lvert ad - bc\rvert}$ |
-
-**Aplicaciones:** área $\iint_DdA$; volumen $\iiint_HdV$ o $\iint_D(z_{sup} - z_{inf})\thinspace dA$; masa $\iiint\delta\thinspace dV$; centro de masa $\bar x = \frac1M\iiint x\delta\thinspace dV$; momento de inercia respecto de un eje $\iiint d^2\delta\thinspace dV$.
-
-**"Densidad proporcional a la distancia a…":** al eje $z$, $k\sqrt{x^2 + y^2}$; al eje $y$, $k\sqrt{x^2 + z^2}$; al origen, $k\sqrt{x^2 + y^2 + z^2}$; al plano $xy$, $k|z|$.
-
-**Atajos por simetría:** la integral de una función impar sobre una región simétrica es 0, e $\iint_Dx\thinspace dA = \bar x\cdot\text{Área}$, con $\bar x$ el centroide.
-
-### Tipo 11: Integral doble en polares
-
-**Cómo se reconoce.** Aparece $x^2 + y^2$ en el integrando, o la región es un sector o un disco.
-
-**Método.**
-
-1. Dibujar la región.
-2. Ángulo: rectas por el origen. Radio: desde dónde hasta dónde, a ángulo fijo.
-3. Reemplazar, **multiplicando por $r$**.
-
-**Ejemplo** ([2.º Parcial 15/11/2022, T1](segundo-parcial-2022-11-15.md)).
-
-> Calcule $\displaystyle\iint_D\frac{x + 2y}{x^2 + y^2}\thinspace dA$, con $D$: $y \ge |x|$, $x + 2y \le 4$.
-
-*Paso 1 — Ángulo.* $y \ge |x|$ es el sector entre las rectas $y = x$ e $y = -x$, hacia arriba: $\theta\in\left[\tfrac\pi4, \tfrac{3\pi}{4}\right]$.
-
-*Paso 2 — Radio.* La recta en polares es $r(\cos\theta + 2\mathop{\mathrm{sen}}\theta) = 4$, entonces $0 \le r \le \dfrac{4}{\cos\theta + 2\mathop{\mathrm{sen}}\theta}$.
-
-*Paso 3 — Integrando.* $\dfrac{r(\cos\theta + 2\mathop{\mathrm{sen}}\theta)}{r^2}\cdot r = \cos\theta + 2\mathop{\mathrm{sen}}\theta$. La $r$ se fue.
-
-*Paso 4 — Integrar en $r$.* Queda $(\cos\theta + 2\mathop{\mathrm{sen}}\theta)\cdot\dfrac{4}{\cos\theta + 2\mathop{\mathrm{sen}}\theta} = 4$.
-
-*Paso 5 — Integrar en $\theta$.* $\displaystyle\int_{\pi/4}^{3\pi/4}4\thinspace d\theta$.
-
-**Resultado:** $2\pi$.
-
-**Variante: área de un dominio** ([2.º Parcial sin fecha C, 4](segundo-parcial-sin-fecha-c.md)). El dominio de $f = \sqrt{-x^2 + 2x - y^2}\thinspace \ln(x - y)$ es el disco $(x - 1)^2 + y^2 \le 1$ con $y < x$. La recta $y = x$ corta el borde en $(0,0)$ y $(1,1)$, y esa cuerda subtiende un ángulo de $\frac\pi2$ desde el centro. Se le resta al disco el segmento circular: $A = \pi - \left(\frac\pi4 - \frac12\right) = \frac{3\pi}{4} + \frac12$.
-
-### Tipo 12: Cambio de variables
-
-**Cómo se reconoce.** La región está limitada por dos familias de curvas, como $xy = c$ e $y = cx$.
-
-**Método.**
-
-1. Elegir $u$, $v$ tales que las curvas de borde sean $u = \text{cte.}$, $v = \text{cte.}$
-2. Calcular $\dfrac{\partial(u,v)}{\partial(x,y)}$ e **invertirlo**.
-3. Integrar en el rectángulo.
-
-**Ejemplo** ([Práctica 06, P3](practica-segundo-parcial-06.md)).
-
-> Calcule el área de la región del primer cuadrante limitada por $xy = 1$, $xy = 4$, $y = x$ e $y = 4x$.
-
-*Paso 1 — Variables.* $u = xy$, $v = \dfrac yx$: la región es $1 \le u \le 4$, $1 \le v \le 4$.
-
-*Paso 2 — Jacobiano.*
-
-$$\frac{\partial(u,v)}{\partial(x,y)} = \begin{vmatrix} y & x \cr -\frac{y}{x^2} & \frac1x \end{vmatrix} = \frac yx + \frac yx = 2v \ \Rightarrow\ \left|\frac{\partial(x,y)}{\partial(u,v)}\right| = \frac{1}{2v}$$
-
-*Paso 3 — Integrar.* $A = \displaystyle\int_1^4\int_1^4\frac{1}{2v}\thinspace du\thinspace dv = 3\cdot\frac{\ln4}{2}$.
-
-**Resultado:** $A = 3\ln2$.
-
-### Tipo 13: Elegir o cambiar el orden de integración
-
-**Cómo se reconoce.** Una función sin primitiva elemental en una de las variables, como $e^{y^2}$ o $\mathop{\mathrm{sen}}(x^2)$.
-
-**Método.** Dibujar la región desde los límites y describirla en el orden que integre primero la variable fácil.
-
-**Ejemplo** ([Práctica 14, P3](practica-segundo-parcial-14.md)).
-
-> Calcule la masa de la chapa $0 \le x \le y \le 1$ con densidad $\delta = e^{y^2}$.
-
-$e^{y^2}$ no se puede integrar en $y$, así que se integra primero en $x$:
-
-$$M = \int_0^1\int_0^ye^{y^2}\thinspace dx\thinspace dy = \int_0^1ye^{y^2}\thinspace dy = \left[\frac{e^{y^2}}{2}\right]_0^1$$
-
-**Resultado:** $M = \dfrac{e - 1}{2}$.
-
-### Tipo 14: Volumen entre dos superficies de revolución
-
-**Método.**
-
-1. Identificar las superficies: $z = \sqrt{x^2 + y^2}$ cono, $z = a - x^2 - y^2$ paraboloide, $x^2 + y^2 + z^2 = R^2$ esfera.
-2. Igualarlas para encontrar la intersección: da el radio de la proyección.
-3. Decidir cuál está arriba, probando un punto.
-4. Integrar en cilíndricas: $V = \iint(z_{sup} - z_{inf})\thinspace r\thinspace dr\thinspace d\theta$.
-
-**Ejemplo** ([2.º Parcial 01/12/2012, P1](segundo-parcial-2012-12-01.md)).
-
-> Plantee las integrales que permiten calcular el volumen del macizo $z \le 6 - x^2 - y^2$; $z \ge \sqrt{x^2 + y^2}$.
-
-*Paso 1 — Intersección.* $r = 6 - r^2$ da $r^2 + r - 6 = 0$, con $r = 2$.
-
-*Paso 2 — Quién está arriba.* El enunciado ya lo dice: el cono abajo y el paraboloide arriba.
-
-*Paso 3 — Integral.*
-
-$$V = \int_0^{2\pi}\int_0^2\int_r^{6 - r^2}r\thinspace dz\thinspace dr\thinspace d\theta = 2\pi\left[3r^2 - \frac{r^4}{4} - \frac{r^3}{3}\right]_0^2 = 2\pi\left(12 - 4 - \frac83\right)$$
-
-**Resultado:** $V = \dfrac{32\pi}{3}$.
-
-**Variante con parámetro** ([Recuperatorio 01/12/2023, 4](recuperatorio-segundo-parcial-2023-12-01.md)): para $z = r$ y $z = ar^2$, la intersección es $r = \tfrac1a$ y $V = 2\pi\displaystyle\int_0^{1/a}r(r - ar^2)\thinspace dr = \frac{\pi}{6a^3}$. Igualando a $\frac\pi6$: $a = 1$.
-
-### Tipo 15: Volumen sobre un disco corrido
-
-**Método.** Si el integrando es lineal, conviene usar el centroide en lugar de polares.
-
-**Ejemplo** ([2.º Parcial 24/11/2020, P2 a](segundo-parcial-2020-11-24.md)).
-
-> Determine el volumen del sólido $x^2 + y^2 \le 4y$; $y \le z \le 4$.
-
-*Paso 1 — Proyección.* $x^2 + (y - 2)^2 \le 4$: disco de centro $(0,2)$ y radio 2.
-
-*Paso 2 — Integrar la altura.* $V = \iint_D(4 - y)\thinspace dA = 4\cdot\text{Área} - \iint_Dy\thinspace dA$.
-
-*Paso 3 — Centroide.* Área $= 4\pi$ y $\bar y = 2$, entonces $\iint_Dy\thinspace dA = 8\pi$.
-
-**Resultado:** $V = 16\pi - 8\pi = 8\pi$.
-
-### Tipo 16: Volumen con planos y cilindros, en cartesianas
-
-**Cómo se reconoce.** Las condiciones son rectas o parábolas y no hay simetría circular.
-
-**Método.**
-
-1. Proyectar sobre el plano que da una región simple.
-2. Elegir el orden para no partir la región.
-3. Integrar la altura.
-
-**Ejemplo** ([2.º Parcial 19/11/2024, Z2004 Tema 1, P2](segundo-parcial-2024-11-19.md)).
-
-> Calcule el volumen del sólido del primer octante $z \le 4 - y^2$; $y \ge x$; $y - 2x \le 0$.
-
-*Paso 1 — Proyección.* En el plano $xy$: $\dfrac y2 \le x \le y$. El techo $z = 4 - y^2$ corta a $z = 0$ en $y = 2$, así que $0 \le y \le 2$.
-
-*Paso 2 — Orden.* Con $x$ primero, la región queda en una sola pieza; con $y$ primero habría que partirla.
-
-*Paso 3 — Integrar.*
-
-$$V = \int_0^2\int_{y/2}^y(4 - y^2)\thinspace dx\thinspace dy = \int_0^2\frac y2(4 - y^2)\thinspace dy = \left[y^2 - \frac{y^4}{8}\right]_0^2 = 4 - 2$$
-
-**Resultado:** $V = 2$.
-
-### Tipo 17: Masa de un sólido con eje de simetría distinto de $z$
-
-**Método.** Tomar el eje de simetría como eje de las cilíndricas. Si la simetría es alrededor de $y$: $x = r\cos\theta$, $z = r\mathop{\mathrm{sen}}\theta$, $|J| = r$.
-
-**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P1](segundo-parcial-2021-11-16.md)).
-
-> Calcule la masa de $\sqrt{x^2 + z^2} \le y \le 3$, $z \ge 0$, con densidad $\delta = x^2 + z^2$.
-
-*Paso 1 — Reconocer.* Es un cono de eje $y$, con vértice en el origen y tapa en $y = 3$. La condición $z \ge 0$ deja la mitad.
-
-*Paso 2 — Coordenadas.* $\delta = r^2$, $\theta\in[0, \pi]$ (porque $z = r\mathop{\mathrm{sen}}\theta \ge 0$), $0 \le r \le 3$, $r \le y \le 3$.
-
-*Paso 3 — Integrar.*
-
-$$M = \int_0^\pi\int_0^3\int_r^3r^2\cdot r\thinspace dy\thinspace dr\thinspace d\theta = \pi\int_0^3r^3(3 - r)\thinspace dr = \pi\left(\frac{243}{4} - \frac{243}{5}\right)$$
-
-**Resultado:** $M = \dfrac{243\pi}{20}$.
-
-### Tipo 18: Volumen en esféricas
-
-**Cómo se reconoce.** Esferas y conos con vértice en el origen, a veces con una esfera que pasa por él.
-
-**Método.** Escribir cada superficie en esféricas y usar $\rho^2\mathop{\mathrm{sen}}\varphi$.
-
-**Ejemplo** ([Práctica 13, P1](practica-segundo-parcial-13.md)).
-
-> Calcule el volumen interior a $x^2 + y^2 + z^2 = 4z$ y por encima de $z = \sqrt{x^2 + y^2}$.
-
-*Paso 1 — Esfera.* $\rho^2 = 4\rho\cos\varphi$, entonces $\rho = 4\cos\varphi$.
-
-*Paso 2 — Cono.* $\varphi = \tfrac\pi4$. La región es $0 \le \varphi \le \tfrac\pi4$.
-
-*Paso 3 — Integrar.*
-
-$$V = \int_0^{2\pi}\int_0^{\pi/4}\int_0^{4\cos\varphi}\rho^2\mathop{\mathrm{sen}}\varphi\thinspace d\rho\thinspace d\varphi\thinspace d\theta = 2\pi\cdot\frac{64}{3}\cdot\frac14\left(1 - \frac14\right)$$
-
-**Resultado:** $V = 8\pi$.
-
----
-
-## Bloque D: Superficies, área, masa y flujo
-
-### Teoría
-
-**Superficie paramétrica:** $\vec\Sigma: D \subset \mathbb{R}^2 \to \mathbb{R}^3$, con vector normal $\vec n = \vec\Sigma'_u\wedge\vec\Sigma'_v$. Es **suave** si $\vec n \ne \vec 0$ y **orientable** si se puede elegir una normal unitaria que varíe con continuidad.
-
-| Superficie | Parametrización | Normal |
-|---|---|---|
-| Gráfico $z = f(x,y)$ | $(x,\ y,\ f(x,y))$ | $(-f'_x,\ -f'_y,\ 1)$ (hacia arriba) |
-| Gráfico $y = f(x,z)$ | $(x,\ f(x,z),\ z)$ | $\pm(-f'_x,\ 1,\ -f'_z)$ |
-| Cono $z = \sqrt{x^2 + y^2}$ | $(x,\ y,\ \sqrt{x^2 + y^2})$ | $\Vert\vec n\Vert = \sqrt2$ |
-| Cilindro $x^2 + y^2 = R^2$ | $(R\cos\theta,\ R\mathop{\mathrm{sen}}\theta,\ z)$ | $(R\cos\theta,\ R\mathop{\mathrm{sen}}\theta,\ 0)$ (exterior) |
-| Esfera de radio $R$ | $(R\mathop{\mathrm{sen}}\varphi\cos\theta,\ R\mathop{\mathrm{sen}}\varphi\mathop{\mathrm{sen}}\theta,\ R\cos\varphi)$ | $\Vert\vec n\Vert = R^2\mathop{\mathrm{sen}}\varphi$ (exterior) |
-| Plano $z = a + bx + cy$ | $(x,\ y,\ a + bx + cy)$ | $(-b,\ -c,\ 1)$ |
-
-| Qué | Fórmula |
-|---|---|
-| Área | $A = \iint_D\Vert\vec n\Vert\thinspace du\thinspace dv$; para $z = f(x,y)$: $\iint_D\sqrt{1 + f'^2_x + f'^2_y}\thinspace dx\thinspace dy$ |
-| Masa de una chapa | $M = \iint_D\delta(\vec\Sigma)\thinspace \Vert\vec n\Vert\thinspace du\thinspace dv$ |
-| Flujo | $\Phi = \iint_S\vec f\cdot\breve n\thinspace dS = \iint_D\vec f(\vec\Sigma)\cdot\vec n\thinspace du\thinspace dv$ |
-
-**La diferencia que más errores causa:** en el área y la masa va $\Vert\vec n\Vert$. En el flujo va el **vector** $\vec n$, sin dividir por su norma.
-
-**Orientación.** Cuando se pide indicarla, hay que decir con palabras qué normal se usó ("normal hacia arriba", "normal exterior", "$\vec n = (2x, 1, 0)$") y aclarar que con la opuesta el flujo cambia de signo.
-
-### Tipo 19: Área de un gráfico
-
-**Método.**
-
-1. Calcular $\Vert\vec n\Vert$.
-2. Proyectar: pasar las condiciones sobre $z$ a condiciones sobre $(x,y)$.
-3. Integrar, en polares si la proyección es circular.
-
-**Ejemplo** ([2.º Parcial 27/11/2020, P4](segundo-parcial-2020-11-27.md)).
-
-> Calcule el área de $z = 6 - x^2 - y^2$, $2 \le z \le 5$, $x \ge 0$, $y \ge 0$.
-
-*Paso 1 — Norma.* $\Vert\vec n\Vert = \sqrt{1 + 4x^2 + 4y^2} = \sqrt{1 + 4r^2}$.
-
-*Paso 2 — Proyección.* $2 \le 6 - r^2 \le 5$ da $1 \le r \le 2$. El primer cuadrante da $\theta\in\left[0, \tfrac\pi2\right]$.
-
-*Paso 3 — Integrar.*
-
-$$A = \frac\pi2\int_1^2r\sqrt{1 + 4r^2}\thinspace dr = \frac\pi2\left[\frac{(1 + 4r^2)^{3/2}}{12}\right]_1^2$$
-
-**Resultado:** $A = \dfrac{\pi}{24}\left(17\sqrt{17} - 5\sqrt5\right)$.
-
-**Atajo:** en un cono o un plano, $\Vert\vec n\Vert$ es constante, y el área es $\Vert\vec n\Vert$ por el área de la proyección. En [2020, P4](segundo-parcial-2020-11-24.md): $z = 7 - r$, $4 \le z \le 6$, primer cuadrante; proyección de área $\frac14\pi(9 - 1) = 2\pi$ y $\Vert\vec n\Vert = \sqrt2$, así que $A = 2\sqrt2\thinspace \pi$.
-
-### Tipo 20: Área de un cilindro
-
-**Método.** Parametrizar con el ángulo y la altura: un elemento de área mide $R\thinspace d\theta\thinspace dz$. Para cada $\theta$, la altura va desde $z_{inf}(\theta)$ hasta $z_{sup}(\theta)$.
-
-**Ejemplo** ([2.º Parcial 19/11/2024, z2051 Tema 1, P2](segundo-parcial-2024-11-19.md)).
-
-> Calcule el área de $x^2 + y^2 = 2y$ limitada por $z = 0$ y $z + y = 2$.
-
-*Paso 1 — Parametrizar.* $x^2 + (y - 1)^2 = 1$, con $R = 1$: $x = \cos\theta$, $y = 1 + \mathop{\mathrm{sen}}\theta$.
-
-*Paso 2 — Altura.* $0 \le z \le 2 - y = 1 - \mathop{\mathrm{sen}}\theta$, que es no negativa.
-
-*Paso 3 — Integrar.* $A = \displaystyle\int_0^{2\pi}(1 - \mathop{\mathrm{sen}}\theta)\thinspace d\theta$.
-
-**Resultado:** $A = 2\pi$.
-
-### Tipo 21: Masa de una chapa
-
-**Método.** Calcular $\Vert\vec n\Vert$, escribir $\delta$ en los parámetros y multiplicar. Si $\delta$ trae una raíz rara, suele simplificarse con $\Vert\vec n\Vert$.
-
-**Ejemplo** ([2.º Parcial 11/11/2019, P1](segundo-parcial-2019-11-11.md)).
-
-> Calcule la masa de $S$: $z = x^2 + y^2$, $1 \le z \le 4$, con densidad $\delta = \dfrac{z}{\sqrt{1 + 4x^2 + 4y^2}}$.
-
-*Paso 1 — Simplificar.* $\Vert\vec n\Vert = \sqrt{1 + 4x^2 + 4y^2}$, que se cancela con el denominador. Queda $\delta\thinspace \Vert\vec n\Vert = z = r^2$.
-
-*Paso 2 — Región.* $1 \le r^2 \le 4$, entonces $1 \le r \le 2$.
-
-*Paso 3 — Integrar.* $M = \displaystyle\int_0^{2\pi}\int_1^2r^2\cdot r\thinspace dr\thinspace d\theta = 2\pi\cdot\frac{15}{4}$.
-
-**Resultado:** $M = \dfrac{15\pi}{2}$.
-
-**Variante con eje $y$** ([2019, P1](segundo-parcial-2019-06-18.md)): $y = \sqrt{x^2 + z^2}$, $1 \le y \le 3$, densidad proporcional a la distancia al plano $xz$. Es $\delta = ky$, $\Vert\vec n\Vert = \sqrt2$, y $M = \sqrt2\thinspace k\cdot2\pi\displaystyle\int_1^3r^2\thinspace dr = \frac{52\sqrt2\thinspace k\pi}{3}$.
-
-### Tipo 22: Flujo directo por un gráfico
-
-**Cómo se reconoce.** Una superficie abierta, sin una tapa que simplifique y con un campo que no invita a usar Gauss. Muchas veces al hacer $\vec f\cdot\vec n$ se cancelan términos: **no integrar antes de simplificar**.
-
-**Método.**
-
-1. Parametrizar como gráfico y escribir $\vec n$, **indicando la orientación**.
-2. Reemplazar la superficie en $\vec f$ y hacer $\vec f\cdot\vec n$.
-3. Hallar la proyección igualando las superficies.
-4. Integrar.
-
-**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P2](segundo-parcial-2021-11-16.md)).
-
-> Calcule el flujo de $\vec f = (2y - 6;\ -2x;\ -z + 2y)$ a través de $z = 9 - x^2 - (y - 3)^2$ con $z \ge 2y$. Indique la orientación.
-
-*Paso 1 — Normal.* Se elige hacia arriba: $\vec n = (2x,\ 2(y - 3),\ 1)$.
-
-*Paso 2 — Producto escalar.* Los dos primeros términos se cancelan:
-
-$$\vec f\cdot\vec n = 2x(2y - 6) - 2x(2y - 6) + (-z + 2y) = 2y - z$$
-
-*Paso 3 — Reemplazar $z$.* $2y - 9 + x^2 + (y - 3)^2 = x^2 + y^2 - 4y$.
-
-*Paso 4 — Proyección.* $z \ge 2y$ equivale a $x^2 + y^2 - 4y \le 0$: disco $x^2 + (y - 2)^2 \le 4$. En polares desplazadas, el integrando es $r^2 - 4$.
-
-*Paso 5 — Integrar.*
-
-$$\Phi = \int_0^{2\pi}\int_0^2(r^2 - 4)\thinspace r\thinspace dr\thinspace d\theta = 2\pi(4 - 8)$$
-
-**Resultado:** $\Phi = -8\pi$ con normal hacia arriba ($8\pi$ con la opuesta).
-
-**Variante: gráfico sobre otro plano** ([2012, P3](segundo-parcial-2012-12-01.md)). Para $y + z = 3$ con $x^2 + z^2 \le 9$ y $\vec f = (e^{xy} + x;\ y + x^2;\ z^2 - y)$, se parametriza $(x,\ 3 - z,\ z)$, con $\vec n = (0, 1, 1)$. Entonces $\vec f\cdot\vec n = x^2 + z^2$, sobre un disco en el plano $xz$, y $\Phi = \frac{81\pi}{2}$.
-
-### Tipo 23: Flujo por un cono o un cilindro
-
-**Método.** Igual que el anterior; lo que cambia es la normal. En un cilindro conviene parametrizar con ángulo y altura. En un cono, con $(x, y)$ o $(r, \theta)$.
-
-**Ejemplo** ([2.º Parcial 19/11/2024, Z2004 Tema 1, P1](segundo-parcial-2024-11-19.md)).
-
-> Sea $S$: $z^2 = x^2 + y^2$, $-2 \le z \le -1$. Calcule el flujo de $\vec F = (-zx,\ -zy,\ z^2)$, indicando la orientación.
-
-*Paso 1 — Parametrizar.* Como $z < 0$: $z = -\sqrt{x^2 + y^2} = -r$, con $1 \le r \le 2$.
-
-*Paso 2 — Normal.* Se elige la de componente $z$ positiva: $(-z'_x, -z'_y, 1) = \left(\dfrac xr,\ \dfrac yr,\ 1\right)$.
-
-*Paso 3 — Producto escalar.*
-
-$$\vec F\cdot\vec n = \frac{-z(x^2 + y^2)}{r} + z^2 = -zr + z^2 = r^2 + r^2 = 2r^2$$
-
-*Paso 4 — Integrar.*
-
-$$\Phi = \int_0^{2\pi}\int_1^22r^2\cdot r\thinspace dr\thinspace d\theta = 2\pi\left[\frac{r^4}{2}\right]_1^2$$
-
-**Resultado:** $\Phi = 15\pi$ con $\breve n\cdot(0,0,1) > 0$ ($-15\pi$ con la opuesta).
-
-Con cilindro: [Repaso, Ejercicio 12](repaso-segundo-parcial.md), y cilindro parabólico: [Repaso, Ejercicio 4](repaso-segundo-parcial.md).
-
----
-
-## Bloque E: Divergencia, rotor y teoremas integrales
-
-### Teoría
-
-Para $\vec f = (P, Q, R)$:
-
-$$\operatorname{div}\vec f = P'_x + Q'_y + R'_z, \qquad \operatorname{rot}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
-
-**Propiedades** (funciones $C^2$): $\nabla\times(\nabla\varphi) = \vec 0$; $\operatorname{div}(\nabla\times\vec f) = 0$, por lo que el flujo de un rotor por una superficie cerrada es 0; $\operatorname{div}(\nabla\varphi) = \Delta\varphi$. **Solenoidal:** $\operatorname{div}\vec f = 0$. **Irrotacional:** $\nabla\times\vec f = \vec 0$.
-
-**Truco:** una función desconocida como $h(z)$ en la primera componente, o $\mu(x)$ en la tercera, **no aporta a la divergencia**, porque no depende de la variable que se deriva. En el rotor, $g(x)$ en $P$, $g(y)$ en $Q$ o $g(z)$ en $R$ tampoco aportan. Si el enunciado trae una función incógnita, casi seguro desaparece.
-
-**Teorema de Green.** Sea $D \subset \mathbb{R}^2$ una región acotada cuya frontera $C = \partial D$ es una curva cerrada, simple, suave a trozos y orientada positivamente (dejando $D$ a la izquierda), y sea $\vec f = (P, Q)$ de clase $C^1$ en un abierto que contiene a $D$. Entonces
-
-$$\oint_CP\thinspace dx + Q\thinspace dy = \iint_D(Q'_x - P'_y)\thinspace dx\thinspace dy$$
-
-Vale también para regiones con agujeros, con la frontera exterior antihoraria y las interiores horarias.
-
-**Teorema de la divergencia (Gauss).** Sea $H \subset \mathbb{R}^3$ un sólido acotado cuya frontera $\partial H$ es una superficie cerrada, suave a trozos, orientada con la **normal exterior**, y sea $\vec f$ de clase $C^1$ en un abierto que contiene a $H$. Entonces
-
-$$\iint_{\partial H}\vec f\cdot\breve n\thinspace dS = \iiint_H\operatorname{div}\vec f\thinspace dV$$
-
-**Teorema del rotor (Stokes).** Sea $S$ una superficie orientable, suave a trozos, con normal $\breve n$, cuyo borde $\partial S$ es una curva cerrada simple, suave a trozos, **orientada de forma coherente con $\breve n$** (caminando por el borde con la cabeza hacia $\breve n$, la superficie queda a la izquierda). Si $\vec f$ es $C^1$ en un abierto que contiene a $S$,
-
-$$\oint_{\partial S}\vec f\cdot d\vec s = \iint_S(\nabla\times\vec f)\cdot\breve n\thinspace dS$$
-
-Dos superficies con el mismo borde y orientación coherente tienen el mismo flujo del rotor.
-
-### Tipo 24: Green sobre una curva cerrada
-
-**Método.**
-
-1. Calcular $Q'_x - P'_y$, que suele simplificarse mucho.
-2. Describir la región.
-3. Integrar, usando centroides o polares si conviene.
-4. Si la curva es **horaria**, el resultado lleva signo menos.
-
-**Ejemplo** ([2.º Parcial 15/11/2022, P2](segundo-parcial-2022-11-15.md)).
-
-> Calcule la circulación de $\vec f = (2xe^y - 1;\ x^2e^y + yx)$ sobre la frontera de $x + y \ge 4$; $x + 2y \le 8$; $y \ge 0$, en sentido positivo.
-
-*Paso 1 — Green.* $Q'_x - P'_y = 2xe^y + y - 2xe^y = y$. Las exponenciales se cancelan.
-
-*Paso 2 — Región.* Es el triángulo de vértices $(4,0)$, $(8,0)$ y $(0,4)$, con área $\tfrac12\cdot4\cdot4 = 8$.
-
-*Paso 3 — Centroide.* $\bar y = \dfrac{0 + 0 + 4}{3} = \dfrac43$, entonces $\iint y\thinspace dA = \dfrac43\cdot8$.
-
-**Resultado:** $\dfrac{32}{3}$.
-
-**Variante horaria** ([2024, Tema 1, P4](segundo-parcial-2024-11-19.md)): con $\vec G = (x - y^2,\ 3x + y)$ sobre $x^2 + \frac{(y - 1)^2}{4} = 1$, $Q'_x - P'_y = 3 + 2y$. La elipse tiene área $2\pi$ y $\bar y = 1$, así que la integral doble vale $3\cdot2\pi + 2\cdot1\cdot2\pi = 10\pi$. Como es horaria: $-10\pi$.
-
-### Tipo 25: Green sobre un arco plano
-
-**Cómo se reconoce.** La curva no es cerrada y parametrizar es incómodo, o hay una función incógnita.
-
-**Método.**
-
-1. Cerrar la curva con un segmento, sobre un eje si es posible.
-2. Fijar el sentido de la curva cerrada resultante.
-3. Aplicar Green.
-4. Calcular la integral sobre el segmento y restarla.
-
-**Ejemplo** ([2.º Parcial 16/11/2021, Tema 1, P4](segundo-parcial-2021-11-16.md)).
-
-> Sea $\vec f = (y + x;\ 5x + \varphi(y))$. Calcule la circulación desde $(0,0)$ hasta $(2,0)$ a lo largo de $x^2 + y^2 = 2x$ con $y \ge 0$.
-
-*Paso 1 — Cerrar.* Se agrega el segmento $T$ de $(2,0)$ a $(0,0)$.
-
-*Paso 2 — Sentido.* La semicircunferencia va por arriba de izquierda a derecha, y el segmento vuelve por abajo: la curva cerrada es **horaria**.
-
-*Paso 3 — Green.* $Q'_x - P'_y = 5 - 1 = 4$. El medio disco tiene área $\frac\pi2$. Por ser horaria:
-
-$$\int_C + \int_T = -4\cdot\frac\pi2 = -2\pi$$
-
-*Paso 4 — Segmento.* Sobre $T$, $y = 0$ y $dy = 0$, y por lo tanto $\varphi$ no aparece:
-
-$$\int_T\vec f\cdot d\vec s = \int_2^0x\thinspace dx = -2$$
-
-*Paso 5 — Despejar.* $\int_C = -2\pi - (-2)$.
-
-**Resultado:** $2 - 2\pi$.
-
-### Tipo 26: Área con integrales de línea
-
-**Teoría.** Con un campo tal que $Q'_x - P'_y = 1$, Green da el área:
-
-$$\text{Área}(D) = \oint_Cx\thinspace dy = -\oint_Cy\thinspace dx = \frac12\oint_C(x\thinspace dy - y\thinspace dx)$$
-
-Si sale negativo, la parametrización recorría la curva en sentido horario: el área es el valor absoluto.
-
-**Ejemplo** ([2.º Parcial 11/11/2019, T2](segundo-parcial-2019-11-11.md)).
-
-> Enuncie Green y úselo para calcular el área encerrada por $\vec\alpha(t) = (t^3 - 4t,\ 16 - t^4)$, $-2 \le t \le 2$.
-
-*Paso 1 — Comprobar que es cerrada.* $\vec\alpha(-2) = (0, 0) = \vec\alpha(2)$.
-
-*Paso 2 — Campo.* $\vec f = (0, x)$, con $Q'_x - P'_y = 1$. Sobre la curva, $dy = -4t^3\thinspace dt$.
-
-*Paso 3 — Integrar.*
-
-$$\oint x\thinspace dy = \int_{-2}^2(t^3 - 4t)(-4t^3)\thinspace dt = 2\int_0^2(-4t^6 + 16t^4)\thinspace dt = 2\left(-\frac{512}{7} + \frac{512}{5}\right)$$
-
-**Resultado:** $\text{Área} = \dfrac{2048}{35}$. Es positivo: la curva se recorre en sentido antihorario.
-
-### Tipo 27: "La circulación vale $k$ veces el área"
-
-**Método.** Por Green, la circulación es $\iint(Q'_x - P'_y)\thinspace dA$. Que valga $k\cdot$Área **para toda curva** exige $Q'_x - P'_y = k$ en todo punto.
-
-**Ejemplo** ([2.º Parcial 24/11/2020, P1](segundo-parcial-2020-11-24.md)).
-
-> Sea $\vec f(x,y) = (3x^7 + 4yg(x);\ 2g'(x) + 3y + 5x)$. Halle $g$ tal que $\vec f(0,1) = (8,\ 3 - 4\sqrt2)$ y la circulación sobre toda curva simple, suave y cerrada con orientación positiva valga 5 veces el área encerrada.
-
-*Paso 1 — Condición.* $Q'_x - P'_y = 2g'' + 5 - 4g = 5$, entonces $g'' - 2g = 0$.
-
-*Paso 2 — EDO.* $r^2 = 2$: $g = C_1e^{\sqrt2x} + C_2e^{-\sqrt2x}$.
-
-*Paso 3 — Condiciones.* $\vec f(0,1) = (4g(0),\ 2g'(0) + 3)$, de donde $g(0) = 2$ y $g'(0) = -2\sqrt2$. Entonces $C_1 + C_2 = 2$ y $C_1 - C_2 = -2$.
-
-**Resultado:** $g(x) = 2e^{-\sqrt2x}$.
-
-### Tipo 28: Gauss en la frontera de un sólido
+### Tipo 27: Gauss en la frontera de un sólido
 
 **Método.**
 
@@ -895,7 +868,7 @@ $$V = \int_0^{\pi/4}\int_0^4\int_r^4r\thinspace dz\thinspace dr\thinspace d\thet
 
 **Resultado:** $\Phi = \dfrac{8\pi}{3}$ con normal exterior.
 
-### Tipo 29: Flujo por una superficie abierta, cerrando con una tapa
+### Tipo 28: Flujo por una superficie abierta, cerrando con una tapa
 
 **Cómo se reconoce.** Una semiesfera, paraboloide o casquete con un campo complicado, cuya divergencia es simple.
 
@@ -927,7 +900,7 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 
 **Variante con datos incompletos** ([2012, T1](segundo-parcial-2012-12-01.md)): con $\operatorname{div}\vec f = 2$ y $\vec f(x,y,0) = (y^2 + x;\ y + x^2;\ 1)$, sobre la semiesfera $z = \sqrt{4 - x^2 - y^2}$. El campo sólo se conoce sobre la tapa, y es justamente lo que hace falta: $\iiint 2\thinspace dV = \frac{32\pi}{3}$, $\Phi_T = -1\cdot4\pi$, y $\Phi_S = \frac{44\pi}{3}$.
 
-### Tipo 30: Hallar una función a partir de la divergencia
+### Tipo 29: Hallar una función a partir de la divergencia
 
 **Método.** Calcular la divergencia, imponer la condición, resolver la EDO y usar los datos para las constantes.
 
@@ -949,7 +922,7 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 
 **Resultado:** $g(x) = 3\mathop{\mathrm{sen}}(2x) - 2x + 1$ y $\Phi = 44\pi$.
 
-### Tipo 31: Stokes sobre una curva cerrada en el espacio
+### Tipo 30: Stokes sobre una curva cerrada en el espacio
 
 **Cómo se reconoce.** Curva intersección de un plano con una cuádrica, o borde de una superficie.
 
@@ -981,7 +954,7 @@ $$x^2 + (2 - x)^2 + 2y^2 = 4(2 - x) \ \Rightarrow\ 2x^2 + 2y^2 = 4 \ \Rightarrow
 
 **Variante con disco horizontal** ([2024, z2051 Tema 1, P1](segundo-parcial-2024-11-19.md)): si la curva está en un plano $z = c$, sólo importa $Q'_x - P'_y$. Para $\vec G = (yz + \operatorname{arctg}z,\ e^zy + \mathop{\mathrm{sen}} z,\ z^3)$ sobre el cono y el cilindro $r = 1$, $z = 1$: $Q'_x - P'_y = -z = -1$, y la circulación antihoraria es $-\pi$.
 
-### Tipo 32: Stokes sobre el borde de una superficie dada
+### Tipo 31: Stokes sobre el borde de una superficie dada
 
 **Método.** Cuando la superficie ya está definida, hay que respetar el sentido del borde. Para determinarlo, se recorren los vértices y se compara con la normal: el producto vectorial de dos lados consecutivos indica hacia dónde apunta la normal coherente.
 
@@ -1001,7 +974,7 @@ $$\int_0^4\int_0^2(-2x + 3)\thinspace dx\thinspace dz = 4\cdot(-4 + 6)$$
 
 **Variante: verdadero o falso** ([2019, T2](segundo-parcial-2019-06-18.md)). Con $\operatorname{rot}\vec f = (2, -2, 3)$ y el borde de $x + y + z = 4$ en el primer octante, recorrido $(4,0,0) \to (0,0,4) \to (0,4,0) \to (4,0,0)$. Con normal $(1,1,1)$, $\operatorname{rot}\vec f\cdot\vec n = 3$, y la proyección tiene área 8: daría 24. Pero la normal $(1,1,1)$ induce el recorrido $(4,0,0) \to (0,4,0) \to (0,0,4)$, que es el **contrario** al del enunciado. La circulación vale $-24$: la afirmación es falsa.
 
-### Tipo 33: Flujo de un rotor
+### Tipo 32: Flujo de un rotor
 
 **Método.** Por Stokes se reemplaza la superficie por **el disco con el mismo borde**. En un disco horizontal sólo hace falta la componente $z$ del rotor. Si la superficie es **cerrada**, el resultado es 0.
 
@@ -1021,7 +994,9 @@ $$\int_0^4\int_0^2(-2x + 3)\thinspace dx\thinspace dz = 4\cdot(-4 + 6)$$
 
 ---
 
-## Bloque F: Ecuaciones diferenciales lineales
+## Unidad 12: Ecuaciones diferenciales (2.ª parte)
+
+Teoría completa de la unidad: [Unidad 12 - Ecuaciones Diferenciales II/teoria.md](../Unidad%2012%20-%20Ecuaciones%20Diferenciales%20II/teoria.md).
 
 ### Teoría
 
@@ -1044,6 +1019,36 @@ $$\int_0^4\int_0^2(-2x + 3)\thinspace dx\thinspace dz = 4\cdot(-4 + 6)$$
 | $A\cos bx + B\mathop{\mathrm{sen}} bx$ | $C\cos bx + D\mathop{\mathrm{sen}} bx$, siempre los dos |
 
 **Resonancia:** si la propuesta (o parte de ella) ya es solución de la homogénea, se multiplica por $x^m$, con $m$ la multiplicidad de la raíz: $a$ para $e^{ax}$, $0$ para polinomios, $bi$ para senos y cosenos.
+
+### Tipo 33: Líneas de campo
+
+**Teoría.** Las líneas de campo de $\vec f$ son las curvas cuyo vector tangente en cada punto es paralelo a $\vec f$. En $\mathbb{R}^2$ eso da $\dfrac{dy}{dx} = \dfrac{Q}{P}$; en $\mathbb{R}^3$, $\dfrac{dx}{P} = \dfrac{dy}{Q} = \dfrac{dz}{R}$.
+
+**Método.**
+
+1. Plantear la EDO $y' = Q/P$ y resolverla (suele ser separable).
+2. Calcular la constante con el punto.
+3. Usar la curva para lo que se pida: longitud, área o trabajo.
+
+**Ejemplo 1** ([2.º Parcial 18/06/2019, P4 b](segundo-parcial-2019-06-18.md)).
+
+> Halle la línea de campo de $\vec f(x,y) = (x,\ 2y)$ que pasa por $(3,-4)$.
+
+$y' = \dfrac{2y}{x}$, entonces $\dfrac{dy}{y} = \dfrac{2\thinspace dx}{x}$ e $y = Cx^2$. En el punto: $-4 = 9C$.
+
+**Resultado:** $y = -\dfrac49x^2$.
+
+**Ejemplo 2: el área que encierra** ([2.º Parcial sin fecha B, P3](segundo-parcial-sin-fecha-b.md)).
+
+> Determine, con integrales dobles, el área de la región limitada por la línea de campo de $\vec f(x,y) = \left(\dfrac{y}{x^2 + y^2};\ \dfrac{-9x}{x^2 + y^2}\right)$ que pasa por $(1,0)$.
+
+*Paso 1 — Línea.* $y' = \dfrac{-9x}{y}$ (el denominador común se cancela), entonces $y\thinspace dy = -9x\thinspace dx$ y $9x^2 + y^2 = C$. En $(1,0)$: $C = 9$.
+
+*Paso 2 — Área.* Es la elipse $x^2 + \dfrac{y^2}{9} = 1$. Con polares elípticas, $x = r\cos\theta$, $y = 3r\mathop{\mathrm{sen}}\theta$, $|J| = 3r$:
+
+$$A = \int_0^{2\pi}\int_0^13r\thinspace dr\thinspace d\theta$$
+
+**Resultado:** $A = 3\pi$.
 
 ### Tipo 34: EDO lineal con condiciones iniciales
 
@@ -1142,11 +1147,11 @@ De ahí $10A = 4$, es decir $A = \tfrac25$; y $8A + 5B = 0$, es decir $B = -\tfr
 
 ---
 
-## Bloque G: Ejercicios teóricos
+## Ejercicios teóricos (todas las unidades)
 
 ### Tipo 38: Definiciones, enunciados y demostraciones
 
-**Cómo encararlos.** Los enunciados de Green, Gauss, Stokes y la condición necesaria y suficiente se piden tal como están en los Bloques B y E, **con todas las hipótesis**. Casi siempre vienen acompañados de un cálculo corto. Si dice "enuncie los teoremas que utilice", hay que escribirlos aunque la cuenta sea trivial.
+**Cómo encararlos.** Los enunciados de Green, Gauss, Stokes y la condición necesaria y suficiente se piden tal como están en la teoría de las Unidades 8 y 11, **con todas las hipótesis**. Casi siempre vienen acompañados de un cálculo corto. Si dice "enuncie los teoremas que utilice", hay que escribirlos aunque la cuenta sea trivial.
 
 **Demostración 1: conservativo implica jacobiana simétrica** ([2.º Parcial 18/06/2019, T1](segundo-parcial-2019-06-18.md)).
 
@@ -1170,7 +1175,7 @@ $\vec F$ es $C^1$ en $\mathbb{R}^3$ y $\operatorname{div}\vec F = 3$. Por el teo
 
 El campo es polinómico. Por Green, $Q'_x - P'_y = 2xy + 2 - 2xy = 2$, entonces $\oint_C = \iint_D2\thinspace dA = 2bh$ en sentido positivo, que sólo depende de $b$ y $h$. $\blacksquare$
 
-**Coordenadas polares** ([2022, T1](segundo-parcial-2022-11-15.md)). Definición: $\vec T(r, \theta) = (r\cos\theta,\ r\mathop{\mathrm{sen}}\theta)$, con $r \ge 0$ y $\theta\in[0, 2\pi)$. Su jacobiano es $r$. El cálculo está en el [Tipo 11](#tipo-11-integral-doble-en-polares).
+**Coordenadas polares** ([2022, T1](segundo-parcial-2022-11-15.md)). Definición: $\vec T(r, \theta) = (r\cos\theta,\ r\mathop{\mathrm{sen}}\theta)$, con $r \ge 0$ y $\theta\in[0, 2\pi)$. Su jacobiano es $r$. El cálculo está en el [Tipo 6](#tipo-6-integral-doble-en-polares).
 
 ---
 

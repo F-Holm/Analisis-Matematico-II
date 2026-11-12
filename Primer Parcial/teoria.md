@@ -19,13 +19,13 @@ Los ejemplos salen de parciales reales, del simulacro y del repaso de la cátedr
 | "Analice la existencia del límite" | [Tipo 10](#tipo-10-probar-que-un-límite-no-existe), [Tipo 11](#tipo-11-probar-que-un-límite-existe) |
 | "Halle $k$ para que sea continua" | [Tipo 12](#tipo-12-hallar-un-parámetro-para-que-sea-continua) |
 | Continuidad y derivadas de una función partida | [Tipo 13](#tipo-13-derivadas-direccionales-por-definición), [Tipo 14](#tipo-14-continuidad-y-derivadas-de-una-función-partida) |
-| "¿Es diferenciable?" | [Tipo 15](#tipo-15-es-diferenciable) |
-| Dirección de máximo crecimiento, derivada máxima o nula | [Tipo 16](#tipo-16-dirección-de-máximo-crecimiento) |
-| Plano tangente o recta normal a una superficie | [Tipo 17](#tipo-17-plano-tangente-a-una-superficie) |
-| Aproximación lineal | [Tipo 18](#tipo-18-aproximación-lineal-con-el-plano-como-dato), [Tipo 22](#tipo-22-aproximación-de-una-composición) |
-| Recta tangente a una curva intersección | [Tipo 19](#tipo-19-recta-tangente-a-una-curva-intersección) |
-| Curva perpendicular a una superficie | [Tipo 20](#tipo-20-curva-perpendicular-a-una-superficie) |
-| Punto regular y plano normal a una curva | [Tipo 21](#tipo-21-punto-regular-y-plano-normal-a-una-curva) |
+| Punto regular y plano normal a una curva | [Tipo 15](#tipo-15-punto-regular-y-plano-normal-a-una-curva) |
+| "¿Es diferenciable?" | [Tipo 16](#tipo-16-es-diferenciable) |
+| Dirección de máximo crecimiento, derivada máxima o nula | [Tipo 17](#tipo-17-dirección-de-máximo-crecimiento) |
+| Plano tangente o recta normal a una superficie | [Tipo 18](#tipo-18-plano-tangente-a-una-superficie) |
+| Aproximación lineal | [Tipo 19](#tipo-19-aproximación-lineal-con-el-plano-como-dato), [Tipo 22](#tipo-22-aproximación-de-una-composición) |
+| Recta tangente a una curva intersección | [Tipo 20](#tipo-20-recta-tangente-a-una-curva-intersección) |
+| Curva perpendicular a una superficie | [Tipo 21](#tipo-21-curva-perpendicular-a-una-superficie) |
 | Derivada de una composición | [Tipo 22](#tipo-22-aproximación-de-una-composición), [Tipo 23](#tipo-23-direcciones-de-derivada-máxima-mínima-y-nula-de-una-composición) |
 | $z$ definida por una ecuación, composición con implícita | [Tipo 24](#tipo-24-composición-con-una-función-implícita) |
 | Polinomio de Taylor, aproximación de orden 2 | [Tipo 25](#tipo-25-polinomio-de-taylor-y-aproximación) |
@@ -37,7 +37,7 @@ Los ejemplos salen de parciales reales, del simulacro y del repaso de la cátedr
 
 ## Índice
 
-- **[Bloque A: Ecuaciones diferenciales de 1.er orden](#bloque-a-ecuaciones-diferenciales-de-1er-orden)**
+- **[Unidad 1: Ecuaciones diferenciales de 1.er orden](#unidad-1-ecuaciones-diferenciales-de-1er-orden)**
   - [Tipo 1: EDO de variables separables](#tipo-1-edo-de-variables-separables)
   - [Tipo 2: EDO lineal de 1.er orden](#tipo-2-edo-lineal-de-1er-orden)
   - [Tipo 3: Hallar un término de la EDO a partir de una solución](#tipo-3-hallar-un-término-de-la-edo-a-partir-de-una-solución)
@@ -45,29 +45,29 @@ Los ejemplos salen de parciales reales, del simulacro y del repaso de la cátedr
   - [Tipo 5: EDO de 2.º orden en la que falta $y$](#tipo-5-edo-de-2º-orden-en-la-que-falta-y)
   - [Tipo 6: Familia de curvas ortogonales](#tipo-6-familia-de-curvas-ortogonales)
   - [Tipo 7: Curva definida por una propiedad de su tangente](#tipo-7-curva-definida-por-una-propiedad-de-su-tangente)
-- **[Bloque B: Dominio y topología](#bloque-b-dominio-y-topología)**
+- **[Unidad 2: Dominio y topología](#unidad-2-dominio-y-topología)**
   - [Tipo 8: Dominio natural](#tipo-8-dominio-natural)
   - [Tipo 9: Análisis topológico de un conjunto](#tipo-9-análisis-topológico-de-un-conjunto)
-- **[Bloque C: Límite y continuidad](#bloque-c-límite-y-continuidad)**
+- **[Unidad 3: Límite y continuidad](#unidad-3-límite-y-continuidad)**
   - [Tipo 10: Probar que un límite no existe](#tipo-10-probar-que-un-límite-no-existe)
   - [Tipo 11: Probar que un límite existe](#tipo-11-probar-que-un-límite-existe)
   - [Tipo 12: Hallar un parámetro para que sea continua](#tipo-12-hallar-un-parámetro-para-que-sea-continua)
-- **[Bloque D: Derivadas y diferenciabilidad](#bloque-d-derivadas-y-diferenciabilidad)**
+- **[Unidad 4: Derivadas parciales y direccionales](#unidad-4-derivadas-parciales-y-direccionales)**
   - [Tipo 13: Derivadas direccionales por definición](#tipo-13-derivadas-direccionales-por-definición)
   - [Tipo 14: Continuidad y derivadas de una función partida](#tipo-14-continuidad-y-derivadas-de-una-función-partida)
-  - [Tipo 15: ¿Es diferenciable?](#tipo-15-es-diferenciable)
-  - [Tipo 16: Dirección de máximo crecimiento](#tipo-16-dirección-de-máximo-crecimiento)
-- **[Bloque E: Rectas y planos tangentes](#bloque-e-rectas-y-planos-tangentes)**
-  - [Tipo 17: Plano tangente a una superficie](#tipo-17-plano-tangente-a-una-superficie)
-  - [Tipo 18: Aproximación lineal con el plano como dato](#tipo-18-aproximación-lineal-con-el-plano-como-dato)
-  - [Tipo 19: Recta tangente a una curva intersección](#tipo-19-recta-tangente-a-una-curva-intersección)
-  - [Tipo 20: Curva perpendicular a una superficie](#tipo-20-curva-perpendicular-a-una-superficie)
-  - [Tipo 21: Punto regular y plano normal a una curva](#tipo-21-punto-regular-y-plano-normal-a-una-curva)
-- **[Bloque F: Funciones compuestas e implícitas](#bloque-f-funciones-compuestas-e-implícitas)**
+  - [Tipo 15: Punto regular y plano normal a una curva](#tipo-15-punto-regular-y-plano-normal-a-una-curva)
+- **[Unidad 5: Diferenciabilidad, plano tangente y recta normal](#unidad-5-diferenciabilidad-plano-tangente-y-recta-normal)**
+  - [Tipo 16: ¿Es diferenciable?](#tipo-16-es-diferenciable)
+  - [Tipo 17: Dirección de máximo crecimiento](#tipo-17-dirección-de-máximo-crecimiento)
+  - [Tipo 18: Plano tangente a una superficie](#tipo-18-plano-tangente-a-una-superficie)
+  - [Tipo 19: Aproximación lineal con el plano como dato](#tipo-19-aproximación-lineal-con-el-plano-como-dato)
+  - [Tipo 20: Recta tangente a una curva intersección](#tipo-20-recta-tangente-a-una-curva-intersección)
+  - [Tipo 21: Curva perpendicular a una superficie](#tipo-21-curva-perpendicular-a-una-superficie)
+- **[Unidad 6: Funciones compuestas e implícitas](#unidad-6-funciones-compuestas-e-implícitas)**
   - [Tipo 22: Aproximación de una composición](#tipo-22-aproximación-de-una-composición)
   - [Tipo 23: Direcciones de derivada máxima, mínima y nula de una composición](#tipo-23-direcciones-de-derivada-máxima-mínima-y-nula-de-una-composición)
   - [Tipo 24: Composición con una función implícita](#tipo-24-composición-con-una-función-implícita)
-- **[Bloque G: Taylor y extremos](#bloque-g-taylor-y-extremos)**
+- **[Unidad 7: Taylor y extremos](#unidad-7-taylor-y-extremos)**
   - [Tipo 25: Polinomio de Taylor y aproximación](#tipo-25-polinomio-de-taylor-y-aproximación)
   - [Tipo 26: Puntos críticos y clasificación](#tipo-26-puntos-críticos-y-clasificación)
   - [Tipo 27: El hessiano no decide](#tipo-27-el-hessiano-no-decide)
@@ -75,13 +75,15 @@ Los ejemplos salen de parciales reales, del simulacro y del repaso de la cátedr
   - [Tipo 29: Extremos con restricción (Lagrange)](#tipo-29-extremos-con-restricción-lagrange)
   - [Tipo 30: Extremos absolutos en un compacto](#tipo-30-extremos-absolutos-en-un-compacto)
   - [Tipo 31: Extremos de una función implícita](#tipo-31-extremos-de-una-función-implícita)
-- **[Bloque H: Ejercicios teóricos](#bloque-h-ejercicios-teóricos)**
+- **[Ejercicios teóricos (todas las unidades)](#ejercicios-teóricos-todas-las-unidades)**
   - [Tipo 32: Definiciones, enunciados y demostraciones](#tipo-32-definiciones-enunciados-y-demostraciones)
 - **[Errores frecuentes](#errores-frecuentes)**
 
 ---
 
-## Bloque A: Ecuaciones diferenciales de 1.er orden
+## Unidad 1: Ecuaciones diferenciales de 1.er orden
+
+Teoría completa de la unidad: [Unidad 01 - Ecuaciones Diferenciales I/teoria.md](../Unidad%2001%20-%20Ecuaciones%20Diferenciales%20I/teoria.md).
 
 ### Teoría
 
@@ -290,7 +292,9 @@ Otro igual: [1.er Parcial 15/10/2019, E4 a](primer-parcial-2019-10-15.md), donde
 
 ---
 
-## Bloque B: Dominio y topología
+## Unidad 2: Dominio y topología
+
+Teoría completa de la unidad: [Unidad 02 - Funciones de Varias Variables y Topologia/teoria.md](../Unidad%2002%20-%20Funciones%20de%20Varias%20Variables%20y%20Topologia/teoria.md).
 
 ### Teoría
 
@@ -352,7 +356,9 @@ Sea $A$ un conjunto:
 
 ---
 
-## Bloque C: Límite y continuidad
+## Unidad 3: Límite y continuidad
+
+Teoría completa de la unidad: [Unidad 03 - Limite y Continuidad/teoria.md](../Unidad%2003%20-%20Limite%20y%20Continuidad/teoria.md).
 
 ### Teoría
 
@@ -441,7 +447,9 @@ $$f = \underbrace{x}_{\to0}\cdot\underbrace{\frac{x^2 - w^2}{x^2 + w^2}}_{|\cdot
 
 ---
 
-## Bloque D: Derivadas y diferenciabilidad
+## Unidad 4: Derivadas parciales y direccionales
+
+Teoría completa de la unidad: [Unidad 04 - Derivabilidad/teoria.md](../Unidad%2004%20-%20Derivabilidad/teoria.md).
 
 ### Teoría
 
@@ -451,25 +459,12 @@ $$f = \underbrace{x}_{\to0}\cdot\underbrace{\frac{x^2 - w^2}{x^2 + w^2}}_{|\cdot
 - **Homogeneidad:** $f'(\vec A, \lambda\vec r) = \lambda f'(\vec A, \vec r)$.
 - **Schwarz:** si $f''_{xy}$ y $f''_{yx}$ existen y son continuas en un entorno, son iguales.
 
-**Diferenciabilidad.** $f$ es diferenciable en $\vec A$ si
+**Curvas.** Para una curva $\vec g(t)$ en $t_0$:
 
-$$\lim_{\vec h\to\vec 0}\frac{f(\vec A + \vec h) - f(\vec A) - \nabla f(\vec A)\cdot\vec h}{\Vert\vec h\Vert} = 0$$
-
-La idea es que el plano tangente aproxime a $f$ mejor que linealmente.
-
-| Si $f$ es diferenciable en $\vec A$, entonces | Consecuencia si falla |
+| Objeto | Cómo se obtiene |
 |---|---|
-| Es continua en $\vec A$ | Discontinua ⇒ no diferenciable |
-| Existen todas las direccionales | Alguna no existe ⇒ no diferenciable |
-| $f'(\vec A,\breve r) = \nabla f(\vec A)\cdot\breve r$ | No es lineal en $\breve r$ ⇒ no diferenciable |
-
-**Condición suficiente:** si las derivadas parciales existen en un entorno y son continuas en $\vec A$ ($f \in C^1$), $f$ es diferenciable.
-
-**Gradiente y dirección.** Si $f$ es diferenciable y $\nabla f(\vec A) \ne \vec 0$, como $f'(\vec A,\breve r) = \Vert\nabla f\Vert\cos\alpha$:
-
-- la derivada **máxima** vale $\Vert\nabla f(\vec A)\Vert$ en la dirección de $\nabla f(\vec A)$;
-- la **mínima** vale $-\Vert\nabla f(\vec A)\Vert$ en la dirección opuesta;
-- es **nula** en las direcciones perpendiculares a $\nabla f(\vec A)$.
+| Recta tangente a una curva $\vec g(t)$ en $t_0$ | $\vec X = \vec g(t_0) + \lambda\thinspace \vec g'(t_0)$ |
+| Plano normal a la curva | $\vec g'(t_0)\cdot(\vec X - \vec g(t_0)) = 0$ |
 
 ### Tipo 13: Derivadas direccionales por definición
 
@@ -523,7 +518,53 @@ El valor depende de $k$: el límite no existe y $f$ **no es continua**.
 
 **Resultado:** no es continua, no existen las direccionales, y la fórmula no se puede aplicar.
 
-### Tipo 15: ¿Es diferenciable?
+### Tipo 15: Punto regular y plano normal a una curva
+
+**Qué hay que saber.** Una **curva** es la imagen de una función continua $\vec g: I \to \mathbb{R}^n$. Un **punto regular** es uno donde $\vec g$ es derivable con $\vec g'(t) \ne \vec 0$.
+
+**Ejemplo** ([1.er Parcial 1C 2014, T1](../UTNianos/La%20Gloria/AM2%20-%201er%20Parcial/AMII%20-%202014-05-26%20-%201er%20Parcial%20Campillo%282%29.jpg)).
+
+> Dada $C$: $z = y - x^2$, $x - y = 0$, demuestre que todos sus puntos son regulares y halle el plano normal en $(1,1,0)$.
+
+*Paso 1 — Parametrizar.* Con $x = t$: $y = t$, $z = t - t^2$, así que $\vec g(t) = (t, t, t - t^2)$.
+
+*Paso 2 — Regularidad.* $\vec g'(t) = (1, 1, 1 - 2t)$. La primera componente nunca se anula, así que $\vec g' \ne \vec 0$ en todo punto.
+
+*Paso 3 — Plano normal.* El punto corresponde a $t = 1$, con $\vec g'(1) = (1, 1, -1)$:
+
+$$(x - 1) + (y - 1) - z = 0$$
+
+**Resultado:** todos los puntos son regulares y el plano normal es $x + y - z = 2$.
+
+---
+
+## Unidad 5: Diferenciabilidad, plano tangente y recta normal
+
+Teoría completa de la unidad: [Unidad 05 - Diferenciabilidad/teoria.md](../Unidad%2005%20-%20Diferenciabilidad/teoria.md).
+
+### Teoría: diferenciabilidad y gradiente
+
+**Diferenciabilidad.** $f$ es diferenciable en $\vec A$ si
+
+$$\lim_{\vec h\to\vec 0}\frac{f(\vec A + \vec h) - f(\vec A) - \nabla f(\vec A)\cdot\vec h}{\Vert\vec h\Vert} = 0$$
+
+La idea es que el plano tangente aproxime a $f$ mejor que linealmente.
+
+| Si $f$ es diferenciable en $\vec A$, entonces | Consecuencia si falla |
+|---|---|
+| Es continua en $\vec A$ | Discontinua ⇒ no diferenciable |
+| Existen todas las direccionales | Alguna no existe ⇒ no diferenciable |
+| $f'(\vec A,\breve r) = \nabla f(\vec A)\cdot\breve r$ | No es lineal en $\breve r$ ⇒ no diferenciable |
+
+**Condición suficiente:** si las derivadas parciales existen en un entorno y son continuas en $\vec A$ ($f \in C^1$), $f$ es diferenciable.
+
+**Gradiente y dirección.** Si $f$ es diferenciable y $\nabla f(\vec A) \ne \vec 0$, como $f'(\vec A,\breve r) = \Vert\nabla f\Vert\cos\alpha$:
+
+- la derivada **máxima** vale $\Vert\nabla f(\vec A)\Vert$ en la dirección de $\nabla f(\vec A)$;
+- la **mínima** vale $-\Vert\nabla f(\vec A)\Vert$ en la dirección opuesta;
+- es **nula** en las direcciones perpendiculares a $\nabla f(\vec A)$.
+
+### Tipo 16: ¿Es diferenciable?
 
 **Método** (orden para no hacer cuentas de más).
 
@@ -559,7 +600,7 @@ $$\frac{f(h,k) - 0 - 0}{\sqrt{h^2 + k^2}} = \underbrace{\frac{k}{\sqrt{h^2 + k^2
 
 **Resultado:** $f$ es diferenciable en $(0,0)$.
 
-### Tipo 16: Dirección de máximo crecimiento
+### Tipo 17: Dirección de máximo crecimiento
 
 **Cómo se reconoce.** Aparecen "derivada máxima", "dirección de máximo crecimiento" o "derivada nula". A veces el dato es la dirección y hay que **reconstruir el gradiente**.
 
@@ -579,16 +620,10 @@ $$\frac{f(h,k) - 0 - 0}{\sqrt{h^2 + k^2}} = \underbrace{\frac{k}{\sqrt{h^2 + k^2
 
 **Resultado:** $z = 5 + 3\sqrt2\thinspace (x - 1) + 3\sqrt2\thinspace (y - 2)$.
 
----
-
-## Bloque E: Rectas y planos tangentes
-
-### Teoría
+### Teoría: rectas y planos tangentes
 
 | Objeto | Cómo se obtiene |
 |---|---|
-| Recta tangente a una curva $\vec g(t)$ en $t_0$ | $\vec X = \vec g(t_0) + \lambda\thinspace \vec g'(t_0)$ |
-| Plano normal a la curva | $\vec g'(t_0)\cdot(\vec X - \vec g(t_0)) = 0$ |
 | Plano tangente a $z = f(x,y)$ | $z = f(\vec A) + f'_x(\vec A)(x - x_0) + f'_y(\vec A)(y - y_0)$ |
 | Plano tangente a $F(x,y,z) = 0$ | $\nabla F(P_0)\cdot(\vec X - P_0) = 0$ |
 | Plano tangente a una superficie paramétrica $\vec\Sigma(u,v)$ | normal $\vec\Sigma'_u\wedge\vec\Sigma'_v$ |
@@ -599,7 +634,7 @@ $$\frac{f(h,k) - 0 - 0}{\sqrt{h^2 + k^2}} = \underbrace{\frac{k}{\sqrt{h^2 + k^2
 
 **Aproximación lineal:** $f(\vec A + \vec h) \approx f(\vec A) + \nabla f(\vec A)\cdot\vec h$. El plano tangente evaluado en el punto es la aproximación.
 
-### Tipo 17: Plano tangente a una superficie
+### Tipo 18: Plano tangente a una superficie
 
 **Método.**
 
@@ -622,7 +657,7 @@ $$\nabla h = \left(3x^2y^4 + 2xz^3,\ 4x^3y^3 - z^2,\ 3x^2z^2 - 2yz\right) \ \Rig
 
 **Resultado:** $5x + 3y + z = 9$.
 
-### Tipo 18: Aproximación lineal con el plano como dato
+### Tipo 19: Aproximación lineal con el plano como dato
 
 **Cómo se reconoce.** No se conoce $f$, pero se conoce su plano tangente, a veces descripto de forma indirecta.
 
@@ -649,7 +684,7 @@ $$f(3{,}94;\ 2{,}04) \approx \frac{26 - 7{,}88 - 2{,}04}{4} = 4{,}02$$
 
 **Resultado:** $f(3.94;\ 2.04) \approx 4.02$.
 
-### Tipo 19: Recta tangente a una curva intersección
+### Tipo 20: Recta tangente a una curva intersección
 
 **Método.**
 
@@ -680,7 +715,7 @@ $$\vec d = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 7 & 6 & 0 
 
 Otros iguales: [Repaso R1](repaso-primer-parcial.md) (intersección con un plano) y [R12](repaso-primer-parcial.md) (distancia).
 
-### Tipo 20: Curva perpendicular a una superficie
+### Tipo 21: Curva perpendicular a una superficie
 
 **Método.**
 
@@ -704,27 +739,11 @@ $$\vec d = (2, 1, 1)\wedge(1, 0, 1) = (1,\ -1,\ -1)$$
 
 Otro igual, con conjunto de nivel: [Repaso R7](repaso-primer-parcial.md).
 
-### Tipo 21: Punto regular y plano normal a una curva
-
-**Qué hay que saber.** Una **curva** es la imagen de una función continua $\vec g: I \to \mathbb{R}^n$. Un **punto regular** es uno donde $\vec g$ es derivable con $\vec g'(t) \ne \vec 0$.
-
-**Ejemplo** ([1.er Parcial 1C 2014, T1](../UTNianos/La%20Gloria/AM2%20-%201er%20Parcial/AMII%20-%202014-05-26%20-%201er%20Parcial%20Campillo%282%29.jpg)).
-
-> Dada $C$: $z = y - x^2$, $x - y = 0$, demuestre que todos sus puntos son regulares y halle el plano normal en $(1,1,0)$.
-
-*Paso 1 — Parametrizar.* Con $x = t$: $y = t$, $z = t - t^2$, así que $\vec g(t) = (t, t, t - t^2)$.
-
-*Paso 2 — Regularidad.* $\vec g'(t) = (1, 1, 1 - 2t)$. La primera componente nunca se anula, así que $\vec g' \ne \vec 0$ en todo punto.
-
-*Paso 3 — Plano normal.* El punto corresponde a $t = 1$, con $\vec g'(1) = (1, 1, -1)$:
-
-$$(x - 1) + (y - 1) - z = 0$$
-
-**Resultado:** todos los puntos son regulares y el plano normal es $x + y - z = 2$.
-
 ---
 
-## Bloque F: Funciones compuestas e implícitas
+## Unidad 6: Funciones compuestas e implícitas
+
+Teoría completa de la unidad: [Unidad 06 - Funciones Compuestas e Implicitas/teoria.md](../Unidad%2006%20-%20Funciones%20Compuestas%20e%20Implicitas/teoria.md).
 
 ### Teoría
 
@@ -844,7 +863,9 @@ $$\nabla h(2,1) = \left(-\tfrac73,\ -\tfrac23\right)\begin{pmatrix} 4 & -4 \cr 3
 
 ---
 
-## Bloque G: Taylor y extremos
+## Unidad 7: Taylor y extremos
+
+Teoría completa de la unidad: [Unidad 07 - Taylor y Extremos/teoria.md](../Unidad%2007%20-%20Taylor%20y%20Extremos/teoria.md).
 
 ### Teoría
 
@@ -1055,11 +1076,11 @@ De $f'_y = 0$: $x = 0$ o $y = 0$. Con $x = 0$ el numerador de $f'_x$ es $1 + y^2
 
 ---
 
-## Bloque H: Ejercicios teóricos
+## Ejercicios teóricos (todas las unidades)
 
 ### Tipo 32: Definiciones, enunciados y demostraciones
 
-**Cómo encararlos.** Las definiciones de cada bloque se piden tal como están arriba. Un enunciado completo lleva hipótesis y tesis; escribir sólo la fórmula no alcanza. Muchas veces la consigna combina una definición con un ejercicio práctico corto, como en el [Tipo 3](#tipo-3-hallar-un-término-de-la-edo-a-partir-de-una-solución).
+**Cómo encararlos.** Las definiciones de cada unidad se piden tal como están arriba. Un enunciado completo lleva hipótesis y tesis; escribir sólo la fórmula no alcanza. Muchas veces la consigna combina una definición con un ejercicio práctico corto, como en el [Tipo 3](#tipo-3-hallar-un-término-de-la-edo-a-partir-de-una-solución).
 
 **Demostración 1: derivada direccional máxima** ([1.er Parcial 15/10/2019, T1](primer-parcial-2019-10-15.md)).
 
