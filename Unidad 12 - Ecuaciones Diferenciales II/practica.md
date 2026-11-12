@@ -471,7 +471,7 @@ El cuerpo de masa $M$ puede desplazarse horizontalmente con rozamiento desprecia
 
 ![Masa M unida a la pared por un resorte k y un amortiguador d, tirada por una fuerza F](img/tp12-ej10-masa-resorte.png)
 
-Siendo: $\underbrace{F - \underbrace{kx}_{\text{resorte}} - \underbrace{dx'}_{\text{amortig.}}}_{\text{fuerza total}} = \underbrace{M}_{\text{masa}}\cdot\underbrace{x''}_{\text{aceleración}}$, resulta $\boxed{Mx'' + dx' + kx = F}$.
+Siendo: $\underbrace{F - \underbrace{kx}_ {\text{resorte}} - \underbrace{dx'}_ {\text{amortig.}}}_ {\text{fuerza total}} = \underbrace{M}_ {\text{masa}}\cdot\underbrace{x''}_ {\text{aceleración}}$, resulta $\boxed{Mx'' + dx' + kx = F}$.
 
 - a) Con $F = 4.35$, $M = 3$, $k = 87$ halle y grafique $x(t)$ para: a₁) $d = 12$, a₂) $d = 38$.
 - b) Indique las unidades de medida de $x'$, $x''$, $M$, $k$, $d$ cuando el tiempo se mide en segundos ($[t] =$ s), $[F] =$ Newton (N) $=$ kgm/s² y $[x] =$ m.

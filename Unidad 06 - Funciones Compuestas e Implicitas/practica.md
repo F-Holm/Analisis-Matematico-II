@@ -202,7 +202,7 @@ $$f'_x = w'_u\thinspace u'_x + w'_v\thinspace v'_x + w'_x\big|_{\text{directa}}$
 
 - $w'_u = 3u^2 = 0$.
 - $w'_v = -2xv = 0$.
-- $w'_x|_{\text{directa}} = -v^2 = -1$.
+- $w'_ x|_ {\text{directa}} = -v^2 = -1$.
 - $u'_x = \sqrt{y - x} - \dfrac{x}{2\sqrt{y-x}}$, que en $(0,1)$ vale 1.
 - $v'_x = 2$.
 
@@ -388,7 +388,7 @@ Sobre la nota: $\dfrac{dT}{dt} = \nabla T\cdot\bar X'(t) = \lVert\bar X'(t)\rVer
 
 $$\varepsilon_{\text{rel}\thinspace T} = \left|\frac{x\thinspace T'_x}{T}\right|\varepsilon_{\text{rel}\thinspace x} + \left|\frac{y\thinspace T'_y}{T}\right|\varepsilon_{\text{rel}\thinspace y}$$
 
-Sale de dividir $\varepsilon_T = |T'_x|\varepsilon_x + |T'_y|\varepsilon_y$ por $|T|$ y escribir $\varepsilon_x = |x|\thinspace\varepsilon_{\text{rel}\thinspace x}$.
+Sale de dividir $\varepsilon_T = |T'_ x|\varepsilon_x + |T'_ y|\varepsilon_y$ por $|T|$ y escribir $\varepsilon_x = |x|\thinspace\varepsilon_{\text{rel}\thinspace x}$.
 
 **Cálculo:** $T = \dfrac{30}{25}$, $T'_x = -\dfrac{9}{25}$ y $T'_y = \dfrac{12}{25}$:
 
@@ -693,7 +693,7 @@ Entonces $\nabla h(2,1) = \left(-\frac23, \frac43\right) \parallel (-1, 2)$.
 
 </details>
 
-**Respuesta:** $\breve r_{\text{nula}_1} = (2/\sqrt5,\ 1/\sqrt5)$, $\ \breve r_{\text{nula}_2} = (-2/\sqrt5,\ -1/\sqrt5)$.
+**Respuesta:** $\breve r_{\text{nula}_ 1} = (2/\sqrt5,\ 1/\sqrt5)$, $\ \breve r_{\text{nula}_ 2} = (-2/\sqrt5,\ -1/\sqrt5)$.
 
 </details>
 

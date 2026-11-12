@@ -136,7 +136,7 @@ $$0 \le \frac{x^2}{x^2+y^2} \le 1, \qquad 0 \le \frac{y^2}{x^2+y^2} \le 1, \qqua
 
 Además, $\mathop{\mathrm{sen}}(\cdot)$ y $\cos(\cdot)$ están acotados por 1, **aunque su argumento explote**.
 
-**Ejemplo:** $\dfrac{3xy^2}{x^2+y^2} = \underbrace{3x}_{\to 0}\cdot\underbrace{\dfrac{y^2}{x^2+y^2}}_{\in[0,1]} \to 0$.
+**Ejemplo:** $\dfrac{3xy^2}{x^2+y^2} = \underbrace{3x}_ {\to 0}\cdot\underbrace{\dfrac{y^2}{x^2+y^2}}_ {\in[0,1]} \to 0$.
 
 ---
 

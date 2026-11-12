@@ -149,7 +149,7 @@ Calcule las siguientes integrales en ambos órdenes de integración y verifique 
 
 $$\int_0^1(\pi - 2\arcsin y)\thinspace dy = \pi - 2\left[y\arcsin y + \sqrt{1-y^2}\right]_0^1 = \pi - 2\left(\frac\pi2 - 1\right) = 2 \ ✓$$
 
-**b)** En ambos órdenes: $\displaystyle\int_{-1}^1\negthinspace\int_{-1}^1 x\thinspace dx\thinspace dy = \int_{-1}^1\left[\frac{x^2}{2}\right]_{-1}^1dy = 0$. En el otro orden, $\displaystyle\int_{-1}^1x\cdot2\thinspace dx = 0$.
+**b)** En ambos órdenes: $\displaystyle\int_{-1}^1\negthinspace\int_{-1}^1 x\thinspace dx\thinspace dy = \int_{-1}^1\left[\frac{x^2}{2}\right]_ {-1}^1dy = 0$. En el otro orden, $\displaystyle\int_{-1}^1x\cdot2\thinspace dx = 0$.
 
 **c)** En ambos órdenes: $\displaystyle\int_{-1}^1|x|\thinspace dx = 1$, multiplicado por la longitud del intervalo en $y$ (2) da $2$.
 

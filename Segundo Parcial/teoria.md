@@ -1159,7 +1159,7 @@ De ahí $10A = 4$, es decir $A = \tfrac25$; y $8A + 5B = 0$, es decir $B = -\tfr
 
 1. Por ser conservativo, existe $\varphi$ con $\varphi'_x = P$ y $\varphi'_y = Q$.
 2. Como $P, Q \in C^1$, resulta $\varphi \in C^2$.
-3. Por el teorema de Schwarz, $\varphi''_{xy} = \varphi''_{yx}$, es decir, $P'_y = Q'_x$. $\blacksquare$
+3. Por el teorema de Schwarz, $\varphi''_ {xy} = \varphi''_ {yx}$, es decir, $P'_ y = Q'_ x$. $\blacksquare$
 
 **Demostración 2: propiedades del rotor.** $\nabla\times(\nabla\varphi) = \vec 0$: cada componente del rotor es una diferencia de derivadas cruzadas, nula por Schwarz. Análogamente, $\operatorname{div}(\nabla\times\vec f) = 0$. Y por eso el flujo de un rotor por una superficie cerrada es 0: por Gauss, es la integral triple de $\operatorname{div}(\nabla\times\vec f) = 0$.
 

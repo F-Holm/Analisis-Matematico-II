@@ -219,7 +219,7 @@ $$dF_{\vec x_0} = T(\vec x - \vec x_0) = \sum_{i=1}^n F'_{x_i}(\vec x_0)\thinspa
 
 $$F'_x(x_0,y_0)(x - x_0) + F'_y(x_0,y_0)(y - y_0) - (z - z_0) = 0$$
 
-2. Cortando con un plano vertical en la dirección $\alpha$, la tangente tiene $\vec v_3 = (\cos\alpha,\ \mathop{\mathrm{sen}}\alpha,\ F'_{\breve u})$. Si $F$ es diferenciable, $F'_{\breve u} = F'_x\cos\alpha + F'_y\mathop{\mathrm{sen}}\alpha$, y entonces el producto mixto $[\vec v_1, \vec v_2, \vec v_3] = 0$: las tres tangentes son **coplanares**. Por eso el plano existe sólo si $F$ es diferenciable.
+2. Cortando con un plano vertical en la dirección $\alpha$, la tangente tiene $\vec v_3 = (\cos\alpha,\ \mathop{\mathrm{sen}}\alpha,\ F'_ {\breve u})$. Si $F$ es diferenciable, $F'_ {\breve u} = F'_ x\cos\alpha + F'_ y\mathop{\mathrm{sen}}\alpha$, y entonces el producto mixto $[\vec v_1, \vec v_2, \vec v_3] = 0$: las tres tangentes son **coplanares**. Por eso el plano existe sólo si $F$ es diferenciable.
 
 **Recta normal (forma simétrica):**
 
@@ -261,7 +261,7 @@ El segundo miembro de la ecuación del plano tangente es justamente $dF(x_0,y_0)
 | Normal (paramétrica) | $\vec X'_u \times \vec X'_v$ |
 | Diferencial | $df = \nabla f\cdot\vec h$ |
 | Aproximación | $f(\vec A + \vec h) \approx f(\vec A) + df$ |
-| Error absoluto | $\varepsilon_w = \sum \lvert f'_{x_i}\rvert\thinspace\varepsilon_{x_i}$ |
+| Error absoluto | $\varepsilon_w = \sum \lvert f'_ {x_i}\rvert\thinspace\varepsilon_{x_i}$ |
 
 ---
 

@@ -596,7 +596,7 @@ Las segundas también son racionales y están definidas en $\Re^2 - \lbrace\bar 
 
 **En el origen** hay que usar la definición:
 
-- $f'_x(0,0)$: $f(h,0) = 1$ si $h \ne 0$, así que $\dfrac{1 - 0}{h}$ explota ⇒ $\nexists$. Por lo tanto tampoco existen $f''_{xx}(0,0)$ ni $f''_{xy}(0,0)$, que se calculan a partir de $f'_x$.
+- $f'_ x(0,0)$: $f(h,0) = 1$ si $h \ne 0$, así que $\dfrac{1 - 0}{h}$ explota ⇒ $\nexists$. Por lo tanto tampoco existen $f''_ {xx}(0,0)$ ni $f''_ {xy}(0,0)$, que se calculan a partir de $f'_ x$.
 - $f'_y(0,0)$: $f(0,k) = 0$ ⇒ $f'_y(0,0) = 0$. Entonces $f'_y$ está definida en **todo** $\Re^2$.
 - $f''_{yx}(0,0) = \lim\dfrac{f'_y(h,0) - f'_y(0,0)}{h}$, y $f'_y(h, 0) = 0$ (la fórmula tiene el factor $y$) ⇒ vale $0$.
 - $f''_{yy}(0,0) = \lim\dfrac{f'_y(0,k) - 0}{k}$, y $f'_y(0,k) = 0$ (la fórmula tiene el factor $x^2$) ⇒ vale $0$.
@@ -609,7 +609,7 @@ Las segundas también son racionales y están definidas en $\Re^2 - \lbrace\bar 
 
 - a) 1° y 2° en $\Re^2 - \lbrace\bar 0\rbrace$.
 - b) 1° y 2° en $\lbrace(x,y) \in \Re^2 / x \ne 0 \wedge y > 0\rbrace$.
-- c) $f'_x$, $f''_{xx}$, $f''_{xy}$ en $\Re^2 - \lbrace\bar 0\rbrace$; $f'_y$, $f''_{yx}$, $f''_{yy}$ en $\Re^2$.
+- c) $f'_ x$, $f''_ {xx}$, $f''_ {xy}$ en $\Re^2 - \lbrace\bar 0\rbrace$; $f'_ y$, $f''_ {yx}$, $f''_ {yy}$ en $\Re^2$.
 - d) 1° y 2° en $\lbrace(x,y,z) \in \Re^3 / yz > 0\rbrace$.
 
 </details>
@@ -744,7 +744,7 @@ $$\bar v'_x\cdot\bar v'_y = g(x) + x\thinspace g'(x) = 0$$
 
 ### 17) Hallar $g$ con una ecuación de Laplace
 
-Dada $f(x,y) = y^2 + g(x)$, halle $g(x)$ para que $f''_{xx} + f''_{yy} = 0$ si $f(\bar 0) = 0$, $f'_x(\bar 0) = 1$.
+Dada $f(x,y) = y^2 + g(x)$, halle $g(x)$ para que $f''_ {xx} + f''_ {yy} = 0$ si $f(\bar 0) = 0$, $f'_ x(\bar 0) = 1$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -752,7 +752,7 @@ Dada $f(x,y) = y^2 + g(x)$, halle $g(x)$ para que $f''_{xx} + f''_{yy} = 0$ si $
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Derivadas.** $f''_{xx} = g''(x)$ y $f''_{yy} = 2$.
+**Paso 1 — Derivadas.** $f''_ {xx} = g''(x)$ y $f''_ {yy} = 2$.
 
 **Paso 2 — Ecuación.** $g''(x) + 2 = 0 \Rightarrow g''(x) = -2$.
 
@@ -827,7 +827,7 @@ $$y'_t = 2(x - at)(-a) + 2(x + at)(a), \qquad y''_{tt} = 2a^2 + 2a^2 = 4a^2$$
 
 $$y'_x = 2(x - at) + 2(x + at), \qquad y''_{xx} = 2 + 2 = 4$$
 
-**Verificación:** $a^2\thinspace y''_{xx} = 4a^2 = y''_{tt}$ ✓.
+**Verificación:** $a^2\thinspace y''_ {xx} = 4a^2 = y''_ {tt}$ ✓.
 
 </details>
 
@@ -851,8 +851,8 @@ $$\frac{\partial^2 z}{\partial x^2} + \frac{\partial^2 z}{\partial y^2} = 0$$
 
 Recordamos que $(\mathop{\mathrm{senh}} y)' = \cosh y$ y que $(\cosh y)' = \mathop{\mathrm{senh}}y$.
 
-- $z''_{xx}$: derivando dos veces $\mathop{\mathrm{sen}}x$ se obtiene $-\mathop{\mathrm{sen}}x$ ⇒ $z''_{xx} = -\mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
-- $z''_{yy}$: derivando dos veces $\mathop{\mathrm{senh}}y$ se obtiene $\mathop{\mathrm{senh}}y$ ⇒ $z''_{yy} = \mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
+- $z''_ {xx}$: derivando dos veces $\mathop{\mathrm{sen}}x$ se obtiene $-\mathop{\mathrm{sen}}x$ ⇒ $z''_ {xx} = -\mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
+- $z''_ {yy}$: derivando dos veces $\mathop{\mathrm{senh}}y$ se obtiene $\mathop{\mathrm{senh}}y$ ⇒ $z''_ {yy} = \mathop{\mathrm{sen}}(x)\mathop{\mathrm{senh}}(y)$.
 
 Suma: $-\mathop{\mathrm{sen}}x\mathop{\mathrm{senh}}y + \mathop{\mathrm{sen}}x\mathop{\mathrm{senh}}y = 0$ ✓.
 
@@ -886,7 +886,7 @@ $$U''_{xx} + U''_{yy} + U''_{zz} = 0 \ \text{ en } \ \Re^3 - \lbrace\bar 0\rbrac
 
 $$U''_{xx} = -k\thinspace\frac{r^3 - x\cdot 3r^2\thinspace\frac{x}{r}}{r^6} = -k\thinspace\frac{r^2 - 3x^2}{r^5}$$
 
-Por simetría: $U''_{yy} = -k\dfrac{r^2 - 3y^2}{r^5}$ y $U''_{zz} = -k\dfrac{r^2 - 3z^2}{r^5}$.
+Por simetría: $U''_ {yy} = -k\dfrac{r^2 - 3y^2}{r^5}$ y $U''_ {zz} = -k\dfrac{r^2 - 3z^2}{r^5}$.
 
 **Paso 5 — Suma.**
 
@@ -964,7 +964,7 @@ Dada $f(x,y) = \sqrt{3 - x^2 - y^2}$, obtenga $f'_y(1,0)$ observando el gráfico
 
 ### 24) Lectura de derivadas segundas en un gráfico
 
-En la figura se representa la superficie de ecuación $z = f(x,y)$; opine con fundamento si es posible afirmar que $f''_{xx}(0,0) = 0$ y $f''_{yy}(0,0) \le 0$.
+En la figura se representa la superficie de ecuación $z = f(x,y)$; opine con fundamento si es posible afirmar que $f''_ {xx}(0,0) = 0$ y $f''_ {yy}(0,0) \le 0$.
 
 ![Superficie z = f(x,y) del ejercicio 24](img/tp04-ej24-superficie.png)
 
@@ -974,11 +974,11 @@ En la figura se representa la superficie de ecuación $z = f(x,y)$; opine con fu
 <details>
 <summary>Solución paso a paso</summary>
 
-**Idea:** $f''_{xx}(0,0)$ es la derivada segunda (concavidad) de la curva $z = f(x, 0)$, que es la intersección de la superficie con el plano $xz$, en $x = 0$. Análogamente, $f''_{yy}(0,0)$ es la de $z = f(0, y)$, que es el corte con el plano $yz$.
+**Idea:** $f''_ {xx}(0,0)$ es la derivada segunda (concavidad) de la curva $z = f(x, 0)$, que es la intersección de la superficie con el plano $xz$, en $x = 0$. Análogamente, $f''_ {yy}(0,0)$ es la de $z = f(0, y)$, que es el corte con el plano $yz$.
 
-**$f''_{xx}(0,0) = 0$:** el dibujo intenta mostrar que la intersección de la superficie con el plano $xz$ ($y = 0$) es una **recta paralela al eje $x$**: sobre el eje $x$, la superficie es "plana" en esa dirección. Si $f(x, 0) = c$ es constante, sus derivadas primera y segunda son 0 ⇒ $f''_{xx}(0,0) = 0$.
+**$f''_ {xx}(0,0) = 0$:** el dibujo intenta mostrar que la intersección de la superficie con el plano $xz$ ($y = 0$) es una **recta paralela al eje $x$**: sobre el eje $x$, la superficie es "plana" en esa dirección. Si $f(x, 0) = c$ es constante, sus derivadas primera y segunda son 0 ⇒ $f''_ {xx}(0,0) = 0$.
 
-**$f''_{yy}(0,0) \le 0$:** en el corte con el plano $yz$, el origen aparece en la parte alta de una "loma" que baja hacia la derecha. Esa curva es cóncava hacia abajo, lo que es compatible con $f''_{yy}(0,0) \le 0$.
+**$f''_ {yy}(0,0) \le 0$:** en el corte con el plano $yz$, el origen aparece en la parte alta de una "loma" que baja hacia la derecha. Esa curva es cóncava hacia abajo, lo que es compatible con $f''_ {yy}(0,0) \le 0$.
 
 **Cuidado:** un gráfico sólo permite **opinar**, no demostrar. Lo que se afirma depende de que el dibujo represente fielmente la superficie.
 
@@ -999,7 +999,7 @@ Exprese la definición de $f'''_{xyx}(a,b)$.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** con la convención de subíndices (se deriva en el orden en que se leen), $f'''_{xyx}$ es la derivada respecto de $x$ de $f''_{xy}$, que a su vez es la derivada respecto de $y$ de $f'_x$:
+**Respuesta:** con la convención de subíndices (se deriva en el orden en que se leen), $f'''_ {xyx}$ es la derivada respecto de $x$ de $f''_ {xy}$, que a su vez es la derivada respecto de $y$ de $f'_ x$:
 
 $$f'''_{xyx}(a,b) = \lim_{h\to0}\frac{f''_{xy}(a + h,\ b) - f''_{xy}(a,b)}{h}, \qquad \text{donde } f''_{xy}(x,y) = \lim_{k\to0}\frac{f'_x(x, y + k) - f'_x(x,y)}{k}$$
 
@@ -1009,7 +1009,7 @@ $$f'''_{xyx}(a,b) = \lim_{h\to0}\frac{f''_{xy}(a + h,\ b) - f''_{xy}(a,b)}{h}, \
 
 ### Cuestionario 2)
 
-Siendo $f \in C^3(E(\bar A))$, aplicando el teorema de Schwarz demuestre que: $f'''_{xxy}(\bar A) = f'''_{yxx}(\bar A)$
+Siendo $f \in C^3(E(\bar A))$, aplicando el teorema de Schwarz demuestre que: $f'''_ {xxy}(\bar A) = f'''_ {yxx}(\bar A)$
 
 <details>
 <summary><b>Solución</b></summary>
@@ -1021,11 +1021,11 @@ Siendo $f \in C^3(E(\bar A))$, aplicando el teorema de Schwarz demuestre que: $f
 
 $$f'''_{xxy} = f'''_{xyx}$$
 
-**Paso 2 — Aplicar Schwarz a $f$.** $f$ es $C^2$, así que $f''_{xy} = f''_{yx}$ en **todo el entorno**. Al ser iguales como funciones, también lo son sus derivadas respecto de $x$:
+**Paso 2 — Aplicar Schwarz a $f$.** $f$ es $C^2$, así que $f''_ {xy} = f''_ {yx}$ en **todo el entorno**. Al ser iguales como funciones, también lo son sus derivadas respecto de $x$:
 
 $$f'''_{xyx} = (f''_{xy})'_x = (f''_{yx})'_x = f'''_{yxx}$$
 
-**Conclusión:** $f'''_{xxy}(\bar A) = f'''_{xyx}(\bar A) = f'''_{yxx}(\bar A)$. $\blacksquare$
+**Conclusión:** $f'''_ {xxy}(\bar A) = f'''_ {xyx}(\bar A) = f'''_ {yxx}(\bar A)$. $\blacksquare$
 
 </details>
 

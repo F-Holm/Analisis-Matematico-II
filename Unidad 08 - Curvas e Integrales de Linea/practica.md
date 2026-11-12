@@ -854,7 +854,7 @@ $\bar f = \nabla\phi \in C^1 \Rightarrow D\bar f$ simétrica.
 <details>
 <summary><b>Solución</b></summary>
 
-**Respuesta:** las componentes de $\bar f$ son $f_i = \phi'_{x_i}$, así que $(D\bar f)_{ij} = \dfrac{\partial f_i}{\partial x_j} = \phi''_{x_ix_j}$: $D\bar f$ es el Hessiano de $\phi$. Como $\bar f \in C^1$, $\phi \in C^2$, y por el teorema de Schwarz $\phi''_{x_ix_j} = \phi''_{x_jx_i}$ ⇒ $D\bar f$ simétrica. $\blacksquare$
+**Respuesta:** las componentes de $\bar f$ son $f_i = \phi'_ {x_i}$, así que $(D\bar f)_ {ij} = \dfrac{\partial f_i}{\partial x_j} = \phi''_ {x_ix_j}$: $D\bar f$ es el Hessiano de $\phi$. Como $\bar f \in C^1$, $\phi \in C^2$, y por el teorema de Schwarz $\phi''_ {x_ix_j} = \phi''_ {x_jx_i}$ ⇒ $D\bar f$ simétrica. $\blacksquare$
 
 </details>
 

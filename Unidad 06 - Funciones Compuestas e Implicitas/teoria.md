@@ -173,7 +173,7 @@ $$\frac{\partial\varphi}{\partial x_i}(\vec X_0') = -\frac{F'_{x_i}(\vec X_0)}{F
 
 $$F'_{x_1}\Delta x_1 + \dots + F'_{x_n}\Delta x_n + \varepsilon\thinspace\lVert\Delta\vec X\rVert = 0$$
 
-Como $F'_{x_n} \ne 0$, se despeja $\Delta x_n$: es una T.L. de $(\Delta x_1, \dots, \Delta x_{n-1})$ más un término que tiende a 0. Entonces $x_n$ es diferenciable, y sus parciales son los coeficientes $-F'_{x_i}/F'_{x_n}$. $\blacksquare$
+Como $F'_ {x_n} \ne 0$, se despeja $\Delta x_n$: es una T.L. de $(\Delta x_1, \dots, \Delta x_{n-1})$ más un término que tiende a 0. Entonces $x_n$ es diferenciable, y sus parciales son los coeficientes $-F'_ {x_i}/F'_ {x_n}$. $\blacksquare$
 
 **Plano tangente a una superficie de nivel.** Si $F(x,y,z) = k$ cumple las hipótesis, toda curva $\vec g(t)$ sobre la superficie que pasa por $P_0$ cumple $F(\vec g(t)) = k$. Derivando: $\nabla F(P_0)\cdot\vec g\thinspace'(t_0) = 0$. El gradiente es perpendicular a **todas** las curvas de la superficie por $P_0$, así que es normal a la superficie:
 

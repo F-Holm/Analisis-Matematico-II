@@ -457,7 +457,7 @@ Teoría completa de la unidad: [Unidad 04 - Derivabilidad/teoria.md](../Unidad%2
 - **Derivada direccional:** la misma, con $\vec r$ versor. Si $\vec r$ no es versor, la derivada existe pero no es direccional.
 - **Derivadas parciales:** direccionales según los ejes.
 - **Homogeneidad:** $f'(\vec A, \lambda\vec r) = \lambda f'(\vec A, \vec r)$.
-- **Schwarz:** si $f''_{xy}$ y $f''_{yx}$ existen y son continuas en un entorno, son iguales.
+- **Schwarz:** si $f''_ {xy}$ y $f''_ {yx}$ existen y son continuas en un entorno, son iguales.
 
 **Curvas.** Para una curva $\vec g(t)$ en $t_0$:
 
@@ -879,7 +879,7 @@ $P_1$ es el plano tangente. El polinomio tiene en $\vec A$ el mismo valor y las 
 
 **Fermat:** si $f$ es diferenciable en $\vec A$ y tiene un extremo local allí, $\nabla f(\vec A) = \vec 0$.
 
-**Criterio del hessiano** para $f \in C^2$ y $\nabla f(\vec A) = \vec 0$, con $H = f''_{xx}f''_{yy} - (f''_{xy})^2$:
+**Criterio del hessiano** para $f \in C^2$ y $\nabla f(\vec A) = \vec 0$, con $H = f''_ {xx}f''_ {yy} - (f''_ {xy})^2$:
 
 | Condición | Conclusión |
 |---|---|
@@ -909,7 +909,7 @@ $P_1$ es el plano tangente. El polinomio tiene en $\vec A$ el mismo valor y las 
 
 *Primeras derivadas.* $f'_x = 1 + \dfrac{y}{2\sqrt{6 - x}} \to \dfrac74$ y $f'_y = -\sqrt{6 - x} \to -2$.
 
-*Segundas derivadas.* $f''_{xx} = \dfrac{y}{4(6 - x)^{3/2}} \to \dfrac{3}{32}$, $f''_{xy} = \dfrac{1}{2\sqrt{6 - x}} \to \dfrac14$ y $f''_{yy} = 0$.
+*Segundas derivadas.* $f''_ {xx} = \dfrac{y}{4(6 - x)^{3/2}} \to \dfrac{3}{32}$, $f''_ {xy} = \dfrac{1}{2\sqrt{6 - x}} \to \dfrac14$ y $f''_ {yy} = 0$.
 
 **Resultado:** $P_2 = -4 + \dfrac74(x - 2) - 2(y - 3) + \dfrac{3}{64}(x - 2)^2 + \dfrac14(x - 2)(y - 3)$.
 
@@ -920,7 +920,7 @@ $P_1$ es el plano tangente. El polinomio tiene en $\vec A$ el mismo valor y las 
 **Método.**
 
 1. Plantear $f'_x = 0$, $f'_y = 0$. **Factorizar** y abrir en casos; no dividir por algo que pueda anularse.
-2. Calcular $f''_{xx}$, $f''_{xy}$, $f''_{yy}$.
+2. Calcular $f''_ {xx}$, $f''_ {xy}$, $f''_ {yy}$.
 3. Evaluar $H$ en cada punto y clasificar.
 4. Informar el valor de $f$ en los extremos.
 
@@ -956,7 +956,7 @@ $P_1$ es el plano tangente. El polinomio tiene en $\vec A$ el mismo valor y las 
 
 > Analice si $f(0,0)$ es extremo de $f(x,y) = x^3 + xy^2$.
 
-*Paso 1 — Hessiano.* $\nabla f(0,0) = \vec 0$. Como $f''_{xx} = 6x$, $f''_{xy} = 2y$ y $f''_{yy} = 2x$, en el origen $H = 0$: no decide.
+*Paso 1 — Hessiano.* $\nabla f(0,0) = \vec 0$. Como $f''_ {xx} = 6x$, $f''_ {xy} = 2y$ y $f''_ {yy} = 2x$, en el origen $H = 0$: no decide.
 
 *Paso 2 — Signo.* $f(0,0) = 0$ y $f = x(x^2 + y^2)$ tiene el signo de $x$. En todo entorno del origen hay puntos con $x > 0$ y puntos con $x < 0$.
 
@@ -976,15 +976,15 @@ $P_1$ es el plano tangente. El polinomio tiene en $\vec A$ el mismo valor y las 
 
 > $f \in C^2$ tiene polinomio de Taylor de 2.º orden en $(1,-1)$ igual a $p(x,y) = 4 - x^2 + y^2 + xy + y$. Demuestre que $g = f^2 + 6x^2$ alcanza un mínimo local en $(1,-1)$.
 
-*Paso 1 — Datos,* evaluando $p$ en $(1,-1)$: $f = 2$, $f'_x = -2x + y = -3$, $f'_y = 2y + x + 1 = 0$, $f''_{xx} = -2$, $f''_{xy} = 1$, $f''_{yy} = 2$.
+*Paso 1 — Datos,* evaluando $p$ en $(1,-1)$: $f = 2$, $f'_ x = -2x + y = -3$, $f'_ y = 2y + x + 1 = 0$, $f''_ {xx} = -2$, $f''_ {xy} = 1$, $f''_ {yy} = 2$.
 
 *Paso 2 — Gradiente de $g$.* $g'_x = 2ff'_x + 12x = 2\cdot2\cdot(-3) + 12 = 0$ y $g'_y = 2ff'_y = 0$. Es punto crítico.
 
 *Paso 3 — Hessiano.*
 
-- $g''_{xx} = 2(f'_x)^2 + 2ff''_{xx} + 12 = 18 - 8 + 12 = 22$.
-- $g''_{xy} = 2f'_xf'_y + 2ff''_{xy} = 4$.
-- $g''_{yy} = 2(f'_y)^2 + 2ff''_{yy} = 8$.
+- $g''_ {xx} = 2(f'_ x)^2 + 2ff''_ {xx} + 12 = 18 - 8 + 12 = 22$.
+- $g''_ {xy} = 2f'_ xf'_ y + 2ff''_ {xy} = 4$.
+- $g''_ {yy} = 2(f'_ y)^2 + 2ff''_ {yy} = 8$.
 
 **Resultado:** $H = 22\cdot8 - 16 = 160 > 0$ y $g''_{xx} > 0$: mínimo local. $\blacksquare$
 
@@ -1056,7 +1056,7 @@ De $f'_y = 0$: $x = 0$ o $y = 0$. Con $x = 0$ el numerador de $f'_x$ es $1 + y^2
 **Método** para $z = \varphi(x,y)$ definida por $F(x,y,z) = 0$.
 
 1. Críticos: $F'_x = F'_y = 0$, junto con $F = 0$ y $F'_z \ne 0$.
-2. En esos puntos, las derivadas segundas se simplifican: $z''_{ij} = -\dfrac{F''_{ij}}{F'_z}$.
+2. En esos puntos, las derivadas segundas se simplifican: $z''_ {ij} = -\dfrac{F''_ {ij}}{F'_ z}$.
 3. Aplicar el hessiano.
 
 **Ejemplo** ([TP7 – 16](../Unidad%2007%20-%20Taylor%20y%20Extremos/practica.md)).
@@ -1067,10 +1067,10 @@ De $f'_y = 0$: $x = 0$ o $y = 0$. Con $x = 0$ el numerador de $f'_x$ es $1 + y^2
 
 *Paso 2 — No es única:* hay una función por cada mitad del elipsoide.
 
-*Paso 3 — Clasificar,* con $F''_{xx} = 2$, $F''_{yy} = 8$, $F''_{xy} = 0$.
+*Paso 3 — Clasificar,* con $F''_ {xx} = 2$, $F''_ {yy} = 8$, $F''_ {xy} = 0$.
 
-- $z = \tfrac13$, $F'_z = 6$: $z''_{xx} = -\tfrac13$, $z''_{yy} = -\tfrac43$, $H = \tfrac49 > 0$ y $z''_{xx} < 0$: máximo.
-- $z = -\tfrac13$, $F'_z = -6$: $z''_{xx} = \tfrac13$, $z''_{yy} = \tfrac43$, $H = \tfrac49 > 0$ y $z''_{xx} > 0$: mínimo.
+- $z = \tfrac13$, $F'_ z = 6$: $z''_ {xx} = -\tfrac13$, $z''_ {yy} = -\tfrac43$, $H = \tfrac49 > 0$ y $z''_ {xx} < 0$: máximo.
+- $z = -\tfrac13$, $F'_ z = -6$: $z''_ {xx} = \tfrac13$, $z''_ {yy} = \tfrac43$, $H = \tfrac49 > 0$ y $z''_ {xx} > 0$: mínimo.
 
 **Resultado:** en $(0,0)$, la función de la mitad superior tiene máximo $\tfrac13$ y la de la mitad inferior, mínimo $-\tfrac13$.
 

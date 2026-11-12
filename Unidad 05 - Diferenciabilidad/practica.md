@@ -547,7 +547,7 @@ Halle las direcciones de derivada direccional máxima, mínima y nula de las sig
 
 **Respuesta:**
 
-- a) $\breve r_{\text{máx}} = (-7/\sqrt{85},\ -6/\sqrt{85})$, $\breve r_{\text{mín}} = (7/\sqrt{85},\ 6/\sqrt{85})$, $\breve r_{\text{nula}_1} = (-6/\sqrt{85},\ 7/\sqrt{85})$, $\breve r_{\text{nula}_2} = (6/\sqrt{85},\ -7/\sqrt{85})$.
+- a) $\breve r_{\text{máx}} = (-7/\sqrt{85},\ -6/\sqrt{85})$, $\breve r_{\text{mín}} = (7/\sqrt{85},\ 6/\sqrt{85})$, $\breve r_{\text{nula}_ 1} = (-6/\sqrt{85},\ 7/\sqrt{85})$, $\breve r_{\text{nula}_ 2} = (6/\sqrt{85},\ -7/\sqrt{85})$.
 - b) $\breve r_{\text{máx}} = (1,0,0)$, $\breve r_{\text{mín}} = (-1,0,0)$, $\breve r_{\text{nula}} = (0,u,v)\ \forall(u,v) \in \Re^2 / u^2 + v^2 = 1$.
 
 </details>
@@ -847,7 +847,7 @@ $$\frac{\partial R_{EQ}}{\partial R_1} = \frac{R_2(R_1 + R_2) - R_1R_2}{(R_1+R_2
 
 - a) $0.88 \pm 0.04$ kΩ.
 - b) $39.2 \pm 1.6$ cm³.
-- c) Para $z = xy$ y $z = x/y$: $\varepsilon_{\text{rel}_z} = \varepsilon_{\text{rel}_x} + \varepsilon_{\text{rel}_y}$. Para $z = x^2y^3$: $\varepsilon_{\text{rel}_z} = 2\varepsilon_{\text{rel}_x} + 3\varepsilon_{\text{rel}_y}$.
+- c) Para $z = xy$ y $z = x/y$: $\varepsilon_{\text{rel}_ z} = \varepsilon_{\text{rel}_ x} + \varepsilon_{\text{rel}_ y}$. Para $z = x^2y^3$: $\varepsilon_{\text{rel}_ z} = 2\varepsilon_{\text{rel}_ x} + 3\varepsilon_{\text{rel}_ y}$.
 - d) $19.5 \pm 0.975$ kΩ. Es decir, 19.5 kΩ al 5%.
 
 </details>
@@ -968,7 +968,7 @@ Además, sobre $x = y^{3/2}$ con $y \ge 0$ el límite da $1/3$. En ningún caso 
 
 $$f'_x(x,y) = \begin{cases} \dfrac{4x^2 + y^2}{3x^{2/3}\sqrt{x^2+y^2}} & \text{si } (x,y) \ne (0,y) \cr 0 & \text{si } (x,y) = (0,0) \end{cases}$$
 
-con lo cual $f'_x$ no es continua en $(0,0)$. Esto puede demostrarse analizando límites por curvas: por ejemplo, acercándose por $x = y^2$, $\lim\limits_{y\to0} f'_x(y^2, y) = \infty$. También puede analizarse por $x = y^{3/2}$ con $y \ge 0$, que resulta $\lim\limits_{y\to0^+} f'_x(y^{3/2}, y) = 1/3$.
+con lo cual $f'_ x$ no es continua en $(0,0)$. Esto puede demostrarse analizando límites por curvas: por ejemplo, acercándose por $x = y^2$, $\lim\limits_{y\to0} f'_ x(y^2, y) = \infty$. También puede analizarse por $x = y^{3/2}$ con $y \ge 0$, que resulta $\lim\limits_{y\to0^+} f'_ x(y^{3/2}, y) = 1/3$.
 
 </details>
 

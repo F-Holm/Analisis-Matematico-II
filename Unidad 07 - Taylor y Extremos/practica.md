@@ -358,7 +358,7 @@ $$f'_x = 2x + y^2 = 0, \qquad f'_y = 2y + 2xy = 2y(1 + x) = 0$$
 - $y = 0$ ⇒ $x = 0$: punto $(0,0)$.
 - $x = -1$ ⇒ $y^2 = 2$: puntos $(-1, \pm\sqrt2)$.
 
-*Hessiano:* $f''_{xx} = 2$, $f''_{yy} = 2 + 2x$ y $f''_{xy} = 2y$.
+*Hessiano:* $f''_ {xx} = 2$, $f''_ {yy} = 2 + 2x$ y $f''_ {xy} = 2y$.
 
 - $(0,0)$: $H = 2\cdot2 - 0 = 4 > 0$ y $f''_{xx} > 0$ ⇒ **mínimo relativo**, $f = 0$.
 - $(-1, \pm\sqrt2)$: $H = 2\cdot0 - (2\sqrt2)^2 = -8 < 0$ ⇒ silla.
@@ -367,7 +367,7 @@ $$f'_x = 2x + y^2 = 0, \qquad f'_y = 2y + 2xy = 2y(1 + x) = 0$$
 
 **b)** *Puntos estacionarios:* $f'_x = 3x^2 - 2x + y = 0$ y $f'_y = x = 0$ ⇒ $y = 0$. Único punto: $(0,0)$.
 
-*Hessiano:* $f''_{xx} = 6x - 2 \to -2$, $f''_{xy} = 1$ y $f''_{yy} = 0$ ⇒ $H = 0 - 1 = -1 < 0$ ⇒ silla. **No hay extremos.**
+*Hessiano:* $f''_ {xx} = 6x - 2 \to -2$, $f''_ {xy} = 1$ y $f''_ {yy} = 0$ ⇒ $H = 0 - 1 = -1 < 0$ ⇒ silla. **No hay extremos.**
 
 **c)** $f = \sqrt{y - x} \ge 0$, con dominio $y \ge x$. Vale 0 exactamente sobre la recta $y = x$ ⇒ **mínimo absoluto, en sentido amplio**, en todos los puntos $(a, a)$. Ahí $f$ no es diferenciable, por eso no aparecen con $\nabla f = 0$. No hay máximo, porque $f$ no es acotada.
 
@@ -525,7 +525,7 @@ El polinomio de Taylor (de orden 2) tiene el mismo valor y las mismas derivadas 
 - $p'_x = 7 + y - 8x \to 7 + 1 - 8 = 0$ ✓.
 - $p'_y = 1 + x - 2y \to 1 + 1 - 2 = 0$ ✓.
 
-**Paso 2 — Hessiano.** $f''_{xx} = -8$, $f''_{xy} = 1$ y $f''_{yy} = -2$ ⇒ $H = 16 - 1 = 15 > 0$, con $f''_{xx} < 0$ ⇒ **máximo local**.
+**Paso 2 — Hessiano.** $f''_ {xx} = -8$, $f''_ {xy} = 1$ y $f''_ {yy} = -2$ ⇒ $H = 16 - 1 = 15 > 0$, con $f''_ {xx} < 0$ ⇒ **máximo local**.
 
 **Paso 3 — Valor.** $f(1,1) = p(1,1) = 7 + 1 + 1 - 1 - 4 = 4$.
 
@@ -591,8 +591,8 @@ $$f''_{xx} = -\frac{F''_{xx}\thinspace F'_z}{(F'_z)^2} = -\frac{F''_{xx}(\bar A)
 
 **Paso 4 — Las otras dos.** Con el mismo razonamiento:
 
-- derivando $f'_x$ respecto de $y$ (usando $f'_y = 0$) se obtiene $f''_{xy} = -\dfrac{F''_{xy}}{F'_z}$;
-- derivando $f'_y$ respecto de $y$ (usando $F'_y = 0$) se obtiene $f''_{yy} = -\dfrac{F''_{yy}}{F'_z}$. $\blacksquare$
+- derivando $f'_ x$ respecto de $y$ (usando $f'_ y = 0$) se obtiene $f''_ {xy} = -\dfrac{F''_ {xy}}{F'_ z}$;
+- derivando $f'_ y$ respecto de $y$ (usando $F'_ y = 0$) se obtiene $f''_ {yy} = -\dfrac{F''_ {yy}}{F'_ z}$. $\blacksquare$
 
 </details>
 
@@ -618,10 +618,10 @@ Aplicando el teorema de existencia de las funciones definidas implícitamente, d
 
 **Paso 3 — Estacionario.** $\varphi'_x = -\dfrac{2x}{2z}$ y $\varphi'_y = -\dfrac{8y}{2z}$ se anulan en $(0,0)$ ✓.
 
-**Paso 4 — Clasificación** (con el ejercicio 14). $F''_{xx} = 2$, $F''_{yy} = 8$ y $F''_{xy} = 0$.
+**Paso 4 — Clasificación** (con el ejercicio 14). $F''_ {xx} = 2$, $F''_ {yy} = 8$ y $F''_ {xy} = 0$.
 
-- $\varphi_1$ ($F'_z = 12$): $\varphi''_{xx} = -\frac{2}{12} < 0$, $\varphi''_{yy} = -\frac{8}{12}$, $\varphi''_{xy} = 0$ ⇒ $H = \frac{16}{144} > 0$ ⇒ **máximo**, $\varphi_1(0,0) = 6$.
-- $\varphi_2$ ($F'_z = -12$): $\varphi''_{xx} = \frac{2}{12} > 0$ y $H > 0$ ⇒ **mínimo**, $\varphi_2(0,0) = -6$.
+- $\varphi_1$ ($F'_ z = 12$): $\varphi''_ {xx} = -\frac{2}{12} < 0$, $\varphi''_ {yy} = -\frac{8}{12}$, $\varphi''_ {xy} = 0$ ⇒ $H = \frac{16}{144} > 0$ ⇒ **máximo**, $\varphi_1(0,0) = 6$.
+- $\varphi_2$ ($F'_ z = -12$): $\varphi''_ {xx} = \frac{2}{12} > 0$ y $H > 0$ ⇒ **mínimo**, $\varphi_2(0,0) = -6$.
 
 **Paso 5 — Funciones explícitas:** $\varphi_{1,2} = \pm\sqrt{36 - x^2 - 4y^2}$.
 
@@ -653,7 +653,7 @@ Ahí $9z^2 = 1 \Rightarrow z = \pm\frac13$.
 
 **Paso 2 — No es única.** Hay dos funciones, una por cada "mitad" del elipsoide: $\varphi_{1,2} = \pm\sqrt{\dfrac{1 - x^2 - 4y^2}{9}}$.
 
-**Paso 3 — Clasificación** (ejercicio 14, con $F''_{xx} = 2$, $F''_{yy} = 8$, $F''_{xy} = 0$):
+**Paso 3 — Clasificación** (ejercicio 14, con $F''_ {xx} = 2$, $F''_ {yy} = 8$, $F''_ {xy} = 0$):
 
 - $\varphi_1$ ($z = \frac13$, $F'_z = 6$): las derivadas segundas son negativas ⇒ **máximo**, $\frac13$.
 - $\varphi_2$ ($z = -\frac13$, $F'_z = -6$): las derivadas segundas son positivas ⇒ **mínimo**, $-\frac13$.
@@ -689,15 +689,15 @@ $$f'_x = 12x^2 - \frac{12}{x^2} = 0 \Rightarrow x^4 = 1 \Rightarrow x = \pm1, \q
 
 Hay 4 puntos: $(\pm1, \pm1)$.
 
-*Hessiano:* $f''_{xx} = 24x + \dfrac{24}{x^3}$, $f''_{yy} = 24y + \dfrac{24}{y^3}$ y $f''_{xy} = 0$.
+*Hessiano:* $f''_ {xx} = 24x + \dfrac{24}{x^3}$, $f''_ {yy} = 24y + \dfrac{24}{y^3}$ y $f''_ {xy} = 0$.
 
-- $(1,1)$: $f''_{xx} = f''_{yy} = 48$ ⇒ $H > 0$ y $f''_{xx} > 0$ ⇒ **mínimo**, $f = 4 + 4 + 12 + 12 = 32$.
-- $(-1,-1)$: $f''_{xx} = f''_{yy} = -48$ ⇒ $H > 0$ y $f''_{xx} < 0$ ⇒ **máximo**, $f = -32$.
-- $(1,-1)$ y $(-1,1)$: $f''_{xx}$ y $f''_{yy}$ tienen signos opuestos ⇒ $H < 0$ ⇒ silla.
+- $(1,1)$: $f''_ {xx} = f''_ {yy} = 48$ ⇒ $H > 0$ y $f''_ {xx} > 0$ ⇒ **mínimo**, $f = 4 + 4 + 12 + 12 = 32$.
+- $(-1,-1)$: $f''_ {xx} = f''_ {yy} = -48$ ⇒ $H > 0$ y $f''_ {xx} < 0$ ⇒ **máximo**, $f = -32$.
+- $(1,-1)$ y $(-1,1)$: $f''_ {xx}$ y $f''_ {yy}$ tienen signos opuestos ⇒ $H < 0$ ⇒ silla.
 
 **b)** *Estacionarios:* $f'_y = -2y + 2x = 0 \Rightarrow y = x$. Reemplazando en $f'_x = 1 - 3x^2 + 2y = 0$: $3x^2 - 2x - 1 = 0 \Rightarrow x = 1$ o $x = -\frac13$.
 
-*Hessiano:* $f''_{xx} = -6x$, $f''_{xy} = 2$ y $f''_{yy} = -2$.
+*Hessiano:* $f''_ {xx} = -6x$, $f''_ {xy} = 2$ y $f''_ {yy} = -2$.
 
 - $(1,1)$: $f''_{xx} = -6$ ⇒ $H = 12 - 4 = 8 > 0$ ⇒ **máximo**, $f = 1 - 1 - 1 + 2 = 1$.
 - $(-\frac13, -\frac13)$: $f''_{xx} = 2$ ⇒ $H = -4 - 4 = -8 < 0$ ⇒ silla, con $f = -\frac{5}{27}$.
@@ -713,8 +713,8 @@ En $(0,0)$: $0 - z + 1 = 0 \Rightarrow z = 1$. Además $F'_z = -\cos(yz) + yz\ma
 
 Derivadas segundas (ejercicio 14):
 
-- $F''_{xx} = 0$, $F''_{xy} = 1$ y $F''_{yy} = z^3\cos(yz) = 1$.
-- $f''_{xx} = 0$, $f''_{xy} = -\frac{1}{-1} = 1$ y $f''_{yy} = 1$.
+- $F''_ {xx} = 0$, $F''_ {xy} = 1$ y $F''_ {yy} = z^3\cos(yz) = 1$.
+- $f''_ {xx} = 0$, $f''_ {xy} = -\frac{1}{-1} = 1$ y $f''_ {yy} = 1$.
 
 $H = 0 - 1 < 0$ ⇒ silla ⇒ **no produce extremos**.
 
@@ -729,7 +729,7 @@ $$g'_u = 2u - v + v^2 = 0, \qquad g'_v = -u + 2uv = u(2v - 1) = 0$$
 - $u = 0$: $v^2 - v = 0 \Rightarrow v = 0$ o $v = 1$.
 - $v = \frac12$: $2u - \frac12 + \frac14 = 0 \Rightarrow u = \frac18$.
 
-*Hessiano:* $g''_{uu} = 2$, $g''_{uv} = -1 + 2v$ y $g''_{vv} = 2u$.
+*Hessiano:* $g''_ {uu} = 2$, $g''_ {uv} = -1 + 2v$ y $g''_ {vv} = 2u$.
 
 - $(0,0)$ y $(0,1)$: $H = 0 - 1 < 0$ ⇒ sillas.
 - $(\frac18, \frac12)$: $H = 2\cdot\frac14 - 0 = \frac12 > 0$ y $g''_{uu} > 0$ ⇒ **mínimo**, $g = \frac{1}{64} - \frac{1}{16} + \frac{1}{32} = -\frac{1}{64}$.

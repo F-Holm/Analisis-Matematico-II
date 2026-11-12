@@ -120,7 +120,7 @@ Sea $f(x,y) = x^2\thinspace e^y + y^3 - 3y$ analice si $f$ produce extremos loca
 - $f'_x = 2x\thinspace e^y = 0 \Rightarrow x = 0$.
 - $f'_y = x^2e^y + 3y^2 - 3 = 0 \Rightarrow y = \pm1$.
 
-**Paso 2 — Hessiano.** $f''_{xx} = 2e^y$, $f''_{xy} = 2xe^y$ y $f''_{yy} = x^2e^y + 6y$.
+**Paso 2 — Hessiano.** $f''_ {xx} = 2e^y$, $f''_ {xy} = 2xe^y$ y $f''_ {yy} = x^2e^y + 6y$.
 
 - $(0,1)$: $H = 2e\cdot6 - 0 = 12e > 0$, con $f''_{xx} = 2e > 0$ ⇒ **mínimo local**, $f(0,1) = 1 - 3 = -2$.
 - $(0,-1)$: $H = \frac2e\cdot(-6) < 0$ ⇒ punto silla.
@@ -236,7 +236,7 @@ Sabiendo que $f: \mathbb{R}^2 \to \mathbb{R}$ es una función de clase $C^2$, cu
 
 - $f = 4 - 1 + 1 - 1 - 1 = 2$;
 - $f'_x = -2x + y = -3$ y $f'_y = 2y + x + 1 = 0$;
-- $f''_{xx} = -2$, $f''_{xy} = 1$ y $f''_{yy} = 2$.
+- $f''_ {xx} = -2$, $f''_ {xy} = 1$ y $f''_ {yy} = 2$.
 
 **Paso 2 — Gradiente de $g$.**
 
@@ -247,9 +247,9 @@ Es un punto crítico.
 
 **Paso 3 — Hessiano de $g$.**
 
-- $g''_{xx} = 2(f'_x)^2 + 2f\thinspace f''_{xx} + 12 = 18 - 8 + 12 = 22$.
-- $g''_{xy} = 2f'_xf'_y + 2f\thinspace f''_{xy} = 0 + 4 = 4$.
-- $g''_{yy} = 2(f'_y)^2 + 2f\thinspace f''_{yy} = 0 + 8 = 8$.
+- $g''_ {xx} = 2(f'_ x)^2 + 2f\thinspace f''_ {xx} + 12 = 18 - 8 + 12 = 22$.
+- $g''_ {xy} = 2f'_ xf'_ y + 2f\thinspace f''_ {xy} = 0 + 4 = 4$.
+- $g''_ {yy} = 2(f'_ y)^2 + 2f\thinspace f''_ {yy} = 0 + 8 = 8$.
 
 $\det = 22\cdot8 - 16 = 160 > 0$ y $g''_{xx} > 0$ ⇒ **mínimo local**. $\blacksquare$
 

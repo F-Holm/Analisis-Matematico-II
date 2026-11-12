@@ -97,7 +97,7 @@ Analice la continuidad y la existencia de derivadas en distintas direcciones de 
 
 **Continuidad.**
 
-- Para $y \ne 0$: $f = \underbrace{x}_{\to0}\cdot\underbrace{\dfrac{\mathop{\mathrm{sen}}y}{y}}_{\to1} \to 0$.
+- Para $y \ne 0$: $f = \underbrace{x}_ {\to0}\cdot\underbrace{\dfrac{\mathop{\mathrm{sen}}y}{y}}_ {\to1} \to 0$.
 - Sobre $y = 0$: $f = 0$.
 
 El límite es $0 = f(0,0)$ ⇒ **continua**.

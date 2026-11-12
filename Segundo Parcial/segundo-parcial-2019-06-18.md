@@ -30,7 +30,7 @@ $$Q'_x = (\phi'_y)'_x = \phi''_{yx} = \phi''_{xy} = (\phi'_x)'_y = P'_y \quad\bl
 
 </details>
 
-**Respuesta:** Con $\vec f = \nabla\phi$ y $\phi \in C^2$, el teorema de Schwarz da $Q'_x = \phi''_{yx} = \phi''_{xy} = P'_y$ (ver la teoría de la Unidad 8).
+**Respuesta:** Con $\vec f = \nabla\phi$ y $\phi \in C^2$, el teorema de Schwarz da $Q'_ x = \phi''_ {yx} = \phi''_ {xy} = P'_ y$ (ver la teoría de la Unidad 8).
 
 </details>
 

@@ -116,9 +116,9 @@ Con la notación de subíndices **se deriva en el orden en que se leen** ($f''_{
 
 Para $n$ variables hay $n^2$ derivadas segundas.
 
-**Las derivadas mixtas pueden ser distintas.** Por ejemplo, $g = xy\dfrac{x^2-y^2}{x^2+y^2}$ tiene $g''_{xy}(0,0) = -1$ y $g''_{yx}(0,0) = 1$.
+**Las derivadas mixtas pueden ser distintas.** Por ejemplo, $g = xy\dfrac{x^2-y^2}{x^2+y^2}$ tiene $g''_ {xy}(0,0) = -1$ y $g''_ {yx}(0,0) = 1$.
 
-**Teorema de Schwarz:** si $f''_{xy}$ y $f''_{yx}$ existen en un entorno de $(x_0,y_0)$ y son **continuas** en ese punto, entonces
+**Teorema de Schwarz:** si $f''_ {xy}$ y $f''_ {yx}$ existen en un entorno de $(x_0,y_0)$ y son **continuas** en ese punto, entonces
 
 $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
@@ -126,8 +126,8 @@ $$f''_{xy}(x_0,y_0) = f''_{yx}(x_0,y_0)$$
 
 ### Ecuaciones en derivadas parciales clásicas
 
-- **Ecuación de onda:** $y''_{tt} = a^2\thinspace y''_{xx}$.
-- **Ecuación de Laplace** (funciones **armónicas**): $\Delta f = f''_{xx} + f''_{yy}\ (+ f''_{zz}) = 0$.
+- **Ecuación de onda:** $y''_ {tt} = a^2\thinspace y''_ {xx}$.
+- **Ecuación de Laplace** (funciones **armónicas**): $\Delta f = f''_ {xx} + f''_ {yy}\ (+ f''_ {zz}) = 0$.
 
 ---
 
@@ -167,7 +167,7 @@ $$\frac{x - f_1(t_0)}{f_1'(t_0)} = \frac{y - f_2(t_0)}{f_2'(t_0)} = \frac{z - f_
 - **Parciales:** $\Delta_xF = F(a + h, b) - F(a, b)$ (sólo varía $x$) y $\Delta_yF = F(a, b + k) - F(a, b)$.
 - **Total:** $\Delta F = F(a + h, b + k) - F(a, b)$. Es la variación de $z$ sobre la curva que se obtiene cortando la superficie con el plano vertical que contiene a $P_0$ y $(a + h, b + k)$.
 
-Las derivadas parciales son $F'_x = \lim\limits_{h\to0}\dfrac{\Delta_xF}{h}$ y $F'_y = \lim\limits_{k\to0}\dfrac{\Delta_yF}{k}$.
+Las derivadas parciales son $F'_ x = \lim\limits_{h\to0}\dfrac{\Delta_xF}{h}$ y $F'_ y = \lim\limits_{k\to0}\dfrac{\Delta_yF}{k}$.
 
 ### Teorema del valor medio para campos escalares
 
@@ -243,12 +243,12 @@ $$\vec F'(\vec X_0; \breve v) = D\vec F(\vec X_0)\cdot\breve v$$
 - Si se cumplen las hipótesis de Schwarz, de las $n^2$ derivadas segundas sólo $\dfrac{n(n+1)}{2}$ son distintas.
 - En general, el número de derivadas de orden $k$ distintas es el de **combinaciones con repetición**: $\dbinom{n + k - 1}{k}$. Por ejemplo, un campo de 3 variables tiene $\binom{6}{4} = 15$ derivadas de 4.º orden distintas.
 
-**Teorema de Schwarz (versión con hipótesis más débiles):** si existen $F'_x$, $F'_y$ y $F''_{xy}$ en un entorno de $(x_0,y_0)$ y $F''_{xy}$ es **continua** en $(x_0,y_0)$, entonces existe $F''_{yx}(x_0,y_0)$ y es igual a $F''_{xy}(x_0,y_0)$. Vale para cualquier cantidad de variables, porque al derivar respecto de dos de ellas las demás quedan constantes.
+**Teorema de Schwarz (versión con hipótesis más débiles):** si existen $F'_ x$, $F'_ y$ y $F''_ {xy}$ en un entorno de $(x_0,y_0)$ y $F''_ {xy}$ es **continua** en $(x_0,y_0)$, entonces existe $F''_ {yx}(x_0,y_0)$ y es igual a $F''_ {xy}(x_0,y_0)$. Vale para cualquier cantidad de variables, porque al derivar respecto de dos de ellas las demás quedan constantes.
 
 **Ejemplo de derivadas cruzadas distintas:** $F = \dfrac{3x^3y - 2xy^3}{x^2 + y^2}$ con $F(0,0) = 0$.
 
 - Por definición, $F'_x(0,0) = F'_y(0,0) = 0$, y con la regla del cociente $F'_x(0,k) = -2k$ y $F'_y(h,0) = 3h$.
-- $F''_{xy}(0,0) = \lim\limits_{k\to0}\dfrac{F'_x(0,k) - 0}{k} = -2$ y $F''_{yx}(0,0) = \lim\limits_{h\to0}\dfrac{F'_y(h,0) - 0}{h} = 3$.
+- $F''_ {xy}(0,0) = \lim\limits_{k\to0}\dfrac{F'_ x(0,k) - 0}{k} = -2$ y $F''_ {yx}(0,0) = \lim\limits_{h\to0}\dfrac{F'_ y(h,0) - 0}{h} = 3$.
 
 Son distintas porque las derivadas segundas no son continuas en el origen (no se cumple Schwarz).
 
@@ -271,13 +271,13 @@ Son distintas porque las derivadas segundas no son continuas en el origen (no se
 
 | Concepto | Fórmula |
 |---|---|
-| Parcial | $f'_{x_i}(\vec A) = \lim\limits_{h\to0}\dfrac{f(\vec A + h\breve e_i) - f(\vec A)}{h}$ |
+| Parcial | $f'_ {x_i}(\vec A) = \lim\limits_{h\to0}\dfrac{f(\vec A + h\breve e_i) - f(\vec A)}{h}$ |
 | Respecto de $\vec r$ | $f'(\vec A, \vec r) = \lim\limits_{h\to0}\dfrac{f(\vec A + h\vec r) - f(\vec A)}{h} = g'(0)$, con $g(t) = f(\vec A + t\vec r)$ |
 | Versor | $\breve r = \vec r/\lVert\vec r\rVert$ |
 | Homogeneidad | $f'(\vec A, \lambda\vec r) = \lambda f'(\vec A, \vec r)$ |
 | Recta tangente | $\vec X = \vec g(t_0) + u\thinspace\vec g'(t_0)$ |
 | Plano normal | $\vec g'(t_0)\cdot(\vec X - \vec g(t_0)) = 0$ |
-| Schwarz | $f''_{xy} = f''_{yx}$ si son continuas |
+| Schwarz | $f''_ {xy} = f''_ {yx}$ si son continuas |
 | Laplaciano | $\Delta f = \sum f''_{x_ix_i}$ |
 
 ---

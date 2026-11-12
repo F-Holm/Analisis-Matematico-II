@@ -56,8 +56,8 @@ $$\frac{\mathop{\mathrm{sen}}u}{u} \to 1, \qquad \frac{1 - \cos u}{u^2} \to \fra
 - Respecto de un vector: $f'(\vec A,\vec r) = \lim\limits_{h\to0}\dfrac{f(\vec A + h\vec r) - f(\vec A)}{h} = g'(0)$, con $g(t) = f(\vec A + t\vec r)$.
 - Homogeneidad: $f'(\vec A,\lambda\vec r) = \lambda f'(\vec A,\vec r)$.
 - Recta tangente a una curva: $\vec X = \vec g(t_0) + u\thinspace\vec g'(t_0)$. Plano normal: $\vec g'(t_0)\cdot(\vec X - \vec g(t_0)) = 0$.
-- Schwarz: $f''_{xy} = f''_{yx}$ si las derivadas mixtas son continuas.
-- Laplaciano: $\Delta f = \sum f''_{x_ix_i}$. Ecuación de onda: $y''_{tt} = a^2y''_{xx}$.
+- Schwarz: $f''_ {xy} = f''_ {yx}$ si las derivadas mixtas son continuas.
+- Laplaciano: $\Delta f = \sum f''_ {x_ix_i}$. Ecuación de onda: $y''_ {tt} = a^2y''_ {xx}$.
 
 ---
 
@@ -68,7 +68,7 @@ $$\frac{\mathop{\mathrm{sen}}u}{u} \to 1, \qquad \frac{1 - \cos u}{u^2} \to \fra
 - Derivada máxima $= \lVert\nabla f\rVert$, en la dirección de $\nabla f$. Nula si $\breve r \perp \nabla f$.
 - Plano tangente: $z = z_0 + f'_x(x - x_0) + f'_y(y - y_0)$. Normal $(f'_x, f'_y, -1)$, o $\nabla F$, o $\vec X'_u\times\vec X'_v$.
 - Aproximación: $f(\vec A + \vec h) \approx f(\vec A) + \nabla f\cdot\vec h$.
-- Errores: $\varepsilon_w = \sum\lvert f'_{x_i}\rvert\thinspace\varepsilon_{x_i}$. Para $w = x^ay^b$: $\varepsilon_{\text{rel}} = \lvert a\rvert\varepsilon_{\text{rel}\thinspace x} + \lvert b\rvert\varepsilon_{\text{rel}\thinspace y}$.
+- Errores: $\varepsilon_w = \sum\lvert f'_ {x_i}\rvert\thinspace\varepsilon_{x_i}$. Para $w = x^ay^b$: $\varepsilon_{\text{rel}} = \lvert a\rvert\varepsilon_{\text{rel}\thinspace x} + \lvert b\rvert\varepsilon_{\text{rel}\thinspace y}$.
 
 ---
 
@@ -90,12 +90,12 @@ $$z'_x = -\frac{F'_x}{F'_z}, \qquad z'_y = -\frac{F'_y}{F'_z}$$
 $$P_2 = f + f'_xh + f'_yk + \tfrac12\left(f''_{xx}h^2 + 2f''_{xy}hk + f''_{yy}k^2\right)$$
 
 - Puntos críticos: $\nabla f = \vec 0$ (o $f$ no diferenciable).
-- Hessiano: $H = f''_{xx}f''_{yy} - (f''_{xy})^2$.
-  - $H > 0$ y $f''_{xx} > 0$ ⇒ mínimo; $H > 0$ y $f''_{xx} < 0$ ⇒ máximo.
+- Hessiano: $H = f''_ {xx}f''_ {yy} - (f''_ {xy})^2$.
+  - $H > 0$ y $f''_ {xx} > 0$ ⇒ mínimo; $H > 0$ y $f''_ {xx} < 0$ ⇒ máximo.
   - $H < 0$ ⇒ punto silla. $H = 0$ ⇒ no decide.
 - Lagrange: $\nabla f = \lambda\nabla g$, $g = 0$.
 - Extremos absolutos en un compacto: interior + frontera, y comparar valores.
-- Implícita en un punto estacionario: $f''_{ij} = -F''_{ij}/F'_z$.
+- Implícita en un punto estacionario: $f''_ {ij} = -F''_ {ij}/F'_ z$.
 
 ---
 

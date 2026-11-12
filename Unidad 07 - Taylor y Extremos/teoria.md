@@ -161,7 +161,7 @@ $$d^nF = \left(h\frac{\partial}{\partial x} + k\frac{\partial}{\partial y}\right
 **Deducción de Taylor en dos variables.** Se lleva a una variable con la recta de $P_0 = (a,b)$ a $P_1 = (a+h, b+k)$: $x = a + th$, $y = b + tk$, y $\varphi(t) = F(a + th, b + tk)$. Por la regla de la cadena:
 
 - $\varphi'(t) = F'_x h + F'_y k$, así que $\varphi'(0) = dF(a,b)$;
-- $\varphi''(0) = F''_{xx}h^2 + 2F''_{xy}hk + F''_{yy}k^2 = d^2F(a,b)$;
+- $\varphi''(0) = F''_ {xx}h^2 + 2F''_ {xy}hk + F''_ {yy}k^2 = d^2F(a,b)$;
 - en general $\varphi^{(n)}(0) = d^nF(a,b)$.
 
 Aplicando Mac Laurin a $\varphi$ y evaluando en $t = 1$:
@@ -202,8 +202,8 @@ $$2\thinspace\Delta F = F''_{xx}\left(h + \frac{F''_{xy}}{F''_{xx}}k\right)^2 + 
 
 **Paso 4 — casos:**
 
-- **$H(P_0) > 0$:** los dos términos tienen el signo de $F''_{xx}$ (y no se anulan a la vez, porque eso significaría $h = k = 0$). Si $F''_{xx} > 0$, $\Delta F > 0$: **mínimo**. Si $F''_{xx} < 0$: **máximo**.
-- **$H(P_0) < 0$:** con $k = 0$, $\Delta F$ tiene el signo de $F''_{xx}$; con $h + \frac{F''_{xy}}{F''_{xx}}k = 0$, $\Delta F$ tiene el signo de $H/F''_{xx}$, que es el opuesto. $\Delta F$ cambia de signo: **ensilladura**.
+- **$H(P_0) > 0$:** los dos términos tienen el signo de $F''_ {xx}$ (y no se anulan a la vez, porque eso significaría $h = k = 0$). Si $F''_ {xx} > 0$, $\Delta F > 0$: **mínimo**. Si $F''_ {xx} < 0$: **máximo**.
+- **$H(P_0) < 0$:** con $k = 0$, $\Delta F$ tiene el signo de $F''_ {xx}$; con $h + \frac{F''_ {xy}}{F''_ {xx}}k = 0$, $\Delta F$ tiene el signo de $H/F''_ {xx}$, que es el opuesto. $\Delta F$ cambia de signo: **ensilladura**.
 - **$H(P_0) = 0$:** con ejemplos se ve que puede pasar cualquier cosa. $\blacksquare$
 
 ---
@@ -267,12 +267,12 @@ La distancia mínima es $\sqrt{(2-4)^2 + 8} = \sqrt{12} = 2\sqrt3$.
 
 | Concepto | Fórmula |
 |---|---|
-| Taylor orden 2 | $f + f'_xh + f'_yk + \frac12(f''_{xx}h^2 + 2f''_{xy}hk + f''_{yy}k^2)$ |
+| Taylor orden 2 | $f + f'_ xh + f'_ yk + \frac12(f''_ {xx}h^2 + 2f''_ {xy}hk + f''_ {yy}k^2)$ |
 | Punto estacionario | $\nabla f = \vec 0$ |
-| Hessiano ($n=2$) | $H = f''_{xx}f''_{yy} - (f''_{xy})^2$ |
-| Mínimo / máximo / silla | $H>0, f''_{xx}>0$ / $H>0, f''_{xx}<0$ / $H<0$ |
+| Hessiano ($n=2$) | $H = f''_ {xx}f''_ {yy} - (f''_ {xy})^2$ |
+| Mínimo / máximo / silla | $H>0, f''_ {xx}>0$ / $H>0, f''_ {xx}<0$ / $H<0$ |
 | Lagrange | $\nabla f = \lambda\nabla g$, $g = 0$ |
-| Implícita en punto estacionario | $f''_{ij} = -F''_{ij}/F'_z$ |
+| Implícita en punto estacionario | $f''_ {ij} = -F''_ {ij}/F'_ z$ |
 
 ---
 

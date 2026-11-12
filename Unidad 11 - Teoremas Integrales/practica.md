@@ -21,7 +21,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 ### 01) Área con integrales de línea
 
-Sea $\bar f \in C^1 \ /\ \bar f(x,y) = (P(x,y),\ Q(x,y))$ con $Q'_x - P'_y \equiv k \ne 0$ ($k$ constante). Aplicando el teorema de Green demuestre que $\text{Área}(D) = \dfrac1k\displaystyle\oint_{\partial D^+}\bar f\cdot d\bar s$ con $\partial D$ frontera de $D \subset \Re^2$.
+Sea $\bar f \in C^1 \ /\ \bar f(x,y) = (P(x,y),\ Q(x,y))$ con $Q'_ x - P'_ y \equiv k \ne 0$ ($k$ constante). Aplicando el teorema de Green demuestre que $\text{Área}(D) = \dfrac1k\displaystyle\oint_{\partial D^+}\bar f\cdot d\bar s$ con $\partial D$ frontera de $D \subset \Re^2$.
 
 Proponga alguna fórmula para el cálculo del área de regiones planas mediante integrales de línea y aplíquela para calcular el área de las regiones definidas por:
 
@@ -171,7 +171,7 @@ $$\oint_{\partial D^+} = -\frac{64}{3} + \frac43 = -20 \ ✓$$
 
 ### 05) Circulación sobre un arco usando Green
 
-La región plana $D$ sombreada en la figura tiene como frontera el segmento $\overline{AB}$ y el arco de curva $C$ de ecuación $y = x^2 - x^4$. Dado $\bar f = (P,Q) \in C^1$ con matriz jacobiana $D\bar f(x,y) = \begin{pmatrix} P'_x(x,y) & 3x - 1 \cr 3x + 2 & Q'_y(x,y) \end{pmatrix}$, calcule la circulación de $\bar f$ desde $\bar A$ hasta $\bar B$ a lo largo de $C$ sabiendo que a lo largo del segmento resulta $\displaystyle\int_{\overline{AB}}\bar f\cdot d\bar s = 17$.
+La región plana $D$ sombreada en la figura tiene como frontera el segmento $\overline{AB}$ y el arco de curva $C$ de ecuación $y = x^2 - x^4$. Dado $\bar f = (P,Q) \in C^1$ con matriz jacobiana $D\bar f(x,y) = \begin{pmatrix} P'_ x(x,y) & 3x - 1 \cr 3x + 2 & Q'_ y(x,y) \end{pmatrix}$, calcule la circulación de $\bar f$ desde $\bar A$ hasta $\bar B$ a lo largo de $C$ sabiendo que a lo largo del segmento resulta $\displaystyle\int_{\overline{AB}}\bar f\cdot d\bar s = 17$.
 
 ![Región sombreada entre el eje x y la curva y = x² − x⁴, con A = (−1,0) y B = (1,0)](img/tp11-ej05-region.png)
 
@@ -267,7 +267,7 @@ $$\iint_D(h'(x) + 1)\thinspace dA = \int_{-3}^3\left[h(2) - h(-2)\right]dy + \te
 
 ### 08) Green entre dos curvas
 
-Sea $\bar f = (P,Q) \in C^1$ en $\Re^2 - \lbrace\bar 0\rbrace$ tal que $Q'_x - P'_y \equiv 5$, dadas las curvas $C_1$: $x^2 + 9y^2 = 36$ y $C_2$: $x^2 + y^2 = 4$, calcule $\displaystyle\oint_{C_2^+}\bar f\cdot d\bar s$ sabiendo que $\displaystyle\oint_{C_1^+}\bar f\cdot d\bar s = 7\pi$.
+Sea $\bar f = (P,Q) \in C^1$ en $\Re^2 - \lbrace\bar 0\rbrace$ tal que $Q'_ x - P'_ y \equiv 5$, dadas las curvas $C_1$: $x^2 + 9y^2 = 36$ y $C_2$: $x^2 + y^2 = 4$, calcule $\displaystyle\oint_{C_2^+}\bar f\cdot d\bar s$ sabiendo que $\displaystyle\oint_{C_1^+}\bar f\cdot d\bar s = 7\pi$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -374,15 +374,15 @@ $$9x^2 + 2y + y^2 = 0, \qquad 2x(1 + y) = 0$$
 - $x = 0$ ⇒ $y(2 + y) = 0$ ⇒ $(0,0)$ y $(0,-2)$.
 - $y = -1$ ⇒ $9x^2 - 1 = 0$ ⇒ $\left(\pm\frac13, -1\right)$.
 
-**Paso 4 — Hessiano.** $\phi''_{xx} = 18x$, $\phi''_{xy} = 2 + 2y$ y $\phi''_{yy} = 2x$.
+**Paso 4 — Hessiano.** $\phi''_ {xx} = 18x$, $\phi''_ {xy} = 2 + 2y$ y $\phi''_ {yy} = 2x$.
 
 - $(0,0)$: $H = 0 - 4 < 0$ ⇒ silla.
 - $(0,-2)$: $H = 0 - 4 < 0$ ⇒ silla.
-- $\left(\frac13, -1\right)$: $\phi''_{xx} = 6$, $\phi''_{xy} = 0$, $\phi''_{yy} = \frac23$ ⇒ $H = 4 > 0$ con $\phi''_{xx} > 0$ ⇒ **mínimo**:
+- $\left(\frac13, -1\right)$: $\phi''_ {xx} = 6$, $\phi''_ {xy} = 0$, $\phi''_ {yy} = \frac23$ ⇒ $H = 4 > 0$ con $\phi''_ {xx} > 0$ ⇒ **mínimo**:
 
 $$\phi = \frac19 - \frac23 + \frac13 + 2 = \frac{16}{9}$$
 
-- $\left(-\frac13, -1\right)$: $\phi''_{xx} = -6$, $\phi''_{yy} = -\frac23$ ⇒ $H = 4 > 0$ con $\phi''_{xx} < 0$ ⇒ **máximo**:
+- $\left(-\frac13, -1\right)$: $\phi''_ {xx} = -6$, $\phi''_ {yy} = -\frac23$ ⇒ $H = 4 > 0$ con $\phi''_ {xx} < 0$ ⇒ **máximo**:
 
 $$\phi = -\frac19 + \frac23 - \frac13 + 2 = \frac{20}{9}$$
 
@@ -1137,7 +1137,7 @@ $$F'_a = 18a^2 + 6b = 0, \qquad F'_b = 6a + 2b = 0 \Rightarrow b = -3a$$
 
 Reemplazando: $18a^2 - 18a = 0 \Rightarrow a = 0$ o $a = 1$. Los puntos son $(0,0)$ y $(1,-3)$.
 
-**Paso 3 — Hessiano.** $F''_{aa} = 36a$, $F''_{ab} = 6$ y $F''_{bb} = 2$.
+**Paso 3 — Hessiano.** $F''_ {aa} = 36a$, $F''_ {ab} = 6$ y $F''_ {bb} = 2$.
 
 - $(0,0)$: $H = 0 - 36 < 0$ ⇒ silla.
 - $(1,-3)$: $H = 72 - 36 = 36 > 0$ y $F''_{aa} = 36 > 0$ ⇒ **mínimo local**. El valor es $\Phi = 12\pi(6 - 18 + 9) = -36\pi$.

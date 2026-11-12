@@ -19,7 +19,7 @@ Para $\vec f = (P, Q, R)$:
 | Gradiente | $\nabla\phi = (\phi'_x, \phi'_y, \phi'_z)$ | vector |
 | Divergencia | $\mathop{\mathrm{div}}\vec f = \nabla\cdot\vec f = P'_x + Q'_y + R'_z$ | escalar |
 | Rotor | $\mathop{\mathrm{rot}}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ | vector |
-| Laplaciano | $\nabla^2\phi = \mathop{\mathrm{div}}(\nabla\phi) = \phi''_{xx} + \phi''_{yy} + \phi''_{zz}$ | escalar |
+| Laplaciano | $\nabla^2\phi = \mathop{\mathrm{div}}(\nabla\phi) = \phi''_ {xx} + \phi''_ {yy} + \phi''_ {zz}$ | escalar |
 
 El rotor se calcula con el "determinante":
 
@@ -63,7 +63,7 @@ $$\boxed{\oint_{\partial D^+}P\thinspace dx + Q\thinspace dy = \iint_D\left(Q'_x
 
 ### Aplicaciones
 
-- **Área con una integral de línea:** si $Q'_x - P'_y = 1$, entonces $A(D) = \oint_{\partial D^+}\vec f\cdot d\vec s$. Por ejemplo:
+- **Área con una integral de línea:** si $Q'_ x - P'_ y = 1$, entonces $A(D) = \oint_{\partial D^+}\vec f\cdot d\vec s$. Por ejemplo:
 
 $$A = \oint x\thinspace dy = -\oint y\thinspace dx = \frac12\oint(x\thinspace dy - y\thinspace dx)$$
 

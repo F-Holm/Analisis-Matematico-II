@@ -143,8 +143,8 @@ Parametrice las siguientes superficies:
 
 Sea $S$ una superficie uniforme respecto del plano $xy$, definida implícitamente mediante la ecuación $G(x,y,z) = 0$. Imponga hipótesis para $G$ de manera que $S$ sea suave; en ese caso, si la ecuación en forma explícita fuera $z = g(x,y)$ con $(x,y) \in D_{xy}$, demuestre que:
 
-- Para campo escalar: $\displaystyle\iint_S f\thinspace d\sigma = \iint_{D_{xy}}\left[f\thinspace\frac{\Vert\nabla G\Vert}{|G'_z|}\right]_{z = g(x,y)}dx\thinspace dy$.
-- Para campo vectorial: $\displaystyle\iint_S\bar f\cdot d\bar\sigma = \iint_{D_{xy}}\left[\frac{\bar f\cdot\nabla G}{|G'_z|}\right]_{z = g(x,y)}dx\thinspace dy$.
+- Para campo escalar: $\displaystyle\iint_S f\thinspace d\sigma = \iint_{D_{xy}}\left[f\thinspace\frac{\Vert\nabla G\Vert}{|G'_ z|}\right]_ {z = g(x,y)}dx\thinspace dy$.
+- Para campo vectorial: $\displaystyle\iint_S\bar f\cdot d\bar\sigma = \iint_{D_{xy}}\left[\frac{\bar f\cdot\nabla G}{|G'_ z|}\right]_ {z = g(x,y)}dx\thinspace dy$.
 
 Donde, en ambos casos, $D_{xy}$ se obtiene proyectando $S$ sobre el plano $xy$.
 
