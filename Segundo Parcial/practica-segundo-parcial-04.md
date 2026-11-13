@@ -24,7 +24,7 @@ Determine si $\vec f(x,y,z) = (yz,\ xz,\ xy + 2z)$ es un campo de gradientes y, 
 
 **Definición:** para $\vec f = (P,Q,R) \in C^1$,
 
-$$\mathop{\mathrm{rot}}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
+$$\mathop{\mathrm{rot}}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
 
 **Demostración.** Con $P = \phi'_x$, $Q = \phi'_y$, $R = \phi'_z$:
 

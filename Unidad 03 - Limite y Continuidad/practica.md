@@ -732,7 +732,7 @@ Para que $y^2 \ge 0$ hace falta $x \ge 1$, o $x = 0$. Pero $x = 0$ obliga a $y =
 
 ### 14) Continuidad de productos escalar y vectorial
 
-Sean $\vec f$ y $\vec g$ de $\Re^3$ en $\Re^3$ campos vectoriales continuos, demuestre que también son continuos los campos $h : \Re^3 \to \Re \ /\ h = \vec f\cdot\vec g$ y $\vec w : \Re^3 \to \Re \ /\ \vec w = \vec f \wedge \vec g$.
+Sean $\vec f$ y $\vec g$ de $\Re^3$ en $\Re^3$ campos vectoriales continuos, demuestre que también son continuos los campos $h : \Re^3 \to \Re \ /\ h = \vec f\cdot\vec g$ y $\vec w : \Re^3 \to \Re \ /\ \vec w = \vec f \times \vec g$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -750,7 +750,7 @@ Es suma de productos de campos escalares continuos ⇒ continuo.
 
 **Paso 3 — Producto vectorial.**
 
-$$\vec w = \vec f\wedge\vec g = \big(f_2g_3 - f_3g_2,\ \ f_3g_1 - f_1g_3,\ \ f_1g_2 - f_2g_1\big)$$
+$$\vec w = \vec f\times\vec g = \big(f_2g_3 - f_3g_2,\ \ f_3g_1 - f_1g_3,\ \ f_1g_2 - f_2g_1\big)$$
 
 Cada componente es una resta de productos de continuos ⇒ continua. Como sus tres componentes son continuas, $\vec w$ es continuo. $\blacksquare$
 

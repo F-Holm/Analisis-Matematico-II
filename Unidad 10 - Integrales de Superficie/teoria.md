@@ -16,7 +16,7 @@ Una superficie es $S: \vec X = \vec F(u,v)$ con $(u,v)\in D$.
 
 **Vector normal:**
 
-$$\vec N = \vec F'_u\wedge\vec F'_v$$
+$$\vec N = \vec F'_u\times\vec F'_v$$
 
 - $S$ es **suave** si $\vec F \in C^1$ y $\vec N \ne \vec 0$ en $D$. Entonces el **versor normal** $\breve n = \vec N/\lVert\vec N\rVert$ varía con continuidad.
 - $S$ es **suave a trozos** si se puede dividir en finitas partes suaves (por ejemplo, la frontera de un cubo).
@@ -53,7 +53,7 @@ Para obtener la **ecuación cartesiana** hay que **eliminar los parámetros**.
 
 ## 2. Área e integral de un campo escalar
 
-$$d\sigma = \lVert\vec F'_u\wedge\vec F'_v\rVert\thinspace du\thinspace dv, \qquad A(S) = \iint_S d\sigma, \qquad \iint_S f\thinspace d\sigma = \iint_D f(\vec F(u,v))\thinspace\lVert\vec N\rVert\thinspace du\thinspace dv$$
+$$d\sigma = \lVert\vec F'_u\times\vec F'_v\rVert\thinspace du\thinspace dv, \qquad A(S) = \iint_S d\sigma, \qquad \iint_S f\thinspace d\sigma = \iint_D f(\vec F(u,v))\thinspace\lVert\vec N\rVert\thinspace du\thinspace dv$$
 
 Estas integrales **no dependen de la orientación**.
 
@@ -69,9 +69,9 @@ En la segunda fórmula, la orientación es la de $\nabla G$. Análogamente se pr
 
 ## 3. Flujo de un campo vectorial
 
-$$\Phi = \iint_S\vec f\cdot d\vec\sigma = \iint_S\vec f\cdot\breve n\thinspace d\sigma = \pm\iint_D\vec f(\vec F(u,v))\cdot(\vec F'_u\wedge\vec F'_v)\thinspace du\thinspace dv$$
+$$\Phi = \iint_S\vec f\cdot d\vec\sigma = \iint_S\vec f\cdot\breve n\thinspace d\sigma = \pm\iint_D\vec f(\vec F(u,v))\cdot(\vec F'_u\times\vec F'_v)\thinspace du\thinspace dv$$
 
-- Se toma $+$ si $\vec F'_u\wedge\vec F'_v$ apunta en el sentido de la orientación pedida y $-$ si no.
+- Se toma $+$ si $\vec F'_u\times\vec F'_v$ apunta en el sentido de la orientación pedida y $-$ si no.
 - **Notar:** en la última integral **no** se divide por la norma, porque $\breve n\thinspace d\sigma = \vec N\thinspace du\thinspace dv$.
 - Mide "cuánto campo atraviesa" la superficie: sólo cuenta la componente **normal** $\vec f\cdot\breve n$.
 - **Cambia de signo** si se invierte la orientación.
@@ -154,7 +154,7 @@ $$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\thinspace d\sigma$$
 ## 6. Estrategia para los ejercicios
 
 1. **Parametrizar** la superficie. Si es un gráfico, usar $(x, y, f(x,y))$; si no, cilíndricas o esféricas.
-2. Calcular $\vec N = \vec F'_u\wedge\vec F'_v$ y **chequear su sentido** contra la orientación pedida (por ejemplo, "hacia $z^+$" pide $N_z > 0$). Si no coincide, cambiar el signo.
+2. Calcular $\vec N = \vec F'_u\times\vec F'_v$ y **chequear su sentido** contra la orientación pedida (por ejemplo, "hacia $z^+$" pide $N_z > 0$). Si no coincide, cambiar el signo.
 3. Determinar la **región $D$** de los parámetros: es la proyección de $S$.
 4. Calcular:
    - **área / campo escalar:** $\iint f\thinspace\lVert\vec N\rVert$;
@@ -167,7 +167,7 @@ $$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\thinspace d\sigma$$
 
 | Concepto | Fórmula |
 |---|---|
-| Normal | $\vec N = \vec F'_u\wedge\vec F'_v$ |
+| Normal | $\vec N = \vec F'_u\times\vec F'_v$ |
 | Normal de un gráfico | $(-f'_x, -f'_y, 1)$ |
 | Elemento de área | $d\sigma = \lVert\vec N\rVert\thinspace du\thinspace dv$ |
 | Área | $\iint_D\lVert\vec N\rVert\thinspace du\thinspace dv$ |

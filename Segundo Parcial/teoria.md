@@ -478,7 +478,7 @@ Teoría completa de la unidad: [Unidad 10 - Integrales de Superficie/teoria.md](
 
 ### Teoría
 
-**Superficie paramétrica:** $\vec\Sigma: D \subset \mathbb{R}^2 \to \mathbb{R}^3$, con vector normal $\vec n = \vec\Sigma'_u\wedge\vec\Sigma'_v$. Es **suave** si $\vec n \ne \vec 0$ y **orientable** si se puede elegir una normal unitaria que varíe con continuidad.
+**Superficie paramétrica:** $\vec\Sigma: D \subset \mathbb{R}^2 \to \mathbb{R}^3$, con vector normal $\vec n = \vec\Sigma'_u\times\vec\Sigma'_v$. Es **suave** si $\vec n \ne \vec 0$ y **orientable** si se puede elegir una normal unitaria que varíe con continuidad.
 
 | Superficie | Parametrización | Normal |
 |---|---|---|

@@ -626,9 +626,9 @@ $$\frac{f(h,k) - 0 - 0}{\sqrt{h^2 + k^2}} = \underbrace{\frac{k}{\sqrt{h^2 + k^2
 |---|---|
 | Plano tangente a $z = f(x,y)$ | $z = f(\vec A) + f'_x(\vec A)(x - x_0) + f'_y(\vec A)(y - y_0)$ |
 | Plano tangente a $F(x,y,z) = 0$ | $\nabla F(P_0)\cdot(\vec X - P_0) = 0$ |
-| Plano tangente a una superficie paramétrica $\vec\Sigma(u,v)$ | normal $\vec\Sigma'_u\wedge\vec\Sigma'_v$ |
+| Plano tangente a una superficie paramétrica $\vec\Sigma(u,v)$ | normal $\vec\Sigma'_u\times\vec\Sigma'_v$ |
 | Recta normal a una superficie | $\vec X = P_0 + \lambda\thinspace \vec n$ |
-| Recta tangente a la intersección $F = 0$, $G = 0$ | dirección $\nabla F(P_0)\wedge\nabla G(P_0)$ |
+| Recta tangente a la intersección $F = 0$, $G = 0$ | dirección $\nabla F(P_0)\times\nabla G(P_0)$ |
 
 **Idea clave.** El gradiente es perpendicular a los conjuntos de nivel. Por eso $\nabla F(P_0)$ es la normal a la superficie $F = 0$, y una curva contenida en dos superficies tiene tangente perpendicular a las dos normales: su producto vectorial.
 
@@ -690,7 +690,7 @@ $$f(3{,}94;\ 2{,}04) \approx \frac{26 - 7{,}88 - 2{,}04}{4} = 4{,}02$$
 
 1. Completar el punto si falta una coordenada, y verificarlo en las dos superficies.
 2. Calcular $\nabla F$ y $\nabla G$ en el punto.
-3. Dirección: $\vec d = \nabla F\wedge\nabla G$.
+3. Dirección: $\vec d = \nabla F\times\nabla G$.
 4. Armar la recta y responder lo pedido.
 
 **Ejemplo** ([Simulacro P2](simulacro-primer-parcial.md)).
@@ -733,7 +733,7 @@ Otros iguales: [Repaso R1](repaso-primer-parcial.md) (intersección con un plano
 
 *Paso 3 — Tangente a $C$.* Con $\nabla F_1 = (2x, 1, 1) = (2, 1, 1)$ y $\nabla F_2 = (1, 0, 1)$:
 
-$$\vec d = (2, 1, 1)\wedge(1, 0, 1) = (1,\ -1,\ -1)$$
+$$\vec d = (2, 1, 1)\times(1, 0, 1) = (1,\ -1,\ -1)$$
 
 **Resultado:** $\vec d = \vec n$, son paralelos, y $C$ es normal a $S$ en $(1,-1,2)$. $\blacksquare$
 

@@ -377,7 +377,7 @@ Sea S la porción de superficie $z^2 = x^2 + y^2$ con $-2 \le z \le -1$ calcular
 
 **Paso 2 — Normal.**
 
-$$\vec X'_\rho\wedge\vec X'_\theta = (\cos\theta,\ \mathop{\mathrm{sen}}\theta,\ -1)\wedge(-\rho\mathop{\mathrm{sen}}\theta,\ \rho\cos\theta,\ 0) = (\rho\cos\theta,\ \rho\mathop{\mathrm{sen}}\theta,\ \rho)$$
+$$\vec X'_\rho\times\vec X'_\theta = (\cos\theta,\ \mathop{\mathrm{sen}}\theta,\ -1)\times(-\rho\mathop{\mathrm{sen}}\theta,\ \rho\cos\theta,\ 0) = (\rho\cos\theta,\ \rho\mathop{\mathrm{sen}}\theta,\ \rho)$$
 
 Tiene tercera componente positiva: elegimos la orientación con $\breve n\cdot\breve k > 0$.
 

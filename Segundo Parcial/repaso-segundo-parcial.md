@@ -29,7 +29,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 **Paso 1 — Parametrización** de la mitad $z \ge 0$: $\vec T(u,v) = (u,\ v,\ \sqrt{5 - u^2})$.
 
-$$\vec T'_u\wedge\vec T'_v = \left(\frac{u}{\sqrt{5 - u^2}},\ 0,\ 1\right), \qquad \lVert\vec T'_u\wedge\vec T'_v\rVert = \sqrt{\frac{u^2}{5 - u^2} + 1} = \frac{\sqrt5}{\sqrt{5 - u^2}}$$
+$$\vec T'_u\times\vec T'_v = \left(\frac{u}{\sqrt{5 - u^2}},\ 0,\ 1\right), \qquad \lVert\vec T'_u\times\vec T'_v\rVert = \sqrt{\frac{u^2}{5 - u^2} + 1} = \frac{\sqrt5}{\sqrt{5 - u^2}}$$
 
 **Paso 2 — Región.** $0 \le v \le u \le 1$.
 
@@ -170,7 +170,7 @@ Dado $\vec f(x,y,z) = (x^2,\ yz,\ 2xz)$, **calcule** el flujo de $\vec f$ a trav
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Parametrización.** $\vec T(u,v) = (u,\ v,\ 16 - u^2)$, con $\vec T'_u\wedge\vec T'_v = (2u,\ 0,\ 1)$ (hacia arriba).
+**Paso 1 — Parametrización.** $\vec T(u,v) = (u,\ v,\ 16 - u^2)$, con $\vec T'_u\times\vec T'_v = (2u,\ 0,\ 1)$ (hacia arriba).
 
 **Paso 2 — Región.** 1.er octante e $y \le x$, con $z \ge 0 \Rightarrow u \le 4$: $0 \le v \le u \le 4$.
 

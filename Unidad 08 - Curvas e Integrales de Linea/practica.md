@@ -286,17 +286,17 @@ Se define el ***versor tangente principal*** $T \doteq d\bar G/ds$; aplicando la
 
 $$T = \frac{d\bar g}{dt}\frac{dt}{ds} = \bar g'\thinspace\frac{1}{s'} = \frac{\bar g'}{\Vert\bar g'\Vert} \qquad (1)$$
 
-versor orientado según $\bar g'$ (sentido de los arcos crecientes). Suponiendo existente y no nula la $dT/ds$, esta derivada es ortogonal a $T$ ($\Vert T\Vert$ constante) y quedan definidos el ***versor normal principal*** $N \doteq \dfrac{dT/ds}{\Vert dT/ds\Vert}$ y el ***versor binormal*** $B \doteq T \wedge N$.
+versor orientado según $\bar g'$ (sentido de los arcos crecientes). Suponiendo existente y no nula la $dT/ds$, esta derivada es ortogonal a $T$ ($\Vert T\Vert$ constante) y quedan definidos el ***versor normal principal*** $N \doteq \dfrac{dT/ds}{\Vert dT/ds\Vert}$ y el ***versor binormal*** $B \doteq T \times N$.
 
-Así como (1) permite hallar $T$ sin obtener una ecuación normal de la curva, denotando $s_o = \lambda(t_o)$ y suponiendo existentes $\bar g'_o = \bar g'(t_o)$, $\bar g''_o = \bar g''(t_o)$, $\bar g'''_o = \bar g'''(t_o)$, es posible demostrar que en todo $\bar X_o = \bar g(t_o) \in C$, si $\bar g'_o \wedge \bar g''_o \ne \bar 0$ resultan:
+Así como (1) permite hallar $T$ sin obtener una ecuación normal de la curva, denotando $s_o = \lambda(t_o)$ y suponiendo existentes $\bar g'_o = \bar g'(t_o)$, $\bar g''_o = \bar g''(t_o)$, $\bar g'''_o = \bar g'''(t_o)$, es posible demostrar que en todo $\bar X_o = \bar g(t_o) \in C$, si $\bar g'_o \times \bar g''_o \ne \bar 0$ resultan:
 
-$$\boxed{T_o = \frac{\bar g'_o}{\Vert\bar g'_o\Vert}, \quad B_o = \frac{\bar g'_o \wedge \bar g''_o}{\Vert\bar g'_o \wedge \bar g''_o\Vert}, \quad N_o = B_o \wedge T_o.}$$
+$$\boxed{T_o = \frac{\bar g'_o}{\Vert\bar g'_o\Vert}, \quad B_o = \frac{\bar g'_o \times \bar g''_o}{\Vert\bar g'_o \times \bar g''_o\Vert}, \quad N_o = B_o \times T_o.}$$
 
 El ***triedro intrínseco*** de $C$ en $\bar X_o$ está formado por los planos ***normal***, ***osculador*** y ***rectificante*** que son perpendiculares en dicho punto a $T_o$, $B_o$ y $N_o$ respectivamente.
 
-La ***curvatura de flexión*** de $C$ en $\bar X_o$ es: $\boxed{cf_o \doteq \left\Vert\frac{dT}{ds}(s_o)\right\Vert = \frac{\Vert\bar g'_o \wedge \bar g''_o\Vert}{\Vert\bar g'_o\Vert^3}}$
+La ***curvatura de flexión*** de $C$ en $\bar X_o$ es: $\boxed{cf_o \doteq \left\Vert\frac{dT}{ds}(s_o)\right\Vert = \frac{\Vert\bar g'_o \times \bar g''_o\Vert}{\Vert\bar g'_o\Vert^3}}$
 
-La ***curvatura de torsión*** de $C$ en $\bar X_o$ es: $\boxed{ct_o \doteq \left\Vert\frac{dB}{ds}(s_o)\right\Vert = -\frac{(\bar g'_o \wedge \bar g''_o)\cdot\bar g'''_o}{\Vert\bar g'_o \wedge \bar g''_o\Vert^2}}$
+La ***curvatura de torsión*** de $C$ en $\bar X_o$ es: $\boxed{ct_o \doteq \left\Vert\frac{dB}{ds}(s_o)\right\Vert = -\frac{(\bar g'_o \times \bar g''_o)\cdot\bar g'''_o}{\Vert\bar g'_o \times \bar g''_o\Vert^2}}$
 
 - a) Halle la ecuación normal de la curva de ecuación $\bar X = (2\cos(t),\ 2\mathop{\mathrm{sen}}(t),\ 4t)$ con $t \in [0, 2\pi]$, definiendo como origen de abscisa curvilínea el punto $(0,2,2\pi)$.
 - b) Halle la ecuación cartesiana del plano osculador de la curva $C$ intersección del cilindro parabólico de ecuación $z = x^2$ con el plano de ecuación $z + x = 2$ en el punto $(1,1,1)$; y calcule las curvaturas de flexión y de torsión de $C$ en dicho punto.
@@ -329,17 +329,17 @@ $$\bar X = \left(2\cos\negthinspace\left(\frac{\sqrt5\pi + s}{2\sqrt5}\right),\ 
 
 **b)** $z = x^2$ y $z = 2 - x$ ⇒ $x^2 + x - 2 = 0 \Rightarrow x = 1$ o $x = -2$. Por el punto $(1,1,1)$, la curva es la **recta** $x = 1$, $z = 1$, con $y$ libre: $\bar g(t) = (1, t, 1)$.
 
-Entonces $\bar g'' = \bar 0$ y $\bar g'\wedge\bar g'' = \bar 0$:
+Entonces $\bar g'' = \bar 0$ y $\bar g'\times\bar g'' = \bar 0$:
 
 - la curvatura de flexión es $0$;
 - $B$, $N$, el plano osculador y la torsión **no quedan definidos**: cualquier plano que contenga a la recta "oscula".
 
-**c)** Una recta es $\bar g(t) = \bar A + t\thinspace\bar v$. Entonces $\bar g' = \bar v$ y $\bar g'' = \bar 0$ ⇒ $\bar g'\wedge\bar g'' = \bar 0$ ⇒ $cf = 0$ en todo punto. Esto vale para cualquier parametrización: $T$ es constante, así que $dT/ds = \bar 0$.
+**c)** Una recta es $\bar g(t) = \bar A + t\thinspace\bar v$. Entonces $\bar g' = \bar v$ y $\bar g'' = \bar 0$ ⇒ $\bar g'\times\bar g'' = \bar 0$ ⇒ $cf = 0$ en todo punto. Esto vale para cualquier parametrización: $T$ es constante, así que $dT/ds = \bar 0$.
 
 **d)** Circunferencia de radio $R$ (en un plano adecuado): $\bar g = (R\cos t,\ R\mathop{\mathrm{sen}}t,\ 0)$.
 
 - $\bar g' = (-R\mathop{\mathrm{sen}}t,\ R\cos t,\ 0)$ y $\bar g'' = (-R\cos t,\ -R\mathop{\mathrm{sen}}t,\ 0)$.
-- $\bar g'\wedge\bar g'' = (0, 0, R^2)$ y $\lVert\bar g'\rVert = R$.
+- $\bar g'\times\bar g'' = (0, 0, R^2)$ y $\lVert\bar g'\rVert = R$.
 
 $$cf = \frac{R^2}{R^3} = \frac1R$$
 
@@ -352,14 +352,14 @@ Es constante: igual en todos los puntos.
 - $\bar g' = (2, 1, 3t^2) \to (2, 1, 12)$.
 - $\bar g'' = (0, 0, 6t) \to (0, 0, 12)$.
 
-$$\bar g'\wedge\bar g'' = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 2 & 1 & 12 \cr 0 & 0 & 12 \end{vmatrix} = (12,\ -24,\ 0)$$
+$$\bar g'\times\bar g'' = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 2 & 1 & 12 \cr 0 & 0 & 12 \end{vmatrix} = (12,\ -24,\ 0)$$
 
-*Curvatura:* $\lVert\bar g'\rVert = \sqrt{149}$ y $\lVert\bar g'\wedge\bar g''\rVert = \sqrt{720} = 12\sqrt5$ ⇒ $cf = \dfrac{12\sqrt5}{149^{3/2}}$ y $\rho = \dfrac{1}{cf} = \dfrac{149^{3/2}}{12\sqrt5}$.
+*Curvatura:* $\lVert\bar g'\rVert = \sqrt{149}$ y $\lVert\bar g'\times\bar g''\rVert = \sqrt{720} = 12\sqrt5$ ⇒ $cf = \dfrac{12\sqrt5}{149^{3/2}}$ y $\rho = \dfrac{1}{cf} = \dfrac{149^{3/2}}{12\sqrt5}$.
 
 *Versores:*
 
 - $B = \dfrac{(1, -2, 0)}{\sqrt5}$ y $T = \dfrac{(2, 1, 12)}{\sqrt{149}}$.
-- $N = B\wedge T = \dfrac{(1,-2,0)\wedge(2,1,12)}{\sqrt5\sqrt{149}} = \dfrac{(-24,\ -12,\ 5)}{\sqrt{745}}$.
+- $N = B\times T = \dfrac{(1,-2,0)\times(2,1,12)}{\sqrt5\sqrt{149}} = \dfrac{(-24,\ -12,\ 5)}{\sqrt{745}}$.
 
 *Centro de curvatura:*
 

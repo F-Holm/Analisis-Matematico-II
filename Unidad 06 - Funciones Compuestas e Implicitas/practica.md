@@ -619,7 +619,7 @@ $$f'(\bar A, \breve r) = \nabla f(\bar A)\cdot\breve r = \frac{\nabla f(\bar A)\
 
 Siendo $C$ la curva intersección de las superficies: $x^2 - y^2 = 12$ y $z = x + y^2$, analice si la recta tangente a $C$ en $(4,2,z_0)$ corta a la superficie cilíndrica de ecuación $y = x^2$.<sup>(#)</sup>
 
-<sup>(#)</sup> Nota: Si $F, G \in C^1$ en un entorno de $\bar A \in \Re^3$, $F(\bar A) = 0$, $G(\bar A) = 0$ y el vector $\bar d = \nabla F(\bar A) \wedge \nabla G(\bar A) \ne \bar 0$, la intersección de las superficies dadas implícitamente por $F(x,y,z) = 0$ y $G(x,y,z) = 0$ define una curva regular en un entorno de $\bar A$ cuya recta tangente en este punto está dirigida por $\bar d$.
+<sup>(#)</sup> Nota: Si $F, G \in C^1$ en un entorno de $\bar A \in \Re^3$, $F(\bar A) = 0$, $G(\bar A) = 0$ y el vector $\bar d = \nabla F(\bar A) \times \nabla G(\bar A) \ne \bar 0$, la intersección de las superficies dadas implícitamente por $F(x,y,z) = 0$ y $G(x,y,z) = 0$ define una curva regular en un entorno de $\bar A$ cuya recta tangente en este punto está dirigida por $\bar d$.
 
 <details>
 <summary><b>Solución</b></summary>

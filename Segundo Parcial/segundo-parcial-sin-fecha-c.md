@@ -50,7 +50,7 @@ Calcular la circulación del campo vectorial $\bar f: R^3 \to R^3$ tal que $\bar
 
 **Paso 2 — Superficie.** Se toma la porción del plano $z = 2 - x$ encerrada por la curva. Reemplazando en el elipsoide: $x^2 + (2 - x)^2 + 2y^2 = 4(2 - x) \iff 2x^2 + 2y^2 = 4 \iff x^2 + y^2 = 2$. La proyección sobre $xy$ es el disco $D$ de radio $\sqrt2$.
 
-**Paso 3 — Normal.** $\vec T(x,y) = (x,\ y,\ 2 - x)$: $\vec T'_x\wedge\vec T'_y = (1,0,-1)\wedge(0,1,0) = (1, 0, 1)$ (hacia arriba).
+**Paso 3 — Normal.** $\vec T(x,y) = (x,\ y,\ 2 - x)$: $\vec T'_x\times\vec T'_y = (1,0,-1)\times(0,1,0) = (1, 0, 1)$ (hacia arriba).
 
 **Paso 4 — Stokes.**
 

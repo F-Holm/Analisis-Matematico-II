@@ -23,7 +23,7 @@ Defina divergencia y rotor de un campo vectorial. Demuestre que si $\vec g \in C
 **Definiciones:** para $\vec f = (P,Q,R) \in C^1$,
 
 - $\mathop{\mathrm{div}}\vec f = \nabla\cdot\vec f = P'_x + Q'_y + R'_z$;
-- $\mathop{\mathrm{rot}}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$.
+- $\mathop{\mathrm{rot}}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$.
 
 **Demostración.** Con $\vec g = (P,Q,R)$:
 

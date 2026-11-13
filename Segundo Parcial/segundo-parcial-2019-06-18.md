@@ -54,7 +54,7 @@ $$\oint_{\partial S}\vec f\cdot d\vec s = \iint_S\mathop{\mathrm{rot}}\vec f\cdo
 
 **Paso 1 — Orientación.** Con $A = (4,0,0)$, $B = (0,0,4)$ y $C = (0,4,0)$:
 
-$$(B - A)\wedge(C - B) = (-4, 0, 4)\wedge(0, 4, -4) = (-16,\ -16,\ -16)$$
+$$(B - A)\times(C - B) = (-4, 0, 4)\times(0, 4, -4) = (-16,\ -16,\ -16)$$
 
 El recorrido indicado corresponde a la normal $\breve n = -\dfrac{(1,1,1)}{\sqrt3}$, que apunta "hacia abajo", hacia el origen.
 
@@ -90,7 +90,7 @@ Calcule la masa de la superficie $\Sigma$ definida por $y = \sqrt{x^2 + z^2}$, $
 
 **Paso 2 — Parametrización** (cono de eje $y$): $\vec T(u,v) = (u,\ \sqrt{u^2+v^2},\ v)$, con $D: 1 \le u^2 + v^2 \le 9$.
 
-$$\lVert\vec T'_u\wedge\vec T'_v\rVert = \sqrt{1 + \frac{u^2}{u^2+v^2} + \frac{v^2}{u^2+v^2}} = \sqrt2$$
+$$\lVert\vec T'_u\times\vec T'_v\rVert = \sqrt{1 + \frac{u^2}{u^2+v^2} + \frac{v^2}{u^2+v^2}} = \sqrt2$$
 
 **Paso 3 — Masa.**
 

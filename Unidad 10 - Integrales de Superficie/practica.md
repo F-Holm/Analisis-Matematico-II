@@ -6,12 +6,12 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 
 > **Nomenclatura y consideraciones básicas:**
 >
-> - Una superficie $S$ de ecuación $\bar X = \bar F(u,v)$ con $(u,v) \in D$ es ***suave*** según esta representación, si $\bar F \in C^1(D)$ y el producto vectorial $\bar F'_u \wedge \bar F'_v \ne \bar 0\ \ \forall(u,v) \in D$.
+> - Una superficie $S$ de ecuación $\bar X = \bar F(u,v)$ con $(u,v) \in D$ es ***suave*** según esta representación, si $\bar F \in C^1(D)$ y el producto vectorial $\bar F'_u \times \bar F'_v \ne \bar 0\ \ \forall(u,v) \in D$.
 >
->   En este caso queda definido el versor normal $\breve n \doteq \dfrac{\bar F'_u \wedge \bar F'_v}{\Vert\bar F'_u \wedge \bar F'_v\Vert}$ que varía con continuidad sobre $S$; a su vez, si la superficie es orientable queda orientada mediante este versor.
+>   En este caso queda definido el versor normal $\breve n \doteq \dfrac{\bar F'_u \times \bar F'_v}{\Vert\bar F'_u \times \bar F'_v\Vert}$ que varía con continuidad sobre $S$; a su vez, si la superficie es orientable queda orientada mediante este versor.
 >
->   La superficie es ***suave a trozos*** cuando $D$ puede ser dividido en cantidad finita de partes en cada una de las cuales (o en abierto que las contenga) $\bar F \in C^1$ y $\bar F'_u \wedge \bar F'_v \ne \bar 0$.
-> - $\iint_S f\thinspace d\sigma$ simboliza la integral de superficie del campo escalar $f$ sobre $S$, donde $d\sigma = \Vert\bar F'_u \wedge \bar F'_v\Vert\thinspace du\thinspace dv$ es el ***diferencial de área de superficie***.
+>   La superficie es ***suave a trozos*** cuando $D$ puede ser dividido en cantidad finita de partes en cada una de las cuales (o en abierto que las contenga) $\bar F \in C^1$ y $\bar F'_u \times \bar F'_v \ne \bar 0$.
+> - $\iint_S f\thinspace d\sigma$ simboliza la integral de superficie del campo escalar $f$ sobre $S$, donde $d\sigma = \Vert\bar F'_u \times \bar F'_v\Vert\thinspace du\thinspace dv$ es el ***diferencial de área de superficie***.
 > - $\iint_S\bar f\cdot d\bar\sigma \equiv \iint_S\bar f\cdot\breve n\thinspace d\sigma$ simboliza el ***flujo*** o integral de superficie del campo vectorial $\bar f$ a través de $S$, donde $d\bar\sigma \doteq \breve n\thinspace d\sigma$.
 >
 > **Observación**: Si $S$ es suave y simple según dos representaciones $\bar F_1$ y $\bar F_2$, la $\iint_S f\thinspace d\sigma$ tiene el mismo resultado usando cualquiera de ellas; mientras que se observará un cambio de signo en el resultado de $\iint_S\bar f\cdot\breve n\thinspace d\sigma$ cuando $\bar F_1$ y $\bar F_2$ orienten a $S$ en sentidos opuestos.
@@ -158,11 +158,11 @@ Donde, en ambos casos, $D_{xy}$ se obtiene proyectando $S$ sobre el plano $xy$.
 
 **Paso 1 — Parametrizar.** $\bar F(x,y) = (x,\ y,\ g(x,y))$, de modo que:
 
-$$\bar F'_x\wedge\bar F'_y = (-g'_x,\ -g'_y,\ 1)$$
+$$\bar F'_x\times\bar F'_y = (-g'_x,\ -g'_y,\ 1)$$
 
 **Paso 2 — Derivadas implícitas.** $g'_x = -\dfrac{G'_x}{G'_z}$ y $g'_y = -\dfrac{G'_y}{G'_z}$. Entonces:
 
-$$\bar F'_x\wedge\bar F'_y = \left(\frac{G'_x}{G'_z},\ \frac{G'_y}{G'_z},\ 1\right) = \frac{\nabla G}{G'_z}$$
+$$\bar F'_x\times\bar F'_y = \left(\frac{G'_x}{G'_z},\ \frac{G'_y}{G'_z},\ 1\right) = \frac{\nabla G}{G'_z}$$
 
 **Paso 3 — Escalar.** $d\sigma = \left\lVert\dfrac{\nabla G}{G'_z}\right\rVert dx\thinspace dy = \dfrac{\lVert\nabla G\rVert}{|G'_z|}dx\thinspace dy$, y queda la primera fórmula.
 
@@ -360,7 +360,7 @@ Calcule el flujo de $\bar f$ a través de $S$, indicando gráficamente la orient
 - a) $\bar f(x,y,z) = (x^2 + yz,\ xz,\ 2z^2 - 2xz)$ a través de la superficie frontera del cuerpo definido por $1 \le z \le 5 - x^2 - y^2$.
 - b) $\bar f(x,y,z) = (x,\ y,\ z)$ a través de la superficie esférica de ecuación $x^2 + y^2 + z^2 = 4$.
 - c) $\bar f(x,y,z) = (xy,\ zx,\ y - xz^2)$ a través del trozo de superficie cilíndrica de ecuación $y = x^3$ con $0 \le z \le x + y$, $x + y \le 10$.
-- d) $\bar f(x,y,z) = (y,\ x,\ y) \wedge (x,\ z,\ y)$ a través del trozo de plano tangente a la superficie de ecuación $z = x^2 - yx^3$ en el punto $(1,2,-1)$ con $(x,y) \in [0,2]\times[1,3]$.
+- d) $\bar f(x,y,z) = (y,\ x,\ y) \times (x,\ z,\ y)$ a través del trozo de plano tangente a la superficie de ecuación $z = x^2 - yx^3$ en el punto $(1,2,-1)$ con $(x,y) \in [0,2]\times[1,3]$.
 - e) $\bar f(x,y,z) = (xy,\ z,\ y)$ a través de la superficie frontera del cuerpo limitado por $x^2 + y^2 \le 4$, $x + y + z \le 18$, en el 1° octante. Nota: en este caso, como en muchos otros, el cálculo de flujo puede realizarse en forma más sencilla aplicando el teorema de la divergencia (ver T.P. siguiente).
 
 <sup>(&)</sup> Cuando la superficie es cerrada (frontera de un cuerpo $H$), se la orienta (por convención) con versor normal saliente de $H$. Entonces, el flujo positivo es "saliente" de $H$ y el negativo es "entrante" a $H$.
@@ -399,7 +399,7 @@ Es constante ⇒ $\Phi = 2\cdot A = 2\cdot4\pi\cdot4 = 32\pi$.
 
 **c)**
 
-*Parametrización:* $(x,\ x^3,\ z)$, con $\vec N = \bar X'_x\wedge\bar X'_z = (1, 3x^2, 0)\wedge(0,0,1) = (3x^2,\ -1,\ 0)$. Su componente $y$ es negativa: apunta **desde $S$ hacia el plano $xz$**, que es la orientación de la respuesta.
+*Parametrización:* $(x,\ x^3,\ z)$, con $\vec N = \bar X'_x\times\bar X'_z = (1, 3x^2, 0)\times(0,0,1) = (3x^2,\ -1,\ 0)$. Su componente $y$ es negativa: apunta **desde $S$ hacia el plano $xz$**, que es la orientación de la respuesta.
 
 *Región:* $0 \le z \le x + x^3$, lo que exige $x \ge 0$, y $x + x^3 \le 10 \Rightarrow x \le 2$.
 
@@ -413,7 +413,7 @@ $$= 80 + \frac{1536}{5} - 2 - \frac{32}{3} = \frac{5618}{15} \approx 374{,}53$$
 
 *Campo:*
 
-$$\bar f = (y, x, y)\wedge(x, z, y) = (xy - yz,\ xy - y^2,\ yz - x^2)$$
+$$\bar f = (y, x, y)\times(x, z, y) = (xy - yz,\ xy - y^2,\ yz - x^2)$$
 
 *Plano tangente* a $z = x^2 - yx^3$ en $(1,2,-1)$: $z'_x = 2x - 3yx^2 = -4$ y $z'_y = -x^3 = -1$, así que:
 
@@ -475,7 +475,7 @@ Sea $\bar f$ continuo tal que $\bar f(x,y,z) = (x - y,\ x - z,\ g(x,y,z))$, calc
 
 **Paso 1 — Parametrización.** $(y^2,\ y,\ z)$, con:
 
-$$\vec N = \bar X'_y\wedge\bar X'_z = (2y, 1, 0)\wedge(0, 0, 1) = (1,\ -2y,\ 0)$$
+$$\vec N = \bar X'_y\times\bar X'_z = (2y, 1, 0)\times(0, 0, 1) = (1,\ -2y,\ 0)$$
 
 Su componente $y$ es negativa: apunta desde $S$ hacia el plano $xz$.
 
@@ -783,7 +783,7 @@ $\bar F(x,y,z) = y\thinspace i + x\thinspace j + 2z\thinspace k$, a través de l
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Normal.** Con la parametrización $(x, x^2, z)$: $\bar X'_x\wedge\bar X'_z = (2x, -1, 0)$. Su componente $y$ es negativa, así que para la orientación pedida usamos $\vec N = (-2x,\ 1,\ 0)$.
+**Paso 1 — Normal.** Con la parametrización $(x, x^2, z)$: $\bar X'_x\times\bar X'_z = (2x, -1, 0)$. Su componente $y$ es negativa, así que para la orientación pedida usamos $\vec N = (-2x,\ 1,\ 0)$.
 
 **Paso 2 — Integrando.** $\bar F\cdot\vec N = -2x\thinspace y + x = x - 2x^3$.
 

@@ -222,7 +222,7 @@ Si la curva es cerrada, la integral es 0. Un campo es **conservativo** si su int
 
 **Condición necesaria (demostración).** Si $\vec F = (P, Q) = \nabla U$, con $P, Q, P'_ y, Q'_ x$ continuas en un abierto conexo, entonces $U''_ {xy} = P'_ y$ y $U''_ {yx} = Q'_ x$; por Schwarz son iguales: $P'_ y = Q'_ x$. **No es suficiente**: $\left(\frac{-y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$ la cumple y tiene circulación $2\pi$ sobre la circunferencia unitaria. No es conservativo en $\mathbb{R}^2 - \lbrace\vec 0\rbrace$, pero sí en cualquier subconjunto simplemente conexo que no contenga al origen.
 
-**Condición necesaria y suficiente (dominios convexos).** Si $P, Q, P'_y, Q'_x$ son continuas en un abierto **convexo**, $\vec F$ es conservativo si y sólo si $P'_y = Q'_x$ en todo el conjunto. Para $n$ variables, en un abierto convexo: conservativo $\iff \frac{\partial F_i}{\partial x_j} = \frac{\partial F_j}{\partial x_i}$ para todo $i, j$. En $\mathbb{R}^3$ eso equivale a $\nabla\wedge\vec F = \vec 0$: un campo de $\mathbb{R}^3$ en $\mathbb{R}^3$ es conservativo si y sólo si es **irrotacional**.
+**Condición necesaria y suficiente (dominios convexos).** Si $P, Q, P'_y, Q'_x$ son continuas en un abierto **convexo**, $\vec F$ es conservativo si y sólo si $P'_y = Q'_x$ en todo el conjunto. Para $n$ variables, en un abierto convexo: conservativo $\iff \frac{\partial F_i}{\partial x_j} = \frac{\partial F_j}{\partial x_i}$ para todo $i, j$. En $\mathbb{R}^3$ eso equivale a $\nabla\times\vec F = \vec 0$: un campo de $\mathbb{R}^3$ en $\mathbb{R}^3$ es conservativo si y sólo si es **irrotacional**.
 
 **Fórmula general de la función potencial** (en $\mathbb{R}^2$):
 

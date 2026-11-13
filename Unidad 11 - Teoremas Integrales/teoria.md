@@ -18,7 +18,7 @@ Para $\vec f = (P, Q, R)$:
 |---|---|---|
 | Gradiente | $\nabla\phi = (\phi'_x, \phi'_y, \phi'_z)$ | vector |
 | Divergencia | $\mathop{\mathrm{div}}\vec f = \nabla\cdot\vec f = P'_x + Q'_y + R'_z$ | escalar |
-| Rotor | $\mathop{\mathrm{rot}}\vec f = \nabla\wedge\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ | vector |
+| Rotor | $\mathop{\mathrm{rot}}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ | vector |
 | Laplaciano | $\nabla^2\phi = \mathop{\mathrm{div}}(\nabla\phi) = \phi''_ {xx} + \phi''_ {yy} + \phi''_ {zz}$ | escalar |
 
 El rotor se calcula con el "determinante":
@@ -36,8 +36,8 @@ $$\mathop{\mathrm{rot}}\vec f = \begin{vmatrix} \breve\imath & \breve\jmath & \b
 - $\mathop{\mathrm{rot}}(\nabla\phi) = \vec 0$ (con $\phi\in C^2$).
 - $\mathop{\mathrm{div}}(\mathop{\mathrm{rot}}\vec g) = 0$ (con $\vec g\in C^2$).
 - $\mathop{\mathrm{div}}(f\vec g) = f\mathop{\mathrm{div}}\vec g + \nabla f\cdot\vec g$.
-- $\mathop{\mathrm{rot}}(f\vec g) = f\mathop{\mathrm{rot}}\vec g + \nabla f\wedge\vec g$.
-- $\mathop{\mathrm{div}}(\vec f\wedge\vec g) = \mathop{\mathrm{rot}}\vec f\cdot\vec g - \vec f\cdot\mathop{\mathrm{rot}}\vec g$.
+- $\mathop{\mathrm{rot}}(f\vec g) = f\mathop{\mathrm{rot}}\vec g + \nabla f\times\vec g$.
+- $\mathop{\mathrm{div}}(\vec f\times\vec g) = \mathop{\mathrm{rot}}\vec f\cdot\vec g - \vec f\cdot\mathop{\mathrm{rot}}\vec g$.
 
 **Interpretación física:**
 

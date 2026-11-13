@@ -65,7 +65,7 @@ Sea $C$ la curva definida por la intersección de las superficies $S_1$: $3xy + 
 
 **Paso 3 — Dirección tangente.**
 
-$$\vec v_t = \nabla f_1\wedge\nabla f_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 7 & 6 & 0 \cr 5 & 1 & -1 \end{vmatrix} = (-6,\ 7,\ -23)$$
+$$\vec v_t = \nabla f_1\times\nabla f_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 7 & 6 & 0 \cr 5 & 1 & -1 \end{vmatrix} = (-6,\ 7,\ -23)$$
 
 **Paso 4 — Recta tangente.** $\vec X = (1, 2, 3) + \alpha(-6, 7, -23)$.
 

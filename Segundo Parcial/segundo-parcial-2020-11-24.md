@@ -103,7 +103,7 @@ $$\nabla\times\bar f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y) = (0 - 1,\ 0 + 
 
 **Paso 2 — Parametrización.** $\vec T(x,z) = (x,\ 4 - x^2,\ z)$ con $0 \le x \le 2$ (primer octante: $y \ge 0$), $0 \le z \le 4$.
 
-$\vec T'_x\wedge\vec T'_z = (1,-2x,0)\wedge(0,0,1) = (-2x, -1, 0)$. Se elige la opuesta, $\vec n = (2x, 1, 0)$, que apunta hacia afuera del cilindro (lejos del eje $z$).
+$\vec T'_x\times\vec T'_z = (1,-2x,0)\times(0,0,1) = (-2x, -1, 0)$. Se elige la opuesta, $\vec n = (2x, 1, 0)$, que apunta hacia afuera del cilindro (lejos del eje $z$).
 
 **Paso 3 — Stokes.**
 

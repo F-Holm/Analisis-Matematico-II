@@ -28,7 +28,7 @@ La parte gradiente no aporta sobre una curva cerrada.
 
 **Paso 2 — Rotor.** $\nabla\times\bar f = \nabla\times(-2y, 2x, 0) = (0,\ 0,\ 2 + 2) = (0, 0, 4)$.
 
-**Paso 3 — Parametrización.** $\vec T(u,y) = (\cos u,\ y,\ \mathop{\mathrm{sen}}u)$, $0 \le u \le \frac{\pi}{2}$, $0 \le y \le 2$. Se elige la normal exterior (alejándose del eje $y$): $\vec n = (\cos u,\ 0,\ \mathop{\mathrm{sen}}u)$, con $\Vert\vec T'_u\wedge\vec T'_y\Vert = 1$.
+**Paso 3 — Parametrización.** $\vec T(u,y) = (\cos u,\ y,\ \mathop{\mathrm{sen}}u)$, $0 \le u \le \frac{\pi}{2}$, $0 \le y \le 2$. Se elige la normal exterior (alejándose del eje $y$): $\vec n = (\cos u,\ 0,\ \mathop{\mathrm{sen}}u)$, con $\Vert\vec T'_u\times\vec T'_y\Vert = 1$.
 
 **Paso 4 — Stokes.**
 

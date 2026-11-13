@@ -86,7 +86,7 @@ Calcular el flujo del campo $\vec f(x,y,z) = (e^{xy} + x;\ y + x^2;\ z^2 - y)$ a
 
 **Paso 1 — Parametrización.** Despejando $y = 3 - z$: $\vec T(x,z) = (x,\ 3 - z,\ z)$, con $D: x^2 + z^2 \le 9$.
 
-**Paso 2 — Normal.** $\vec T'_x = (1,0,0)$, $\vec T'_z = (0,-1,1)$, $\vec T'_x\wedge\vec T'_z = (0,-1,-1)$. Se elige la opuesta, $\vec n = (0, 1, 1)$ (componente $z$ positiva: normal "hacia arriba").
+**Paso 2 — Normal.** $\vec T'_x = (1,0,0)$, $\vec T'_z = (0,-1,1)$, $\vec T'_x\times\vec T'_z = (0,-1,-1)$. Se elige la opuesta, $\vec n = (0, 1, 1)$ (componente $z$ positiva: normal "hacia arriba").
 
 **Paso 3 — Producto escalar.**
 

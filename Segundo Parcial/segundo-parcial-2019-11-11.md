@@ -90,7 +90,7 @@ Calcule la masa de una chapa con forma de la **superficie** definida por $S: z =
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Parametrización.** $\vec T(u,v) = (u,\ v,\ u^2 + v^2)$, con $D: 1 \le u^2 + v^2 \le 4$ y $\vec T'_u\wedge\vec T'_v = (-2u, -2v, 1)$, cuya norma es $\sqrt{1 + 4u^2 + 4v^2}$.
+**Paso 1 — Parametrización.** $\vec T(u,v) = (u,\ v,\ u^2 + v^2)$, con $D: 1 \le u^2 + v^2 \le 4$ y $\vec T'_u\times\vec T'_v = (-2u, -2v, 1)$, cuya norma es $\sqrt{1 + 4u^2 + 4v^2}$.
 
 **Paso 2 — Integrando.** La raíz de la densidad se cancela con la del elemento de área:
 
@@ -128,9 +128,9 @@ $$\mathop{\mathrm{rot}}\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y) = (0,\
 
 Las funciones $g(x)$ y $g(y)$ no aportan.
 
-**Paso 2 — Parametrización.** $\vec T(u,v) = (u,\ v,\ 4 - u^2)$, con $D = [0,2]\times[0,5]$ y $\vec T'_u\wedge\vec T'_v = (2u, 0, 1)$ (hacia arriba).
+**Paso 2 — Parametrización.** $\vec T(u,v) = (u,\ v,\ 4 - u^2)$, con $D = [0,2]\times[0,5]$ y $\vec T'_u\times\vec T'_v = (2u, 0, 1)$ (hacia arriba).
 
-**Paso 3 — Orientación.** En el plano $(u,v)$ el borde se recorre $(2,0)\to(2,5)\to(0,5)\to(0,0)$, en sentido antihorario ⇒ es compatible con $\vec T'_u\wedge\vec T'_v$.
+**Paso 3 — Orientación.** En el plano $(u,v)$ el borde se recorre $(2,0)\to(2,5)\to(0,5)\to(0,0)$, en sentido antihorario ⇒ es compatible con $\vec T'_u\times\vec T'_v$.
 
 **Paso 4 — Stokes.**
 

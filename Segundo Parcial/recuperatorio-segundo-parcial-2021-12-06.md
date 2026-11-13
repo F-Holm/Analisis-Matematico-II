@@ -132,7 +132,7 @@ Calcular el flujo del campo $\bar f: R^3 \to R^3$ tal que $\bar f(x,y,z) = (x + 
 
 **Paso 1 — Parametrización.** $\vec T(x,z) = (x,\ x^2,\ z)$ con $0 \le z \le 4 - x^2$, que exige $-2 \le x \le 2$.
 
-**Paso 2 — Normal.** $\vec T'_x\wedge\vec T'_z = (1, 2x, 0)\wedge(0,0,1) = (2x,\ -1,\ 0)$.
+**Paso 2 — Normal.** $\vec T'_x\times\vec T'_z = (1, 2x, 0)\times(0,0,1) = (2x,\ -1,\ 0)$.
 
 **Paso 3 — Producto escalar.**
 

@@ -156,7 +156,7 @@ Calcule la circulación de $\vec f(x,y,z) = (z^2,\ x^2,\ y^2)$ a lo largo del bo
 
 **Paso 2 — Superficie y orientación.** El triángulo está en el plano $x + y + z = 2$. Con $\bar A = (2,0,0)$, $\bar B = (0,2,0)$, $\bar C = (0,0,2)$:
 
-$$(\bar B - \bar A)\wedge(\bar C - \bar A) = (-2,2,0)\wedge(-2,0,2) = (4,\ 4,\ 4)$$
+$$(\bar B - \bar A)\times(\bar C - \bar A) = (-2,2,0)\times(-2,0,2) = (4,\ 4,\ 4)$$
 
 La normal compatible con el recorrido es $\vec N = (1,1,1)$, usando $\vec T(x,y) = (x,\ y,\ 2 - x - y)$ sobre el triángulo $D$ de catetos 2.
 

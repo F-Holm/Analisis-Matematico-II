@@ -108,7 +108,7 @@ Calcule el área de la superficie $\vec X(u,v) = (u\cos v,\ u\mathop{\mathrm{sen
 
 $$\vec X'_u = (\cos v,\ \mathop{\mathrm{sen}}v,\ 0),\qquad \vec X'_v = (-u\mathop{\mathrm{sen}}v,\ u\cos v,\ 1)$$
 
-$$\vec X'_u\wedge\vec X'_v = (\mathop{\mathrm{sen}}v,\ -\cos v,\ u) \Rightarrow \Vert\vec X'_u\wedge\vec X'_v\Vert = \sqrt{1 + u^2}$$
+$$\vec X'_u\times\vec X'_v = (\mathop{\mathrm{sen}}v,\ -\cos v,\ u) \Rightarrow \Vert\vec X'_u\times\vec X'_v\Vert = \sqrt{1 + u^2}$$
 
 **Paso 2 — Integral.**
 

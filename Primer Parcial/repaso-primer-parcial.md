@@ -31,7 +31,7 @@ Halle la intersección de la recta tangente a dicha curva en el punto $A$ con el
 
 **Paso 2 — Dirección tangente.**
 
-$$\vec d = \nabla F_1\wedge\nabla F_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 2 & 1 & -1 \cr -1 & 4 & 1 \end{vmatrix} = (5,\ -1,\ 9)$$
+$$\vec d = \nabla F_1\times\nabla F_2 = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr 2 & 1 & -1 \cr -1 & 4 & 1 \end{vmatrix} = (5,\ -1,\ 9)$$
 
 **Paso 3 — Recta tangente.** $\vec X = (5 + 5t,\ -t,\ 4 + 9t)$.
 
@@ -377,7 +377,7 @@ Sea **C** la curva definida como intersección de las superficies de ecuaciones 
 - $F_1 = y - x^2$: $\nabla F_1 = (-2x,\ 1,\ 0) = (-2,\ 1,\ 0)$.
 - $F_2 = e^{xz-1} - xy + \ln(yz)$: $\nabla F_2 = \left(z\thinspace e^{xz-1} - y,\ -x + \dfrac1y,\ x\thinspace e^{xz-1} + \dfrac1z\right) = (0,\ 0,\ 2)$.
 
-**Paso 2 — Dirección.** $\vec d = (-2,1,0)\wedge(0,0,2) = (2,\ 4,\ 0)$.
+**Paso 2 — Dirección.** $\vec d = (-2,1,0)\times(0,0,2) = (2,\ 4,\ 0)$.
 
 **Paso 3 — Intersección.** $L_0: (1 + 2t,\ 1 + 4t,\ 1)$, con $x + y = 2 + 6t = 8 \Rightarrow t = 1$. El punto es $(3, 5, 1)$.
 

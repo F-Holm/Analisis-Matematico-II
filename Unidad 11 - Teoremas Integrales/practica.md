@@ -9,7 +9,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 > - $\nabla f \equiv \mathop{\mathrm{grad}}(f)$ simboliza al ***gradiente*** del campo escalar $f$.
 > - Dado el campo vectorial $\bar f : D \subset \Re^3 \to \Re^3 \ /\ \bar f(x,y,z) = (P(x,y,z),\ Q(x,y,z),\ R(x,y,z))$:
 >   - $\nabla\cdot\bar f \equiv \mathop{\mathrm{div}}(\bar f)$ simboliza a la ***divergencia*** de $\bar f$, $\ \mathop{\mathrm{div}}(\bar f) \doteq P'_x + Q'_y + R'_z$.
->   - $\nabla\wedge\bar f \equiv \mathop{\mathrm{rot}}(\bar f) = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \cr P & Q & R \end{vmatrix} \doteq (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ es el ***rotor*** de $\bar f$.
+>   - $\nabla\times\bar f \equiv \mathop{\mathrm{rot}}(\bar f) = \begin{vmatrix} \breve\imath & \breve\jmath & \breve k \cr \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \cr P & Q & R \end{vmatrix} \doteq (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$ es el ***rotor*** de $\bar f$.
 > - Un campo es:
 >   - ***solenoidal,*** si su divergencia es nula en todo punto.
 >   - ***irrotacional,*** si su rotor es nulo en todo punto.
@@ -627,8 +627,8 @@ En $\Re^3$, demuestre que:
 - b) $\bar f \in C^2 \Rightarrow \mathop{\mathrm{div}}(\mathop{\mathrm{rot}}(\bar f)) \equiv 0$.
 - c) $\bar f = \nabla\phi \in C^1 \Rightarrow \mathop{\mathrm{rot}}(\bar f) \equiv \bar 0$.
 - d) Con $a,b$ constantes: $\mathop{\mathrm{div}}(a\bar f + b\bar g) = a\mathop{\mathrm{div}}(\bar f) + b\mathop{\mathrm{div}}(\bar g)$, $\ \mathop{\mathrm{rot}}(a\bar f + b\bar g) = a\mathop{\mathrm{rot}}(\bar f) + b\mathop{\mathrm{rot}}(\bar g)$.
-- e) Con $f$ escalar: $\mathop{\mathrm{div}}(f\bar g) = f\mathop{\mathrm{div}}(\bar g) + \nabla f\cdot\bar g$, $\ \mathop{\mathrm{rot}}(f\bar g) = f\mathop{\mathrm{rot}}(\bar g) + \nabla f \wedge \bar g$.
-- f) $\mathop{\mathrm{div}}(\bar f \wedge \bar g) = \mathop{\mathrm{rot}}(\bar f)\cdot\bar g - \bar f\cdot\mathop{\mathrm{rot}}(\bar g)$.
+- e) Con $f$ escalar: $\mathop{\mathrm{div}}(f\bar g) = f\mathop{\mathrm{div}}(\bar g) + \nabla f\cdot\bar g$, $\ \mathop{\mathrm{rot}}(f\bar g) = f\mathop{\mathrm{rot}}(\bar g) + \nabla f \times \bar g$.
+- f) $\mathop{\mathrm{div}}(\bar f \times \bar g) = \mathop{\mathrm{rot}}(\bar f)\cdot\bar g - \bar f\cdot\mathop{\mathrm{rot}}(\bar g)$.
 
 <details>
 <summary><b>Solución</b></summary>
@@ -656,9 +656,9 @@ Para el rotor, la primera componente es:
 
 $$(fg_3)'_y - (fg_2)'_z = f(g'_{3,y} - g'_{2,z}) + (f'_yg_3 - f'_zg_2)$$
 
-que es la primera componente de $f\mathop{\mathrm{rot}}\bar g + \nabla f\wedge\bar g$. Las otras dos son análogas.
+que es la primera componente de $f\mathop{\mathrm{rot}}\bar g + \nabla f\times\bar g$. Las otras dos son análogas.
 
-**f)** Con $\bar f\wedge\bar g = (f_2g_3 - f_3g_2,\ f_3g_1 - f_1g_3,\ f_1g_2 - f_2g_1)$, se deriva con la regla del producto y se agrupan los términos:
+**f)** Con $\bar f\times\bar g = (f_2g_3 - f_3g_2,\ f_3g_1 - f_1g_3,\ f_1g_2 - f_2g_1)$, se deriva con la regla del producto y se agrupan los términos:
 
 - los que tienen derivadas de $\bar f$ forman $\mathop{\mathrm{rot}}\bar f\cdot\bar g$;
 - los que tienen derivadas de $\bar g$ forman $-\bar f\cdot\mathop{\mathrm{rot}}\bar g$.

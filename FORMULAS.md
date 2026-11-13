@@ -133,7 +133,7 @@ Masa $\int\delta\thinspace ds$, centro de masa $\frac1M\int x\thinspace\delta\th
 
 ## Unidad 10 — Integrales de superficie
 
-- Normal: $\vec N = \vec X'_u\wedge\vec X'_v$; para un gráfico $z = f$: $(-f'_x, -f'_y, 1)$.
+- Normal: $\vec N = \vec X'_u\times\vec X'_v$; para un gráfico $z = f$: $(-f'_x, -f'_y, 1)$.
 - Elemento de área: $d\sigma = \lVert\vec N\rVert\thinspace du\thinspace dv$. Área $= \iint\lVert\vec N\rVert$.
 - Campo escalar: $\iint f\thinspace d\sigma = \iint f\thinspace\lVert\vec N\rVert\thinspace du\thinspace dv$.
 - Flujo: $\iint\vec f\cdot\breve n\thinspace d\sigma = \pm\iint\vec f\cdot\vec N\thinspace du\thinspace dv$ (signo según la orientación).
