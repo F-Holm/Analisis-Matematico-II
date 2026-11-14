@@ -497,7 +497,7 @@ Teoría completa de la unidad: [Unidad 10 - Integrales de Superficie/teoria.md](
 
 **La diferencia que más errores causa:** en el área y la masa va $\Vert\vec n\Vert$. En el flujo va el **vector** $\vec n$, sin dividir por su norma.
 
-**Orientación.** Cuando se pide indicarla, hay que decir con palabras qué normal se usó ("normal hacia arriba", "normal exterior", "$\vec n = (2x, 1, 0)$") y aclarar que con la opuesta el flujo cambia de signo.
+**Orientación.** Cuando se pide indicarla, hay que decir con palabras qué normal se usó ("normal hacia arriba", "normal exterior" o el vector, por ejemplo $\vec n = (2x, 1, 0)$) y aclarar que con la opuesta el flujo cambia de signo.
 
 ### Tipo 14: Área de un gráfico
 
@@ -1191,7 +1191,7 @@ El campo es polinómico. Por Green, $Q'_x - P'_y = 2xy + 2 - 2xy = 2$, entonces 
 - **Parametrizar una curva fea** sin revisar antes si el campo es conservativo.
 - **No aplicar resonancia**, o proponer sólo $\cos$ sin $\mathop{\mathrm{sen}}$.
 - **Aplicar las condiciones iniciales a $y_h$** en lugar de a $y = y_h + y_p$.
-- En "recta tangente $y = mx + c$ en $x = 0$", **confundir $y(0) = c$ con $y'(0) = m$**.
+- Si el enunciado da la recta tangente $y = mx + c$ en $x = 0$, **confundir $y(0) = c$ con $y'(0) = m$**.
 
 ---
 

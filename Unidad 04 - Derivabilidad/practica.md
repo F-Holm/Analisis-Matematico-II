@@ -8,7 +8,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 >
 > - Trabajando con funciones de varias variables:
 >   - $f'(\bar A, \bar r) \equiv \dfrac{\partial f}{\partial \bar r}(\bar A)$ simbolizan la derivada de $f$ respecto de $\bar r$ en el punto $\bar A$.
->   - Siendo $\bar r \ne \bar 0$, su dirección viene dada por $\breve r = \bar r/\Vert\bar r\Vert$; las componentes de $\breve r$ son los cosenos directores de la dirección. La derivada de $f$ respecto $\breve r$ (vector unitario o versor) también se denomina "derivada direccional" o "derivada en la dirección de $\bar r$".
+>   - Siendo $\bar r \ne \bar 0$, su dirección viene dada por $\breve r = \bar r/\Vert\bar r\Vert$; las componentes de $\breve r$ son los cosenos directores de la dirección. La derivada de $f$ respecto $\breve r$ (vector unitario o versor) también se denomina "derivada direccional" o derivada en la dirección de $\bar r$.
 >   - Las derivadas parciales son derivadas direccionales en la dirección de los versores canónicos; es decir, $f'(\bar A, \breve e_k) \equiv f'_{x_k}(\bar A) \equiv \dfrac{\partial f}{\partial x_k}(\bar A)$ donde $\breve e_k = (0, \cdots, 0, 1, 0, \cdots, 0)$ (con el 1 en la posición $k$) es el $k$-ésimo versor canónico.
 > - Una derivada queda definida cuando el límite correspondiente existe y tiene norma finita, entendiéndose que:
 >   - para funciones de una variable la derivada $f'(a)$ se estudia suponiendo que $a$ es interior al dominio de $f$.<sup>(\*)</sup>

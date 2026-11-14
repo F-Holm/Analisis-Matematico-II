@@ -4,7 +4,7 @@ Ejercicios del **T.P. N.º 3 de la Guía de Trabajos Prácticos** ([TP03-Limite-
 
 Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y, arriba de ella, un segundo botón **Solución paso a paso** con el desarrollo completo.
 
-> **Notación:** "$\nexists L$" significa "no existe el límite". Las herramientas usadas (caminos, iterados, polares, infinitésimo por acotada, curvas de nivel) están explicadas en la [teoría](teoria.md).
+> **Notación:** $\nexists L$ significa "no existe el límite". Las herramientas usadas (caminos, iterados, polares, infinitésimo por acotada, curvas de nivel) están explicadas en la [teoría](teoria.md).
 
 ---
 

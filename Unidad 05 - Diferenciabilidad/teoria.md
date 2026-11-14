@@ -17,7 +17,7 @@ En una variable, $f$ es derivable en $x_0$ si y sólo si
 
 $$f(x_0 + h) = f(x_0) + f'(x_0)\thinspace h + |h|\thinspace\varphi(h), \quad \text{con } \varphi(h) \xrightarrow[h\to0]{} 0$$
 
-Es decir, cerca de $x_0$ la función se parece a la recta tangente, y el error es "más chico que $h$". La parte lineal, $df = f'(x_0)\thinspace h$, es el **diferencial**.
+Es decir, cerca de $x_0$ la función se parece a la recta tangente, y el error es más chico que $h$. La parte lineal, $df = f'(x_0)\thinspace h$, es el **diferencial**.
 
 En varias variables, la mera existencia de derivadas parciales o direccionales **no** alcanza para tener una buena aproximación lineal (Unidad 4). Por eso se define una noción más fuerte.
 

@@ -106,7 +106,7 @@ $$\iiint 10\thinspace dV = \frac{20\pi(5\sqrt5 - 7)}{3}$$
 
 $$\Phi_\Sigma = \frac{20\pi(5\sqrt5 - 7)}{3} + 20\pi = \frac{20\pi(5\sqrt5 - 4)}{3} \approx 150{,}6$$
 
-(En el pizarrón quedó escrito "falta restar el flujo por $z = 1$"; este es ese paso.)
+(En el pizarrón quedó escrito que faltaba restar el flujo por $z = 1$; este es ese paso.)
 
 </details>
 

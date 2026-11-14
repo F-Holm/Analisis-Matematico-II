@@ -276,7 +276,7 @@ Intersección: $-1 < x \le 1$ e $y > x$.
 - El logaritmo exige $z - x - y > 0$.
 - La raíz exige $\ln(z - x - y) \ge 0 \iff z - x - y \ge 1$.
 
-La segunda implica la primera, así que $D = \lbrace z \ge x + y + 1\rbrace$: el semiespacio por encima del plano $z = x + y + 1$, **incluyendo** al plano, porque ahí $\sqrt{\ln 1} = 0$ está definido. La respuesta oficial escribe "$>$"; con "$\ge$" se incluye además el plano, donde la función vale 0.
+La segunda implica la primera, así que $D = \lbrace z \ge x + y + 1\rbrace$: el semiespacio por encima del plano $z = x + y + 1$, **incluyendo** al plano, porque ahí $\sqrt{\ln 1} = 0$ está definido. La respuesta oficial usa $>$; con $\ge$ se incluye además el plano, donde la función vale 0.
 
 **e)** Hay dos condiciones:
 

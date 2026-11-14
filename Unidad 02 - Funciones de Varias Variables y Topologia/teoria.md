@@ -150,7 +150,7 @@ Cumple tres propiedades:
 | **Interior** | existe $r > 0$ con $B(\vec a, r) \subseteq A$ | está "bien adentro" |
 | **Exterior** | existe $r > 0$ con $B(\vec a, r) \subseteq A^c$ | está "bien afuera" |
 | **Frontera** | toda $B(\vec a, r)$ tiene puntos de $A$ **y** de $A^c$ | está "en el borde" (puede o no pertenecer a $A$) |
-| **De acumulación** | toda $B^*(\vec a, r)$ contiene puntos de $A$ (infinitos) | se puede llegar a él "caminando por $A$" (puede no pertenecer a $A$) |
+| **De acumulación** | toda $B^*(\vec a, r)$ contiene puntos de $A$ (infinitos) | se puede llegar a él caminando por $A$ (puede no pertenecer a $A$) |
 | **Aislado** | $\vec a \in A$ y existe $r$ con $B(\vec a, r)\cap A = \lbrace\vec a\rbrace$ | es un punto "suelto" de $A$ |
 
 **Notación:**

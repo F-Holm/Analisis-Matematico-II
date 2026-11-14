@@ -114,7 +114,7 @@ Existe en **todas** las direcciones:
 
 $$f'(\vec 0, (a,b)) = \begin{cases} a & b \ne 0 \cr 0 & b = 0 \end{cases}$$
 
-> **Observación:** la resolución manuscrita de la cátedra da "$= a$" para todas las direcciones, pero con $b = 0$ la función vale 0 sobre el eje $x$, así que ahí la derivada es 0. Esto muestra además que $f$ **no es diferenciable** en el origen: $\nabla f(\vec 0) = (0,0)$ y, sin embargo, $f'(\vec 0,(a,b)) = a \ne 0$ para $b \ne 0$, $a \ne 0$.
+> **Observación:** la resolución manuscrita de la cátedra da como resultado $a$ para todas las direcciones, pero con $b = 0$ la función vale 0 sobre el eje $x$, así que ahí la derivada es 0. Esto muestra además que $f$ **no es diferenciable** en el origen: $\nabla f(\vec 0) = (0,0)$ y, sin embargo, $f'(\vec 0,(a,b)) = a \ne 0$ para $b \ne 0$, $a \ne 0$.
 
 </details>
 

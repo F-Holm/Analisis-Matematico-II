@@ -14,7 +14,7 @@ Cada ejercicio tiene un botón **Solución**. Al abrirlo aparece la respuesta y,
 >
 > $$\nabla f(\bar A) = \left(\frac{\partial f}{\partial x_1}(\bar A), \cdots, \frac{\partial f}{\partial x_n}(\bar A)\right).$$
 >
-> - La expresión "$f$ con matriz jacobiana continua en $W$" es equivalente a "$f \in C^1(W)$". Para funciones de una variable significa que la función $f'$ es continua en $W$; para las de varias variables significa que todas las derivadas parciales de 1° orden son funciones continuas en $W$.
+> - Decir que $f$ tiene matriz jacobiana continua en $W$ es equivalente a decir que $f \in C^1(W)$. Para funciones de una variable significa que la función $f'$ es continua en $W$; para las de varias variables significa que todas las derivadas parciales de 1° orden son funciones continuas en $W$.
 >
 > <sup>(\*)</sup> Derivadas parciales existentes para el caso de función de varias variables.
 

@@ -143,7 +143,7 @@ Se calcula igual que el área (con $F$ multiplicando), expresando una variable e
 
 - Una superficie **abierta orientable** tiene **dos caras**: una positiva (exterior) y otra negativa (interior), con versores normales opuestos.
 - Hay superficies de **una sola cara**, como la **cinta de Möbius**: se puede recorrer entera sin atravesar ningún borde, y no se puede orientar.
-- En una superficie **cerrada**, la cara positiva es la **exterior**. En la práctica, el versor se reconoce por el ángulo que forma con alguno de los ejes (por ejemplo "hacia $z^+$").
+- En una superficie **cerrada**, la cara positiva es la **exterior**. En la práctica, el versor se reconoce por el ángulo que forma con alguno de los ejes (por ejemplo, hacia $z^+$).
 
 **Flujo (definición):** para $\vec F$ continuo y $\Sigma$ simple, regular a trozos y orientable, el flujo es la integral de superficie de la **componente normal** de $\vec F$:
 
@@ -154,7 +154,7 @@ $$\Phi = \iint_\Sigma(\vec F\cdot\breve n)\thinspace d\sigma$$
 ## 6. Estrategia para los ejercicios
 
 1. **Parametrizar** la superficie. Si es un gráfico, usar $(x, y, f(x,y))$; si no, cilíndricas o esféricas.
-2. Calcular $\vec N = \vec F'_u\times\vec F'_v$ y **chequear su sentido** contra la orientación pedida (por ejemplo, "hacia $z^+$" pide $N_z > 0$). Si no coincide, cambiar el signo.
+2. Calcular $\vec N = \vec F'_u\times\vec F'_v$ y **chequear su sentido** contra la orientación pedida (por ejemplo, la orientación hacia $z^+$ pide $N_z > 0$). Si no coincide, cambiar el signo.
 3. Determinar la **región $D$** de los parámetros: es la proyección de $S$.
 4. Calcular:
    - **área / campo escalar:** $\iint f\thinspace\lVert\vec N\rVert$;

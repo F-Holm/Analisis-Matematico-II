@@ -76,7 +76,7 @@ $$\vec v_t = \nabla f_1\times\nabla f_2 = \begin{vmatrix} \breve\imath & \breve\
 
 Son valores distintos ⇒ no hay punto en común.
 
-> En la resolución manuscrita aparece "$7\alpha + 1 = 0$", pero la segunda coordenada es $2 + 7\alpha$. La conclusión no cambia.
+> En la resolución manuscrita aparece la ecuación $7\alpha + 1 = 0$, pero la segunda coordenada es $2 + 7\alpha$. La conclusión no cambia.
 
 </details>
 

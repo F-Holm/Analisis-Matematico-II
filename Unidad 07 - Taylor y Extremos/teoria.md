@@ -255,7 +255,7 @@ La distancia mínima es $\sqrt{(2-4)^2 + 8} = \sqrt{12} = 2\sqrt3$.
 
 1. **Taylor:** calcular todas las derivadas necesarias **numéricamente en el punto**, y después armar el polinomio. Revisar el factor $\frac12$ y el $2$ de la derivada cruzada.
 2. **Extremos libres:**
-   - resolver $\nabla f = \vec 0$, factorizando y separando casos ("$x = 0$ o $y = 0$");
+   - resolver $\nabla f = \vec 0$, factorizando y separando casos (por ejemplo, $x = 0$ o $y = 0$);
    - calcular el Hessiano en cada punto y clasificar;
    - si $H = 0$, analizar el signo de $f - f(\vec A)$ por caminos.
 3. **Absolutos en una región:** interior + frontera + comparación.
