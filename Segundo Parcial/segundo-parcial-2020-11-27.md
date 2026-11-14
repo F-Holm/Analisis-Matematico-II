@@ -75,7 +75,7 @@ $$V = \int_0^{2\pi}\negthinspace\negthinspace\int_0^4(20 - r^2 - r)\thinspace r\
 
 **b) Paso 1 — Divergencia.**
 
-$$\operatorname{div}\bar f = -6x + 6xy + 1$$
+$$\mathop{\mathrm{div}}\bar f = -6x + 6xy + 1$$
 
 ($\mu(x)$ no depende de $z$.)
 

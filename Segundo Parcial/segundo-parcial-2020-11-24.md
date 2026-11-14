@@ -73,7 +73,7 @@ $$V = \iint_D(4 - y)\thinspace dA = 4\cdot\text{Área}(D) - \iint_D y\thinspace 
 
 **b) Paso 1 — Divergencia.**
 
-$$\operatorname{div}\bar f = \frac{\partial}{\partial x}\left(h(z) + \mathop{\mathrm{sen}}(y^2) + 3\right) + \frac{\partial}{\partial y}(z^3 - 2y) + \frac{\partial}{\partial z}(3z) = 0 - 2 + 3 = 1$$
+$$\mathop{\mathrm{div}}\bar f = \frac{\partial}{\partial x}\left(h(z) + \mathop{\mathrm{sen}}(y^2) + 3\right) + \frac{\partial}{\partial y}(z^3 - 2y) + \frac{\partial}{\partial z}(3z) = 0 - 2 + 3 = 1$$
 
 **Paso 2 — Gauss.** $S$ es cerrada y $\bar f \in C^1(\mathbb{R}^3)$. Con normal exterior:
 

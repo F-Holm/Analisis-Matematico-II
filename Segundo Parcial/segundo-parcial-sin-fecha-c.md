@@ -20,7 +20,7 @@ Calcular el flujo del campo vectorial $\bar f: R^3 \to R^3$ tal que $\bar f(x,y,
 <details>
 <summary>Solución paso a paso</summary>
 
-**Paso 1 — Divergencia.** $\operatorname{div}\bar f = 6 + 0 + 0 = 6$.
+**Paso 1 — Divergencia.** $\mathop{\mathrm{div}}\bar f = 6 + 0 + 0 = 6$.
 
 **Paso 2 — Volumen.** En el primer octante, para cada $y \in [0,2]$: $0 \le x \le 2 - y$ y $0 \le z \le 4 - 2y$:
 

@@ -105,7 +105,7 @@ Dado $\bar f(x,y,z) = (\varphi(z,y);\ y + 1;\ \varphi(y,x))$ con $\bar f \in C^1
 
 **Paso 1 — Divergencia.** La primera componente no depende de $x$ y la tercera no depende de $z$:
 
-$$\operatorname{div}\bar f = 0 + 1 + 0 = 1$$
+$$\mathop{\mathrm{div}}\bar f = 0 + 1 + 0 = 1$$
 
 **Paso 2 — Gauss.** La frontera es cerrada; con normal exterior el flujo es el volumen de $H$.
 

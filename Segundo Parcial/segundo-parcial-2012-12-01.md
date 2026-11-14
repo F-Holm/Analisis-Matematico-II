@@ -152,7 +152,7 @@ b) Calcule el flujo del campo $\vec f(x,y,z)$ a través de la porción de superf
 
 **a) Enunciado:** sea $H \subset \mathbb{R}^3$ un sólido acotado cuya frontera $\partial H$ es una superficie cerrada, suave a trozos, orientada con la normal exterior, y sea $\vec f$ un campo $C^1$ en un abierto que contiene a $H$. Entonces
 
-$$\iint_{\partial H}\vec f\cdot\vec n\thinspace dS = \iiint_H \operatorname{div}\vec f\thinspace dV$$
+$$\iint_{\partial H}\vec f\cdot\vec n\thinspace dS = \iiint_H \mathop{\mathrm{div}}\vec f\thinspace dV$$
 
 **b) Paso 1 — Cerrar la superficie.** $S$ es la semiesfera superior de radio 2. Se agrega la tapa $S_1$: $z = 0$, $x^2 + y^2 \le 4$. $S \cup S_1$ encierra la semibola $H$.
 

@@ -157,9 +157,9 @@ $$\cos(x)\thinspace u'v + u\left[\cos(x)\thinspace v' + \mathop{\mathrm{sen}}(x)
 
 *Paso 2 — Anular el corchete.* $\cos(x)\thinspace v' = -\mathop{\mathrm{sen}}(x)\thinspace v$, entonces $\dfrac{dv}{v} = -\dfrac{\mathop{\mathrm{sen}} x}{\cos x}\thinspace dx$, de donde $\ln|v| = \ln|\cos x|$. Se toma $v = \cos x$.
 
-*Paso 3 — Hallar $u$.* Queda $\cos(x)\thinspace u'\cos(x) = 1$, así que $u' = \dfrac{1}{\cos^2 x}$ y $u = \operatorname{tg}x + C$.
+*Paso 3 — Hallar $u$.* Queda $\cos(x)\thinspace u'\cos(x) = 1$, así que $u' = \dfrac{1}{\cos^2 x}$ y $u = \mathop{\mathrm{tg}}x + C$.
 
-*Paso 4 — Armar.* $y = (\operatorname{tg}x + C)\cos x$.
+*Paso 4 — Armar.* $y = (\mathop{\mathrm{tg}}x + C)\cos x$.
 
 **Resultado:** $y = \mathop{\mathrm{sen}} x + C\cos x$.
 

@@ -624,9 +624,9 @@ Teoría completa de la unidad: [Unidad 11 - Teoremas Integrales/teoria.md](../Un
 
 Para $\vec f = (P, Q, R)$:
 
-$$\operatorname{div}\vec f = P'_x + Q'_y + R'_z, \qquad \operatorname{rot}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
+$$\mathop{\mathrm{div}}\vec f = P'_x + Q'_y + R'_z, \qquad \mathop{\mathrm{rot}}\vec f = \nabla\times\vec f = (R'_y - Q'_z,\ P'_z - R'_x,\ Q'_x - P'_y)$$
 
-**Propiedades** (funciones $C^2$): $\nabla\times(\nabla\varphi) = \vec 0$; $\operatorname{div}(\nabla\times\vec f) = 0$, por lo que el flujo de un rotor por una superficie cerrada es 0; $\operatorname{div}(\nabla\varphi) = \Delta\varphi$. **Solenoidal:** $\operatorname{div}\vec f = 0$. **Irrotacional:** $\nabla\times\vec f = \vec 0$.
+**Propiedades** (funciones $C^2$): $\nabla\times(\nabla\varphi) = \vec 0$; $\mathop{\mathrm{div}}(\nabla\times\vec f) = 0$, por lo que el flujo de un rotor por una superficie cerrada es 0; $\mathop{\mathrm{div}}(\nabla\varphi) = \Delta\varphi$. **Solenoidal:** $\mathop{\mathrm{div}}\vec f = 0$. **Irrotacional:** $\nabla\times\vec f = \vec 0$.
 
 **Truco:** una función desconocida como $h(z)$ en la primera componente, o $\mu(x)$ en la tercera, **no aporta a la divergencia**, porque no depende de la variable que se deriva. En el rotor, $g(x)$ en $P$, $g(y)$ en $Q$ o $g(z)$ en $R$ tampoco aportan. Si el enunciado trae una función incógnita, casi seguro desaparece.
 
@@ -638,7 +638,7 @@ Vale también para regiones con agujeros, con la frontera exterior antihoraria y
 
 **Teorema de la divergencia (Gauss).** Sea $H \subset \mathbb{R}^3$ un sólido acotado cuya frontera $\partial H$ es una superficie cerrada, suave a trozos, orientada con la **normal exterior**, y sea $\vec f$ de clase $C^1$ en un abierto que contiene a $H$. Entonces
 
-$$\iint_{\partial H}\vec f\cdot\breve n\thinspace dS = \iiint_H\operatorname{div}\vec f\thinspace dV$$
+$$\iint_{\partial H}\vec f\cdot\breve n\thinspace dS = \iiint_H\mathop{\mathrm{div}}\vec f\thinspace dV$$
 
 **Teorema del rotor (Stokes).** Sea $S$ una superficie orientable, suave a trozos, con normal $\breve n$, cuyo borde $\partial S$ es una curva cerrada simple, suave a trozos, **orientada de forma coherente con $\breve n$** (caminando por el borde con la cabeza hacia $\breve n$, la superficie queda a la izquierda). Si $\vec f$ es $C^1$ en un abierto que contiene a $S$,
 
@@ -850,7 +850,7 @@ $$\oint_{C_1} - \oint_{C_2} - \oint_{C_3} = \iint(Q'_x - P'_y)\thinspace dA = 0$
 **Método.**
 
 1. Calcular la divergencia. Las funciones incógnita suelen desaparecer.
-2. Si es constante, $\Phi = \operatorname{div}\vec f\cdot V$.
+2. Si es constante, $\Phi = \mathop{\mathrm{div}}\vec f\cdot V$.
 3. Calcular el volumen o la integral triple.
 4. Indicar: **normal exterior**.
 
@@ -877,7 +877,7 @@ $$V = \int_0^{\pi/4}\int_0^4\int_r^4r\thinspace dz\thinspace dr\thinspace d\thet
 1. Calcular la divergencia.
 2. Agregar una **tapa** plana $T$ con normal exterior al sólido.
 3. Verificar que la superficie dada queda orientada como se pide.
-4. Aplicar Gauss: $\Phi_S + \Phi_T = \iiint\operatorname{div}\vec f\thinspace dV$.
+4. Aplicar Gauss: $\Phi_S + \Phi_T = \iiint\mathop{\mathrm{div}}\vec f\thinspace dV$.
 5. Calcular $\Phi_T$ y restarlo.
 
 **Ejemplo** ([2.º Parcial 18/06/2019, P3](segundo-parcial-2019-06-18.md)).
@@ -898,7 +898,7 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 
 **Resultado:** $\Phi_S = \dfrac{2\pi(5\sqrt5 - 7)}{3} + 4\pi$ con normal hacia afuera de la esfera.
 
-**Variante con datos incompletos** ([2012, T1](segundo-parcial-2012-12-01.md)): con $\operatorname{div}\vec f = 2$ y $\vec f(x,y,0) = (y^2 + x;\ y + x^2;\ 1)$, sobre la semiesfera $z = \sqrt{4 - x^2 - y^2}$. El campo sólo se conoce sobre la tapa, y es justamente lo que hace falta: $\iiint 2\thinspace dV = \frac{32\pi}{3}$, $\Phi_T = -1\cdot4\pi$, y $\Phi_S = \frac{44\pi}{3}$.
+**Variante con datos incompletos** ([2012, T1](segundo-parcial-2012-12-01.md)): con $\mathop{\mathrm{div}}\vec f = 2$ y $\vec f(x,y,0) = (y^2 + x;\ y + x^2;\ 1)$, sobre la semiesfera $z = \sqrt{4 - x^2 - y^2}$. El campo sólo se conoce sobre la tapa, y es justamente lo que hace falta: $\iiint 2\thinspace dV = \frac{32\pi}{3}$, $\Phi_T = -1\cdot4\pi$, y $\Phi_S = \frac{44\pi}{3}$.
 
 ### Tipo 29: Hallar una función a partir de la divergencia
 
@@ -906,9 +906,9 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 
 **Ejemplo** ([2.º Parcial 11/11/2019, P3](segundo-parcial-2019-11-11.md)).
 
-> Sea $\vec f = (g'(x),\ 4yg(x),\ 8xz + 3)$. a) Halle $g$ tal que $\operatorname{div}\vec f = 4$ y $\vec f(0,1,1) = (4, 4, 3)$. b) Calcule el flujo a través de $S$: $z = 4 - x^2 - y^2$, $z \ge 0$, con tercera componente de la normal positiva.
+> Sea $\vec f = (g'(x),\ 4yg(x),\ 8xz + 3)$. a) Halle $g$ tal que $\mathop{\mathrm{div}}\vec f = 4$ y $\vec f(0,1,1) = (4, 4, 3)$. b) Calcule el flujo a través de $S$: $z = 4 - x^2 - y^2$, $z \ge 0$, con tercera componente de la normal positiva.
 
-**a)** $\operatorname{div}\vec f = g'' + 4g + 8x = 4$, es decir $g'' + 4g = 4 - 8x$.
+**a)** $\mathop{\mathrm{div}}\vec f = g'' + 4g + 8x = 4$, es decir $g'' + 4g = 4 - 8x$.
 
 - Homogénea: $r = \pm2i$, $g_h = C_1\cos2x + C_2\mathop{\mathrm{sen}}2x$.
 - Particular: $g_p = Ax + B$. Entonces $4Ax + 4B = 4 - 8x$, con $A = -2$, $B = 1$.
@@ -932,7 +932,7 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 2. Calcular el rotor de lo que queda.
 3. Elegir como $S$ la superficie **más simple** con ese borde (casi siempre, un trozo de plano).
 4. Fijar la normal y decir el sentido inducido en la curva.
-5. Hallar la proyección e integrar $\operatorname{rot}\vec f\cdot\vec n$.
+5. Hallar la proyección e integrar $\mathop{\mathrm{rot}}\vec f\cdot\vec n$.
 
 **Ejemplo** ([2.º Parcial sin fecha C, 2](segundo-parcial-sin-fecha-c.md)).
 
@@ -948,11 +948,11 @@ $$V = \int_1^{\sqrt5}\pi(5 - z^2)\thinspace dz = \frac{2\pi(5\sqrt5 - 7)}{3}$$
 
 $$x^2 + (2 - x)^2 + 2y^2 = 4(2 - x) \ \Rightarrow\ 2x^2 + 2y^2 = 4 \ \Rightarrow\ x^2 + y^2 = 2$$
 
-*Paso 5 — Integrar.* $\operatorname{rot}\vec g\cdot\vec n = 1$, sobre un disco de área $2\pi$.
+*Paso 5 — Integrar.* $\mathop{\mathrm{rot}}\vec g\cdot\vec n = 1$, sobre un disco de área $2\pi$.
 
 **Resultado:** $2\pi$ en sentido antihorario visto desde arriba ($-2\pi$ en el contrario).
 
-**Variante con disco horizontal** ([2024, z2051 Tema 1, P1](segundo-parcial-2024-11-19.md)): si la curva está en un plano $z = c$, sólo importa $Q'_x - P'_y$. Para $\vec G = (yz + \operatorname{arctg}z,\ e^zy + \mathop{\mathrm{sen}} z,\ z^3)$ sobre el cono y el cilindro $r = 1$, $z = 1$: $Q'_x - P'_y = -z = -1$, y la circulación antihoraria es $-\pi$.
+**Variante con disco horizontal** ([2024, z2051 Tema 1, P1](segundo-parcial-2024-11-19.md)): si la curva está en un plano $z = c$, sólo importa $Q'_x - P'_y$. Para $\vec G = (yz + \mathop{\mathrm{arctg}}z,\ e^zy + \mathop{\mathrm{sen}} z,\ z^3)$ sobre el cono y el cilindro $r = 1$, $z = 1$: $Q'_x - P'_y = -z = -1$, y la circulación antihoraria es $-\pi$.
 
 ### Tipo 31: Stokes sobre el borde de una superficie dada
 
@@ -972,7 +972,7 @@ $$\int_0^4\int_0^2(-2x + 3)\thinspace dx\thinspace dz = 4\cdot(-4 + 6)$$
 
 **Resultado:** $8$ con normal $(2x, 1, 0)$ ($-8$ con la opuesta).
 
-**Variante: verdadero o falso** ([2019, T2](segundo-parcial-2019-06-18.md)). Con $\operatorname{rot}\vec f = (2, -2, 3)$ y el borde de $x + y + z = 4$ en el primer octante, recorrido $(4,0,0) \to (0,0,4) \to (0,4,0) \to (4,0,0)$. Con normal $(1,1,1)$, $\operatorname{rot}\vec f\cdot\vec n = 3$, y la proyección tiene área 8: daría 24. Pero la normal $(1,1,1)$ induce el recorrido $(4,0,0) \to (0,4,0) \to (0,0,4)$, que es el **contrario** al del enunciado. La circulación vale $-24$: la afirmación es falsa.
+**Variante: verdadero o falso** ([2019, T2](segundo-parcial-2019-06-18.md)). Con $\mathop{\mathrm{rot}}\vec f = (2, -2, 3)$ y el borde de $x + y + z = 4$ en el primer octante, recorrido $(4,0,0) \to (0,0,4) \to (0,4,0) \to (4,0,0)$. Con normal $(1,1,1)$, $\mathop{\mathrm{rot}}\vec f\cdot\vec n = 3$, y la proyección tiene área 8: daría 24. Pero la normal $(1,1,1)$ induce el recorrido $(4,0,0) \to (0,4,0) \to (0,0,4)$, que es el **contrario** al del enunciado. La circulación vale $-24$: la afirmación es falsa.
 
 ### Tipo 32: Flujo de un rotor
 
@@ -1161,13 +1161,13 @@ De ahí $10A = 4$, es decir $A = \tfrac25$; y $8A + 5B = 0$, es decir $B = -\tfr
 2. Como $P, Q \in C^1$, resulta $\varphi \in C^2$.
 3. Por el teorema de Schwarz, $\varphi''_ {xy} = \varphi''_ {yx}$, es decir, $P'_ y = Q'_ x$. $\blacksquare$
 
-**Demostración 2: propiedades del rotor.** $\nabla\times(\nabla\varphi) = \vec 0$: cada componente del rotor es una diferencia de derivadas cruzadas, nula por Schwarz. Análogamente, $\operatorname{div}(\nabla\times\vec f) = 0$. Y por eso el flujo de un rotor por una superficie cerrada es 0: por Gauss, es la integral triple de $\operatorname{div}(\nabla\times\vec f) = 0$.
+**Demostración 2: propiedades del rotor.** $\nabla\times(\nabla\varphi) = \vec 0$: cada componente del rotor es una diferencia de derivadas cruzadas, nula por Schwarz. Análogamente, $\mathop{\mathrm{div}}(\nabla\times\vec f) = 0$. Y por eso el flujo de un rotor por una superficie cerrada es 0: por Gauss, es la integral triple de $\mathop{\mathrm{div}}(\nabla\times\vec f) = 0$.
 
 **Demostración 3: volumen con Gauss** ([2024, Z2004, T1](segundo-parcial-2024-11-19.md)).
 
 > Muestre que el volumen de un sólido $V$ se calcula con $\dfrac13\iint_{\partial V}\vec F\cdot\breve n\thinspace d\sigma$, siendo $\vec F = (x, y, z)$.
 
-$\vec F$ es $C^1$ en $\mathbb{R}^3$ y $\operatorname{div}\vec F = 3$. Por el teorema de la divergencia, $\iint_{\partial V}\vec F\cdot\breve n\thinspace d\sigma = \iiint_V3\thinspace dV = 3\operatorname{Vol}(V)$. Dividiendo por 3 se obtiene el volumen. $\blacksquare$
+$\vec F$ es $C^1$ en $\mathbb{R}^3$ y $\mathop{\mathrm{div}}\vec F = 3$. Por el teorema de la divergencia, $\iint_{\partial V}\vec F\cdot\breve n\thinspace d\sigma = \iiint_V3\thinspace dV = 3\mathop{\mathrm{Vol}}(V)$. Dividiendo por 3 se obtiene el volumen. $\blacksquare$
 
 **Ejemplo con Green** ([2024, z2051, T1](segundo-parcial-2024-11-19.md)).
 

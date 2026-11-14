@@ -58,7 +58,7 @@ Indicar la orientación elegida para la superficie.
 
 **Paso 1 — Divergencia.**
 
-$$\operatorname{div}\bar f = 2 - 2 - x = -x$$
+$$\mathop{\mathrm{div}}\bar f = 2 - 2 - x = -x$$
 
 **Paso 2 — Gauss** (normal exterior): $\Phi = -\iiint_M x\thinspace dV$.
 
