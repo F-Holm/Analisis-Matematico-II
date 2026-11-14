@@ -497,7 +497,7 @@ Teoría completa de la unidad: [Unidad 10 - Integrales de Superficie/teoria.md](
 
 **La diferencia que más errores causa:** en el área y la masa va $\Vert\vec n\Vert$. En el flujo va el **vector** $\vec n$, sin dividir por su norma.
 
-**Orientación.** Cuando se pide indicarla, hay que decir con palabras qué normal se usó ("normal hacia arriba", "normal exterior" o el vector, por ejemplo $\vec n = (2x, 1, 0)$) y aclarar que con la opuesta el flujo cambia de signo.
+**Orientación.** Cuando se pide indicarla, hay que decir qué normal se usó: con palabras (normal hacia arriba, normal exterior) o dando el vector, por ejemplo $\vec n = (2x,\ 1,\ 0)$. También hay que aclarar que con la normal opuesta el flujo cambia de signo.
 
 ### Tipo 14: Área de un gráfico
 
