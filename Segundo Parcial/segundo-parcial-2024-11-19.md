@@ -373,13 +373,17 @@ Sea S la porción de superficie $z^2 = x^2 + y^2$ con $-2 \le z \le -1$ calcular
 <details>
 <summary>Solución paso a paso</summary>
 
+Hay dos caminos: calcular el flujo directamente o cerrar la superficie y usar Gauss. Los dos dan lo mismo.
+
+**Camino 1: flujo directo**
+
 **Paso 1 — Parametrización.** Es la hoja inferior del cono, $z = -\rho$, con $\rho\in[1,2]$: $\vec X = (\rho\cos\theta,\ \rho\mathop{\mathrm{sen}}\theta,\ -\rho)$.
 
 **Paso 2 — Normal.**
 
-$$\vec X'_\rho\times\vec X'_\theta = (\cos\theta,\ \mathop{\mathrm{sen}}\theta,\ -1)\times(-\rho\mathop{\mathrm{sen}}\theta,\ \rho\cos\theta,\ 0) = (\rho\cos\theta,\ \rho\mathop{\mathrm{sen}}\theta,\ \rho)$$
+$$\vec X'_ \rho\times\vec X'_ \theta = (\cos\theta,\ \mathop{\mathrm{sen}}\theta,\ -1)\times(-\rho\mathop{\mathrm{sen}}\theta,\ \rho\cos\theta,\ 0) = (\rho\cos\theta,\ \rho\mathop{\mathrm{sen}}\theta,\ \rho)$$
 
-Tiene tercera componente positiva: elegimos la orientación con $\breve n\cdot\breve k > 0$.
+Tiene tercera componente positiva: elegimos la orientación con $\breve n\cdot\breve k > 0$. Apunta hacia arriba y hacia afuera del eje del cono.
 
 **Paso 3 — Integrando.** $\vec F = (\rho^2\cos\theta,\ \rho^2\mathop{\mathrm{sen}}\theta,\ \rho^2)$:
 
@@ -388,6 +392,32 @@ $$\vec F\cdot\vec N = \rho^3 + \rho^3 = 2\rho^3$$
 **Paso 4 — Integral.**
 
 $$\Phi = \int_0^{2\pi}\negthinspace\negthinspace\int_1^2 2\rho^3\thinspace d\rho\thinspace d\theta = 2\pi\cdot\frac{16 - 1}{2} = 15\pi$$
+
+**Camino 2: teorema de la divergencia (Gauss)**
+
+**Paso 1 — Divergencia.**
+
+$$\mathop{\mathrm{div}}\vec F = \frac{\partial(-zx)}{\partial x} + \frac{\partial(-zy)}{\partial y} + \frac{\partial(z^2)}{\partial z} = -z - z + 2z = 0$$
+
+**Paso 2 — Cerrar la superficie.** El tronco de cono está abierto arriba y abajo, así que hacen falta dos tapas. Junto con ellas, $S$ encierra el sólido $H$: $\sqrt{x^2 + y^2} \le -z$, con $-2 \le z \le -1$. Como $\vec F$ es $C^1$ en todo $\mathbb{R}^3$, vale Gauss con normal exterior:
+
+$$\Phi_S + \Phi_{T_1} + \Phi_{T_2} = \iiint_H\mathop{\mathrm{div}}\vec F\thinspace dV = 0$$
+
+En la pared del cono, la normal exterior a $H$ apunta hacia afuera del eje y hacia arriba: es la misma orientación del camino 1.
+
+**Paso 3 — Tapa de arriba.** $T_1$: $z = -1$, $x^2 + y^2 \le 1$. El sólido queda debajo, así que la normal exterior es $(0, 0, 1)$:
+
+$$\vec F\cdot(0,0,1) = z^2 = 1 \quad\Rightarrow\quad \Phi_{T_1} = 1\cdot\pi\cdot1^2 = \pi$$
+
+**Paso 4 — Tapa de abajo.** $T_2$: $z = -2$, $x^2 + y^2 \le 4$. El sólido queda encima, así que la normal exterior es $(0, 0, -1)$:
+
+$$\vec F\cdot(0,0,-1) = -z^2 = -4 \quad\Rightarrow\quad \Phi_{T_2} = -4\cdot\pi\cdot2^2 = -16\pi$$
+
+**Paso 5 — Despejar.**
+
+$$\Phi_S = -\Phi_{T_1} - \Phi_{T_2} = -\pi + 16\pi = 15\pi$$
+
+**¿Cuál conviene?** Acá están casi empatados. El directo es corto porque el cono se parametriza fácil y el integrando queda simple. Gauss evita el producto vectorial y, como la divergencia es 0, sólo hay que calcular dos tapas con integrando constante; el riesgo es orientar mal alguna de ellas. Gauss gana claramente cuando el campo es complicado sobre la superficie pero la divergencia es simple.
 
 </details>
 
