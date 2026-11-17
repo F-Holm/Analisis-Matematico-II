@@ -37,6 +37,8 @@ Material general: [resumen de UTNianos](UTNianos/Resumen%20AM2.pdf), [respuestas
 
 ### 2.º Parcial (Unidades 8 a 12)
 
+🗂️ **[Menú del 2.º parcial](Segundo%20Parcial/README.md)**: todo el material de la carpeta ordenado (guía por tipo de ejercicio, qué suele tomar, parciales reales y de práctica).
+
 📗 **[Teoría para el 2.º parcial](Segundo%20Parcial/teoria.md)**: definiciones, enunciados y recetas para cada tipo de ejercicio.
 
 | Examen | Temas |
